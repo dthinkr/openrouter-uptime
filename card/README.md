@@ -54,3 +54,15 @@ welcome.
 
 Refreshed daily from the live poller. For the 30-minute granular history and the
 verbatim raw API archives, use the GitHub repo.
+
+## Citation
+
+```bibtex
+@misc{wu_openrouter_uptime_2026,
+  author       = {Wu, Wenbin},
+  title        = {OpenRouter Uptime: an independent availability and
+                  data-policy registry for OpenRouter models},
+  year         = {2026},
+  howpublished = {\url{https://github.com/dthinkr/openrouter-uptime}}
+}
+```

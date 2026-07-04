@@ -33,10 +33,13 @@ UA = {"User-Agent": "openrouter-uptime (github.com/OWNER/openrouter-uptime)"}
 WORKERS = 12
 RETRIES = 3
 
-# state is judged on the stabler 30-min uptime; a null uptime means the
-# endpoint simply had no recent traffic (idle), which is NOT a fault.
+# OpenRouter's own `status` health code: 0 = healthy, -2 = degraded,
+# -5 = down (observed encoding). We combine it with the 30-min uptime.
+# A null uptime means the endpoint had no recent traffic (idle) — not a fault.
+STATUS_DOWN = -5
+STATUS_DEGRADED = -2
 DEGRADED_BELOW = 98.0   # up30m in [DOWN_AT, DEGRADED_BELOW) -> degraded
-DOWN_AT = 50.0          # up30m below this (or status!=0) -> down
+DOWN_AT = 50.0          # up30m below this -> down
 
 
 def get(url: str):
@@ -103,14 +106,12 @@ def state_of(row: dict) -> str:
     if row.get("error"):
         return "unknown"
     st, up30 = row.get("status"), row.get("up30m")
-    if st is not None and st != 0:
+    if st == STATUS_DOWN or (up30 is not None and up30 < DOWN_AT):
         return "down"
+    if st == STATUS_DEGRADED or (up30 is not None and up30 < DEGRADED_BELOW):
+        return "degraded"
     if up30 is None:
         return "idle"          # no recent traffic — not a fault
-    if up30 < DOWN_AT:
-        return "down"
-    if up30 < DEGRADED_BELOW:
-        return "degraded"
     return "up"
 
 

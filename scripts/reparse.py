@@ -17,14 +17,13 @@ import sys
 
 
 def state_of(status, up30m) -> str:
-    if status is not None and status != 0:
+    # OpenRouter status code: 0 healthy, -2 degraded, -5 down.
+    if status == -5 or (up30m is not None and up30m < 50.0):
         return "down"
+    if status == -2 or (up30m is not None and up30m < 98.0):
+        return "degraded"
     if up30m is None:
         return "idle"
-    if up30m < 50.0:
-        return "down"
-    if up30m < 98.0:
-        return "degraded"
     return "up"
 
 

@@ -78,28 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-04T17:15:58+00:00 UTC)
+## Current status (2026-07-04T19:08:19+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 554, degraded 112, down 13, idle 196.
+up 554, degraded 102, down 16, idle 203.
 
-Currently down (13):
+Currently down (16):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 69% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 25% | 28% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 75% | 72% |
-| `google/gemma-4-31b-it` | Chutes | 66% | 98% |
-| `google/gemma-4-31b-it` | SiliconFlow | 26% | n/a |
-| `minimax/minimax-m3` | Parasail | 79% | 88% |
-| `openai/gpt-oss-120b` | Mara | 61% | 100% |
-| `openai/gpt-oss-20b` | Parasail | 78% | 99% |
-| `openai/gpt-oss-20b` | Google | 63% | n/a |
-| `z-ai/glm-4.7-flash` | Cloudflare | 17% | 3% |
-| `z-ai/glm-4.7-flash` | Novita | 73% | 60% |
-| `z-ai/glm-5` | DigitalOcean | 77% | n/a |
-| `z-ai/glm-5.1` | DigitalOcean | 69% | 13% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 23% | 24% |
+| `google/gemini-2.5-flash` | Google | 64% | 86% |
+| `google/gemini-3.5-flash` | Google | 75% | 84% |
+| `google/gemma-3-27b-it` | Phala | 76% | 70% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 76% | 82% |
+| `google/gemma-4-31b-it` | Chutes | 51% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 80% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | Nebius | 66% | 100% |
+| `openai/gpt-5.4-pro` | OpenAI | 23% | n/a |
+| `openai/gpt-oss-120b` | Mara | 32% | n/a |
+| `openai/gpt-oss-20b` | Parasail | 70% | 38% |
+| `qwen/qwen3-coder` | Google | 33% | n/a |
+| `qwen/qwen3.6-27b` | Morph | 30% | n/a |
+| `z-ai/glm-4.7-flash` | Cloudflare | 21% | 7% |
+| `z-ai/glm-4.7-flash` | Novita | 39% | 20% |
+| plus 1 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

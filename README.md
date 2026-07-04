@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-04T14:54:04+00:00 UTC)
+## Current status (2026-07-04T16:00:01+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 528, degraded 109, down 27, idle 211.
+up 543, degraded 99, down 20, idle 213.
 
-Currently down (27):
+Currently down (20):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | SiliconFlow | 53% | n/a |
-| `deepseek/deepseek-chat-v3.1` | AtlasCloud | 72% | 100% |
-| `deepseek/deepseek-chat-v3.1` | WandB | 77% | 100% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 35% | 57% |
-| `google/gemma-3-27b-it` | Phala | 80% | 98% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 60% | 60% |
-| `google/gemma-4-31b-it` | Chutes | 69% | 76% |
-| `google/gemma-4-31b-it` | Phala | 77% | 100% |
-| `mistralai/mistral-nemo` | Novita | 72% | 87% |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 77% | n/a |
-| `openai/gpt-5.1` | OpenAI | 75% | 57% |
-| `openai/gpt-5.4-nano` | OpenAI | 80% | 76% |
-| `openai/gpt-oss-120b` | Mara | 33% | 24% |
-| `openai/gpt-oss-20b` | Parasail | 80% | 100% |
-| `openai/gpt-oss-20b` | Fireworks | 34% | 33% |
-| plus 12 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 77% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 28% | 29% |
+| `google/gemini-2.5-flash` | Google | 77% | 95% |
+| `google/gemma-3-27b-it` | Phala | 64% | 96% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 59% | 55% |
+| `google/gemma-4-31b-it` | SiliconFlow | 74% | n/a |
+| `google/gemma-4-31b-it` | Phala | 68% | n/a |
+| `google/gemma-4-31b-it` | Together | 68% | n/a |
+| `mistralai/mistral-nemo` | Novita | 79% | 90% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Nebius | 69% | n/a |
+| `openai/gpt-5.1` | OpenAI | 79% | 73% |
+| `openai/gpt-5.4-nano` | OpenAI | 80% | 77% |
+| `openai/gpt-oss-120b` | Mara | 37% | n/a |
+| `openai/gpt-oss-20b` | Parasail | 54% | 98% |
+| `qwen/qwen3.6-27b` | Morph | 54% | 32% |
+| plus 5 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -11,6 +11,11 @@ or any provider's policy can be reconstructed over time.
 
 No API key required. Everything comes from OpenRouter's public endpoints.
 
+**Mirrors:** this repo is the source of truth; a tidy Parquet copy is refreshed
+daily on
+[HuggingFace](https://huggingface.co/datasets/venvoo/openrouter-uptime) and
+[Kaggle](https://www.kaggle.com/datasets/spicycorn/openrouter-uptime).
+
 ## What's in here
 
 Three committed folders: `raw/` (verbatim archives), `derived/` (tidy CSVs),
@@ -46,15 +51,6 @@ grep anthropic/claude-sonnet derived/$(date -u +%F).csv   # one model, today
 jq 'select(.event=="down")' status/incidents.jsonl        # every outage start
 python3 scripts/reparse.py raw/2026-07-04/140117.json.gz  # rebuild from raw
 git log -p -- derived/                                    # snapshot history
-```
-
-## Run it yourself
-
-Fork, enable Actions, and the schedule starts automatically with no secrets. Or
-once, locally:
-
-```bash
-python3 scripts/poll.py && python3 scripts/summarize.py
 ```
 
 ## Notes

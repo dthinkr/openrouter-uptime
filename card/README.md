@@ -23,9 +23,13 @@ configs:
 
 An independent, timestamped uptime record for **every model on
 [OpenRouter](https://openrouter.ai)** and each of its inference providers.
-Polled every 30 minutes from OpenRouter's public API and mirrored here daily.
+Polled hourly from OpenRouter's public API and mirrored here daily.
 
-Source repo (raw + full git history): **https://github.com/dthinkr/openrouter-uptime**
+Available in three places:
+
+- **Source (raw + full git history):** [github.com/dthinkr/openrouter-uptime](https://github.com/dthinkr/openrouter-uptime)
+- **HuggingFace:** [huggingface.co/datasets/venvoo/openrouter-uptime](https://huggingface.co/datasets/venvoo/openrouter-uptime)
+- **Kaggle:** [kaggle.com/datasets/spicycorn/openrouter-uptime](https://www.kaggle.com/datasets/spicycorn/openrouter-uptime)
 
 ## Files
 

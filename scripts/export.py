@@ -3,7 +3,7 @@
 
 Reads the per-run CSVs, the incidents log, and the model catalog; writes
 partition-friendly Parquet (+ a CSV fallback) plus a dataset card into
-`dataset/`. Run daily — this is the clean, discoverable mirror of the
+`dataset/`. Run daily, this is the clean, discoverable mirror of the
 high-frequency git history.
 
     python3 scripts/export.py
@@ -22,7 +22,7 @@ DATA, STATUS, OUT = ROOT / "data", ROOT / "status", ROOT / "dataset"
 def main() -> None:
     OUT.mkdir(exist_ok=True)
 
-    # 1. readings — every endpoint reading across all days
+    # 1. readings, every endpoint reading across all days
     frames = [pd.read_csv(f) for f in sorted(DATA.glob("*.csv"))]
     readings = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
     if not readings.empty:
@@ -30,7 +30,7 @@ def main() -> None:
         readings.to_parquet(OUT / "readings.parquet", index=False)
         readings.tail(200_000).to_csv(OUT / "readings_sample.csv", index=False)
 
-    # 2. incidents — outage start/recovery log
+    # 2. incidents, outage start/recovery log
     inc_path = STATUS / "incidents.jsonl"
     inc = [json.loads(l) for l in inc_path.read_text().splitlines() if l.strip()] \
         if inc_path.exists() else []

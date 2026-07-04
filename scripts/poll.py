@@ -35,7 +35,7 @@ RETRIES = 3
 
 # OpenRouter's own `status` health code: 0 = healthy, -2 = degraded,
 # -5 = down (observed encoding). We combine it with the 30-min uptime.
-# A null uptime means the endpoint had no recent traffic (idle) — not a fault.
+# A null uptime means the endpoint had no recent traffic (idle), not a fault.
 STATUS_DOWN = -5
 STATUS_DEGRADED = -2
 DEGRADED_BELOW = 98.0   # up30m in [DOWN_AT, DEGRADED_BELOW) -> degraded
@@ -111,7 +111,7 @@ def state_of(row: dict) -> str:
     if st == STATUS_DEGRADED or (up30 is not None and up30 < DEGRADED_BELOW):
         return "degraded"
     if up30 is None:
-        return "idle"          # no recent traffic — not a fault
+        return "idle"          # no recent traffic, not a fault
     return "up"
 
 
@@ -168,7 +168,7 @@ def main() -> None:
         for r in json.loads(prev_path.read_text()).get("endpoints", []):
             prev[(r["model"], r["provider"])] = r["state"]
     # an "incident" line is logged only when an endpoint crosses the DOWN
-    # boundary (starts or ends an outage) — not for every degraded flicker.
+    # boundary (starts or ends an outage), not for every degraded flicker.
     inc_path = STATUS / "incidents.jsonl"
     transitions = 0
     stable = {"up", "degraded", "down"}

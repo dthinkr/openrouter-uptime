@@ -35,12 +35,12 @@ Source repo (raw + full git history): **https://github.com/dthinkr/openrouter-up
 | `incidents.parquet` | one per outage edge | endpoint crossing into/out of `down` (`ts, model, provider, from, to, event, up30m`) |
 | `models.parquet` | current catalog | `id, name, created, context_length` |
 
-`state` ∈ `up` (≥98% 30-min uptime) · `degraded` (50–98%, or OpenRouter status −2) ·
-`down` (<50%, or status −5) · `idle` (no recent traffic).
+`state` is one of: `up` (>=98% 30-min uptime), `degraded` (50 to 98%, or
+OpenRouter status -2), `down` (<50%, or status -5), `idle` (no recent traffic).
 
 ## Why it exists
 
-Built to study operational dependence on AI infrastructure — e.g. whether
+Built to study operational dependence on AI infrastructure, for example whether
 outages of a specific provider move downstream systems. Provider-differential,
 model-resolved availability is the raw material. Contributions and research use
 welcome.

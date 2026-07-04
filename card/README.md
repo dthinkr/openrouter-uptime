@@ -34,6 +34,7 @@ Source repo (raw + full git history): **https://github.com/dthinkr/openrouter-up
 | `readings.parquet` | one per endpoint per poll | `ts, model, provider, state, status, up5m, up30m, up1d` |
 | `incidents.parquet` | one per outage edge | endpoint crossing into/out of `down` (`ts, model, provider, from, to, event, up30m`) |
 | `models.parquet` | current catalog | `id, name, created, context_length` |
+| `providers.parquet` | provider data policies | `slug, name, headquarters, data_policy (training/retention/ToS), moderation_required` |
 
 `state` is one of: `up` (>=98% 30-min uptime), `degraded` (50 to 98%, or
 OpenRouter status -2), `down` (<50%, or status -5), `idle` (no recent traffic).

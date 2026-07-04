@@ -2,7 +2,7 @@ name: poll
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 min (GitHub best-effort; may lag at peak)
+    - cron: "0 * * * *"   # hourly (GitHub best-effort; may lag at peak)
   workflow_dispatch: {}       # allow manual runs
 
 # never let two runs commit at once

@@ -23,7 +23,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "dataset"
+OUT = ROOT / "build"
 HF_DATASET = os.environ.get("HF_DATASET", "venvoo/openrouter-uptime")
 KAGGLE_DATASET = os.environ.get("KAGGLE_DATASET", "spicycorn/openrouter-uptime")
 

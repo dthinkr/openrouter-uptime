@@ -1,0 +1,41 @@
+name: publish-dataset
+
+on:
+  schedule:
+    - cron: "20 6 * * *"     # once a day, 06:20 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0       # need all committed data/ history
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -q pandas pyarrow huggingface_hub kaggle
+
+      - name: Export tidy dataset
+        run: python3 scripts/export.py
+
+      - name: Push to HuggingFace
+        if: ${{ secrets.HF_TOKEN != '' }}
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASET: ${{ vars.HF_DATASET }}
+        run: python3 scripts/publish.py --hf
+
+      - name: Push to Kaggle
+        if: ${{ secrets.KAGGLE_KEY != '' }}
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_DATASET: ${{ vars.KAGGLE_DATASET }}
+        run: python3 scripts/publish.py --kaggle

@@ -68,12 +68,12 @@ python3 scripts/poll.py && python3 scripts/summarize.py
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-04T14:51:53+00:00 UTC)
+## Current status (2026-07-04T14:54:04+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 526, degraded 111, down 22, idle 216.
+up 528, degraded 109, down 27, idle 211.
 
-Currently down (22):
+Currently down (27):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
@@ -81,18 +81,18 @@ Currently down (22):
 | `deepseek/deepseek-chat-v3.1` | AtlasCloud | 72% | 100% |
 | `deepseek/deepseek-chat-v3.1` | WandB | 77% | 100% |
 | `deepseek/deepseek-v4-pro` | Fireworks | 35% | 57% |
-| `google/gemma-3-27b-it` | Phala | 77% | 81% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 68% | 64% |
-| `google/gemma-4-31b-it` | Chutes | 70% | 70% |
-| `google/gemma-4-31b-it` | Phala | 77% | n/a |
+| `google/gemma-3-27b-it` | Phala | 80% | 98% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 60% | 60% |
+| `google/gemma-4-31b-it` | Chutes | 69% | 76% |
+| `google/gemma-4-31b-it` | Phala | 77% | 100% |
 | `mistralai/mistral-nemo` | Novita | 72% | 87% |
-| `openai/gpt-5.1` | OpenAI | 75% | 67% |
-| `openai/gpt-5.4-nano` | OpenAI | 80% | 88% |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 77% | n/a |
+| `openai/gpt-5.1` | OpenAI | 75% | 57% |
+| `openai/gpt-5.4-nano` | OpenAI | 80% | 76% |
 | `openai/gpt-oss-120b` | Mara | 33% | 24% |
-| `openai/gpt-oss-20b` | Parasail | 78% | 100% |
-| `qwen/qwen3-coder` | Google | 63% | n/a |
-| `qwen/qwen3.5-122b-a10b` | Alibaba | 73% | n/a |
-| plus 7 more | | | |
+| `openai/gpt-oss-20b` | Parasail | 80% | 100% |
+| `openai/gpt-oss-20b` | Fireworks | 34% | 33% |
+| plus 12 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

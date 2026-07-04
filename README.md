@@ -62,73 +62,73 @@ python3 scripts/poll.py && python3 scripts/summarize.py
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status — 2026-07-04T14:04:07+00:00 UTC
+## Current status — 2026-07-04T14:06:11+00:00 UTC
 
 - **324** models polled, **875** inference endpoints
-- **120** currently down or degraded
-- **0** state changes in the last poll
+- **126** currently down or degraded
+- **43** state changes in the last poll
 
 | model | provider | state | uptime 5m | uptime 30m |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | Google | **down** | 63.6% | 82.9% |
-| `anthropic/claude-fable-5` | Anthropic | **down** | 84.0% | 85.0% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | **down** | 95.9% | 94.8% |
-| `deepseek/deepseek-chat-v3.1` | SiliconFlow | **down** | 95.7% | 87.3% |
-| `deepseek/deepseek-r1` | Azure | **down** | 94.3% | 93.3% |
-| `deepseek/deepseek-v4-pro` | Fireworks | **down** | 41.1% | 29.9% |
+| `deepseek/deepseek-v4-pro` | Fireworks | **down** | 47.9% | 32.3% |
 | `google/gemini-2.5-flash` | Google | **down** | — | 58.4% |
-| `google/gemini-2.5-pro` | Google | **down** | 93.2% | 94.5% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | **down** | 93.2% | 94.5% |
-| `google/gemma-3-27b-it` | Novita | **down** | 88.9% | 84.8% |
-| `google/gemma-3-27b-it` | Phala | **down** | 96.9% | 80.1% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | **down** | 52.4% | 68.3% |
-| `google/gemma-4-31b-it` | Chutes | **down** | 93.7% | 77.2% |
-| `google/gemma-4-31b-it` | Parasail | **down** | 93.9% | 92.1% |
-| `google/gemma-4-31b-it` | Phala | **down** | — | 77.5% |
-| `google/gemma-4-31b-it` | Together | **down** | 94.5% | 91.5% |
-| `meta-llama/llama-3.3-70b-instruct` | DeepInfra | **down** | 93.4% | 94.8% |
-| `meta-llama/llama-3.3-70b-instruct` | Google | **down** | 90.3% | 91.9% |
-| `minimax/minimax-m2.7` | Mara | **down** | 80.4% | 94.2% |
-| `minimax/minimax-m2.7` | Morph | **down** | 100.0% | 94.7% |
-| `minimax/minimax-m3` | Parasail | **down** | 87.0% | 92.3% |
-| `mistralai/mistral-nemo` | DekaLLM | **down** | 97.4% | 89.5% |
-| `mistralai/mistral-nemo` | Novita | **down** | 75.1% | 84.8% |
-| `moonshotai/kimi-k2.6` | Together | **down** | 69.6% | 93.7% |
-| `moonshotai/kimi-k2.7-code` | Together | **down** | 84.8% | 95.0% |
-| `nvidia/nemotron-3-super-120b-a12b` | DekaLLM | **down** | 98.0% | 94.4% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | **down** | 90.0% | 86.6% |
-| `openai/gpt-5-nano` | OpenAI | **down** | 90.2% | 92.4% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | **down** | 84.2% | 68.4% |
+| `google/gemma-4-31b-it` | Phala | **down** | — | 78.0% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | **down** | 41.2% | 61.2% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Nebius | **down** | 72.4% | 75.3% |
 | `openai/gpt-5.1` | OpenAI | **down** | 68.6% | 74.6% |
 | `openai/gpt-5.4-nano` | OpenAI | **down** | 77.9% | 78.9% |
-| `openai/gpt-5.5` | OpenAI | **down** | 93.6% | 93.6% |
 | `openai/gpt-oss-120b` | Mara | **down** | 27.9% | 30.3% |
 | `openai/gpt-oss-20b` | Parasail | **down** | 100.0% | 75.9% |
-| `openai/gpt-oss-20b` | Amazon Bedrock | **down** | 84.5% | 86.7% |
 | `openai/gpt-oss-20b` | Fireworks | **down** | — | 31.0% |
 | `qwen/qwen3-coder` | Google | **down** | — | 63.8% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | SiliconFlow | **down** | 92.5% | 85.6% |
 | `qwen/qwen3-coder-next` | Ionstream | **down** | 100.0% | 73.2% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Novita | **down** | 91.5% | 93.6% |
-| `qwen/qwen3-vl-235b-a22b-thinking` | Alibaba | **down** | — | 94.2% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | Phala | **down** | 99.7% | 92.9% |
-| `qwen/qwen3.6-27b` | Morph | **down** | — | 59.3% |
-| `qwen/qwen3.6-27b` | SiliconFlow | **down** | 96.7% | 94.8% |
-| `qwen/qwen3.6-35b-a3b` | AtlasCloud | **down** | 95.9% | 92.7% |
-| `qwen/qwen3.6-35b-a3b` | SiliconFlow | **down** | 70.9% | 79.0% |
-| `stepfun/step-3.7-flash` | StepFun | **down** | 92.4% | 91.5% |
-| `stepfun/step-3.7-flash` | Novita | **down** | — | 80.5% |
-| `undi95/remm-slerp-l2-13b` | NextBit | **down** | — | 94.4% |
-| `xiaomi/mimo-v2.5` | Parasail | **down** | 36.8% | 91.2% |
-| `xiaomi/mimo-v2.5` | DeepInfra | **down** | 75.4% | 77.3% |
-| `xiaomi/mimo-v2.5-pro` | DeepInfra | **down** | 76.7% | 93.5% |
-| `z-ai/glm-4.6v` | Novita | **down** | — | 93.4% |
-| `z-ai/glm-4.7-flash` | Cloudflare | **down** | 17.5% | 16.5% |
-| `z-ai/glm-4.7-flash` | Novita | **down** | 67.9% | 70.6% |
-| `z-ai/glm-5` | Z.AI | **down** | 94.4% | 94.4% |
-| `z-ai/glm-5` | Parasail | **down** | 96.7% | 94.0% |
-| `z-ai/glm-5-turbo` | Z.AI | **down** | — | 90.1% |
-| `z-ai/glm-5.1` | DigitalOcean | **down** | — | 69.2% |
-| `z-ai/glm-5.1` | AtlasCloud | **down** | 92.1% | 93.2% |
-| `z-ai/glm-5.1` | Novita | **down** | 96.7% | 92.0% |
-| … | +60 more | | | |
+| `qwen/qwen3.6-27b` | Morph | **down** | — | 56.4% |
+| `qwen/qwen3.6-35b-a3b` | SiliconFlow | **down** | 94.7% | 76.4% |
+| `z-ai/glm-4.7-flash` | Cloudflare | **down** | 12.3% | 21.9% |
+| `z-ai/glm-4.7-flash` | Novita | **down** | 60.0% | 68.1% |
+| `z-ai/glm-5.1` | DigitalOcean | **down** | — | 78.2% |
+| `z-ai/glm-5.2` | Cloudflare | **down** | — | 75.0% |
+| `anthropic/claude-fable-5` | Google | **degraded** | 63.6% | 82.9% |
+| `anthropic/claude-fable-5` | Anthropic | **degraded** | 84.0% | 85.0% |
+| `cohere/command-r-08-2024` | Cohere | **degraded** | — | 97.3% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | **degraded** | 95.9% | 94.8% |
+| `deepseek/deepseek-chat-v3.1` | SiliconFlow | **degraded** | 95.7% | 87.3% |
+| `deepseek/deepseek-r1` | Azure | **degraded** | — | 95.5% |
+| `deepseek/deepseek-v3.1-terminus` | SiliconFlow | **degraded** | 96.7% | 97.2% |
+| `deepseek/deepseek-v4-flash` | Fireworks | **degraded** | 97.1% | 97.9% |
+| `deepseek/deepseek-v4-pro` | StreamLake | **degraded** | 99.8% | 97.4% |
+| `deepseek/deepseek-v4-pro` | WandB | **degraded** | 97.9% | 97.7% |
+| `deepseek/deepseek-v4-pro` | Together | **degraded** | 98.4% | 97.1% |
+| `google/gemini-2.5-pro` | Google | **degraded** | 93.2% | 94.5% |
+| `google/gemini-2.5-pro` | Google AI Studio | **degraded** | 97.3% | 96.8% |
+| `google/gemini-2.5-pro-preview` | Google | **degraded** | 97.4% | 97.9% |
+| `google/gemini-2.5-pro-preview` | Google | **degraded** | 94.7% | 95.6% |
+| `google/gemini-2.5-pro-preview` | Google AI Studio | **degraded** | — | 96.9% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | **degraded** | 96.8% | 98.0% |
+| `google/gemini-2.5-pro-preview-05-06` | Google AI Studio | **degraded** | 100.0% | 96.6% |
+| `google/gemini-3.1-flash-image` | Google AI Studio | **degraded** | 95.9% | 96.0% |
+| `google/gemini-3.1-flash-image-preview` | Google AI Studio | **degraded** | 97.3% | 97.7% |
+| `google/gemini-3.1-flash-lite` | Google | **degraded** | 95.9% | 96.8% |
+| `google/gemini-3.1-flash-lite-preview` | Google AI Studio | **degraded** | 97.8% | 97.4% |
+| `google/gemma-3-27b-it` | Novita | **degraded** | 88.9% | 84.8% |
+| `google/gemma-3-27b-it` | Phala | **degraded** | 96.9% | 80.1% |
+| `google/gemma-4-26b-a4b-it` | DekaLLM | **degraded** | 93.8% | 97.7% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | **degraded** | 90.6% | 95.8% |
+| `google/gemma-4-26b-a4b-it` | Venice | **degraded** | 99.4% | 97.5% |
+| `google/gemma-4-31b-it` | DeepInfra | **degraded** | 93.0% | 97.0% |
+| `google/gemma-4-31b-it` | Chutes | **degraded** | 100.0% | 82.7% |
+| `google/gemma-4-31b-it` | SiliconFlow | **degraded** | 86.9% | 91.2% |
+| `google/gemma-4-31b-it` | Parasail | **degraded** | 93.3% | 92.4% |
+| `google/gemma-4-31b-it` | Together | **degraded** | 98.2% | 92.1% |
+| `google/gemma-4-31b-it` | Together | **degraded** | 99.8% | 97.5% |
+| `meta-llama/llama-3.3-70b-instruct` | DeepInfra | **degraded** | 93.4% | 94.8% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | **degraded** | 98.6% | 95.1% |
+| `meta-llama/llama-3.3-70b-instruct` | Cloudflare | **degraded** | 98.5% | 97.5% |
+| `meta-llama/llama-3.3-70b-instruct` | Google | **degraded** | 90.3% | 91.9% |
+| `meta-llama/llama-3.3-70b-instruct` | Together | **degraded** | — | 97.7% |
+| `minimax/minimax-m2.5` | Mara | **degraded** | 82.9% | 95.9% |
+| `minimax/minimax-m2.7` | Mara | **degraded** | 80.4% | 94.2% |
+| `minimax/minimax-m2.7` | Morph | **degraded** | 100.0% | 94.7% |
+| … | +66 more | | | |
 

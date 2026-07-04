@@ -69,22 +69,24 @@ up 524, degraded 108, down 27, idle 216.
 
 Currently down (27):
 
-- `amazon/nova-micro-v1` @ Amazon Bedrock (30m uptime 61%)
-- `anthropic/claude-fable-5` @ Google (30m uptime 78%)
-- `deepseek/deepseek-chat-v3.1` @ SiliconFlow (30m uptime 66%)
-- `deepseek/deepseek-chat-v3.1` @ AtlasCloud (30m uptime 73%)
-- `deepseek/deepseek-chat-v3.1` @ WandB (30m uptime 77%)
-- `deepseek/deepseek-v4-pro` @ Fireworks (30m uptime 27%)
-- `google/gemini-2.5-flash` @ Google (30m uptime 69%)
-- `google/gemma-4-26b-a4b-it` @ Cloudflare (30m uptime 66%)
-- `google/gemma-4-31b-it` @ Chutes (30m uptime 46%)
-- `google/gemma-4-31b-it` @ SiliconFlow (30m uptime 52%)
-- `google/gemma-4-31b-it` @ Phala (30m uptime 79%)
-- `mistralai/mistral-nemo` @ Novita (30m uptime 71%)
-- `nvidia/nemotron-3-nano-30b-a3b` @ Novita (30m uptime 69%)
-- `nvidia/nemotron-3-ultra-550b-a55b` @ DeepInfra (30m uptime 73%)
-- `nvidia/nemotron-3-ultra-550b-a55b` @ Nebius (30m uptime 62%)
-- plus 12 more
+| model | provider | 30m uptime | 5m uptime |
+|---|---|---|---|
+| `amazon/nova-micro-v1` | Amazon Bedrock | 61% | n/a |
+| `anthropic/claude-fable-5` | Google | 78% | n/a |
+| `deepseek/deepseek-chat-v3.1` | SiliconFlow | 66% | 91% |
+| `deepseek/deepseek-chat-v3.1` | AtlasCloud | 73% | 100% |
+| `deepseek/deepseek-chat-v3.1` | WandB | 77% | 100% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 27% | 29% |
+| `google/gemini-2.5-flash` | Google | 69% | 93% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 66% | 56% |
+| `google/gemma-4-31b-it` | Chutes | 46% | 59% |
+| `google/gemma-4-31b-it` | SiliconFlow | 52% | 98% |
+| `google/gemma-4-31b-it` | Phala | 79% | 71% |
+| `mistralai/mistral-nemo` | Novita | 71% | 68% |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 69% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 73% | 88% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Nebius | 62% | n/a |
+| plus 12 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

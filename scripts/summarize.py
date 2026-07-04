@@ -33,12 +33,16 @@ def main() -> None:
     if down:
         lines.append(f"Currently down ({len(down)}):")
         lines.append("")
+        lines.append("| model | provider | 30m uptime | 5m uptime |")
+        lines.append("|---|---|---|---|")
         for e in down[:DOWN_CAP]:
             u30 = (f"{e['up30m']:.0f}%" if isinstance(e["up30m"], (int, float))
                    else "n/a")
-            lines.append(f"- `{e['model']}` @ {e['provider']} (30m uptime {u30})")
+            u5 = (f"{e['up5m']:.0f}%" if isinstance(e["up5m"], (int, float))
+                  else "n/a")
+            lines.append(f"| `{e['model']}` | {e['provider']} | {u30} | {u5} |")
         if len(down) > DOWN_CAP:
-            lines.append(f"- plus {len(down) - DOWN_CAP} more")
+            lines.append(f"| plus {len(down) - DOWN_CAP} more | | | |")
     else:
         lines.append("No endpoints are fully down.")
     lines += ["", "Full snapshot: [`status/latest.json`](status/latest.json). "

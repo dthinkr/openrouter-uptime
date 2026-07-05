@@ -78,31 +78,28 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-05T00:09:37+00:00 UTC)
+## Current status (2026-07-05T04:55:08+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 554, degraded 72, down 21, idle 228.
+up 536, degraded 82, down 13, idle 244.
 
-Currently down (21):
+Currently down (13):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 28% | 12% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 80% | 100% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 23% | 42% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 68% | 87% |
-| `google/gemma-4-31b-it` | Chutes | 61% | 57% |
-| `mistralai/mistral-nemo` | Novita | 79% | 73% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 48% | 63% |
-| `openai/gpt-oss-120b` | Mara | 25% | 51% |
-| `openai/gpt-oss-20b` | Parasail | 74% | 97% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 5% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | WandB | 78% | 100% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | DeepInfra | 28% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 42% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Novita | 71% | n/a |
-| `qwen/qwen3.5-122b-a10b` | SiliconFlow | 23% | n/a |
-| plus 6 more | | | |
+| `anthropic/claude-fable-5` | Google | 73% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 49% | 56% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 66% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 65% | 34% |
+| `openai/gpt-5.4-nano` | OpenAI | 75% | 70% |
+| `openai/gpt-oss-120b` | Mara | 69% | 72% |
+| `openai/gpt-oss-20b` | Parasail | 74% | 100% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 14% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | Nebius | 66% | n/a |
+| `z-ai/glm-4.7-flash` | Cloudflare | 15% | 2% |
+| `z-ai/glm-4.7-flash` | Novita | 54% | 77% |
+| `z-ai/glm-5` | GMICloud | 74% | 53% |
+| `z-ai/glm-5.2` | DigitalOcean | 77% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

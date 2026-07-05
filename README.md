@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-05T14:41:03+00:00 UTC)
+## Current status (2026-07-05T16:06:29+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 523, degraded 116, down 18, idle 218.
+up 540, degraded 101, down 20, idle 214.
 
-Currently down (18):
+Currently down (20):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 58% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 5% | 6% |
-| `google/gemini-2.5-flash` | Google | 73% | 85% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 55% | 52% |
-| `google/gemma-4-31b-it` | Chutes | 75% | 78% |
-| `google/gemma-4-31b-it` | SiliconFlow | 56% | n/a |
-| `meta-llama/llama-4-maverick` | Novita | 77% | 100% |
-| `mistralai/mistral-nemo` | Novita | 79% | 65% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 33% | 33% |
-| `openai/gpt-oss-120b` | Mara | 29% | n/a |
-| `openai/gpt-oss-120b` | SiliconFlow | 73% | 53% |
-| `openai/gpt-oss-20b` | Parasail | 76% | 100% |
-| `qwen/qwen3-coder` | Google | 10% | n/a |
-| `z-ai/glm-4.7-flash` | Cloudflare | 37% | 45% |
-| `z-ai/glm-4.7-flash` | Novita | 52% | 80% |
-| plus 3 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 78% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 61% | 0% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 3% | 3% |
+| `google/gemini-2.5-flash` | Google | 23% | n/a |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 67% | 54% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 64% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 51% | 48% |
+| `google/gemma-4-31b-it` | SiliconFlow | 20% | 80% |
+| `openai/gpt-oss-120b` | Mara | 36% | n/a |
+| `openai/gpt-oss-20b` | Parasail | 80% | 82% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | DeepInfra | 54% | 99% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 69% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | Novita | 77% | 75% |
+| `x-ai/grok-4.20-multi-agent` | xAI | 67% | n/a |
+| `xiaomi/mimo-v2.5` | DeepInfra | 80% | 97% |
+| plus 5 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

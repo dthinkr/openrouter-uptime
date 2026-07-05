@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-04T22:59:59+00:00 UTC)
+## Current status (2026-07-05T00:09:37+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 538, degraded 86, down 16, idle 235.
+up 554, degraded 72, down 21, idle 228.
 
-Currently down (16):
+Currently down (21):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 11% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 22% | 20% |
-| `google/gemini-3.5-flash` | Google | 79% | 80% |
-| `google/gemma-3-27b-it` | Phala | 79% | 79% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 68% | 58% |
-| `mistralai/mistral-nemo` | Novita | 65% | 100% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 42% | n/a |
-| `openai/gpt-oss-120b` | Mara | 37% | n/a |
-| `openai/gpt-oss-20b` | Parasail | 76% | 100% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 43% | 100% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | DeepInfra | 64% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 68% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Novita | 63% | n/a |
-| `z-ai/glm-4.7-flash` | Cloudflare | 29% | 35% |
-| `z-ai/glm-4.7-flash` | Novita | 55% | 63% |
-| plus 1 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 28% | 12% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 80% | 100% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 23% | 42% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 68% | 87% |
+| `google/gemma-4-31b-it` | Chutes | 61% | 57% |
+| `mistralai/mistral-nemo` | Novita | 79% | 73% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 48% | 63% |
+| `openai/gpt-oss-120b` | Mara | 25% | 51% |
+| `openai/gpt-oss-20b` | Parasail | 74% | 97% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 5% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | WandB | 78% | 100% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | DeepInfra | 28% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 42% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | Novita | 71% | n/a |
+| `qwen/qwen3.5-122b-a10b` | SiliconFlow | 23% | n/a |
+| plus 6 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

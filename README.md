@@ -78,29 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-05T12:14:29+00:00 UTC)
+## Current status (2026-07-05T14:41:03+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 521, degraded 115, down 14, idle 225.
+up 523, degraded 116, down 18, idle 218.
 
-Currently down (14):
+Currently down (18):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 62% | 25% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 4% | 7% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 65% | 77% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 45% | n/a |
-| `openai/gpt-5.4-nano` | OpenAI | 80% | 87% |
-| `openai/gpt-oss-120b` | Mara | 42% | 44% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 39% | 60% |
-| `qwen/qwen3-coder` | Google | 13% | n/a |
-| `x-ai/grok-4.20-multi-agent` | xAI | 64% | n/a |
-| `x-ai/grok-4.20-multi-agent` | xAI | 69% | n/a |
-| `z-ai/glm-4.7-flash` | Cloudflare | 30% | 38% |
-| `z-ai/glm-4.7-flash` | Novita | 57% | 61% |
-| `z-ai/glm-5` | DigitalOcean | 45% | n/a |
-| `z-ai/glm-5.1` | DigitalOcean | 46% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 58% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 5% | 6% |
+| `google/gemini-2.5-flash` | Google | 73% | 85% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 55% | 52% |
+| `google/gemma-4-31b-it` | Chutes | 75% | 78% |
+| `google/gemma-4-31b-it` | SiliconFlow | 56% | n/a |
+| `meta-llama/llama-4-maverick` | Novita | 77% | 100% |
+| `mistralai/mistral-nemo` | Novita | 79% | 65% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 33% | 33% |
+| `openai/gpt-oss-120b` | Mara | 29% | n/a |
+| `openai/gpt-oss-120b` | SiliconFlow | 73% | 53% |
+| `openai/gpt-oss-20b` | Parasail | 76% | 100% |
+| `qwen/qwen3-coder` | Google | 10% | n/a |
+| `z-ai/glm-4.7-flash` | Cloudflare | 37% | 45% |
+| `z-ai/glm-4.7-flash` | Novita | 52% | 80% |
+| plus 3 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

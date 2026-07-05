@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-05T16:06:29+00:00 UTC)
+## Current status (2026-07-05T18:01:01+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 540, degraded 101, down 20, idle 214.
+up 541, degraded 93, down 24, idle 217.
 
-Currently down (20):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 78% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 61% | 0% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 3% | 3% |
-| `google/gemini-2.5-flash` | Google | 23% | n/a |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 67% | 54% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 64% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 51% | 48% |
-| `google/gemma-4-31b-it` | SiliconFlow | 20% | 80% |
-| `openai/gpt-oss-120b` | Mara | 36% | n/a |
-| `openai/gpt-oss-20b` | Parasail | 80% | 82% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | DeepInfra | 54% | 99% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 69% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Novita | 77% | 75% |
-| `x-ai/grok-4.20-multi-agent` | xAI | 67% | n/a |
-| `xiaomi/mimo-v2.5` | DeepInfra | 80% | 97% |
-| plus 5 more | | | |
+| `anthropic/claude-sonnet-4.6` | Anthropic | 70% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 24% | 1% |
+| `google/gemini-2.5-flash` | Google | 72% | 64% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 10% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 52% | 74% |
+| `google/gemma-4-31b-it` | SiliconFlow | 63% | 100% |
+| `google/gemma-4-31b-it` | Phala | 72% | 100% |
+| `nex-agi/nex-n2-pro` | Nex AGI | 64% | n/a |
+| `nex-agi/nex-n2-pro` | SiliconFlow | 58% | n/a |
+| `openai/gpt-oss-120b` | Mara | 54% | n/a |
+| `openai/gpt-oss-20b` | Parasail | 57% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 78% | 84% |
+| `qwen/qwen3.5-122b-a10b` | SiliconFlow | 48% | n/a |
+| `qwen/qwen3.5-27b` | Phala | 57% | n/a |
+| `qwen/qwen3.6-27b` | Morph | 65% | 0% |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

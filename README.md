@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-05T18:01:01+00:00 UTC)
+## Current status (2026-07-05T20:12:06+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 541, degraded 93, down 24, idle 217.
+up 540, degraded 96, down 21, idle 218.
 
-Currently down (24):
+Currently down (21):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-sonnet-4.6` | Anthropic | 70% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 24% | 1% |
-| `google/gemini-2.5-flash` | Google | 72% | 64% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 10% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 52% | 74% |
-| `google/gemma-4-31b-it` | SiliconFlow | 63% | 100% |
-| `google/gemma-4-31b-it` | Phala | 72% | 100% |
-| `nex-agi/nex-n2-pro` | Nex AGI | 64% | n/a |
-| `nex-agi/nex-n2-pro` | SiliconFlow | 58% | n/a |
-| `openai/gpt-oss-120b` | Mara | 54% | n/a |
-| `openai/gpt-oss-20b` | Parasail | 57% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 78% | 84% |
-| `qwen/qwen3.5-122b-a10b` | SiliconFlow | 48% | n/a |
-| `qwen/qwen3.5-27b` | Phala | 57% | n/a |
-| `qwen/qwen3.6-27b` | Morph | 65% | 0% |
-| plus 9 more | | | |
+| `deepseek/deepseek-v4-pro` | Fireworks | 9% | 2% |
+| `google/gemma-3-27b-it` | Phala | 79% | 69% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 71% | 84% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 20% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 72% | 62% |
+| `google/gemma-4-31b-it` | SiliconFlow | 32% | n/a |
+| `google/gemma-4-31b-it` | Phala | 76% | 74% |
+| `nex-agi/nex-n2-pro` | Nex AGI | 74% | n/a |
+| `openai/gpt-oss-120b` | Mara | 20% | 19% |
+| `openai/gpt-oss-20b` | Parasail | 54% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 42% | n/a |
+| `qwen/qwen3-coder` | Google | 30% | n/a |
+| `qwen/qwen3.6-27b` | Morph | 48% | n/a |
+| `qwen/qwen3.6-27b` | Chutes | 63% | 80% |
+| `x-ai/grok-4.20-multi-agent` | xAI | 46% | n/a |
+| plus 6 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

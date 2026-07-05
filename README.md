@@ -78,31 +78,26 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-05T07:55:16+00:00 UTC)
+## Current status (2026-07-05T10:10:38+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 519, degraded 98, down 16, idle 242.
+up 535, degraded 93, down 11, idle 236.
 
-Currently down (16):
+Currently down (11):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 73% | 97% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 23% | 27% |
-| `google/gemma-4-31b-it` | Together | 78% | 70% |
-| `openai/gpt-5.4-nano` | OpenAI | 79% | 82% |
-| `openai/gpt-oss-120b` | Mara | 61% | n/a |
-| `openai/gpt-oss-20b` | Parasail | 68% | 62% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 22% | 4% |
-| `z-ai/glm-4.6v` | Novita | 75% | n/a |
-| `z-ai/glm-4.6v` | Z.AI | 75% | n/a |
-| `z-ai/glm-4.7-flash` | Cloudflare | 27% | 8% |
-| `z-ai/glm-4.7-flash` | Novita | 61% | 39% |
-| `z-ai/glm-5` | GMICloud | 70% | 97% |
-| `z-ai/glm-5` | DigitalOcean | 62% | n/a |
-| `z-ai/glm-5` | Phala | 74% | n/a |
-| `z-ai/glm-5.2` | DekaLLM | 77% | 90% |
-| plus 1 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 65% | 59% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 38% | 28% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 53% | 67% |
+| `google/gemma-4-31b-it` | Together | 76% | 68% |
+| `mistralai/mistral-nemo` | Novita | 76% | 90% |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 49% | n/a |
+| `openai/gpt-oss-120b` | Mara | 48% | 40% |
+| `openai/gpt-oss-20b` | Parasail | 73% | 100% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 71% | 25% |
+| `z-ai/glm-4.7-flash` | Cloudflare | 37% | 20% |
+| `z-ai/glm-4.7-flash` | Novita | 51% | 47% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

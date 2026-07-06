@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-06T12:03:18+00:00 UTC)
+## Current status (2026-07-06T16:19:42+00:00 UTC)
 
-324 models polled, 875 inference endpoints:
-up 535, degraded 107, down 16, idle 217.
+325 models polled, 876 inference endpoints:
+up 522, degraded 136, down 23, idle 195.
 
-Currently down (16):
+Currently down (23):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-v4-pro` | Fireworks | 41% | 18% |
-| `google/gemma-3-27b-it` | Phala | 51% | 61% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 53% | 61% |
-| `google/gemma-4-31b-it` | Chutes | 38% | 10% |
-| `google/gemma-4-31b-it` | SiliconFlow | 8% | 1% |
-| `google/gemma-4-31b-it` | Phala | 74% | 80% |
-| `google/gemma-4-31b-it` | Together | 57% | 75% |
-| `minimax/minimax-m2.7` | Morph | 56% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 79% | 100% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 78% | 76% |
-| `openai/gpt-oss-20b` | Google | 46% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 14% | n/a |
-| `qwen/qwen3-coder` | Google | 36% | n/a |
-| `x-ai/grok-4.20-multi-agent` | xAI | 62% | n/a |
-| `z-ai/glm-4.7-flash` | Cloudflare | 18% | n/a |
-| plus 1 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 43% | 56% |
+| `google/gemma-3-27b-it` | Nebius | 52% | 98% |
+| `google/gemma-3-27b-it` | Phala | 69% | n/a |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 45% | 38% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 49% | 11% |
+| `google/gemma-4-31b-it` | Chutes | 69% | 35% |
+| `google/gemma-4-31b-it` | SiliconFlow | 64% | 64% |
+| `google/gemma-4-31b-it` | Phala | 78% | 85% |
+| `minimax/minimax-m2.7` | Mara | 73% | n/a |
+| `minimax/minimax-m3` | Parasail | 80% | 79% |
+| `minimax/minimax-m3` | DeepInfra | 78% | n/a |
+| `mistralai/ministral-8b-2512` | NextBit | 78% | 99% |
+| `mistralai/mistral-nemo` | Novita | 73% | 94% |
+| `openai/gpt-5.3-chat` | OpenAI | 79% | 56% |
+| plus 8 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

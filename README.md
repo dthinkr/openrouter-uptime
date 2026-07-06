@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-06T20:51:32+00:00 UTC)
+## Current status (2026-07-06T22:12:12+00:00 UTC)
 
-326 models polled, 890 inference endpoints:
-up 531, degraded 121, down 32, idle 206.
+326 models polled, 892 inference endpoints:
+up 557, degraded 109, down 17, idle 209.
 
-Currently down (32):
+Currently down (17):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 79% | 100% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 71% | n/a |
-| `deepseek/deepseek-v4-flash` | WandB | 28% | 93% |
-| `deepseek/deepseek-v4-pro` | WandB | 4% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 25% | 48% |
-| `google/gemma-3-27b-it` | Nebius | 67% | 50% |
-| `google/gemma-3-27b-it` | Phala | 75% | 94% |
-| `google/gemma-4-31b-it` | Chutes | 75% | 97% |
-| `google/gemma-4-31b-it` | SiliconFlow | 8% | 89% |
-| `google/gemma-4-31b-it` | Together | 63% | 91% |
-| `meta-llama/llama-3.1-70b-instruct` | WandB | 3% | n/a |
-| `meta-llama/llama-3.1-8b-instruct` | WandB | 15% | 33% |
-| `mistralai/mistral-nemo` | Novita | 71% | 90% |
-| `moonshotai/kimi-k2-0905` | Groq | 79% | 3% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 52% | 72% |
-| plus 17 more | | | |
+| `deepseek/deepseek-chat-v3.1` | Mara | 74% | 96% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 42% | 39% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 53% | 57% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 71% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 21% | n/a |
+| `mistralai/mistral-nemo` | Novita | 67% | 40% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 80% | 84% |
+| `openai/gpt-oss-120b` | Mara | 18% | 8% |
+| `openai/gpt-oss-20b` | Parasail | 44% | 39% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 64% | 57% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | Phala | 42% | 48% |
+| `qwen/qwen3-coder` | Google | 6% | n/a |
+| `qwen/qwen3.5-27b` | SiliconFlow | 79% | n/a |
+| `qwen/qwen3.5-27b` | Phala | 74% | n/a |
+| `x-ai/grok-4.20-multi-agent` | xAI | 41% | n/a |
+| plus 2 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

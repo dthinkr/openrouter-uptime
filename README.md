@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-06T18:53:56+00:00 UTC)
+## Current status (2026-07-06T20:51:32+00:00 UTC)
 
-325 models polled, 883 inference endpoints:
-up 546, degraded 113, down 19, idle 205.
+326 models polled, 890 inference endpoints:
+up 531, degraded 121, down 32, idle 206.
 
-Currently down (19):
+Currently down (32):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-v4-pro` | Fireworks | 37% | 23% |
-| `google/gemma-3-27b-it` | Novita | 80% | 74% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 49% | 41% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 47% | n/a |
-| `google/gemma-4-31b-it` | SiliconFlow | 16% | 0% |
-| `mistralai/mistral-nemo` | Novita | 73% | 66% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 71% | 72% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 62% | 75% |
-| `openai/gpt-5.3-chat` | OpenAI | 72% | 93% |
-| `openai/gpt-oss-120b` | Mara | 72% | 53% |
-| `openai/gpt-oss-120b` | Parasail | 33% | 38% |
-| `openai/gpt-oss-20b` | Google | 28% | n/a |
-| `qwen/qwen-2.5-72b-instruct` | Novita | 77% | n/a |
-| `qwen/qwen3.6-35b-a3b` | AtlasCloud | 55% | 62% |
-| `qwen/qwen3.6-35b-a3b` | SiliconFlow | 42% | 51% |
-| plus 4 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 79% | 100% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 71% | n/a |
+| `deepseek/deepseek-v4-flash` | WandB | 28% | 93% |
+| `deepseek/deepseek-v4-pro` | WandB | 4% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 25% | 48% |
+| `google/gemma-3-27b-it` | Nebius | 67% | 50% |
+| `google/gemma-3-27b-it` | Phala | 75% | 94% |
+| `google/gemma-4-31b-it` | Chutes | 75% | 97% |
+| `google/gemma-4-31b-it` | SiliconFlow | 8% | 89% |
+| `google/gemma-4-31b-it` | Together | 63% | 91% |
+| `meta-llama/llama-3.1-70b-instruct` | WandB | 3% | n/a |
+| `meta-llama/llama-3.1-8b-instruct` | WandB | 15% | 33% |
+| `mistralai/mistral-nemo` | Novita | 71% | 90% |
+| `moonshotai/kimi-k2-0905` | Groq | 79% | 3% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 52% | 72% |
+| plus 17 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

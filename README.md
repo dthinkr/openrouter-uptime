@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-06T16:19:42+00:00 UTC)
+## Current status (2026-07-06T18:53:56+00:00 UTC)
 
-325 models polled, 876 inference endpoints:
-up 522, degraded 136, down 23, idle 195.
+325 models polled, 883 inference endpoints:
+up 546, degraded 113, down 19, idle 205.
 
-Currently down (23):
+Currently down (19):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 43% | 56% |
-| `google/gemma-3-27b-it` | Nebius | 52% | 98% |
-| `google/gemma-3-27b-it` | Phala | 69% | n/a |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 45% | 38% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 49% | 11% |
-| `google/gemma-4-31b-it` | Chutes | 69% | 35% |
-| `google/gemma-4-31b-it` | SiliconFlow | 64% | 64% |
-| `google/gemma-4-31b-it` | Phala | 78% | 85% |
-| `minimax/minimax-m2.7` | Mara | 73% | n/a |
-| `minimax/minimax-m3` | Parasail | 80% | 79% |
-| `minimax/minimax-m3` | DeepInfra | 78% | n/a |
-| `mistralai/ministral-8b-2512` | NextBit | 78% | 99% |
-| `mistralai/mistral-nemo` | Novita | 73% | 94% |
-| `openai/gpt-5.3-chat` | OpenAI | 79% | 56% |
-| plus 8 more | | | |
+| `deepseek/deepseek-v4-pro` | Fireworks | 37% | 23% |
+| `google/gemma-3-27b-it` | Novita | 80% | 74% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 49% | 41% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 47% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 16% | 0% |
+| `mistralai/mistral-nemo` | Novita | 73% | 66% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 71% | 72% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 62% | 75% |
+| `openai/gpt-5.3-chat` | OpenAI | 72% | 93% |
+| `openai/gpt-oss-120b` | Mara | 72% | 53% |
+| `openai/gpt-oss-120b` | Parasail | 33% | 38% |
+| `openai/gpt-oss-20b` | Google | 28% | n/a |
+| `qwen/qwen-2.5-72b-instruct` | Novita | 77% | n/a |
+| `qwen/qwen3.6-35b-a3b` | AtlasCloud | 55% | 62% |
+| `qwen/qwen3.6-35b-a3b` | SiliconFlow | 42% | 51% |
+| plus 4 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-06T07:20:05+00:00 UTC)
+## Current status (2026-07-06T12:03:18+00:00 UTC)
 
 324 models polled, 875 inference endpoints:
-up 530, degraded 123, down 20, idle 202.
+up 535, degraded 107, down 16, idle 217.
 
-Currently down (20):
+Currently down (16):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 63% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 67% | 77% |
-| `google/gemma-3-27b-it` | Nebius | 51% | 27% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 2% | n/a |
-| `google/gemma-4-31b-it` | SiliconFlow | 50% | 100% |
-| `openai/gpt-oss-120b` | Mara | 29% | 34% |
-| `qwen/qwen-2.5-72b-instruct` | Novita | 78% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 54% | 66% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | Nebius | 67% | 38% |
-| `qwen/qwen3-coder` | Google | 11% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | SiliconFlow | 70% | n/a |
-| `qwen/qwen3.5-27b` | SiliconFlow | 77% | n/a |
-| `qwen/qwen3.5-27b` | Phala | 67% | n/a |
-| `x-ai/grok-4.20-multi-agent` | xAI | 44% | 27% |
-| `x-ai/grok-4.20-multi-agent` | xAI | 75% | n/a |
-| plus 5 more | | | |
+| `deepseek/deepseek-v4-pro` | Fireworks | 41% | 18% |
+| `google/gemma-3-27b-it` | Phala | 51% | 61% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 53% | 61% |
+| `google/gemma-4-31b-it` | Chutes | 38% | 10% |
+| `google/gemma-4-31b-it` | SiliconFlow | 8% | 1% |
+| `google/gemma-4-31b-it` | Phala | 74% | 80% |
+| `google/gemma-4-31b-it` | Together | 57% | 75% |
+| `minimax/minimax-m2.7` | Morph | 56% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 79% | 100% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 78% | 76% |
+| `openai/gpt-oss-20b` | Google | 46% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 14% | n/a |
+| `qwen/qwen3-coder` | Google | 36% | n/a |
+| `x-ai/grok-4.20-multi-agent` | xAI | 62% | n/a |
+| `z-ai/glm-4.7-flash` | Cloudflare | 18% | n/a |
+| plus 1 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

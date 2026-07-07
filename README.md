@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-07T19:52:12+00:00 UTC)
+## Current status (2026-07-07T21:22:08+00:00 UTC)
 
-326 models polled, 900 inference endpoints:
-up 554, degraded 112, down 20, idle 214.
+326 models polled, 902 inference endpoints:
+up 554, degraded 113, down 28, idle 207.
 
-Currently down (20):
+Currently down (28):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 68% | 100% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 54% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 21% | 14% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 72% | 90% |
-| `google/gemma-4-31b-it` | DeepInfra | 50% | 79% |
-| `google/gemma-4-31b-it` | Chutes | 64% | 78% |
-| `google/gemma-4-31b-it` | SiliconFlow | 24% | 67% |
-| `google/gemma-4-31b-it` | Phala | 76% | 98% |
-| `minimax/minimax-m2.7` | Mara | 80% | n/a |
-| `moonshotai/kimi-k2.5` | Chutes | 79% | n/a |
-| `moonshotai/kimi-k2.7-code` | Together | 64% | 0% |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 65% | 97% |
-| `openai/gpt-oss-120b` | Mara | 32% | n/a |
-| `openai/gpt-oss-20b` | Google | 16% | 22% |
-| plus 5 more | | | |
+| `deepseek/deepseek-chat-v3.1` | Mara | 78% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 10% | 4% |
+| `google/gemini-2.5-pro` | Google | 71% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 77% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 71% | n/a |
+| `google/gemma-3-27b-it` | Phala | 24% | 38% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 63% | 66% |
+| `google/gemma-4-31b-it` | DeepInfra | 62% | 81% |
+| `google/gemma-4-31b-it` | Chutes | 69% | 63% |
+| `google/gemma-4-31b-it` | SiliconFlow | 21% | 51% |
+| `google/gemma-4-31b-it` | Phala | 50% | 70% |
+| `google/gemma-4-31b-it` | Together | 73% | 80% |
+| `mistralai/mistral-nemo` | Novita | 73% | 100% |
+| `moonshotai/kimi-k2.6` | Decart | 26% | 100% |
+| `moonshotai/kimi-k2.6` | Venice | 67% | n/a |
+| plus 13 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

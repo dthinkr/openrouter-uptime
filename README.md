@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-07T11:47:59+00:00 UTC)
+## Current status (2026-07-07T14:28:33+00:00 UTC)
 
-326 models polled, 895 inference endpoints:
-up 560, degraded 114, down 24, idle 197.
+324 models polled, 897 inference endpoints:
+up 538, degraded 134, down 36, idle 189.
 
-Currently down (24):
+Currently down (36):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 64% | 100% |
-| `deepseek/deepseek-chat-v3.1` | WandB | 75% | 100% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 25% | 24% |
-| `google/gemini-2.5-pro-preview` | Google | 79% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 80% | 100% |
-| `google/gemma-3-27b-it` | Phala | 65% | n/a |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 57% | 66% |
-| `google/gemma-4-31b-it` | SiliconFlow | 63% | 50% |
-| `minimax/minimax-m3` | Parasail | 54% | 31% |
-| `mistralai/mistral-nemo` | Novita | 74% | 100% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 64% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 1% | n/a |
-| `openai/gpt-oss-120b` | Mara | 67% | n/a |
-| `openai/gpt-oss-20b` | Google | 6% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 12% | 12% |
-| plus 9 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | 89% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 28% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 28% | 24% |
+| `google/gemini-2.5-flash` | Google | 80% | 83% |
+| `google/gemma-3-27b-it` | Novita | 74% | 93% |
+| `google/gemma-3-27b-it` | Phala | 56% | 26% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 68% | 67% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 28% | 5% |
+| `google/gemma-4-31b-it` | Chutes | 35% | 11% |
+| `google/gemma-4-31b-it` | SiliconFlow | 26% | 84% |
+| `google/gemma-4-31b-it` | Phala | 68% | 45% |
+| `minimax/minimax-m2.7` | Mara | 63% | n/a |
+| `minimax/minimax-m2.7` | Morph | 69% | n/a |
+| `minimax/minimax-m3` | Parasail | 73% | 85% |
+| `mistralai/mistral-nemo` | Novita | 56% | 100% |
+| plus 21 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

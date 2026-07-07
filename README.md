@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-07T04:50:37+00:00 UTC)
+## Current status (2026-07-07T08:21:31+00:00 UTC)
 
 326 models polled, 895 inference endpoints:
-up 552, degraded 106, down 17, idle 220.
+up 557, degraded 117, down 35, idle 186.
 
-Currently down (17):
+Currently down (35):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `google/gemini-2.5-flash` | Google | 64% | 78% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 71% | 74% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 63% | 36% |
-| `google/gemma-4-31b-it` | SiliconFlow | 22% | n/a |
-| `google/gemma-4-31b-it` | Together | 71% | 81% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 47% | 53% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Nebius | 54% | n/a |
-| `openai/gpt-oss-120b` | Mara | 53% | n/a |
-| `openai/gpt-oss-20b` | Parasail | 43% | 71% |
-| `openai/gpt-oss-20b` | Google | 40% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 5% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | Nebius | 78% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | Novita | 75% | 66% |
-| `x-ai/grok-4.20-multi-agent` | xAI | 60% | 48% |
-| `x-ai/grok-4.20-multi-agent` | xAI | 63% | n/a |
-| plus 2 more | | | |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 75% | 0% |
+| `deepseek/deepseek-chat-v3.1` | WandB | 67% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 54% | n/a |
+| `deepseek/deepseek-v4-flash` | WandB | 25% | 100% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 36% | 19% |
+| `google/gemini-2.5-pro` | Google | 78% | n/a |
+| `google/gemini-2.5-pro` | Google AI Studio | 78% | 94% |
+| `google/gemini-2.5-pro-preview` | Google | 78% | n/a |
+| `google/gemini-2.5-pro-preview` | Google AI Studio | 78% | 94% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 78% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google AI Studio | 78% | 94% |
+| `google/gemma-3-27b-it` | Phala | 69% | 74% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 79% | 82% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 53% | 90% |
+| `google/gemma-4-31b-it` | Chutes | 62% | 71% |
+| plus 20 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

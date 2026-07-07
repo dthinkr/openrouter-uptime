@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-07T08:21:31+00:00 UTC)
+## Current status (2026-07-07T11:47:59+00:00 UTC)
 
 326 models polled, 895 inference endpoints:
-up 557, degraded 117, down 35, idle 186.
+up 560, degraded 114, down 24, idle 197.
 
-Currently down (35):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 75% | 0% |
-| `deepseek/deepseek-chat-v3.1` | WandB | 67% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Mara | 54% | n/a |
-| `deepseek/deepseek-v4-flash` | WandB | 25% | 100% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 36% | 19% |
-| `google/gemini-2.5-pro` | Google | 78% | n/a |
-| `google/gemini-2.5-pro` | Google AI Studio | 78% | 94% |
-| `google/gemini-2.5-pro-preview` | Google | 78% | n/a |
-| `google/gemini-2.5-pro-preview` | Google AI Studio | 78% | 94% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 78% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google AI Studio | 78% | 94% |
-| `google/gemma-3-27b-it` | Phala | 69% | 74% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 79% | 82% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 53% | 90% |
-| `google/gemma-4-31b-it` | Chutes | 62% | 71% |
-| plus 20 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 64% | 100% |
+| `deepseek/deepseek-chat-v3.1` | WandB | 75% | 100% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 25% | 24% |
+| `google/gemini-2.5-pro-preview` | Google | 79% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 80% | 100% |
+| `google/gemma-3-27b-it` | Phala | 65% | n/a |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 57% | 66% |
+| `google/gemma-4-31b-it` | SiliconFlow | 63% | 50% |
+| `minimax/minimax-m3` | Parasail | 54% | 31% |
+| `mistralai/mistral-nemo` | Novita | 74% | 100% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 64% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 1% | n/a |
+| `openai/gpt-oss-120b` | Mara | 67% | n/a |
+| `openai/gpt-oss-20b` | Google | 6% | 0% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 12% | 12% |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

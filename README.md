@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-07T00:06:31+00:00 UTC)
+## Current status (2026-07-07T04:50:37+00:00 UTC)
 
-326 models polled, 894 inference endpoints:
-up 546, degraded 121, down 16, idle 211.
+326 models polled, 895 inference endpoints:
+up 552, degraded 106, down 17, idle 220.
 
-Currently down (16):
+Currently down (17):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | Mara | 78% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 57% | 64% |
-| `google/gemini-2.5-flash` | Google | 68% | 85% |
-| `google/gemini-2.5-pro` | Google | 57% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 57% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 57% | n/a |
-| `google/gemma-3-27b-it` | Novita | 79% | 89% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 79% | 98% |
-| `google/gemma-4-31b-it` | Chutes | 66% | 81% |
-| `mistralai/mistral-nemo` | Novita | 64% | 90% |
-| `openai/gpt-oss-120b` | Mara | 31% | 100% |
-| `openai/gpt-oss-20b` | Google | 3% | n/a |
-| `qwen/qwen3-coder` | Google | 23% | n/a |
-| `x-ai/grok-4.20-multi-agent` | xAI | 44% | n/a |
-| `x-ai/grok-4.20-multi-agent` | xAI | 77% | n/a |
-| plus 1 more | | | |
+| `google/gemini-2.5-flash` | Google | 64% | 78% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 71% | 74% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 63% | 36% |
+| `google/gemma-4-31b-it` | SiliconFlow | 22% | n/a |
+| `google/gemma-4-31b-it` | Together | 71% | 81% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 47% | 53% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Nebius | 54% | n/a |
+| `openai/gpt-oss-120b` | Mara | 53% | n/a |
+| `openai/gpt-oss-20b` | Parasail | 43% | 71% |
+| `openai/gpt-oss-20b` | Google | 40% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | SiliconFlow | 5% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | Nebius | 78% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | Novita | 75% | 66% |
+| `x-ai/grok-4.20-multi-agent` | xAI | 60% | 48% |
+| `x-ai/grok-4.20-multi-agent` | xAI | 63% | n/a |
+| plus 2 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

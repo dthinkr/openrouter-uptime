@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-07T14:28:33+00:00 UTC)
+## Current status (2026-07-07T17:12:32+00:00 UTC)
 
 324 models polled, 897 inference endpoints:
-up 538, degraded 134, down 36, idle 189.
+up 542, degraded 126, down 26, idle 203.
 
-Currently down (36):
+Currently down (26):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | 89% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 28% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 28% | 24% |
-| `google/gemini-2.5-flash` | Google | 80% | 83% |
-| `google/gemma-3-27b-it` | Novita | 74% | 93% |
-| `google/gemma-3-27b-it` | Phala | 56% | 26% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 68% | 67% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 28% | 5% |
-| `google/gemma-4-31b-it` | Chutes | 35% | 11% |
-| `google/gemma-4-31b-it` | SiliconFlow | 26% | 84% |
-| `google/gemma-4-31b-it` | Phala | 68% | 45% |
-| `minimax/minimax-m2.7` | Mara | 63% | n/a |
-| `minimax/minimax-m2.7` | Morph | 69% | n/a |
-| `minimax/minimax-m3` | Parasail | 73% | 85% |
-| `mistralai/mistral-nemo` | Novita | 56% | 100% |
-| plus 21 more | | | |
+| `deepseek/deepseek-v4-pro` | Fireworks | 24% | 27% |
+| `google/gemma-3-27b-it` | Nebius | 80% | 98% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 72% | 72% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 56% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 66% | 47% |
+| `google/gemma-4-31b-it` | SiliconFlow | 50% | 94% |
+| `minimax/minimax-m2.7` | SambaNova | 69% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 49% | n/a |
+| `nvidia/nemotron-3-super-120b-a12b` | DigitalOcean | 44% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 76% | 82% |
+| `openai/gpt-5.1-codex-mini` | Azure | 65% | n/a |
+| `openai/gpt-oss-120b` | Parasail | 72% | n/a |
+| `openai/gpt-oss-20b` | Google | 0% | n/a |
+| `qwen/qwen-2.5-72b-instruct` | Novita | 79% | 96% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 75% | 86% |
+| plus 11 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

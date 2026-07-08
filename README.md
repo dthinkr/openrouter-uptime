@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-08T17:27:02+00:00 UTC)
+## Current status (2026-07-08T19:21:56+00:00 UTC)
 
-327 models polled, 903 inference endpoints:
-up 542, degraded 135, down 21, idle 205.
+328 models polled, 905 inference endpoints:
+up 540, degraded 137, down 24, idle 204.
 
-Currently down (21):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 48% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 67% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 64% | 56% |
-| `google/gemma-3-27b-it` | Novita | 75% | 78% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 65% | 69% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 36% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 71% | 100% |
-| `google/gemma-4-31b-it` | Together | 71% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | AkashML | 77% | 100% |
-| `minimax/minimax-m2.5` | WandB | 71% | n/a |
-| `minimax/minimax-m3` | Parasail | 73% | 93% |
-| `mistralai/ministral-8b-2512` | NextBit | 67% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | Novita | 63% | 82% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | DigitalOcean | 63% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | Phala | 74% | 49% |
-| plus 6 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 71% | n/a |
+| `anthropic/claude-sonnet-4.6` | Google | 0% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 27% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 76% | 86% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 66% | 80% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 72% | 100% |
+| `google/gemma-4-31b-it` | SiliconFlow | 76% | 47% |
+| `google/gemma-4-31b-it` | Together | 76% | n/a |
+| `minimax/minimax-m3` | Parasail | 75% | 75% |
+| `mistralai/mistral-nemo` | Novita | 78% | 100% |
+| `moonshotai/kimi-k2.6` | Venice | 77% | n/a |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 52% | n/a |
+| `moonshotai/kimi-k2.6` | Phala | 77% | 79% |
+| `openai/gpt-oss-120b` | Mara | 30% | 99% |
+| `openai/gpt-oss-20b` | DekaLLM | 74% | 70% |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

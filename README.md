@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-08T07:26:46+00:00 UTC)
+## Current status (2026-07-08T10:14:39+00:00 UTC)
 
 326 models polled, 903 inference endpoints:
-up 537, degraded 141, down 22, idle 203.
+up 551, degraded 125, down 24, idle 203.
 
-Currently down (22):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 69% | 86% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 32% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Mara | 38% | 35% |
-| `deepseek/deepseek-v3.2` | DigitalOcean | 30% | 5% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 33% | 27% |
-| `google/gemini-2.5-pro-preview` | Google | 76% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 76% | n/a |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 39% | 12% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 74% | 80% |
-| `google/gemma-4-31b-it` | Chutes | 76% | 98% |
-| `google/gemma-4-31b-it` | SiliconFlow | 16% | 99% |
-| `meta-llama/llama-3.3-70b-instruct` | Cloudflare | 57% | n/a |
-| `moonshotai/kimi-k2.6` | Phala | 68% | 68% |
-| `openai/gpt-5.4-mini` | OpenAI | 70% | 66% |
-| `openai/gpt-oss-120b` | Mara | 32% | 59% |
-| plus 7 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | n/a |
+| `deepseek/deepseek-chat-v3.1` | WandB | 62% | 43% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 38% | 38% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 15% | 16% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 34% | 46% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 35% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 25% | 17% |
+| `google/gemma-4-31b-it` | SiliconFlow | 3% | 13% |
+| `google/gemma-4-31b-it` | Phala | 79% | 68% |
+| `google/gemma-4-31b-it` | Together | 70% | 74% |
+| `minimax/minimax-m3` | AtlasCloud | 76% | n/a |
+| `mistralai/mistral-nemo` | Novita | 68% | 99% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 69% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | n/a |
+| `openai/gpt-oss-120b` | Mara | 25% | n/a |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

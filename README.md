@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-08T19:21:56+00:00 UTC)
+## Current status (2026-07-08T21:05:21+00:00 UTC)
 
-328 models polled, 905 inference endpoints:
-up 540, degraded 137, down 24, idle 204.
+328 models polled, 906 inference endpoints:
+up 553, degraded 118, down 19, idle 216.
 
-Currently down (24):
+Currently down (19):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 71% | n/a |
-| `anthropic/claude-sonnet-4.6` | Google | 0% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 27% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 76% | 86% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 66% | 80% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 72% | 100% |
-| `google/gemma-4-31b-it` | SiliconFlow | 76% | 47% |
-| `google/gemma-4-31b-it` | Together | 76% | n/a |
-| `minimax/minimax-m3` | Parasail | 75% | 75% |
-| `mistralai/mistral-nemo` | Novita | 78% | 100% |
-| `moonshotai/kimi-k2.6` | Venice | 77% | n/a |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 52% | n/a |
-| `moonshotai/kimi-k2.6` | Phala | 77% | 79% |
-| `openai/gpt-oss-120b` | Mara | 30% | 99% |
-| `openai/gpt-oss-20b` | DekaLLM | 74% | 70% |
-| plus 9 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 63% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 56% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 52% | n/a |
+| `google/gemini-2.5-flash` | Google | 72% | 72% |
+| `google/gemini-3.1-flash-lite-image` | Google | 75% | 100% |
+| `google/gemma-3-27b-it` | Phala | 47% | 9% |
+| `google/gemma-4-31b-it` | Chutes | 33% | 42% |
+| `google/gemma-4-31b-it` | SiliconFlow | 11% | 6% |
+| `google/gemma-4-31b-it` | Phala | 66% | 36% |
+| `minimax/minimax-m3` | Parasail | 74% | 81% |
+| `mistralai/mistral-nemo` | Novita | 70% | 99% |
+| `moonshotai/kimi-k2.5` | Chutes | 66% | n/a |
+| `openai/gpt-oss-120b` | Mara | 78% | n/a |
+| `openai/gpt-oss-120b` | DekaLLM | 76% | 99% |
+| `openai/gpt-oss-20b` | Google | 19% | n/a |
+| plus 4 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

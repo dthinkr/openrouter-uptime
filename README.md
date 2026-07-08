@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-08T10:14:39+00:00 UTC)
+## Current status (2026-07-08T12:19:43+00:00 UTC)
 
 326 models polled, 903 inference endpoints:
-up 551, degraded 125, down 24, idle 203.
+up 555, degraded 147, down 18, idle 183.
 
-Currently down (24):
+Currently down (18):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | n/a |
-| `deepseek/deepseek-chat-v3.1` | WandB | 62% | 43% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 38% | 38% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 15% | 16% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 34% | 46% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 35% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 25% | 17% |
-| `google/gemma-4-31b-it` | SiliconFlow | 3% | 13% |
-| `google/gemma-4-31b-it` | Phala | 79% | 68% |
-| `google/gemma-4-31b-it` | Together | 70% | 74% |
-| `minimax/minimax-m3` | AtlasCloud | 76% | n/a |
-| `mistralai/mistral-nemo` | Novita | 68% | 99% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 69% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | n/a |
-| `openai/gpt-oss-120b` | Mara | 25% | n/a |
-| plus 9 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 78% | 78% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 4% | 1% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 25% | 25% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 47% | 16% |
+| `google/gemma-4-31b-it` | Chutes | 71% | 98% |
+| `google/gemma-4-31b-it` | Together | 78% | 61% |
+| `meta-llama/llama-3.3-70b-instruct` | WandB | 60% | n/a |
+| `moonshotai/kimi-k2.6` | Phala | 79% | 81% |
+| `openai/gpt-5.1-codex-mini` | Azure | 79% | n/a |
+| `openai/gpt-oss-120b` | Mara | 77% | 75% |
+| `openai/gpt-oss-20b` | Google | 2% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | Phala | 33% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | SiliconFlow | 75% | 43% |
+| `z-ai/glm-4.6` | Z.AI | 70% | n/a |
+| plus 3 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

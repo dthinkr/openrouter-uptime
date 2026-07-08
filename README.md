@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-08T04:12:45+00:00 UTC)
+## Current status (2026-07-08T07:26:46+00:00 UTC)
 
 326 models polled, 903 inference endpoints:
-up 550, degraded 115, down 25, idle 213.
+up 537, degraded 141, down 22, idle 203.
 
-Currently down (25):
+Currently down (22):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 35% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Mara | 78% | 65% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 39% | 30% |
-| `google/gemini-2.5-flash` | Google | 47% | 32% |
-| `google/gemma-3-27b-it` | Novita | 75% | 100% |
-| `google/gemma-3-27b-it` | Phala | 68% | 53% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 41% | 50% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 60% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 29% | 49% |
-| `google/gemma-4-31b-it` | DeepInfra | 71% | 54% |
-| `google/gemma-4-31b-it` | SiliconFlow | 19% | 99% |
-| `google/gemma-4-31b-it` | Phala | 63% | 56% |
-| `google/gemma-4-31b-it` | SambaNova | 73% | 9% |
-| `google/gemma-4-31b-it` | Together | 72% | 97% |
-| `meta-llama/llama-3.3-70b-instruct` | Cloudflare | 78% | n/a |
-| plus 10 more | | | |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 69% | 86% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 32% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 38% | 35% |
+| `deepseek/deepseek-v3.2` | DigitalOcean | 30% | 5% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 33% | 27% |
+| `google/gemini-2.5-pro-preview` | Google | 76% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 76% | n/a |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 39% | 12% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 74% | 80% |
+| `google/gemma-4-31b-it` | Chutes | 76% | 98% |
+| `google/gemma-4-31b-it` | SiliconFlow | 16% | 99% |
+| `meta-llama/llama-3.3-70b-instruct` | Cloudflare | 57% | n/a |
+| `moonshotai/kimi-k2.6` | Phala | 68% | 68% |
+| `openai/gpt-5.4-mini` | OpenAI | 70% | 66% |
+| `openai/gpt-oss-120b` | Mara | 32% | 59% |
+| plus 7 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

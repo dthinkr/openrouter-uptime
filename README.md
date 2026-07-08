@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-08T00:06:12+00:00 UTC)
+## Current status (2026-07-08T04:12:45+00:00 UTC)
 
 326 models polled, 903 inference endpoints:
-up 575, degraded 95, down 18, idle 215.
+up 550, degraded 115, down 25, idle 213.
 
-Currently down (18):
+Currently down (25):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 21% | 18% |
-| `google/gemini-2.5-pro` | Google | 51% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 51% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 45% | 36% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 25% | 25% |
-| `google/gemma-3-27b-it` | Novita | 75% | 79% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 40% | 43% |
-| `mistralai/mistral-nemo` | Novita | 61% | 100% |
-| `moonshotai/kimi-k2.5` | Phala | 75% | n/a |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 78% | 74% |
-| `openai/gpt-5.4-mini` | OpenAI | 47% | 41% |
-| `openai/gpt-oss-120b` | Mara | 54% | 41% |
-| `openai/gpt-oss-20b` | Google | 10% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | DeepInfra | 60% | n/a |
-| plus 3 more | | | |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 35% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 78% | 65% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 39% | 30% |
+| `google/gemini-2.5-flash` | Google | 47% | 32% |
+| `google/gemma-3-27b-it` | Novita | 75% | 100% |
+| `google/gemma-3-27b-it` | Phala | 68% | 53% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 41% | 50% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 60% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 29% | 49% |
+| `google/gemma-4-31b-it` | DeepInfra | 71% | 54% |
+| `google/gemma-4-31b-it` | SiliconFlow | 19% | 99% |
+| `google/gemma-4-31b-it` | Phala | 63% | 56% |
+| `google/gemma-4-31b-it` | SambaNova | 73% | 9% |
+| `google/gemma-4-31b-it` | Together | 72% | 97% |
+| `meta-llama/llama-3.3-70b-instruct` | Cloudflare | 78% | n/a |
+| plus 10 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

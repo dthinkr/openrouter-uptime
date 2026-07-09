@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-09T02:46:23+00:00 UTC)
+## Current status (2026-07-09T06:41:51+00:00 UTC)
 
-327 models polled, 905 inference endpoints:
-up 556, degraded 115, down 17, idle 217.
+326 models polled, 904 inference endpoints:
+up 541, degraded 134, down 18, idle 211.
 
-Currently down (17):
+Currently down (18):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 54% | 40% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 75% | 69% |
-| `deepseek/deepseek-v3.2` | DigitalOcean | 66% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 54% | 52% |
-| `google/gemma-4-26b-a4b-it` | DekaLLM | 66% | 100% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 70% | 74% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 27% | 8% |
-| `google/gemma-4-31b-it` | SiliconFlow | 51% | 90% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 62% | 60% |
-| `openai/gpt-oss-120b` | Mara | 46% | 24% |
-| `openai/gpt-oss-20b` | Parasail | 59% | 100% |
-| `openai/gpt-oss-20b` | Google | 73% | 73% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | Phala | 23% | n/a |
-| `z-ai/glm-4.6` | Z.AI | 68% | n/a |
-| plus 2 more | | | |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 66% | 77% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 73% | 66% |
+| `google/gemini-2.5-pro` | Google | 66% | 95% |
+| `google/gemini-2.5-pro-preview` | Google | 74% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 66% | 95% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 58% | 67% |
+| `meta-llama/llama-3.3-70b-instruct` | Cloudflare | 65% | n/a |
+| `mistralai/mistral-nemo` | Novita | 60% | 100% |
+| `openai/gpt-oss-120b` | Mara | 18% | 1% |
+| `openai/gpt-oss-120b` | DekaLLM | 78% | 45% |
+| `openai/gpt-oss-120b` | SiliconFlow | 63% | 96% |
+| `openai/gpt-oss-20b` | Google | 5% | 6% |
+| `qwen/qwen3.5-397b-a17b` | StreamLake | 67% | 69% |
+| `qwen/qwen3.6-27b` | Phala | 78% | 44% |
+| `z-ai/glm-4.7-flash` | Cloudflare | 15% | n/a |
+| plus 3 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

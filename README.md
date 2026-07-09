@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-09T13:48:12+00:00 UTC)
+## Current status (2026-07-09T16:26:02+00:00 UTC)
 
-324 models polled, 901 inference endpoints:
-up 524, degraded 151, down 25, idle 201.
+324 models polled, 963 inference endpoints:
+up 553, degraded 184, down 28, idle 198.
 
-Currently down (25):
+Currently down (28):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 27% | n/a |
-| `deepseek/deepseek-v4-pro` | Fireworks | 17% | 12% |
-| `google/gemini-2.5-pro` | Google | 79% | 86% |
-| `google/gemini-2.5-pro-preview` | Google | 79% | 86% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 79% | 74% |
-| `google/gemma-3-27b-it` | Nebius | 69% | 75% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 20% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 73% | 14% |
-| `google/gemma-4-31b-it` | SiliconFlow | 64% | 33% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | 98% |
-| `moonshotai/kimi-k2.5` | DigitalOcean | 67% | n/a |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 66% | n/a |
-| `openai/gpt-5.1-codex-mini` | Azure | 79% | n/a |
-| `openai/gpt-oss-120b` | Novita | 66% | 70% |
-| `openai/gpt-oss-120b` | SiliconFlow | 26% | 13% |
-| plus 10 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 61% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 74% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 66% | 93% |
+| `deepseek/deepseek-v3.2` | GMICloud | 80% | 93% |
+| `google/gemini-2.5-flash` | Google | 80% | 89% |
+| `google/gemma-3-27b-it` | Phala | 38% | n/a |
+| `google/gemma-4-26b-a4b-it` | DekaLLM | 75% | 100% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 15% | 100% |
+| `google/gemma-4-31b-it` | Chutes | 43% | 74% |
+| `google/gemma-4-31b-it` | SiliconFlow | 50% | 100% |
+| `google/gemma-4-31b-it` | Phala | 51% | 91% |
+| `minimax/minimax-m2.7` | Mara | 74% | n/a |
+| `minimax/minimax-m3` | Parasail | 70% | 85% |
+| `mistralai/mistral-nemo` | Novita | 75% | 84% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 69% | n/a |
+| plus 13 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

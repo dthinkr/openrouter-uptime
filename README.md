@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-09T16:26:02+00:00 UTC)
+## Current status (2026-07-09T18:49:25+00:00 UTC)
 
-324 models polled, 963 inference endpoints:
-up 553, degraded 184, down 28, idle 198.
+330 models polled, 986 inference endpoints:
+up 562, degraded 155, down 35, idle 234.
 
-Currently down (28):
+Currently down (35):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 61% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 74% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 66% | 93% |
-| `deepseek/deepseek-v3.2` | GMICloud | 80% | 93% |
-| `google/gemini-2.5-flash` | Google | 80% | 89% |
-| `google/gemma-3-27b-it` | Phala | 38% | n/a |
-| `google/gemma-4-26b-a4b-it` | DekaLLM | 75% | 100% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 15% | 100% |
-| `google/gemma-4-31b-it` | Chutes | 43% | 74% |
-| `google/gemma-4-31b-it` | SiliconFlow | 50% | 100% |
-| `google/gemma-4-31b-it` | Phala | 51% | 91% |
-| `minimax/minimax-m2.7` | Mara | 74% | n/a |
-| `minimax/minimax-m3` | Parasail | 70% | 85% |
-| `mistralai/mistral-nemo` | Novita | 75% | 84% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 69% | n/a |
-| plus 13 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 72% | 50% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 63% | 79% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 66% | 24% |
+| `google/gemini-2.5-pro` | Google | 80% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 80% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 80% | n/a |
+| `google/gemma-3-27b-it` | Phala | 32% | n/a |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 34% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 32% | 62% |
+| `google/gemma-4-31b-it` | SiliconFlow | 19% | 23% |
+| `google/gemma-4-31b-it` | Phala | 54% | 83% |
+| `google/gemma-4-31b-it` | Together | 75% | 92% |
+| `minimax/minimax-m3` | Parasail | 56% | 97% |
+| `minimax/minimax-m3` | DeepInfra | 72% | 100% |
+| `mistralai/mistral-nemo` | Novita | 77% | 87% |
+| plus 20 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

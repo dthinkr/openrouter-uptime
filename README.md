@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-09T06:41:51+00:00 UTC)
+## Current status (2026-07-09T10:23:07+00:00 UTC)
 
-326 models polled, 904 inference endpoints:
-up 541, degraded 134, down 18, idle 211.
+326 models polled, 903 inference endpoints:
+up 531, degraded 150, down 26, idle 196.
 
-Currently down (18):
+Currently down (26):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 66% | 77% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 73% | 66% |
-| `google/gemini-2.5-pro` | Google | 66% | 95% |
-| `google/gemini-2.5-pro-preview` | Google | 74% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 66% | 95% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 58% | 67% |
-| `meta-llama/llama-3.3-70b-instruct` | Cloudflare | 65% | n/a |
-| `mistralai/mistral-nemo` | Novita | 60% | 100% |
-| `openai/gpt-oss-120b` | Mara | 18% | 1% |
-| `openai/gpt-oss-120b` | DekaLLM | 78% | 45% |
-| `openai/gpt-oss-120b` | SiliconFlow | 63% | 96% |
-| `openai/gpt-oss-20b` | Google | 5% | 6% |
-| `qwen/qwen3.5-397b-a17b` | StreamLake | 67% | 69% |
-| `qwen/qwen3.6-27b` | Phala | 78% | 44% |
-| `z-ai/glm-4.7-flash` | Cloudflare | 15% | n/a |
-| plus 3 more | | | |
+| `deepseek/deepseek-chat-v3.1` | WandB | 38% | 33% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 34% | 58% |
+| `google/gemini-2.5-flash` | Google | 80% | 83% |
+| `google/gemini-2.5-pro` | Google | 65% | 82% |
+| `google/gemini-2.5-pro-preview` | Google | 65% | 82% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 65% | 82% |
+| `google/gemma-3-27b-it` | Phala | 74% | 34% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 18% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 70% | 5% |
+| `google/gemma-4-31b-it` | SiliconFlow | 77% | 38% |
+| `google/gemma-4-31b-it` | Phala | 79% | 70% |
+| `google/gemma-4-31b-it` | Together | 75% | 52% |
+| `minimax/minimax-m2.5` | Mara | 63% | 34% |
+| `minimax/minimax-m2.7` | Mara | 75% | 100% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 0% | n/a |
+| plus 11 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

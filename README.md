@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-09T10:23:07+00:00 UTC)
+## Current status (2026-07-09T13:48:12+00:00 UTC)
 
-326 models polled, 903 inference endpoints:
-up 531, degraded 150, down 26, idle 196.
+324 models polled, 901 inference endpoints:
+up 524, degraded 151, down 25, idle 201.
 
-Currently down (26):
+Currently down (25):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | WandB | 38% | 33% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 34% | 58% |
-| `google/gemini-2.5-flash` | Google | 80% | 83% |
-| `google/gemini-2.5-pro` | Google | 65% | 82% |
-| `google/gemini-2.5-pro-preview` | Google | 65% | 82% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 65% | 82% |
-| `google/gemma-3-27b-it` | Phala | 74% | 34% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 18% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 70% | 5% |
-| `google/gemma-4-31b-it` | SiliconFlow | 77% | 38% |
-| `google/gemma-4-31b-it` | Phala | 79% | 70% |
-| `google/gemma-4-31b-it` | Together | 75% | 52% |
-| `minimax/minimax-m2.5` | Mara | 63% | 34% |
-| `minimax/minimax-m2.7` | Mara | 75% | 100% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 0% | n/a |
-| plus 11 more | | | |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 27% | n/a |
+| `deepseek/deepseek-v4-pro` | Fireworks | 17% | 12% |
+| `google/gemini-2.5-pro` | Google | 79% | 86% |
+| `google/gemini-2.5-pro-preview` | Google | 79% | 86% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 79% | 74% |
+| `google/gemma-3-27b-it` | Nebius | 69% | 75% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 20% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 73% | 14% |
+| `google/gemma-4-31b-it` | SiliconFlow | 64% | 33% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | 98% |
+| `moonshotai/kimi-k2.5` | DigitalOcean | 67% | n/a |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 66% | n/a |
+| `openai/gpt-5.1-codex-mini` | Azure | 79% | n/a |
+| `openai/gpt-oss-120b` | Novita | 66% | 70% |
+| `openai/gpt-oss-120b` | SiliconFlow | 26% | 13% |
+| plus 10 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

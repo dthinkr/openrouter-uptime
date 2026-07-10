@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-10T16:54:24+00:00 UTC)
+## Current status (2026-07-10T18:21:39+00:00 UTC)
 
 329 models polled, 1003 inference endpoints:
-up 598, degraded 149, down 28, idle 228.
+up 591, degraded 157, down 26, idle 229.
 
-Currently down (28):
+Currently down (26):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 70% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 51% | 97% |
-| `google/gemini-2.5-flash` | Google | 73% | 66% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 49% | 66% |
+| `deepseek/deepseek-v3.2` | Venice | 63% | 41% |
+| `deepseek/deepseek-v4-pro` | BaseTen | 39% | n/a |
+| `google/gemini-2.5-flash` | Google | 79% | 85% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Phala | 49% | n/a |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 1% | 0% |
-| `google/gemma-4-31b-it` | Chutes | 33% | 23% |
-| `google/gemma-4-31b-it` | SiliconFlow | 2% | 0% |
-| `google/gemma-4-31b-it` | Phala | 45% | 85% |
-| `google/gemma-4-31b-it` | Together | 78% | 83% |
-| `minimax/minimax-m3` | Parasail | 79% | 79% |
-| `mistralai/mistral-nemo` | Novita | 70% | 43% |
-| `moonshotai/kimi-k2.5` | Phala | 60% | n/a |
-| plus 13 more | | | |
+| `google/gemma-3-27b-it` | Phala | 73% | 67% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 54% | n/a |
+| `google/gemma-4-31b-it` | Together | 69% | 49% |
+| `meta-llama/llama-3.3-70b-instruct` | Cloudflare | 59% | n/a |
+| `minimax/minimax-m2.7` | SambaNova | 52% | n/a |
+| `mistralai/mistral-nemo` | Novita | 62% | 43% |
+| `moonshotai/kimi-k2.6` | Chutes | 64% | n/a |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 63% | n/a |
+| plus 11 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

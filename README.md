@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-10T11:49:44+00:00 UTC)
+## Current status (2026-07-10T14:21:00+00:00 UTC)
 
 330 models polled, 1004 inference endpoints:
-up 599, degraded 146, down 30, idle 229.
+up 617, degraded 139, down 27, idle 221.
 
-Currently down (30):
+Currently down (27):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 73% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Mara | 78% | n/a |
+| `anthropic/claude-sonnet-4.5` | Anthropic | 21% | 19% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 60% | 35% |
+| `google/gemini-2.5-flash` | Google | 77% | 66% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Phala | 47% | n/a |
-| `google/gemma-4-26b-a4b-it` | DekaLLM | 78% | 72% |
-| `google/gemma-4-31b-it` | Chutes | 46% | 17% |
-| `google/gemma-4-31b-it` | SiliconFlow | 65% | 20% |
-| `google/gemma-4-31b-it` | Phala | 49% | 44% |
-| `google/gemma-4-31b-it` | Together | 72% | 79% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 52% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | 0% |
-| `openai/gpt-5.6-luna-pro` | OpenAI | 68% | 58% |
-| plus 15 more | | | |
+| `google/gemma-3-27b-it` | Phala | 6% | n/a |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 50% | 40% |
+| `google/gemma-4-31b-it` | Chutes | 26% | 28% |
+| `google/gemma-4-31b-it` | SiliconFlow | 1% | 0% |
+| `google/gemma-4-31b-it` | Phala | 40% | 49% |
+| `mistralai/mistral-nemo` | Novita | 75% | 78% |
+| `moonshotai/kimi-k2.6` | Chutes | 65% | 27% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 78% | n/a |
+| `moonshotai/kimi-k2.6` | Phala | 78% | n/a |
+| plus 12 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

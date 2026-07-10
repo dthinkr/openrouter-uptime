@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-10T00:02:34+00:00 UTC)
+## Current status (2026-07-10T04:50:13+00:00 UTC)
 
 330 models polled, 1003 inference endpoints:
-up 602, degraded 134, down 29, idle 238.
+up 594, degraded 151, down 22, idle 236.
 
-Currently down (29):
+Currently down (22):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 30% | 23% |
-| `deepseek/deepseek-v4-flash` | Morph | 78% | 87% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 52% | n/a |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Phala | 43% | 43% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 67% | 37% |
-| `google/gemma-4-31b-it` | Chutes | 60% | 94% |
-| `google/gemma-4-31b-it` | SiliconFlow | 17% | 100% |
-| `google/gemma-4-31b-it` | Phala | 45% | 96% |
-| `mistralai/mistral-nemo` | Novita | 70% | 80% |
-| `moonshotai/kimi-k2.5` | Chutes | 0% | 0% |
-| `moonshotai/kimi-k2.6` | Venice | 19% | 28% |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 76% | 88% |
-| `openai/gpt-5.4-mini` | OpenAI | 45% | 50% |
-| plus 14 more | | | |
+| `google/gemma-3-27b-it` | Phala | 55% | 58% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 79% | 81% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 39% | 48% |
+| `google/gemma-4-31b-it` | Chutes | 48% | 15% |
+| `google/gemma-4-31b-it` | SiliconFlow | 1% | 0% |
+| `google/gemma-4-31b-it` | Phala | 61% | 83% |
+| `moonshotai/kimi-k2.6` | ModelRun | 64% | 100% |
+| `nvidia/nemotron-3-super-120b-a12b` | DeepInfra | 78% | 64% |
+| `openai/gpt-oss-120b` | SiliconFlow | 62% | 72% |
+| `openai/gpt-oss-120b` | Parasail | 77% | 76% |
+| `qwen/qwen3-coder` | Google | 66% | n/a |
+| plus 7 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

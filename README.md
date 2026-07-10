@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-10T08:20:41+00:00 UTC)
+## Current status (2026-07-10T11:49:44+00:00 UTC)
 
 330 models polled, 1004 inference endpoints:
-up 590, degraded 161, down 32, idle 221.
+up 599, degraded 146, down 30, idle 229.
 
-Currently down (32):
+Currently down (30):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 66% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 31% | 13% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 69% | 81% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 73% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 78% | n/a |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Phala | 13% | 13% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 39% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 73% | 44% |
-| `google/gemma-4-31b-it` | SiliconFlow | 67% | 95% |
-| `google/gemma-4-31b-it` | Phala | 48% | 26% |
-| `minimax/minimax-m2.5` | WandB | 77% | n/a |
-| `mistralai/mistral-nemo` | Novita | 70% | 96% |
-| `moonshotai/kimi-k2.5` | Chutes | 75% | n/a |
-| `moonshotai/kimi-k2.6` | ModelRun | 69% | 21% |
-| plus 17 more | | | |
+| `google/gemma-3-27b-it` | Phala | 47% | n/a |
+| `google/gemma-4-26b-a4b-it` | DekaLLM | 78% | 72% |
+| `google/gemma-4-31b-it` | Chutes | 46% | 17% |
+| `google/gemma-4-31b-it` | SiliconFlow | 65% | 20% |
+| `google/gemma-4-31b-it` | Phala | 49% | 44% |
+| `google/gemma-4-31b-it` | Together | 72% | 79% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 52% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | 0% |
+| `openai/gpt-5.6-luna-pro` | OpenAI | 68% | 58% |
+| plus 15 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

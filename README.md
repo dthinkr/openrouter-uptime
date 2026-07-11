@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-11T16:55:15+00:00 UTC)
+## Current status (2026-07-11T17:54:06+00:00 UTC)
 
 328 models polled, 1005 inference endpoints:
-up 627, degraded 126, down 28, idle 224.
+up 613, degraded 127, down 24, idle 241.
 
-Currently down (28):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-v3.2` | Venice | 78% | 39% |
-| `google/gemini-2.5-flash` | Google | 65% | 61% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 66% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 72% | 94% |
+| `deepseek/deepseek-v3.2` | Venice | 68% | n/a |
+| `google/gemini-2.5-flash` | Google | 66% | 71% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Phala | 72% | 61% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 18% | n/a |
-| `google/gemma-4-31b-it` | Together | 75% | 76% |
-| `mistralai/mistral-nemo` | Novita | 79% | 100% |
-| `openai/gpt-oss-120b` | DekaLLM | 76% | 70% |
-| `openai/gpt-oss-120b` | Novita | 55% | 83% |
-| `openai/gpt-oss-120b` | SiliconFlow | 34% | n/a |
-| `openai/gpt-oss-120b` | SambaNova | 77% | 84% |
-| `openai/gpt-oss-120b` | Phala | 66% | n/a |
-| `openai/gpt-oss-20b` | DekaLLM | 68% | 55% |
-| plus 13 more | | | |
+| `google/gemma-3-27b-it` | Nebius | 46% | 96% |
+| `google/gemma-3-27b-it` | Phala | 72% | 76% |
+| `mistralai/mistral-nemo` | Novita | 64% | 49% |
+| `openai/gpt-5.6-sol-pro` | OpenAI | 79% | 72% |
+| `openai/gpt-5.6-sol-pro` | OpenAI | 79% | 72% |
+| `openai/gpt-5.6-sol-pro` | OpenAI | 79% | 72% |
+| `openai/gpt-oss-120b` | DekaLLM | 63% | n/a |
+| `openai/gpt-oss-120b` | WandB | 31% | 100% |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

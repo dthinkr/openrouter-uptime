@@ -78,30 +78,30 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-11T11:02:44+00:00 UTC)
+## Current status (2026-07-11T13:13:44+00:00 UTC)
 
 328 models polled, 1003 inference endpoints:
-up 594, degraded 139, down 25, idle 245.
+up 593, degraded 151, down 25, idle 234.
 
 Currently down (25):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 77% | 63% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 63% | 47% |
-| `deepseek/deepseek-v4-pro` | Alibaba | 79% | 100% |
-| `google/gemini-2.5-pro` | Google | 5% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 5% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 5% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 67% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 34% | n/a |
+| `deepseek/deepseek-v4-pro` | Alibaba | 48% | n/a |
+| `google/gemini-2.5-pro` | Google | 21% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 21% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 21% | n/a |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Nebius | 41% | 97% |
-| `google/gemma-3-27b-it` | Phala | 55% | 75% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 74% | 88% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 26% | n/a |
-| `google/gemma-4-31b-it` | SiliconFlow | 46% | 0% |
-| `google/gemma-4-31b-it` | Phala | 75% | 87% |
+| `google/gemma-3-27b-it` | Phala | 69% | 65% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 67% | 68% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 16% | 3% |
+| `minimax/minimax-m2.7` | Morph | 79% | n/a |
+| `mistralai/mistral-nemo` | Novita | 74% | 80% |
+| `openai/gpt-5.2` | Azure | 61% | 63% |
 | plus 10 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

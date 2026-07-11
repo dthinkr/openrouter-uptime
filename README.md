@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-11T17:54:06+00:00 UTC)
+## Current status (2026-07-11T18:59:39+00:00 UTC)
 
 328 models polled, 1005 inference endpoints:
-up 613, degraded 127, down 24, idle 241.
+up 614, degraded 128, down 26, idle 237.
 
-Currently down (24):
+Currently down (26):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 66% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 72% | 94% |
-| `deepseek/deepseek-v3.2` | Venice | 68% | n/a |
-| `google/gemini-2.5-flash` | Google | 66% | 71% |
+| `deepseek/deepseek-v4-pro` | Alibaba | 66% | 70% |
+| `google/gemini-2.5-flash` | Google | 23% | n/a |
+| `google/gemini-2.5-pro` | Google | 46% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 46% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 46% | n/a |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Nebius | 46% | 96% |
-| `google/gemma-3-27b-it` | Phala | 72% | 76% |
-| `mistralai/mistral-nemo` | Novita | 64% | 49% |
-| `openai/gpt-5.6-sol-pro` | OpenAI | 79% | 72% |
-| `openai/gpt-5.6-sol-pro` | OpenAI | 79% | 72% |
-| `openai/gpt-5.6-sol-pro` | OpenAI | 79% | 72% |
-| `openai/gpt-oss-120b` | DekaLLM | 63% | n/a |
-| `openai/gpt-oss-120b` | WandB | 31% | 100% |
-| plus 9 more | | | |
+| `google/gemma-3-27b-it` | Nebius | 78% | 68% |
+| `google/gemma-3-27b-it` | Phala | 61% | 74% |
+| `mistralai/mistral-nemo` | Novita | 67% | 59% |
+| `moonshotai/kimi-k2.7-code` | Ambient | 39% | n/a |
+| `moonshotai/kimi-k2.7-code` | ModelRun | 66% | 6% |
+| `moonshotai/kimi-k2.7-code` | Together | 59% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 79% | 46% |
+| plus 11 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

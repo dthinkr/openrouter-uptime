@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-11T02:27:45+00:00 UTC)
+## Current status (2026-07-11T05:38:42+00:00 UTC)
 
-329 models polled, 1006 inference endpoints:
-up 591, degraded 125, down 43, idle 247.
+328 models polled, 1003 inference endpoints:
+up 584, degraded 146, down 22, idle 251.
 
-Currently down (43):
+Currently down (22):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 78% | 94% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 64% | n/a |
-| `deepseek/deepseek-v4-flash` | WandB | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | Alibaba | 49% | n/a |
-| `deepseek/deepseek-v4-pro` | WandB | 0% | 0% |
-| `google/gemini-2.5-flash` | Google | 47% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 33% | 61% |
+| `deepseek/deepseek-v4-pro` | Alibaba | 48% | 89% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Phala | 23% | 37% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 66% | 78% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 11% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 32% | 23% |
-| `google/gemma-4-31b-it` | SiliconFlow | 0% | 0% |
-| `google/gemma-4-31b-it` | Novita | 70% | 96% |
-| plus 28 more | | | |
+| `google/gemma-3-27b-it` | Nebius | 57% | 100% |
+| `google/gemma-3-27b-it` | Phala | 75% | 98% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 77% | 73% |
+| `google/gemma-4-31b-it` | Chutes | 74% | 99% |
+| `google/gemma-4-31b-it` | SiliconFlow | 18% | n/a |
+| `mistralai/mistral-nemo` | Novita | 72% | 64% |
+| `moonshotai/kimi-k2.7-code` | Ambient | 16% | n/a |
+| `moonshotai/kimi-k2.7-code` | ModelRun | 49% | n/a |
+| `moonshotai/kimi-k2.7-code` | Together | 32% | n/a |
+| `openai/gpt-5.4-nano` | OpenAI | 64% | 75% |
+| plus 7 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

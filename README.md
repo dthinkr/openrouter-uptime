@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-11T20:09:05+00:00 UTC)
+## Current status (2026-07-11T21:46:36+00:00 UTC)
 
 328 models polled, 1005 inference endpoints:
-up 605, degraded 132, down 20, idle 248.
+up 638, degraded 96, down 27, idle 244.
 
-Currently down (20):
+Currently down (27):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 66% | 49% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 48% | 59% |
-| `google/gemini-2.5-flash` | Google | 24% | n/a |
+| `google/gemini-2.5-flash` | Google | 22% | n/a |
+| `google/gemini-2.5-pro` | Google AI Studio | 79% | n/a |
+| `google/gemini-2.5-pro` | Google AI Studio | 79% | n/a |
+| `google/gemini-2.5-pro` | Google AI Studio | 79% | n/a |
+| `google/gemini-2.5-pro-preview` | Google AI Studio | 79% | n/a |
+| `google/gemini-2.5-pro-preview` | Google AI Studio | 79% | n/a |
+| `google/gemini-2.5-pro-preview` | Google AI Studio | 79% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google AI Studio | 79% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google AI Studio | 79% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google AI Studio | 79% | n/a |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Phala | 63% | 100% |
-| `mistralai/mistral-nemo` | Novita | 61% | 74% |
-| `moonshotai/kimi-k2.7-code` | Ambient | 61% | n/a |
-| `moonshotai/kimi-k2.7-code` | ModelRun | 13% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 73% | 74% |
-| `openai/gpt-5.1-codex` | OpenAI | 79% | 75% |
-| `openai/gpt-5.1-codex` | OpenAI | 79% | 75% |
-| `openai/gpt-5.6-terra-pro` | OpenAI | 63% | 48% |
-| `openai/gpt-5.6-terra-pro` | OpenAI | 63% | 48% |
-| plus 5 more | | | |
+| `google/gemma-3-27b-it` | Nebius | 58% | 54% |
+| `google/gemma-3-27b-it` | Phala | 69% | 68% |
+| plus 12 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

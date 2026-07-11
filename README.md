@@ -78,30 +78,30 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-11T09:26:41+00:00 UTC)
+## Current status (2026-07-11T11:02:44+00:00 UTC)
 
 328 models polled, 1003 inference endpoints:
-up 597, degraded 144, down 25, idle 237.
+up 594, degraded 139, down 25, idle 245.
 
 Currently down (25):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 78% | 57% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 67% | 71% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 62% | n/a |
-| `deepseek/deepseek-v4-flash` | SiliconFlow | 68% | 66% |
-| `deepseek/deepseek-v4-pro` | Alibaba | 37% | 79% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 77% | 63% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 63% | 47% |
+| `deepseek/deepseek-v4-pro` | Alibaba | 79% | 100% |
+| `google/gemini-2.5-pro` | Google | 5% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 5% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 5% | n/a |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Phala | 73% | 57% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 77% | 85% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 25% | n/a |
-| `google/gemma-4-31b-it` | Chutes | 73% | 76% |
-| `google/gemma-4-31b-it` | SiliconFlow | 10% | 24% |
-| `minimax/minimax-m2.7` | Mara | 73% | 89% |
-| `moonshotai/kimi-k2.6` | Together | 64% | 100% |
+| `google/gemma-3-27b-it` | Nebius | 41% | 97% |
+| `google/gemma-3-27b-it` | Phala | 55% | 75% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 74% | 88% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 26% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 46% | 0% |
+| `google/gemma-4-31b-it` | Phala | 75% | 87% |
 | plus 10 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

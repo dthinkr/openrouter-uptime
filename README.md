@@ -78,31 +78,31 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-11T07:51:43+00:00 UTC)
+## Current status (2026-07-11T09:26:41+00:00 UTC)
 
 328 models polled, 1003 inference endpoints:
-up 603, degraded 109, down 26, idle 265.
+up 597, degraded 144, down 25, idle 237.
 
-Currently down (26):
+Currently down (25):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 53% | 17% |
-| `google/gemini-2.5-pro` | Google AI Studio | 75% | n/a |
-| `google/gemini-2.5-pro` | Google AI Studio | 75% | n/a |
-| `google/gemini-2.5-pro` | Google AI Studio | 75% | n/a |
-| `google/gemini-2.5-pro-preview` | Google AI Studio | 75% | n/a |
-| `google/gemini-2.5-pro-preview` | Google AI Studio | 75% | n/a |
-| `google/gemini-2.5-pro-preview` | Google AI Studio | 75% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google AI Studio | 75% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google AI Studio | 75% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google AI Studio | 75% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 78% | 57% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 67% | 71% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 62% | n/a |
+| `deepseek/deepseek-v4-flash` | SiliconFlow | 68% | 66% |
+| `deepseek/deepseek-v4-pro` | Alibaba | 37% | 79% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Nebius | 66% | 100% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 77% | 76% |
-| plus 11 more | | | |
+| `google/gemma-3-27b-it` | Phala | 73% | 57% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 77% | 85% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 25% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 73% | 76% |
+| `google/gemma-4-31b-it` | SiliconFlow | 10% | 24% |
+| `minimax/minimax-m2.7` | Mara | 73% | 89% |
+| `moonshotai/kimi-k2.6` | Together | 64% | 100% |
+| plus 10 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

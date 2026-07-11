@@ -78,30 +78,30 @@ Use the "Cite this repository" button on GitHub, or:
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-11T14:51:11+00:00 UTC)
+## Current status (2026-07-11T15:53:49+00:00 UTC)
 
 328 models polled, 1005 inference endpoints:
-up 589, degraded 143, down 28, idle 245.
+up 633, degraded 132, down 28, idle 212.
 
 Currently down (28):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 64% | 48% |
-| `deepseek/deepseek-v3.2` | DigitalOcean | 61% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 55% | 94% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 72% | 46% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Nebius | 71% | 48% |
-| `google/gemma-3-27b-it` | Phala | 79% | 83% |
-| `google/gemma-4-26b-a4b-it` | Cloudflare | 74% | 83% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 46% | 35% |
-| `moonshotai/kimi-k2.7-code` | Ambient | 52% | 99% |
-| `moonshotai/kimi-k2.7-code` | ModelRun | 12% | n/a |
-| `moonshotai/kimi-k2.7-code` | Together | 69% | n/a |
-| `moonshotai/kimi-k2.7-code` | Moonshot AI | 62% | n/a |
-| `openai/gpt-5.6-sol-pro` | OpenAI | 78% | 72% |
-| `openai/gpt-5.6-sol-pro` | OpenAI | 78% | 72% |
+| `google/gemma-3-27b-it` | Nebius | 63% | 89% |
+| `google/gemma-3-27b-it` | Phala | 74% | 20% |
+| `google/gemma-4-26b-a4b-it` | Cloudflare | 72% | 80% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 18% | 43% |
+| `google/gemma-4-31b-it` | Chutes | 58% | 9% |
+| `google/gemma-4-31b-it` | SiliconFlow | 10% | 3% |
+| `google/gemma-4-31b-it` | Parasail | 79% | 65% |
+| `google/gemma-4-31b-it` | Phala | 28% | 6% |
+| `google/gemma-4-31b-it` | Together | 44% | n/a |
+| `mistralai/mistral-nemo` | Novita | 79% | 59% |
 | plus 13 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

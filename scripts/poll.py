@@ -4,9 +4,12 @@
 Keyless. Each run captures, verbatim, three public API surfaces:
   - /api/v1/models                     the full model catalog
   - /api/v1/providers                  provider metadata (HQ, ToS/privacy/
-                                       status-page URLs). Until 2026-07-15 this
-                                       was /api/frontend/all-providers, which
-                                       also published data policies (training,
+                                       status-page URLs). Best-effort: fetch
+                                       failures are logged and carried forward,
+                                       never a reason to skip uptime readings.
+                                       Until 2026-07-15 this was
+                                       /api/frontend/all-providers, which also
+                                       published data policies (training,
                                        prompt retention, moderation); upstream
                                        retired it without a keyless replacement.
   - /api/v1/models/{id}/endpoints      per inference-endpoint uptime/status
@@ -74,6 +77,15 @@ def log_changes(path: Path, added, removed, iso, kind) -> None:
         for i in sorted(removed):
             f.write(json.dumps({"ts": iso, "event": f"{kind}_removed",
                                 "id": i}) + "\n")
+
+
+def last_change_event(path: Path):
+    """Last event in a change log, or None. Used to log provider-fetch
+    outages only at the ok->error and error->ok edges instead of every run."""
+    if not path.exists():
+        return None
+    lines = path.read_text(encoding="utf-8").strip().splitlines()
+    return json.loads(lines[-1]) if lines else None
 
 
 def track_models(models_raw, iso) -> tuple[list[str], list[dict]]:
@@ -271,9 +283,29 @@ def main() -> None:
         d.mkdir(exist_ok=True)
 
     models_raw = get(f"{API}/models")
-    providers_raw = get(f"{API}/providers")
+    # Providers is a nice-to-have sidecar: a failure here must not stop the
+    # uptime readings (it did for two days when all-providers was retired).
+    # On failure keep polling, leave providers.json at its last good snapshot,
+    # and record the outage in the change log at its edges only.
+    providers_raw, providers_error = None, None
+    try:
+        providers_raw = get(f"{API}/providers")
+    except Exception as e:  # noqa: BLE001 best-effort poller
+        providers_error = str(e)[:200]
+    changes_path = STATUS / "provider_changes.jsonl"
+    last_event = (last_change_event(changes_path) or {}).get("event")
+    if providers_error is not None:
+        if last_event != "provider_fetch_error":
+            with open(changes_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps({"ts": iso, "event": "provider_fetch_error",
+                                    "error": providers_error}) + "\n")
+    else:
+        if last_event == "provider_fetch_error":
+            with open(changes_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps({"ts": iso,
+                                    "event": "provider_fetch_recovered"}) + "\n")
+        track_providers(providers_raw, iso)
     slugs, _ = track_models(models_raw, iso)
-    track_providers(providers_raw, iso)
 
     rows, endpoints_raw = [], {}
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
@@ -294,7 +326,9 @@ def main() -> None:
                    "endpoint_identity": "model + endpoint_id",
                    "providers_source": f"{API}/providers",
                    "models": models_raw,
-                   "providers": providers_raw, "endpoints": endpoints_raw}, f)
+                   "providers": providers_raw if providers_raw is not None
+                                else {"error": providers_error},
+                   "endpoints": endpoints_raw}, f)
 
     # 1. derived readings CSV
     day = DERIVED / f"{now:%Y-%m-%d}.csv"
@@ -368,7 +402,8 @@ def main() -> None:
     down = [r for r in rows if r["state"] in ("down", "degraded")]
     prev_path.write_text(json.dumps({
         "generated": iso, "models_polled": len(slugs),
-        "providers": providers_raw and len(providers_raw["data"]),
+        "providers": len(providers_raw["data"]) if providers_raw is not None
+                     else 0,
         "endpoint_count": len(rows), "down_or_degraded": len(down),
         "transitions_this_run": transitions,
         "schema_version": 2,
@@ -385,7 +420,8 @@ def main() -> None:
         "endpoints": sorted(last_seen.values(),
                             key=lambda r: (r["model"], r["endpoint_id"])),
     }, indent=1))
-    print(f"{iso}  models={len(slugs)} providers={len(providers_raw['data'])} "
+    print(f"{iso}  models={len(slugs)} "
+          f"providers={providers_raw and len(providers_raw['data'])} "
           f"endpoints={len(rows)} down/degraded={len(down)} "
           f"transitions={transitions}")
 

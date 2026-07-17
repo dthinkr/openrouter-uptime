@@ -26,6 +26,7 @@ jobs:
       - name: Poll OpenRouter and refresh status
         run: |
           python3 scripts/poll.py
+          python3 scripts/audit.py
           python3 scripts/summarize.py
 
       - name: Commit

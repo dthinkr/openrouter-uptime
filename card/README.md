@@ -21,9 +21,10 @@ configs:
 
 # OpenRouter Uptime
 
-An independent, timestamped uptime record for **every model on
-[OpenRouter](https://openrouter.ai)** and each of its inference providers.
-Polled hourly from OpenRouter's public API and mirrored here daily.
+An independent, timestamped availability record for the model IDs and routing
+endpoints exposed by [OpenRouter's](https://openrouter.ai) public API. The poller
+is scheduled hourly, but GitHub Actions timing is best-effort; actual timestamps
+are the coverage record. Mirrored here daily.
 
 Available in three places:
 
@@ -35,10 +36,10 @@ Available in three places:
 
 | file | rows | description |
 |---|---|---|
-| `readings.parquet` | one per endpoint per poll | `ts, model, provider, state, status, up5m, up30m, up1d` |
-| `incidents.parquet` | one per outage edge | endpoint crossing into/out of `down` (`ts, model, provider, from, to, event, up30m`) |
+| `readings.parquet` | one per endpoint per poll | `ts, model, provider, endpoint_tag, endpoint_id, identity_ambiguous, state, status, up5m, up30m, up1d` |
+| `incidents.parquet` | one per outage edge | endpoint crossing into/out of `down` (`ts, model, provider, endpoint_id, from, to, event, up30m`) |
 | `models.parquet` | current catalog | `id, name, created, context_length` |
-| `providers.parquet` | provider data policies | `slug, name, headquarters, data_policy (training/retention/ToS), moderation_required` |
+| `providers.parquet` | provider metadata | `slug, name, headquarters, terms_of_service_url, privacy_policy_url, status_page, data_policy (training/retention/ToS; null after 2026-07-15, upstream stopped publishing it), moderation_required` |
 
 `state` is one of: `up` (>=98% 30-min uptime), `degraded` (50 to 98%, or
 OpenRouter status -2), `down` (<50%, or status -5), `idle` (no recent traffic).
@@ -52,8 +53,9 @@ welcome.
 
 ## Update cadence
 
-Refreshed daily from the live poller. For the 30-minute granular history and the
-verbatim raw API archives, use the GitHub repo.
+Refreshed daily from the live poller. Poll intervals are irregular and short
+outages can be missed. For actual timestamps and verbatim API archives, use the
+GitHub repo.
 
 ## Citation
 

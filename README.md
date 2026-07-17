@@ -30,8 +30,8 @@ Three committed folders: `raw/` (verbatim archives), `derived/` (tidy CSVs),
 | `status/latest.json` | most recent full endpoint snapshot |
 | `status/incidents.jsonl` | observed endpoint transitions into/out of `down`; gap-bridged changes are flagged and interval-censored |
 | `status/last_seen.json` | last observed state per endpoint, retained across temporary observation gaps |
-| `status/models.json` | live model catalog, refreshed every run |
-| `status/model_changes.jsonl` | append-only log of models added to or removed from OpenRouter |
+| `status/models.json` | live model catalog, refreshed every run (on catalog-fetch failure the last good snapshot is reused and uptime readings continue) |
+| `status/model_changes.jsonl` | append-only log of models added to or removed from OpenRouter, plus catalog fetch outages |
 | `status/providers.json` | each provider's metadata (HQ, ToS/privacy/status-page URLs). Until 2026-07-15 it also carried OpenRouter's reported data policy (training, prompt retention, moderation); upstream stopped publishing it, so `data_policy` is null after that date (last-known values remain in `raw/`) |
 | `status/provider_changes.jsonl` | append-only log of providers added/removed, data-policy edits (pre-2026-07-15), ToS/privacy/status-page URL edits, and fetch outages (the providers surface is best-effort; uptime readings continue through its failures) |
 | `status/audit.json` | machine-readable schema, uniqueness, incident-duplication, and observed-cadence checks |

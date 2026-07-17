@@ -2,7 +2,11 @@
 """Poll OpenRouter's public catalog and routing-endpoint health surfaces.
 
 Keyless. Each run captures, verbatim, three public API surfaces:
-  - /api/v1/models                     the full model catalog
+  - /api/v1/models                     the full model catalog. On fetch failure
+                                       the last good snapshot is reused, so
+                                       uptime readings never stop; catalog
+                                       tracking (adds/removes) resumes on
+                                       recovery.
   - /api/v1/providers                  provider metadata (HQ, ToS/privacy/
                                        status-page URLs). Best-effort: fetch
                                        failures are logged and carried forward,
@@ -282,7 +286,35 @@ def main() -> None:
     for d in (DERIVED, STATUS, RAW):
         d.mkdir(exist_ok=True)
 
-    models_raw = get(f"{API}/models")
+    # Models catalog: on fetch failure fall back to the last good snapshot so
+    # an upstream wobble pauses catalog *tracking* (additions/removals resume
+    # on recovery) instead of the uptime readings. Only a cold start with no
+    # prior snapshot is a hard failure.
+    models_raw, models_error = None, None
+    try:
+        models_raw = get(f"{API}/models")
+    except Exception as e:  # noqa: BLE001 best-effort poller
+        models_error = str(e)[:200]
+    mchanges_path = STATUS / "model_changes.jsonl"
+    m_last = (last_change_event(mchanges_path) or {}).get("event")
+    if models_error is not None:
+        catalog_path = STATUS / "models.json"
+        prev_catalog = json.loads(catalog_path.read_text()).get("models", []) \
+            if catalog_path.exists() else []
+        if not prev_catalog:
+            raise RuntimeError("models catalog fetch failed and no prior "
+                               f"snapshot to fall back on: {models_error}")
+        if m_last != "model_fetch_error":
+            with open(mchanges_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps({"ts": iso, "event": "model_fetch_error",
+                                    "error": models_error}) + "\n")
+        slugs = sorted({m["id"] for m in prev_catalog})
+    else:
+        if m_last == "model_fetch_error":
+            with open(mchanges_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps({"ts": iso,
+                                    "event": "model_fetch_recovered"}) + "\n")
+        slugs, _ = track_models(models_raw, iso)
     # Providers is a nice-to-have sidecar: a failure here must not stop the
     # uptime readings (it did for two days when all-providers was retired).
     # On failure keep polling, leave providers.json at its last good snapshot,
@@ -305,7 +337,6 @@ def main() -> None:
                 f.write(json.dumps({"ts": iso,
                                     "event": "provider_fetch_recovered"}) + "\n")
         track_providers(providers_raw, iso)
-    slugs, _ = track_models(models_raw, iso)
 
     rows, endpoints_raw = [], {}
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
@@ -325,7 +356,8 @@ def main() -> None:
                    "model_query": "exact_catalog_id",
                    "endpoint_identity": "model + endpoint_id",
                    "providers_source": f"{API}/providers",
-                   "models": models_raw,
+                   "models": models_raw if models_raw is not None
+                            else {"error": models_error},
                    "providers": providers_raw if providers_raw is not None
                                 else {"error": providers_error},
                    "endpoints": endpoints_raw}, f)

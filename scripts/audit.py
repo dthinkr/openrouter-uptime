@@ -100,6 +100,8 @@ def main() -> None:
 
     v2 = [s for s in snapshots if s.get("schema_version") == 2]
     for snap in v2:
+        if "data" not in snap.get("models", {}):
+            continue  # catalog-fetch outage: run polled the fallback snapshot
         catalog_ids = {m["id"] for m in snap["models"]["data"]}
         if set(snap["endpoints"]) != catalog_ids:
             raise SystemExit(f"audit failed: v2 did not query exact catalog IDs at "

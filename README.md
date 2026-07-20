@@ -36,6 +36,11 @@ Three committed folders: `raw/` (verbatim archives), `derived/` (tidy CSVs),
 | `status/provider_changes.jsonl` | append-only log of providers added/removed, data-policy edits (pre-2026-07-15), ToS/privacy/status-page URL edits, and fetch outages (the providers surface is best-effort; uptime readings continue through its failures) |
 | `status/audit.json` | machine-readable schema, uniqueness, incident-duplication, and observed-cadence checks |
 
+The README's **Systemic events** section (below) is regenerated every run by
+`scripts/readme_events.py`: it surfaces only fleet-level signals from those
+logs — batch catalog changes (>=3 models in one poll), provider exits, fetch
+outages, and upstream schema breaks — and skips per-model churn.
+
 **State** comes from OpenRouter's 30-minute uptime figure:
 `up` (>=98%), `degraded` (50 to 98%), `down` (<50% or non-OK status),
 `idle` (no recent traffic, not a fault).

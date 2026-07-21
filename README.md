@@ -84,20 +84,6 @@ git log -p -- derived/                                    # snapshot history
 - OpenRouter's uptime figures are its own measurements of its routing layer.
 - Built to study AI-infrastructure dependence; contributions welcome.
 
-## Citation
-
-Use the "Cite this repository" button on GitHub, or:
-
-```bibtex
-@misc{wu_openrouter_uptime_2026,
-  author       = {Wu, Wenbin},
-  title        = {OpenRouter Uptime: an independent availability and
-                  data-policy registry for OpenRouter models},
-  year         = {2026},
-  howpublished = {\url{https://github.com/dthinkr/openrouter-uptime}}
-}
-```
-
 <!-- AUTOGEN:STATUS -->
 
 ## Current status (2026-07-12T17:18:43+00:00 UTC)

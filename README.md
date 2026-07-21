@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-21T23:31:07+00:00 UTC)
+## Current status (2026-07-21T23:54:41+00:00 UTC)
 
 332 models polled, 1028 inference endpoints:
-up 637, degraded 128, down 38, idle 225.
+up 623, degraded 103, down 62, idle 240.
 
-Currently down (38):
+Currently down (62):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 75% | 76% |
-| `deepseek/deepseek-chat` | DeepInfra | 80% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 100% |
-| `deepseek/deepseek-v3.2` | Alibaba | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | Parasail | 18% | 12% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 38% | 100% |
-| `deepseek/deepseek-v4-pro` | Parasail | n/a | n/a |
-| `google/gemini-2.5-flash` | Google | 46% | 61% |
-| `google/gemini-2.5-pro-preview` | Google | 70% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `google/gemma-4-26b-a4b-it` | Parasail | 43% | n/a |
-| `google/gemma-4-26b-a4b-it` | Venice | 36% | n/a |
-| plus 23 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | 100% |
+| `arcee-ai/trinity-large-thinking` | Parasail | n/a | n/a |
+| `deepseek/deepseek-v3.2` | Alibaba | 1% | 0% |
+| `deepseek/deepseek-v4-flash` | Parasail | 3% | 0% |
+| `google/gemini-2.5-flash` | Google | 60% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | Parasail | 15% | n/a |
+| `google/gemma-3-27b-it` | Phala | 78% | 60% |
+| `google/gemma-4-26b-a4b-it` | Parasail | 3% | n/a |
+| `google/gemma-4-26b-a4b-it` | Google | 61% | 68% |
+| `google/gemma-4-31b-it` | Venice | 9% | 0% |
+| `google/gemma-4-31b-it` | Parasail | 13% | 0% |
+| plus 47 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

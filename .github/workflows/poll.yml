@@ -1,0 +1,44 @@
+name: poll
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # hourly (GitHub best-effort; may lag at peak)
+  workflow_dispatch: {}       # allow manual runs
+
+# never let two runs commit at once
+concurrency:
+  group: poll
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Poll OpenRouter and refresh status
+        run: |
+          python3 scripts/poll.py
+          python3 scripts/summarize.py
+          python3 scripts/readme_events.py
+
+      - name: Commit
+        run: |
+          git config user.name  "openrouter-uptime-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "poll $(date -u +%Y-%m-%dT%H:%MZ)"
+          # rebase-pull in case a manual run raced the cron
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+          git push

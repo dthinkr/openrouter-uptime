@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-22T21:04:24+00:00 UTC)
+## Current status (2026-07-22T23:00:12+00:00 UTC)
 
-332 models polled, 1031 inference endpoints:
-up 623, degraded 153, down 33, idle 222.
+332 models polled, 1029 inference endpoints:
+up 655, degraded 126, down 32, idle 216.
 
-Currently down (33):
+Currently down (32):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 73% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 56% | 100% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 67% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 68% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 59% |
+| `deepseek/deepseek-chat-v3.1` | Google | 73% | n/a |
 | `deepseek/deepseek-v3.2` | Alibaba | n/a | n/a |
-| `google/gemini-2.5-flash` | Google | 21% | 15% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Phala | 73% | 77% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 66% | 68% |
-| `meta-llama/llama-3.3-70b-instruct` | AkashML | 79% | 81% |
-| `meta-llama/llama-3.3-70b-instruct` | Novita | 53% | 0% |
-| `moonshotai/kimi-k2.5` | DigitalOcean | 70% | 17% |
-| `moonshotai/kimi-k2.5` | Chutes | 23% | n/a |
-| `moonshotai/kimi-k2.5` | Phala | 70% | 97% |
-| plus 18 more | | | |
+| `google/gemma-3-27b-it` | Novita | 74% | 95% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | n/a |
+| `moonshotai/kimi-k2.5` | Chutes | 24% | n/a |
+| `moonshotai/kimi-k2.6` | Decart | 27% | n/a |
+| `moonshotai/kimi-k2.6` | ModelRun | 76% | n/a |
+| `openai/gpt-5.1` | OpenAI | 77% | 64% |
+| plus 17 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -102,8 +102,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-09 02:46** — provider `switchpoint` left the platform.
-- **2026-07-09 13:48** — **3 models removed from the catalog in one poll**: `google/gemini-2.5-flash-lite-preview-09-2025`, `poolside/laguna-xs.2`, `poolside/laguna-xs.2:free`.
 - **2026-07-09 18:49** — **6 models added to the catalog in one poll**: `openai/gpt-5.6-luna`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-terra-pro`.
 - **2026-07-10 16:54** — provider `clarifai` left the platform.
 - **2026-07-13 16:30** — provider `liquid` left the platform.
@@ -113,6 +111,9 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-07-20 17:59** — provider `tencent` changed its terms of service url.
 - **2026-07-20 17:59** — provider `tencent` changed its privacy policy url.
 - **2026-07-21 17:15** — **4 models added to the catalog in one poll**: `google/gemini-3.5-flash-lite`, `google/gemini-3.6-flash`, `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`.
+- **2026-07-22 23:00** — **24 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, +16 more.
+- **2026-07-22 23:00** — provider `coreweave` changed its terms of service url.
+- **2026-07-22 23:00** — provider `coreweave` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

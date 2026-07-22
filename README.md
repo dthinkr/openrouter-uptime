@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-22T05:47:52+00:00 UTC)
+## Current status (2026-07-22T08:24:45+00:00 UTC)
 
 332 models polled, 1029 inference endpoints:
-up 631, degraded 134, down 32, idle 232.
+up 649, degraded 148, down 36, idle 196.
 
-Currently down (32):
+Currently down (36):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-opus-4.8` | Amazon Bedrock | 72% | 74% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 65% | 100% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 68% | n/a |
 | `deepseek/deepseek-v3.2` | Alibaba | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | GMICloud | 76% | 97% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 66% | n/a |
-| `google/gemini-2.5-flash` | Google | 76% | 54% |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 66% | 29% |
-| `google/gemma-4-31b-it` | Together | 72% | n/a |
-| `minimax/minimax-m3` | Morph | 67% | 100% |
-| `moonshotai/kimi-k2.5` | Chutes | 55% | n/a |
-| `moonshotai/kimi-k2.6` | ModelRun | 29% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Crusoe | n/a | n/a |
-| `qwen/qwen-2.5-7b-instruct` | Together | 74% | 27% |
-| plus 17 more | | | |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `google/gemma-3-27b-it` | Novita | 72% | 76% |
+| `google/gemma-4-26b-a4b-it` | Google | 79% | 86% |
+| `google/gemma-4-31b-it` | Together | 70% | n/a |
+| `minimax/minimax-m2.7` | Morph | 60% | n/a |
+| `moonshotai/kimi-k2.6` | Decart | 39% | n/a |
+| `moonshotai/kimi-k2.6` | ModelRun | 50% | n/a |
+| `moonshotai/kimi-k2.6` | Venice | 54% | n/a |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 64% | 13% |
+| `moonshotai/kimi-k2.6` | Phala | 80% | 98% |
+| plus 21 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

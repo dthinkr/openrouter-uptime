@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-21T23:54:41+00:00 UTC)
+## Current status (2026-07-22T02:26:53+00:00 UTC)
 
-332 models polled, 1028 inference endpoints:
-up 623, degraded 103, down 62, idle 240.
+332 models polled, 1029 inference endpoints:
+up 628, degraded 124, down 27, idle 250.
 
-Currently down (62):
+Currently down (27):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | 100% |
-| `arcee-ai/trinity-large-thinking` | Parasail | n/a | n/a |
-| `deepseek/deepseek-v3.2` | Alibaba | 1% | 0% |
-| `deepseek/deepseek-v4-flash` | Parasail | 3% | 0% |
-| `google/gemini-2.5-flash` | Google | 60% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | Together | 70% | 100% |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Parasail | 15% | n/a |
-| `google/gemma-3-27b-it` | Phala | 78% | 60% |
-| `google/gemma-4-26b-a4b-it` | Parasail | 3% | n/a |
-| `google/gemma-4-26b-a4b-it` | Google | 61% | 68% |
-| `google/gemma-4-31b-it` | Venice | 9% | 0% |
-| `google/gemma-4-31b-it` | Parasail | 13% | 0% |
-| plus 47 more | | | |
+| `google/gemma-3-27b-it` | Phala | 61% | 98% |
+| `google/gemma-4-26b-a4b-it` | Google | 79% | 90% |
+| `google/gemma-4-31b-it` | Chutes | 48% | 100% |
+| `google/gemma-4-31b-it` | SiliconFlow | 16% | n/a |
+| `google/gemma-4-31b-it` | Together | 61% | n/a |
+| `google/gemma-4-31b-it` | Together | 63% | 57% |
+| `moonshotai/kimi-k2.6` | DigitalOcean | 73% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | Together | 72% | 17% |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | Phala | n/a | n/a |
+| `qwen/qwen3.5-122b-a10b` | SiliconFlow | 51% | 54% |
+| `qwen/qwen3.5-122b-a10b` | Alibaba | 72% | n/a |
+| plus 12 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

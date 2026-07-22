@@ -69,30 +69,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-22T08:24:45+00:00 UTC)
+## Current status (2026-07-22T11:07:23+00:00 UTC)
 
 332 models polled, 1029 inference endpoints:
-up 649, degraded 148, down 36, idle 196.
+up 649, degraded 144, down 36, idle 200.
 
 Currently down (36):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | Mara | 68% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 79% | 60% |
+| `deepseek/deepseek-chat-v3.1` | SiliconFlow | 71% | 47% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 51% | 41% |
 | `deepseek/deepseek-v3.2` | Alibaba | n/a | n/a |
+| `google/gemini-2.5-flash` | Google | 76% | 94% |
+| `google/gemini-2.5-pro` | Google | 75% | 84% |
+| `google/gemini-2.5-pro-preview` | Google | 75% | 84% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 71% | n/a |
 | `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
 | `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | Novita | 72% | 76% |
-| `google/gemma-4-26b-a4b-it` | Google | 79% | 86% |
-| `google/gemma-4-31b-it` | Together | 70% | n/a |
-| `minimax/minimax-m2.7` | Morph | 60% | n/a |
-| `moonshotai/kimi-k2.6` | Decart | 39% | n/a |
-| `moonshotai/kimi-k2.6` | ModelRun | 50% | n/a |
-| `moonshotai/kimi-k2.6` | Venice | 54% | n/a |
-| `moonshotai/kimi-k2.6` | DigitalOcean | 64% | 13% |
-| `moonshotai/kimi-k2.6` | Phala | 80% | 98% |
+| `google/gemma-4-31b-it` | SiliconFlow | 30% | 100% |
+| `moonshotai/kimi-k2.5` | Phala | 44% | n/a |
+| `moonshotai/kimi-k2.6` | Decart | 51% | 100% |
+| `moonshotai/kimi-k2.6` | Chutes | 76% | 95% |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 9% | n/a |
 | plus 21 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

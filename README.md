@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-22T11:07:23+00:00 UTC)
+## Current status (2026-07-22T13:46:57+00:00 UTC)
 
 332 models polled, 1029 inference endpoints:
-up 649, degraded 144, down 36, idle 200.
+up 661, degraded 141, down 34, idle 193.
 
-Currently down (36):
+Currently down (34):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 79% | 60% |
-| `deepseek/deepseek-chat-v3.1` | SiliconFlow | 71% | 47% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 51% | 41% |
-| `deepseek/deepseek-v3.2` | Alibaba | n/a | n/a |
-| `google/gemini-2.5-flash` | Google | 76% | 94% |
-| `google/gemini-2.5-pro` | Google | 75% | 84% |
-| `google/gemini-2.5-pro-preview` | Google | 75% | 84% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 71% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | SiliconFlow | 30% | 100% |
-| `moonshotai/kimi-k2.5` | Phala | 44% | n/a |
-| `moonshotai/kimi-k2.6` | Decart | 51% | 100% |
-| `moonshotai/kimi-k2.6` | Chutes | 76% | 95% |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 9% | n/a |
-| plus 21 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 74% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 74% | 77% |
+| `anthropic/claude-fable-5` | Google | 79% | 87% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 67% | 73% |
+| `deepseek/deepseek-v3.2` | Alibaba | 0% | n/a |
+| `google/gemini-2.5-flash` | Google | 78% | 79% |
+| `google/gemini-2.5-pro` | Google | 46% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 46% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 46% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
+| `google/gemma-3-27b-it` | Phala | 67% | 28% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 58% | 100% |
+| plus 19 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-22T13:46:57+00:00 UTC)
+## Current status (2026-07-22T15:39:21+00:00 UTC)
 
 332 models polled, 1029 inference endpoints:
-up 661, degraded 141, down 34, idle 193.
+up 640, degraded 150, down 35, idle 204.
 
-Currently down (34):
+Currently down (35):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 74% | n/a |
-| `anthropic/claude-fable-5` | Anthropic | 74% | 77% |
-| `anthropic/claude-fable-5` | Google | 79% | 87% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 67% | 73% |
+| `anthropic/claude-fable-5` | Anthropic | 76% | 69% |
+| `anthropic/claude-fable-5` | Google | 79% | 77% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 67% | 63% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 73% | n/a |
 | `deepseek/deepseek-v3.2` | Alibaba | 0% | n/a |
-| `google/gemini-2.5-flash` | Google | 78% | 79% |
-| `google/gemini-2.5-pro` | Google | 46% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 46% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 46% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Phala | 67% | 28% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 58% | 100% |
-| plus 19 more | | | |
+| `deepseek/deepseek-v4-pro` | BaseTen | 58% | n/a |
+| `deepseek/deepseek-v4-pro` | Together | 72% | 99% |
+| `google/gemini-2.5-flash` | Google | 67% | 86% |
+| `google/gemini-2.5-flash` | Google | 72% | 79% |
+| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
+| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 65% | 82% |
+| `google/gemma-3-27b-it` | Novita | 79% | 79% |
+| plus 20 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-22T17:15:49+00:00 UTC)
+## Current status (2026-07-22T19:13:21+00:00 UTC)
 
-332 models polled, 1029 inference endpoints:
-up 640, degraded 142, down 30, idle 217.
+332 models polled, 1030 inference endpoints:
+up 643, degraded 140, down 25, idle 222.
 
-Currently down (30):
+Currently down (25):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 59% | 67% |
-| `anthropic/claude-fable-5` | Anthropic | 78% | 63% |
-| `anthropic/claude-fable-5` | Google | 68% | 68% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 65% | 75% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 68% | 35% |
 | `deepseek/deepseek-v3.2` | Alibaba | 0% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 59% | 75% |
-| `google/gemma-3-27b-it` | Novita | 73% | 87% |
-| `google/gemma-4-26b-a4b-it` | Google | 79% | 81% |
-| `google/gemma-4-31b-it` | Chutes | 72% | 52% |
-| `google/gemma-4-31b-it` | Together | 73% | 68% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 78% | 73% |
-| plus 15 more | | | |
+| `google/gemini-2.5-flash` | Google | 60% | 57% |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemma-3-27b-it` | Novita | 77% | 86% |
+| `google/gemma-3-27b-it` | Phala | 74% | 88% |
+| `google/gemma-4-31b-it` | Together | 73% | 90% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 78% | 81% |
+| `moonshotai/kimi-k2.6` | ModelRun | 78% | 28% |
+| `moonshotai/kimi-k2.6` | Venice | 53% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | Together | 71% | 68% |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3-coder` | Google | 6% | 2% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | Phala | 0% | 0% |
+| plus 10 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

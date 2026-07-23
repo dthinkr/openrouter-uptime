@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-23T11:07:11+00:00 UTC)
+## Current status (2026-07-23T13:51:35+00:00 UTC)
 
 332 models polled, 1028 inference endpoints:
-up 637, degraded 144, down 24, idle 223.
+up 665, degraded 130, down 32, idle 201.
 
-Currently down (24):
+Currently down (32):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 48% | 42% |
-| `anthropic/claude-fable-5` | Google | 76% | 60% |
-| `deepseek/deepseek-v3.2` | Alibaba | 0% | 0% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Novita | 72% | 94% |
-| `google/gemma-4-26b-a4b-it` | Google | 75% | 69% |
-| `google/gemma-4-31b-it` | Phala | 64% | n/a |
-| `google/gemma-4-31b-it` | Together | 71% | n/a |
-| `meta-llama/llama-4-maverick` | DigitalOcean | 9% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 45% | n/a |
-| `openai/gpt-oss-20b` | Parasail | 76% | 51% |
-| `qwen/qwen-2.5-72b-instruct` | Novita | 60% | n/a |
-| `qwen/qwen-2.5-7b-instruct` | Together | 71% | n/a |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| plus 9 more | | | |
+| `anthropic/claude-fable-5` | Anthropic | 73% | 76% |
+| `anthropic/claude-fable-5` | Google | 65% | 14% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 99% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 66% | 72% |
+| `deepseek/deepseek-v3.2` | Alibaba | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | Parasail | 48% | 100% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | Novita | 74% | 61% |
+| `google/gemma-3-27b-it` | Phala | 70% | 97% |
+| `google/gemma-4-26b-a4b-it` | Google | 58% | 63% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | n/a |
+| plus 17 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

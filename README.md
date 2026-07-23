@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-23T02:32:00+00:00 UTC)
+## Current status (2026-07-23T05:51:16+00:00 UTC)
 
 332 models polled, 1029 inference endpoints:
-up 642, degraded 127, down 34, idle 226.
+up 627, degraded 138, down 43, idle 221.
 
-Currently down (34):
+Currently down (43):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 79% | 76% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 73% | n/a |
-| `anthropic/claude-fable-5` | Anthropic | 54% | 46% |
-| `anthropic/claude-fable-5` | Google | 45% | 36% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 58% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 53% | 55% |
+| `anthropic/claude-fable-5` | Google | 53% | 53% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 77% | 95% |
 | `deepseek/deepseek-v3.2` | Alibaba | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | Ionstream | 75% | 74% |
-| `google/gemini-2.5-flash` | Google | 55% | n/a |
-| `google/gemini-2.5-pro` | Google | 55% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 55% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 55% | n/a |
+| `google/gemini-2.5-flash` | Google | 58% | 63% |
 | `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
 | `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | Novita | 79% | 58% |
-| plus 19 more | | | |
+| `google/gemma-3-27b-it` | Phala | 75% | n/a |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 70% | 100% |
+| `google/gemma-4-26b-a4b-it` | Google | 74% | 51% |
+| `google/gemma-4-31b-it` | SiliconFlow | 29% | 2% |
+| `google/gemma-4-31b-it` | Together | 79% | 71% |
+| plus 28 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

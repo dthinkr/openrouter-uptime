@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-22T23:00:12+00:00 UTC)
+## Current status (2026-07-23T02:32:00+00:00 UTC)
 
 332 models polled, 1029 inference endpoints:
-up 655, degraded 126, down 32, idle 216.
+up 642, degraded 127, down 34, idle 226.
 
-Currently down (32):
+Currently down (34):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 67% | n/a |
-| `anthropic/claude-fable-5` | Anthropic | 68% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 59% |
-| `deepseek/deepseek-chat-v3.1` | Google | 73% | n/a |
-| `deepseek/deepseek-v3.2` | Alibaba | n/a | n/a |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 79% | 76% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 73% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 54% | 46% |
+| `anthropic/claude-fable-5` | Google | 45% | 36% |
+| `deepseek/deepseek-v3.2` | Alibaba | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | Ionstream | 75% | 74% |
+| `google/gemini-2.5-flash` | Google | 55% | n/a |
+| `google/gemini-2.5-pro` | Google | 55% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 55% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 55% | n/a |
 | `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
 | `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Novita | 74% | 95% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | n/a |
-| `moonshotai/kimi-k2.5` | Chutes | 24% | n/a |
-| `moonshotai/kimi-k2.6` | Decart | 27% | n/a |
-| `moonshotai/kimi-k2.6` | ModelRun | 76% | n/a |
-| `openai/gpt-5.1` | OpenAI | 77% | 64% |
-| plus 17 more | | | |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
+| `google/gemma-3-27b-it` | Novita | 79% | 58% |
+| plus 19 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -102,7 +102,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-09 18:49** — **6 models added to the catalog in one poll**: `openai/gpt-5.6-luna`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-terra-pro`.
 - **2026-07-10 16:54** — provider `clarifai` left the platform.
 - **2026-07-13 16:30** — provider `liquid` left the platform.
 - **2026-07-14 14:47** — provider `infermatic` left the platform.
@@ -114,6 +113,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-07-22 23:00** — **24 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, +16 more.
 - **2026-07-22 23:00** — provider `coreweave` changed its terms of service url.
 - **2026-07-22 23:00** — provider `coreweave` changed its privacy policy url.
+- **2026-07-23 02:32** — **25 models removed from the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, +17 more.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

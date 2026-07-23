@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-23T19:12:48+00:00 UTC)
+## Current status (2026-07-23T21:01:17+00:00 UTC)
 
-333 models polled, 1033 inference endpoints:
-up 608, degraded 166, down 32, idle 227.
+333 models polled, 1053 inference endpoints:
+up 664, degraded 125, down 34, idle 230.
 
-Currently down (32):
+Currently down (34):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | AtlasCloud | 35% | 40% |
-| `deepseek/deepseek-v3.2` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 62% | 100% |
-| `deepseek/deepseek-v4-pro` | BaseTen | 69% | 68% |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
-| `google/gemma-3-27b-it` | Phala | 43% | 29% |
-| `google/gemma-4-26b-a4b-it` | Google | 63% | 32% |
-| `google/gemma-4-31b-it` | DeepInfra | 62% | n/a |
-| `google/gemma-4-31b-it` | Phala | 76% | 58% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 69% | n/a |
-| `moonshotai/kimi-k2.6` | Venice | 78% | 97% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 60% | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
-| plus 17 more | | | |
+| `deepseek/deepseek-v3.2` | Alibaba | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | Ionstream | 77% | 100% |
+| `deepseek/deepseek-v4-pro` | DigitalOcean | 26% | n/a |
+| `deepseek/deepseek-v4-pro` | BaseTen | 73% | n/a |
+| `google/gemini-2.5-flash` | Google | 60% | 69% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | Novita | 72% | 93% |
+| `google/gemma-3-27b-it` | Phala | 51% | 96% |
+| `google/gemma-4-26b-a4b-it` | Google | 68% | 51% |
+| `google/gemma-4-31b-it` | Chutes | 79% | 47% |
+| `google/gemma-4-31b-it` | Phala | 59% | 52% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 73% | n/a |
+| plus 19 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

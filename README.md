@@ -69,30 +69,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-23T13:51:35+00:00 UTC)
+## Current status (2026-07-23T15:53:21+00:00 UTC)
 
-332 models polled, 1028 inference endpoints:
-up 665, degraded 130, down 32, idle 201.
+332 models polled, 1030 inference endpoints:
+up 637, degraded 155, down 32, idle 206.
 
 Currently down (32):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 73% | 76% |
-| `anthropic/claude-fable-5` | Google | 65% | 14% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 99% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 66% | 72% |
-| `deepseek/deepseek-v3.2` | Alibaba | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | Parasail | 48% | 100% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Novita | 74% | 61% |
-| `google/gemma-3-27b-it` | Phala | 70% | 97% |
-| `google/gemma-4-26b-a4b-it` | Google | 58% | 63% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 18% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 79% | 91% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 68% |
+| `deepseek/deepseek-chat-v3.1` | AtlasCloud | 36% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 75% | n/a |
+| `deepseek/deepseek-v3.2` | Alibaba | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 70% | 100% |
+| `google/gemini-2.5-flash` | Google | 77% | 73% |
+| `google/gemma-3-27b-it` | Novita | 71% | 100% |
+| `google/gemma-3-27b-it` | Phala | 60% | n/a |
+| `google/gemma-4-26b-a4b-it` | Google | 73% | 78% |
+| `google/gemma-4-31b-it` | Chutes | 77% | 88% |
+| `google/gemma-4-31b-it` | SiliconFlow | 41% | n/a |
+| `google/gemma-4-31b-it` | Phala | 75% | 100% |
+| `google/gemma-4-31b-it` | Together | 67% | 68% |
 | plus 17 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-24T09:19:39+00:00 UTC)
+## Current status (2026-07-24T11:40:00+00:00 UTC)
 
 333 models polled, 1040 inference endpoints:
-up 644, degraded 156, down 40, idle 200.
+up 579, degraded 164, down 85, idle 212.
 
-Currently down (40):
+Currently down (85):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 51% | 100% |
-| `anthropic/claude-fable-5` | Anthropic | 77% | 69% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 66% | 58% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 71% | 72% |
-| `deepseek/deepseek-v3.2` | Alibaba | 49% | 95% |
+| `deepseek/deepseek-chat` | Novita | 62% | 94% |
+| `deepseek/deepseek-chat-v3-0324` | Novita | 41% | 99% |
+| `deepseek/deepseek-chat-v3.1` | Novita | 60% | n/a |
+| `deepseek/deepseek-r1` | Novita | 79% | 100% |
+| `deepseek/deepseek-v3.2` | Novita | 79% | 100% |
+| `deepseek/deepseek-v3.2-exp` | Novita | 70% | 99% |
+| `deepseek/deepseek-v4-flash` | Parasail | 68% | 99% |
+| `deepseek/deepseek-v4-flash` | Ambient | 6% | 100% |
+| `deepseek/deepseek-v4-pro` | Novita | 74% | 100% |
 | `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
 | `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Novita | 78% | 91% |
-| `google/gemma-4-31b-it` | Novita | 52% | 63% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | n/a |
-| `minimax/minimax-m3` | Venice | 76% | 98% |
-| `minimax/minimax-m3` | Morph | 3% | 4% |
-| `mistralai/mistral-nemo` | Novita | 78% | 60% |
-| plus 25 more | | | |
+| `google/gemma-3-27b-it` | Nebius | 78% | 38% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 75% | 99% |
+| plus 70 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

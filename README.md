@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-24T19:21:39+00:00 UTC)
+## Current status (2026-07-24T21:00:04+00:00 UTC)
 
-335 models polled, 1050 inference endpoints:
-up 630, degraded 154, down 44, idle 222.
+335 models polled, 1041 inference endpoints:
+up 664, degraded 123, down 47, idle 207.
 
-Currently down (44):
+Currently down (47):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 65% | n/a |
-| `deepseek/deepseek-v3.2` | DeepInfra | 77% | 65% |
-| `deepseek/deepseek-v3.2` | Venice | 48% | 64% |
-| `google/gemini-2.5-flash` | Google | 52% | 67% |
+| `anthropic/claude-fable-5` | Anthropic | 78% | 87% |
+| `deepseek/deepseek-chat` | DeepInfra | 80% | 90% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 70% | 45% |
+| `deepseek/deepseek-v3.2` | Venice | 76% | n/a |
+| `google/gemini-2.5-flash` | Google | 39% | 49% |
 | `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
 | `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
-| `google/gemma-3-27b-it` | Nebius | 52% | 100% |
-| `google/gemma-3-27b-it` | Phala | 75% | n/a |
-| `google/gemma-4-26b-a4b-it` | Google | 66% | 56% |
-| `google/gemma-4-31b-it` | OpenInference | 66% | 71% |
-| `google/gemma-4-31b-it` | Chutes | 60% | 76% |
-| `google/gemma-4-31b-it` | SiliconFlow | 39% | 69% |
-| `google/gemma-4-31b-it` | Novita | 37% | 14% |
-| `google/gemma-4-31b-it` | Morph | 78% | 68% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 71% | n/a |
-| plus 29 more | | | |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
+| `google/gemma-3-27b-it` | DeepInfra | 64% | 100% |
+| `google/gemma-3-27b-it` | Nebius | 76% | 57% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 77% | 6% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 69% | n/a |
+| `mistralai/mistral-nemo` | Novita | 47% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | 0% |
+| plus 32 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

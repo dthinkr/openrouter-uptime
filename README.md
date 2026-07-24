@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-24T15:23:43+00:00 UTC)
+## Current status (2026-07-24T17:27:54+00:00 UTC)
 
-334 models polled, 1041 inference endpoints:
-up 618, degraded 162, down 49, idle 212.
+335 models polled, 1047 inference endpoints:
+up 647, degraded 160, down 38, idle 202.
 
-Currently down (49):
+Currently down (38):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 65% | 59% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 64% | 92% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 65% | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 75% | 68% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 79% | 98% |
-| `deepseek/deepseek-v4-pro` | DigitalOcean | 56% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemma-4-31b-it` | Chutes | 66% | 95% |
-| `google/gemma-4-31b-it` | SiliconFlow | 36% | 96% |
-| `google/gemma-4-31b-it` | Novita | 45% | 41% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 71% | 72% |
-| `minimax/minimax-m3` | AtlasCloud | 9% | n/a |
-| `mistralai/mistral-nemo` | Novita | 69% | 34% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Venice | 66% | 8% |
-| plus 34 more | | | |
+| `anthropic/claude-fable-5` | Anthropic | 73% | 70% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 55% | 96% |
+| `deepseek/deepseek-v3.2` | Venice | 57% | n/a |
+| `deepseek/deepseek-v4-pro` | Ionstream | 66% | 100% |
+| `deepseek/deepseek-v4-pro` | DigitalOcean | 77% | 20% |
+| `google/gemini-2.5-flash` | Google | 61% | 53% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 26% | 100% |
+| `google/gemma-4-31b-it` | Novita | 50% | 32% |
+| `google/gemma-4-31b-it` | Friendli | 69% | 64% |
+| `minimax/minimax-m2.5` | Friendli | 79% | n/a |
+| `mistralai/mistral-nemo` | Novita | 77% | 70% |
+| plus 23 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-24T21:00:04+00:00 UTC)
+## Current status (2026-07-24T22:13:46+00:00 UTC)
 
 335 models polled, 1041 inference endpoints:
-up 664, degraded 123, down 47, idle 207.
+up 657, degraded 129, down 34, idle 221.
 
-Currently down (47):
+Currently down (34):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 78% | 87% |
-| `deepseek/deepseek-chat` | DeepInfra | 80% | 90% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 70% | 45% |
-| `deepseek/deepseek-v3.2` | Venice | 76% | n/a |
-| `google/gemini-2.5-flash` | Google | 39% | 49% |
-| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
-| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
-| `google/gemma-3-27b-it` | DeepInfra | 64% | 100% |
-| `google/gemma-3-27b-it` | Nebius | 76% | 57% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 77% | 6% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 69% | n/a |
-| `mistralai/mistral-nemo` | Novita | 47% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | 0% |
-| plus 32 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 80% | 100% |
+| `anthropic/claude-fable-5` | Anthropic | 72% | 83% |
+| `deepseek/deepseek-v3.2` | DeepInfra | 29% | 79% |
+| `deepseek/deepseek-v3.2` | Venice | 7% | n/a |
+| `google/gemini-2.5-flash` | Google | 52% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 60% | 52% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k2.6` | Decart | 38% | 5% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 73% | n/a |
+| `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex-mini` | OpenAI | n/a | n/a |
+| plus 19 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

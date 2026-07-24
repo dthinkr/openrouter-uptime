@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-24T11:40:00+00:00 UTC)
+## Current status (2026-07-24T13:39:52+00:00 UTC)
 
 333 models polled, 1040 inference endpoints:
-up 579, degraded 164, down 85, idle 212.
+up 642, degraded 150, down 46, idle 202.
 
-Currently down (85):
+Currently down (46):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat` | Novita | 62% | 94% |
-| `deepseek/deepseek-chat-v3-0324` | Novita | 41% | 99% |
-| `deepseek/deepseek-chat-v3.1` | Novita | 60% | n/a |
-| `deepseek/deepseek-r1` | Novita | 79% | 100% |
-| `deepseek/deepseek-v3.2` | Novita | 79% | 100% |
-| `deepseek/deepseek-v3.2-exp` | Novita | 70% | 99% |
-| `deepseek/deepseek-v4-flash` | Parasail | 68% | 99% |
-| `deepseek/deepseek-v4-flash` | Ambient | 6% | 100% |
-| `deepseek/deepseek-v4-pro` | Novita | 74% | 100% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 78% | 38% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 75% | 99% |
-| plus 70 more | | | |
+| `arcee-ai/trinity-large-thinking` | Arcee AI | 76% | 71% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 78% | 40% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 71% | 76% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 76% | 84% |
+| `deepseek/deepseek-v4-pro` | DigitalOcean | 80% | 69% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `google/gemma-3-27b-it` | Nebius | 74% | n/a |
+| `google/gemma-3-27b-it` | Phala | 60% | n/a |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 54% | 98% |
+| `google/gemma-4-26b-a4b-it` | Parasail | 55% | 92% |
+| `google/gemma-4-31b-it` | Chutes | 75% | 98% |
+| `google/gemma-4-31b-it` | SiliconFlow | 44% | 98% |
+| plus 31 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

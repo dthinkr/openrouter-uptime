@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-24T13:39:52+00:00 UTC)
+## Current status (2026-07-24T15:23:43+00:00 UTC)
 
-333 models polled, 1040 inference endpoints:
-up 642, degraded 150, down 46, idle 202.
+334 models polled, 1041 inference endpoints:
+up 618, degraded 162, down 49, idle 212.
 
-Currently down (46):
+Currently down (49):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | Arcee AI | 76% | 71% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 78% | 40% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 71% | 76% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 76% | 84% |
-| `deepseek/deepseek-v4-pro` | DigitalOcean | 80% | 69% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | Nebius | 74% | n/a |
-| `google/gemma-3-27b-it` | Phala | 60% | n/a |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 54% | 98% |
-| `google/gemma-4-26b-a4b-it` | Parasail | 55% | 92% |
-| `google/gemma-4-31b-it` | Chutes | 75% | 98% |
-| `google/gemma-4-31b-it` | SiliconFlow | 44% | 98% |
-| plus 31 more | | | |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 65% | 59% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 64% | 92% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 65% | n/a |
+| `deepseek/deepseek-v3.2` | Venice | 75% | 68% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 79% | 98% |
+| `deepseek/deepseek-v4-pro` | DigitalOcean | 56% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemma-4-31b-it` | Chutes | 66% | 95% |
+| `google/gemma-4-31b-it` | SiliconFlow | 36% | 96% |
+| `google/gemma-4-31b-it` | Novita | 45% | 41% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 71% | 72% |
+| `minimax/minimax-m3` | AtlasCloud | 9% | n/a |
+| `mistralai/mistral-nemo` | Novita | 69% | 34% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Venice | 66% | 8% |
+| plus 34 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

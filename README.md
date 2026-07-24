@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-24T17:27:54+00:00 UTC)
+## Current status (2026-07-24T19:21:39+00:00 UTC)
 
-335 models polled, 1047 inference endpoints:
-up 647, degraded 160, down 38, idle 202.
+335 models polled, 1050 inference endpoints:
+up 630, degraded 154, down 44, idle 222.
 
-Currently down (38):
+Currently down (44):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 73% | 70% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 55% | 96% |
-| `deepseek/deepseek-v3.2` | Venice | 57% | n/a |
-| `deepseek/deepseek-v4-pro` | Ionstream | 66% | 100% |
-| `deepseek/deepseek-v4-pro` | DigitalOcean | 77% | 20% |
-| `google/gemini-2.5-flash` | Google | 61% | 53% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `google/gemma-4-31b-it` | SiliconFlow | 26% | 100% |
-| `google/gemma-4-31b-it` | Novita | 50% | 32% |
-| `google/gemma-4-31b-it` | Friendli | 69% | 64% |
-| `minimax/minimax-m2.5` | Friendli | 79% | n/a |
-| `mistralai/mistral-nemo` | Novita | 77% | 70% |
-| plus 23 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 65% | n/a |
+| `deepseek/deepseek-v3.2` | DeepInfra | 77% | 65% |
+| `deepseek/deepseek-v3.2` | Venice | 48% | 64% |
+| `google/gemini-2.5-flash` | Google | 52% | 67% |
+| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
+| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
+| `google/gemma-3-27b-it` | Nebius | 52% | 100% |
+| `google/gemma-3-27b-it` | Phala | 75% | n/a |
+| `google/gemma-4-26b-a4b-it` | Google | 66% | 56% |
+| `google/gemma-4-31b-it` | OpenInference | 66% | 71% |
+| `google/gemma-4-31b-it` | Chutes | 60% | 76% |
+| `google/gemma-4-31b-it` | SiliconFlow | 39% | 69% |
+| `google/gemma-4-31b-it` | Novita | 37% | 14% |
+| `google/gemma-4-31b-it` | Morph | 78% | 68% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 71% | n/a |
+| plus 29 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

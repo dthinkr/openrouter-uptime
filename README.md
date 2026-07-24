@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-24T06:23:19+00:00 UTC)
+## Current status (2026-07-24T09:19:39+00:00 UTC)
 
-333 models polled, 1039 inference endpoints:
-up 652, degraded 137, down 37, idle 213.
+333 models polled, 1040 inference endpoints:
+up 644, degraded 156, down 40, idle 200.
 
-Currently down (37):
+Currently down (40):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 66% | 100% |
-| `anthropic/claude-fable-5` | Anthropic | 71% | 28% |
-| `deepseek/deepseek-v3.2` | Venice | 78% | 97% |
-| `deepseek/deepseek-v3.2` | Alibaba | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | DigitalOcean | 52% | n/a |
-| `google/gemini-2.5-flash` | Google | 79% | 72% |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 50% | 100% |
-| `google/gemma-4-26b-a4b-it` | Google | 68% | 63% |
-| `google/gemma-4-31b-it` | Novita | 45% | 75% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 66% | n/a |
-| `minimax/minimax-m2.7` | Mara | 72% | 74% |
-| `moonshotai/kimi-k2.5` | Chutes | 52% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Crusoe | 0% | n/a |
-| plus 22 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 51% | 100% |
+| `anthropic/claude-fable-5` | Anthropic | 77% | 69% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 66% | 58% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 71% | 72% |
+| `deepseek/deepseek-v3.2` | Alibaba | 49% | 95% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | Novita | 78% | 91% |
+| `google/gemma-4-31b-it` | Novita | 52% | 63% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | n/a |
+| `minimax/minimax-m3` | Venice | 76% | 98% |
+| `minimax/minimax-m3` | Morph | 3% | 4% |
+| `mistralai/mistral-nemo` | Novita | 78% | 60% |
+| plus 25 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

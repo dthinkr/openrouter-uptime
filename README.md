@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-25T07:13:12+00:00 UTC)
+## Current status (2026-07-25T09:44:07+00:00 UTC)
 
 335 models polled, 1041 inference endpoints:
-up 651, degraded 115, down 34, idle 241.
+up 617, degraded 142, down 36, idle 246.
 
-Currently down (34):
+Currently down (36):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 23% | 8% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 47% | 100% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 71% | 99% |
 | `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
 | `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | ModelRun | 18% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 67% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k2.6` | Decart | 27% | n/a |
-| `openai/gpt-5.1-chat` | OpenAI | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `google/gemma-3-27b-it` | Nebius | 78% | 100% |
+| `google/gemma-4-31b-it` | Chutes | 77% | 82% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 63% | 54% |
+| `openai/gpt-4o-2024-05-13` | OpenAI | 67% | 48% |
+| `openai/gpt-5` | OpenAI | 80% | 56% |
+| `openai/gpt-5-nano` | OpenAI | 77% | 67% |
+| `openai/gpt-5-nano` | OpenAI | 77% | 67% |
+| `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
 | `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
 | `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | 0% | 0% |
-| `openai/gpt-5.1-codex-max` | OpenAI | 0% | 0% |
-| plus 19 more | | | |
+| plus 21 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

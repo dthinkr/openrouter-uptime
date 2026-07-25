@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-25T13:20:02+00:00 UTC)
+## Current status (2026-07-25T15:00:28+00:00 UTC)
 
 335 models polled, 1042 inference endpoints:
-up 667, degraded 102, down 28, idle 245.
+up 658, degraded 116, down 31, idle 237.
 
-Currently down (28):
+Currently down (31):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 50% | 100% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 37% | 21% |
+| `google/gemini-2.5-flash` | Google | 43% | n/a |
 | `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
 | `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
 | `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
-| `google/gemma-4-31b-it` | Chutes | 79% | 87% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 67% | n/a |
-| `mistralai/mistral-nemo` | Novita | 71% | 85% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | n/a |
-| `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | 0% | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | 0% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 69% | 22% |
+| `google/gemma-3-27b-it` | Novita | 70% | 68% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 76% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 56% | n/a |
+| `mistralai/mistral-nemo` | Novita | 78% | 81% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | n/a |
+| `openai/gpt-5.1-chat` | OpenAI | 0% | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
 | `openai/gpt-5.1-codex-mini` | OpenAI | 0% | 0% |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| plus 13 more | | | |
+| plus 16 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

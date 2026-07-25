@@ -1,10 +1,10 @@
 {
- "generated": "2026-07-25T13:20:02+00:00",
+ "generated": "2026-07-25T15:00:28+00:00",
  "models_polled": 335,
  "providers": 97,
  "endpoint_count": 1042,
- "down_or_degraded": 130,
- "transitions_this_run": 19,
+ "down_or_degraded": 147,
+ "transitions_this_run": 16,
  "endpoints": [
   {
    "model": "ai21/jamba-large-1.7",
@@ -31,7 +31,7 @@
    "model": "aion-labs/aion-3.0-mini",
    "provider": "AionLabs",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -52,18 +52,11 @@
    "model": "amazon/nova-2-lite-v1",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": 98.88888888888889,
-   "up30m": 98.95506792058517
+   "up5m": 98.91696750902527,
+   "up30m": 98.97767577717505
   },
   {
    "model": "amazon/nova-2-lite-v1",
-   "provider": "Amazon Bedrock",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
-  },
-  {
-   "model": "amazon/nova-lite-v1",
    "provider": "Amazon Bedrock",
    "state": "up",
    "up5m": null,
@@ -77,11 +70,18 @@
    "up30m": 100
   },
   {
+   "model": "amazon/nova-lite-v1",
+   "provider": "Amazon Bedrock",
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.71014492753623
+  },
+  {
    "model": "amazon/nova-micro-v1",
    "provider": "Amazon Bedrock",
-   "state": "down",
+   "state": "up",
    "up5m": 100,
-   "up30m": 49.50036205648081
+   "up30m": 100
   },
   {
    "model": "amazon/nova-micro-v1",
@@ -128,23 +128,23 @@
   {
    "model": "anthropic/claude-fable-5",
    "provider": "Azure",
-   "state": "degraded",
-   "up5m": 93.42105263157895,
-   "up30m": 91.01382488479263
+   "state": "up",
+   "up5m": 98.14814814814815,
+   "up30m": 98.9191203876258
   },
   {
    "model": "anthropic/claude-fable-5",
    "provider": "Anthropic",
    "state": "degraded",
-   "up5m": 82.92682926829268,
-   "up30m": 86.83385579937304
+   "up5m": null,
+   "up30m": 94.05172413793103
   },
   {
    "model": "anthropic/claude-fable-5",
    "provider": "Google",
    "state": "degraded",
-   "up5m": 95.25691699604744,
-   "up30m": 94.66316710411199
+   "up5m": 98.87640449438202,
+   "up30m": 96.65831244778613
   },
   {
    "model": "anthropic/claude-fable-5",
@@ -157,8 +157,8 @@
    "model": "anthropic/claude-fable-5",
    "provider": "Amazon Bedrock",
    "state": "degraded",
-   "up5m": 96.93396226415094,
-   "up30m": 97.98870853916726
+   "up5m": 99.53161592505855,
+   "up30m": 97.17560376586164
   },
   {
    "model": "anthropic/claude-fable-5",
@@ -192,8 +192,8 @@
    "model": "anthropic/claude-haiku-4.5",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": 99.97879334110911,
-   "up30m": 99.87355678544037
+   "up5m": 99.96878414234432,
+   "up30m": 99.91768579492005
   },
   {
    "model": "anthropic/claude-haiku-4.5",
@@ -212,16 +212,16 @@
   {
    "model": "anthropic/claude-opus-4",
    "provider": "Google",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-opus-4.1",
    "provider": "Anthropic",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "anthropic/claude-opus-4.1",
@@ -234,8 +234,8 @@
    "model": "anthropic/claude-opus-4.1",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": null,
+   "up30m": 99.47916666666666
   },
   {
    "model": "anthropic/claude-opus-4.1",
@@ -255,8 +255,8 @@
    "model": "anthropic/claude-opus-4.5",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.11504424778761,
+   "up30m": 99.89674754775426
   },
   {
    "model": "anthropic/claude-opus-4.5",
@@ -304,15 +304,15 @@
    "model": "anthropic/claude-opus-4.6",
    "provider": "Anthropic",
    "state": "up",
-   "up5m": 99.63898916967509,
-   "up30m": 99.94612068965517
+   "up5m": 100,
+   "up30m": 99.98484618881649
   },
   {
    "model": "anthropic/claude-opus-4.6",
    "provider": "Google",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "anthropic/claude-opus-4.6",
@@ -339,8 +339,8 @@
    "model": "anthropic/claude-opus-4.7",
    "provider": "Anthropic",
    "state": "up",
-   "up5m": 99.76387249114522,
-   "up30m": 99.86051782756516
+   "up5m": 100,
+   "up30m": 99.95779522241918
   },
   {
    "model": "anthropic/claude-opus-4.7",
@@ -388,7 +388,7 @@
    "model": "anthropic/claude-opus-4.8",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -416,8 +416,8 @@
    "model": "anthropic/claude-opus-4.8",
    "provider": "Anthropic",
    "state": "up",
-   "up5m": 99.94292237442922,
-   "up30m": 99.95382128838605
+   "up5m": 100,
+   "up30m": 99.99306903243694
   },
   {
    "model": "anthropic/claude-opus-4.8",
@@ -444,8 +444,8 @@
    "model": "anthropic/claude-opus-5",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.96342355523043
+   "up5m": 99.94275901545507,
+   "up30m": 99.97152619589977
   },
   {
    "model": "anthropic/claude-opus-5",
@@ -466,14 +466,14 @@
    "provider": "Amazon Bedrock",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.86225895316805
   },
   {
    "model": "anthropic/claude-opus-5",
    "provider": "Google",
    "state": "up",
    "up5m": null,
-   "up30m": 100
+   "up30m": 99.60159362549801
   },
   {
    "model": "anthropic/claude-opus-5",
@@ -507,8 +507,8 @@
    "model": "anthropic/claude-sonnet-4",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": 99.86263736263736,
-   "up30m": 99.97407983411094
+   "up5m": 99.97232982844494,
+   "up30m": 99.98541933978771
   },
   {
    "model": "anthropic/claude-sonnet-4",
@@ -528,21 +528,21 @@
    "model": "anthropic/claude-sonnet-4.5",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": 99.87301587301587,
-   "up30m": 99.93814943097476
+   "up5m": 100,
+   "up30m": 99.89087301587301
   },
   {
    "model": "anthropic/claude-sonnet-4.5",
    "provider": "Anthropic",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": null,
+   "up30m": 99.38271604938271
   },
   {
    "model": "anthropic/claude-sonnet-4.5",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -584,8 +584,8 @@
    "model": "anthropic/claude-sonnet-4.6",
    "provider": "Anthropic",
    "state": "up",
-   "up5m": 99.92687385740402,
-   "up30m": 99.93004057646566
+   "up5m": 99.98480012159902,
+   "up30m": 99.96747967479675
   },
   {
    "model": "anthropic/claude-sonnet-4.6",
@@ -599,21 +599,21 @@
    "provider": "Google",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.90925589836661
   },
   {
    "model": "anthropic/claude-sonnet-4.6",
    "provider": "Anthropic",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.2248062015504
+   "up5m": null,
+   "up30m": 98.4251968503937
   },
   {
    "model": "anthropic/claude-sonnet-4.6",
    "provider": "Amazon Bedrock",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.59128065395095
+   "up30m": 99.78969505783385
   },
   {
    "model": "anthropic/claude-sonnet-4.6",
@@ -640,15 +640,15 @@
    "model": "anthropic/claude-sonnet-5",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": 99.71695442966318,
-   "up30m": 99.91097783816708
+   "up5m": 100,
+   "up30m": 99.9893139559735
   },
   {
    "model": "anthropic/claude-sonnet-5",
    "provider": "Azure",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.82486865148861
   },
   {
    "model": "anthropic/claude-sonnet-5",
@@ -688,16 +688,16 @@
   {
    "model": "arcee-ai/trinity-large-thinking",
    "provider": "Parasail",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "arcee-ai/trinity-large-thinking",
    "provider": "Arcee AI",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "degraded",
+   "up5m": 97.40259740259741,
+   "up30m": 97.10144927536231
   },
   {
    "model": "arcee-ai/virtuoso-large",
@@ -709,9 +709,9 @@
   {
    "model": "baidu/ernie-4.5-vl-424b-a47b",
    "provider": "Novita",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "bytedance-seed/seed-1.6",
@@ -731,7 +731,7 @@
    "model": "bytedance-seed/seed-2.0-lite",
    "provider": "Seed",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -745,7 +745,7 @@
    "model": "bytedance/ui-tars-1.5-7b",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -758,16 +758,16 @@
   {
    "model": "cohere/command-a",
    "provider": "Cohere",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "cohere/command-r-08-2024",
    "provider": "Cohere",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 98.08429118773945
   },
   {
    "model": "cohere/command-r-plus-08-2024",
@@ -801,43 +801,43 @@
    "model": "deepseek/deepseek-chat",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": 99.79643765903307,
-   "up30m": 99.8118609406953
+   "up5m": 99.94711792702275,
+   "up30m": 99.83124736324005
   },
   {
    "model": "deepseek/deepseek-chat",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.79654120040692,
-   "up30m": 99.58912386706949
+   "up5m": 99.78969505783385,
+   "up30m": 98.73684210526315
   },
   {
    "model": "deepseek/deepseek-chat",
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96193376475067
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-chat-v3-0324",
    "provider": "DeepInfra",
-   "state": "degraded",
-   "up5m": 99.91863303498779,
-   "up30m": 97.9917735301234
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.95893223819301
   },
   {
    "model": "deepseek/deepseek-chat-v3-0324",
    "provider": "SiliconFlow",
    "state": "degraded",
-   "up5m": 98.86792452830188,
-   "up30m": 96.46813501889743
+   "up5m": 97.6027397260274,
+   "up30m": 96.23585726718886
   },
   {
    "model": "deepseek/deepseek-chat-v3-0324",
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.79508196721312
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-chat-v3-0324",
@@ -851,7 +851,7 @@
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.88047808764941
   },
   {
    "model": "deepseek/deepseek-chat-v3.1",
@@ -863,9 +863,9 @@
   {
    "model": "deepseek/deepseek-chat-v3.1",
    "provider": "SiliconFlow",
-   "state": "degraded",
-   "up5m": 94.11764705882352,
-   "up30m": 96.8384074941452
+   "state": "up",
+   "up5m": 99.17355371900827,
+   "up30m": 98.78172588832487
   },
   {
    "model": "deepseek/deepseek-chat-v3.1",
@@ -884,58 +884,58 @@
   {
    "model": "deepseek/deepseek-chat-v3.1",
    "provider": "Google",
-   "state": "degraded",
-   "up5m": 100,
-   "up30m": 95.23809523809523
+   "state": "up",
+   "up5m": null,
+   "up30m": 98.4313725490196
   },
   {
    "model": "deepseek/deepseek-chat-v3.1",
    "provider": "Mara",
    "state": "degraded",
-   "up5m": null,
-   "up30m": 93.16770186335404
+   "up5m": 83.87096774193549,
+   "up30m": 88.06584362139918
   },
   {
    "model": "deepseek/deepseek-chat-v3.1",
    "provider": "SambaNova",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.91169977924945
+   "up5m": null,
+   "up30m": 99.42196531791907
   },
   {
    "model": "deepseek/deepseek-r1",
    "provider": "Novita",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.20634920634922,
+   "up30m": 99.9054820415879
   },
   {
    "model": "deepseek/deepseek-r1",
    "provider": "Azure",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.24812030075188
+   "state": "degraded",
+   "up5m": null,
+   "up30m": 97.07602339181285
   },
   {
    "model": "deepseek/deepseek-r1-0528",
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.94432071269487
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-r1-0528",
    "provider": "SiliconFlow",
    "state": "up",
-   "up5m": 99.17355371900827,
-   "up30m": 98.84281581485052
+   "up5m": 100,
+   "up30m": 98.7460815047022
   },
   {
    "model": "deepseek/deepseek-r1-0528",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": 97.5,
-   "up30m": 99.76019184652279
+   "up5m": 100,
+   "up30m": 99.68152866242038
   },
   {
    "model": "deepseek/deepseek-r1-0528",
@@ -956,14 +956,14 @@
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.94603345925526
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v3.1-terminus",
    "provider": "SiliconFlow",
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 97.64957264957265
+   "up5m": 82.5,
+   "up30m": 94.18886198547214
   },
   {
    "model": "deepseek/deepseek-v3.1-terminus",
@@ -983,120 +983,120 @@
    "model": "deepseek/deepseek-v3.1-terminus",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "Baidu",
    "state": "up",
-   "up5m": 99.97967892704735,
-   "up30m": 99.97928105252252
+   "up5m": 99.95024875621891,
+   "up30m": 99.96007766708404
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.90615751100844
+   "up5m": 99.54716981132076,
+   "up30m": 99.7494816862474
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "SiliconFlow",
    "state": "degraded",
-   "up5m": 98.9247311827957,
-   "up30m": 97.41437206178644
+   "up5m": 96.60493827160494,
+   "up30m": 96.65134602757715
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "DeepInfra",
    "state": "degraded",
-   "up5m": 96.03960396039604,
-   "up30m": 96.66098807495742
+   "up5m": 96.89265536723164,
+   "up30m": 95.74000878348704
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "AtlasCloud",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.9788148417166
+   "up5m": 99.8114985862394,
+   "up30m": 99.89177489177489
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.9798947826961
+   "up30m": 99.97896231624898
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "GMICloud",
    "state": "up",
    "up5m": 100,
-   "up30m": 98.54368932038835
+   "up30m": 99.53488372093024
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "Venice",
    "state": "degraded",
-   "up5m": 88.67924528301887,
-   "up30m": 91.63879598662207
+   "up5m": 94.73684210526315,
+   "up30m": 92.54237288135593
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "Alibaba",
-   "state": "degraded",
-   "up5m": 98.18181818181819,
-   "up30m": 97.5975975975976
+   "state": "up",
+   "up5m": 98.49624060150376,
+   "up30m": 98.39119390347163
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "DigitalOcean",
-   "state": "up",
+   "state": "degraded",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 94.95896834701055
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "Friendli",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.90751017388088
+   "up5m": 99.56474428726877,
+   "up30m": 99.73804846103471
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.10714285714286,
-   "up30m": 98.53300733496333
+   "up5m": 99.33774834437085,
+   "up30m": 99.82886480319453
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "Phala",
    "state": "up",
-   "up5m": 98.14814814814815,
-   "up30m": 98.5781990521327
+   "up5m": 100,
+   "up30m": 99.78260869565217
   },
   {
    "model": "deepseek/deepseek-v3.2",
    "provider": "SambaNova",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v3.2-exp",
    "provider": "Novita",
-   "state": "up",
-   "up5m": 99.2094861660079,
-   "up30m": 98.9452867501648
+   "state": "degraded",
+   "up5m": 86.80555555555556,
+   "up30m": 96.46201873048908
   },
   {
    "model": "deepseek/deepseek-v3.2-exp",
    "provider": "SiliconFlow",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 98.10606060606061
+   "state": "degraded",
+   "up5m": 97.91666666666666,
+   "up30m": 95.61527581329563
   },
   {
    "model": "deepseek/deepseek-v3.2-exp",
@@ -1109,316 +1109,316 @@
    "model": "deepseek/deepseek-v4-flash",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.6051219138169,
-   "up30m": 99.46522084104734
+   "up5m": 99.12828001238992,
+   "up30m": 99.01296886795642
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Baidu",
    "state": "up",
-   "up5m": 99.95499983928514,
-   "up30m": 99.94791110161341
+   "up5m": 99.93788241140479,
+   "up30m": 99.93593346513482
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": 99.38223938223938,
-   "up30m": 99.28780363728856
+   "up5m": 99.4535519125683,
+   "up30m": 99.59116363761295
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "GMICloud",
    "state": "up",
-   "up5m": 99.99451483736492,
-   "up30m": 99.98871924025396
+   "up5m": 100,
+   "up30m": 99.99200069993876
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "AkashML",
    "state": "up",
-   "up5m": 99.68805704099822,
-   "up30m": 99.73725367532062
+   "up5m": 99.82631350412505,
+   "up30m": 99.72311100172287
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "DigitalOcean",
    "state": "up",
-   "up5m": 99.90747879722437,
-   "up30m": 99.60193838698511
+   "up5m": 99.23339011925043,
+   "up30m": 99.38330385888541
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "SiliconFlow",
    "state": "up",
-   "up5m": 99.55974842767296,
-   "up30m": 99.51867697877242
+   "up5m": 99.62330487192365,
+   "up30m": 99.59522795057521
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 99.95361781076066,
-   "up30m": 99.93404156784597
+   "up5m": 99.93522616862788,
+   "up30m": 99.92504612546126
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Venice",
    "state": "up",
-   "up5m": 99.86504723346829,
-   "up30m": 99.72752043596729
+   "up5m": 99.59919839679358,
+   "up30m": 99.31786041094752
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Morph",
-   "state": "degraded",
-   "up5m": 97.95178152336248,
-   "up30m": 97.29047930486779
+   "state": "up",
+   "up5m": 99.2411307152343,
+   "up30m": 98.29673023819969
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Ionstream",
    "state": "up",
-   "up5m": 99.94858611825192,
-   "up30m": 99.61349545051937
+   "up5m": 99.85104270109235,
+   "up30m": 99.76712328767124
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 99.19246298788694,
-   "up30m": 99.58162681111553
+   "up5m": 99.51636904761905,
+   "up30m": 99.23664122137404
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Fireworks",
    "state": "degraded",
-   "up5m": 95.81478183437223,
-   "up30m": 95.35856009070295
+   "up5m": 96.81647940074907,
+   "up30m": 96.17325032202662
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Novita",
    "state": "up",
-   "up5m": 99.99204138479905,
-   "up30m": 99.98375216637781
+   "up5m": 99.98642134564464,
+   "up30m": 99.98789918924568
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Ambient",
-   "state": "degraded",
-   "up5m": 99.66777408637874,
-   "up30m": 97.86265432098766
+   "state": "up",
+   "up5m": 99.5275590551181,
+   "up30m": 99.40677966101696
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Cloudflare",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.94666666666666,
+   "up30m": 99.98679693688935
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "AtlasCloud",
    "state": "up",
-   "up5m": 99.94665955460728,
-   "up30m": 99.73775966790731
+   "up5m": 99.80442663613815,
+   "up30m": 99.86745647336038
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "DeepSeek",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.98399522766789
+   "up5m": 99.9959453432267,
+   "up30m": 99.99760428545417
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "CoreWeave",
    "state": "up",
-   "up5m": 99.57399103139014,
-   "up30m": 99.67578456986371
+   "up5m": 99.71885813148789,
+   "up30m": 99.59764778706283
   },
   {
    "model": "deepseek/deepseek-v4-flash",
    "provider": "Io Net",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98392024441229
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "DeepSeek",
    "state": "up",
-   "up5m": 99.9616711383672,
-   "up30m": 99.96136578607303
+   "up5m": 100,
+   "up30m": 99.98664675819707
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "Baidu",
-   "state": "up",
-   "up5m": 99.87071751777634,
-   "up30m": 99.07515349343281
+   "state": "degraded",
+   "up5m": 98.25090470446321,
+   "up30m": 97.1830985915493
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": 99.53158053792687,
-   "up30m": 99.37955164978234
+   "up5m": 98.96152938399811,
+   "up30m": 98.26403987022108
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "GMICloud",
-   "state": "up",
-   "up5m": 99.70466627288836,
-   "up30m": 99.02063397129187
+   "state": "degraded",
+   "up5m": 96.91780821917808,
+   "up30m": 97.16291313249488
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "Ionstream",
    "state": "degraded",
-   "up5m": 98.9041095890411,
-   "up30m": 94.98635743519782
+   "up5m": 92.3076923076923,
+   "up30m": 93.36525307797537
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "Novita",
    "state": "up",
-   "up5m": 99.96251874062968,
-   "up30m": 99.82981196297372
+   "up5m": 99.89589839683532,
+   "up30m": 99.91456329639213
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "Wafer",
    "state": "degraded",
-   "up5m": 99.71830985915493,
-   "up30m": 97.9489326077857
+   "up5m": 94.47513812154696,
+   "up30m": 91.31205673758865
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.63950973323719
+   "up5m": 99.77777777777777,
+   "up30m": 99.38968568812938
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "DigitalOcean",
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 97.36251402918069
+   "up5m": 91.17647058823529,
+   "up30m": 92.42565055762083
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "Alibaba",
-   "state": "up",
-   "up5m": 99.82300884955752,
-   "up30m": 99.00555041628122
+   "state": "degraded",
+   "up5m": 97.57575757575758,
+   "up30m": 97.22521551724138
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "SiliconFlow",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.56786171574905
+   "up5m": 99.88331388564761,
+   "up30m": 99.87163029525033
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "Venice",
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 94.98714652956298
+   "up5m": 95.65217391304348,
+   "up30m": 88.03738317757009
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "AtlasCloud",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 98.68421052631578
+   "state": "degraded",
+   "up5m": 98.34710743801654,
+   "up30m": 97.47134800800437
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "BaseTen",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.95676610462603
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "Parasail",
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 96.67590027700831
+   "up5m": 90.69767441860465,
+   "up30m": 90.2676399026764
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "Together",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 98.6879100281162
+   "state": "degraded",
+   "up5m": 96.13259668508287,
+   "up30m": 95.7943925233645
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "CoreWeave",
-   "state": "degraded",
-   "up5m": 98.84393063583815,
-   "up30m": 96.826688364524
+   "state": "up",
+   "up5m": 100,
+   "up30m": 98.65771812080537
   },
   {
    "model": "deepseek/deepseek-v4-pro",
    "provider": "Fireworks",
+   "state": "degraded",
+   "up5m": 96.51162790697676,
+   "up30m": 97.0467596390484
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "provider": "Google",
+   "state": "up",
+   "up5m": 99.80131438178206,
+   "up30m": 99.29923776739612
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "provider": "Google",
+   "state": "up",
+   "up5m": 99.95647087629567,
+   "up30m": 99.94998473560113
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "provider": "Google",
+   "state": "up",
+   "up5m": 99.95647087629567,
+   "up30m": 99.94998473560113
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "provider": "Google AI Studio",
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.93480245142783
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "provider": "Google AI Studio",
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.93480245142783
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "provider": "Google AI Studio",
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.93480245142783
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "provider": "Google",
    "state": "down",
-   "up5m": 20.972644376899694,
-   "up30m": 37.31466227347611
-  },
-  {
-   "model": "google/gemini-2.5-flash",
-   "provider": "Google",
-   "state": "up",
-   "up5m": 99.71209213051824,
-   "up30m": 99.43535188216039
-  },
-  {
-   "model": "google/gemini-2.5-flash",
-   "provider": "Google",
-   "state": "up",
-   "up5m": 99.97224745181148,
-   "up30m": 99.95404290584446
-  },
-  {
-   "model": "google/gemini-2.5-flash",
-   "provider": "Google",
-   "state": "up",
-   "up5m": 99.97224745181148,
-   "up30m": 99.95404290584446
-  },
-  {
-   "model": "google/gemini-2.5-flash",
-   "provider": "Google AI Studio",
-   "state": "up",
-   "up5m": 99.93986770895971,
-   "up30m": 99.95028832769934
-  },
-  {
-   "model": "google/gemini-2.5-flash",
-   "provider": "Google AI Studio",
-   "state": "up",
-   "up5m": 99.93986770895971,
-   "up30m": 99.95028832769934
-  },
-  {
-   "model": "google/gemini-2.5-flash",
-   "provider": "Google AI Studio",
-   "state": "up",
-   "up5m": 99.93986770895971,
-   "up30m": 99.95028832769934
-  },
-  {
-   "model": "google/gemini-2.5-flash",
-   "provider": "Google",
-   "state": "degraded",
-   "up5m": 97.78393351800554,
-   "up30m": 96.63483401546156
+   "up5m": null,
+   "up30m": 42.93785310734463
   },
   {
    "model": "google/gemini-2.5-flash-image",
@@ -1445,78 +1445,71 @@
    "model": "google/gemini-2.5-flash-image",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.80916030534351,
-   "up30m": 99.51124144672532
+   "up5m": 98.38449111470113,
+   "up30m": 98.58834244080145
   },
   {
    "model": "google/gemini-2.5-flash-image",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.80916030534351,
-   "up30m": 99.51124144672532
+   "up5m": 98.38449111470113,
+   "up30m": 98.58834244080145
   },
   {
    "model": "google/gemini-2.5-flash-lite",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.94085731183625,
-   "up30m": 99.49965180004239
+   "up5m": 99.88458143797949,
+   "up30m": 99.88368468313381
   },
   {
    "model": "google/gemini-2.5-flash-lite",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.93284279373978,
-   "up30m": 99.94394920936048
+   "up5m": 99.92127184071515,
+   "up30m": 99.94332002041982
   },
   {
    "model": "google/gemini-2.5-flash-lite",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.72778633795582,
-   "up30m": 99.56793535378698
+   "up5m": 99.45582764173469,
+   "up30m": 99.42050401663154
   },
   {
    "model": "google/gemini-2.5-flash-lite",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.72778633795582,
-   "up30m": 99.56793535378698
+   "up5m": 99.45582764173469,
+   "up30m": 99.42050401663154
   },
   {
    "model": "google/gemini-2.5-flash-lite",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.72778633795582,
-   "up30m": 99.56793535378698
+   "up5m": 99.45582764173469,
+   "up30m": 99.42050401663154
   },
   {
    "model": "google/gemini-2.5-pro",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78017952005862
+   "up5m": 99.74276527331189,
+   "up30m": 99.65803197401043
   },
   {
    "model": "google/gemini-2.5-pro",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78017952005862
+   "up5m": 99.74276527331189,
+   "up30m": 99.65803197401043
   },
   {
    "model": "google/gemini-2.5-pro",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78017952005862
-  },
-  {
-   "model": "google/gemini-2.5-pro",
-   "provider": "Google",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "up5m": 99.74276527331189,
+   "up30m": 99.65803197401043
   },
   {
    "model": "google/gemini-2.5-pro",
@@ -1527,45 +1520,52 @@
   },
   {
    "model": "google/gemini-2.5-pro",
-   "provider": "Google AI Studio",
-   "state": "degraded",
-   "up5m": 93.66197183098592,
-   "up30m": 95.09509509509509
+   "provider": "Google",
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "google/gemini-2.5-pro",
    "provider": "Google AI Studio",
    "state": "degraded",
-   "up5m": 93.66197183098592,
-   "up30m": 95.09509509509509
+   "up5m": 100,
+   "up30m": 97.91976225854383
   },
   {
    "model": "google/gemini-2.5-pro",
    "provider": "Google AI Studio",
    "state": "degraded",
-   "up5m": 93.66197183098592,
-   "up30m": 95.09509509509509
+   "up5m": 100,
+   "up30m": 97.91976225854383
+  },
+  {
+   "model": "google/gemini-2.5-pro",
+   "provider": "Google AI Studio",
+   "state": "degraded",
+   "up5m": 100,
+   "up30m": 97.91976225854383
   },
   {
    "model": "google/gemini-2.5-pro-preview",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78017952005862
+   "up5m": 99.74276527331189,
+   "up30m": 99.65803197401043
   },
   {
    "model": "google/gemini-2.5-pro-preview",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78017952005862
+   "up5m": 99.74276527331189,
+   "up30m": 99.65803197401043
   },
   {
    "model": "google/gemini-2.5-pro-preview",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78017952005862
+   "up5m": 99.74276527331189,
+   "up30m": 99.65803197401043
   },
   {
    "model": "google/gemini-2.5-pro-preview",
@@ -1585,43 +1585,43 @@
    "model": "google/gemini-2.5-pro-preview",
    "provider": "Google AI Studio",
    "state": "degraded",
-   "up5m": 93.66197183098592,
-   "up30m": 95.09509509509509
+   "up5m": 100,
+   "up30m": 97.91976225854383
   },
   {
    "model": "google/gemini-2.5-pro-preview",
    "provider": "Google AI Studio",
    "state": "degraded",
-   "up5m": 93.66197183098592,
-   "up30m": 95.09509509509509
+   "up5m": 100,
+   "up30m": 97.91976225854383
   },
   {
    "model": "google/gemini-2.5-pro-preview",
    "provider": "Google AI Studio",
    "state": "degraded",
-   "up5m": 93.66197183098592,
-   "up30m": 95.09509509509509
+   "up5m": 100,
+   "up30m": 97.91976225854383
   },
   {
    "model": "google/gemini-2.5-pro-preview-05-06",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78017952005862
+   "up5m": 99.74276527331189,
+   "up30m": 99.65803197401043
   },
   {
    "model": "google/gemini-2.5-pro-preview-05-06",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78017952005862
+   "up5m": 99.74276527331189,
+   "up30m": 99.65803197401043
   },
   {
    "model": "google/gemini-2.5-pro-preview-05-06",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78017952005862
+   "up5m": 99.74276527331189,
+   "up30m": 99.65803197401043
   },
   {
    "model": "google/gemini-2.5-pro-preview-05-06",
@@ -1641,78 +1641,78 @@
    "model": "google/gemini-2.5-pro-preview-05-06",
    "provider": "Google AI Studio",
    "state": "degraded",
-   "up5m": 93.66197183098592,
-   "up30m": 95.09509509509509
+   "up5m": 100,
+   "up30m": 97.91976225854383
   },
   {
    "model": "google/gemini-2.5-pro-preview-05-06",
    "provider": "Google AI Studio",
    "state": "degraded",
-   "up5m": 93.66197183098592,
-   "up30m": 95.09509509509509
+   "up5m": 100,
+   "up30m": 97.91976225854383
   },
   {
    "model": "google/gemini-2.5-pro-preview-05-06",
    "provider": "Google AI Studio",
    "state": "degraded",
-   "up5m": 93.66197183098592,
-   "up30m": 95.09509509509509
+   "up5m": 100,
+   "up30m": 97.91976225854383
   },
   {
    "model": "google/gemini-3-flash-preview",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.06954681456615,
-   "up30m": 98.90450556125762
+   "up5m": 99.31165901843355,
+   "up30m": 99.13657898592803
   },
   {
    "model": "google/gemini-3-flash-preview",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.06954681456615,
-   "up30m": 98.90450556125762
+   "up5m": 99.31165901843355,
+   "up30m": 99.13657898592803
   },
   {
    "model": "google/gemini-3-flash-preview",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.06954681456615,
-   "up30m": 98.90450556125762
+   "up5m": 99.31165901843355,
+   "up30m": 99.13657898592803
   },
   {
    "model": "google/gemini-3-flash-preview",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.87925135842221,
-   "up30m": 99.77771740472721
+   "up5m": 99.84920834380497,
+   "up30m": 99.78007105396718
   },
   {
    "model": "google/gemini-3-flash-preview",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.87925135842221,
-   "up30m": 99.77771740472721
+   "up5m": 99.84920834380497,
+   "up30m": 99.78007105396718
   },
   {
    "model": "google/gemini-3-flash-preview",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.87925135842221,
-   "up30m": 99.77771740472721
+   "up5m": 99.84920834380497,
+   "up30m": 99.78007105396718
   },
   {
    "model": "google/gemini-3-pro-image",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 96.96969696969697,
+   "up30m": 99.00166389351082
   },
   {
    "model": "google/gemini-3-pro-image",
    "provider": "Google AI Studio",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.64601769911503
+   "up30m": 99.36204146730464
   },
   {
    "model": "google/gemini-3-pro-image-preview",
@@ -1746,15 +1746,15 @@
    "model": "google/gemini-3.1-flash-image",
    "provider": "Google",
    "state": "up",
-   "up5m": 96.92307692307692,
-   "up30m": 99.45255474452554
+   "up5m": 98.93617021276596,
+   "up30m": 99.84984984984985
   },
   {
    "model": "google/gemini-3.1-flash-image",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 88.67924528301887,
-   "up30m": 98.45814977973568
+   "up5m": 99.00990099009901,
+   "up30m": 98.30508474576271
   },
   {
    "model": "google/gemini-3.1-flash-image-preview",
@@ -1781,259 +1781,259 @@
    "model": "google/gemini-3.1-flash-lite",
    "provider": "Google",
    "state": "up",
-   "up5m": 98.93892949775996,
-   "up30m": 98.0149387894872
+   "up5m": 98.43687374749499,
+   "up30m": 98.26660129650816
   },
   {
    "model": "google/gemini-3.1-flash-lite",
    "provider": "Google",
    "state": "up",
-   "up5m": 98.93892949775996,
-   "up30m": 98.0149387894872
+   "up5m": 98.43687374749499,
+   "up30m": 98.26660129650816
   },
   {
    "model": "google/gemini-3.1-flash-lite",
    "provider": "Google",
    "state": "up",
-   "up5m": 98.93892949775996,
-   "up30m": 98.0149387894872
+   "up5m": 98.43687374749499,
+   "up30m": 98.26660129650816
   },
   {
    "model": "google/gemini-3.1-flash-lite",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.58670854686726,
-   "up30m": 99.6092807317942
+   "up5m": 99.48047595106418,
+   "up30m": 99.53252448824685
   },
   {
    "model": "google/gemini-3.1-flash-lite",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.58670854686726,
-   "up30m": 99.6092807317942
+   "up5m": 99.48047595106418,
+   "up30m": 99.53252448824685
   },
   {
    "model": "google/gemini-3.1-flash-lite",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.58670854686726,
-   "up30m": 99.6092807317942
+   "up5m": 99.48047595106418,
+   "up30m": 99.53252448824685
   },
   {
    "model": "google/gemini-3.1-flash-lite-image",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 98.30508474576271,
+   "up30m": 99.7364953886693
   },
   {
    "model": "google/gemini-3.1-flash-lite-image",
    "provider": "Google AI Studio",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.86206896551724
   },
   {
    "model": "google/gemini-3.1-flash-lite-preview",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 98.64072494669509,
-   "up30m": 98.66050372606358
+   "up5m": 98.56998085801149,
+   "up30m": 98.73554979691606
   },
   {
    "model": "google/gemini-3.1-flash-lite-preview",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 98.64072494669509,
-   "up30m": 98.66050372606358
+   "up5m": 98.56998085801149,
+   "up30m": 98.73554979691606
   },
   {
    "model": "google/gemini-3.1-flash-lite-preview",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 98.64072494669509,
-   "up30m": 98.66050372606358
+   "up5m": 98.56998085801149,
+   "up30m": 98.73554979691606
   },
   {
    "model": "google/gemini-3.1-pro-preview",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.2299522039299,
-   "up30m": 99.13766434648105
+   "up5m": 98.684678279417,
+   "up30m": 98.32111610309767
   },
   {
    "model": "google/gemini-3.1-pro-preview",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.2299522039299,
-   "up30m": 99.13766434648105
+   "up5m": 98.684678279417,
+   "up30m": 98.32111610309767
   },
   {
    "model": "google/gemini-3.1-pro-preview",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.2299522039299,
-   "up30m": 99.13766434648105
+   "up5m": 98.684678279417,
+   "up30m": 98.32111610309767
   },
   {
    "model": "google/gemini-3.1-pro-preview",
    "provider": "Google AI Studio",
-   "state": "degraded",
-   "up5m": 99.19354838709677,
-   "up30m": 97.89132197891321
+   "state": "up",
+   "up5m": 99.49748743718592,
+   "up30m": 98.80715705765407
   },
   {
    "model": "google/gemini-3.1-pro-preview",
    "provider": "Google AI Studio",
-   "state": "degraded",
-   "up5m": 99.19354838709677,
-   "up30m": 97.89132197891321
+   "state": "up",
+   "up5m": 99.49748743718592,
+   "up30m": 98.80715705765407
   },
   {
    "model": "google/gemini-3.1-pro-preview",
    "provider": "Google AI Studio",
-   "state": "degraded",
-   "up5m": 99.19354838709677,
-   "up30m": 97.89132197891321
+   "state": "up",
+   "up5m": 99.49748743718592,
+   "up30m": 98.80715705765407
   },
   {
    "model": "google/gemini-3.1-pro-preview-customtools",
    "provider": "Google AI Studio",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "google/gemini-3.5-flash",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.80752780153978,
-   "up30m": 99.71937889194751
+   "up5m": 99.91737244370998,
+   "up30m": 99.87770320656226
   },
   {
    "model": "google/gemini-3.5-flash",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.80752780153978,
-   "up30m": 99.71937889194751
+   "up5m": 99.91737244370998,
+   "up30m": 99.87770320656226
   },
   {
    "model": "google/gemini-3.5-flash",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.80752780153978,
-   "up30m": 99.71937889194751
-  },
-  {
-   "model": "google/gemini-3.5-flash",
-   "provider": "Google AI Studio",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.97273421310939
+   "up5m": 99.91737244370998,
+   "up30m": 99.87770320656226
   },
   {
    "model": "google/gemini-3.5-flash",
    "provider": "Google AI Studio",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97273421310939
+   "up30m": 99.99240179317681
   },
   {
    "model": "google/gemini-3.5-flash",
    "provider": "Google AI Studio",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97273421310939
+   "up30m": 99.99240179317681
+  },
+  {
+   "model": "google/gemini-3.5-flash",
+   "provider": "Google AI Studio",
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.99240179317681
   },
   {
    "model": "google/gemini-3.5-flash-lite",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.97714808043877,
-   "up30m": 99.93264575878761
+   "up5m": 99.46524064171123,
+   "up30m": 99.7066548419006
   },
   {
    "model": "google/gemini-3.5-flash-lite",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.97714808043877,
-   "up30m": 99.93264575878761
+   "up5m": 99.46524064171123,
+   "up30m": 99.7066548419006
   },
   {
    "model": "google/gemini-3.5-flash-lite",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.97714808043877,
-   "up30m": 99.93264575878761
+   "up5m": 99.46524064171123,
+   "up30m": 99.7066548419006
   },
   {
    "model": "google/gemini-3.5-flash-lite",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.94058229352348,
-   "up30m": 99.946202815386
+   "up5m": 99.9083129584352,
+   "up30m": 99.93729096989966
   },
   {
    "model": "google/gemini-3.5-flash-lite",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.94058229352348,
-   "up30m": 99.946202815386
+   "up5m": 99.9083129584352,
+   "up30m": 99.93729096989966
   },
   {
    "model": "google/gemini-3.5-flash-lite",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.94058229352348,
-   "up30m": 99.946202815386
+   "up5m": 99.9083129584352,
+   "up30m": 99.93729096989966
   },
   {
    "model": "google/gemini-3.6-flash",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.97169544296631,
-   "up30m": 99.88933972703799
+   "up5m": 99.8666311016271,
+   "up30m": 99.62778654367439
   },
   {
    "model": "google/gemini-3.6-flash",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.97169544296631,
-   "up30m": 99.88933972703799
+   "up5m": 99.8666311016271,
+   "up30m": 99.62778654367439
   },
   {
    "model": "google/gemini-3.6-flash",
    "provider": "Google",
    "state": "up",
-   "up5m": 99.97169544296631,
-   "up30m": 99.88933972703799
+   "up5m": 99.8666311016271,
+   "up30m": 99.62778654367439
   },
   {
    "model": "google/gemini-3.6-flash",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.96768982229402,
-   "up30m": 99.7939245916654
+   "up5m": 99.785061794734,
+   "up30m": 99.8191027496382
   },
   {
    "model": "google/gemini-3.6-flash",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.96768982229402,
-   "up30m": 99.7939245916654
+   "up5m": 99.785061794734,
+   "up30m": 99.8191027496382
   },
   {
    "model": "google/gemini-3.6-flash",
    "provider": "Google AI Studio",
    "state": "up",
-   "up5m": 99.96768982229402,
-   "up30m": 99.7939245916654
+   "up5m": 99.785061794734,
+   "up30m": 99.8191027496382
   },
   {
    "model": "google/gemma-2-27b-it",
    "provider": "NextBit",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -2041,49 +2041,49 @@
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98172625936529
+   "up30m": 100
   },
   {
    "model": "google/gemma-3-27b-it",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.70014992503748,
-   "up30m": 99.84051036682615
+   "up5m": 100,
+   "up30m": 99.87582781456953
   },
   {
    "model": "google/gemma-3-27b-it",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 99.65704170815356,
-   "up30m": 99.76705424021527
+   "up5m": 99.6082669188167,
+   "up30m": 99.41227849413019
   },
   {
    "model": "google/gemma-3-27b-it",
    "provider": "Nebius",
-   "state": "degraded",
-   "up5m": 100,
-   "up30m": 94.11861411368213
+   "state": "down",
+   "up5m": 21.61572052401747,
+   "up30m": 69.14848095849379
   },
   {
    "model": "google/gemma-3-27b-it",
    "provider": "Novita",
-   "state": "degraded",
-   "up5m": 99.69742813918305,
-   "up30m": 87.72727272727273
+   "state": "down",
+   "up5m": 68.32962138084633,
+   "up30m": 70.41857798165138
   },
   {
    "model": "google/gemma-3-27b-it",
    "provider": "Phala",
    "state": "degraded",
-   "up5m": null,
-   "up30m": 94.39024390243902
+   "up5m": 98.33333333333333,
+   "up30m": 96.3855421686747
   },
   {
    "model": "google/gemma-3-4b-it",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.99172801720573
+   "up5m": 96.76746611053181,
+   "up30m": 99.53650057937428
   },
   {
    "model": "google/gemma-3n-e4b-it",
@@ -2096,29 +2096,29 @@
    "model": "google/gemma-4-26b-a4b-it",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.98809240295309,
-   "up30m": 99.9305740987984
+   "up5m": 99.86956521739131,
+   "up30m": 99.9599847942218
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
    "provider": "Cloudflare",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97493315508021
+   "up30m": 99.97026022304833
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
    "provider": "NextBit",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99160486917587
+   "up30m": 99.99291257663276
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
    "provider": "SiliconFlow",
-   "state": "up",
-   "up5m": 99.92169146436962,
-   "up30m": 99.4088669950739
+   "state": "down",
+   "up5m": 100,
+   "up30m": 75.81065431383904
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -2131,148 +2131,148 @@
    "model": "google/gemma-4-26b-a4b-it",
    "provider": "Ionstream",
    "state": "up",
-   "up5m": 99.94311717861206,
-   "up30m": 99.56946259706312
+   "up5m": 100,
+   "up30m": 98.8072925540978
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 99.83651226158038,
-   "up30m": 99.6198772520293
+   "up5m": 99.32556713672594,
+   "up30m": 99.22594238079971
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
    "provider": "Venice",
    "state": "up",
-   "up5m": 99.82486865148861,
-   "up30m": 99.48775055679288
+   "up5m": 98.98403483309144,
+   "up30m": 98.62374047677562
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.79055711806595
+   "up5m": 99.94219653179191,
+   "up30m": 99.64651500045318
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "CoreWeave",
    "state": "up",
-   "up5m": 99.87421383647799,
-   "up30m": 99.89263986639628
+   "up5m": 99.98820151807134,
+   "up30m": 99.98999680543142
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "OpenInference",
-   "state": "degraded",
-   "up5m": 99.43374858437146,
-   "up30m": 97.96067006554989
+   "state": "up",
+   "up5m": 99.79570990806947,
+   "up30m": 99.8272884283247
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Venice",
    "state": "up",
-   "up5m": 99.9704229517894,
-   "up30m": 99.78350813047243
+   "up5m": 99.82014388489209,
+   "up30m": 99.77813634530052
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Chutes",
-   "state": "down",
-   "up5m": 86.95652173913044,
-   "up30m": 79.2487684729064
+   "state": "degraded",
+   "up5m": 78.92441860465115,
+   "up30m": 88.10593520926932
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "DeepInfra",
    "state": "degraded",
-   "up5m": 87.7742946708464,
-   "up30m": 94.58198780050233
+   "up5m": 95.0530035335689,
+   "up30m": 97.31749769632437
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "DeepInfra",
-   "state": "up",
-   "up5m": 98.49397590361446,
-   "up30m": 98.84677855982675
+   "state": "degraded",
+   "up5m": 96.81945743685687,
+   "up30m": 97.26069559864574
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "SiliconFlow",
-   "state": "degraded",
-   "up5m": 89.02439024390245,
-   "up30m": 92.29635090305935
+   "state": "up",
+   "up5m": 99.70238095238095,
+   "up30m": 99.10865874363328
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Novita",
    "state": "degraded",
-   "up5m": 96.43564356435644,
-   "up30m": 96.90602632186562
+   "up5m": 94.16342412451361,
+   "up30m": 95.45194508009153
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Friendli",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.87089959509419
+   "up30m": 99.97773200467628
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Morph",
    "state": "up",
-   "up5m": 99.86876640419948,
-   "up30m": 99.61691694759423
+   "up5m": 99.85052316890882,
+   "up30m": 99.90296645411699
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Crusoe",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96037773228554
+   "up30m": 99.97279059643013
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 97.86747905559787,
-   "up30m": 99.20937321394551
+   "up5m": 98.62778730703259,
+   "up30m": 98.68787276341948
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Phala",
    "state": "degraded",
    "up5m": null,
-   "up30m": 95.33678756476684
+   "up30m": 96.02272727272727
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "ModelRun",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.90368408379486
+   "up30m": 99.97952917093143
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Together",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 98.76416065911432
+   "state": "degraded",
+   "up5m": 96.15384615384616,
+   "up30m": 96.17486338797814
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "SambaNova",
    "state": "up",
-   "up5m": 97.32441471571906,
-   "up30m": 99.25699300699301
+   "up5m": 98.0327868852459,
+   "up30m": 99.3434550677062
   },
   {
    "model": "google/gemma-4-31b-it",
    "provider": "Together",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.78813559322035
+   "up30m": 98.92351274787535
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -2313,14 +2313,14 @@
    "model": "gryphe/mythomax-l2-13b",
    "provider": "Mancer 2",
    "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "up5m": 100,
+   "up30m": 99.67105263157895
   },
   {
    "model": "ibm-granite/granite-4.0-h-micro",
    "provider": "Cloudflare",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -2341,7 +2341,7 @@
    "model": "inclusionai/ling-2.6-1t",
    "provider": "Novita",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -2362,7 +2362,7 @@
    "model": "inclusionai/ring-2.6-1t",
    "provider": "Novita",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -2389,9 +2389,9 @@
   {
    "model": "kwaipilot/kat-coder-pro-v2",
    "provider": "StreamLake",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "kwaipilot/kat-coder-pro-v2",
@@ -2403,9 +2403,9 @@
   {
    "model": "kwaipilot/kat-coder-pro-v2.5",
    "provider": "StreamLake",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "mancer/weaver",
@@ -2425,8 +2425,8 @@
    "model": "meta-llama/llama-3.1-70b-instruct",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 97.41309620048504,
-   "up30m": 98.20261437908496
+   "up5m": 99.96213555471412,
+   "up30m": 98.9258797697466
   },
   {
    "model": "meta-llama/llama-3.1-70b-instruct",
@@ -2439,29 +2439,29 @@
    "model": "meta-llama/llama-3.1-70b-instruct",
    "provider": "CoreWeave",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.73190348525469,
+   "up30m": 99.85984583041345
   },
   {
    "model": "meta-llama/llama-3.1-8b-instruct",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.98435789144376
+   "up5m": 99.96924023377423,
+   "up30m": 99.93632004794726
   },
   {
    "model": "meta-llama/llama-3.1-8b-instruct",
    "provider": "Novita",
    "state": "up",
-   "up5m": 99.41302027748132,
-   "up30m": 99.772277597342
+   "up5m": 100,
+   "up30m": 99.99590600180136
   },
   {
    "model": "meta-llama/llama-3.1-8b-instruct",
    "provider": "Groq",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.9835609887318
+   "up5m": 99.98870184159982,
+   "up30m": 99.97283036135619
   },
   {
    "model": "meta-llama/llama-3.1-8b-instruct",
@@ -2502,78 +2502,78 @@
    "model": "meta-llama/llama-3.3-70b-instruct",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 98.046875,
-   "up30m": 98.21334734629532
+   "up5m": 99.00662251655629,
+   "up30m": 98.41813602015114
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
    "provider": "Nebius",
    "state": "down",
    "up5m": null,
-   "up30m": 66.70362158167036
+   "up30m": 56.25759416767922
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
    "provider": "AkashML",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.94175888177053
+   "up30m": 99.8799622738575
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
    "provider": "Novita",
    "state": "degraded",
-   "up5m": 98.71794871794873,
-   "up30m": 97.81885397412199
+   "up5m": 98.84615384615385,
+   "up30m": 96.64213431462741
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
    "provider": "Parasail",
    "state": "degraded",
-   "up5m": 94.68085106382979,
-   "up30m": 92.4605074198181
+   "up5m": 97.27947238252267,
+   "up30m": 96.82259488084732
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
    "provider": "Crusoe",
-   "state": "up",
-   "up5m": 99.47089947089947,
-   "up30m": 99.92144540455617
-  },
-  {
-   "model": "meta-llama/llama-3.3-70b-instruct",
-   "provider": "Cloudflare",
-   "state": "degraded",
-   "up5m": 98.0392156862745,
-   "up30m": 97.97687861271676
-  },
-  {
-   "model": "meta-llama/llama-3.3-70b-instruct",
-   "provider": "SambaNova",
-   "state": "up",
-   "up5m": null,
-   "up30m": 98.66071428571429
-  },
-  {
-   "model": "meta-llama/llama-3.3-70b-instruct",
-   "provider": "Groq",
-   "state": "up",
-   "up5m": 99.86357435197817,
-   "up30m": 99.23371647509579
-  },
-  {
-   "model": "meta-llama/llama-3.3-70b-instruct",
-   "provider": "CoreWeave",
    "state": "up",
    "up5m": 100,
    "up30m": 100
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "Cloudflare",
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.69604863221885
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "SambaNova",
+   "state": "degraded",
+   "up5m": 92.85714285714286,
+   "up30m": 95.52941176470588
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "Groq",
+   "state": "up",
+   "up5m": 99.76580796252928,
+   "up30m": 99.94031632348552
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "CoreWeave",
+   "state": "up",
+   "up5m": 99.42196531791907,
+   "up30m": 99.89417989417989
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
    "provider": "Google",
    "state": "up",
    "up5m": null,
-   "up30m": 99.21875
+   "up30m": 100
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -2587,77 +2587,77 @@
    "provider": "Together",
    "state": "up",
    "up5m": null,
-   "up30m": 100
+   "up30m": 98.61111111111111
   },
   {
    "model": "meta-llama/llama-4-maverick",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.97926601700186,
-   "up30m": 99.92025047258979
+   "up5m": 99.88917620982637,
+   "up30m": 99.77267864783911
   },
   {
    "model": "meta-llama/llama-4-maverick",
    "provider": "DigitalOcean",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.95516426184071
+   "up30m": 99.94601015009178
   },
   {
    "model": "meta-llama/llama-4-maverick",
    "provider": "Novita",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.77511244377811
+   "up5m": 99.92877492877493,
+   "up30m": 99.91408934707904
   },
   {
    "model": "meta-llama/llama-4-maverick",
    "provider": "Parasail",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.8144399460189
   },
   {
    "model": "meta-llama/llama-4-maverick",
    "provider": "Google",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96538594669437
+   "up30m": 100
   },
   {
    "model": "meta-llama/llama-4-scout",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": null,
+   "up30m": 99.85535197685633
   },
   {
    "model": "meta-llama/llama-4-scout",
    "provider": "Groq",
    "state": "up",
-   "up5m": 99.45280437756497,
-   "up30m": 99.64759187783186
+   "up5m": 100,
+   "up30m": 99.97909917441739
   },
   {
    "model": "meta-llama/llama-4-scout",
    "provider": "Novita",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 97.80564263322884,
+   "up30m": 99.58298582151794
   },
   {
    "model": "meta-llama/llama-4-scout",
    "provider": "Google",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.90243902439025
   },
   {
    "model": "meta-llama/llama-guard-4-12b",
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 98.7792872612719
+   "up30m": 99.76733364355515
   },
   {
    "model": "meta-llama/llama-guard-4-12b",
@@ -2685,7 +2685,7 @@
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 98.5239852398524
+   "up30m": 100
   },
   {
    "model": "minimax/minimax-01",
@@ -2711,9 +2711,9 @@
   {
    "model": "minimax/minimax-m2",
    "provider": "Minimax",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "minimax/minimax-m2",
@@ -2725,30 +2725,30 @@
   {
    "model": "minimax/minimax-m2",
    "provider": "Novita",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 99
+   "up30m": null
   },
   {
    "model": "minimax/minimax-m2-her",
    "provider": "Minimax",
+   "state": "up",
+   "up5m": null,
+   "up30m": 100
+  },
+  {
+   "model": "minimax/minimax-m2.1",
+   "provider": "Novita",
    "state": "idle",
    "up5m": null,
    "up30m": null
   },
   {
    "model": "minimax/minimax-m2.1",
-   "provider": "Novita",
-   "state": "up",
-   "up5m": null,
-   "up30m": 99.02912621359224
-  },
-  {
-   "model": "minimax/minimax-m2.1",
    "provider": "Minimax",
    "state": "up",
    "up5m": null,
-   "up30m": 99.43502824858757
+   "up30m": 99.47089947089947
   },
   {
    "model": "minimax/minimax-m2.1",
@@ -2767,23 +2767,23 @@
   {
    "model": "minimax/minimax-m2.5",
    "provider": "Chutes",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "minimax/minimax-m2.5",
    "provider": "Phala",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "minimax/minimax-m2.5",
    "provider": "DigitalOcean",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "minimax/minimax-m2.5",
@@ -2802,9 +2802,9 @@
   {
    "model": "minimax/minimax-m2.5",
    "provider": "StreamLake",
-   "state": "up",
+   "state": "idle",
    "up5m": 100,
-   "up30m": 99.8062015503876
+   "up30m": null
   },
   {
    "model": "minimax/minimax-m2.5",
@@ -2817,8 +2817,8 @@
    "model": "minimax/minimax-m2.5",
    "provider": "Friendli",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.86033519553072
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "minimax/minimax-m2.5",
@@ -2866,57 +2866,57 @@
    "model": "minimax/minimax-m2.7",
    "provider": "Mara",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.8062015503876
+   "up5m": 95.65217391304348,
+   "up30m": 98.5207100591716
   },
   {
    "model": "minimax/minimax-m2.7",
    "provider": "DeepInfra",
    "state": "degraded",
-   "up5m": 98.73150105708245,
-   "up30m": 96.3594994311718
+   "up5m": 97.14285714285714,
+   "up30m": 96.00108813928183
   },
   {
    "model": "minimax/minimax-m2.7",
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.01164842922697
+   "up30m": 99.71313826735513
   },
   {
    "model": "minimax/minimax-m2.7",
    "provider": "GMICloud",
    "state": "up",
-   "up5m": 99.56896551724138,
-   "up30m": 99.80417754569191
+   "up5m": 100,
+   "up30m": 99.83748645720478
   },
   {
    "model": "minimax/minimax-m2.7",
    "provider": "Minimax",
    "state": "up",
-   "up5m": 99.22279792746113,
-   "up30m": 98.8282680336873
+   "up5m": 99.6875,
+   "up30m": 99.18064767850176
   },
   {
    "model": "minimax/minimax-m2.7",
    "provider": "AtlasCloud",
    "state": "degraded",
    "up5m": null,
-   "up30m": 94
+   "up30m": 97.01492537313433
   },
   {
    "model": "minimax/minimax-m2.7",
    "provider": "Fireworks",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.90412272291466
   },
   {
    "model": "minimax/minimax-m2.7",
    "provider": "Together",
    "state": "up",
    "up5m": 100,
-   "up30m": 98.20075757575758
+   "up30m": 99.73736047275115
   },
   {
    "model": "minimax/minimax-m2.7",
@@ -2929,15 +2929,15 @@
    "model": "minimax/minimax-m2.7",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "up5m": 100,
+   "up30m": 99.70631424375918
   },
   {
    "model": "minimax/minimax-m2.7",
    "provider": "Groq",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.43820224719101
   },
   {
    "model": "minimax/minimax-m2.7",
@@ -2957,64 +2957,64 @@
    "model": "minimax/minimax-m3",
    "provider": "GMICloud",
    "state": "up",
-   "up5m": 98.74476987447699,
-   "up30m": 99.32953402614817
+   "up5m": 95.88235294117648,
+   "up30m": 98.2964842334179
   },
   {
    "model": "minimax/minimax-m3",
    "provider": "Novita",
    "state": "up",
-   "up5m": 99.84767707539984,
-   "up30m": 99.62601745251888
+   "up5m": 99.69183359013869,
+   "up30m": 99.73989595838336
   },
   {
    "model": "minimax/minimax-m3",
    "provider": "Venice",
-   "state": "degraded",
-   "up5m": 98.85057471264368,
-   "up30m": 96.57407407407408
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "minimax/minimax-m3",
    "provider": "Minimax",
    "state": "up",
-   "up5m": 99.56024626209323,
-   "up30m": 99.5231066197343
+   "up5m": 99.91909385113269,
+   "up30m": 99.89820687495106
   },
   {
    "model": "minimax/minimax-m3",
    "provider": "AtlasCloud",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.76726144297905
+   "up5m": 99.7289972899729,
+   "up30m": 99.6730083234245
   },
   {
    "model": "minimax/minimax-m3",
    "provider": "Together",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.87623762376238
+   "up5m": 98.17518248175182,
+   "up30m": 98.0058651026393
   },
   {
    "model": "minimax/minimax-m3",
    "provider": "Parasail",
    "state": "degraded",
-   "up5m": 99.24812030075188,
-   "up30m": 97.51643535427318
+   "up5m": 94.94949494949495,
+   "up30m": 96.875
   },
   {
    "model": "minimax/minimax-m3",
    "provider": "DeepInfra",
-   "state": "degraded",
-   "up5m": 100,
-   "up30m": 94.27312775330397
+   "state": "up",
+   "up5m": 97.70114942528735,
+   "up30m": 98.26086956521739
   },
   {
    "model": "minimax/minimax-m3",
    "provider": "Morph",
    "state": "up",
-   "up5m": null,
-   "up30m": 98.64864864864865
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "mistralai/codestral-2508",
@@ -3026,9 +3026,9 @@
   {
    "model": "mistralai/devstral-2512",
    "provider": "Mistral",
-   "state": "degraded",
-   "up5m": 91.52119700748129,
-   "up30m": 96.31521342575702
+   "state": "up",
+   "up5m": null,
+   "up30m": 98.32402234636871
   },
   {
    "model": "mistralai/ministral-14b-2512",
@@ -3042,14 +3042,14 @@
    "provider": "Mistral",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.8817617499261
+   "up30m": 99.86318029796291
   },
   {
    "model": "mistralai/ministral-8b-2512",
    "provider": "Mistral",
    "state": "up",
-   "up5m": 98.37092731829574,
-   "up30m": 99.4588542638552
+   "up5m": 99.89350372736953,
+   "up30m": 99.59916864608076
   },
   {
    "model": "mistralai/ministral-8b-2512",
@@ -3076,8 +3076,8 @@
    "model": "mistralai/mistral-large-2512",
    "provider": "Mistral",
    "state": "up",
-   "up5m": 99.91816693944354,
-   "up30m": 99.97557699352791
+   "up5m": 100,
+   "up30m": 99.95297805642633
   },
   {
    "model": "mistralai/mistral-medium-3",
@@ -3091,7 +3091,7 @@
    "provider": "Mistral",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.55849889624724
+   "up30m": 100
   },
   {
    "model": "mistralai/mistral-medium-3.1",
@@ -3104,22 +3104,22 @@
    "model": "mistralai/mistral-nemo",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.37524029219531,
-   "up30m": 99.34329132530641
+   "up5m": 99.38674579624134,
+   "up30m": 99.36022062539077
   },
   {
    "model": "mistralai/mistral-nemo",
    "provider": "Novita",
    "state": "down",
-   "up5m": 84.53427065026362,
-   "up30m": 71.33872416891285
+   "up5m": 81.01694915254237,
+   "up30m": 78.24239713774598
   },
   {
    "model": "mistralai/mistral-nemo",
    "provider": "Mistral",
    "state": "up",
-   "up5m": 99.39789262418465,
-   "up30m": 99.87369307417023
+   "up5m": 99.79674796747967,
+   "up30m": 99.79704667926377
   },
   {
    "model": "mistralai/mistral-saba",
@@ -3140,14 +3140,14 @@
    "provider": "Mistral",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97553816046967
+   "up30m": 99.97140678612276
   },
   {
    "model": "mistralai/mistral-small-2603",
    "provider": "Venice",
    "state": "up",
-   "up5m": null,
-   "up30m": 99.81132075471699
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "mistralai/mistral-small-3.1-24b-instruct",
@@ -3160,36 +3160,36 @@
    "model": "mistralai/mistral-small-3.2-24b-instruct",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.64028776978418,
-   "up30m": 99.94314657845771
+   "up5m": 99.71611071682044,
+   "up30m": 99.37683715461493
   },
   {
    "model": "mistralai/mistral-small-3.2-24b-instruct",
    "provider": "Parasail",
    "state": "down",
    "up5m": null,
-   "up30m": 0
+   "up30m": null
   },
   {
    "model": "mistralai/mistral-small-3.2-24b-instruct",
    "provider": "Venice",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.76876830584246
+   "up5m": 99.72222222222223,
+   "up30m": 98.59041482078132
   },
   {
    "model": "mistralai/mistral-small-3.2-24b-instruct",
    "provider": "Mistral",
    "state": "up",
-   "up5m": 99.92633517495396,
-   "up30m": 99.9593637524672
+   "up5m": 100,
+   "up30m": 99.87558062375581
   },
   {
    "model": "mistralai/mixtral-8x22b-instruct",
    "provider": "Mistral",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "mistralai/voxtral-small-24b-2507",
@@ -3203,28 +3203,28 @@
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.9342105263158
   },
   {
    "model": "moonshotai/kimi-k2-0905",
    "provider": "Novita",
    "state": "up",
-   "up5m": 99.66101694915255,
-   "up30m": 98.31236575636699
+   "up5m": 99.4263862332696,
+   "up30m": 99.43811917787964
   },
   {
    "model": "moonshotai/kimi-k2-0905",
    "provider": "Groq",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.98010346199761
+   "up5m": 95.58011049723757,
+   "up30m": 98.0392156862745
   },
   {
    "model": "moonshotai/kimi-k2-thinking",
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.49109414758269
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2-thinking",
@@ -3237,57 +3237,57 @@
    "model": "moonshotai/kimi-k2.5",
    "provider": "DigitalOcean",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.27594529364441
+   "up5m": null,
+   "up30m": 99.55257270693512
   },
   {
    "model": "moonshotai/kimi-k2.5",
    "provider": "Chutes",
-   "state": "degraded",
+   "state": "idle",
    "up5m": null,
-   "up30m": 84.35517970401692
+   "up30m": null
   },
   {
    "model": "moonshotai/kimi-k2.5",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.59016393442623,
-   "up30m": 99.87616099071207
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.5",
    "provider": "SiliconFlow",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.92957746478874
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.5",
    "provider": "AtlasCloud",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.62894248608535
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.5",
    "provider": "StreamLake",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.75381585425899
+   "up30m": 99.96518105849582
   },
   {
    "model": "moonshotai/kimi-k2.5",
    "provider": "Venice",
    "state": "degraded",
-   "up5m": 94.04761904761905,
-   "up30m": 92.26305609284333
+   "up5m": null,
+   "up30m": 90.88397790055248
   },
   {
    "model": "moonshotai/kimi-k2.5",
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.93024066968957
+   "up30m": 99.9176276771005
   },
   {
    "model": "moonshotai/kimi-k2.5",
@@ -3308,21 +3308,21 @@
    "provider": "Inceptron",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.74457215836526
+   "up30m": 99.84301412872841
   },
   {
    "model": "moonshotai/kimi-k2.6",
    "provider": "Baidu",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96694943263192
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.6",
    "provider": "CoreWeave",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.85549132947978
+   "up30m": 99.73118279569893
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -3336,28 +3336,28 @@
    "provider": "Chutes",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.08675799086758
   },
   {
    "model": "moonshotai/kimi-k2.6",
    "provider": "ModelRun",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.55312810327706
+   "up30m": 99.85111662531018
   },
   {
    "model": "moonshotai/kimi-k2.6",
    "provider": "Crusoe",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "degraded",
+   "up5m": null,
+   "up30m": 90.33232628398792
   },
   {
    "model": "moonshotai/kimi-k2.6",
    "provider": "Parasail",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.61977186311786
+   "up30m": 99.39024390243902
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -3385,7 +3385,7 @@
    "provider": "SiliconFlow",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.94845360824742
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -3398,15 +3398,15 @@
    "model": "moonshotai/kimi-k2.6",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": null,
-   "up30m": 98.5781990521327
+   "up5m": 100,
+   "up30m": 99.70674486803519
   },
   {
    "model": "moonshotai/kimi-k2.6",
    "provider": "AtlasCloud",
-   "state": "degraded",
-   "up5m": null,
-   "up30m": 97.65258215962442
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.72375690607734
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -3426,15 +3426,15 @@
    "model": "moonshotai/kimi-k2.6",
    "provider": "Phala",
    "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "up5m": 100,
+   "up30m": 99.55357142857143
   },
   {
    "model": "moonshotai/kimi-k2.6",
    "provider": "Together",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.80916030534351
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -3460,16 +3460,16 @@
   {
    "model": "moonshotai/kimi-k2.7-code",
    "provider": "Inceptron",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.7-code",
    "provider": "DeepInfra",
    "state": "up",
    "up5m": null,
-   "up30m": 99.69788519637463
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.7-code",
@@ -3483,21 +3483,21 @@
    "provider": "Parasail",
    "state": "up",
    "up5m": null,
-   "up30m": 99.53051643192488
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.7-code",
    "provider": "Ambient",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.95898277276456
+   "up5m": null,
+   "up30m": 99.3103448275862
   },
   {
    "model": "moonshotai/kimi-k2.7-code",
    "provider": "SiliconFlow",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.88496932515338
   },
   {
    "model": "moonshotai/kimi-k2.7-code",
@@ -3510,7 +3510,7 @@
    "model": "moonshotai/kimi-k2.7-code",
    "provider": "Moonshot AI",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -3530,9 +3530,9 @@
   {
    "model": "moonshotai/kimi-k2.7-code",
    "provider": "Together",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.7-code",
@@ -3553,7 +3553,7 @@
    "provider": "Moonshot AI",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99754251449916
+   "up30m": 99.99758972257708
   },
   {
    "model": "morph/morph-v3-fast",
@@ -3574,7 +3574,7 @@
    "provider": "Nex AGI",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.79101358411702
+   "up30m": 100
   },
   {
    "model": "nex-agi/nex-n2-pro",
@@ -3586,9 +3586,9 @@
   {
    "model": "nex-agi/nex-n2-pro",
    "provider": "SiliconFlow",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "nousresearch/hermes-3-llama-3.1-405b",
@@ -3629,8 +3629,8 @@
    "model": "nvidia/nemotron-3-nano-30b-a3b",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.86850756081526,
-   "up30m": 99.10261824324324
+   "up5m": 99.6947496947497,
+   "up30m": 98.37870125437324
   },
   {
    "model": "nvidia/nemotron-3-nano-30b-a3b",
@@ -3642,9 +3642,9 @@
   {
    "model": "nvidia/nemotron-3-nano-30b-a3b",
    "provider": "Nebius",
-   "state": "degraded",
-   "up5m": 100,
-   "up30m": 97.16621253405995
+   "state": "up",
+   "up5m": 98.47328244274809,
+   "up30m": 98.67330016583747
   },
   {
    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
@@ -3657,50 +3657,50 @@
    "model": "nvidia/nemotron-3-super-120b-a12b",
    "provider": "DeepInfra",
    "state": "degraded",
-   "up5m": 97.6470588235294,
-   "up30m": 95.092693565976
+   "up5m": 97.5609756097561,
+   "up30m": 94.09937888198758
   },
   {
    "model": "nvidia/nemotron-3-super-120b-a12b",
    "provider": "DigitalOcean",
    "state": "up",
-   "up5m": null,
-   "up30m": 98.33795013850416
+   "up5m": 100,
+   "up30m": 99.38271604938271
   },
   {
    "model": "nvidia/nemotron-3-super-120b-a12b",
    "provider": "Nebius",
    "state": "up",
    "up5m": null,
-   "up30m": 98.67346938775509
+   "up30m": 100
   },
   {
    "model": "nvidia/nemotron-3-ultra-550b-a55b",
    "provider": "DeepInfra",
    "state": "degraded",
-   "up5m": 95.38461538461539,
-   "up30m": 96.50655021834062
+   "up5m": 100,
+   "up30m": 96.77754677754677
   },
   {
    "model": "nvidia/nemotron-3-ultra-550b-a55b",
    "provider": "BaseTen",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 97.02970297029702,
+   "up30m": 99.11504424778761
   },
   {
    "model": "nvidia/nemotron-3-ultra-550b-a55b",
    "provider": "Together",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.15014164305948
+   "up30m": 99.03660886319847
   },
   {
    "model": "nvidia/nemotron-3-ultra-550b-a55b",
    "provider": "Venice",
    "state": "degraded",
    "up5m": null,
-   "up30m": 94.66666666666667
+   "up30m": 93.44262295081968
   },
   {
    "model": "nvidia/nemotron-3.5-content-safety",
@@ -3776,7 +3776,7 @@
    "model": "openai/gpt-4-turbo",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -3797,8 +3797,8 @@
    "model": "openai/gpt-4.1",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.4989684644857,
-   "up30m": 99.62828915191236
+   "up5m": 99.87984379693602,
+   "up30m": 99.6003276003276
   },
   {
    "model": "openai/gpt-4.1",
@@ -3811,15 +3811,15 @@
    "model": "openai/gpt-4.1-mini",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.9552706127926,
-   "up30m": 99.54631131372463
+   "up5m": 99.98793436293437,
+   "up30m": 99.8018526774657
   },
   {
    "model": "openai/gpt-4.1-mini",
    "provider": "Azure",
    "state": "up",
-   "up5m": 99.6268656716418,
-   "up30m": 99.86232216613125
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "openai/gpt-4.1-mini",
@@ -3832,15 +3832,15 @@
    "model": "openai/gpt-4.1-nano",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.26892950391645,
-   "up30m": 99.3453475542479
+   "up5m": 99.51219512195122,
+   "up30m": 98.29337094499296
   },
   {
    "model": "openai/gpt-4.1-nano",
    "provider": "Azure",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.85141158989599
+   "up30m": 100
   },
   {
    "model": "openai/gpt-4.1-nano",
@@ -3854,21 +3854,21 @@
    "provider": "Azure",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.94793022650352
+   "up30m": 100
   },
   {
    "model": "openai/gpt-4o",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.8502994011976,
-   "up30m": 99.87394201332613
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "openai/gpt-4o-2024-05-13",
    "provider": "Azure",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.65861984881737
+   "up5m": 98.46153846153847,
+   "up30m": 98.91838741396263
   },
   {
    "model": "openai/gpt-4o-2024-05-13",
@@ -3880,9 +3880,9 @@
   {
    "model": "openai/gpt-4o-2024-08-06",
    "provider": "Azure",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.87452948557089
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "openai/gpt-4o-2024-08-06",
@@ -3902,22 +3902,22 @@
    "model": "openai/gpt-4o-mini",
    "provider": "Azure",
    "state": "up",
-   "up5m": 99.94280266920877,
-   "up30m": 99.87774634112264
+   "up5m": 99.80617024713293,
+   "up30m": 99.85899924894073
   },
   {
    "model": "openai/gpt-4o-mini",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.98736735725113,
-   "up30m": 99.98543539078668
+   "up5m": 100,
+   "up30m": 99.99715422398535
   },
   {
    "model": "openai/gpt-4o-mini",
    "provider": "Azure",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "openai/gpt-4o-mini-2024-07-18",
@@ -3951,8 +3951,8 @@
    "model": "openai/gpt-5",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.88465974625143,
-   "up30m": 99.9697428139183
+   "up5m": 100,
+   "up30m": 99.98548410509508
   },
   {
    "model": "openai/gpt-5",
@@ -3985,30 +3985,30 @@
   {
    "model": "openai/gpt-5-image-mini",
    "provider": "OpenAI",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5-mini",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.39774153074028,
-   "up30m": 99.15535341791198
+   "up5m": 99.97605363984674,
+   "up30m": 99.87064143203432
   },
   {
    "model": "openai/gpt-5-mini",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.39774153074028,
-   "up30m": 99.15535341791198
+   "up5m": 99.97605363984674,
+   "up30m": 99.87064143203432
   },
   {
    "model": "openai/gpt-5-mini",
    "provider": "Azure",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.93386243386243
+   "up30m": 99.83361064891847
   },
   {
    "model": "openai/gpt-5-mini",
@@ -4021,22 +4021,22 @@
    "model": "openai/gpt-5-nano",
    "provider": "OpenAI",
    "state": "degraded",
-   "up5m": 96.11650485436894,
-   "up30m": 96.29027670553818
+   "up5m": 97.1677559912854,
+   "up30m": 96.55233255699062
   },
   {
    "model": "openai/gpt-5-nano",
    "provider": "OpenAI",
    "state": "degraded",
-   "up5m": 96.11650485436894,
-   "up30m": 96.29027670553818
+   "up5m": 97.1677559912854,
+   "up30m": 96.55233255699062
   },
   {
    "model": "openai/gpt-5-nano",
    "provider": "Azure",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.89126495106923
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5-nano",
@@ -4056,28 +4056,28 @@
    "model": "openai/gpt-5.1",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.70559371933267,
-   "up30m": 99.87275734826314
+   "up5m": 99.84202211690362,
+   "up30m": 99.31605471562276
   },
   {
    "model": "openai/gpt-5.1",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.70559371933267,
-   "up30m": 99.87275734826314
+   "up5m": 99.84202211690362,
+   "up30m": 99.31605471562276
   },
   {
    "model": "openai/gpt-5.1",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.70559371933267,
-   "up30m": 99.87275734826314
+   "up5m": 99.84202211690362,
+   "up30m": 99.31605471562276
   },
   {
    "model": "openai/gpt-5.1",
    "provider": "Azure",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -4099,28 +4099,28 @@
    "provider": "OpenAI",
    "state": "down",
    "up5m": null,
-   "up30m": null
+   "up30m": 0
   },
   {
    "model": "openai/gpt-5.1-codex",
    "provider": "Azure",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "openai/gpt-5.1-codex",
    "provider": "OpenAI",
    "state": "down",
    "up5m": null,
-   "up30m": 0
+   "up30m": null
   },
   {
    "model": "openai/gpt-5.1-codex",
    "provider": "OpenAI",
    "state": "down",
    "up5m": null,
-   "up30m": 0
+   "up30m": null
   },
   {
    "model": "openai/gpt-5.1-codex-max",
@@ -4161,22 +4161,22 @@
    "model": "openai/gpt-5.2",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 98.34660134721372,
-   "up30m": 98.86200792379668
+   "up5m": 99.54780361757106,
+   "up30m": 98.32008670520231
   },
   {
    "model": "openai/gpt-5.2",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 98.34660134721372,
-   "up30m": 98.86200792379668
+   "up5m": 99.54780361757106,
+   "up30m": 98.32008670520231
   },
   {
    "model": "openai/gpt-5.2",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 98.34660134721372,
-   "up30m": 98.86200792379668
+   "up5m": 99.54780361757106,
+   "up30m": 98.32008670520231
   },
   {
    "model": "openai/gpt-5.2",
@@ -4202,14 +4202,14 @@
   {
    "model": "openai/gpt-5.2-codex",
    "provider": "OpenAI",
-   "state": "idle",
+   "state": "down",
    "up5m": null,
    "up30m": null
   },
   {
    "model": "openai/gpt-5.2-codex",
    "provider": "OpenAI",
-   "state": "idle",
+   "state": "down",
    "up5m": null,
    "up30m": null
   },
@@ -4245,50 +4245,50 @@
    "model": "openai/gpt-5.3-codex",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.16666666666667,
-   "up30m": 99.76958525345621
+   "up5m": 98.95833333333334,
+   "up30m": 99.51456310679612
   },
   {
    "model": "openai/gpt-5.3-codex",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.16666666666667,
-   "up30m": 99.76958525345621
+   "up5m": 98.95833333333334,
+   "up30m": 99.51456310679612
   },
   {
    "model": "openai/gpt-5.3-codex",
    "provider": "Azure",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
    "model": "openai/gpt-5.4",
    "provider": "OpenAI",
-   "state": "up",
-   "up5m": 99.46977730646871,
-   "up30m": 99.43054357204487
+   "state": "degraded",
+   "up5m": 97.78129952456418,
+   "up30m": 97.92899408284023
   },
   {
    "model": "openai/gpt-5.4",
    "provider": "OpenAI",
-   "state": "up",
-   "up5m": 99.46977730646871,
-   "up30m": 99.43054357204487
+   "state": "degraded",
+   "up5m": 97.78129952456418,
+   "up30m": 97.92899408284023
   },
   {
    "model": "openai/gpt-5.4",
    "provider": "OpenAI",
-   "state": "up",
-   "up5m": 99.46977730646871,
-   "up30m": 99.43054357204487
+   "state": "degraded",
+   "up5m": 97.78129952456418,
+   "up30m": 97.92899408284023
   },
   {
    "model": "openai/gpt-5.4",
    "provider": "Azure",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99037536092396
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5.4",
@@ -4301,57 +4301,57 @@
    "model": "openai/gpt-5.4-image-2",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": null,
-   "up30m": 100
-  },
-  {
-   "model": "openai/gpt-5.4-mini",
-   "provider": "OpenAI",
-   "state": "up",
-   "up5m": 99.79155086158977,
-   "up30m": 99.6213133743206
-  },
-  {
-   "model": "openai/gpt-5.4-mini",
-   "provider": "OpenAI",
-   "state": "up",
-   "up5m": 99.79155086158977,
-   "up30m": 99.6213133743206
-  },
-  {
-   "model": "openai/gpt-5.4-mini",
-   "provider": "OpenAI",
-   "state": "up",
-   "up5m": 99.79155086158977,
-   "up30m": 99.6213133743206
-  },
-  {
-   "model": "openai/gpt-5.4-mini",
-   "provider": "Azure",
-   "state": "up",
    "up5m": 100,
    "up30m": 100
   },
   {
+   "model": "openai/gpt-5.4-mini",
+   "provider": "OpenAI",
+   "state": "up",
+   "up5m": 99.9385623592054,
+   "up30m": 99.7546681204852
+  },
+  {
+   "model": "openai/gpt-5.4-mini",
+   "provider": "OpenAI",
+   "state": "up",
+   "up5m": 99.9385623592054,
+   "up30m": 99.7546681204852
+  },
+  {
+   "model": "openai/gpt-5.4-mini",
+   "provider": "OpenAI",
+   "state": "up",
+   "up5m": 99.9385623592054,
+   "up30m": 99.7546681204852
+  },
+  {
+   "model": "openai/gpt-5.4-mini",
+   "provider": "Azure",
+   "state": "up",
+   "up5m": 99.82486865148861,
+   "up30m": 99.86902423051735
+  },
+  {
    "model": "openai/gpt-5.4-nano",
    "provider": "Azure",
    "state": "up",
-   "up5m": 99.94815966822188,
-   "up30m": 99.8815661139752
+   "up5m": 99.86345015930814,
+   "up30m": 99.90985770394694
   },
   {
    "model": "openai/gpt-5.4-nano",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 98.37827015483182,
-   "up30m": 98.00517724127002
+   "up5m": 97.76712123482692,
+   "up30m": 98.05090276267131
   },
   {
    "model": "openai/gpt-5.4-nano",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 98.37827015483182,
-   "up30m": 98.00517724127002
+   "up5m": 97.76712123482692,
+   "up30m": 98.05090276267131
   },
   {
    "model": "openai/gpt-5.4-pro",
@@ -4377,30 +4377,30 @@
   {
    "model": "openai/gpt-5.5",
    "provider": "OpenAI",
-   "state": "degraded",
-   "up5m": 97.21706864564007,
-   "up30m": 96.74952198852772
+   "state": "up",
+   "up5m": 98.55072463768117,
+   "up30m": 98.28378051728306
   },
   {
    "model": "openai/gpt-5.5",
    "provider": "OpenAI",
-   "state": "degraded",
-   "up5m": 97.21706864564007,
-   "up30m": 96.74952198852772
+   "state": "up",
+   "up5m": 98.55072463768117,
+   "up30m": 98.28378051728306
   },
   {
    "model": "openai/gpt-5.5",
    "provider": "OpenAI",
-   "state": "degraded",
-   "up5m": 97.21706864564007,
-   "up30m": 96.74952198852772
+   "state": "up",
+   "up5m": 98.55072463768117,
+   "up30m": 98.28378051728306
   },
   {
    "model": "openai/gpt-5.5",
    "provider": "Azure",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.88864142538975
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5.5",
@@ -4413,43 +4413,43 @@
    "model": "openai/gpt-5.5-pro",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
    "model": "openai/gpt-5.5-pro",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
    "model": "openai/gpt-5.6-luna",
    "provider": "OpenAI",
-   "state": "up",
-   "up5m": 98.9946777054997,
-   "up30m": 98.83716540189526
+   "state": "degraded",
+   "up5m": 93.07640600492942,
+   "up30m": 88.78129811198444
   },
   {
    "model": "openai/gpt-5.6-luna",
    "provider": "OpenAI",
-   "state": "up",
-   "up5m": 98.9946777054997,
-   "up30m": 98.83716540189526
+   "state": "degraded",
+   "up5m": 93.07640600492942,
+   "up30m": 88.78129811198444
   },
   {
    "model": "openai/gpt-5.6-luna",
    "provider": "OpenAI",
-   "state": "up",
-   "up5m": 98.9946777054997,
-   "up30m": 98.83716540189526
+   "state": "degraded",
+   "up5m": 93.07640600492942,
+   "up30m": 88.78129811198444
   },
   {
    "model": "openai/gpt-5.6-luna",
    "provider": "Azure",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.95625546806649
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5.6-luna",
@@ -4496,40 +4496,33 @@
   {
    "model": "openai/gpt-5.6-sol",
    "provider": "OpenAI",
-   "state": "up",
-   "up5m": 97.15099715099716,
-   "up30m": 98.60491874011218
+   "state": "degraded",
+   "up5m": 94.5,
+   "up30m": 96.7327076816128
   },
   {
    "model": "openai/gpt-5.6-sol",
    "provider": "OpenAI",
-   "state": "up",
-   "up5m": 97.15099715099716,
-   "up30m": 98.60491874011218
+   "state": "degraded",
+   "up5m": 94.5,
+   "up30m": 96.7327076816128
   },
   {
    "model": "openai/gpt-5.6-sol",
    "provider": "OpenAI",
-   "state": "up",
-   "up5m": 97.15099715099716,
-   "up30m": 98.60491874011218
+   "state": "degraded",
+   "up5m": 94.5,
+   "up30m": 96.7327076816128
   },
   {
    "model": "openai/gpt-5.6-sol",
    "provider": "Azure",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.86577181208054,
+   "up30m": 99.87899322362053
   },
   {
    "model": "openai/gpt-5.6-sol",
-   "provider": "Azure",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
-  },
-  {
-   "model": "openai/gpt-5.6-sol-pro",
    "provider": "Azure",
    "state": "idle",
    "up5m": null,
@@ -4537,24 +4530,31 @@
   },
   {
    "model": "openai/gpt-5.6-sol-pro",
-   "provider": "OpenAI",
-   "state": "up",
-   "up5m": 99.79570990806947,
-   "up30m": 99.97492477432297
+   "provider": "Azure",
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "openai/gpt-5.6-sol-pro",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.79570990806947,
-   "up30m": 99.97492477432297
+   "up5m": 100,
+   "up30m": 99.95820562830872
   },
   {
    "model": "openai/gpt-5.6-sol-pro",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 99.79570990806947,
-   "up30m": 99.97492477432297
+   "up5m": 100,
+   "up30m": 99.95820562830872
+  },
+  {
+   "model": "openai/gpt-5.6-sol-pro",
+   "provider": "OpenAI",
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.95820562830872
   },
   {
    "model": "openai/gpt-5.6-sol-pro",
@@ -4568,28 +4568,28 @@
    "provider": "Azure",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.96991123815255
   },
   {
    "model": "openai/gpt-5.6-terra",
    "provider": "OpenAI",
    "state": "degraded",
-   "up5m": 97.7924944812362,
-   "up30m": 97.93714523051364
+   "up5m": 96.67738478027867,
+   "up30m": 95.6858943286476
   },
   {
    "model": "openai/gpt-5.6-terra",
    "provider": "OpenAI",
    "state": "degraded",
-   "up5m": 97.7924944812362,
-   "up30m": 97.93714523051364
+   "up5m": 96.67738478027867,
+   "up30m": 95.6858943286476
   },
   {
    "model": "openai/gpt-5.6-terra",
    "provider": "OpenAI",
    "state": "degraded",
-   "up5m": 97.7924944812362,
-   "up30m": 97.93714523051364
+   "up5m": 96.67738478027867,
+   "up30m": 95.6858943286476
   },
   {
    "model": "openai/gpt-5.6-terra",
@@ -4601,23 +4601,23 @@
   {
    "model": "openai/gpt-5.6-terra-pro",
    "provider": "OpenAI",
-   "state": "up",
+   "state": "degraded",
    "up5m": null,
-   "up30m": 100
+   "up30m": 97.65625
   },
   {
    "model": "openai/gpt-5.6-terra-pro",
    "provider": "OpenAI",
-   "state": "up",
+   "state": "degraded",
    "up5m": null,
-   "up30m": 100
+   "up30m": 97.65625
   },
   {
    "model": "openai/gpt-5.6-terra-pro",
    "provider": "OpenAI",
-   "state": "up",
+   "state": "degraded",
    "up5m": null,
-   "up30m": 100
+   "up30m": 97.65625
   },
   {
    "model": "openai/gpt-5.6-terra-pro",
@@ -4636,9 +4636,9 @@
   {
    "model": "openai/gpt-audio",
    "provider": "OpenAI",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "openai/gpt-audio-mini",
@@ -4658,92 +4658,92 @@
    "model": "openai/gpt-oss-120b",
    "provider": "CoreWeave",
    "state": "up",
-   "up5m": 99.9818016378526,
-   "up30m": 99.3409599602089
+   "up5m": 99.90415947862756,
+   "up30m": 99.56051226312556
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.97465437788019
+   "up5m": 99.96171516079633,
+   "up30m": 99.98828753047904
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "Novita",
-   "state": "degraded",
-   "up5m": 94.95327102803738,
-   "up30m": 95.71865443425077
+   "state": "down",
+   "up5m": 46.07142857142857,
+   "up30m": 72.02186756017987
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "SiliconFlow",
-   "state": "up",
-   "up5m": 99.89785495403473,
-   "up30m": 99.98136067101584
+   "state": "degraded",
+   "up5m": 78.47926267281106,
+   "up30m": 83.48327852578024
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "Mancer 2",
-   "state": "up",
-   "up5m": 96.95364238410596,
-   "up30m": 98.10254339927332
+   "state": "degraded",
+   "up5m": 95.58587479935795,
+   "up30m": 97.60848393031057
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "DigitalOcean",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98790078644888
+   "up30m": 99.95185749819466
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "Google",
    "state": "degraded",
-   "up5m": 64.98637602179836,
-   "up30m": 85.08520007658433
+   "up5m": 92.35955056179776,
+   "up30m": 92.66417746540742
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "BaseTen",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.92136819343425
+   "up5m": 99.23591212989494,
+   "up30m": 99.85832045337455
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "Parasail",
-   "state": "up",
-   "up5m": 99.4263862332696,
-   "up30m": 99.90128331688055
+   "state": "degraded",
+   "up5m": 97.16216216216216,
+   "up30m": 94.88970588235294
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "SambaNova",
-   "state": "degraded",
-   "up5m": 95.85798816568047,
-   "up30m": 96.47406733393996
+   "state": "up",
+   "up5m": 94.57831325301204,
+   "up30m": 98.10543657331137
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "Amazon Bedrock",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.39167056621432
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.84472049689441,
-   "up30m": 99.62264150943396
+   "up5m": 99.55307262569832,
+   "up30m": 99.56300072833211
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "Together",
-   "state": "up",
+   "state": "degraded",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 95.86976183298161
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -4764,70 +4764,70 @@
    "provider": "Phala",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.59893048128342
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "Groq",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.99576764363559
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "Mara",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "degraded",
+   "up5m": 96.79144385026738,
+   "up30m": 97.21203228173148
   },
   {
    "model": "openai/gpt-oss-120b",
    "provider": "Cerebras",
    "state": "up",
-   "up5m": 99.96784565916398,
-   "up30m": 99.98283482813372
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "openai/gpt-oss-20b",
    "provider": "CoreWeave",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98952715086139
+   "up30m": 99.88369989403768
   },
   {
    "model": "openai/gpt-oss-20b",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.32421813609933
+   "up5m": 99.9083409715857,
+   "up30m": 99.48218093207433
   },
   {
    "model": "openai/gpt-oss-20b",
    "provider": "Parasail",
-   "state": "degraded",
-   "up5m": 93.58523725834797,
-   "up30m": 91.08835385118205
+   "state": "down",
+   "up5m": 97.36842105263158,
+   "up30m": 62.8060263653484
   },
   {
    "model": "openai/gpt-oss-20b",
    "provider": "Novita",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.97820401046208
+   "state": "degraded",
+   "up5m": 94.79553903345726,
+   "up30m": 91.3391353172375
   },
   {
    "model": "openai/gpt-oss-20b",
    "provider": "Phala",
-   "state": "up",
+   "state": "degraded",
    "up5m": 100,
-   "up30m": 99.74193548387098
+   "up30m": 95.51282051282051
   },
   {
    "model": "openai/gpt-oss-20b",
    "provider": "SiliconFlow",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "degraded",
+   "up5m": 96.11111111111111,
+   "up30m": 96.30252100840336
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -4846,30 +4846,30 @@
   {
    "model": "openai/gpt-oss-20b",
    "provider": "Amazon Bedrock",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "down",
+   "up5m": null,
+   "up30m": 62.86173633440515
   },
   {
    "model": "openai/gpt-oss-20b",
    "provider": "Google",
-   "state": "degraded",
-   "up5m": 71.7948717948718,
-   "up30m": 84.70588235294117
+   "state": "idle",
+   "up5m": 64.44444444444444,
+   "up30m": null
   },
   {
    "model": "openai/gpt-oss-20b",
    "provider": "Fireworks",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.56226745458525
   },
   {
    "model": "openai/gpt-oss-20b",
    "provider": "Groq",
    "state": "up",
-   "up5m": 99.53440248318675,
-   "up30m": 99.32318104906938
+   "up5m": 99.87413467589678,
+   "up30m": 99.82339686986175
   },
   {
    "model": "openai/gpt-oss-safeguard-20b",
@@ -4910,7 +4910,7 @@
    "model": "openai/o3-mini",
    "provider": "OpenAI",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -4944,9 +4944,9 @@
   {
    "model": "openai/o4-mini-high",
    "provider": "OpenAI",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "openrouter/auto",
@@ -5035,9 +5035,9 @@
   {
    "model": "poolside/laguna-m.1",
    "provider": "Poolside",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "poolside/laguna-s-2.1",
@@ -5057,8 +5057,8 @@
    "model": "qwen/qwen-2.5-72b-instruct",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.82935153583618,
+   "up30m": 99.82595723520636
   },
   {
    "model": "qwen/qwen-2.5-72b-instruct",
@@ -5071,8 +5071,8 @@
    "model": "qwen/qwen-2.5-7b-instruct",
    "provider": "Phala",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.99304347826087
+   "up5m": 99.91793188346327,
+   "up30m": 99.91407352850918
   },
   {
    "model": "qwen/qwen-2.5-7b-instruct",
@@ -5106,15 +5106,15 @@
    "model": "qwen/qwen2.5-vl-72b-instruct",
    "provider": "Nebius",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.93498049414823
+   "up5m": 99.74160206718346,
+   "up30m": 99.89130434782608
   },
   {
    "model": "qwen/qwen2.5-vl-72b-instruct",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 98.24561403508771,
-   "up30m": 98.83364027010437
+   "up5m": 100,
+   "up30m": 99.29961089494164
   },
   {
    "model": "qwen/qwen3-14b",
@@ -5128,7 +5128,7 @@
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 98.95287958115183
+   "up30m": 99.81290926099157
   },
   {
    "model": "qwen/qwen3-14b",
@@ -5148,22 +5148,22 @@
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.19001012487344,
-   "up30m": 98.71005917159763
+   "up5m": 99.6888888888889,
+   "up30m": 99.43927211172239
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "Novita",
-   "state": "degraded",
-   "up5m": 99.16963226571768,
-   "up30m": 96.34675669158428
+   "state": "up",
+   "up5m": 98.59484777517564,
+   "up30m": 98.44663303707263
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 99.34782608695653,
-   "up30m": 99.80191482337405
+   "up5m": 100,
+   "up30m": 99.84291548853284
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
@@ -5176,71 +5176,71 @@
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "Venice",
    "state": "up",
-   "up5m": 100,
-   "up30m": 98.57549857549857
+   "up5m": 99.10714285714286,
+   "up30m": 99.38763012859766
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "Nebius",
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 96.79552390640896
+   "up5m": 97.9002624671916,
+   "up30m": 97.64890282131663
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "Friendli",
    "state": "degraded",
-   "up5m": 90.41916167664671,
-   "up30m": 97.97507788161994
+   "up5m": 90.82568807339449,
+   "up30m": 91.94630872483222
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "AtlasCloud",
    "state": "up",
-   "up5m": 98.91304347826086,
-   "up30m": 99.84973703981969
+   "up5m": 100,
+   "up30m": 98.07193177604746
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "StreamLake",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.81308411214953
+   "up30m": 99.74424552429667
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "Crusoe",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.93183367416496
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "Google",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.92657856093979
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.52741020793951
+   "up5m": 99.39148073022312,
+   "up30m": 99.3070593330446
   },
   {
    "model": "qwen/qwen3-235b-a22b-thinking-2507",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
    "model": "qwen/qwen3-235b-a22b-thinking-2507",
    "provider": "DeepInfra",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -5259,15 +5259,15 @@
   {
    "model": "qwen/qwen3-30b-a3b",
    "provider": "DeepInfra",
-   "state": "degraded",
+   "state": "up",
    "up5m": 100,
-   "up30m": 97.25877192982456
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-30b-a3b",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -5281,36 +5281,36 @@
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": 95.8955223880597,
-   "up30m": 98.40971272229822
+   "up5m": 99.87951807228916,
+   "up30m": 99.24388957270969
   },
   {
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
    "provider": "SiliconFlow",
    "state": "degraded",
-   "up5m": 91.46666666666667,
-   "up30m": 94.44444444444444
+   "up5m": 100,
+   "up30m": 88.03967327887982
   },
   {
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
    "provider": "Nebius",
    "state": "degraded",
-   "up5m": 89.23512747875354,
-   "up30m": 86.7595818815331
+   "up5m": 100,
+   "up30m": 85.31746031746032
   },
   {
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
    "provider": "CoreWeave",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.951992318771
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
    "provider": "Alibaba",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99056692764835
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -5331,14 +5331,14 @@
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.85590778097982
+   "up30m": 99.90446620492
   },
   {
    "model": "qwen/qwen3-32b",
    "provider": "Nebius",
-   "state": "degraded",
+   "state": "up",
    "up5m": 100,
-   "up30m": 96.14814814814815
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-32b",
@@ -5351,8 +5351,8 @@
    "model": "qwen/qwen3-32b",
    "provider": "SiliconFlow",
    "state": "up",
-   "up5m": 99.48717948717949,
-   "up30m": 99.92810927390366
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-32b",
@@ -5372,29 +5372,29 @@
    "model": "qwen/qwen3-coder",
    "provider": "Google",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": null,
+   "up30m": 99.56140350877193
   },
   {
    "model": "qwen/qwen3-coder",
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.835255354201
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-coder",
    "provider": "Venice",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "qwen/qwen3-coder",
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.80806142034548
   },
   {
    "model": "qwen/qwen3-coder",
@@ -5413,16 +5413,16 @@
   {
    "model": "qwen/qwen3-coder-30b-a3b-instruct",
    "provider": "Novita",
-   "state": "degraded",
-   "up5m": 91.74311926605505,
-   "up30m": 96.91689008042896
+   "state": "up",
+   "up5m": 100,
+   "up30m": 98.97579143389198
   },
   {
    "model": "qwen/qwen3-coder-30b-a3b-instruct",
    "provider": "SiliconFlow",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "degraded",
+   "up5m": 51.42857142857142,
+   "up30m": 85.05154639175258
   },
   {
    "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -5449,22 +5449,22 @@
    "model": "qwen/qwen3-coder-flash",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
-  },
-  {
-   "model": "qwen/qwen3-coder-next",
-   "provider": "Ionstream",
-   "state": "up",
    "up5m": null,
    "up30m": 100
   },
   {
    "model": "qwen/qwen3-coder-next",
+   "provider": "Ionstream",
+   "state": "degraded",
+   "up5m": null,
+   "up30m": 90.9433962264151
+  },
+  {
+   "model": "qwen/qwen3-coder-next",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 98.21428571428571,
-   "up30m": 99.83249581239531
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-coder-next",
@@ -5490,9 +5490,9 @@
   {
    "model": "qwen/qwen3-coder-plus",
    "provider": "Alibaba",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "qwen/qwen3-max",
@@ -5527,7 +5527,7 @@
    "provider": "Parasail",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.95408631772268
   },
   {
    "model": "qwen/qwen3-next-80b-a3b-instruct",
@@ -5540,8 +5540,8 @@
    "model": "qwen/qwen3-next-80b-a3b-instruct",
    "provider": "Novita",
    "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "up5m": 99.14529914529915,
+   "up30m": 99.68944099378882
   },
   {
    "model": "qwen/qwen3-next-80b-a3b-thinking",
@@ -5567,72 +5567,72 @@
   {
    "model": "qwen/qwen3-vl-235b-a22b-instruct",
    "provider": "DeepInfra",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.24774322968906
+   "state": "degraded",
+   "up5m": 96.29629629629629,
+   "up30m": 95.33376539209333
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-instruct",
    "provider": "Venice",
    "state": "degraded",
-   "up5m": 86.95652173913044,
-   "up30m": 96.78249678249678
+   "up5m": 94.82758620689656,
+   "up30m": 96.61590524534687
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-instruct",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 99.3103448275862,
-   "up30m": 99.01671583087513
+   "up5m": 99.28400954653938,
+   "up30m": 99.20462762111352
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-instruct",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 99.6951219512195,
-   "up30m": 99.79096989966555
+   "up5m": 99.3920972644377,
+   "up30m": 99.71205265322912
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-instruct",
    "provider": "Novita",
    "state": "degraded",
-   "up5m": 90.19607843137256,
-   "up30m": 93.58600583090379
+   "up5m": 89.47368421052632,
+   "up30m": 92.80000000000001
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-thinking",
    "provider": "Alibaba",
    "state": "degraded",
-   "up5m": null,
-   "up30m": 85.45454545454545
+   "up5m": 70,
+   "up30m": 94.56342668863262
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-thinking",
    "provider": "Novita",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-instruct",
    "provider": "Alibaba",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.82210927573063
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-instruct",
    "provider": "DeepInfra",
-   "state": "up",
+   "state": "degraded",
    "up5m": 100,
-   "up30m": 99.96068409671712
+   "up30m": 95.0136612021858
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-instruct",
    "provider": "Novita",
    "state": "up",
-   "up5m": 98.6046511627907,
-   "up30m": 99.39427312775331
+   "up5m": 96.05911330049261,
+   "up30m": 98.2078853046595
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -5644,16 +5644,16 @@
   {
    "model": "qwen/qwen3-vl-30b-a3b-instruct",
    "provider": "SiliconFlow",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.30747922437672
+   "state": "degraded",
+   "up5m": 98.71794871794873,
+   "up30m": 80.64516129032258
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-thinking",
    "provider": "Alibaba",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-thinking",
@@ -5674,14 +5674,14 @@
    "provider": "Alibaba",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98640380693405
+   "up30m": 99.99296616726454
   },
   {
    "model": "qwen/qwen3-vl-8b-instruct",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.71150378651281
+   "up5m": 99.82817869415808,
+   "up30m": 99.67622571692877
   },
   {
    "model": "qwen/qwen3-vl-8b-thinking",
@@ -5694,57 +5694,57 @@
    "model": "qwen/qwen3.5-122b-a10b",
    "provider": "SiliconFlow",
    "state": "down",
-   "up5m": 51.02040816326531,
-   "up30m": 41.16899618805591
+   "up5m": null,
+   "up30m": 5.839416058394161
   },
   {
    "model": "qwen/qwen3.5-122b-a10b",
    "provider": "Alibaba",
    "state": "down",
-   "up5m": 85.1063829787234,
-   "up30m": 51.50214592274678
+   "up5m": null,
+   "up30m": 38.56332703213611
   },
   {
    "model": "qwen/qwen3.5-122b-a10b",
    "provider": "DeepInfra",
    "state": "down",
-   "up5m": 68.75,
-   "up30m": 75.08196721311475
+   "up5m": null,
+   "up30m": 53.20197044334976
   },
   {
    "model": "qwen/qwen3.5-122b-a10b",
    "provider": "AtlasCloud",
-   "state": "down",
-   "up5m": null,
-   "up30m": 7.035175879396985
+   "state": "degraded",
+   "up5m": 97.0873786407767,
+   "up30m": 81.2807881773399
   },
   {
    "model": "qwen/qwen3.5-122b-a10b",
    "provider": "Novita",
-   "state": "down",
-   "up5m": 80,
-   "up30m": 77.38095238095238
+   "state": "degraded",
+   "up5m": 95.81395348837209,
+   "up30m": 85.68249258160238
   },
   {
    "model": "qwen/qwen3.5-27b",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.91883116883116
+   "up5m": 99.37304075235109,
+   "up30m": 99.66675923354624
   },
   {
    "model": "qwen/qwen3.5-27b",
    "provider": "SiliconFlow",
    "state": "up",
-   "up5m": 98,
-   "up30m": 99.07120743034056
+   "up5m": 99.43100995732574,
+   "up30m": 99.11807937285644
   },
   {
    "model": "qwen/qwen3.5-27b",
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.62121212121212
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-27b",
@@ -5757,22 +5757,22 @@
    "model": "qwen/qwen3.5-27b",
    "provider": "Novita",
    "state": "up",
-   "up5m": 98.63013698630137,
-   "up30m": 99.78021978021978
+   "up5m": 99.81343283582089,
+   "up30m": 99.79108635097494
   },
   {
    "model": "qwen/qwen3.5-27b",
    "provider": "Phala",
    "state": "up",
-   "up5m": null,
-   "up30m": 99.05660377358491
+   "up5m": 98.7012987012987,
+   "up30m": 99.28057553956835
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": null,
-   "up30m": 99.13793103448276
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
@@ -5786,98 +5786,98 @@
    "provider": "Parasail",
    "state": "up",
    "up5m": 100,
-   "up30m": 98.33729216152018
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
    "provider": "Alibaba",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
    "provider": "AtlasCloud",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
    "provider": "NextBit",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
    "provider": "SiliconFlow",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.8859749144812
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
    "provider": "CoreWeave",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
    "provider": "Venice",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
    "provider": "DigitalOcean",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.53917050691244
+   "state": "down",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
    "provider": "Alibaba",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.95860927152319
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
    "provider": "Chutes",
    "state": "up",
-   "up5m": 99.64788732394366,
-   "up30m": 99.78880675818374
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 98.89937106918238,
-   "up30m": 99.69052224371373
+   "up5m": null,
+   "up30m": 99.70149253731343
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
    "provider": "Parasail",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.75786924939467
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
    "provider": "AtlasCloud",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.64093357271095
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
    "provider": "Phala",
    "state": "up",
-   "up5m": 99.14893617021276,
-   "up30m": 99.70695970695971
+   "up5m": null,
+   "up30m": 98.68421052631578
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -5889,9 +5889,9 @@
   {
    "model": "qwen/qwen3.5-397b-a17b",
    "provider": "StreamLake",
-   "state": "up",
-   "up5m": 99.63592233009709,
-   "up30m": 99.76359338061465
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -5911,43 +5911,43 @@
    "model": "qwen/qwen3.5-9b",
    "provider": "SiliconFlow",
    "state": "degraded",
-   "up5m": 86.46408839779005,
-   "up30m": 89.1870136839281
+   "up5m": 97.53086419753086,
+   "up30m": 81.8574514038877
   },
   {
    "model": "qwen/qwen3.5-9b",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.09228441754917,
-   "up30m": 99.61608405738534
+   "up5m": 99.51219512195122,
+   "up30m": 99.61217183770883
   },
   {
    "model": "qwen/qwen3.5-9b",
    "provider": "Venice",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.6551724137931
+   "up5m": 99.14712153518124,
+   "up30m": 99.40652818991099
   },
   {
    "model": "qwen/qwen3.5-9b",
    "provider": "Parasail",
-   "state": "degraded",
-   "up5m": 95,
-   "up30m": 97.36024844720497
+   "state": "up",
+   "up5m": 100,
+   "up30m": 98.94366197183099
   },
   {
    "model": "qwen/qwen3.5-9b",
    "provider": "Together",
-   "state": "degraded",
-   "up5m": 68.46846846846847,
-   "up30m": 83.4862385321101
+   "state": "down",
+   "up5m": 100,
+   "up30m": 65.51006245662734
   },
   {
    "model": "qwen/qwen3.5-flash-02-23",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 99.97313994090787,
-   "up30m": 99.98901750609528
+   "up5m": 100,
+   "up30m": 99.99678528948468
   },
   {
    "model": "qwen/qwen3.5-plus-02-15",
@@ -5959,121 +5959,121 @@
   {
    "model": "qwen/qwen3.5-plus-20260420",
    "provider": "Alibaba",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "qwen/qwen3.6-27b",
    "provider": "Morph",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.48119325551232
+   "up5m": 98.07692307692307,
+   "up30m": 98.53658536585365
   },
   {
    "model": "qwen/qwen3.6-27b",
    "provider": "Chutes",
    "state": "up",
-   "up5m": 98.47036328871893,
-   "up30m": 99.16342993725723
+   "up5m": 99.55156950672645,
+   "up30m": 98.7630459992269
   },
   {
    "model": "qwen/qwen3.6-27b",
    "provider": "SiliconFlow",
-   "state": "up",
-   "up5m": 99.03846153846155,
-   "up30m": 99.06832298136646
+   "state": "degraded",
+   "up5m": 100,
+   "up30m": 97.26027397260275
   },
   {
    "model": "qwen/qwen3.6-27b",
    "provider": "Io Net",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.83739837398375
+   "up5m": null,
+   "up30m": 99.46808510638297
   },
   {
    "model": "qwen/qwen3.6-27b",
    "provider": "Phala",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.29577464788733
+   "up5m": 99.54128440366972,
+   "up30m": 98.860103626943
   },
   {
    "model": "qwen/qwen3.6-27b",
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 98.90310786106032
   },
   {
    "model": "qwen/qwen3.6-27b",
    "provider": "Venice",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.3127147766323
+   "state": "degraded",
+   "up5m": 94.73684210526315,
+   "up30m": 96.38157894736842
   },
   {
    "model": "qwen/qwen3.6-27b",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 98.27586206896551,
-   "up30m": 98.08612440191388
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.6-27b",
    "provider": "CoreWeave",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
    "provider": "AkashML",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.91253006778919
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.96380745566414
+   "up5m": 99.82300884955752,
+   "up30m": 99.13595933926302
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
    "provider": "Venice",
    "state": "up",
-   "up5m": null,
-   "up30m": 99.70845481049562
+   "up5m": 100,
+   "up30m": 98.42342342342343
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
    "provider": "AtlasCloud",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.43342776203966
+   "up5m": 99.375,
+   "up30m": 99.2152466367713
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
    "provider": "SiliconFlow",
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 98.01980198019803,
+   "up30m": 99.21507064364206
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
    "provider": "Io Net",
    "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "up5m": 100,
+   "up30m": 99.36305732484077
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
    "provider": "CoreWeave",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.73262032085562
   },
   {
    "model": "qwen/qwen3.6-flash",
@@ -6085,9 +6085,9 @@
   {
    "model": "qwen/qwen3.6-max-preview",
    "provider": "Alibaba",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "qwen/qwen3.6-plus",
@@ -6107,15 +6107,15 @@
    "model": "qwen/qwen3.7-plus",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 99.9877420936504,
-   "up30m": 99.98323585292255
+   "up5m": 100,
+   "up30m": 99.99701287451086
   },
   {
    "model": "rekaai/reka-edge",
    "provider": "Reka",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "rekaai/reka-flash-3",
@@ -6150,7 +6150,7 @@
    "provider": "DeepInfra",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98979070954569
+   "up30m": 99.96236002634798
   },
   {
    "model": "sao10k/l3-lunaris-8b",
@@ -6163,7 +6163,7 @@
    "model": "sao10k/l3.1-euryale-70b",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -6177,8 +6177,8 @@
    "model": "sao10k/l3.3-euryale-70b",
    "provider": "NextBit",
    "state": "up",
-   "up5m": 98.76543209876543,
-   "up30m": 98.97810218978103
+   "up5m": 100,
+   "up30m": 99.1891891891892
   },
   {
    "model": "stepfun/step-3.5-flash",
@@ -6192,77 +6192,77 @@
    "provider": "StepFun",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.82517482517483
   },
   {
    "model": "stepfun/step-3.7-flash",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.47916666666666
+   "up5m": null,
+   "up30m": 99.39024390243902
   },
   {
    "model": "stepfun/step-3.7-flash",
    "provider": "Novita",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
-  },
-  {
-   "model": "tencent/hunyuan-a13b-instruct",
-   "provider": "SiliconFlow",
    "state": "idle",
    "up5m": null,
    "up30m": null
   },
   {
+   "model": "tencent/hunyuan-a13b-instruct",
+   "provider": "SiliconFlow",
+   "state": "up",
+   "up5m": null,
+   "up30m": 100
+  },
+  {
    "model": "tencent/hy3",
    "provider": "GMICloud",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "degraded",
+   "up5m": null,
+   "up30m": 92.1443736730361
   },
   {
    "model": "tencent/hy3",
    "provider": "Tencent",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.75824555344501
+   "up30m": 99.77540707467715
   },
   {
    "model": "tencent/hy3",
    "provider": "DeepInfra",
-   "state": "degraded",
+   "state": "up",
    "up5m": 100,
-   "up30m": 96.71814671814671
+   "up30m": 99.37694704049844
   },
   {
    "model": "tencent/hy3",
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 98.90590809628009
+   "up30m": 99.78241949521322
   },
   {
    "model": "tencent/hy3",
    "provider": "AtlasCloud",
    "state": "up",
-   "up5m": 99.01960784313727,
-   "up30m": 99.70370370370371
+   "up5m": 100,
+   "up30m": 99.88304093567251
   },
   {
    "model": "tencent/hy3-preview",
    "provider": "GMICloud",
    "state": "up",
-   "up5m": 98.81422924901186,
-   "up30m": 98.03210771620921
+   "up5m": 98.8795518207283,
+   "up30m": 99.00497512437812
   },
   {
    "model": "tencent/hy3-preview",
    "provider": "SiliconFlow",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.8793242156074
+   "up30m": 99.69747899159664
   },
   {
    "model": "thedrummer/cydonia-24b-v4.1",
@@ -6282,7 +6282,7 @@
    "model": "thedrummer/skyfall-36b-v2",
    "provider": "Parasail",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -6295,9 +6295,9 @@
   {
    "model": "thinkingmachines/inkling",
    "provider": "DeepInfra",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 97.5609756097561,
+   "up30m": 98.91540130151843
   },
   {
    "model": "thinkingmachines/inkling",
@@ -6309,9 +6309,9 @@
   {
    "model": "thinkingmachines/inkling",
    "provider": "Together",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "undi95/remm-slerp-l2-13b",
@@ -6338,13 +6338,6 @@
    "model": "writer/palmyra-x5",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": null,
-   "up30m": 100
-  },
-  {
-   "model": "x-ai/grok-4.20",
-   "provider": "xAI",
-   "state": "up",
    "up5m": 100,
    "up30m": 100
   },
@@ -6353,7 +6346,14 @@
    "provider": "xAI",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.98893070622094
+  },
+  {
+   "model": "x-ai/grok-4.20",
+   "provider": "xAI",
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.98893070622094
   },
   {
    "model": "x-ai/grok-4.20",
@@ -6402,42 +6402,42 @@
    "provider": "xAI",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.88787980715327
+   "up30m": 99.92088607594937
   },
   {
    "model": "x-ai/grok-4.3",
    "provider": "xAI",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.88787980715327
+   "up30m": 99.92088607594937
   },
   {
    "model": "x-ai/grok-4.3",
    "provider": "xAI",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.8182919442762
+   "up30m": 100
   },
   {
    "model": "x-ai/grok-4.3",
    "provider": "xAI",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.8182919442762
+   "up30m": 100
   },
   {
    "model": "x-ai/grok-4.5",
    "provider": "xAI",
    "state": "up",
-   "up5m": 99.78298611111111,
-   "up30m": 99.95390430533789
+   "up5m": 100,
+   "up30m": 99.94433620929584
   },
   {
    "model": "x-ai/grok-4.5",
    "provider": "xAI",
    "state": "up",
-   "up5m": 99.78298611111111,
-   "up30m": 99.95390430533789
+   "up5m": 100,
+   "up30m": 99.94433620929584
   },
   {
    "model": "x-ai/grok-4.5",
@@ -6457,14 +6457,14 @@
    "model": "x-ai/grok-build-0.1",
    "provider": "xAI",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
    "model": "x-ai/grok-build-0.1",
    "provider": "xAI",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -6484,93 +6484,93 @@
   {
    "model": "xiaomi/mimo-v2.5",
    "provider": "DigitalOcean",
-   "state": "degraded",
-   "up5m": 74.6268656716418,
-   "up30m": 97.3836324916337
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.59514170040485
   },
   {
    "model": "xiaomi/mimo-v2.5",
    "provider": "GMICloud",
    "state": "down",
    "up5m": null,
-   "up30m": 15.4296875
+   "up30m": 48.57142857142857
   },
   {
    "model": "xiaomi/mimo-v2.5",
    "provider": "Xiaomi",
-   "state": "degraded",
-   "up5m": 98.63885839736554,
-   "up30m": 93.5779530504723
+   "state": "up",
+   "up5m": 99.00885702235344,
+   "up30m": 99.3924665856622
   },
   {
    "model": "xiaomi/mimo-v2.5",
    "provider": "Parasail",
-   "state": "down",
-   "up5m": 50,
-   "up30m": 57.08029197080292
+   "state": "degraded",
+   "up5m": 97.45762711864407,
+   "up30m": 97.69016328156113
   },
   {
    "model": "xiaomi/mimo-v2.5",
    "provider": "Venice",
-   "state": "down",
-   "up5m": 20.422535211267608,
-   "up30m": 26.231527093596057
+   "state": "degraded",
+   "up5m": 98.25783972125436,
+   "up30m": 97.39837398373984
   },
   {
    "model": "xiaomi/mimo-v2.5",
    "provider": "Novita",
-   "state": "degraded",
-   "up5m": 98.79120879120879,
-   "up30m": 92.3512154233026
+   "state": "up",
+   "up5m": 99.58333333333333,
+   "up30m": 99.90461655856542
   },
   {
    "model": "xiaomi/mimo-v2.5",
    "provider": "DeepInfra",
    "state": "degraded",
-   "up5m": 97.02219815917704,
-   "up30m": 95.94539802676037
+   "up5m": 91.33858267716536,
+   "up30m": 91.69457468184862
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
    "provider": "GMICloud",
-   "state": "down",
+   "state": "idle",
    "up5m": null,
-   "up30m": 8.620689655172415
+   "up30m": null
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
    "provider": "Xiaomi",
    "state": "up",
-   "up5m": 99.50226244343892,
-   "up30m": 99.14152995825248
+   "up5m": 99.32188065099457,
+   "up30m": 98.92429587646753
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
    "provider": "AtlasCloud",
    "state": "degraded",
-   "up5m": 94.9438202247191,
-   "up30m": 91.90311418685121
+   "up5m": 93.62745098039215,
+   "up30m": 90.04184100418409
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
    "provider": "Novita",
    "state": "up",
-   "up5m": 99.37106918238993,
-   "up30m": 99.80676328502416
+   "up5m": 100,
+   "up30m": 99.61501443695862
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
    "provider": "DigitalOcean",
    "state": "up",
-   "up5m": 99.49238578680203,
-   "up30m": 99.65893587994543
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 97.07317073170731,
-   "up30m": 98.88451443569554
+   "up5m": 100,
+   "up30m": 99.34253780407627
   },
   {
    "model": "z-ai/glm-4.5",
@@ -6583,22 +6583,22 @@
    "model": "z-ai/glm-4.5-air",
    "provider": "Novita",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.86120749479528
+   "up5m": 99.53703703703704,
+   "up30m": 99.58813838550246
   },
   {
    "model": "z-ai/glm-4.5-air",
    "provider": "SiliconFlow",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.12280701754386
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-4.5-air",
    "provider": "Z.AI",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 98.88682745825604
   },
   {
    "model": "z-ai/glm-4.5v",
@@ -6619,98 +6619,98 @@
    "provider": "Venice",
    "state": "up",
    "up5m": 100,
-   "up30m": 98.00427655024947
+   "up30m": 99.75470155355683
   },
   {
    "model": "z-ai/glm-4.6",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.75490196078431,
-   "up30m": 99.96819338422391
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-4.6",
    "provider": "Novita",
    "state": "up",
-   "up5m": 97.9933110367893,
-   "up30m": 98.2086406743941
+   "up5m": 99.10979228486647,
+   "up30m": 99.03593339176162
   },
   {
    "model": "z-ai/glm-4.6",
    "provider": "Z.AI",
    "state": "down",
    "up5m": null,
-   "up30m": 71.94148936170212
+   "up30m": 79.27382753403933
   },
   {
    "model": "z-ai/glm-4.6",
    "provider": "AtlasCloud",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.94419642857143
+   "up30m": 99.89648033126294
   },
   {
    "model": "z-ai/glm-4.6v",
    "provider": "Novita",
    "state": "up",
-   "up5m": null,
-   "up30m": 99.46380697050938
+   "up5m": 100,
+   "up30m": 98.5239852398524
   },
   {
    "model": "z-ai/glm-4.6v",
    "provider": "Z.AI",
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-4.7",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.76133651551312,
-   "up30m": 99.76891079956863
+   "up5m": 99.58805355303811,
+   "up30m": 99.77641140301844
   },
   {
    "model": "z-ai/glm-4.7",
    "provider": "StreamLake",
    "state": "degraded",
-   "up5m": 87.38738738738738,
-   "up30m": 91.56939040207523
+   "up5m": 91.02564102564102,
+   "up30m": 91.66666666666666
   },
   {
    "model": "z-ai/glm-4.7",
    "provider": "AtlasCloud",
    "state": "degraded",
-   "up5m": 98.27586206896551,
-   "up30m": 96.14379084967321
+   "up5m": 97.17741935483872,
+   "up30m": 96.97750702905343
   },
   {
    "model": "z-ai/glm-4.7",
    "provider": "Novita",
    "state": "degraded",
-   "up5m": 90.29850746268657,
-   "up30m": 90.7660020986359
+   "up5m": 92.7536231884058,
+   "up30m": 93.37729357798165
   },
   {
    "model": "z-ai/glm-4.7",
    "provider": "Venice",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.6661101836394
+   "up30m": 99.8073217726397
   },
   {
    "model": "z-ai/glm-4.7",
    "provider": "Z.AI",
    "state": "degraded",
-   "up5m": 81.30841121495327,
-   "up30m": 88.76889848812095
+   "up5m": 94.16666666666667,
+   "up30m": 92.80742459396751
   },
   {
    "model": "z-ai/glm-4.7",
    "provider": "Google",
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.97199663959675
   },
   {
    "model": "z-ai/glm-4.7",
@@ -6723,50 +6723,50 @@
    "model": "z-ai/glm-4.7",
    "provider": "Cerebras",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
    "model": "z-ai/glm-4.7-flash",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 99.59016393442623,
-   "up30m": 99.31758530183727
+   "up5m": 98.5576923076923,
+   "up30m": 98.81656804733728
   },
   {
    "model": "z-ai/glm-4.7-flash",
    "provider": "Cloudflare",
-   "state": "up",
+   "state": "degraded",
    "up5m": 100,
-   "up30m": 99.94999166527755
+   "up30m": 96.85873605947955
   },
   {
    "model": "z-ai/glm-4.7-flash",
    "provider": "Novita",
-   "state": "down",
-   "up5m": null,
-   "up30m": 74.32432432432432
+   "state": "degraded",
+   "up5m": 91.17647058823529,
+   "up30m": 89.18128654970761
   },
   {
    "model": "z-ai/glm-4.7-flash",
    "provider": "Venice",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "z-ai/glm-5",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": 99.56140350877193,
-   "up30m": 99.67245332459875
+   "up5m": 100,
+   "up30m": 99.62016574585635
   },
   {
    "model": "z-ai/glm-5",
    "provider": "GMICloud",
    "state": "up",
-   "up5m": 98.75,
-   "up30m": 99.64664310954063
+   "up5m": 100,
+   "up30m": 98.68421052631578
   },
   {
    "model": "z-ai/glm-5",
@@ -6779,43 +6779,43 @@
    "model": "z-ai/glm-5",
    "provider": "Baidu",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.09365558912387
+   "up5m": null,
+   "up30m": 99.46808510638297
   },
   {
    "model": "z-ai/glm-5",
    "provider": "DigitalOcean",
-   "state": "up",
+   "state": "degraded",
    "up5m": null,
-   "up30m": 99.53917050691244
+   "up30m": 97.53086419753086
   },
   {
    "model": "z-ai/glm-5",
    "provider": "SiliconFlow",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.92882562277579
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-5",
    "provider": "Chutes",
-   "state": "degraded",
+   "state": "idle",
    "up5m": null,
-   "up30m": 88.78504672897196
+   "up30m": null
   },
   {
    "model": "z-ai/glm-5",
    "provider": "AtlasCloud",
    "state": "up",
    "up5m": null,
-   "up30m": 100
+   "up30m": 99.36708860759494
   },
   {
    "model": "z-ai/glm-5",
    "provider": "Amazon Bedrock",
    "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "up5m": 100,
+   "up30m": 99.48453608247422
   },
   {
    "model": "z-ai/glm-5",
@@ -6827,16 +6827,16 @@
   {
    "model": "z-ai/glm-5",
    "provider": "Z.AI",
-   "state": "degraded",
-   "up5m": 96.42857142857143,
-   "up30m": 97.39776951672863
+   "state": "up",
+   "up5m": 100,
+   "up30m": 98.26517967781908
   },
   {
    "model": "z-ai/glm-5",
    "provider": "Parasail",
    "state": "up",
    "up5m": null,
-   "up30m": 99.2248062015504
+   "up30m": 99.21875
   },
   {
    "model": "z-ai/glm-5",
@@ -6863,22 +6863,22 @@
    "model": "z-ai/glm-5.1",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.94314951677089
+   "up5m": 99.86522911051213,
+   "up30m": 99.929996499825
   },
   {
    "model": "z-ai/glm-5.1",
    "provider": "DigitalOcean",
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "degraded",
+   "up5m": 97.05882352941177,
+   "up30m": 95.27272727272728
   },
   {
    "model": "z-ai/glm-5.1",
    "provider": "Chutes",
    "state": "down",
-   "up5m": 67.96116504854369,
-   "up30m": 79.71698113207547
+   "up5m": null,
+   "up30m": 70.66666666666667
   },
   {
    "model": "z-ai/glm-5.1",
@@ -6891,8 +6891,8 @@
    "model": "z-ai/glm-5.1",
    "provider": "GMICloud",
    "state": "up",
-   "up5m": 99.47643979057592,
-   "up30m": 98.56297548605241
+   "up5m": 97,
+   "up30m": 98.67256637168141
   },
   {
    "model": "z-ai/glm-5.1",
@@ -6905,50 +6905,50 @@
    "model": "z-ai/glm-5.1",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.91568296795953
+   "up5m": 99.31506849315068,
+   "up30m": 99.90808823529412
   },
   {
    "model": "z-ai/glm-5.1",
    "provider": "SiliconFlow",
    "state": "up",
-   "up5m": 99,
-   "up30m": 98.67549668874173
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-5.1",
    "provider": "Crusoe",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.49664429530202
+   "up5m": 97.91666666666666,
+   "up30m": 99.73474801061008
   },
   {
    "model": "z-ai/glm-5.1",
    "provider": "Phala",
    "state": "down",
-   "up5m": 79.48717948717949,
-   "up30m": 78.72727272727272
+   "up5m": null,
+   "up30m": 73.78190255220419
   },
   {
    "model": "z-ai/glm-5.1",
    "provider": "AtlasCloud",
    "state": "up",
-   "up5m": 99,
-   "up30m": 99.47683109118086
+   "up5m": 100,
+   "up30m": 99.58228905597326
   },
   {
    "model": "z-ai/glm-5.1",
    "provider": "Novita",
-   "state": "degraded",
-   "up5m": 96.29629629629629,
-   "up30m": 97.8395061728395
+   "state": "up",
+   "up5m": 100,
+   "up30m": 98.98305084745763
   },
   {
    "model": "z-ai/glm-5.1",
    "provider": "Nebius",
    "state": "degraded",
    "up5m": 100,
-   "up30m": 97.70833333333333
+   "up30m": 96.21380846325167
   },
   {
    "model": "z-ai/glm-5.1",
@@ -6960,16 +6960,16 @@
   {
    "model": "z-ai/glm-5.1",
    "provider": "Fireworks",
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "z-ai/glm-5.1",
    "provider": "CoreWeave",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.76498237367802
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-5.1",
@@ -6982,8 +6982,8 @@
    "model": "z-ai/glm-5.1",
    "provider": "Z.AI",
    "state": "degraded",
-   "up5m": 89.85507246376811,
-   "up30m": 81.40569395017793
+   "up5m": 93.29073482428115,
+   "up30m": 84.88538681948424
   },
   {
    "model": "z-ai/glm-5.1",
@@ -6997,133 +6997,133 @@
    "provider": "Novita",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96338337605273
+   "up30m": 99.9023387304035
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "StreamLake",
    "state": "up",
-   "up5m": 99.9395039322444,
-   "up30m": 99.90393852065321
+   "up5m": 99.57615894039735,
+   "up30m": 99.63348765432099
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Baidu",
    "state": "up",
-   "up5m": 99.58942776494739,
-   "up30m": 99.6312358025784
+   "up5m": 99.46763799383581,
+   "up30m": 99.40070038629554
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "CoreWeave",
    "state": "up",
-   "up5m": 99.18781725888324,
-   "up30m": 99.45252492237293
+   "up5m": 100,
+   "up30m": 99.88830975428145
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "AkashML",
    "state": "up",
-   "up5m": 97.95918367346938,
-   "up30m": 98.5691573926868
+   "up5m": 100,
+   "up30m": 99.583600256246
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 99.26470588235294,
-   "up30m": 99.05660377358491
+   "up5m": 100,
+   "up30m": 98.18059299191376
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "GMICloud",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.67105263157895
+   "state": "degraded",
+   "up5m": 91.30434782608695,
+   "up30m": 90.7255520504732
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "DeepInfra",
    "state": "up",
-   "up5m": 98.53658536585365,
-   "up30m": 99.00452488687783
+   "up5m": 100,
+   "up30m": 99.18246005202526
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Inceptron",
-   "state": "up",
-   "up5m": 98.83720930232558,
-   "up30m": 98.34938101788171
+   "state": "degraded",
+   "up5m": 99.53703703703704,
+   "up30m": 86.08904933814681
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "DigitalOcean",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.37250427837992
+   "up5m": 99.46236559139786,
+   "up30m": 98.01488833746899
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Ambient",
    "state": "up",
    "up5m": null,
-   "up30m": 100
+   "up30m": 98.63013698630137
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Morph",
    "state": "up",
-   "up5m": null,
-   "up30m": 99.47368421052632
+   "up5m": 100,
+   "up30m": 99.07120743034056
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Sail Research",
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.64539007092199
+   "state": "degraded",
+   "up5m": 86.57718120805369,
+   "up30m": 88.68686868686869
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Decart",
    "state": "up",
-   "up5m": 99.66555183946488,
-   "up30m": 99.43661971830986
+   "up5m": 100,
+   "up30m": 99.68782518210197
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Chutes",
-   "state": "up",
-   "up5m": 97.5609756097561,
-   "up30m": 99.19354838709677
+   "state": "degraded",
+   "up5m": null,
+   "up30m": 92.73504273504274
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "AtlasCloud",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.83164983164983
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "SiliconFlow",
    "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "up5m": 99.77578475336323,
+   "up30m": 99.6420581655481
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Z.AI",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97828683096299
+   "up30m": 99.93112354713732
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Fireworks",
    "state": "up",
-   "up5m": 99.64481756538586,
-   "up30m": 99.77505788951373
+   "up5m": 100,
+   "up30m": 99.59807073954984
   },
   {
    "model": "z-ai/glm-5.2",
@@ -7136,43 +7136,43 @@
    "model": "z-ai/glm-5.2",
    "provider": "Friendli",
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78882391163093
+   "up5m": 98.67924528301887,
+   "up30m": 99.65601965601965
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Parasail",
-   "state": "idle",
+   "state": "degraded",
    "up5m": null,
-   "up30m": null
+   "up30m": 97.69736842105263
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Venice",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.7340425531915
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Wafer",
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Together",
    "state": "up",
-   "up5m": 99.92836676217765,
-   "up30m": 99.88048488987536
+   "up5m": 98.55643044619423,
+   "up30m": 99.67794984240098
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Ionstream",
-   "state": "idle",
+   "state": "down",
    "up5m": null,
-   "up30m": null
+   "up30m": 72
   },
   {
    "model": "z-ai/glm-5.2",
@@ -7185,7 +7185,7 @@
    "model": "z-ai/glm-5.2",
    "provider": "BaseTen",
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -7193,14 +7193,14 @@
    "provider": "Wafer",
    "state": "up",
    "up5m": 100,
-   "up30m": 99.93846153846154
+   "up30m": 99.95867768595042
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Fireworks",
    "state": "up",
-   "up5m": 98.67403314917127,
-   "up30m": 99.38321536905966
+   "up5m": 100,
+   "up30m": 99.44985188319933
   },
   {
    "model": "z-ai/glm-5.2",
@@ -7213,15 +7213,15 @@
    "model": "z-ai/glm-5.2",
    "provider": "Alibaba",
    "state": "up",
-   "up5m": 99.74811083123426,
-   "up30m": 99.52456418383518
+   "up5m": 100,
+   "up30m": 99.70436067997043
   },
   {
    "model": "z-ai/glm-5.2",
    "provider": "Io Net",
-   "state": "idle",
-   "up5m": 93.75,
-   "up30m": null
+   "state": "up",
+   "up5m": null,
+   "up30m": 98.28326180257511
   },
   {
    "model": "z-ai/glm-5v-turbo",

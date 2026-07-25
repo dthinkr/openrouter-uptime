@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-25T17:56:41+00:00 UTC)
+## Current status (2026-07-25T19:09:17+00:00 UTC)
 
 335 models polled, 1041 inference endpoints:
-up 675, degraded 98, down 39, idle 229.
+up 681, degraded 97, down 33, idle 230.
 
-Currently down (39):
+Currently down (33):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-v3.2` | Venice | 72% | 56% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 27% | 29% |
-| `google/gemini-2.5-flash` | Google | 55% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 49% | 48% |
-| `minimax/minimax-m3` | Venice | 74% | 100% |
-| `minimax/minimax-m3` | DeepInfra | 54% | 59% |
-| `mistralai/mistral-nemo` | Novita | 77% | 77% |
+| `deepseek/deepseek-v3.2` | DeepInfra | 75% | 47% |
+| `deepseek/deepseek-v3.2` | Venice | 57% | 39% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 30% | 48% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 76% | n/a |
+| `minimax/minimax-m3` | Parasail | 46% | n/a |
+| `mistralai/mistral-nemo` | Novita | 70% | 71% |
 | `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.5` | Chutes | 38% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 77% | n/a |
+| `moonshotai/kimi-k2.5` | Chutes | 66% | n/a |
 | `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| plus 24 more | | | |
+| `openai/gpt-5.1-codex` | OpenAI | 0% | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | 0% | n/a |
+| plus 18 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-25T20:49:12+00:00 UTC)
+## Current status (2026-07-25T21:53:38+00:00 UTC)
 
-335 models polled, 1042 inference endpoints:
-up 682, degraded 113, down 25, idle 222.
+335 models polled, 1043 inference endpoints:
+up 681, degraded 103, down 26, idle 233.
 
-Currently down (25):
+Currently down (26):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-v4-pro` | Fireworks | 30% | 41% |
-| `google/gemini-2.5-flash` | Google | 36% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
-| `google/gemma-3-27b-it` | Nebius | 63% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 68% | n/a |
-| `mistralai/mistral-nemo` | Novita | 63% | 68% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | n/a |
+| `deepseek/deepseek-v3.2` | Phala | 79% | 2% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 77% | 99% |
+| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
+| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | 99% |
+| `mistralai/mistral-nemo` | Novita | 75% | 77% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k2.6` | Chutes | 69% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 57% | n/a |
 | `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | 0% | 0% |
-| `openai/gpt-5.1-codex-max` | OpenAI | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-20b` | Parasail | 80% | 85% |
-| plus 10 more | | | |
+| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
+| plus 11 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

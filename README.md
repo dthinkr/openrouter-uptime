@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-24T22:13:46+00:00 UTC)
+## Current status (2026-07-25T00:01:53+00:00 UTC)
 
 335 models polled, 1041 inference endpoints:
-up 657, degraded 129, down 34, idle 221.
+up 647, degraded 115, down 26, idle 253.
 
-Currently down (34):
+Currently down (26):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 80% | 100% |
-| `anthropic/claude-fable-5` | Anthropic | 72% | 83% |
-| `deepseek/deepseek-v3.2` | DeepInfra | 29% | 79% |
-| `deepseek/deepseek-v3.2` | Venice | 7% | n/a |
-| `google/gemini-2.5-flash` | Google | 52% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 60% | 52% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | Decart | 38% | 5% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 73% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 79% | n/a |
+| `anthropic/claude-sonnet-4.6` | Anthropic | 71% | 44% |
+| `deepseek/deepseek-chat` | DeepInfra | 75% | 98% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 52% | 28% |
+| `deepseek/deepseek-v3.2` | DeepInfra | 80% | 46% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 69% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | n/a |
+| `moonshotai/kimi-k2.5` | Chutes | 52% | 63% |
 | `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
 | `openai/gpt-5.1-codex-mini` | OpenAI | n/a | n/a |
-| plus 19 more | | | |
+| `openai/gpt-5.4-mini` | OpenAI | 71% | 70% |
+| `openai/gpt-5.4-mini` | OpenAI | 71% | 70% |
+| `openai/gpt-5.4-mini` | OpenAI | 71% | 70% |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | Phala | 0% | n/a |
+| plus 11 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

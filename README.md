@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-25T16:54:08+00:00 UTC)
+## Current status (2026-07-25T17:56:41+00:00 UTC)
 
 335 models polled, 1041 inference endpoints:
-up 657, degraded 111, down 29, idle 244.
+up 675, degraded 98, down 39, idle 229.
 
-Currently down (29):
+Currently down (39):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat` | DeepInfra | 75% | 100% |
-| `deepseek/deepseek-v3.2` | SiliconFlow | 77% | 98% |
-| `deepseek/deepseek-v4-pro` | Fireworks | 25% | 30% |
-| `google/gemini-2.5-flash` | Google | 27% | n/a |
+| `deepseek/deepseek-v3.2` | Venice | 72% | 56% |
+| `deepseek/deepseek-v4-pro` | Fireworks | 27% | 29% |
+| `google/gemini-2.5-flash` | Google | 55% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 65% | 100% |
-| `minimax/minimax-m3` | DeepInfra | 69% | 17% |
-| `mistralai/mistral-nemo` | Novita | 72% | 80% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k2.5` | Chutes | 0% | 0% |
-| `moonshotai/kimi-k2.6` | Decart | 53% | 11% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 49% | 48% |
+| `minimax/minimax-m3` | Venice | 74% | 100% |
+| `minimax/minimax-m3` | DeepInfra | 54% | 59% |
+| `mistralai/mistral-nemo` | Novita | 77% | 77% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k2.5` | Chutes | 38% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 77% | n/a |
 | `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| plus 14 more | | | |
+| plus 24 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

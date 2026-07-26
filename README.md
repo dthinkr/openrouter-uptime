@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-26T16:56:59+00:00 UTC)
+## Current status (2026-07-26T18:02:26+00:00 UTC)
 
-335 models polled, 1042 inference endpoints:
-up 649, degraded 113, down 31, idle 249.
+333 models polled, 1040 inference endpoints:
+up 659, degraded 115, down 33, idle 233.
 
-Currently down (31):
+Currently down (33):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Azure | 67% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 43% | 99% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 51% | 75% |
-| `deepseek/deepseek-v3.2` | SiliconFlow | 78% | 99% |
-| `google/gemini-2.5-flash` | Google | 52% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
-| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
+| `anthropic/claude-fable-5` | Anthropic | 77% | 98% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 100% |
+| `deepseek/deepseek-chat-v3.1` | Google | 73% | 100% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 69% | n/a |
+| `deepseek/deepseek-v4-pro` | Venice | 76% | n/a |
+| `google/gemini-2.5-flash` | Google | 76% | 66% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | Novita | 36% | 28% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 72% | n/a |
-| `mistralai/mistral-nemo` | Novita | 71% | 78% |
+| `google/gemma-4-31b-it` | Novita | 53% | 2% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 78% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | n/a |
-| `openai/gpt-4.1` | OpenAI | 18% | 21% |
-| plus 16 more | | | |
+| `moonshotai/kimi-k2.6` | Venice | 41% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | n/a | n/a |
+| plus 18 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

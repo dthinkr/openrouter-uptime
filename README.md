@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-25T23:58:38+00:00 UTC)
+## Current status (2026-07-26T03:39:30+00:00 UTC)
 
 335 models polled, 1043 inference endpoints:
-up 678, degraded 99, down 25, idle 241.
+up 661, degraded 111, down 24, idle 247.
 
-Currently down (25):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 75% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Google | 69% | n/a |
-| `google/gemini-2.5-flash` | Google | 47% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 68% | 100% |
-| `google/gemma-4-31b-it` | Chutes | 79% | 79% |
-| `google/gemma-4-31b-it` | Together | 80% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 69% | 87% |
-| `mistralai/mistral-nemo` | Novita | 62% | 59% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
-| `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | 0% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 39% | n/a |
+| `deepseek/deepseek-v3.2` | SiliconFlow | 75% | 98% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 59% | 100% |
+| `google/gemini-2.5-flash` | Google | 68% | 74% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | n/a |
+| `moonshotai/kimi-k2.6` | Decart | 42% | n/a |
+| `openai/gpt-5.1-chat` | OpenAI | 0% | n/a |
+| `openai/gpt-5.1-codex-max` | OpenAI | 0% | n/a |
+| `openai/gpt-5.1-codex-max` | OpenAI | 0% | n/a |
+| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | n/a |
 | `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | Phala | n/a | n/a |
-| plus 10 more | | | |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

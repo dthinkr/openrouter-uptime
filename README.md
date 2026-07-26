@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-26T06:33:54+00:00 UTC)
+## Current status (2026-07-26T09:11:01+00:00 UTC)
 
 335 models polled, 1043 inference endpoints:
-up 656, degraded 107, down 28, idle 252.
+up 629, degraded 130, down 29, idle 255.
 
-Currently down (28):
+Currently down (29):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 13% | n/a |
-| `anthropic/claude-fable-5` | Azure | 30% | 31% |
-| `anthropic/claude-fable-5` | Anthropic | 60% | 95% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 73% | 100% |
-| `deepseek/deepseek-v3.2` | Venice | 54% | n/a |
-| `deepseek/deepseek-v4-pro` | Ionstream | 58% | 100% |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 60% | 0% |
-| `google/gemma-4-31b-it` | SiliconFlow | 67% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 76% | n/a |
-| `mistralai/mistral-nemo` | Novita | 72% | 62% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 77% | 45% |
+| `anthropic/claude-fable-5` | Anthropic | 75% | 99% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | Ionstream | 74% | 2% |
+| `google/gemini-2.5-flash` | Google | 65% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | n/a |
+| `mistralai/mistral-nemo` | Novita | 52% | 29% |
 | `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | n/a |
-| plus 13 more | | | |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | 0% |
+| `openai/gpt-5.1-chat` | OpenAI | 0% | n/a |
+| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | 0% |
+| `openai/gpt-5.2-codex` | OpenAI | 0% | 0% |
+| `openai/gpt-5.2-codex` | OpenAI | 0% | 0% |
+| plus 14 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

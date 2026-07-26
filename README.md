@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-26T18:02:26+00:00 UTC)
+## Current status (2026-07-26T20:07:25+00:00 UTC)
 
 333 models polled, 1040 inference endpoints:
-up 659, degraded 115, down 33, idle 233.
+up 716, degraded 90, down 25, idle 209.
 
-Currently down (33):
+Currently down (25):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 77% | 98% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 100% |
-| `deepseek/deepseek-chat-v3.1` | Google | 73% | 100% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 69% | n/a |
-| `deepseek/deepseek-v4-pro` | Venice | 76% | n/a |
-| `google/gemini-2.5-flash` | Google | 76% | 66% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | Novita | 53% | 2% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 78% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 74% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 68% |
+| `google/gemini-2.5-flash` | Google | 37% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
+| `google/gemma-4-31b-it` | Novita | 56% | 79% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 64% | n/a |
+| `mistralai/mistral-nemo` | Novita | 64% | 87% |
 | `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k2.6` | Venice | 41% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | n/a | n/a |
-| plus 18 more | | | |
+| `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | n/a |
+| `openai/gpt-oss-120b` | Amazon Bedrock | 43% | 40% |
+| `openai/gpt-oss-20b` | Parasail | 72% | 72% |
+| plus 10 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

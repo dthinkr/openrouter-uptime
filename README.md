@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-26T15:02:54+00:00 UTC)
+## Current status (2026-07-26T16:56:59+00:00 UTC)
 
 335 models polled, 1042 inference endpoints:
-up 671, degraded 104, down 26, idle 241.
+up 649, degraded 113, down 31, idle 249.
 
-Currently down (26):
+Currently down (31):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Azure | 79% | 100% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 75% | 52% |
-| `google/gemini-2.5-flash` | Google | 78% | 73% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 50% | 46% |
+| `anthropic/claude-fable-5` | Azure | 67% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 43% | 99% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 51% | 75% |
+| `deepseek/deepseek-v3.2` | SiliconFlow | 78% | 99% |
+| `google/gemini-2.5-flash` | Google | 52% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
+| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | Novita | 36% | 28% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 72% | n/a |
+| `mistralai/mistral-nemo` | Novita | 71% | 78% |
 | `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | 0% |
-| `openai/gpt-5.1-chat` | OpenAI | 0% | n/a |
-| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | Mancer 2 | 65% | 100% |
-| `openai/gpt-oss-120b` | Nebius | 74% | n/a |
-| `openai/gpt-oss-20b` | Novita | 61% | 64% |
-| plus 11 more | | | |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 0% | n/a |
+| `openai/gpt-4.1` | OpenAI | 18% | 21% |
+| plus 16 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

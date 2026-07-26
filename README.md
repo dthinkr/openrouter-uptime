@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-26T21:57:12+00:00 UTC)
+## Current status (2026-07-26T23:01:45+00:00 UTC)
 
-333 models polled, 1040 inference endpoints:
-up 688, degraded 111, down 31, idle 210.
+333 models polled, 1039 inference endpoints:
+up 706, degraded 86, down 23, idle 224.
 
-Currently down (31):
+Currently down (23):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 48% | n/a |
-| `anthropic/claude-fable-5` | Google | 80% | 70% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 71% | n/a |
-| `deepseek/deepseek-v4-flash` | Parasail | 80% | 65% |
-| `deepseek/deepseek-v4-flash` | CoreWeave | 63% | 100% |
-| `google/gemini-2.5-flash` | Google | 60% | 66% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
-| `mistralai/mistral-nemo` | Novita | 71% | 81% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | n/a | n/a |
-| `openai/gpt-4.1` | OpenAI | 22% | 28% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 56% | n/a |
+| `deepseek/deepseek-v4-flash` | CoreWeave | 76% | 100% |
+| `google/gemini-2.5-flash` | Google | 56% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | n/a |
+| `minimax/minimax-m3` | Parasail | 0% | n/a |
+| `mistralai/mistral-nemo` | Novita | 70% | 72% |
+| `openai/gpt-4.1` | OpenAI | 28% | 18% |
 | `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| plus 16 more | | | |
+| `openai/gpt-5.1-codex-mini` | OpenAI | n/a | n/a |
+| `openai/gpt-oss-20b` | Parasail | 80% | 72% |
+| `qwen/qwen3-32b` | Nebius | 27% | n/a |
+| plus 8 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

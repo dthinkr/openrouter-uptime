@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-26T03:39:30+00:00 UTC)
+## Current status (2026-07-26T06:33:54+00:00 UTC)
 
 335 models polled, 1043 inference endpoints:
-up 661, degraded 111, down 24, idle 247.
+up 656, degraded 107, down 28, idle 252.
 
-Currently down (24):
+Currently down (28):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 39% | n/a |
-| `deepseek/deepseek-v3.2` | SiliconFlow | 75% | 98% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 59% | 100% |
-| `google/gemini-2.5-flash` | Google | 68% | 74% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 13% | n/a |
+| `anthropic/claude-fable-5` | Azure | 30% | 31% |
+| `anthropic/claude-fable-5` | Anthropic | 60% | 95% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 73% | 100% |
+| `deepseek/deepseek-v3.2` | Venice | 54% | n/a |
+| `deepseek/deepseek-v4-pro` | Ionstream | 58% | 100% |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 60% | 0% |
+| `google/gemma-4-31b-it` | SiliconFlow | 67% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 76% | n/a |
+| `mistralai/mistral-nemo` | Novita | 72% | 62% |
 | `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | n/a |
-| `moonshotai/kimi-k2.6` | Decart | 42% | n/a |
-| `openai/gpt-5.1-chat` | OpenAI | 0% | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | 0% | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | 0% | n/a |
-| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | n/a |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| plus 9 more | | | |
+| plus 13 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

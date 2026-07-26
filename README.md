@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-26T20:07:25+00:00 UTC)
+## Current status (2026-07-26T21:57:12+00:00 UTC)
 
 333 models polled, 1040 inference endpoints:
-up 716, degraded 90, down 25, idle 209.
+up 688, degraded 111, down 31, idle 210.
 
-Currently down (25):
+Currently down (31):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 74% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 68% |
-| `google/gemini-2.5-flash` | Google | 37% | n/a |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
-| `google/gemini-3.1-flash-image-preview` | Google | n/a | 0% |
-| `google/gemma-4-31b-it` | Novita | 56% | 79% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 64% | n/a |
-| `mistralai/mistral-nemo` | Novita | 64% | 87% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | n/a | n/a |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 48% | n/a |
+| `anthropic/claude-fable-5` | Google | 80% | 70% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 71% | n/a |
+| `deepseek/deepseek-v4-flash` | Parasail | 80% | 65% |
+| `deepseek/deepseek-v4-flash` | CoreWeave | 63% | 100% |
+| `google/gemini-2.5-flash` | Google | 60% | 66% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-image-preview` | Google | 0% | 0% |
+| `mistralai/mistral-nemo` | Novita | 71% | 81% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
+| `nvidia/nemotron-3-nano-30b-a3b` | Novita | n/a | n/a |
+| `openai/gpt-4.1` | OpenAI | 22% | 28% |
 | `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-120b` | Amazon Bedrock | 43% | 40% |
-| `openai/gpt-oss-20b` | Parasail | 72% | 72% |
-| plus 10 more | | | |
+| plus 16 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

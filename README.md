@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-26T11:17:33+00:00 UTC)
+## Current status (2026-07-26T13:16:02+00:00 UTC)
 
-335 models polled, 1043 inference endpoints:
-up 655, degraded 120, down 18, idle 250.
+335 models polled, 1042 inference endpoints:
+up 671, degraded 92, down 26, idle 253.
 
-Currently down (18):
+Currently down (26):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 67% | 50% |
-| `anthropic/claude-fable-5` | Anthropic | 79% | 94% |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
-| `google/gemini-3-pro-image-preview` | Google | n/a | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 60% | 100% |
+| `anthropic/claude-fable-5` | Azure | 69% | 56% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 59% | n/a |
+| `deepseek/deepseek-v4-pro` | Ionstream | 55% | 6% |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-image-preview` | Google | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 76% | 67% |
-| `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | 0% |
-| `openai/gpt-5.2-codex` | OpenAI | 0% | 0% |
-| `openai/gpt-5.2-codex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | Phala | 0% | 0% |
-| `qwen/qwen3.5-122b-a10b` | SiliconFlow | 16% | n/a |
-| `qwen/qwen3.5-122b-a10b` | DeepInfra | 62% | 46% |
-| plus 3 more | | | |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 72% | 60% |
+| `mistralai/mistral-nemo` | Novita | 74% | 83% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Parasail | 0% | 0% |
+| `openai/gpt-5.1-chat` | OpenAI | 0% | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | n/a |
+| plus 11 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

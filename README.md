@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-27T02:42:00+00:00 UTC)
+## Current status (2026-07-27T06:27:37+00:00 UTC)
 
-333 models polled, 1039 inference endpoints:
-up 691, degraded 116, down 21, idle 211.
+332 models polled, 1032 inference endpoints:
+up 624, degraded 151, down 30, idle 227.
 
-Currently down (21):
+Currently down (30):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 0% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 53% | 55% |
-| `deepseek/deepseek-v3.2` | SiliconFlow | 57% | 97% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 74% | 99% |
-| `google/gemini-2.5-flash` | Google | 69% | 86% |
-| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
-| `google/gemini-3-pro-image-preview` | Google | n/a | 0% |
-| `minimax/minimax-m3` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.5` | Chutes | 71% | 91% |
-| `moonshotai/kimi-k2.5` | Phala | 20% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | Novita | 42% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 70% | 57% |
-| `openai/gpt-4.1` | OpenAI | 61% | 100% |
-| `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| plus 6 more | | | |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 66% | 100% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 23% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 54% | 79% |
+| `deepseek/deepseek-chat-v3.1` | CoreWeave | 64% | n/a |
+| `deepseek/deepseek-v4-flash` | Ambient | 56% | 45% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 62% | 92% |
+| `deepseek/deepseek-v4-pro` | Wafer | 15% | n/a |
+| `deepseek/deepseek-v4-pro` | DigitalOcean | 69% | 74% |
+| `deepseek/deepseek-v4-pro` | SiliconFlow | 63% | 75% |
+| `deepseek/deepseek-v4-pro` | Baidu | 80% | 82% |
+| `deepseek/deepseek-v4-pro` | Venice | 37% | n/a |
+| `deepseek/deepseek-v4-pro` | Parasail | 39% | n/a |
+| `deepseek/deepseek-v4-pro` | Together | 77% | 77% |
+| `google/gemini-2.5-flash` | Google | 57% | 84% |
+| `google/gemma-4-31b-it` | DeepInfra | n/a | n/a |
+| plus 15 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

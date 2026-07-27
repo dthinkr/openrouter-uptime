@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-27T10:40:23+00:00 UTC)
+## Current status (2026-07-27T13:37:17+00:00 UTC)
 
-335 models polled, 1036 inference endpoints:
-up 654, degraded 134, down 27, idle 221.
+332 models polled, 1033 inference endpoints:
+up 601, degraded 174, down 40, idle 218.
 
-Currently down (27):
+Currently down (40):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 38% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 59% | 13% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 58% | n/a |
-| `deepseek/deepseek-v4-pro` | Ionstream | 52% | 100% |
-| `google/gemma-3-27b-it` | Nebius | 48% | 100% |
-| `google/gemma-4-31b-it` | Novita | 6% | 7% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `openai/gpt-5.1-chat` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-20b` | Parasail | 73% | 98% |
-| `qwen/qwen-2.5-72b-instruct` | Novita | 25% | n/a |
-| `qwen/qwen2.5-vl-72b-instruct` | Nebius | 76% | 100% |
-| `qwen/qwen3-14b` | Alibaba | 77% | 76% |
-| plus 12 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 20% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 48% | n/a |
+| `deepseek/deepseek-v4-flash` | Parasail | 75% | 96% |
+| `deepseek/deepseek-v4-pro` | Parasail | 75% | n/a |
+| `google/gemini-2.5-flash` | Google | 77% | 78% |
+| `google/gemini-2.5-pro` | Google | 41% | 39% |
+| `google/gemini-2.5-pro` | Google | 36% | 34% |
+| `google/gemini-2.5-pro-preview` | Google | 41% | 39% |
+| `google/gemini-2.5-pro-preview` | Google | 36% | 34% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 41% | 39% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 36% | 34% |
+| `google/gemma-3-27b-it` | Nebius | 73% | n/a |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 66% | 100% |
+| `google/gemma-4-31b-it` | Chutes | 43% | 77% |
+| `google/gemma-4-31b-it` | SiliconFlow | 22% | 100% |
+| plus 25 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -102,7 +102,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-17 17:25** — **schema break**: upstream retired /api/frontend/all-providers; data_policy/moderation_required no longer published.
 - **2026-07-19 13:17** — **6 models removed from the catalog in one poll**: `cognitivecomputations/dolphin-mistral-24b-venice-edition:free`, `meta-llama/llama-3.2-3b-instruct:free`, `meta-llama/llama-3.3-70b-instruct:free`, `nousresearch/hermes-3-llama-3.1-405b:free`, `qwen/qwen3-coder:free`, `qwen/qwen3-next-80b-a3b-instruct:free`.
 - **2026-07-20 17:59** — provider `tencent` changed its terms of service url.
 - **2026-07-20 17:59** — provider `tencent` changed its privacy policy url.
@@ -114,6 +113,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-07-23 23:58** — provider `wandb` left the platform.
 - **2026-07-24 03:19** — provider `wandb-legacy` left the platform.
 - **2026-07-27 10:40** — **3 models added to the catalog in one poll**: `inflection/inflection-3-pi`, `inflection/inflection-3-productivity`, `openai/gpt-4o-mini-search-preview`.
+- **2026-07-27 13:37** — **3 models removed from the catalog in one poll**: `inflection/inflection-3-pi`, `inflection/inflection-3-productivity`, `openai/gpt-4o-mini-search-preview`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

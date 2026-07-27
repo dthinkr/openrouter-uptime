@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-27T18:22:44+00:00 UTC)
+## Current status (2026-07-27T20:20:20+00:00 UTC)
 
-331 models polled, 1034 inference endpoints:
-up 669, degraded 115, down 28, idle 222.
+330 models polled, 1035 inference endpoints:
+up 627, degraded 157, down 36, idle 215.
 
-Currently down (28):
+Currently down (36):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 78% | 69% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 66% | n/a |
-| `deepseek/deepseek-chat` | DeepInfra | 70% | 99% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 75% | 72% |
-| `deepseek/deepseek-v3.2` | SiliconFlow | 72% | 81% |
-| `deepseek/deepseek-v3.2-exp` | SiliconFlow | 65% | n/a |
-| `deepseek/deepseek-v4-flash` | Parasail | 79% | 93% |
-| `deepseek/deepseek-v4-flash` | Ambient | 70% | 67% |
-| `google/gemma-3-27b-it` | Nebius | 79% | 37% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 80% | 80% |
-| `google/gemma-4-31b-it` | Novita | 12% | 8% |
-| `gryphe/mythomax-l2-13b` | NextBit | 74% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 65% | n/a |
-| `mistralai/mistral-nemo` | Novita | 74% | 40% |
-| `moonshotai/kimi-k2.5` | Phala | 61% | n/a |
-| plus 13 more | | | |
+| `deepseek/deepseek-chat-v3.1` | CoreWeave | 57% | n/a |
+| `deepseek/deepseek-v4-flash` | Parasail | 77% | 58% |
+| `deepseek/deepseek-v4-flash` | CoreWeave | 74% | 100% |
+| `deepseek/deepseek-v4-pro` | Venice | 71% | n/a |
+| `deepseek/deepseek-v4-pro` | CoreWeave | 66% | 100% |
+| `google/gemini-2.5-flash` | Google | 47% | 45% |
+| `google/gemma-4-31b-it` | Novita | 30% | 43% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 72% | 72% |
+| `meta-llama/llama-3.3-70b-instruct` | Novita | 28% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | CoreWeave | 79% | 100% |
+| `mistralai/mistral-nemo` | Novita | 71% | 73% |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | DigitalOcean | 78% | 77% |
+| `moonshotai/kimi-k3` | Nebius | 73% | n/a |
+| `moonshotai/kimi-k3` | Together | 71% | 84% |
+| plus 21 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

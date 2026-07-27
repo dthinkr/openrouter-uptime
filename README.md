@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-27T20:20:20+00:00 UTC)
+## Current status (2026-07-27T22:04:40+00:00 UTC)
 
-330 models polled, 1035 inference endpoints:
-up 627, degraded 157, down 36, idle 215.
+330 models polled, 1037 inference endpoints:
+up 665, degraded 126, down 21, idle 225.
 
-Currently down (36):
+Currently down (21):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | CoreWeave | 57% | n/a |
-| `deepseek/deepseek-v4-flash` | Parasail | 77% | 58% |
-| `deepseek/deepseek-v4-flash` | CoreWeave | 74% | 100% |
-| `deepseek/deepseek-v4-pro` | Venice | 71% | n/a |
-| `deepseek/deepseek-v4-pro` | CoreWeave | 66% | 100% |
-| `google/gemini-2.5-flash` | Google | 47% | 45% |
-| `google/gemma-4-31b-it` | Novita | 30% | 43% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 72% | 72% |
-| `meta-llama/llama-3.3-70b-instruct` | Novita | 28% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | CoreWeave | 79% | 100% |
-| `mistralai/mistral-nemo` | Novita | 71% | 73% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | DigitalOcean | 78% | 77% |
-| `moonshotai/kimi-k3` | Nebius | 73% | n/a |
-| `moonshotai/kimi-k3` | Together | 71% | 84% |
-| plus 21 more | | | |
+| `anthropic/claude-fable-5` | Anthropic | 61% | 60% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 61% | 100% |
+| `google/gemini-2.5-flash` | Google | 58% | n/a |
+| `google/gemma-4-31b-it` | Novita | 16% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | 88% |
+| `mistralai/mistral-nemo` | Novita | 69% | 70% |
+| `moonshotai/kimi-k3` | Nebius | 42% | 92% |
+| `openai/gpt-5.1` | OpenAI | 63% | 100% |
+| `openai/gpt-5.1` | OpenAI | 63% | 100% |
+| `openai/gpt-5.1` | OpenAI | 63% | 100% |
+| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | 0% |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | Phala | 0% | n/a |
+| plus 6 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-27T13:37:17+00:00 UTC)
+## Current status (2026-07-27T16:15:27+00:00 UTC)
 
-332 models polled, 1033 inference endpoints:
-up 601, degraded 174, down 40, idle 218.
+331 models polled, 1034 inference endpoints:
+up 601, degraded 167, down 41, idle 225.
 
-Currently down (40):
+Currently down (41):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 20% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Mara | 48% | n/a |
-| `deepseek/deepseek-v4-flash` | Parasail | 75% | 96% |
-| `deepseek/deepseek-v4-pro` | Parasail | 75% | n/a |
-| `google/gemini-2.5-flash` | Google | 77% | 78% |
-| `google/gemini-2.5-pro` | Google | 41% | 39% |
-| `google/gemini-2.5-pro` | Google | 36% | 34% |
-| `google/gemini-2.5-pro-preview` | Google | 41% | 39% |
-| `google/gemini-2.5-pro-preview` | Google | 36% | 34% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 41% | 39% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 36% | 34% |
-| `google/gemma-3-27b-it` | Nebius | 73% | n/a |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 66% | 100% |
-| `google/gemma-4-31b-it` | Chutes | 43% | 77% |
-| `google/gemma-4-31b-it` | SiliconFlow | 22% | 100% |
-| plus 25 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 69% | 66% |
+| `deepseek/deepseek-chat` | DeepInfra | 78% | 91% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 76% | 1% |
+| `deepseek/deepseek-v3.2` | SiliconFlow | 57% | 26% |
+| `deepseek/deepseek-v4-flash` | Parasail | 79% | 99% |
+| `deepseek/deepseek-v4-pro` | StreamLake | 79% | 97% |
+| `deepseek/deepseek-v4-pro` | GMICloud | 62% | 95% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 16% | 32% |
+| `google/gemini-2.5-flash` | Google | 76% | 81% |
+| `google/gemini-2.5-flash` | Google | 80% | 82% |
+| `google/gemini-2.5-pro` | Google | 49% | 43% |
+| `google/gemini-2.5-pro` | Google | 40% | 33% |
+| `google/gemini-2.5-pro-preview` | Google | 48% | 45% |
+| `google/gemini-2.5-pro-preview` | Google | 37% | 38% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 49% | 43% |
+| plus 26 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

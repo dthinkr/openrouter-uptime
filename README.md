@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-27T16:15:27+00:00 UTC)
+## Current status (2026-07-27T18:22:44+00:00 UTC)
 
 331 models polled, 1034 inference endpoints:
-up 601, degraded 167, down 41, idle 225.
+up 669, degraded 115, down 28, idle 222.
 
-Currently down (41):
+Currently down (28):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 69% | 66% |
-| `deepseek/deepseek-chat` | DeepInfra | 78% | 91% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 76% | 1% |
-| `deepseek/deepseek-v3.2` | SiliconFlow | 57% | 26% |
-| `deepseek/deepseek-v4-flash` | Parasail | 79% | 99% |
-| `deepseek/deepseek-v4-pro` | StreamLake | 79% | 97% |
-| `deepseek/deepseek-v4-pro` | GMICloud | 62% | 95% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 16% | 32% |
-| `google/gemini-2.5-flash` | Google | 76% | 81% |
-| `google/gemini-2.5-flash` | Google | 80% | 82% |
-| `google/gemini-2.5-pro` | Google | 49% | 43% |
-| `google/gemini-2.5-pro` | Google | 40% | 33% |
-| `google/gemini-2.5-pro-preview` | Google | 48% | 45% |
-| `google/gemini-2.5-pro-preview` | Google | 37% | 38% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 49% | 43% |
-| plus 26 more | | | |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 78% | 69% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 66% | n/a |
+| `deepseek/deepseek-chat` | DeepInfra | 70% | 99% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 75% | 72% |
+| `deepseek/deepseek-v3.2` | SiliconFlow | 72% | 81% |
+| `deepseek/deepseek-v3.2-exp` | SiliconFlow | 65% | n/a |
+| `deepseek/deepseek-v4-flash` | Parasail | 79% | 93% |
+| `deepseek/deepseek-v4-flash` | Ambient | 70% | 67% |
+| `google/gemma-3-27b-it` | Nebius | 79% | 37% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 80% | 80% |
+| `google/gemma-4-31b-it` | Novita | 12% | 8% |
+| `gryphe/mythomax-l2-13b` | NextBit | 74% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 65% | n/a |
+| `mistralai/mistral-nemo` | Novita | 74% | 40% |
+| `moonshotai/kimi-k2.5` | Phala | 61% | n/a |
+| plus 13 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

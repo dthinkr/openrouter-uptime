@@ -69,30 +69,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-28T14:06:55+00:00 UTC)
+## Current status (2026-07-28T16:39:06+00:00 UTC)
 
 330 models polled, 1032 inference endpoints:
-up 632, degraded 163, down 35, idle 202.
+up 629, degraded 159, down 35, idle 209.
 
 Currently down (35):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 34% | 47% |
-| `anthropic/claude-fable-5` | Azure | 34% | 15% |
-| `anthropic/claude-fable-5` | Anthropic | 72% | 98% |
-| `deepseek/deepseek-chat` | DeepInfra | 79% | 62% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | n/a |
+| `anthropic/claude-fable-5` | Azure | 62% | 50% |
+| `anthropic/claude-fable-5` | Anthropic | 48% | 84% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 74% | 97% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 71% | 98% |
+| `deepseek/deepseek-chat-v3.1` | SiliconFlow | 76% | n/a |
 | `deepseek/deepseek-chat-v3.1` | Google | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | Mara | 70% | 76% |
-| `deepseek/deepseek-v3.1-terminus` | SiliconFlow | 63% | 92% |
-| `deepseek/deepseek-v3.2` | SiliconFlow | 78% | 97% |
-| `deepseek/deepseek-v3.2-exp` | SiliconFlow | 75% | 83% |
-| `deepseek/deepseek-v4-flash` | Parasail | 77% | 100% |
-| `google/gemma-4-31b-it` | Chutes | 30% | 0% |
-| `google/gemma-4-31b-it` | Novita | 75% | 78% |
-| `google/gemma-4-31b-it` | Together | 65% | 60% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 46% | n/a |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 64% | 39% |
+| `deepseek/deepseek-r1-0528` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | Io Net | 66% | 74% |
+| `google/gemini-2.5-flash` | Google | 70% | 70% |
+| `google/gemma-3-27b-it` | Nebius | 43% | 100% |
+| `google/gemma-4-31b-it` | CoreWeave | 78% | 99% |
+| `google/gemma-4-31b-it` | Chutes | 2% | n/a |
+| `google/gemma-4-31b-it` | Together | 67% | 66% |
 | plus 20 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
@@ -102,7 +102,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-20 17:59** — provider `tencent` changed its privacy policy url.
 - **2026-07-21 17:15** — **4 models added to the catalog in one poll**: `google/gemini-3.5-flash-lite`, `google/gemini-3.6-flash`, `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`.
 - **2026-07-22 23:00** — **24 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, +16 more.
 - **2026-07-22 23:00** — provider `coreweave` changed its terms of service url.
@@ -114,6 +113,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-07-27 13:37** — **3 models removed from the catalog in one poll**: `inflection/inflection-3-pi`, `inflection/inflection-3-productivity`, `openai/gpt-4o-mini-search-preview`.
 - **2026-07-28 00:00** — provider `voyageai` changed its terms of service url.
 - **2026-07-28 00:00** — provider `voyageai` changed its privacy policy url.
+- **2026-07-28 16:39** — **28 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-haiku-4.5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-opus-5:batch`, +20 more.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

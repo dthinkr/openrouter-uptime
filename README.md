@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-28T18:12:52+00:00 UTC)
+## Current status (2026-07-28T20:14:56+00:00 UTC)
 
-330 models polled, 1034 inference endpoints:
-up 629, degraded 159, down 31, idle 215.
+330 models polled, 1037 inference endpoints:
+up 664, degraded 140, down 32, idle 201.
 
-Currently down (31):
+Currently down (32):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 55% | 60% |
-| `anthropic/claude-fable-5` | Azure | 60% | 96% |
-| `anthropic/claude-fable-5` | Anthropic | 67% | 55% |
-| `deepseek/deepseek-chat-v3.1` | SiliconFlow | 57% | 51% |
+| `anthropic/claude-fable-5` | Azure | 36% | 54% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 65% | 82% |
 | `deepseek/deepseek-chat-v3.1` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.1-terminus` | SiliconFlow | 59% | n/a |
-| `deepseek/deepseek-v4-flash` | Parasail | 76% | 94% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 77% | 99% |
-| `google/gemini-2.5-flash` | Google | 69% | 78% |
-| `google/gemma-3-27b-it` | Nebius | 62% | 99% |
-| `google/gemma-3-27b-it` | Novita | 74% | 100% |
-| `google/gemma-4-31b-it` | SiliconFlow | 79% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 14% | n/a |
-| `moonshotai/kimi-k2.5` | Chutes | 68% | 75% |
-| `moonshotai/kimi-k2.6` | Venice | 69% | n/a |
-| plus 16 more | | | |
+| `google/gemini-2.5-flash` | Google | 69% | 60% |
+| `google/gemini-2.5-pro` | Google | 42% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 39% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 42% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 59% | 88% |
+| `google/gemma-3-27b-it` | Novita | 80% | 68% |
+| `google/gemma-4-26b-a4b-it` | Ionstream | 77% | 70% |
+| `google/gemma-4-31b-it` | Chutes | 69% | 80% |
+| `google/gemma-4-31b-it` | Novita | 68% | 77% |
+| `google/gemma-4-31b-it` | NextBit | 71% | 85% |
+| `google/gemma-4-31b-it` | Together | 69% | 44% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 19% | 18% |
+| plus 17 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

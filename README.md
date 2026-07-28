@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-28T06:34:15+00:00 UTC)
+## Current status (2026-07-28T09:35:17+00:00 UTC)
 
-331 models polled, 1033 inference endpoints:
-up 626, degraded 159, down 37, idle 211.
+331 models polled, 1032 inference endpoints:
+up 618, degraded 177, down 38, idle 199.
 
-Currently down (37):
+Currently down (38):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 10% | n/a |
-| `anthropic/claude-fable-5` | Azure | 79% | 80% |
-| `anthropic/claude-fable-5` | Anthropic | 78% | 68% |
-| `deepseek/deepseek-chat-v3.1` | CoreWeave | 52% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 24% | 85% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 74% | 100% |
+| `anthropic/claude-fable-5` | Azure | 39% | 11% |
 | `deepseek/deepseek-chat-v3.1` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.1-terminus` | SiliconFlow | 74% | n/a |
-| `deepseek/deepseek-v4-flash` | Parasail | 80% | 66% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 69% | 100% |
-| `deepseek/deepseek-v4-pro` | Venice | 74% | 100% |
-| `google/gemini-2.5-flash` | Google | 77% | 92% |
-| `google/gemma-3-27b-it` | Nebius | 71% | n/a |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 26% | 95% |
-| `google/gemma-4-26b-a4b-it` | Ionstream | 79% | 47% |
-| `google/gemma-4-31b-it` | Chutes | 45% | 89% |
-| `google/gemma-4-31b-it` | Together | 80% | 79% |
-| plus 22 more | | | |
+| `deepseek/deepseek-chat-v3.1` | Mara | 78% | n/a |
+| `deepseek/deepseek-v4-pro` | Ionstream | 78% | 47% |
+| `deepseek/deepseek-v4-pro` | Venice | 36% | n/a |
+| `google/gemma-3-27b-it` | Novita | 69% | 100% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 55% | n/a |
+| `google/gemma-4-31b-it` | CoreWeave | 78% | 100% |
+| `google/gemma-4-31b-it` | SiliconFlow | 75% | 10% |
+| `google/gemma-4-31b-it` | Phala | 76% | n/a |
+| `google/gemma-4-31b-it` | Together | 68% | 66% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | 94% |
+| `minimax/minimax-m3` | Morph | 78% | 99% |
+| plus 23 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

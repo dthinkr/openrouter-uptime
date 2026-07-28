@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-28T09:35:17+00:00 UTC)
+## Current status (2026-07-28T11:56:08+00:00 UTC)
 
-331 models polled, 1032 inference endpoints:
-up 618, degraded 177, down 38, idle 199.
+331 models polled, 1034 inference endpoints:
+up 641, degraded 154, down 30, idle 209.
 
-Currently down (38):
+Currently down (30):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 24% | 85% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 74% | 100% |
-| `anthropic/claude-fable-5` | Azure | 39% | 11% |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 68% | n/a |
+| `anthropic/claude-fable-5` | Azure | 17% | 17% |
+| `anthropic/claude-fable-5` | Amazon Bedrock | 78% | 70% |
 | `deepseek/deepseek-chat-v3.1` | Google | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | Mara | 78% | n/a |
-| `deepseek/deepseek-v4-pro` | Ionstream | 78% | 47% |
-| `deepseek/deepseek-v4-pro` | Venice | 36% | n/a |
-| `google/gemma-3-27b-it` | Novita | 69% | 100% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 55% | n/a |
-| `google/gemma-4-31b-it` | CoreWeave | 78% | 100% |
-| `google/gemma-4-31b-it` | SiliconFlow | 75% | 10% |
-| `google/gemma-4-31b-it` | Phala | 76% | n/a |
-| `google/gemma-4-31b-it` | Together | 68% | 66% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | 94% |
-| `minimax/minimax-m3` | Morph | 78% | 99% |
-| plus 23 more | | | |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 38% | n/a |
+| `google/gemma-4-31b-it` | Together | 62% | 64% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 71% | n/a |
+| `minimax/minimax-m2.7` | Mara | 71% | 97% |
+| `moonshotai/kimi-k2-thinking` | Google | 77% | 100% |
+| `moonshotai/kimi-k2.5` | Chutes | 70% | 41% |
+| `moonshotai/kimi-k3` | Nebius | 55% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Together | 76% | 50% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 58% | n/a |
+| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | 0% |
+| `openai/gpt-5.2-codex` | OpenAI | n/a | n/a |
+| plus 15 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

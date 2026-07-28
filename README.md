@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-28T00:00:16+00:00 UTC)
+## Current status (2026-07-28T03:58:48+00:00 UTC)
 
-330 models polled, 1038 inference endpoints:
-up 652, degraded 115, down 29, idle 242.
+331 models polled, 1036 inference endpoints:
+up 647, degraded 141, down 24, idle 224.
 
-Currently down (29):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | Mara | 79% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | StreamLake | 70% | n/a |
-| `google/gemini-2.5-flash` | Google | 65% | 84% |
-| `google/gemini-2.5-pro` | Google | 80% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 80% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 80% | n/a |
-| `google/gemma-3-27b-it` | Phala | 79% | n/a |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 78% | 100% |
-| `google/gemma-4-31b-it` | Novita | 76% | 82% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 74% | n/a |
-| `mistralai/mistral-nemo` | Novita | 54% | 59% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 71% | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | 0% | n/a |
-| `openai/gpt-5.1-codex` | OpenAI | 0% | n/a |
-| `openai/gpt-5.2-codex` | OpenAI | 0% | n/a |
-| plus 14 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 44% | 27% |
+| `anthropic/claude-fable-5` | Anthropic | 44% | 69% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 49% | 47% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 76% | 70% |
+| `deepseek/deepseek-chat-v3.1` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | Google | 72% | 69% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 75% | 93% |
+| `google/gemma-4-26b-a4b-it` | Ionstream | 30% | 100% |
+| `google/gemma-4-26b-a4b-it` | Google | 30% | 96% |
+| `google/gemma-4-31b-it` | CoreWeave | 78% | 100% |
+| `google/gemma-4-31b-it` | SiliconFlow | 73% | 94% |
+| `google/gemma-4-31b-it` | Together | 78% | 79% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 75% | 51% |
+| `mistralai/mistral-nemo` | Novita | 62% | 100% |
+| `moonshotai/kimi-k3` | Nebius | 36% | n/a |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

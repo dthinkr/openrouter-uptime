@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-27T22:04:40+00:00 UTC)
+## Current status (2026-07-28T00:00:16+00:00 UTC)
 
-330 models polled, 1037 inference endpoints:
-up 665, degraded 126, down 21, idle 225.
+330 models polled, 1038 inference endpoints:
+up 652, degraded 115, down 29, idle 242.
 
-Currently down (21):
+Currently down (29):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 61% | 60% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 61% | 100% |
-| `google/gemini-2.5-flash` | Google | 58% | n/a |
-| `google/gemma-4-31b-it` | Novita | 16% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | 88% |
-| `mistralai/mistral-nemo` | Novita | 69% | 70% |
-| `moonshotai/kimi-k3` | Nebius | 42% | 92% |
-| `openai/gpt-5.1` | OpenAI | 63% | 100% |
-| `openai/gpt-5.1` | OpenAI | 63% | 100% |
-| `openai/gpt-5.1` | OpenAI | 63% | 100% |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | 0% |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | Phala | 0% | n/a |
-| plus 6 more | | | |
+| `deepseek/deepseek-chat-v3.1` | Mara | 79% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | StreamLake | 70% | n/a |
+| `google/gemini-2.5-flash` | Google | 65% | 84% |
+| `google/gemini-2.5-pro` | Google | 80% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 80% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 80% | n/a |
+| `google/gemma-3-27b-it` | Phala | 79% | n/a |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 78% | 100% |
+| `google/gemma-4-31b-it` | Novita | 76% | 82% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 74% | n/a |
+| `mistralai/mistral-nemo` | Novita | 54% | 59% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 71% | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | 0% | n/a |
+| `openai/gpt-5.1-codex` | OpenAI | 0% | n/a |
+| `openai/gpt-5.2-codex` | OpenAI | 0% | n/a |
+| plus 14 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -102,8 +102,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-19 13:17** — **6 models removed from the catalog in one poll**: `cognitivecomputations/dolphin-mistral-24b-venice-edition:free`, `meta-llama/llama-3.2-3b-instruct:free`, `meta-llama/llama-3.3-70b-instruct:free`, `nousresearch/hermes-3-llama-3.1-405b:free`, `qwen/qwen3-coder:free`, `qwen/qwen3-next-80b-a3b-instruct:free`.
-- **2026-07-20 17:59** — provider `tencent` changed its terms of service url.
 - **2026-07-20 17:59** — provider `tencent` changed its privacy policy url.
 - **2026-07-21 17:15** — **4 models added to the catalog in one poll**: `google/gemini-3.5-flash-lite`, `google/gemini-3.6-flash`, `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`.
 - **2026-07-22 23:00** — **24 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, +16 more.
@@ -114,6 +112,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-07-24 03:19** — provider `wandb-legacy` left the platform.
 - **2026-07-27 10:40** — **3 models added to the catalog in one poll**: `inflection/inflection-3-pi`, `inflection/inflection-3-productivity`, `openai/gpt-4o-mini-search-preview`.
 - **2026-07-27 13:37** — **3 models removed from the catalog in one poll**: `inflection/inflection-3-pi`, `inflection/inflection-3-productivity`, `openai/gpt-4o-mini-search-preview`.
+- **2026-07-28 00:00** — provider `voyageai` changed its terms of service url.
+- **2026-07-28 00:00** — provider `voyageai` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-28T03:58:48+00:00 UTC)
+## Current status (2026-07-28T06:34:15+00:00 UTC)
 
-331 models polled, 1036 inference endpoints:
-up 647, degraded 141, down 24, idle 224.
+331 models polled, 1033 inference endpoints:
+up 626, degraded 159, down 37, idle 211.
 
-Currently down (24):
+Currently down (37):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 44% | 27% |
-| `anthropic/claude-fable-5` | Anthropic | 44% | 69% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 49% | 47% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 76% | 70% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 10% | n/a |
+| `anthropic/claude-fable-5` | Azure | 79% | 80% |
+| `anthropic/claude-fable-5` | Anthropic | 78% | 68% |
+| `deepseek/deepseek-chat-v3.1` | CoreWeave | 52% | n/a |
 | `deepseek/deepseek-chat-v3.1` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | Google | 72% | 69% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 75% | 93% |
-| `google/gemma-4-26b-a4b-it` | Ionstream | 30% | 100% |
-| `google/gemma-4-26b-a4b-it` | Google | 30% | 96% |
-| `google/gemma-4-31b-it` | CoreWeave | 78% | 100% |
-| `google/gemma-4-31b-it` | SiliconFlow | 73% | 94% |
-| `google/gemma-4-31b-it` | Together | 78% | 79% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 75% | 51% |
-| `mistralai/mistral-nemo` | Novita | 62% | 100% |
-| `moonshotai/kimi-k3` | Nebius | 36% | n/a |
-| plus 9 more | | | |
+| `deepseek/deepseek-v3.1-terminus` | SiliconFlow | 74% | n/a |
+| `deepseek/deepseek-v4-flash` | Parasail | 80% | 66% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 69% | 100% |
+| `deepseek/deepseek-v4-pro` | Venice | 74% | 100% |
+| `google/gemini-2.5-flash` | Google | 77% | 92% |
+| `google/gemma-3-27b-it` | Nebius | 71% | n/a |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 26% | 95% |
+| `google/gemma-4-26b-a4b-it` | Ionstream | 79% | 47% |
+| `google/gemma-4-31b-it` | Chutes | 45% | 89% |
+| `google/gemma-4-31b-it` | Together | 80% | 79% |
+| plus 22 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

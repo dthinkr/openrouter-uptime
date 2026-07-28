@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-28T22:02:42+00:00 UTC)
+## Current status (2026-07-28T23:56:38+00:00 UTC)
 
-330 models polled, 1035 inference endpoints:
-up 663, degraded 130, down 28, idle 214.
+330 models polled, 1038 inference endpoints:
+up 663, degraded 128, down 18, idle 229.
 
-Currently down (28):
+Currently down (18):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 70% | 75% |
-| `anthropic/claude-fable-5` | Azure | 64% | 86% |
-| `anthropic/claude-opus-5` | Amazon Bedrock | 17% | 65% |
-| `google/gemini-2.5-flash` | Google | 70% | 77% |
-| `google/gemma-3-27b-it` | Nebius | 61% | n/a |
-| `google/gemma-3-27b-it` | Novita | 71% | 66% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 40% | 36% |
-| `google/gemma-4-31b-it` | Chutes | 3% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 44% | 39% |
-| `mistralai/mistral-nemo` | Novita | 79% | 95% |
-| `moonshotai/kimi-k2.5` | Chutes | 56% | 62% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `openai/gpt-5.2-codex` | OpenAI | n/a | n/a |
-| `openai/gpt-5.2-codex` | OpenAI | n/a | n/a |
-| `openai/gpt-5.4-mini` | OpenAI | 53% | 45% |
-| plus 13 more | | | |
+| `anthropic/claude-fable-5` | Anthropic | 65% | 50% |
+| `google/gemini-2.5-flash` | Google | 78% | 84% |
+| `google/gemma-3-27b-it` | Novita | 73% | 100% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 35% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Novita | 56% | n/a |
+| `mistralai/mistral-nemo` | Novita | 18% | 5% |
+| `moonshotai/kimi-k3` | Nebius | 52% | n/a |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3.5-122b-a10b` | DeepInfra | 52% | n/a |
+| `qwen/qwen3.5-35b-a3b` | SiliconFlow | 75% | 30% |
+| `qwen/qwen3.5-397b-a17b` | GMICloud | n/a | n/a |
+| `thedrummer/unslopnemo-12b` | NextBit | n/a | n/a |
+| `x-ai/grok-4.20-multi-agent` | xAI | 76% | n/a |
+| `x-ai/grok-4.20-multi-agent` | xAI | 76% | n/a |
+| `z-ai/glm-4.5-air` | Z.AI | 80% | n/a |
+| plus 3 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

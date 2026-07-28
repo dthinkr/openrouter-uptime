@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-28T11:56:08+00:00 UTC)
+## Current status (2026-07-28T14:06:55+00:00 UTC)
 
-331 models polled, 1034 inference endpoints:
-up 641, degraded 154, down 30, idle 209.
+330 models polled, 1032 inference endpoints:
+up 632, degraded 163, down 35, idle 202.
 
-Currently down (30):
+Currently down (35):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 68% | n/a |
-| `anthropic/claude-fable-5` | Azure | 17% | 17% |
-| `anthropic/claude-fable-5` | Amazon Bedrock | 78% | 70% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 34% | 47% |
+| `anthropic/claude-fable-5` | Azure | 34% | 15% |
+| `anthropic/claude-fable-5` | Anthropic | 72% | 98% |
+| `deepseek/deepseek-chat` | DeepInfra | 79% | 62% |
 | `deepseek/deepseek-chat-v3.1` | Google | n/a | n/a |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 38% | n/a |
-| `google/gemma-4-31b-it` | Together | 62% | 64% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 71% | n/a |
-| `minimax/minimax-m2.7` | Mara | 71% | 97% |
-| `moonshotai/kimi-k2-thinking` | Google | 77% | 100% |
-| `moonshotai/kimi-k2.5` | Chutes | 70% | 41% |
-| `moonshotai/kimi-k3` | Nebius | 55% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Together | 76% | 50% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 58% | n/a |
-| `openai/gpt-5.1-codex-mini` | OpenAI | 0% | 0% |
-| `openai/gpt-5.2-codex` | OpenAI | n/a | n/a |
-| plus 15 more | | | |
+| `deepseek/deepseek-chat-v3.1` | Mara | 70% | 76% |
+| `deepseek/deepseek-v3.1-terminus` | SiliconFlow | 63% | 92% |
+| `deepseek/deepseek-v3.2` | SiliconFlow | 78% | 97% |
+| `deepseek/deepseek-v3.2-exp` | SiliconFlow | 75% | 83% |
+| `deepseek/deepseek-v4-flash` | Parasail | 77% | 100% |
+| `google/gemma-4-31b-it` | Chutes | 30% | 0% |
+| `google/gemma-4-31b-it` | Novita | 75% | 78% |
+| `google/gemma-4-31b-it` | Together | 65% | 60% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 46% | n/a |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| plus 20 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

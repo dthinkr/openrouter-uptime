@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-29T02:44:44+00:00 UTC)
+## Current status (2026-07-29T05:50:20+00:00 UTC)
 
 330 models polled, 1039 inference endpoints:
-up 669, degraded 135, down 27, idle 208.
+up 639, degraded 148, down 31, idle 221.
 
-Currently down (27):
+Currently down (31):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 99% |
-| `deepseek/deepseek-v4-flash` | Ionstream | 66% | 95% |
-| `deepseek/deepseek-v4-flash` | Ambient | 53% | 41% |
-| `google/gemini-2.5-flash` | Google | 60% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 56% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 71% | n/a |
-| `minimax/minimax-m3` | Venice | 41% | 93% |
-| `minimax/minimax-m3` | Together | 39% | 99% |
-| `minimax/minimax-m3` | Morph | 71% | 57% |
-| `mistralai/mistral-nemo` | Novita | 67% | 61% |
-| `moonshotai/kimi-k2.6` | Venice | 54% | n/a |
-| `openai/gpt-5.4-mini` | OpenAI | 62% | 72% |
-| `openai/gpt-5.4-mini` | OpenAI | 62% | 72% |
-| `openai/gpt-5.4-mini` | OpenAI | 62% | 72% |
-| `openai/gpt-5.6-sol-pro` | OpenAI | 56% | 72% |
-| plus 12 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 12% | 15% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 78% | 80% |
+| `deepseek/deepseek-v4-flash` | Ionstream | 63% | 100% |
+| `deepseek/deepseek-v4-flash` | Ambient | 45% | 36% |
+| `google/gemini-2.5-flash` | Google | 70% | 73% |
+| `google/gemma-3-27b-it` | Nebius | 79% | 75% |
+| `google/gemma-3-27b-it` | Novita | 69% | 58% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 20% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Novita | 76% | 0% |
+| `minimax/minimax-m2.7` | AtlasCloud | 76% | n/a |
+| `moonshotai/kimi-k3` | Nebius | 52% | 47% |
+| `openai/gpt-5.4-mini` | OpenAI | 47% | 48% |
+| `openai/gpt-5.4-mini` | OpenAI | 47% | 48% |
+| `openai/gpt-5.4-mini` | OpenAI | 47% | 48% |
+| plus 16 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-29T11:24:05+00:00 UTC)
+## Current status (2026-07-29T14:04:56+00:00 UTC)
 
-330 models polled, 1038 inference endpoints:
-up 646, degraded 161, down 30, idle 201.
+330 models polled, 1035 inference endpoints:
+up 637, degraded 167, down 31, idle 200.
 
-Currently down (30):
+Currently down (31):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 32% | n/a |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 17% | 61% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 79% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 80% | 88% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 6% | 0% |
-| `google/gemini-2.5-pro` | Google | 73% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 74% | 55% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 69% | 81% |
-| `google/gemma-3-27b-it` | Novita | 71% | 96% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 75% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 68% | 81% |
-| `meta-llama/llama-3.3-70b-instruct` | Together | 68% | 57% |
-| `minimax/minimax-m2.5` | Mara | 75% | 100% |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| plus 15 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 4% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 80% | 67% |
+| `deepseek/deepseek-chat-v3.1` | Google | 75% | 53% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 74% | 78% |
+| `deepseek/deepseek-v4-flash` | Parasail | 79% | 94% |
+| `deepseek/deepseek-v4-flash` | DeepSeek | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | DeepSeek | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 67% | 80% |
+| `deepseek/deepseek-v4-pro` | Cloudflare | 66% | n/a |
+| `google/gemini-2.5-pro` | Google | 78% | 88% |
+| `google/gemini-2.5-pro` | Google | 11% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 78% | 88% |
+| `google/gemini-2.5-pro-preview` | Google | 11% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 78% | 88% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 11% | n/a |
+| plus 16 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

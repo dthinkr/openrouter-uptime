@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-29T20:11:20+00:00 UTC)
+## Current status (2026-07-29T21:58:49+00:00 UTC)
 
 330 models polled, 1031 inference endpoints:
-up 641, degraded 160, down 24, idle 206.
+up 630, degraded 143, down 40, idle 218.
 
-Currently down (24):
+Currently down (40):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 33% | 14% |
-| `anthropic/claude-fable-5` | Anthropic | 73% | 75% |
-| `anthropic/claude-opus-5` | Claude Platform on AWS | 63% | n/a |
-| `anthropic/claude-opus-5` | Amazon Bedrock | 32% | 79% |
-| `anthropic/claude-sonnet-5` | Azure | 73% | 53% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 73% | 97% |
-| `deepseek/deepseek-v3.2` | Venice | 62% | n/a |
-| `google/gemini-2.5-flash` | Google | 68% | 53% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 77% | 100% |
-| `google/gemma-4-31b-it` | Together | 78% | 76% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 56% | n/a |
-| `mistralai/mistral-nemo` | Novita | 64% | 67% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | Nebius | 1% | 0% |
-| `openai/gpt-4o-2024-05-13` | OpenAI | 61% | 100% |
-| plus 9 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 8% | 17% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 68% | 99% |
+| `anthropic/claude-fable-5` | Google | 77% | 65% |
+| `anthropic/claude-opus-4.8` | Anthropic | 64% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 45% | 100% |
+| `deepseek/deepseek-v3.2` | Venice | 75% | n/a |
+| `deepseek/deepseek-v4-pro` | Ionstream | 66% | 34% |
+| `deepseek/deepseek-v4-pro` | Together | 72% | 100% |
+| `google/gemini-2.5-flash` | Google | 42% | 55% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 45% | n/a |
+| `google/gemma-4-26b-a4b-it` | Google | 71% | 61% |
+| `google/gemma-4-31b-it` | Chutes | 73% | 74% |
+| `meta-llama/llama-3.1-70b-instruct` | Amazon Bedrock | 75% | 82% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 66% | n/a |
+| `minimax/minimax-m2.5` | Mara | 72% | n/a |
+| plus 25 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-29T08:36:38+00:00 UTC)
+## Current status (2026-07-29T11:24:05+00:00 UTC)
 
 330 models polled, 1038 inference endpoints:
-up 641, degraded 158, down 35, idle 204.
+up 646, degraded 161, down 30, idle 201.
 
-Currently down (35):
+Currently down (30):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 21% | 12% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 76% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 47% | 73% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 57% | 10% |
-| `deepseek/deepseek-chat-v3.1` | CoreWeave | 34% | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 68% | n/a |
-| `deepseek/deepseek-v4-pro` | Ionstream | 59% | 99% |
-| `google/gemini-2.5-pro` | Google | 49% | 36% |
-| `google/gemini-2.5-pro` | Google | 19% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 45% | 40% |
-| `google/gemini-2.5-pro-preview` | Google | 21% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 49% | 36% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 19% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 75% | 73% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| plus 20 more | | | |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 32% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 17% | 61% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 79% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 80% | 88% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 6% | 0% |
+| `google/gemini-2.5-pro` | Google | 73% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 74% | 55% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 69% | 81% |
+| `google/gemma-3-27b-it` | Novita | 71% | 96% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 75% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 68% | 81% |
+| `meta-llama/llama-3.3-70b-instruct` | Together | 68% | 57% |
+| `minimax/minimax-m2.5` | Mara | 75% | 100% |
+| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
+| plus 15 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

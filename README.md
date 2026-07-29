@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-29T16:19:49+00:00 UTC)
+## Current status (2026-07-29T18:05:13+00:00 UTC)
 
-330 models polled, 1035 inference endpoints:
-up 641, degraded 167, down 30, idle 197.
+330 models polled, 1036 inference endpoints:
+up 627, degraded 180, down 24, idle 205.
 
-Currently down (30):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 21% | 13% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 57% | 45% |
-| `deepseek/deepseek-v3.2-exp` | SiliconFlow | 77% | 80% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 74% | 100% |
-| `deepseek/deepseek-v4-pro` | Venice | 61% | 97% |
-| `deepseek/deepseek-v4-pro` | Together | 70% | 84% |
-| `google/gemini-2.5-flash` | Google | 54% | 64% |
-| `google/gemma-3-27b-it` | Novita | 79% | 100% |
-| `google/gemma-4-26b-a4b-it` | Ionstream | 70% | 67% |
-| `google/gemma-4-31b-it` | Chutes | 62% | 61% |
-| `google/gemma-4-31b-it` | Together | 78% | 80% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | n/a |
-| `mistralai/mistral-nemo` | Novita | 68% | 79% |
-| `moonshotai/kimi-k2-thinking` | Google | 69% | 100% |
-| `moonshotai/kimi-k2.5` | SiliconFlow | 61% | 100% |
-| plus 15 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 9% | 6% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 47% | 55% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 57% | n/a |
+| `deepseek/deepseek-v3.2` | Venice | 66% | 56% |
+| `deepseek/deepseek-v4-flash` | Ambient | 77% | 100% |
+| `deepseek/deepseek-v4-pro` | Together | 79% | 83% |
+| `google/gemini-2.5-flash` | Google | 67% | 74% |
+| `google/gemma-4-31b-it` | Together | 79% | 75% |
+| `google/gemma-4-31b-it` | Together | 76% | 79% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 61% | 66% |
+| `mistralai/mistral-nemo` | Novita | 68% | 57% |
+| `moonshotai/kimi-k2.5` | Venice | 79% | 93% |
+| `moonshotai/kimi-k2.6` | Decart | 71% | 89% |
+| `moonshotai/kimi-k2.6` | Venice | 68% | n/a |
+| `moonshotai/kimi-k3` | Nebius | 14% | n/a |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

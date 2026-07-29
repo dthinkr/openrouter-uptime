@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-29T21:58:49+00:00 UTC)
+## Current status (2026-07-29T23:04:29+00:00 UTC)
 
 330 models polled, 1031 inference endpoints:
-up 630, degraded 143, down 40, idle 218.
+up 637, degraded 129, down 27, idle 238.
 
-Currently down (40):
+Currently down (27):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 8% | 17% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 68% | 99% |
-| `anthropic/claude-fable-5` | Google | 77% | 65% |
-| `anthropic/claude-opus-4.8` | Anthropic | 64% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 45% | 100% |
-| `deepseek/deepseek-v3.2` | Venice | 75% | n/a |
-| `deepseek/deepseek-v4-pro` | Ionstream | 66% | 34% |
-| `deepseek/deepseek-v4-pro` | Together | 72% | 100% |
-| `google/gemini-2.5-flash` | Google | 42% | 55% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 45% | n/a |
-| `google/gemma-4-26b-a4b-it` | Google | 71% | 61% |
-| `google/gemma-4-31b-it` | Chutes | 73% | 74% |
-| `meta-llama/llama-3.1-70b-instruct` | Amazon Bedrock | 75% | 82% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 66% | n/a |
-| `minimax/minimax-m2.5` | Mara | 72% | n/a |
-| plus 25 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 21% | 75% |
+| `anthropic/claude-fable-5` | Anthropic | 77% | 91% |
+| `deepseek/deepseek-v4-flash` | CoreWeave | 76% | 34% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 46% | 99% |
+| `deepseek/deepseek-v4-pro` | Parasail | 77% | 100% |
+| `google/gemini-2.5-flash` | Google | 61% | 69% |
+| `google/gemma-3-27b-it` | Novita | 77% | 79% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 36% | 23% |
+| `google/gemma-4-26b-a4b-it` | Google | 78% | 90% |
+| `google/gemma-4-31b-it` | Chutes | 48% | 92% |
+| `google/gemma-4-31b-it` | Together | 71% | n/a |
+| `meta-llama/llama-3.1-70b-instruct` | Amazon Bedrock | 74% | n/a |
+| `minimax/minimax-m3` | Venice | 67% | 88% |
+| `minimax/minimax-m3` | Together | 57% | 100% |
+| `mistralai/mistral-nemo` | Novita | 66% | 79% |
+| plus 12 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

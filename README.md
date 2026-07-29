@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-28T23:56:38+00:00 UTC)
+## Current status (2026-07-29T02:44:44+00:00 UTC)
 
-330 models polled, 1038 inference endpoints:
-up 663, degraded 128, down 18, idle 229.
+330 models polled, 1039 inference endpoints:
+up 669, degraded 135, down 27, idle 208.
 
-Currently down (18):
+Currently down (27):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `anthropic/claude-fable-5` | Anthropic | 65% | 50% |
-| `google/gemini-2.5-flash` | Google | 78% | 84% |
-| `google/gemma-3-27b-it` | Novita | 73% | 100% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 35% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Novita | 56% | n/a |
-| `mistralai/mistral-nemo` | Novita | 18% | 5% |
-| `moonshotai/kimi-k3` | Nebius | 52% | n/a |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3.5-122b-a10b` | DeepInfra | 52% | n/a |
-| `qwen/qwen3.5-35b-a3b` | SiliconFlow | 75% | 30% |
-| `qwen/qwen3.5-397b-a17b` | GMICloud | n/a | n/a |
-| `thedrummer/unslopnemo-12b` | NextBit | n/a | n/a |
-| `x-ai/grok-4.20-multi-agent` | xAI | 76% | n/a |
-| `x-ai/grok-4.20-multi-agent` | xAI | 76% | n/a |
-| `z-ai/glm-4.5-air` | Z.AI | 80% | n/a |
-| plus 3 more | | | |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 99% |
+| `deepseek/deepseek-v4-flash` | Ionstream | 66% | 95% |
+| `deepseek/deepseek-v4-flash` | Ambient | 53% | 41% |
+| `google/gemini-2.5-flash` | Google | 60% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 56% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 71% | n/a |
+| `minimax/minimax-m3` | Venice | 41% | 93% |
+| `minimax/minimax-m3` | Together | 39% | 99% |
+| `minimax/minimax-m3` | Morph | 71% | 57% |
+| `mistralai/mistral-nemo` | Novita | 67% | 61% |
+| `moonshotai/kimi-k2.6` | Venice | 54% | n/a |
+| `openai/gpt-5.4-mini` | OpenAI | 62% | 72% |
+| `openai/gpt-5.4-mini` | OpenAI | 62% | 72% |
+| `openai/gpt-5.4-mini` | OpenAI | 62% | 72% |
+| `openai/gpt-5.6-sol-pro` | OpenAI | 56% | 72% |
+| plus 12 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

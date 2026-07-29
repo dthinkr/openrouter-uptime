@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-29T14:04:56+00:00 UTC)
+## Current status (2026-07-29T16:19:49+00:00 UTC)
 
 330 models polled, 1035 inference endpoints:
-up 637, degraded 167, down 31, idle 200.
+up 641, degraded 167, down 30, idle 197.
 
-Currently down (31):
+Currently down (30):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 4% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 80% | 67% |
-| `deepseek/deepseek-chat-v3.1` | Google | 75% | 53% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 74% | 78% |
-| `deepseek/deepseek-v4-flash` | Parasail | 79% | 94% |
-| `deepseek/deepseek-v4-flash` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 67% | 80% |
-| `deepseek/deepseek-v4-pro` | Cloudflare | 66% | n/a |
-| `google/gemini-2.5-pro` | Google | 78% | 88% |
-| `google/gemini-2.5-pro` | Google | 11% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 78% | 88% |
-| `google/gemini-2.5-pro-preview` | Google | 11% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 78% | 88% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 11% | n/a |
-| plus 16 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 21% | 13% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 57% | 45% |
+| `deepseek/deepseek-v3.2-exp` | SiliconFlow | 77% | 80% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 74% | 100% |
+| `deepseek/deepseek-v4-pro` | Venice | 61% | 97% |
+| `deepseek/deepseek-v4-pro` | Together | 70% | 84% |
+| `google/gemini-2.5-flash` | Google | 54% | 64% |
+| `google/gemma-3-27b-it` | Novita | 79% | 100% |
+| `google/gemma-4-26b-a4b-it` | Ionstream | 70% | 67% |
+| `google/gemma-4-31b-it` | Chutes | 62% | 61% |
+| `google/gemma-4-31b-it` | Together | 78% | 80% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | n/a |
+| `mistralai/mistral-nemo` | Novita | 68% | 79% |
+| `moonshotai/kimi-k2-thinking` | Google | 69% | 100% |
+| `moonshotai/kimi-k2.5` | SiliconFlow | 61% | 100% |
+| plus 15 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

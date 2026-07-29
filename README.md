@@ -69,30 +69,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-29T18:05:13+00:00 UTC)
+## Current status (2026-07-29T20:11:20+00:00 UTC)
 
-330 models polled, 1036 inference endpoints:
-up 627, degraded 180, down 24, idle 205.
+330 models polled, 1031 inference endpoints:
+up 641, degraded 160, down 24, idle 206.
 
 Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 9% | 6% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 47% | 55% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 57% | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 66% | 56% |
-| `deepseek/deepseek-v4-flash` | Ambient | 77% | 100% |
-| `deepseek/deepseek-v4-pro` | Together | 79% | 83% |
-| `google/gemini-2.5-flash` | Google | 67% | 74% |
-| `google/gemma-4-31b-it` | Together | 79% | 75% |
-| `google/gemma-4-31b-it` | Together | 76% | 79% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 61% | 66% |
-| `mistralai/mistral-nemo` | Novita | 68% | 57% |
-| `moonshotai/kimi-k2.5` | Venice | 79% | 93% |
-| `moonshotai/kimi-k2.6` | Decart | 71% | 89% |
-| `moonshotai/kimi-k2.6` | Venice | 68% | n/a |
-| `moonshotai/kimi-k3` | Nebius | 14% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 33% | 14% |
+| `anthropic/claude-fable-5` | Anthropic | 73% | 75% |
+| `anthropic/claude-opus-5` | Claude Platform on AWS | 63% | n/a |
+| `anthropic/claude-opus-5` | Amazon Bedrock | 32% | 79% |
+| `anthropic/claude-sonnet-5` | Azure | 73% | 53% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 73% | 97% |
+| `deepseek/deepseek-v3.2` | Venice | 62% | n/a |
+| `google/gemini-2.5-flash` | Google | 68% | 53% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 77% | 100% |
+| `google/gemma-4-31b-it` | Together | 78% | 76% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 56% | n/a |
+| `mistralai/mistral-nemo` | Novita | 64% | 67% |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | Nebius | 1% | 0% |
+| `openai/gpt-4o-2024-05-13` | OpenAI | 61% | 100% |
 | plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

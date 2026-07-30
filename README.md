@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-30T15:51:00+00:00 UTC)
+## Current status (2026-07-30T17:24:07+00:00 UTC)
 
-330 models polled, 1037 inference endpoints:
-up 606, degraded 196, down 30, idle 205.
+330 models polled, 1036 inference endpoints:
+up 629, degraded 174, down 28, idle 205.
 
-Currently down (30):
+Currently down (28):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 12% | 26% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 57% |
-| `deepseek/deepseek-v4-flash` | Ionstream | 40% | 100% |
-| `deepseek/deepseek-v4-flash` | Ambient | 76% | 99% |
-| `deepseek/deepseek-v4-pro` | GMICloud | 63% | 100% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 9% | 99% |
-| `deepseek/deepseek-v4-pro` | Alibaba | 12% | 100% |
-| `deepseek/deepseek-v4-pro` | Venice | 78% | 97% |
-| `deepseek/deepseek-v4-pro` | BaseTen | 71% | n/a |
-| `google/gemini-2.5-flash` | Google | 74% | 85% |
-| `google/gemini-2.5-flash` | Google | 79% | 83% |
-| `google/gemini-2.5-pro` | Google | 20% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 20% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 19% | 17% |
-| `google/gemma-4-26b-a4b-it` | Ionstream | 35% | 93% |
-| plus 15 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 11% | 9% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 74% | 100% |
+| `anthropic/claude-fable-5` | Anthropic | 70% | 53% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 48% | 88% |
+| `deepseek/deepseek-v4-flash` | Baidu | 58% | 99% |
+| `deepseek/deepseek-v4-flash` | Ionstream | 44% | 100% |
+| `deepseek/deepseek-v4-flash` | Ambient | 67% | 100% |
+| `google/gemini-2.5-pro` | Google | 7% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 7% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 8% | n/a |
+| `google/gemma-4-31b-it` | Together | 75% | 80% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | 83% |
+| `mistralai/mistral-nemo` | Novita | 50% | 34% |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `openai/gpt-5.2-codex` | OpenAI | 0% | 0% |
+| plus 13 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

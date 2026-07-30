@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-30T08:22:04+00:00 UTC)
+## Current status (2026-07-30T11:05:53+00:00 UTC)
 
-330 models polled, 1033 inference endpoints:
-up 607, degraded 200, down 33, idle 193.
+330 models polled, 1032 inference endpoints:
+up 633, degraded 166, down 24, idle 209.
 
-Currently down (33):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 7% | 100% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 70% | 100% |
-| `anthropic/claude-fable-5` | Anthropic | 79% | 57% |
-| `anthropic/claude-opus-4.6` | Anthropic | 60% | 96% |
-| `anthropic/claude-sonnet-4.5` | Anthropic | 79% | 94% |
-| `anthropic/claude-sonnet-4.5` | Amazon Bedrock | 79% | 96% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 69% | 99% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 79% | 84% |
-| `deepseek/deepseek-v4-pro` | BaseTen | 62% | n/a |
-| `google/gemini-2.5-pro` | Google | 19% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 19% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 19% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 61% | 24% |
-| `google/gemma-3-27b-it` | Novita | 76% | 56% |
-| `google/gemma-4-26b-a4b-it` | Ionstream | 66% | 93% |
-| plus 18 more | | | |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 38% | 30% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 20% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 69% | 34% |
+| `deepseek/deepseek-chat-v3.1` | Google | 49% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 74% | 58% |
+| `google/gemini-2.5-pro` | Google | 36% | 45% |
+| `google/gemini-2.5-pro` | Google | 12% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 36% | 45% |
+| `google/gemini-2.5-pro-preview` | Google | 12% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 36% | 45% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 12% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 72% | 47% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | 78% |
+| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
+| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

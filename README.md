@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-29T23:04:29+00:00 UTC)
+## Current status (2026-07-30T02:08:17+00:00 UTC)
 
-330 models polled, 1031 inference endpoints:
-up 637, degraded 129, down 27, idle 238.
+330 models polled, 1032 inference endpoints:
+up 628, degraded 150, down 16, idle 238.
 
-Currently down (27):
+Currently down (16):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 21% | 75% |
-| `anthropic/claude-fable-5` | Anthropic | 77% | 91% |
-| `deepseek/deepseek-v4-flash` | CoreWeave | 76% | 34% |
-| `deepseek/deepseek-v4-pro` | Ionstream | 46% | 99% |
-| `deepseek/deepseek-v4-pro` | Parasail | 77% | 100% |
-| `google/gemini-2.5-flash` | Google | 61% | 69% |
-| `google/gemma-3-27b-it` | Novita | 77% | 79% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 36% | 23% |
-| `google/gemma-4-26b-a4b-it` | Google | 78% | 90% |
-| `google/gemma-4-31b-it` | Chutes | 48% | 92% |
-| `google/gemma-4-31b-it` | Together | 71% | n/a |
-| `meta-llama/llama-3.1-70b-instruct` | Amazon Bedrock | 74% | n/a |
-| `minimax/minimax-m3` | Venice | 67% | 88% |
-| `minimax/minimax-m3` | Together | 57% | 100% |
-| `mistralai/mistral-nemo` | Novita | 66% | 79% |
-| plus 12 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 39% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Google | 69% | n/a |
+| `google/gemma-3-27b-it` | Novita | 78% | 75% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 52% | 83% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 53% | n/a |
+| `minimax/minimax-m3` | Venice | 53% | n/a |
+| `moonshotai/kimi-k2.6` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 76% | 99% |
+| `openai/gpt-oss-120b` | Mancer 2 | 74% | n/a |
+| `openai/gpt-oss-20b` | Google | 62% | 55% |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | SiliconFlow | 73% | n/a |
+| `tencent/hy3` | GMICloud | 51% | 48% |
+| `xiaomi/mimo-v2.5-pro` | GMICloud | 79% | 65% |
+| `xiaomi/mimo-v2.5-pro` | DeepInfra | 75% | 100% |
+| plus 1 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

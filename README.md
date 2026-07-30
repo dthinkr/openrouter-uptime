@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-30T11:05:53+00:00 UTC)
+## Current status (2026-07-30T13:54:00+00:00 UTC)
 
 330 models polled, 1032 inference endpoints:
-up 633, degraded 166, down 24, idle 209.
+up 620, degraded 189, down 19, idle 204.
 
-Currently down (24):
+Currently down (19):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 38% | 30% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 20% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 69% | 34% |
-| `deepseek/deepseek-chat-v3.1` | Google | 49% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Mara | 74% | 58% |
-| `google/gemini-2.5-pro` | Google | 36% | 45% |
-| `google/gemini-2.5-pro` | Google | 12% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 36% | 45% |
-| `google/gemini-2.5-pro-preview` | Google | 12% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 36% | 45% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 12% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 72% | 47% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | 78% |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| `openai/gpt-5.1-codex-max` | OpenAI | n/a | n/a |
-| plus 9 more | | | |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 97% |
+| `deepseek/deepseek-v3.2` | Venice | 69% | n/a |
+| `deepseek/deepseek-v4-pro` | BaseTen | 52% | 15% |
+| `google/gemini-2.5-flash` | Google | 78% | 85% |
+| `google/gemini-2.5-pro` | Google | 53% | 67% |
+| `google/gemini-2.5-pro-preview` | Google | 61% | 66% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 53% | 67% |
+| `google/gemma-3-27b-it` | Nebius | 70% | 56% |
+| `google/gemma-4-26b-a4b-it` | Google | 73% | 79% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 67% | n/a |
+| `moonshotai/kimi-k2.5` | Phala | 76% | n/a |
+| `moonshotai/kimi-k3` | Morph | 44% | 95% |
+| `openai/gpt-oss-120b` | Mancer 2 | 51% | 47% |
+| `openai/gpt-oss-20b` | Google | 58% | n/a |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| plus 4 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

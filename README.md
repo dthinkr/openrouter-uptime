@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-30T13:54:00+00:00 UTC)
+## Current status (2026-07-30T15:51:00+00:00 UTC)
 
-330 models polled, 1032 inference endpoints:
-up 620, degraded 189, down 19, idle 204.
+330 models polled, 1037 inference endpoints:
+up 606, degraded 196, down 30, idle 205.
 
-Currently down (19):
+Currently down (30):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 97% |
-| `deepseek/deepseek-v3.2` | Venice | 69% | n/a |
-| `deepseek/deepseek-v4-pro` | BaseTen | 52% | 15% |
-| `google/gemini-2.5-flash` | Google | 78% | 85% |
-| `google/gemini-2.5-pro` | Google | 53% | 67% |
-| `google/gemini-2.5-pro-preview` | Google | 61% | 66% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 53% | 67% |
-| `google/gemma-3-27b-it` | Nebius | 70% | 56% |
-| `google/gemma-4-26b-a4b-it` | Google | 73% | 79% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 67% | n/a |
-| `moonshotai/kimi-k2.5` | Phala | 76% | n/a |
-| `moonshotai/kimi-k3` | Morph | 44% | 95% |
-| `openai/gpt-oss-120b` | Mancer 2 | 51% | 47% |
-| `openai/gpt-oss-20b` | Google | 58% | n/a |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| plus 4 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 12% | 26% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 57% |
+| `deepseek/deepseek-v4-flash` | Ionstream | 40% | 100% |
+| `deepseek/deepseek-v4-flash` | Ambient | 76% | 99% |
+| `deepseek/deepseek-v4-pro` | GMICloud | 63% | 100% |
+| `deepseek/deepseek-v4-pro` | Ionstream | 9% | 99% |
+| `deepseek/deepseek-v4-pro` | Alibaba | 12% | 100% |
+| `deepseek/deepseek-v4-pro` | Venice | 78% | 97% |
+| `deepseek/deepseek-v4-pro` | BaseTen | 71% | n/a |
+| `google/gemini-2.5-flash` | Google | 74% | 85% |
+| `google/gemini-2.5-flash` | Google | 79% | 83% |
+| `google/gemini-2.5-pro` | Google | 20% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 20% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 19% | 17% |
+| `google/gemma-4-26b-a4b-it` | Ionstream | 35% | 93% |
+| plus 15 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -102,8 +102,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-21 17:15** — **4 models added to the catalog in one poll**: `google/gemini-3.5-flash-lite`, `google/gemini-3.6-flash`, `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`.
-- **2026-07-22 23:00** — **24 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, +16 more.
 - **2026-07-22 23:00** — provider `coreweave` changed its terms of service url.
 - **2026-07-22 23:00** — provider `coreweave` changed its privacy policy url.
 - **2026-07-23 02:32** — **25 models removed from the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, +17 more.
@@ -114,6 +112,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-07-28 00:00** — provider `voyageai` changed its terms of service url.
 - **2026-07-28 00:00** — provider `voyageai` changed its privacy policy url.
 - **2026-07-28 16:39** — **28 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-haiku-4.5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-opus-5:batch`, +20 more.
+- **2026-07-30 15:51** — provider `phala` changed its terms of service url.
+- **2026-07-30 15:51** — provider `phala` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

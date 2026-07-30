@@ -69,31 +69,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-30T02:08:17+00:00 UTC)
+## Current status (2026-07-30T05:38:10+00:00 UTC)
 
-330 models polled, 1032 inference endpoints:
-up 628, degraded 150, down 16, idle 238.
+330 models polled, 1033 inference endpoints:
+up 643, degraded 148, down 15, idle 227.
 
-Currently down (16):
+Currently down (15):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 39% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Google | 69% | n/a |
-| `google/gemma-3-27b-it` | Novita | 78% | 75% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 52% | 83% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 53% | n/a |
-| `minimax/minimax-m3` | Venice | 53% | n/a |
-| `moonshotai/kimi-k2.6` | Fireworks | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 76% | 99% |
-| `openai/gpt-oss-120b` | Mancer 2 | 74% | n/a |
-| `openai/gpt-oss-20b` | Google | 62% | 55% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 22% | 33% |
+| `anthropic/claude-fable-5` | Anthropic | 65% | n/a |
+| `anthropic/claude-fable-5` | Google | 52% | 81% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 61% | 99% |
+| `deepseek/deepseek-v4-pro` | BaseTen | 78% | 89% |
+| `google/gemma-3-27b-it` | Novita | 66% | 100% |
+| `google/gemma-4-26b-a4b-it` | SiliconFlow | 48% | n/a |
+| `mistralai/mistral-nemo` | Novita | 76% | 87% |
+| `moonshotai/kimi-k2.6` | Venice | 74% | n/a |
+| `openai/gpt-oss-120b` | SiliconFlow | 46% | 22% |
+| `openai/gpt-oss-120b` | Mancer 2 | 49% | n/a |
+| `openai/gpt-oss-20b` | Google | 54% | n/a |
 | `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | SiliconFlow | 73% | n/a |
-| `tencent/hy3` | GMICloud | 51% | 48% |
-| `xiaomi/mimo-v2.5-pro` | GMICloud | 79% | 65% |
-| `xiaomi/mimo-v2.5-pro` | DeepInfra | 75% | 100% |
-| plus 1 more | | | |
+| `xiaomi/mimo-v2.5-pro` | GMICloud | 79% | 92% |
+| `z-ai/glm-5.1` | Nebius | 61% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-30T21:06:33+00:00 UTC)
+## Current status (2026-07-30T23:03:56+00:00 UTC)
 
 327 models polled, 1032 inference endpoints:
-up 644, degraded 142, down 27, idle 219.
+up 660, degraded 120, down 22, idle 230.
 
-Currently down (27):
+Currently down (22):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 24% | 19% |
-| `anthropic/claude-fable-5` | Anthropic | 75% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 77% | 68% |
-| `deepseek/deepseek-v4-flash` | Ambient | 63% | 100% |
-| `deepseek/deepseek-v4-pro` | BaseTen | 8% | 10% |
-| `deepseek/deepseek-v4-pro` | Together | 53% | 48% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 16% | n/a |
-| `google/gemma-4-31b-it` | SiliconFlow | 0% | 0% |
-| `google/gemma-4-31b-it` | Together | 79% | 90% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 61% | 66% |
-| `minimax/minimax-m2.7` | DeepInfra | 61% | n/a |
-| `mistralai/mistral-nemo` | Novita | 52% | 98% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Venice | 78% | 25% |
-| `moonshotai/kimi-k2.6` | Decart | 75% | 76% |
-| `moonshotai/kimi-k2.6` | ModelRun | 43% | 100% |
-| plus 12 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 16% | 18% |
+| `anthropic/claude-fable-5` | Anthropic | 79% | 83% |
+| `deepseek/deepseek-chat-v3.1` | Google | 67% | n/a |
+| `deepseek/deepseek-v4-flash` | Ionstream | 78% | 74% |
+| `deepseek/deepseek-v4-pro` | BaseTen | 55% | 14% |
+| `google/gemma-3-27b-it` | Nebius | 53% | 37% |
+| `google/gemma-4-26b-a4b-it` | Google | 55% | 37% |
+| `minimax/minimax-m3` | DeepInfra | 73% | n/a |
+| `mistralai/mistral-nemo` | Novita | 26% | 100% |
+| `moonshotai/kimi-k2.6` | Decart | 80% | n/a |
+| `moonshotai/kimi-k2.6` | ModelRun | 35% | 63% |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `openai/gpt-5.1` | OpenAI | 80% | 99% |
+| `openai/gpt-5.1` | OpenAI | 80% | 99% |
+| `openai/gpt-5.1` | OpenAI | 80% | 99% |
+| plus 7 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-30T17:24:07+00:00 UTC)
+## Current status (2026-07-30T19:21:53+00:00 UTC)
 
-330 models polled, 1036 inference endpoints:
-up 629, degraded 174, down 28, idle 205.
+327 models polled, 1033 inference endpoints:
+up 635, degraded 156, down 31, idle 211.
 
-Currently down (28):
+Currently down (31):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 11% | 9% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 74% | 100% |
-| `anthropic/claude-fable-5` | Anthropic | 70% | 53% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 48% | 88% |
-| `deepseek/deepseek-v4-flash` | Baidu | 58% | 99% |
-| `deepseek/deepseek-v4-flash` | Ionstream | 44% | 100% |
-| `deepseek/deepseek-v4-flash` | Ambient | 67% | 100% |
-| `google/gemini-2.5-pro` | Google | 7% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 7% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 8% | n/a |
-| `google/gemma-4-31b-it` | Together | 75% | 80% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | 83% |
-| `mistralai/mistral-nemo` | Novita | 50% | 34% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `openai/gpt-5.2-codex` | OpenAI | 0% | 0% |
-| plus 13 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 29% | 40% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 73% | 73% |
+| `anthropic/claude-fable-5` | Anthropic | 75% | n/a |
+| `deepseek/deepseek-v4-flash` | Ionstream | 65% | 39% |
+| `deepseek/deepseek-v4-flash` | Ambient | 78% | 66% |
+| `google/gemini-2.5-pro` | Google | 19% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 19% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 19% | n/a |
+| `google/gemma-3-27b-it` | Novita | 75% | 100% |
+| `google/gemma-4-31b-it` | SiliconFlow | 45% | 100% |
+| `google/gemma-4-31b-it` | Together | 80% | 82% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 61% | 66% |
+| `minimax/minimax-m2.7` | DeepInfra | 58% | n/a |
+| `mistralai/mistral-nemo` | Novita | 38% | 78% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Venice | 79% | 20% |
+| plus 16 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -102,7 +102,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-22 23:00** — provider `coreweave` changed its terms of service url.
 - **2026-07-22 23:00** — provider `coreweave` changed its privacy policy url.
 - **2026-07-23 02:32** — **25 models removed from the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, +17 more.
 - **2026-07-23 23:58** — provider `wandb` left the platform.
@@ -114,6 +113,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-07-28 16:39** — **28 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-haiku-4.5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-opus-5:batch`, +20 more.
 - **2026-07-30 15:51** — provider `phala` changed its terms of service url.
 - **2026-07-30 15:51** — provider `phala` changed its privacy policy url.
+- **2026-07-30 19:21** — **3 models removed from the catalog in one poll**: `openai/gpt-5-codex`, `openai/o3-deep-research`, `openai/o4-mini-deep-research`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

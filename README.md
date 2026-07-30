@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-30T19:21:53+00:00 UTC)
+## Current status (2026-07-30T21:06:33+00:00 UTC)
 
-327 models polled, 1033 inference endpoints:
-up 635, degraded 156, down 31, idle 211.
+327 models polled, 1032 inference endpoints:
+up 644, degraded 142, down 27, idle 219.
 
-Currently down (31):
+Currently down (27):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 29% | 40% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 73% | 73% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 24% | 19% |
 | `anthropic/claude-fable-5` | Anthropic | 75% | n/a |
-| `deepseek/deepseek-v4-flash` | Ionstream | 65% | 39% |
-| `deepseek/deepseek-v4-flash` | Ambient | 78% | 66% |
-| `google/gemini-2.5-pro` | Google | 19% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 19% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 19% | n/a |
-| `google/gemma-3-27b-it` | Novita | 75% | 100% |
-| `google/gemma-4-31b-it` | SiliconFlow | 45% | 100% |
-| `google/gemma-4-31b-it` | Together | 80% | 82% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 77% | 68% |
+| `deepseek/deepseek-v4-flash` | Ambient | 63% | 100% |
+| `deepseek/deepseek-v4-pro` | BaseTen | 8% | 10% |
+| `deepseek/deepseek-v4-pro` | Together | 53% | 48% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 16% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 0% | 0% |
+| `google/gemma-4-31b-it` | Together | 79% | 90% |
 | `meta-llama/llama-3.3-70b-instruct` | Nebius | 61% | 66% |
-| `minimax/minimax-m2.7` | DeepInfra | 58% | n/a |
-| `mistralai/mistral-nemo` | Novita | 38% | 78% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Venice | 79% | 20% |
-| plus 16 more | | | |
+| `minimax/minimax-m2.7` | DeepInfra | 61% | n/a |
+| `mistralai/mistral-nemo` | Novita | 52% | 98% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Venice | 78% | 25% |
+| `moonshotai/kimi-k2.6` | Decart | 75% | 76% |
+| `moonshotai/kimi-k2.6` | ModelRun | 43% | 100% |
+| plus 12 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

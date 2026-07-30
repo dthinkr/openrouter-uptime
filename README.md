@@ -69,30 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-30T05:38:10+00:00 UTC)
+## Current status (2026-07-30T08:22:04+00:00 UTC)
 
 330 models polled, 1033 inference endpoints:
-up 643, degraded 148, down 15, idle 227.
+up 607, degraded 200, down 33, idle 193.
 
-Currently down (15):
+Currently down (33):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 22% | 33% |
-| `anthropic/claude-fable-5` | Anthropic | 65% | n/a |
-| `anthropic/claude-fable-5` | Google | 52% | 81% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 61% | 99% |
-| `deepseek/deepseek-v4-pro` | BaseTen | 78% | 89% |
-| `google/gemma-3-27b-it` | Novita | 66% | 100% |
-| `google/gemma-4-26b-a4b-it` | SiliconFlow | 48% | n/a |
-| `mistralai/mistral-nemo` | Novita | 76% | 87% |
-| `moonshotai/kimi-k2.6` | Venice | 74% | n/a |
-| `openai/gpt-oss-120b` | SiliconFlow | 46% | 22% |
-| `openai/gpt-oss-120b` | Mancer 2 | 49% | n/a |
-| `openai/gpt-oss-20b` | Google | 54% | n/a |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `xiaomi/mimo-v2.5-pro` | GMICloud | 79% | 92% |
-| `z-ai/glm-5.1` | Nebius | 61% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 7% | 100% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 70% | 100% |
+| `anthropic/claude-fable-5` | Anthropic | 79% | 57% |
+| `anthropic/claude-opus-4.6` | Anthropic | 60% | 96% |
+| `anthropic/claude-sonnet-4.5` | Anthropic | 79% | 94% |
+| `anthropic/claude-sonnet-4.5` | Amazon Bedrock | 79% | 96% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 69% | 99% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 79% | 84% |
+| `deepseek/deepseek-v4-pro` | BaseTen | 62% | n/a |
+| `google/gemini-2.5-pro` | Google | 19% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 19% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 19% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 61% | 24% |
+| `google/gemma-3-27b-it` | Novita | 76% | 56% |
+| `google/gemma-4-26b-a4b-it` | Ionstream | 66% | 93% |
+| plus 18 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

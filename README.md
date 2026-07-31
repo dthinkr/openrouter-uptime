@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-31T11:57:35+00:00 UTC)
+## Current status (2026-07-31T14:18:05+00:00 UTC)
 
-328 models polled, 1038 inference endpoints:
-up 654, degraded 131, down 24, idle 229.
+327 models polled, 1035 inference endpoints:
+up 664, degraded 136, down 23, idle 212.
 
-Currently down (24):
+Currently down (23):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 50% | n/a |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 8% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 67% | 100% |
-| `deepseek/deepseek-v4-flash` | AkashML | 71% | 46% |
-| `deepseek/deepseek-v4-flash` | Ionstream | 45% | 100% |
-| `deepseek/deepseek-v4-flash` | Ambient | 76% | 72% |
-| `google/gemini-2.5-flash` | Google | 73% | 90% |
-| `google/gemma-3-27b-it` | Novita | 68% | 100% |
-| `google/gemma-4-31b-it` | Chutes | 68% | 78% |
-| `google/gemma-4-31b-it` | Crusoe | 72% | n/a |
-| `google/gemma-4-31b-it` | Together | 77% | 24% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 73% | n/a |
-| `mistralai/mistral-nemo` | Novita | 65% | 100% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 70% | 89% |
-| `openai/gpt-4.1` | OpenAI | 69% | 100% |
-| plus 9 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 12% | 6% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 76% | 87% |
+| `deepseek/deepseek-v4-flash` | AkashML | 40% | 30% |
+| `deepseek/deepseek-v4-flash` | Ionstream | 56% | 100% |
+| `deepseek/deepseek-v4-flash` | Ambient | 73% | 99% |
+| `google/gemini-2.5-flash` | Google | 75% | 67% |
+| `google/gemini-2.5-flash` | Google | 77% | 72% |
+| `google/gemma-3-27b-it` | Nebius | 58% | 100% |
+| `google/gemma-3-27b-it` | Novita | 71% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 76% | n/a |
+| `mistralai/mistral-nemo` | Novita | 69% | 68% |
+| `moonshotai/kimi-k2.6` | Venice | 75% | 0% |
+| `moonshotai/kimi-k3` | Morph | 78% | 64% |
+| `openai/gpt-oss-120b` | Novita | 39% | 79% |
+| `openai/gpt-oss-120b` | Mancer 2 | 69% | n/a |
+| plus 8 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-31T22:02:41+00:00 UTC)
+## Current status (2026-07-31T23:59:38+00:00 UTC)
 
-327 models polled, 1039 inference endpoints:
-up 668, degraded 107, down 21, idle 243.
+327 models polled, 1043 inference endpoints:
+up 661, degraded 112, down 23, idle 247.
 
-Currently down (21):
+Currently down (23):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 14% | 29% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 67% | 57% |
-| `google/gemini-2.5-flash` | Google | 49% | 73% |
-| `google/gemma-3-27b-it` | Nebius | 61% | 100% |
-| `google/gemma-3-27b-it` | Novita | 76% | 70% |
-| `google/gemma-4-31b-it` | SiliconFlow | 57% | 100% |
-| `google/gemma-4-31b-it` | Together | 71% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 64% | 64% |
-| `mistralai/mistral-nemo` | Novita | 74% | 64% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 48% | 100% |
+| `anthropic/claude-fable-5` | Anthropic | 63% | 84% |
+| `anthropic/claude-fable-5` | Google | 76% | 52% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 59% | 88% |
+| `deepseek/deepseek-v4-flash` | Ionstream | 67% | 100% |
+| `google/gemini-2.5-flash` | Google | 61% | 54% |
+| `google/gemma-3-27b-it` | Nebius | 70% | 90% |
+| `google/gemma-3-27b-it` | Novita | 74% | 82% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 72% | n/a |
+| `minimax/minimax-m2.1` | Novita | 57% | 53% |
+| `minimax/minimax-m2.1` | Minimax | 35% | 39% |
+| `mistralai/mistral-nemo` | Novita | 78% | 99% |
+| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
 | `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | Together | 74% | 93% |
-| `openai/gpt-5.6-sol` | OpenAI | 41% | 24% |
-| `openai/gpt-5.6-sol` | OpenAI | 41% | 24% |
-| `openai/gpt-5.6-sol` | OpenAI | 41% | 24% |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| plus 6 more | | | |
+| `openai/gpt-oss-120b` | SiliconFlow | 62% | 64% |
+| plus 8 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

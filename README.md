@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-31T02:36:00+00:00 UTC)
+## Current status (2026-07-31T06:10:50+00:00 UTC)
 
-327 models polled, 1035 inference endpoints:
-up 645, degraded 130, down 23, idle 237.
+327 models polled, 1036 inference endpoints:
+up 614, degraded 160, down 22, idle 240.
 
-Currently down (23):
+Currently down (22):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 36% | n/a |
-| `deepseek/deepseek-v4-flash` | AkashML | 75% | 94% |
-| `google/gemini-2.5-flash` | Google | 71% | 91% |
-| `google/gemini-2.5-pro` | Google | 8% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 8% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 8% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 61% | n/a |
-| `mistralai/mistral-nemo` | Novita | 24% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | Venice | 70% | 78% |
-| `moonshotai/kimi-k2.5` | Venice | 79% | n/a |
-| `openai/gpt-5-mini` | OpenAI | 71% | 70% |
-| `openai/gpt-5-mini` | OpenAI | 71% | 70% |
-| `openai/gpt-5.4-mini` | OpenAI | 78% | 65% |
-| `openai/gpt-5.4-mini` | OpenAI | 78% | 65% |
-| `openai/gpt-5.4-mini` | OpenAI | 78% | 65% |
-| plus 8 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 16% | 17% |
+| `anthropic/claude-opus-4.8` | Anthropic | 11% | n/a |
+| `deepseek/deepseek-chat` | DeepInfra | 58% | 61% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 92% |
+| `deepseek/deepseek-chat-v3.1` | Google | 73% | n/a |
+| `deepseek/deepseek-v4-flash` | AkashML | 79% | 71% |
+| `deepseek/deepseek-v4-pro` | Together | 78% | 92% |
+| `google/gemini-2.5-flash` | Google | 75% | 44% |
+| `google/gemma-3-27b-it` | Nebius | 73% | 83% |
+| `google/gemma-4-31b-it` | SiliconFlow | 18% | 100% |
+| `mistralai/mistral-nemo` | Novita | 73% | 99% |
+| `mistralai/mistral-small-3.2-24b-instruct` | Venice | 67% | 78% |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | Fireworks | 80% | 89% |
+| `moonshotai/kimi-k3` | Wafer | 71% | n/a |
+| plus 7 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

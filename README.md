@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-31T20:18:04+00:00 UTC)
+## Current status (2026-07-31T22:02:41+00:00 UTC)
 
-327 models polled, 1035 inference endpoints:
-up 671, degraded 109, down 27, idle 228.
+327 models polled, 1039 inference endpoints:
+up 668, degraded 107, down 21, idle 243.
 
-Currently down (27):
+Currently down (21):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 24% | 100% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 71% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 74% | 88% |
-| `deepseek/deepseek-v4-flash` | Ionstream | 55% | 100% |
-| `deepseek/deepseek-v4-flash` | CoreWeave | 50% | 80% |
-| `google/gemini-2.5-flash` | Google | 35% | 67% |
-| `google/gemini-2.5-pro-preview` | Google | 41% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 73% | 100% |
-| `google/gemma-4-31b-it` | SiliconFlow | 62% | n/a |
-| `mistralai/mistral-nemo` | Novita | 74% | 68% |
-| `moonshotai/kimi-k2.6` | Fireworks | 0% | n/a |
-| `openai/gpt-5.4` | OpenAI | 48% | 57% |
-| `openai/gpt-5.4` | OpenAI | 48% | 57% |
-| `openai/gpt-5.4` | OpenAI | 48% | 57% |
-| `openai/gpt-5.6-sol` | OpenAI | 36% | 31% |
-| plus 12 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 14% | 29% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 67% | 57% |
+| `google/gemini-2.5-flash` | Google | 49% | 73% |
+| `google/gemma-3-27b-it` | Nebius | 61% | 100% |
+| `google/gemma-3-27b-it` | Novita | 76% | 70% |
+| `google/gemma-4-31b-it` | SiliconFlow | 57% | 100% |
+| `google/gemma-4-31b-it` | Together | 71% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 64% | 64% |
+| `mistralai/mistral-nemo` | Novita | 74% | 64% |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | Together | 74% | 93% |
+| `openai/gpt-5.6-sol` | OpenAI | 41% | 24% |
+| `openai/gpt-5.6-sol` | OpenAI | 41% | 24% |
+| `openai/gpt-5.6-sol` | OpenAI | 41% | 24% |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| plus 6 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

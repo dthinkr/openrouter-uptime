@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-31T16:43:36+00:00 UTC)
+## Current status (2026-07-31T18:18:30+00:00 UTC)
 
-327 models polled, 1033 inference endpoints:
-up 641, degraded 148, down 33, idle 211.
+327 models polled, 1034 inference endpoints:
+up 658, degraded 127, down 23, idle 226.
 
-Currently down (33):
+Currently down (23):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 16% | 45% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 57% | 81% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 75% | n/a |
-| `deepseek/deepseek-v3.2-exp` | SiliconFlow | 74% | 76% |
-| `deepseek/deepseek-v4-flash` | AkashML | 35% | 80% |
-| `deepseek/deepseek-v4-flash` | Ionstream | 36% | 37% |
-| `deepseek/deepseek-v4-pro` | CoreWeave | n/a | n/a |
-| `google/gemma-4-31b-it` | Chutes | 34% | 98% |
-| `google/gemma-4-31b-it` | SiliconFlow | 6% | 100% |
-| `google/gemma-4-31b-it` | Novita | 73% | 86% |
-| `google/gemma-4-31b-it` | Together | 72% | 99% |
-| `meta-llama/llama-3.1-70b-instruct` | CoreWeave | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 58% | 65% |
-| `minimax/minimax-m2.5` | CoreWeave | n/a | n/a |
-| plus 18 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 26% | 38% |
+| `anthropic/claude-fable-5` | Anthropic | 80% | 79% |
+| `anthropic/claude-opus-4.8` | Anthropic | 78% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 66% | 75% |
+| `deepseek/deepseek-v4-flash` | AkashML | 68% | 81% |
+| `deepseek/deepseek-v4-flash` | Ionstream | 42% | 67% |
+| `google/gemini-2.5-pro` | Google | 53% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 53% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 53% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 2% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | n/a |
+| `mistralai/mistral-nemo` | Novita | 78% | 60% |
+| `moonshotai/kimi-k3` | Fireworks | 77% | n/a |
+| `openai/gpt-4.1` | OpenAI | 78% | 99% |
+| `openai/gpt-oss-120b` | Novita | 1% | n/a |
+| plus 8 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

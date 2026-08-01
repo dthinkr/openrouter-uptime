@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T19:18:14+00:00 UTC)
+## Current status (2026-08-01T20:48:57+00:00 UTC)
 
 328 models polled, 1048 inference endpoints:
-up 668, degraded 118, down 26, idle 236.
+up 664, degraded 101, down 34, idle 249.
 
-Currently down (26):
+Currently down (34):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 23% | 18% |
-| `anthropic/claude-fable-5` | Anthropic | 53% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 85% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 72% | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 73% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `google/gemma-4-31b-it` | Together | 70% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 63% | 74% |
-| `minimax/minimax-m3` | DeepInfra | 66% | 100% |
-| `mistralai/mistral-nemo` | Novita | 64% | 68% |
-| `moonshotai/kimi-k3` | Fireworks | 70% | 87% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 77% | 92% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 57% | n/a |
-| `openai/gpt-5-mini` | OpenAI | 74% | 78% |
-| `openai/gpt-5-mini` | OpenAI | 74% | 78% |
-| plus 11 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 18% | 9% |
+| `anthropic/claude-fable-5` | Azure | 76% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 60% | n/a |
+| `anthropic/claude-fable-5` | Google | 65% | 65% |
+| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 0% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 67% | 88% |
+| `google/gemma-4-31b-it` | SiliconFlow | 53% | 100% |
+| `google/gemma-4-31b-it` | Together | 67% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 47% | 47% |
+| `minimax/minimax-m2.1` | Novita | 78% | 71% |
+| `minimax/minimax-m2.1` | Minimax | 52% | 46% |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | DigitalOcean | 78% | 100% |
+| `moonshotai/kimi-k3` | Fireworks | 75% | 85% |
+| plus 19 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

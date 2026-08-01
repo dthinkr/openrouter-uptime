@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T03:41:23+00:00 UTC)
+## Current status (2026-08-01T06:26:41+00:00 UTC)
 
 327 models polled, 1045 inference endpoints:
-up 672, degraded 111, down 27, idle 235.
+up 651, degraded 124, down 17, idle 253.
 
-Currently down (27):
+Currently down (17):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 17% | 7% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 75% | 100% |
-| `anthropic/claude-fable-5` | Anthropic | 75% | 71% |
-| `anthropic/claude-fable-5` | Google | 79% | 82% |
-| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `google/gemini-2.5-pro` | Google | 21% | n/a |
-| `google/gemini-2.5-pro` | Google | 7% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 21% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 7% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 25% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 79% | 100% |
-| `google/gemma-4-31b-it` | Together | 63% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 66% | 60% |
-| `minimax/minimax-m2.1` | Novita | 71% | 77% |
-| `minimax/minimax-m2.1` | Minimax | 71% | n/a |
-| plus 12 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 13% | 6% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 75% | 93% |
+| `anthropic/claude-fable-5` | Google | 76% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 0% | n/a |
+| `google/gemma-4-31b-it` | Together | 69% | n/a |
+| `minimax/minimax-m2.1` | Minimax | 78% | n/a |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | Novita | 70% | 63% |
+| `moonshotai/kimi-k2.5` | SiliconFlow | 71% | 100% |
+| `moonshotai/kimi-k2.6` | SiliconFlow | 79% | 100% |
+| `moonshotai/kimi-k2.6` | Fireworks | 5% | n/a |
+| `openai/gpt-oss-120b` | SiliconFlow | 73% | 47% |
+| `openai/gpt-oss-20b` | Parasail | 77% | 72% |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `xiaomi/mimo-v2.5` | GMICloud | 57% | 7% |
+| plus 2 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T16:04:43+00:00 UTC)
+## Current status (2026-08-01T17:58:21+00:00 UTC)
 
 327 models polled, 1047 inference endpoints:
-up 653, degraded 113, down 24, idle 257.
+up 694, degraded 102, down 28, idle 223.
 
-Currently down (24):
+Currently down (28):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 24% | 59% |
-| `anthropic/claude-fable-5` | Anthropic | 78% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 0% | n/a |
-| `google/gemini-2.5-flash` | Google | 77% | 76% |
-| `google/gemma-4-31b-it` | Chutes | 70% | 26% |
-| `google/gemma-4-31b-it` | Together | 74% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 57% | 59% |
-| `meta-llama/llama-4-maverick` | DigitalOcean | 1% | 3% |
-| `minimax/minimax-m2.5` | Phala | n/a | n/a |
-| `mistralai/mistral-nemo` | Novita | 60% | 91% |
-| `moonshotai/kimi-k3` | Wafer | 76% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 34% | 39% |
-| `openai/gpt-5-mini` | OpenAI | 71% | 77% |
-| `openai/gpt-5-mini` | OpenAI | 71% | 77% |
-| `openai/gpt-oss-120b` | SiliconFlow | 43% | 84% |
-| plus 9 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 79% | 66% |
+| `anthropic/claude-fable-5` | Anthropic | 70% | 56% |
+| `deepseek/deepseek-chat-v3.1` | Google | 68% | n/a |
+| `deepseek/deepseek-v3.2` | Venice | 53% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
+| `google/gemma-4-31b-it` | Together | 65% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 78% | 100% |
+| `minimax/minimax-m2.5` | Phala | n/a | 0% |
+| `mistralai/mistral-nemo` | Novita | 57% | 47% |
+| `moonshotai/kimi-k2.5` | Venice | 45% | 100% |
+| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
+| `moonshotai/kimi-k2.6` | Venice | 61% | n/a |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | Wafer | 78% | 97% |
+| `openai/gpt-5-mini` | OpenAI | 63% | 68% |
+| plus 13 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

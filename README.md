@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T11:14:42+00:00 UTC)
+## Current status (2026-08-01T13:14:37+00:00 UTC)
 
 327 models polled, 1045 inference endpoints:
-up 652, degraded 107, down 25, idle 261.
+up 631, degraded 139, down 24, idle 251.
 
-Currently down (25):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 48% | n/a |
-| `anthropic/claude-fable-5` | Azure | 73% | 48% |
-| `anthropic/claude-fable-5` | Anthropic | 78% | 61% |
-| `anthropic/claude-fable-5` | Google | 80% | 93% |
-| `deepseek/deepseek-v3.2` | Venice | 72% | 43% |
-| `deepseek/deepseek-v4-flash` | Morph | 74% | 86% |
-| `deepseek/deepseek-v4-flash` | Io Net | 72% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `google/gemma-4-31b-it` | SiliconFlow | 59% | 11% |
-| `google/gemma-4-31b-it` | ModelRun | 65% | 6% |
-| `google/gemma-4-31b-it` | Together | 71% | 94% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | n/a |
-| `minimax/minimax-m2.1` | Minimax | 65% | n/a |
-| `minimax/minimax-m2.1` | Minimax | 55% | n/a |
-| `minimax/minimax-m2.5` | Phala | n/a | n/a |
-| plus 10 more | | | |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 59% | 100% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 10% | 98% |
+| `anthropic/claude-fable-5` | Google | 79% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 40% | n/a |
+| `deepseek/deepseek-chat-v3.1` | SiliconFlow | 73% | 56% |
+| `deepseek/deepseek-r1-0528` | SiliconFlow | 47% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | SiliconFlow | 79% | 45% |
+| `deepseek/deepseek-v3.2` | Venice | 58% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 0% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 78% | 76% |
+| `google/gemma-4-31b-it` | ModelRun | 73% | 100% |
+| `google/gemma-4-31b-it` | Together | 66% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 57% | n/a |
+| `minimax/minimax-m2.1` | Novita | 49% | n/a |
+| `minimax/minimax-m2.1` | Minimax | 76% | 71% |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

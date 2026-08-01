@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T22:52:50+00:00 UTC)
+## Current status (2026-08-01T23:56:56+00:00 UTC)
 
 328 models polled, 1048 inference endpoints:
-up 658, degraded 103, down 26, idle 261.
+up 653, degraded 115, down 24, idle 256.
 
-Currently down (26):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 22% | 53% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 75% | 66% |
-| `anthropic/claude-fable-5` | Anthropic | 71% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 76% | 39% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 33% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 77% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 69% | 88% |
+| `deepseek/deepseek-chat-v3.1` | Google | 68% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 72% | n/a |
-| `mistralai/mistral-nemo` | Novita | 53% | 46% |
-| `moonshotai/kimi-k2.5` | SiliconFlow | 76% | 68% |
-| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
-| `moonshotai/kimi-k3` | Fireworks | 77% | 76% |
-| `openai/gpt-5-mini` | OpenAI | 65% | 69% |
-| `openai/gpt-5-mini` | OpenAI | 65% | 69% |
-| `openai/gpt-5.4-mini` | OpenAI | 24% | 20% |
-| `openai/gpt-5.4-mini` | OpenAI | 24% | 20% |
-| `openai/gpt-5.4-mini` | OpenAI | 24% | 20% |
-| plus 11 more | | | |
+| `google/gemini-2.5-pro` | Google | 80% | 99% |
+| `google/gemini-2.5-pro-preview` | Google | 80% | 99% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 80% | 99% |
+| `google/gemma-4-26b-a4b-it` | Ionstream | 80% | 77% |
+| `google/gemma-4-26b-a4b-it` | Venice | 62% | 59% |
+| `google/gemma-4-26b-a4b-it` | Google | 55% | 41% |
+| `google/gemma-4-31b-it` | Together | 68% | 64% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | 81% |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | Novita | 62% | 93% |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

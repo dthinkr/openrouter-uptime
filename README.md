@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-07-31T23:59:38+00:00 UTC)
+## Current status (2026-08-01T03:41:23+00:00 UTC)
 
-327 models polled, 1043 inference endpoints:
-up 661, degraded 112, down 23, idle 247.
+327 models polled, 1045 inference endpoints:
+up 672, degraded 111, down 27, idle 235.
 
-Currently down (23):
+Currently down (27):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 48% | 100% |
-| `anthropic/claude-fable-5` | Anthropic | 63% | 84% |
-| `anthropic/claude-fable-5` | Google | 76% | 52% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 59% | 88% |
-| `deepseek/deepseek-v4-flash` | Ionstream | 67% | 100% |
-| `google/gemini-2.5-flash` | Google | 61% | 54% |
-| `google/gemma-3-27b-it` | Nebius | 70% | 90% |
-| `google/gemma-3-27b-it` | Novita | 74% | 82% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 72% | n/a |
-| `minimax/minimax-m2.1` | Novita | 57% | 53% |
-| `minimax/minimax-m2.1` | Minimax | 35% | 39% |
-| `mistralai/mistral-nemo` | Novita | 78% | 99% |
-| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | SiliconFlow | 62% | 64% |
-| plus 8 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 17% | 7% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 75% | 100% |
+| `anthropic/claude-fable-5` | Anthropic | 75% | 71% |
+| `anthropic/claude-fable-5` | Google | 79% | 82% |
+| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
+| `google/gemini-2.5-pro` | Google | 21% | n/a |
+| `google/gemini-2.5-pro` | Google | 7% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 21% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 7% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 25% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 79% | 100% |
+| `google/gemma-4-31b-it` | Together | 63% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 66% | 60% |
+| `minimax/minimax-m2.1` | Novita | 71% | 77% |
+| `minimax/minimax-m2.1` | Minimax | 71% | n/a |
+| plus 12 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

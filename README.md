@@ -69,31 +69,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T06:26:41+00:00 UTC)
+## Current status (2026-08-01T09:04:22+00:00 UTC)
 
 327 models polled, 1045 inference endpoints:
-up 651, degraded 124, down 17, idle 253.
+up 737, degraded 101, down 13, idle 194.
 
-Currently down (17):
+Currently down (13):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 13% | 6% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 75% | 93% |
-| `anthropic/claude-fable-5` | Google | 76% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 0% | n/a |
-| `google/gemma-4-31b-it` | Together | 69% | n/a |
-| `minimax/minimax-m2.1` | Minimax | 78% | n/a |
-| `minimax/minimax-m2.5` | Phala | n/a | n/a |
-| `mistralai/mistral-nemo` | Novita | 70% | 63% |
-| `moonshotai/kimi-k2.5` | SiliconFlow | 71% | 100% |
-| `moonshotai/kimi-k2.6` | SiliconFlow | 79% | 100% |
-| `moonshotai/kimi-k2.6` | Fireworks | 5% | n/a |
-| `openai/gpt-oss-120b` | SiliconFlow | 73% | 47% |
-| `openai/gpt-oss-20b` | Parasail | 77% | 72% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 35% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
+| `google/gemma-4-31b-it` | Together | 79% | 75% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 61% | 58% |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `openai/gpt-oss-120b` | SiliconFlow | 76% | 60% |
+| `openai/gpt-oss-120b` | Mancer 2 | 71% | 88% |
+| `openai/gpt-oss-120b` | Phala | 0% | n/a |
 | `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `xiaomi/mimo-v2.5` | GMICloud | 57% | 7% |
-| plus 2 more | | | |
+| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 79% | 71% |
+| `qwen/qwen3.6-35b-a3b` | Phala | 79% | 63% |
+| `x-ai/grok-4.20-multi-agent` | xAI | 78% | n/a |
+| `x-ai/grok-4.20-multi-agent` | xAI | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

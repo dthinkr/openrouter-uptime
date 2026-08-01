@@ -69,28 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T09:04:22+00:00 UTC)
+## Current status (2026-08-01T11:14:42+00:00 UTC)
 
 327 models polled, 1045 inference endpoints:
-up 737, degraded 101, down 13, idle 194.
+up 652, degraded 107, down 25, idle 261.
 
-Currently down (13):
+Currently down (25):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 35% | n/a |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 48% | n/a |
+| `anthropic/claude-fable-5` | Azure | 73% | 48% |
+| `anthropic/claude-fable-5` | Anthropic | 78% | 61% |
+| `anthropic/claude-fable-5` | Google | 80% | 93% |
+| `deepseek/deepseek-v3.2` | Venice | 72% | 43% |
+| `deepseek/deepseek-v4-flash` | Morph | 74% | 86% |
+| `deepseek/deepseek-v4-flash` | Io Net | 72% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `google/gemma-4-31b-it` | Together | 79% | 75% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 61% | 58% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | SiliconFlow | 76% | 60% |
-| `openai/gpt-oss-120b` | Mancer 2 | 71% | 88% |
-| `openai/gpt-oss-120b` | Phala | 0% | n/a |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 79% | 71% |
-| `qwen/qwen3.6-35b-a3b` | Phala | 79% | 63% |
-| `x-ai/grok-4.20-multi-agent` | xAI | 78% | n/a |
-| `x-ai/grok-4.20-multi-agent` | xAI | 78% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 59% | 11% |
+| `google/gemma-4-31b-it` | ModelRun | 65% | 6% |
+| `google/gemma-4-31b-it` | Together | 71% | 94% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | n/a |
+| `minimax/minimax-m2.1` | Minimax | 65% | n/a |
+| `minimax/minimax-m2.1` | Minimax | 55% | n/a |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| plus 10 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T21:52:56+00:00 UTC)
+## Current status (2026-08-01T22:52:50+00:00 UTC)
 
 328 models polled, 1048 inference endpoints:
-up 666, degraded 97, down 18, idle 267.
+up 658, degraded 103, down 26, idle 261.
 
-Currently down (18):
+Currently down (26):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 38% | 30% |
-| `anthropic/claude-fable-5` | Google | 68% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 22% | 53% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 75% | 66% |
+| `anthropic/claude-fable-5` | Anthropic | 71% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 76% | 39% |
 | `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 66% | n/a |
-| `mistralai/mistral-nemo` | Novita | 63% | 100% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | DeepInfra | 75% | 99% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 67% | n/a |
-| `openai/gpt-5-mini` | OpenAI | 62% | 64% |
-| `openai/gpt-5-mini` | OpenAI | 62% | 64% |
-| `openai/gpt-5.4-mini` | OpenAI | 25% | 24% |
-| `openai/gpt-5.4-mini` | OpenAI | 25% | 24% |
-| `openai/gpt-5.4-mini` | OpenAI | 25% | 24% |
-| `qwen/qwen3-14b` | Alibaba | 69% | 84% |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| plus 3 more | | | |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 72% | n/a |
+| `mistralai/mistral-nemo` | Novita | 53% | 46% |
+| `moonshotai/kimi-k2.5` | SiliconFlow | 76% | 68% |
+| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
+| `moonshotai/kimi-k3` | Fireworks | 77% | 76% |
+| `openai/gpt-5-mini` | OpenAI | 65% | 69% |
+| `openai/gpt-5-mini` | OpenAI | 65% | 69% |
+| `openai/gpt-5.4-mini` | OpenAI | 24% | 20% |
+| `openai/gpt-5.4-mini` | OpenAI | 24% | 20% |
+| `openai/gpt-5.4-mini` | OpenAI | 24% | 20% |
+| plus 11 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

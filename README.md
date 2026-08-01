@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T14:58:05+00:00 UTC)
+## Current status (2026-08-01T16:04:43+00:00 UTC)
 
-327 models polled, 1046 inference endpoints:
-up 643, degraded 127, down 21, idle 255.
+327 models polled, 1047 inference endpoints:
+up 653, degraded 113, down 24, idle 257.
 
-Currently down (21):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 21% | 100% |
-| `anthropic/claude-fable-5` | Google | 79% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 83% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | n/a | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 12% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `google/gemma-4-31b-it` | Chutes | 65% | 15% |
-| `google/gemma-4-31b-it` | Together | 75% | 69% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 64% | n/a |
-| `meta-llama/llama-4-maverick` | DigitalOcean | 79% | 48% |
-| `minimax/minimax-m2.1` | Novita | 78% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 24% | 59% |
+| `anthropic/claude-fable-5` | Anthropic | 78% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 0% | n/a |
+| `google/gemini-2.5-flash` | Google | 77% | 76% |
+| `google/gemma-4-31b-it` | Chutes | 70% | 26% |
+| `google/gemma-4-31b-it` | Together | 74% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 57% | 59% |
+| `meta-llama/llama-4-maverick` | DigitalOcean | 1% | 3% |
 | `minimax/minimax-m2.5` | Phala | n/a | n/a |
-| `mistralai/mistral-nemo` | Parasail | 78% | 100% |
-| `mistralai/mistral-nemo` | Novita | 67% | 98% |
-| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
-| plus 6 more | | | |
+| `mistralai/mistral-nemo` | Novita | 60% | 91% |
+| `moonshotai/kimi-k3` | Wafer | 76% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Venice | 34% | 39% |
+| `openai/gpt-5-mini` | OpenAI | 71% | 77% |
+| `openai/gpt-5-mini` | OpenAI | 71% | 77% |
+| `openai/gpt-oss-120b` | SiliconFlow | 43% | 84% |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

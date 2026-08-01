@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T13:14:37+00:00 UTC)
+## Current status (2026-08-01T14:58:05+00:00 UTC)
 
-327 models polled, 1045 inference endpoints:
-up 631, degraded 139, down 24, idle 251.
+327 models polled, 1046 inference endpoints:
+up 643, degraded 127, down 21, idle 255.
 
-Currently down (24):
+Currently down (21):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 59% | 100% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 10% | 98% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 21% | 100% |
 | `anthropic/claude-fable-5` | Google | 79% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 40% | n/a |
-| `deepseek/deepseek-chat-v3.1` | SiliconFlow | 73% | 56% |
-| `deepseek/deepseek-r1-0528` | SiliconFlow | 47% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | SiliconFlow | 79% | 45% |
-| `deepseek/deepseek-v3.2` | Venice | 58% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 0% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 78% | 76% |
-| `google/gemma-4-31b-it` | ModelRun | 73% | 100% |
-| `google/gemma-4-31b-it` | Together | 66% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 57% | n/a |
-| `minimax/minimax-m2.1` | Novita | 49% | n/a |
-| `minimax/minimax-m2.1` | Minimax | 76% | 71% |
-| plus 9 more | | | |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 83% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | n/a | n/a |
+| `deepseek/deepseek-v3.2` | Venice | 12% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
+| `google/gemma-4-31b-it` | Chutes | 65% | 15% |
+| `google/gemma-4-31b-it` | Together | 75% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 64% | n/a |
+| `meta-llama/llama-4-maverick` | DigitalOcean | 79% | 48% |
+| `minimax/minimax-m2.1` | Novita | 78% | n/a |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | Parasail | 78% | 100% |
+| `mistralai/mistral-nemo` | Novita | 67% | 98% |
+| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
+| plus 6 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

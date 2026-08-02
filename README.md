@@ -69,31 +69,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-01T23:56:56+00:00 UTC)
+## Current status (2026-08-02T02:35:14+00:00 UTC)
 
-328 models polled, 1048 inference endpoints:
-up 653, degraded 115, down 24, idle 256.
+328 models polled, 1047 inference endpoints:
+up 665, degraded 87, down 15, idle 280.
 
-Currently down (24):
+Currently down (15):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 33% | n/a |
-| `anthropic/claude-fable-5` | Anthropic | 77% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 69% | 88% |
-| `deepseek/deepseek-chat-v3.1` | Google | 68% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 64% | 56% |
+| `deepseek/deepseek-chat-v3.1` | Google | 53% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `google/gemini-2.5-pro` | Google | 80% | 99% |
-| `google/gemini-2.5-pro-preview` | Google | 80% | 99% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 80% | 99% |
-| `google/gemma-4-26b-a4b-it` | Ionstream | 80% | 77% |
-| `google/gemma-4-26b-a4b-it` | Venice | 62% | 59% |
-| `google/gemma-4-26b-a4b-it` | Google | 55% | 41% |
-| `google/gemma-4-31b-it` | Together | 68% | 64% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 77% | 81% |
+| `google/gemma-4-26b-a4b-it` | Venice | 65% | 94% |
+| `google/gemma-4-26b-a4b-it` | Google | 71% | 94% |
+| `google/gemma-4-31b-it` | Together | 75% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 55% | 56% |
 | `minimax/minimax-m2.5` | Phala | n/a | n/a |
-| `mistralai/mistral-nemo` | Novita | 62% | 93% |
-| plus 9 more | | | |
+| `mistralai/mistral-nemo` | Parasail | 62% | 100% |
+| `mistralai/mistral-nemo` | Novita | 61% | 37% |
+| `moonshotai/kimi-k3` | Fireworks | 53% | 63% |
+| `openai/gpt-oss-120b` | Mancer 2 | 52% | n/a |
+| `qwen/qwen3-14b` | Alibaba | 76% | n/a |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | DeepInfra | 21% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

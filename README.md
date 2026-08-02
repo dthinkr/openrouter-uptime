@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-02T08:20:47+00:00 UTC)
+## Current status (2026-08-02T10:39:04+00:00 UTC)
 
 328 models polled, 1047 inference endpoints:
-up 642, degraded 101, down 23, idle 281.
+up 647, degraded 116, down 18, idle 266.
 
-Currently down (23):
+Currently down (18):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 14% | 100% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 79% | 100% |
-| `anthropic/claude-fable-5` | Google | 78% | n/a |
-| `deepseek/deepseek-chat` | DeepInfra | 73% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 75% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 70% | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 67% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 76% | 53% |
-| `google/gemma-3-27b-it` | Nebius | 34% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 72% | n/a |
-| `mistralai/mistral-nemo` | Novita | 61% | 53% |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 62% | 51% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 53% | 57% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 22% |
+| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 74% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 68% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 59% | n/a |
+| `mistralai/mistral-nemo` | Novita | 42% | 50% |
 | `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | Fireworks | 77% | 80% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | BaseTen | 78% | 100% |
-| plus 8 more | | | |
+| `openai/gpt-oss-120b` | SiliconFlow | 74% | 56% |
+| `openai/gpt-oss-120b` | Mancer 2 | 68% | n/a |
+| `openai/gpt-oss-20b` | Parasail | 78% | 80% |
+| `qwen/qwen3-14b` | Alibaba | 70% | 71% |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | Phala | n/a | 0% |
+| plus 3 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

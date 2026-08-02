@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-02T05:54:57+00:00 UTC)
+## Current status (2026-08-02T08:20:47+00:00 UTC)
 
-328 models polled, 1046 inference endpoints:
-up 632, degraded 87, down 24, idle 303.
+328 models polled, 1047 inference endpoints:
+up 642, degraded 101, down 23, idle 281.
 
-Currently down (24):
+Currently down (23):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 20% | 51% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 14% | 100% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 79% | 100% |
 | `anthropic/claude-fable-5` | Google | 78% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 77% | 44% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 78% | n/a |
+| `deepseek/deepseek-chat` | DeepInfra | 73% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 75% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 70% | n/a |
+| `deepseek/deepseek-v3.2` | Venice | 67% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `google/gemma-4-31b-it` | Together | 65% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 53% | 51% |
-| `mistralai/mistral-nemo` | Novita | 47% | 91% |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 76% | 53% |
+| `google/gemma-3-27b-it` | Nebius | 34% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 72% | n/a |
+| `mistralai/mistral-nemo` | Novita | 61% | 53% |
 | `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | DigitalOcean | 76% | 79% |
-| `moonshotai/kimi-k3` | Fireworks | 57% | 55% |
-| `openai/gpt-4.1` | OpenAI | 67% | 51% |
-| `openai/gpt-5-mini` | OpenAI | 77% | 76% |
-| `openai/gpt-5-mini` | OpenAI | 77% | 76% |
-| `openai/gpt-oss-120b` | SiliconFlow | 71% | n/a |
-| plus 9 more | | | |
+| `moonshotai/kimi-k3` | Fireworks | 77% | 80% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | BaseTen | 78% | 100% |
+| plus 8 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

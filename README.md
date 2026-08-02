@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-02T21:53:20+00:00 UTC)
+## Current status (2026-08-02T22:54:05+00:00 UTC)
 
 328 models polled, 1050 inference endpoints:
-up 660, degraded 110, down 20, idle 260.
+up 670, degraded 94, down 18, idle 268.
 
-Currently down (20):
+Currently down (18):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 15% | 100% |
-| `deepseek/deepseek-v4-flash` | Ionstream | 80% | 34% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 21% | 6% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 56% | 36% |
+| `deepseek/deepseek-chat-v3.1` | Mara | 73% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 0% | n/a |
-| `google/gemma-4-31b-it` | DeepInfra | 76% | 97% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 66% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 59% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 48% | n/a |
 | `minimax/minimax-m2.5` | Phala | n/a | n/a |
-| `mistralai/mistral-nemo` | Novita | 62% | 56% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | DigitalOcean | 75% | n/a |
-| `openai/gpt-4.1` | OpenAI | 74% | 100% |
-| `openai/gpt-5.4-mini` | OpenAI | 70% | 30% |
-| `openai/gpt-5.4-mini` | OpenAI | 70% | 30% |
-| `openai/gpt-5.4-mini` | OpenAI | 70% | 30% |
-| `openai/gpt-5.6-sol` | OpenAI | 51% | 52% |
-| `openai/gpt-5.6-sol` | OpenAI | 51% | 52% |
-| plus 5 more | | | |
+| `mistralai/mistral-nemo` | Novita | 63% | 94% |
+| `openai/gpt-5.4-mini` | OpenAI | 40% | 32% |
+| `openai/gpt-5.4-mini` | OpenAI | 40% | 32% |
+| `openai/gpt-5.4-mini` | OpenAI | 40% | 32% |
+| `openai/gpt-5.6-sol` | OpenAI | 47% | 48% |
+| `openai/gpt-5.6-sol` | OpenAI | 47% | 48% |
+| `openai/gpt-5.6-sol` | OpenAI | 47% | 48% |
+| `openai/gpt-oss-20b` | Parasail | 69% | 73% |
+| plus 3 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,30 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-02T14:27:00+00:00 UTC)
+## Current status (2026-08-02T15:58:39+00:00 UTC)
 
-328 models polled, 1048 inference endpoints:
-up 677, degraded 109, down 15, idle 247.
+328 models polled, 1049 inference endpoints:
+up 680, degraded 98, down 19, idle 252.
 
-Currently down (15):
+Currently down (19):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 16% | 5% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 63% | 41% |
-| `deepseek/deepseek-chat-v3.1` | Google | 59% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 26% | 46% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 47% | 55% |
+| `deepseek/deepseek-v3.2` | Venice | 79% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | AtlasCloud | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 58% | n/a |
-| `mistralai/mistral-nemo` | Novita | 60% | 50% |
-| `moonshotai/kimi-k2.5` | DigitalOcean | 2% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 47% | n/a |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | Novita | 54% | 30% |
 | `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | Morph | 37% | n/a |
-| `openai/gpt-4.1` | OpenAI | 80% | 99% |
-| `openai/gpt-oss-120b` | Novita | 6% | n/a |
-| `openai/gpt-oss-120b` | SiliconFlow | 29% | 12% |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `thinkingmachines/inkling` | Together | 55% | n/a |
-| `z-ai/glm-5` | Phala | n/a | n/a |
+| `moonshotai/kimi-k3` | Wafer | 70% | n/a |
+| `openai/gpt-5.6-sol` | OpenAI | 76% | 71% |
+| `openai/gpt-5.6-sol` | OpenAI | 76% | 71% |
+| `openai/gpt-5.6-sol` | OpenAI | 76% | 71% |
+| `openai/gpt-oss-120b` | SiliconFlow | 32% | 6% |
+| `openai/gpt-oss-20b` | Novita | 41% | 53% |
+| `openai/gpt-oss-20b` | Google | 37% | n/a |
+| plus 4 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

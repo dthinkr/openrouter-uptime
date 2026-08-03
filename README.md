@@ -69,29 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-03T10:40:24+00:00 UTC)
+## Current status (2026-08-03T13:38:55+00:00 UTC)
 
-328 models polled, 1049 inference endpoints:
-up 663, degraded 148, down 14, idle 224.
+328 models polled, 1050 inference endpoints:
+up 650, degraded 154, down 33, idle 213.
 
-Currently down (14):
+Currently down (33):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 59% | 63% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 58% | 68% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 75% | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 48% | 81% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 64% | n/a |
-| `moonshotai/kimi-k3` | Morph | 66% | 64% |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | DeepInfra | 51% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | Venice | 69% | n/a |
-| `qwen/qwen3.5-397b-a17b` | DigitalOcean | 71% | n/a |
-| `qwen/qwen3.6-35b-a3b` | SiliconFlow | 75% | n/a |
-| `xiaomi/mimo-v2.5` | GMICloud | 75% | 90% |
-| `z-ai/glm-4.7` | Z.AI | 66% | 67% |
-| `z-ai/glm-5` | Phala | n/a | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 40% | 51% |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 68% | 71% |
+| `deepseek/deepseek-r1` | Azure | n/a | n/a |
+| `deepseek/deepseek-v3.2` | Venice | 42% | n/a |
+| `deepseek/deepseek-v4-flash` | Ambient | 79% | 99% |
+| `deepseek/deepseek-v4-pro` | Baidu | 77% | 100% |
+| `google/gemini-2.5-flash` | Google | 68% | 86% |
+| `google/gemini-2.5-flash` | Google | 76% | 76% |
+| `google/gemma-3-27b-it` | Phala | 24% | 13% |
+| `google/gemma-4-31b-it` | Phala | 43% | 45% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 74% | n/a |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | Novita | 48% | 34% |
+| `moonshotai/kimi-k2.5` | SiliconFlow | 2% | n/a |
+| plus 18 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

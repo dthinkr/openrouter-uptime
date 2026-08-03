@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-03T16:22:24+00:00 UTC)
+## Current status (2026-08-03T18:49:18+00:00 UTC)
 
 329 models polled, 1050 inference endpoints:
-up 660, degraded 144, down 36, idle 210.
+up 687, degraded 111, down 44, idle 208.
 
-Currently down (36):
+Currently down (44):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 10% | 8% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 69% | 63% |
-| `anthropic/claude-fable-5` | Anthropic | 76% | 82% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 51% | 74% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | n/a | 0% |
-| `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v3.2` | DeepInfra | 78% | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 20% | n/a |
-| `deepseek/deepseek-v4-flash` | SiliconFlow | 74% | 89% |
-| `deepseek/deepseek-v4-flash-0731` | AtlasCloud | 41% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 78% | 74% |
-| `deepseek/deepseek-v4-pro` | Venice | 70% | 68% |
-| `google/gemini-2.5-flash` | Google | 78% | 76% |
-| `google/gemma-3-27b-it` | Nebius | 56% | 100% |
-| `google/gemma-4-31b-it` | Chutes | 75% | 74% |
-| plus 21 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 7% | 3% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 58% | 27% |
+| `anthropic/claude-fable-5` | Anthropic | 76% | 74% |
+| `cohere/command-r-08-2024` | Cohere | 59% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Google | 68% | 100% |
+| `deepseek/deepseek-v3.2` | Venice | 13% | n/a |
+| `deepseek/deepseek-v4-flash` | Phala | 79% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 65% | n/a |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | Novita | 47% | 35% |
+| `moonshotai/kimi-k2.5` | SiliconFlow | 72% | 0% |
+| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
+| `moonshotai/kimi-k2.6` | Decart | 71% | n/a |
+| plus 29 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

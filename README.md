@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-04T15:30:49+00:00 UTC)
+## Current status (2026-08-04T17:46:21+00:00 UTC)
 
-329 models polled, 1053 inference endpoints:
-up 654, degraded 156, down 40, idle 203.
+329 models polled, 1055 inference endpoints:
+up 677, degraded 146, down 24, idle 208.
 
-Currently down (40):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 4% | 4% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 71% | 93% |
-| `anthropic/claude-fable-5` | Azure | 77% | 49% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 76% | 26% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 33% | 40% |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | SiliconFlow | 72% | 92% |
-| `deepseek/deepseek-v4-flash` | Ambient | n/a | 0% |
-| `deepseek/deepseek-v4-flash-0731` | GMICloud | 75% | 54% |
-| `deepseek/deepseek-v4-flash-0731` | Novita | 40% | 24% |
-| `deepseek/deepseek-v4-flash-0731` | Together | 69% | 67% |
-| `deepseek/deepseek-v4-flash-0731` | SiliconFlow | 76% | 81% |
-| `deepseek/deepseek-v4-flash-0731` | Ambient | 80% | 81% |
-| `deepseek/deepseek-v4-flash-0731` | Phala | 58% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 59% | n/a |
-| `deepseek/deepseek-v4-pro` | Novita | 71% | 96% |
-| plus 25 more | | | |
+| `deepseek/deepseek-v4-flash-0731` | Together | 61% | 94% |
+| `google/gemini-2.5-flash` | Google | 79% | 81% |
+| `google/gemini-2.5-pro` | Google | 62% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 62% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 62% | n/a |
+| `google/gemma-4-31b-it` | Chutes | 78% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 7% | 100% |
+| `google/gemma-4-31b-it` | Novita | 76% | 82% |
+| `google/gemma-4-31b-it` | Together | 60% | 99% |
+| `google/gemma-4-31b-it` | Together | 59% | 60% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 67% | 70% |
+| `mistralai/mistral-nemo` | Novita | 59% | 78% |
+| `moonshotai/kimi-k2.5` | SiliconFlow | 79% | 17% |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

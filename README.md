@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-04T04:11:21+00:00 UTC)
+## Current status (2026-08-04T07:36:53+00:00 UTC)
 
 329 models polled, 1055 inference endpoints:
-up 646, degraded 143, down 33, idle 233.
+up 669, degraded 148, down 23, idle 215.
 
-Currently down (33):
+Currently down (23):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 14% | n/a |
-| `anthropic/claude-fable-5` | Anthropic | 79% | 86% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 8% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 73% | 77% |
+| `anthropic/claude-fable-5` | Google | 74% | 69% |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v3.2` | DeepInfra | 79% | 84% |
-| `deepseek/deepseek-v3.2` | Venice | 63% | n/a |
-| `deepseek/deepseek-v4-flash` | SiliconFlow | 73% | 68% |
-| `deepseek/deepseek-v4-flash` | DeepSeek | 56% | 77% |
-| `deepseek/deepseek-v4-flash` | Mancer 2 | 73% | 70% |
-| `deepseek/deepseek-v4-flash-0731` | Novita | 61% | 89% |
-| `deepseek/deepseek-v4-flash-0731` | Together | 74% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | DeepSeek | 79% | 86% |
-| `deepseek/deepseek-v4-flash-0731` | SiliconFlow | 56% | 89% |
-| `google/gemini-2.5-flash` | Google | 47% | 51% |
-| `google/gemma-4-31b-it` | SiliconFlow | 79% | n/a |
-| `google/gemma-4-31b-it` | Together | 49% | n/a |
-| plus 18 more | | | |
+| `deepseek/deepseek-v4-flash-0731` | Together | 75% | 54% |
+| `google/gemini-2.5-flash` | Google | 75% | 79% |
+| `google/gemini-2.5-pro` | Google | 65% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 65% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 65% | n/a |
+| `google/gemma-4-31b-it` | OpenInference | 79% | 84% |
+| `google/gemma-4-31b-it` | Chutes | 76% | 40% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 58% | 81% |
+| `meta-llama/llama-3.3-70b-instruct` | Novita | 1% | n/a |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | Novita | 70% | 99% |
+| plus 8 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

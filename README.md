@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-04T13:00:05+00:00 UTC)
+## Current status (2026-08-04T15:30:49+00:00 UTC)
 
-329 models polled, 1054 inference endpoints:
-up 675, degraded 153, down 21, idle 205.
+329 models polled, 1053 inference endpoints:
+up 654, degraded 156, down 40, idle 203.
 
-Currently down (21):
+Currently down (40):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 11% | 7% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 75% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 76% | 76% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 4% | 4% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 71% | 93% |
+| `anthropic/claude-fable-5` | Azure | 77% | 49% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 76% | 26% |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | AkashML | 55% | 3% |
-| `deepseek/deepseek-v4-flash` | SiliconFlow | 78% | 92% |
-| `deepseek/deepseek-v4-flash` | OpenInference | 67% | 100% |
-| `deepseek/deepseek-v4-flash` | Mancer 2 | 78% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | Novita | 61% | 27% |
-| `deepseek/deepseek-v4-flash-0731` | Together | 74% | 96% |
-| `deepseek/deepseek-v4-flash-0731` | Venice | 79% | 77% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 63% | 59% |
-| `mistralai/mistral-nemo` | Novita | 46% | 91% |
-| `moonshotai/kimi-k2.5` | Venice | 71% | 100% |
-| `moonshotai/kimi-k2.5` | Amazon Bedrock | 8% | n/a |
-| plus 6 more | | | |
+| `deepseek/deepseek-v4-flash` | SiliconFlow | 72% | 92% |
+| `deepseek/deepseek-v4-flash` | Ambient | n/a | 0% |
+| `deepseek/deepseek-v4-flash-0731` | GMICloud | 75% | 54% |
+| `deepseek/deepseek-v4-flash-0731` | Novita | 40% | 24% |
+| `deepseek/deepseek-v4-flash-0731` | Together | 69% | 67% |
+| `deepseek/deepseek-v4-flash-0731` | SiliconFlow | 76% | 81% |
+| `deepseek/deepseek-v4-flash-0731` | Ambient | 80% | 81% |
+| `deepseek/deepseek-v4-flash-0731` | Phala | 58% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 59% | n/a |
+| `deepseek/deepseek-v4-pro` | Novita | 71% | 96% |
+| plus 25 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

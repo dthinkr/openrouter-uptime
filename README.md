@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-04T00:06:52+00:00 UTC)
+## Current status (2026-08-04T04:11:21+00:00 UTC)
 
-329 models polled, 1053 inference endpoints:
-up 657, degraded 132, down 26, idle 238.
+329 models polled, 1055 inference endpoints:
+up 646, degraded 143, down 33, idle 233.
 
-Currently down (26):
+Currently down (33):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 11% | 11% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 74% | 91% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 0% | 0% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 14% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 79% | 86% |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v3.2` | DeepInfra | 73% | 59% |
-| `deepseek/deepseek-v3.2` | Venice | 17% | n/a |
-| `deepseek/deepseek-v4-flash` | Ambient | n/a | n/a |
-| `google/gemini-2.5-flash` | Google | 56% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 78% | n/a |
-| `google/gemma-4-31b-it` | Together | 69% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 68% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Novita | 35% | 100% |
-| `mistralai/mistral-nemo` | Novita | 12% | 2% |
-| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
-| `moonshotai/kimi-k2.6` | Decart | 76% | 99% |
-| plus 11 more | | | |
+| `deepseek/deepseek-v3.2` | DeepInfra | 79% | 84% |
+| `deepseek/deepseek-v3.2` | Venice | 63% | n/a |
+| `deepseek/deepseek-v4-flash` | SiliconFlow | 73% | 68% |
+| `deepseek/deepseek-v4-flash` | DeepSeek | 56% | 77% |
+| `deepseek/deepseek-v4-flash` | Mancer 2 | 73% | 70% |
+| `deepseek/deepseek-v4-flash-0731` | Novita | 61% | 89% |
+| `deepseek/deepseek-v4-flash-0731` | Together | 74% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | DeepSeek | 79% | 86% |
+| `deepseek/deepseek-v4-flash-0731` | SiliconFlow | 56% | 89% |
+| `google/gemini-2.5-flash` | Google | 47% | 51% |
+| `google/gemma-4-31b-it` | SiliconFlow | 79% | n/a |
+| `google/gemma-4-31b-it` | Together | 49% | n/a |
+| plus 18 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

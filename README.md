@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-04T10:35:56+00:00 UTC)
+## Current status (2026-08-04T13:00:05+00:00 UTC)
 
 329 models polled, 1054 inference endpoints:
-up 660, degraded 151, down 22, idle 221.
+up 675, degraded 153, down 21, idle 205.
 
-Currently down (22):
+Currently down (21):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 6% | 10% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 60% | 32% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 77% | 33% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 11% | 7% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 75% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 76% | 76% |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `google/gemini-2.5-pro` | Google | 55% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 55% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 55% | n/a |
-| `google/gemma-3-27b-it` | Novita | 77% | 100% |
-| `google/gemma-4-31b-it` | Together | 60% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 73% | 69% |
-| `mistralai/mistral-nemo` | Novita | 71% | 57% |
-| `moonshotai/kimi-k2.6` | Venice | 76% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | DeepInfra | 68% | 95% |
-| `openai/gpt-oss-20b` | Google | 73% | 95% |
-| `qwen/qwen3-14b` | Alibaba | 69% | 100% |
-| plus 7 more | | | |
+| `deepseek/deepseek-v4-flash` | AkashML | 55% | 3% |
+| `deepseek/deepseek-v4-flash` | SiliconFlow | 78% | 92% |
+| `deepseek/deepseek-v4-flash` | OpenInference | 67% | 100% |
+| `deepseek/deepseek-v4-flash` | Mancer 2 | 78% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | Novita | 61% | 27% |
+| `deepseek/deepseek-v4-flash-0731` | Together | 74% | 96% |
+| `deepseek/deepseek-v4-flash-0731` | Venice | 79% | 77% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 63% | 59% |
+| `mistralai/mistral-nemo` | Novita | 46% | 91% |
+| `moonshotai/kimi-k2.5` | Venice | 71% | 100% |
+| `moonshotai/kimi-k2.5` | Amazon Bedrock | 8% | n/a |
+| plus 6 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

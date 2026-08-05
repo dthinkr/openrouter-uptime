@@ -69,30 +69,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-05T02:14:21+00:00 UTC)
+## Current status (2026-08-05T05:44:04+00:00 UTC)
 
-329 models polled, 1054 inference endpoints:
-up 642, degraded 137, down 21, idle 254.
+329 models polled, 1057 inference endpoints:
+up 655, degraded 136, down 21, idle 245.
 
 Currently down (21):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 11% | 15% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 72% | 100% |
-| `anthropic/claude-fable-5` | Anthropic | 79% | 73% |
-| `anthropic/claude-fable-5` | Google | 74% | n/a |
-| `cohere/command-r-08-2024` | Cohere | 63% | n/a |
-| `cohere/command-r-plus-08-2024` | Cohere | 34% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Mara | 78% | 44% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 6% | 6% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 63% | 100% |
+| `anthropic/claude-fable-5` | Anthropic | 38% | n/a |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 46% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 76% | 86% |
-| `google/gemini-2.5-flash` | Google | 65% | 81% |
-| `google/gemini-2.5-pro` | Google | 17% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | 81% |
-| `minimax/minimax-m2.7` | SambaNova | 78% | n/a |
-| `mistralai/mistral-nemo` | Novita | 71% | 62% |
+| `deepseek/deepseek-v3.2` | Venice | 54% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | Together | 79% | 77% |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 64% | n/a |
+| `deepseek/deepseek-v4-pro` | Venice | 27% | n/a |
+| `google/gemini-2.5-flash` | Google | 51% | 51% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 63% | n/a |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | Novita | 61% | 58% |
+| `moonshotai/kimi-k2-thinking` | Google | 77% | n/a |
+| `moonshotai/kimi-k2.6` | SiliconFlow | 78% | n/a |
+| `openai/gpt-5.6-sol` | OpenAI | 78% | 37% |
 | plus 6 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-05T18:19:18+00:00 UTC)
+## Current status (2026-08-05T20:24:52+00:00 UTC)
 
-329 models polled, 1056 inference endpoints:
-up 658, degraded 159, down 25, idle 214.
+330 models polled, 1056 inference endpoints:
+up 671, degraded 134, down 18, idle 233.
 
-Currently down (25):
+Currently down (18):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 43% | 35% |
-| `anthropic/claude-fable-5` | Google | 62% | 77% |
-| `anthropic/claude-opus-4.8` | Anthropic | 59% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 7% | 3% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 65% | 97% |
+| `anthropic/claude-fable-5` | Google | 60% | 58% |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | Ambient | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | Phala | 76% | 97% |
-| `deepseek/deepseek-v4-pro` | Venice | 68% | n/a |
-| `google/gemini-2.5-flash` | Google | 66% | 57% |
-| `google/gemini-2.5-pro` | Google | 75% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 75% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 75% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 62% | 96% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 59% | n/a |
-| `minimax/minimax-m2.5` | Phala | n/a | n/a |
-| `mistralai/mistral-nemo` | Novita | 68% | 74% |
-| plus 10 more | | | |
+| `deepseek/deepseek-v4-flash` | Phala | 71% | 100% |
+| `google/gemini-2.5-flash` | Google | 56% | 48% |
+| `google/gemma-4-31b-it` | SambaNova | 75% | 93% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 55% | n/a |
+| `mistralai/mistral-nemo` | Novita | 63% | 40% |
+| `moonshotai/kimi-k2.6` | Decart | 38% | n/a |
+| `moonshotai/kimi-k2.6` | Crusoe | 39% | n/a |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3-next-80b-a3b-instruct` | DeepInfra | 71% | 100% |
+| `qwen/qwen3.5-9b` | Together | 64% | 75% |
+| plus 3 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

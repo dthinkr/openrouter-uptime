@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-05T11:18:33+00:00 UTC)
+## Current status (2026-08-05T14:03:01+00:00 UTC)
 
 329 models polled, 1056 inference endpoints:
-up 646, degraded 159, down 34, idle 217.
+up 652, degraded 151, down 31, idle 222.
 
-Currently down (34):
+Currently down (31):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 7% | 3% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 69% | 60% |
-| `anthropic/claude-opus-4.8` | Anthropic | 76% | n/a |
-| `anthropic/claude-opus-5` | Anthropic | 55% | 82% |
-| `deepseek/deepseek-v4-flash` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | DeepSeek | 0% | 0% |
-| `google/gemini-2.5-pro` | Google | 52% | n/a |
-| `google/gemini-2.5-pro` | Google AI Studio | 67% | 91% |
-| `google/gemini-2.5-pro` | Google AI Studio | 67% | 91% |
-| `google/gemini-2.5-pro` | Google AI Studio | 67% | 91% |
-| `google/gemini-2.5-pro-preview` | Google | 66% | n/a |
-| `google/gemini-2.5-pro-preview` | Google AI Studio | 61% | 96% |
-| `google/gemini-2.5-pro-preview` | Google AI Studio | 61% | 96% |
-| `google/gemini-2.5-pro-preview` | Google AI Studio | 61% | 96% |
-| plus 19 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 31% | 14% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 71% | 41% |
+| `anthropic/claude-fable-5` | Anthropic | 80% | 82% |
+| `anthropic/claude-opus-5` | Claude Platform on AWS | 75% | 60% |
+| `anthropic/claude-opus-5` | Anthropic | 47% | 67% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 72% | 25% |
+| `deepseek/deepseek-r1` | Azure | n/a | n/a |
+| `deepseek/deepseek-v3.2` | DigitalOcean | 74% | 100% |
+| `deepseek/deepseek-v4-flash` | Phala | 0% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 73% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 73% | n/a |
+| `google/gemma-3-27b-it` | Parasail | 67% | 100% |
+| `google/gemma-3-27b-it` | Novita | 56% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 47% | n/a |
+| `mistralai/mistral-nemo` | Novita | 62% | 50% |
+| plus 16 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

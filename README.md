@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-05T16:40:01+00:00 UTC)
+## Current status (2026-08-05T18:19:18+00:00 UTC)
 
-329 models polled, 1055 inference endpoints:
-up 641, degraded 157, down 40, idle 217.
+329 models polled, 1056 inference endpoints:
+up 658, degraded 159, down 25, idle 214.
 
-Currently down (40):
+Currently down (25):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 13% | 7% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 60% | 65% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 75% | 59% |
-| `deepseek/deepseek-r1` | Azure | 0% | n/a |
-| `deepseek/deepseek-v3.2` | GMICloud | 48% | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 77% | n/a |
-| `deepseek/deepseek-v4-flash` | Ambient | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | Phala | 45% | 100% |
-| `deepseek/deepseek-v4-pro` | Venice | 54% | n/a |
-| `google/gemini-2.5-pro` | Google | 76% | 96% |
-| `google/gemini-2.5-pro` | Google | 76% | 96% |
-| `google/gemini-2.5-pro` | Google | 76% | 96% |
-| `google/gemini-2.5-pro` | Google | 68% | 97% |
-| `google/gemini-2.5-pro-preview` | Google | 76% | 96% |
-| `google/gemini-2.5-pro-preview` | Google | 76% | 96% |
-| plus 25 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 43% | 35% |
+| `anthropic/claude-fable-5` | Google | 62% | 77% |
+| `anthropic/claude-opus-4.8` | Anthropic | 59% | n/a |
+| `deepseek/deepseek-r1` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | Ambient | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | Phala | 76% | 97% |
+| `deepseek/deepseek-v4-pro` | Venice | 68% | n/a |
+| `google/gemini-2.5-flash` | Google | 66% | 57% |
+| `google/gemini-2.5-pro` | Google | 75% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 75% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 75% | n/a |
+| `google/gemma-3-27b-it` | Nebius | 62% | 96% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 59% | n/a |
+| `minimax/minimax-m2.5` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | Novita | 68% | 74% |
+| plus 10 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

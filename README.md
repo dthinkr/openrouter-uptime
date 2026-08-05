@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-04T23:00:52+00:00 UTC)
+## Current status (2026-08-05T02:14:21+00:00 UTC)
 
-329 models polled, 1050 inference endpoints:
-up 675, degraded 135, down 18, idle 222.
+329 models polled, 1054 inference endpoints:
+up 642, degraded 137, down 21, idle 254.
 
-Currently down (18):
+Currently down (21):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 12% | 32% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 67% | 49% |
-| `anthropic/claude-fable-5` | Azure | 62% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 11% | 15% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 72% | 100% |
+| `anthropic/claude-fable-5` | Anthropic | 79% | 73% |
+| `anthropic/claude-fable-5` | Google | 74% | n/a |
+| `cohere/command-r-08-2024` | Cohere | 63% | n/a |
+| `cohere/command-r-plus-08-2024` | Cohere | 34% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 78% | 44% |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v3.2` | Venice | 16% | n/a |
-| `google/gemini-2.5-flash` | Google | 35% | 33% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 55% | 62% |
-| `minimax/minimax-m2.5` | Phala | n/a | n/a |
-| `mistralai/mistral-nemo` | Novita | 69% | 72% |
-| `moonshotai/kimi-k2-thinking` | Google | 70% | n/a |
-| `moonshotai/kimi-k2.6` | Venice | 54% | n/a |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3.5-35b-a3b` | AkashML | 61% | 100% |
-| `qwen/qwen3.5-35b-a3b` | Parasail | 31% | n/a |
-| `xiaomi/mimo-v2.5-pro` | AtlasCloud | 63% | 70% |
-| plus 3 more | | | |
+| `deepseek/deepseek-v3.2` | Venice | 46% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 76% | 86% |
+| `google/gemini-2.5-flash` | Google | 65% | 81% |
+| `google/gemini-2.5-pro` | Google | 17% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 79% | 81% |
+| `minimax/minimax-m2.7` | SambaNova | 78% | n/a |
+| `mistralai/mistral-nemo` | Novita | 71% | 62% |
+| plus 6 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

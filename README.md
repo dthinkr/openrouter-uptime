@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-06T12:00:49+00:00 UTC)
+## Current status (2026-08-06T15:11:02+00:00 UTC)
 
-330 models polled, 1058 inference endpoints:
-up 658, degraded 149, down 33, idle 218.
+331 models polled, 1060 inference endpoints:
+up 651, degraded 174, down 31, idle 204.
 
-Currently down (33):
+Currently down (31):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 12% | 22% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 64% | 43% |
-| `anthropic/claude-fable-5` | Anthropic | 79% | 80% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 69% |
-| `deepseek/deepseek-chat-v3.1` | CoreWeave | 49% | 70% |
-| `deepseek/deepseek-v4-flash` | Phala | 12% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 76% | 63% |
-| `deepseek/deepseek-v4-pro` | Parasail | 66% | n/a |
-| `google/gemini-2.5-flash` | Google | 74% | 36% |
-| `google/gemma-4-31b-it` | Together | 79% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | n/a |
-| `minimax/minimax-m2.7` | AtlasCloud | 70% | n/a |
-| `minimax/minimax-m2.7` | SambaNova | 73% | n/a |
-| `minimax/minimax-m2.7` | DeepInfra | 62% | n/a |
-| `minimax/minimax-m2.7` | Minimax | 79% | n/a |
-| plus 18 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 6% | 2% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 61% | 46% |
+| `anthropic/claude-fable-5` | Azure | 76% | n/a |
+| `anthropic/claude-fable-5` | Anthropic | 77% | 63% |
+| `deepseek/deepseek-chat-v3.1` | Google | 67% | 58% |
+| `deepseek/deepseek-v4-flash` | Ambient | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | Phala | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | Mancer 2 | 59% | 81% |
+| `deepseek/deepseek-v4-flash-0731` | Together | 73% | 93% |
+| `google/gemini-2.5-pro` | Google | 72% | 51% |
+| `google/gemini-2.5-pro-preview` | Google | 80% | 47% |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 72% | 51% |
+| `google/gemma-3-27b-it` | Nebius | 57% | 98% |
+| `google/gemma-3-27b-it` | Novita | 78% | 100% |
+| `google/gemma-4-31b-it` | Chutes | 74% | 29% |
+| plus 16 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -102,7 +102,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-23 02:32** — **25 models removed from the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, +17 more.
 - **2026-07-23 23:58** — provider `wandb` left the platform.
 - **2026-07-24 03:19** — provider `wandb-legacy` left the platform.
 - **2026-07-27 10:40** — **3 models added to the catalog in one poll**: `inflection/inflection-3-pi`, `inflection/inflection-3-productivity`, `openai/gpt-4o-mini-search-preview`.
@@ -114,6 +113,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-07-30 15:51** — provider `phala` changed its privacy policy url.
 - **2026-07-30 19:21** — **3 models removed from the catalog in one poll**: `openai/gpt-5-codex`, `openai/o3-deep-research`, `openai/o4-mini-deep-research`.
 - **2026-07-31 16:43** — **28 models removed from the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-sonnet-4.5:batch`, `anthropic/claude-sonnet-5:batch`, +20 more.
+- **2026-08-06 15:11** — **60 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-haiku-4.5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-opus-5:batch`, +52 more.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

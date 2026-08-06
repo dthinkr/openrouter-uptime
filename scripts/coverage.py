@@ -118,8 +118,15 @@ def main() -> None:
     cov30 = min(union_minutes(polls, WINDOW_30M), span_min + WINDOW_30M) - WINDOW_30M
     cov1d = min(union_minutes(polls, WINDOW_1D), span_min + WINDOW_1D) - WINDOW_1D
 
+    now = datetime.now(timezone.utc)
+
     report = {
-        "generated": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+        "generated": now.replace(microsecond=0).isoformat(),
+        # How long since anything was collected. The failure this project
+        # actually suffered was not a crash but a scheduler that quietly did
+        # nothing, which looks identical to "no news" unless something states
+        # the age out loud.
+        "staleness_hours": round((now - last).total_seconds() / 3600.0, 2),
         "span": {
             "first_poll": first.isoformat(),
             "last_poll": last.isoformat(),

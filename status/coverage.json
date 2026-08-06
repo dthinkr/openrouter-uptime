@@ -1,24 +1,25 @@
 {
- "generated": "2026-08-06T18:46:52+00:00",
+ "generated": "2026-08-06T19:08:40+00:00",
+ "staleness_hours": 0.13,
  "span": {
   "first_poll": "2026-07-04T14:51:53+00:00",
-  "last_poll": "2026-08-06T15:11:02+00:00",
-  "hours": 792.3
+  "last_poll": "2026-08-06T19:00:59+00:00",
+  "hours": 796.2
  },
  "polls": {
-  "count": 342,
-  "per_day": 10.4
+  "count": 343,
+  "per_day": 10.3
  },
  "interval_minutes": {
   "median": 119.9,
-  "mean": 139.4,
-  "p90": 209.7,
+  "mean": 139.7,
+  "p90": 209.9,
   "max": 3037.7,
-  "over_30_min": 338
+  "over_30_min": 339
  },
  "duty_cycle_pct": {
   "up30m": 21.4,
-  "up1d": 96.6
+  "up1d": 96.7
  },
  "polls_by_utc_hour": {
   "00": 8,
@@ -40,7 +41,7 @@
   "16": 19,
   "17": 18,
   "18": 17,
-  "19": 16,
+  "19": 17,
   "20": 22,
   "21": 25,
   "22": 23,
@@ -157,6 +158,12 @@
    "to": "2026-07-09T06:41:51+00:00",
    "minutes": 235.5,
    "uncovered_minutes": 205.5
+  },
+  {
+   "from": "2026-08-06T15:11:02+00:00",
+   "to": "2026-08-06T19:00:59+00:00",
+   "minutes": 229.9,
+   "uncovered_minutes": 199.9
   },
   {
    "from": "2026-07-05T23:10:53+00:00",
@@ -343,15 +350,9 @@
    "to": "2026-07-15T05:28:51+00:00",
    "minutes": 197.0,
    "uncovered_minutes": 167.0
-  },
-  {
-   "from": "2026-08-05T23:58:16+00:00",
-   "to": "2026-08-06T03:14:59+00:00",
-   "minutes": 196.7,
-   "uncovered_minutes": 166.7
   }
  ],
- "gap_count": 338,
+ "gap_count": 339,
  "notes": [
   "A poll at time t observes the window [t-30m, t] for up30m and [t-24h, t] for up1d. Duty cycle is the union of those windows over the span.",
   "Intervals longer than 30 minutes leave wall-clock unobserved. Do not interpolate the up30m-derived state column across the listed gaps.",

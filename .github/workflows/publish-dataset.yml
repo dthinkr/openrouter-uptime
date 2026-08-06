@@ -65,6 +65,35 @@ jobs:
           echo "could not push coverage after 5 attempts"
           exit 1
 
+      # Deliberately after the commit above. The alarm must never be able to
+      # prevent the measurement it is reading from being recorded, which is
+      # exactly what would happen if coverage.py exited non-zero itself.
+      #
+      # This is the countermeasure to the failure this project actually had:
+      # not a crash, but a scheduler that quietly stopped for 33 days while
+      # every dashboard stayed green. A failed job here sends the repository
+      # owner the notification GitHub already knows how to send.
+      #
+      # Granularity is one day, because that is this workflow's schedule. It
+      # catches a collector that has stopped, not one that is merely late.
+      - name: Alarm on stale collection
+        env:
+          MAX_STALENESS_HOURS: "6"
+        run: |
+          python3 - <<'PY'
+          import json, os, sys
+          limit = float(os.environ["MAX_STALENESS_HOURS"])
+          cov = json.load(open("status/coverage.json"))
+          age = cov["staleness_hours"]
+          print(f"last observation {age}h ago (limit {limit}h)")
+          if age > limit:
+              sys.exit(
+                  f"::error::collection is stale: last observation {age}h ago, "
+                  f"limit {limit}h. Both collectors are down, or the token the "
+                  f"Railway service uses has been revoked."
+              )
+          PY
+
       - name: Export tidy dataset
         run: python3 scripts/export.py
 

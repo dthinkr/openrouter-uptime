@@ -45,12 +45,19 @@ jobs:
       - name: Audit integrity against raw
         run: python3 scripts/audit.py > /dev/null
 
-      - name: Commit coverage and audit
+      # README figures. Daily is the right cadence: they window 14 days, and
+      # the poll path must not carry work that scans the whole derived tree.
+      - name: Render charts
+        run: python3 scripts/charts.py
+
+      - name: Commit coverage, audit and charts
         run: |
           set -euo pipefail
           git config user.name  "openrouter-uptime-bot"
           git config user.email "actions@github.com"
-          git add status/coverage.json status/audit.json
+          git add status/coverage.json status/audit.json \
+                  status/strip-light.svg status/strip-dark.svg \
+                  status/providers-light.svg status/providers-dark.svg
           if git diff --cached --quiet; then
             echo "coverage unchanged"
             exit 0

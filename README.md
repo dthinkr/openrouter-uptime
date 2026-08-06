@@ -3,11 +3,15 @@
 An independent, git-timestamped uptime registry for **every model on
 [OpenRouter](https://openrouter.ai)** and each of its inference providers.
 
-A GitHub Action polls OpenRouter's public API every hour, saves the raw
-responses, records the status of all ~875 model/provider endpoints plus each
-provider's metadata, and commits the result. Every poll is a timestamped
-snapshot in `raw/` and `derived/`, so any endpoint's availability can be
-reconstructed over time from the files themselves.
+Two independent collectors poll OpenRouter's public API every 15 minutes --
+a Railway cron as the primary and a GitHub Action as the fallback, each
+standing down when the other has polled recently. Every run saves the raw
+responses, records the status of every routing endpoint (~1,150 across ~400
+catalog models) plus provider metadata, and commits the result. Every poll is
+a timestamped snapshot in `raw/` and `derived/`, so any endpoint's
+availability can be reconstructed over time from the files themselves.
+Measured sampling characteristics -- duty cycle, gaps, per-hour density --
+are published in [`status/coverage.json`](status/coverage.json).
 
 No API key required. Everything comes from OpenRouter's public endpoints.
 
@@ -61,9 +65,11 @@ ls raw/                                                   # one folder per day
 ## Notes
 
 - Keyless: `poll.py` uses only OpenRouter's public API.
-- GitHub's scheduled runs are best-effort and can lag 5 to 15 min at peak; the
-  `ts` column records the true poll time.
-- Raw archives are ~140 KB gzipped per run (~7 MB/day).
+- Schedulers are best-effort; the `ts` column records the true poll time, and
+  `status/coverage.json` records what was actually achieved. Until 2026-08-06
+  the collector ran hourly at best (21.6% duty cycle for the 30-minute
+  window); judge the early series by the coverage file, not the schedule.
+- Raw archives are ~160 KB gzipped per run (~15 MB/day at the 15-min cadence).
 - OpenRouter's uptime figures are its own measurements of its routing layer.
 - Built to study AI-infrastructure dependence; contributions welcome.
 

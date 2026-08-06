@@ -1,11 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
-title: "OpenRouter Uptime: an independent availability and data-policy registry for OpenRouter models"
+title: "OpenRouter Uptime: a git-versioned availability registry for OpenRouter models and endpoints"
 abstract: >-
-  An independent, hourly, git-timestamped registry of the availability of every
-  model on OpenRouter and each of its inference providers, together with each
-  provider's data policy (training, prompt retention, terms of service). Raw API
-  responses are archived as ground truth; tidy tables are mirrored to HuggingFace
+  A git-versioned archive of OpenRouter's self-reported availability for every
+  model and routing endpoint on the platform, with endpoint-level identity.
+  Raw API responses are archived verbatim as ground truth; derived tables, an
+  incident log and a fail-closed audit are rebuilt from them. Polled every 15
+  minutes by two independent schedulers since 2026-08-06, best-effort hourly
+  from 2026-07-04 before that; measured sampling characteristics, including
+  gaps, are published in status/coverage.json. Provider data-policy fields are
+  null after 2026-07-15, when OpenRouter stopped publishing them; last-known
+  values remain in the raw archives. Tidy tables are mirrored to HuggingFace
   and Kaggle.
 type: dataset
 authors:
@@ -21,5 +26,5 @@ keywords:
   - AI governance
   - time series
 license: MIT
-version: "1.0.0"
+version: "2.0.0"
 date-released: "2026-07-04"

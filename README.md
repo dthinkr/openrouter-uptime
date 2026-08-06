@@ -25,22 +25,10 @@ daily on
   <img alt="Per-provider availability over the last 14 days; the bottom strip marks every actual poll" src="status/strip-light.svg" width="100%">
 </picture>
 
-<sub>Each cell is 6 hours. Colour is the deviation from that row's own 14-day
-norm (printed right as <code>typ</code>): amber = at least 5 points more of the
-provider's endpoints impaired than usual, red = a majority hard-down, hatched =
-no observation — gaps are shown, never interpolated. The bottom strip marks
-every actual poll. Idle endpoints count as healthy.</sub>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="status/providers-dark.svg">
   <img alt="Per-provider 14-day availability trend from up1d" src="status/providers-light.svg" width="100%">
 </picture>
-
-<sub>Day-scale trend per provider from <code>up1d</code> — the one column whose
-24-hour window survives sparse sampling. Both figures regenerate daily via
-<a href="scripts/charts.py"><code>scripts/charts.py</code></a> in the publish
-workflow; sampling characteristics live in
-<a href="status/coverage.json"><code>status/coverage.json</code></a>.</sub>
 
 ## What's in here
 

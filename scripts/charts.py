@@ -40,6 +40,15 @@ STATUS = ROOT / "status"
 WINDOW_DAYS = 14
 CELL_HOURS = 6
 TOP_PROVIDERS = 8
+
+# Shared page geometry. Both figures stack in the same README column, so they
+# must share a canvas width and, more importantly, the same left and right
+# content edges -- otherwise the provider labels of one sit under the plot
+# area of the other and the pair reads as two unrelated images.
+CANVAS_W = 814        # ~1:1 against GitHub's readme column
+LABEL_W = 132         # x where the plot area starts, both figures
+RIGHT_W = 78          # reserved right gutter, both figures
+PLOT_W = CANVAS_W - LABEL_W - RIGHT_W
 MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
 
 THEMES = {
@@ -197,8 +206,9 @@ def day_labels(svg, start, x_at, y, theme, step=3):
 
 def render_strip(theme_name, theme, start, end, top, cells, medians,
                  ncols, polled_cols, polls, latest):
-    G, CW, CH, GAP = 132, 10.6, 19, 5
-    W = G + ncols * CW + 78
+    G, CH, GAP = LABEL_W, 19, 5
+    CW = PLOT_W / ncols
+    W = CANVAS_W
     rows = [None, *top]
     strip_y = len(rows) * (CH + GAP) + 16
     H = strip_y + 20 + 24
@@ -233,13 +243,13 @@ def render_strip(theme_name, theme, start, end, top, cells, medians,
                 s.append(f'<rect x="{x:.1f}" y="{y}" width="{CW-1.3:.1f}" '
                          f'height="{CH}" rx="2" fill="{color[st]}"/>')
         # disclose the row's own norm, so green is never mistaken for "0%"
-        s.append(f'<text x="{G+ncols*CW+7:.1f}" y="{y+CH-5}" '
+        s.append(f'<text x="{G+PLOT_W+7:.1f}" y="{y+CH-5}" '
                  f'style="font:11px {MONO};fill:{theme["faint"]}">'
                  f'typ {medians[prov]*100:.0f}%</text>')
 
     # sampling coverage: one tick per actual poll, at 15-minute resolution
     span_s = (end - start).total_seconds()
-    plot_w = ncols * CW
+    plot_w = PLOT_W
     s.append(f'<text x="{G-9}" y="{strip_y+14}" text-anchor="end" '
              f'style="font:11px {MONO};fill:{theme["faint"]}">polls</text>')
     s.append(f'<rect x="{G}" y="{strip_y}" width="{plot_w:.1f}" height="20" '
@@ -270,15 +280,17 @@ def render_strip(theme_name, theme, start, end, top, cells, medians,
              f'{len(polls)} polls · 30-min duty {duty:.0f}% · '
              f'{latest["endpoint_count"]} endpoints</text>')
 
-    day_labels(s, start, lambda d: G + d * 24 / CELL_HOURS * CW,
+    day_labels(s, start, lambda d: G + d / WINDOW_DAYS * PLOT_W,
                strip_y + 20 + 16, theme)
     s.append("</svg>")
     return "".join(s)
 
 
 def render_providers(theme, top, series, latest, medians):
-    G, RH, SX, SW = 132, 34, 168, 330
-    W, header = 814, 20
+    G, RH = LABEL_W, 34
+    SX = G + 36                    # sparkline starts just past the state dot
+    SW = PLOT_W - 36 - 190         # leaves room for the two numeric columns
+    W, header = CANVAS_W, 20
     H = header + len(top) * RH + 8
     color = {"up": theme["up"], "idle": theme["idle"],
              "degraded": theme["deg"], "down": theme["down"]}

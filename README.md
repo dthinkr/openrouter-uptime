@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-06T15:11:02+00:00 UTC)
+## Current status (2026-08-06T19:00:59+00:00 UTC)
 
-331 models polled, 1060 inference endpoints:
-up 651, degraded 174, down 31, idle 204.
+332 models polled, 1062 inference endpoints:
+up 698, degraded 112, down 16, idle 236.
 
-Currently down (31):
+Currently down (16):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 6% | 2% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 61% | 46% |
-| `anthropic/claude-fable-5` | Azure | 76% | n/a |
-| `anthropic/claude-fable-5` | Anthropic | 77% | 63% |
-| `deepseek/deepseek-chat-v3.1` | Google | 67% | 58% |
-| `deepseek/deepseek-v4-flash` | Ambient | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | Phala | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | Mancer 2 | 59% | 81% |
-| `deepseek/deepseek-v4-flash-0731` | Together | 73% | 93% |
-| `google/gemini-2.5-pro` | Google | 72% | 51% |
-| `google/gemini-2.5-pro-preview` | Google | 80% | 47% |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 72% | 51% |
-| `google/gemma-3-27b-it` | Nebius | 57% | 98% |
-| `google/gemma-3-27b-it` | Novita | 78% | 100% |
-| `google/gemma-4-31b-it` | Chutes | 74% | 29% |
-| plus 16 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 16% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Google | 71% | n/a |
+| `deepseek/deepseek-r1` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | Together | 66% | 88% |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 76% | 100% |
+| `google/gemma-4-31b-it` | SiliconFlow | 17% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 34% | 56% |
+| `mistralai/mistral-nemo` | Novita | 78% | 32% |
+| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
+| `qwen/qwen3.5-35b-a3b` | NextBit | 0% | 0% |
+| `xiaomi/mimo-v2.5` | Venice | 44% | n/a |
+| `z-ai/glm-5` | Phala | n/a | n/a |
+| `z-ai/glm-5.1` | Chutes | 73% | n/a |
+| plus 1 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

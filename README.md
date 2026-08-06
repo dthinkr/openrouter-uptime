@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-06T19:30:25+00:00 UTC)
+## Current status (2026-08-06T19:45:46+00:00 UTC)
 
-332 models polled, 1062 inference endpoints:
-up 683, degraded 138, down 20, idle 221.
+332 models polled, 1060 inference endpoints:
+up 687, degraded 128, down 24, idle 221.
 
-Currently down (20):
+Currently down (24):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 70% | 66% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 31% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 61% | 70% |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 66% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 32% | 43% |
+| `anthropic/claude-fable-5` | Azure | 79% | 81% |
+| `anthropic/claude-opus-4.6` | Anthropic | n/a | n/a |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 59% | 100% |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 73% | 72% |
-| `google/gemini-2.5-flash` | Google | 80% | 76% |
-| `google/gemma-4-31b-it` | SiliconFlow | 38% | 100% |
-| `google/gemma-4-31b-it` | Together | 75% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 58% | 55% |
-| `mistralai/mistral-nemo` | Novita | 56% | 60% |
-| `moonshotai/kimi-k2.5` | SiliconFlow | 67% | 65% |
-| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
-| `moonshotai/kimi-k2.6` | SiliconFlow | 76% | n/a |
-| `moonshotai/kimi-k3` | Modal | 77% | 85% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Together | 66% | 97% |
-| plus 5 more | | | |
+| `deepseek/deepseek-v4-flash` | Phala | 79% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 65% | n/a |
+| `deepseek/deepseek-v4-pro` | Venice | 47% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 11% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 46% | n/a |
+| `mistralai/mistral-nemo` | Novita | 57% | 65% |
+| `moonshotai/kimi-k2.5` | SiliconFlow | 75% | 48% |
+| `moonshotai/kimi-k2.6` | SiliconFlow | 59% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Together | 77% | n/a |
+| plus 9 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

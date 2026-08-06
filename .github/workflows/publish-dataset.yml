@@ -5,8 +5,11 @@ on:
     - cron: "20 6 * * *"     # once a day, 06:20 UTC
   workflow_dispatch: {}
 
+# Write is needed to commit status/coverage.json, which is regenerated here
+# rather than on every poll: it scans the whole derived history, and that is
+# work the collection path should never carry.
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   publish:
@@ -27,6 +30,40 @@ jobs:
           python-version: "3.12"
 
       - run: pip install -q pandas pyarrow huggingface_hub kaggle
+
+      # Characterise the sampling before shipping the data it produced. The
+      # series is scheduled, not continuous, so its duty cycle and gap list
+      # are properties a reader needs alongside the readings themselves.
+      - name: Measure coverage
+        run: python3 scripts/coverage.py
+
+      - name: Commit coverage
+        run: |
+          set -euo pipefail
+          git config user.name  "openrouter-uptime-bot"
+          git config user.email "actions@github.com"
+          git add status/coverage.json
+          if git diff --cached --quiet; then
+            echo "coverage unchanged"
+            exit 0
+          fi
+          git commit -m "coverage $(date -u +%Y-%m-%dT%H:%MZ)"
+          # The poll workflow commits on its own schedule and is not in this
+          # job's concurrency group, so a race here is expected rather than
+          # exceptional.
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
+              git rebase --abort || true
+              echo "rebase conflicted; leaving coverage for the next run"
+              exit 0
+            fi
+            sleep $(( attempt * 3 ))
+          done
+          echo "could not push coverage after 5 attempts"
+          exit 1
 
       - name: Export tidy dataset
         run: python3 scripts/export.py

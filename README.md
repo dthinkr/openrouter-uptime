@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-06T20:16:24+00:00 UTC)
+## Current status (2026-08-06T20:30:59+00:00 UTC)
 
-332 models polled, 1060 inference endpoints:
-up 695, degraded 120, down 19, idle 226.
+332 models polled, 1059 inference endpoints:
+up 697, degraded 114, down 18, idle 230.
 
-Currently down (19):
+Currently down (18):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 59% | 54% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 28% | 40% |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 63% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 41% | 34% |
+| `anthropic/claude-fable-5` | Azure | 69% | n/a |
+| `deepseek/deepseek-chat-v3.1` | Mara | 79% | 85% |
 | `deepseek/deepseek-r1` | Azure | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | Ambient | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | Phala | n/a | n/a |
-| `google/gemini-2.5-flash` | Google | 72% | 86% |
-| `google/gemini-2.5-pro` | Google | 78% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 57% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 78% | n/a |
-| `google/gemma-4-31b-it` | SiliconFlow | 21% | 100% |
-| `mistralai/mistral-nemo` | Novita | 57% | 69% |
-| `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
-| `openai/gpt-oss-120b` | DeepInfra | 73% | 100% |
+| `deepseek/deepseek-v4-flash` | Phala | 72% | 98% |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 79% | 77% |
+| `google/gemini-2.5-flash` | Google | 74% | 88% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 47% | n/a |
+| `minimax/minimax-m3` | DeepInfra | 66% | 35% |
+| `mistralai/mistral-nemo` | Novita | 56% | 64% |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
 | `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | DeepInfra | 76% | n/a |
-| plus 4 more | | | |
+| `qwen/qwen3.5-35b-a3b` | NextBit | n/a | 0% |
+| plus 3 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

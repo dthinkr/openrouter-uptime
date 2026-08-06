@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-06T09:37:48+00:00 UTC)
+## Current status (2026-08-06T12:00:49+00:00 UTC)
 
 330 models polled, 1058 inference endpoints:
-up 659, degraded 153, down 30, idle 216.
+up 658, degraded 149, down 33, idle 218.
 
-Currently down (30):
+Currently down (33):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 10% | 9% |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 67% | 68% |
-| `anthropic/claude-fable-5` | Anthropic | 76% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 68% | 15% |
-| `deepseek/deepseek-chat-v3-0324` | SiliconFlow | 33% | n/a |
-| `deepseek/deepseek-chat-v3.1` | SiliconFlow | 62% | 74% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 38% | 47% |
-| `deepseek/deepseek-v4-flash` | Ambient | 0% | n/a |
-| `google/gemini-2.5-pro-preview` | Google | 73% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | Google | 73% | n/a |
-| `google/gemma-3-27b-it` | Nebius | 59% | n/a |
-| `google/gemma-4-26b-a4b-it` | Ionstream | 79% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 73% | n/a |
-| `minimax/minimax-m2.7` | AtlasCloud | 60% | n/a |
-| `minimax/minimax-m2.7` | SambaNova | 77% | n/a |
-| plus 15 more | | | |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 12% | 22% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 64% | 43% |
+| `anthropic/claude-fable-5` | Anthropic | 79% | 80% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 71% | 69% |
+| `deepseek/deepseek-chat-v3.1` | CoreWeave | 49% | 70% |
+| `deepseek/deepseek-v4-flash` | Phala | 12% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 76% | 63% |
+| `deepseek/deepseek-v4-pro` | Parasail | 66% | n/a |
+| `google/gemini-2.5-flash` | Google | 74% | 36% |
+| `google/gemma-4-31b-it` | Together | 79% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 70% | n/a |
+| `minimax/minimax-m2.7` | AtlasCloud | 70% | n/a |
+| `minimax/minimax-m2.7` | SambaNova | 73% | n/a |
+| `minimax/minimax-m2.7` | DeepInfra | 62% | n/a |
+| `minimax/minimax-m2.7` | Minimax | 79% | n/a |
+| plus 18 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -69,31 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-06T19:45:46+00:00 UTC)
+## Current status (2026-08-06T20:00:25+00:00 UTC)
 
 332 models polled, 1060 inference endpoints:
-up 687, degraded 128, down 24, idle 221.
+up 696, degraded 113, down 23, idle 228.
 
-Currently down (24):
+Currently down (23):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-lite-v1` | Amazon Bedrock | 66% | n/a |
-| `amazon/nova-micro-v1` | Amazon Bedrock | 32% | 43% |
-| `anthropic/claude-fable-5` | Azure | 79% | 81% |
-| `anthropic/claude-opus-4.6` | Anthropic | n/a | n/a |
-| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 59% | 100% |
-| `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | Phala | 79% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 65% | n/a |
-| `deepseek/deepseek-v4-pro` | Venice | 47% | n/a |
-| `google/gemma-4-31b-it` | SiliconFlow | 11% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 46% | n/a |
-| `mistralai/mistral-nemo` | Novita | 57% | 65% |
-| `moonshotai/kimi-k2.5` | SiliconFlow | 75% | 48% |
-| `moonshotai/kimi-k2.6` | SiliconFlow | 59% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Together | 77% | n/a |
-| plus 9 more | | | |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 65% | n/a |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 29% | 22% |
+| `anthropic/claude-fable-5` | Azure | 79% | n/a |
+| `deepseek/deepseek-v3.2` | Venice | 79% | 100% |
+| `deepseek/deepseek-v4-flash` | Phala | 73% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | Together | 80% | 91% |
+| `deepseek/deepseek-v4-pro` | Venice | 27% | n/a |
+| `google/gemini-2.5-pro` | Google | 60% | n/a |
+| `google/gemini-2.5-pro-preview` | Google | 60% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | Google | 59% | n/a |
+| `google/gemma-4-31b-it` | SiliconFlow | 8% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 44% | n/a |
+| `mistralai/mistral-nemo` | Novita | 68% | 99% |
+| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `openai/gpt-oss-120b` | DeepInfra | 72% | 100% |
+| plus 8 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

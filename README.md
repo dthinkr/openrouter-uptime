@@ -69,31 +69,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-06T19:00:59+00:00 UTC)
+## Current status (2026-08-06T19:15:18+00:00 UTC)
 
 332 models polled, 1062 inference endpoints:
-up 698, degraded 112, down 16, idle 236.
+up 677, degraded 142, down 12, idle 231.
 
-Currently down (16):
+Currently down (12):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 16% | n/a |
-| `deepseek/deepseek-chat-v3.1` | Google | 71% | n/a |
-| `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Together | 66% | 88% |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 76% | 100% |
-| `google/gemma-4-31b-it` | SiliconFlow | 17% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 34% | 56% |
-| `mistralai/mistral-nemo` | Novita | 78% | 32% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 29% | 18% |
+| `deepseek/deepseek-v4-flash-0731` | Together | 63% | 99% |
+| `google/gemma-4-31b-it` | SiliconFlow | 18% | 100% |
+| `google/gemma-4-31b-it` | Together | 80% | 93% |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 64% | n/a |
+| `mistralai/mistral-nemo` | Novita | 54% | 82% |
 | `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Together | 80% | 49% |
 | `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3.5-35b-a3b` | NextBit | 0% | 0% |
-| `xiaomi/mimo-v2.5` | Venice | 44% | n/a |
-| `z-ai/glm-5` | Phala | n/a | n/a |
-| `z-ai/glm-5.1` | Chutes | 73% | n/a |
-| plus 1 more | | | |
+| `qwen/qwen3.5-35b-a3b` | NextBit | 0% | n/a |
+| `z-ai/glm-5.1` | Chutes | 76% | n/a |
+| `z-ai/glm-5.1` | Phala | 77% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

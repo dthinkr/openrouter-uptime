@@ -78,6 +78,24 @@ run after that pulls incrementally.
 through config-as-code. Railway's minimum granularity is 5 minutes and all
 schedules are evaluated in UTC.
 
+**6. Watch patterns.** Restrict rebuilds to:
+
+```
+railway/**
+scripts/**
+railway.json
+```
+
+This one is not optional. A Railway service connected to a GitHub repo
+rebuilds on every push to the tracked branch by default — and this collector
+pushes to that branch every fifteen minutes. Left at the default, each poll
+triggers a fresh Docker build, and the build costs considerably more than the
+4.5-second poll it exists to run. The service would spend its life rebuilding
+itself in response to its own commits.
+
+With the patterns above, `raw/`, `derived/`, `status/` and `README.md` no
+longer trigger anything. Only an actual change to the collector rebuilds it.
+
 ## Verifying it works
 
 `status/coverage.json` is regenerated daily by the `publish-dataset` workflow

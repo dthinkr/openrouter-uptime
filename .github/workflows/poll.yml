@@ -2,10 +2,23 @@ name: poll
 
 on:
   schedule:
-    - cron: "0 * * * *"   # hourly (GitHub best-effort; may lag at peak)
-  workflow_dispatch: {}       # allow manual runs
+    # Three attempts an hour, deliberately off the top of the hour.
+    #
+    # GitHub's scheduler drops runs outright rather than merely delaying them,
+    # and :00 is its most congested slot -- under `cron: "0 * * * *"` this
+    # collector delivered 43% of its nominal rate over 33 days, with the 01:00
+    # UTC hour never sampled at all. Over-scheduling converts a dropped run
+    # into a late one; scripts/should_poll.py turns the surplus attempts into
+    # no-ops, so the extra fires cost a few seconds each and nothing else.
+    - cron: "7,27,47 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Poll even if the last one was recent"
+        type: boolean
+        default: false
 
-# never let two runs commit at once
+# Never let two runs commit at once.
 concurrency:
   group: poll
   cancel-in-progress: false
@@ -16,6 +29,12 @@ permissions:
 jobs:
   poll:
     runs-on: ubuntu-latest
+    env:
+      # Floor between polls. Under half the 15-minute target cadence, so a
+      # late-but-not-dropped run still counts instead of being suppressed by
+      # the one before it.
+      MIN_INTERVAL_MIN: "12"
+
     steps:
       - uses: actions/checkout@v4
 
@@ -23,14 +42,33 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Poll OpenRouter and refresh status
+      - name: Is a poll due?
+        id: guard
+        env:
+          FORCE_POLL: ${{ inputs.force }}
+        run: python3 scripts/should_poll.py
+
+      # The only step whose failure should abort the run. What it writes --
+      # raw/, derived/, status/ -- is unrecoverable if lost, because OpenRouter
+      # reports only current windows and offers no historical endpoint.
+      - name: Poll OpenRouter
+        if: steps.guard.outputs.poll == 'true'
+        run: python3 scripts/poll.py
+
+      # README cosmetics only. A failure here must not discard a good poll, so
+      # the commit below runs regardless: a stale README is rebuildable, a
+      # missed observation is not.
+      - name: Refresh README
+        if: steps.guard.outputs.poll == 'true'
+        continue-on-error: true
         run: |
-          python3 scripts/poll.py
           python3 scripts/summarize.py
           python3 scripts/readme_events.py
 
       - name: Commit
+        if: steps.guard.outputs.poll == 'true'
         run: |
+          set -euo pipefail
           git config user.name  "openrouter-uptime-bot"
           git config user.email "actions@github.com"
           git add -A
@@ -39,6 +77,32 @@ jobs:
             exit 0
           fi
           git commit -m "poll $(date -u +%Y-%m-%dT%H:%MZ)"
-          # rebase-pull in case a manual run raced the cron
-          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
-          git push
+
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "pushed on attempt ${attempt}"
+              exit 0
+            fi
+            echo "push rejected, rebasing onto origin/${GITHUB_REF_NAME} (attempt ${attempt})"
+            if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
+              # This was `|| true`, which left the tree mid-rebase and made the
+              # following push fail for an unrelated-looking reason. Fail loudly
+              # instead; the next scheduled attempt re-polls within ~20 minutes.
+              git rebase --abort || true
+              echo "rebase conflicted; aborting rather than guessing a resolution"
+              exit 1
+            fi
+            sleep $(( attempt * 3 ))
+          done
+          echo "push failed after 5 attempts"
+          exit 1
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### poll"
+            echo ""
+            echo "- due: \`${{ steps.guard.outputs.poll }}\`"
+            echo "- age of previous poll: \`${{ steps.guard.outputs.age_minutes }}\` min"
+          } >> "$GITHUB_STEP_SUMMARY"

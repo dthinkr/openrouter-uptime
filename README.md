@@ -24,9 +24,9 @@ Three committed folders: `raw/` (verbatim archives), `derived/` (tidy CSVs),
 | path | contents |
 |---|---|
 | `raw/YYYY-MM-DD/HHMMSS.json.gz` | ground truth: the verbatim `/models`, `/providers` (formerly `/all-providers`), and every `/endpoints` API response for that run. Everything below is derived from these and can be rebuilt with `scripts/reparse.py`. |
-| `derived/YYYY-MM-DD.csv` | one row per endpoint per poll: `ts, model, provider, state, status, up5m, up30m, up1d` |
+| `derived/YYYY-MM-DD.csv` | one row per endpoint per poll: `ts, model, provider, endpoint_tag, endpoint_id, identity_ambiguous, state, status, up5m, up30m, up1d`. Endpoint identity is `(model, endpoint_id)` — provider name alone is not unique, since one provider can serve several endpoints for the same model. `state` is `unknown` when the endpoint fetch itself failed. |
 | `status/latest.json` | most recent full endpoint snapshot |
-| `status/incidents.jsonl` | append-only outage log; each line is an endpoint crossing into or out of `down` |
+| `status/incidents.jsonl` | append-only outage log; each line is an endpoint transition that touches `down` (note `recovered` can mean down→degraded, not necessarily full health — check `to`). Carries `previous_ts`, `observation_gap` and `minutes_since_last_seen`, so transitions bridged across sampling gaps are marked rather than silent. Rebuilt verbatim from `raw/` by `scripts/rebuild_history.py`; `scripts/audit.py` fails if the two ever differ |
 | `status/models.json` | live model catalog, refreshed every run (on catalog-fetch failure the last good snapshot is reused and uptime readings continue) |
 | `status/model_changes.jsonl` | append-only log of models added to or removed from OpenRouter, plus catalog fetch outages |
 | `status/providers.json` | each provider's metadata (HQ, ToS/privacy/status-page URLs). Until 2026-07-15 it also carried OpenRouter's reported data policy (training, prompt retention, moderation); upstream stopped publishing it, so `data_policy` is null after that date (last-known values remain in `raw/`) |
@@ -76,24 +76,24 @@ up 693, degraded 121, down 17, idle 228.
 
 Currently down (17):
 
-| model | provider | 30m uptime | 5m uptime |
-|---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 33% | 86% |
-| `anthropic/claude-fable-5` | Azure | 65% | 94% |
-| `deepseek/deepseek-chat-v3.1` | Mara | 74% | n/a |
-| `deepseek/deepseek-r1` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 80% | 86% |
-| `google/gemini-2.5-flash` | Google | 62% | 34% |
-| `google/gemma-4-31b-it` | SiliconFlow | 34% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 46% | n/a |
-| `minimax/minimax-m3` | DeepInfra | 52% | 100% |
-| `mistralai/mistral-nemo` | Novita | 60% | 49% |
-| `moonshotai/kimi-k2.6` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | Morph | 79% | 73% |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3.5-35b-a3b` | NextBit | 0% | n/a |
-| `qwen/qwen3.5-9b` | Parasail | 73% | n/a |
-| plus 2 more | | | |
+| model | endpoint | provider | 30m uptime | 5m uptime |
+|---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | 86% |
+| `anthropic/claude-fable-5` | `azure` | Azure | 65% | 94% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 74% | n/a |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 80% | 86% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 34% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 34% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 52% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 49% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 79% | 73% |
+| `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
+| `qwen/qwen3.5-35b-a3b` | `nextbit/fp8` | NextBit | 0% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 73% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

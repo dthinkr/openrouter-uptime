@@ -37,12 +37,20 @@ jobs:
       - name: Measure coverage
         run: python3 scripts/coverage.py
 
-      - name: Commit coverage
+      # Fail-closed integrity check: re-derives every artifact from raw/ and
+      # requires exact agreement with what the incremental pollers committed.
+      # Identity duplicates, non-alternating incident edges, schema drift or
+      # parser divergence all fail the job, which emails the repository owner.
+      # It writes status/audit.json only when everything passes.
+      - name: Audit integrity against raw
+        run: python3 scripts/audit.py > /dev/null
+
+      - name: Commit coverage and audit
         run: |
           set -euo pipefail
           git config user.name  "openrouter-uptime-bot"
           git config user.email "actions@github.com"
-          git add status/coverage.json
+          git add status/coverage.json status/audit.json
           if git diff --cached --quiet; then
             echo "coverage unchanged"
             exit 0

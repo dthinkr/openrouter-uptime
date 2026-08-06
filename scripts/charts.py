@@ -3,8 +3,8 @@
 
 Two figures, each written as a light/dark pair for GitHub's <picture>:
 
-  status/strip-{light,dark}.svg      per-provider status strip (worst-case
-                                     view, 3-hour cells) sharing a time axis
+  status/strip-{light,dark}.svg      per-provider status strip (6-hour cells)
+                                     sharing a time axis
                                      with the sampling-coverage strip -- every
                                      tick on the bottom row is one actual poll
   status/providers-{light,dark}.svg  per-provider day-scale trend from up1d,
@@ -14,6 +14,12 @@ Two figures, each written as a light/dark pair for GitHub's <picture>:
 Ground rules, learned the hard way in this repo: the x axis is wall-clock
 time, never poll index; windows with no observation are hatched, never
 interpolated; idle is drawn as a neutral, because no traffic is not a fault.
+
+Sizing is deliberate. GitHub renders README images into a column roughly
+830 px wide and scales the SVG to fit, so a viewBox much wider than that
+shrinks every glyph below legibility. Both figures are laid out to land near
+1:1 at that width; widen the cells rather than the canvas if more room is
+needed.
 
 Runs in the daily publish workflow, not on the poll path -- it scans two
 weeks of derived CSVs, and the collection path must carry no work that grows
@@ -32,7 +38,7 @@ DERIVED = ROOT / "derived"
 STATUS = ROOT / "status"
 
 WINDOW_DAYS = 14
-CELL_HOURS = 3
+CELL_HOURS = 6
 TOP_PROVIDERS = 8
 MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
 
@@ -181,21 +187,21 @@ def clip(s: str, n: int = 17) -> str:
     return s if len(s) <= n else s[: n - 1] + "…"
 
 
-def day_labels(svg, start, x_at, y, theme, step=2):
+def day_labels(svg, start, x_at, y, theme, step=3):
     for d in range(0, WINDOW_DAYS, step):
         dt = start + timedelta(days=d)
         svg.append(f'<text x="{x_at(d):.1f}" y="{y}" '
-                   f'style="font:9.5px {MONO};fill:{theme["faint"]}">'
+                   f'style="font:11px {MONO};fill:{theme["faint"]}">'
                    f'{dt.strftime("%b %d")}</text>')
 
 
 def render_strip(theme_name, theme, start, end, top, cells, medians,
                  ncols, polled_cols, polls, latest):
-    G, CW, CH, GAP = 118, 7.3, 14, 4
-    W = G + ncols * CW + 64
+    G, CW, CH, GAP = 132, 10.6, 19, 5
+    W = G + ncols * CW + 78
     rows = [None, *top]
-    strip_y = len(rows) * (CH + GAP) + 10
-    H = strip_y + 16 + 20
+    strip_y = len(rows) * (CH + GAP) + 16
+    H = strip_y + 20 + 24
     hid = f"hatch-{theme_name}"
 
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W:.0f} {H}" '
@@ -212,8 +218,8 @@ def render_strip(theme_name, theme, start, end, top, cells, medians,
         y = ri * (CH + GAP)
         label = "all endpoints" if prov is None else clip(prov)
         weight = ";font-weight:700" if prov is None else ""
-        s.append(f'<text x="{G-8}" y="{y+CH-3.5}" text-anchor="end" '
-                 f'style="font:10px {MONO};fill:{theme["soft"]}{weight}">'
+        s.append(f'<text x="{G-9}" y="{y+CH-5}" text-anchor="end" '
+                 f'style="font:12.5px {MONO};fill:{theme["soft"]}{weight}">'
                  f'{esc(label)}</text>')
         med = medians[prov]
         for c, sh in enumerate(cells[prov]):
@@ -227,27 +233,27 @@ def render_strip(theme_name, theme, start, end, top, cells, medians,
                 s.append(f'<rect x="{x:.1f}" y="{y}" width="{CW-1.3:.1f}" '
                          f'height="{CH}" rx="2" fill="{color[st]}"/>')
         # disclose the row's own norm, so green is never mistaken for "0%"
-        s.append(f'<text x="{G+ncols*CW+6:.1f}" y="{y+CH-3.5}" '
-                 f'style="font:8.5px {MONO};fill:{theme["faint"]}">'
+        s.append(f'<text x="{G+ncols*CW+7:.1f}" y="{y+CH-5}" '
+                 f'style="font:11px {MONO};fill:{theme["faint"]}">'
                  f'typ {medians[prov]*100:.0f}%</text>')
 
     # sampling coverage: one tick per actual poll, at 15-minute resolution
     span_s = (end - start).total_seconds()
     plot_w = ncols * CW
-    s.append(f'<text x="{G-8}" y="{strip_y+12}" text-anchor="end" '
-             f'style="font:8.5px {MONO};fill:{theme["faint"]}">polls</text>')
-    s.append(f'<rect x="{G}" y="{strip_y}" width="{plot_w:.1f}" height="16" '
+    s.append(f'<text x="{G-9}" y="{strip_y+14}" text-anchor="end" '
+             f'style="font:11px {MONO};fill:{theme["faint"]}">polls</text>')
+    s.append(f'<rect x="{G}" y="{strip_y}" width="{plot_w:.1f}" height="20" '
              f'fill="none" stroke="{theme["rule"]}" stroke-width="1"/>')
     tick_w = max(plot_w * 900 / span_s, 0.7)   # 15 min of width, floor 0.7px
     for t in polls:
         x = G + (t - start).total_seconds() / span_s * plot_w
-        s.append(f'<rect x="{x:.1f}" y="{strip_y+2.5}" width="{tick_w:.2f}" '
-                 f'height="11" fill="{theme["up"]}" opacity=".8"/>')
+        s.append(f'<rect x="{x:.1f}" y="{strip_y+3}" width="{tick_w:.2f}" '
+                 f'height="14" fill="{theme["up"]}" opacity=".8"/>')
     # hatch the cell columns where no poll landed at all
     for c in range(ncols):
         if c not in polled_cols:
             s.append(f'<rect x="{G+c*CW:.1f}" y="{strip_y}" width="{CW:.1f}" '
-                     f'height="16" fill="url(#{hid})"/>')
+                     f'height="20" fill="url(#{hid})"/>')
 
     covered = 0.0
     prev_end = None
@@ -260,19 +266,19 @@ def render_strip(theme_name, theme, start, end, top, cells, medians,
         prev_end = max(prev_end or 0.0, b)
     duty = 100.0 * covered / span_s if span_s else 0.0
     s.append(f'<text x="{G+plot_w:.1f}" y="{strip_y-4}" text-anchor="end" '
-             f'style="font:9px {MONO};fill:{theme["faint"]}">'
+             f'style="font:11.5px {MONO};fill:{theme["faint"]}">'
              f'{len(polls)} polls · 30-min duty {duty:.0f}% · '
              f'{latest["endpoint_count"]} endpoints</text>')
 
     day_labels(s, start, lambda d: G + d * 24 / CELL_HOURS * CW,
-               strip_y + 16 + 13, theme)
+               strip_y + 20 + 16, theme)
     s.append("</svg>")
     return "".join(s)
 
 
 def render_providers(theme, top, series, latest, medians):
-    G, RH, SX, SW = 118, 28, 150, 230
-    W, header = 640, 16
+    G, RH, SX, SW = 132, 34, 168, 330
+    W, header = 814, 20
     H = header + len(top) * RH + 8
     color = {"up": theme["up"], "idle": theme["idle"],
              "degraded": theme["deg"], "down": theme["down"]}
@@ -285,18 +291,18 @@ def render_providers(theme, top, series, latest, medians):
          f'font-family="{MONO}" role="img" '
          f'aria-label="Per-provider {WINDOW_DAYS}-day availability from up1d">']
     for x, t in ((G - 8, "provider"), (SX, f"daily up1d, {WINDOW_DAYS} d"),
-                 (SX + SW + 28, "mean"), (SX + SW + 96, "worst day")):
+                 (SX + SW + 34, "mean"), (SX + SW + 118, "worst day")):
         anchor = ' text-anchor="end"' if x == G - 8 else ""
         s.append(f'<text x="{x}" y="10"{anchor} '
-                 f'style="font:8.5px {MONO};fill:{theme["faint"]}">{t}</text>')
+                 f'style="font:11px {MONO};fill:{theme["faint"]}">{t}</text>')
 
     for ri, p in enumerate(top):
         y = header + ri * RH
         cy = y + RH / 2
         st = current_state(latest, p, medians[p])
-        s.append(f'<circle cx="{G+11}" cy="{cy:.1f}" r="4" fill="{color[st]}"/>')
-        s.append(f'<text x="{G-8}" y="{cy+3.5:.1f}" text-anchor="end" '
-                 f'style="font:10px {MONO};fill:{theme["soft"]}">'
+        s.append(f'<circle cx="{G+13}" cy="{cy:.1f}" r="5" fill="{color[st]}"/>')
+        s.append(f'<text x="{G-9}" y="{cy+4.5:.1f}" text-anchor="end" '
+                 f'style="font:12.5px {MONO};fill:{theme["soft"]}">'
                  f'{esc(clip(p))}</text>')
         pts, run = [], []
         known = [v for v in series[p] if v is not None]
@@ -307,26 +313,26 @@ def render_providers(theme, top, series, latest, medians):
                 run = []
                 continue
             px = SX + d * SW / (WINDOW_DAYS - 1)
-            py = y + RH - 6 - (v - lo) / (hi - lo) * (RH - 11)
+            py = y + RH - 7 - (v - lo) / (hi - lo) * (RH - 13)
             run.append(f"{px:.1f},{py:.1f}")
         if run:
             pts.append(run)
         for seg in pts:
             if len(seg) == 1:
                 x0, y0 = seg[0].split(",")
-                s.append(f'<circle cx="{x0}" cy="{y0}" r="1.6" '
+                s.append(f'<circle cx="{x0}" cy="{y0}" r="2.2" '
                          f'fill="{theme["accent"]}"/>')
             else:
                 s.append(f'<polyline points="{" ".join(seg)}" fill="none" '
-                         f'stroke="{theme["accent"]}" stroke-width="1.5" '
+                         f'stroke="{theme["accent"]}" stroke-width="2" '
                          f'stroke-linejoin="round"/>')
         if known:
             mean, worst = sum(known) / len(known), min(known)
-            s.append(f'<text x="{SX+SW+28}" y="{cy+3.5:.1f}" '
-                     f'style="font:10.5px {MONO};fill:{theme["ink"]}">'
+            s.append(f'<text x="{SX+SW+34}" y="{cy+4.5:.1f}" '
+                     f'style="font:13px {MONO};fill:{theme["ink"]}">'
                      f'{mean:.2f}%</text>')
             s.append(f'<text x="{SX+SW+96}" y="{cy+3.5:.1f}" '
-                     f'style="font:9.5px {MONO};fill:'
+                     f'style="font:12px {MONO};fill:'
                      f'{theme["down"] if worst < 98 else theme["faint"]}">'
                      f'{worst:.1f}%</text>')
     s.append("</svg>")

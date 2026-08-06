@@ -25,7 +25,7 @@ daily on
   <img alt="Per-provider availability over the last 14 days; the bottom strip marks every actual poll" src="status/strip-light.svg" width="100%">
 </picture>
 
-<sub>Each cell is 3 hours. Colour is the deviation from that row's own 14-day
+<sub>Each cell is 6 hours. Colour is the deviation from that row's own 14-day
 norm (printed right as <code>typ</code>): amber = at least 5 points more of the
 provider's endpoints impaired than usual, red = a majority hard-down, hatched =
 no observation — gaps are shown, never interpolated. The bottom strip marks

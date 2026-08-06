@@ -69,27 +69,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-06T19:15:18+00:00 UTC)
+## Current status (2026-08-06T19:30:25+00:00 UTC)
 
 332 models polled, 1062 inference endpoints:
-up 677, degraded 142, down 12, idle 231.
+up 683, degraded 138, down 20, idle 221.
 
-Currently down (12):
+Currently down (20):
 
 | model | provider | 30m uptime | 5m uptime |
 |---|---|---|---|
-| `amazon/nova-micro-v1` | Amazon Bedrock | 29% | 18% |
-| `deepseek/deepseek-v4-flash-0731` | Together | 63% | 99% |
-| `google/gemma-4-31b-it` | SiliconFlow | 18% | 100% |
-| `google/gemma-4-31b-it` | Together | 80% | 93% |
-| `meta-llama/llama-3.3-70b-instruct` | Nebius | 64% | n/a |
-| `mistralai/mistral-nemo` | Novita | 54% | 82% |
+| `amazon/nova-lite-v1` | Amazon Bedrock | 70% | 66% |
+| `amazon/nova-micro-v1` | Amazon Bedrock | 31% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | DeepInfra | 61% | 70% |
+| `deepseek/deepseek-r1` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | Mancer 2 | 73% | 72% |
+| `google/gemini-2.5-flash` | Google | 80% | 76% |
+| `google/gemma-4-31b-it` | SiliconFlow | 38% | 100% |
+| `google/gemma-4-31b-it` | Together | 75% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | Nebius | 58% | 55% |
+| `mistralai/mistral-nemo` | Novita | 56% | 60% |
+| `moonshotai/kimi-k2.5` | SiliconFlow | 67% | 65% |
 | `moonshotai/kimi-k2.5` | Phala | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | Together | 80% | 49% |
-| `qwen/qwen3-32b` | Alibaba | 0% | 0% |
-| `qwen/qwen3.5-35b-a3b` | NextBit | 0% | n/a |
-| `z-ai/glm-5.1` | Chutes | 76% | n/a |
-| `z-ai/glm-5.1` | Phala | 77% | n/a |
+| `moonshotai/kimi-k2.6` | SiliconFlow | 76% | n/a |
+| `moonshotai/kimi-k3` | Modal | 77% | 85% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | Together | 66% | 97% |
+| plus 5 more | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

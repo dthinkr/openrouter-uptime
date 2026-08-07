@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T17:16:17+00:00 UTC)
+## Current status (2026-08-07T17:30:44+00:00 UTC)
 
 400 models polled, 1153 inference endpoints:
-up 672, degraded 149, down 29, idle 303.
+up 655, degraded 168, down 31, idle 299.
 
-Currently down (29):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | 16% |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 75% | 74% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | 12% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 74% | 87% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
+| `anthropic/claude-fable-5` | `azure` | Azure | 80% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 66% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 71% | n/a |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `phala` | Phala | 38% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 78% | 79% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 46% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 46% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 49% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 85% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 72% | 36% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 49% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 89% |
-| plus 14 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 77% | n/a |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 78% | 99% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 75% | 100% |
+| `deepseek/deepseek-v4-pro` | `together` | Together | 73% | 100% |
+| `deepseek/deepseek-v4-pro` | `coreweave/fp8` | CoreWeave | 69% | 99% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 62% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 62% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 63% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 71% | 96% |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 76% | 98% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

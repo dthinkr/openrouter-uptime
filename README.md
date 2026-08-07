@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T06:45:34+00:00 UTC)
+## Current status (2026-08-07T07:01:20+00:00 UTC)
 
 400 models polled, 1154 inference endpoints:
-up 671, degraded 147, down 38, idle 298.
+up 678, degraded 145, down 38, idle 293.
 
 Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | 36% |
-| `anthropic/claude-fable-5` | `azure` | Azure | 69% | 72% |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 75% | 78% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 53% |
+| `anthropic/claude-fable-5` | `azure` | Azure | 68% | n/a |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 78% | 98% |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `phala` | Phala | 70% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 63% | 46% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 80% | 81% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 57% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 35% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 32% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 35% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 32% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 35% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 32% | n/a |
+| `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 55% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 78% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 64% | 25% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 79% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 31% | 28% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 29% | 23% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 31% | 28% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 29% | 23% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 31% | 28% |
 | plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

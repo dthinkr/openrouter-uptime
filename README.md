@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T01:46:24+00:00 UTC)
+## Current status (2026-08-07T02:00:25+00:00 UTC)
 
 400 models polled, 1153 inference endpoints:
-up 702, degraded 120, down 18, idle 313.
+up 697, degraded 115, down 22, idle 319.
 
-Currently down (18):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 67% | n/a |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 76% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | 33% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 64% | 76% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 67% | n/a |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 33% | 44% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 71% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 63% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 22% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 41% | 57% |
+| `deepseek/deepseek-v4-flash-0731` | `io-net/fp8` | Io Net | 70% | 73% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 63% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 56% | 30% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 32% | 35% |
 | `mistralai/mistral-nemo` | `io-net/fp16` | Io Net | 74% | 75% |
-| `moonshotai/kimi-k2.5` | `phala` | Phala | n/a | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 70% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 75% | n/a |
-| `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 77% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `nextbit/fp8` | NextBit | 0% | n/a |
-| plus 3 more | | | | |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 73% | 88% |
+| `moonshotai/kimi-k3` | `morph` | Morph | 78% | n/a |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 63% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

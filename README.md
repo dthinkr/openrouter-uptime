@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T19:00:42+00:00 UTC)
+## Current status (2026-08-07T19:15:26+00:00 UTC)
 
 400 models polled, 1155 inference endpoints:
-up 661, degraded 128, down 47, idle 319.
+up 660, degraded 126, down 52, idle 317.
 
-Currently down (47):
+Currently down (52):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 8% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | n/a |
+| `anthropic/claude-fable-5` | `azure` | Azure | 75% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 75% | 59% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 76% | n/a |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `phala` | Phala | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 67% | 99% |
+| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 2% | 59% |
 | `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 44% | n/a |
 | `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 40% |
-| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | n/a | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 71% | 92% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 83% |
+| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 0% | 0% |
 | `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `venice/bf16` | Venice | 63% | 84% |
+| `google/gemma-4-26b-a4b-it` | `venice/bf16` | Venice | 74% | 69% |
 | `google/gemma-4-31b-it` | `venice/bf16` | Venice | n/a | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 67% | 79% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 62% | 42% |
-| plus 32 more | | | | |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | 50% |
+| plus 37 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

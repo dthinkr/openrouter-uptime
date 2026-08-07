@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T12:15:25+00:00 UTC)
+## Current status (2026-08-07T12:30:44+00:00 UTC)
 
 400 models polled, 1154 inference endpoints:
-up 668, degraded 156, down 27, idle 303.
+up 673, degraded 153, down 29, idle 299.
 
-Currently down (27):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | 27% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 100% |
+| `anthropic/claude-opus-4.7` | `anthropic` | Anthropic | 79% | n/a |
+| `anthropic/claude-sonnet-4.6` | `anthropic` | Anthropic | 74% | 79% |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 41% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 51% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 26% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 62% | 94% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 28% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 51% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 26% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 66% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 64% | 84% |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 78% | 82% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 55% | 82% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 63% | 80% |
-| plus 12 more | | | | |
+| `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 74% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 78% | 93% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 32% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 96% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 65% | 100% |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 79% | 80% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 54% | 100% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 58% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 72% | 74% |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 71% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,8 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-24 03:19** — provider `wandb-legacy` left the platform.
-- **2026-07-27 10:40** — **3 models added to the catalog in one poll**: `inflection/inflection-3-pi`, `inflection/inflection-3-productivity`, `openai/gpt-4o-mini-search-preview`.
 - **2026-07-27 13:37** — **3 models removed from the catalog in one poll**: `inflection/inflection-3-pi`, `inflection/inflection-3-productivity`, `openai/gpt-4o-mini-search-preview`.
 - **2026-07-28 00:00** — provider `voyageai` changed its terms of service url.
 - **2026-07-28 00:00** — provider `voyageai` changed its privacy policy url.
@@ -130,6 +128,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-07-31 16:43** — **28 models removed from the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-sonnet-4.5:batch`, `anthropic/claude-sonnet-5:batch`, +20 more.
 - **2026-08-06 15:11** — **60 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-haiku-4.5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-opus-5:batch`, +52 more.
 - **2026-08-07 10:31** — provider `streamlake` changed its status page.
+- **2026-08-07 12:30** — provider `upstage` changed its terms of service url.
+- **2026-08-07 12:30** — provider `upstage` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

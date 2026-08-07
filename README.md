@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T06:15:11+00:00 UTC)
+## Current status (2026-08-07T06:31:16+00:00 UTC)
 
 400 models polled, 1154 inference endpoints:
-up 675, degraded 137, down 30, idle 312.
+up 680, degraded 138, down 30, idle 306.
 
 Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | n/a |
-| `anthropic/claude-fable-5` | `azure` | Azure | 69% | n/a |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 69% | n/a |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `phala` | Phala | 76% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 38% | 46% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 49% | 61% |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 80% | 74% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | 57% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 87% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | n/a |
-| `moonshotai/kimi-k3` | `together` | Together | 79% | 74% |
-| `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 56% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4` | DeepInfra | 78% | 78% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 72% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | n/a |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 68% | 53% |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 53% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 12% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 75% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 45% | 38% |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 78% | 75% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | 83% |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 75% | 97% |
+| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 79% | 73% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 56% | 42% |
+| `moonshotai/kimi-k2.6` | `together` | Together | 51% | 78% |
+| `moonshotai/kimi-k3` | `together` | Together | 76% | 89% |
+| `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 65% | 75% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4` | DeepInfra | 80% | n/a |
 | plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

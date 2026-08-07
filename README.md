@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T21:31:19+00:00 UTC)
+## Current status (2026-08-07T21:46:10+00:00 UTC)
 
 400 models polled, 1154 inference endpoints:
-up 686, degraded 127, down 37, idle 304.
+up 705, degraded 118, down 32, idle 299.
 
-Currently down (37):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 5% |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 80% | 89% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 67% | 42% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 53% | 92% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 67% | 47% |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 78% | 100% |
 | `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 75% | 96% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 76% | 72% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 79% | n/a |
 | `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 0% | n/a |
-| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 77% | 97% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 65% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 53% | 17% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | 40% |
-| `meta-llama/llama-3.3-70b-instruct` | `parasail/fp8` | Parasail | 0% | n/a |
-| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 0% | n/a |
-| plus 22 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 22% | 12% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 79% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 36% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `parasail/fp8` | Parasail | 0% | 0% |
+| `minimax/minimax-m3` | `parasail/fp8` | Parasail | n/a | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 81% |
+| `moonshotai/kimi-k2.6` | `parasail/int4` | Parasail | 0% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 63% | 68% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

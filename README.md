@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T19:28:19+00:00 UTC)
+## Current status (2026-08-07T19:46:12+00:00 UTC)
 
 400 models polled, 1155 inference endpoints:
-up 659, degraded 131, down 39, idle 326.
+up 647, degraded 134, down 33, idle 341.
 
-Currently down (39):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 74% | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 60% | n/a |
-| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 3% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 77% | 78% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 80% |
-| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 0% | n/a |
-| `google/gemma-4-31b-it` | `venice/bf16` | Venice | n/a | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 80% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 71% | 76% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | 100% |
-| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 0% | n/a |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 62% | 71% |
-| plus 24 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | 12% |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 68% | 50% |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 9% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 72% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 74% | 74% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 71% | 98% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | 71% |
+| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 40% | 74% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 58% | 79% |
+| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | n/a | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 61% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
+| `meta-llama/llama-4-maverick` | `parasail/fp8` | Parasail | 0% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 80% | n/a |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

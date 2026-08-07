@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T21:00:24+00:00 UTC)
+## Current status (2026-08-07T21:15:54+00:00 UTC)
 
 400 models polled, 1155 inference endpoints:
-up 661, degraded 145, down 36, idle 313.
+up 672, degraded 143, down 36, idle 304.
 
 Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 78% | 63% |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 77% | 76% |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 73% | 55% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 80% | 100% |
 | `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 77% | 63% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 70% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 79% | 89% |
+| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 78% | 8% |
 | `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `together` | Together | 73% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 86% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 76% | 94% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 14% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 41% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `parasail/fp8` | Parasail | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `parasail/fp8` | Parasail | 0% | n/a |
 | `minimax/minimax-m2.5` | `venice` | Venice | 79% | n/a |
-| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 0% | 0% |
+| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 69% |
+| `moonshotai/kimi-k2.6` | `parasail/int4` | Parasail | n/a | n/a |
 | plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

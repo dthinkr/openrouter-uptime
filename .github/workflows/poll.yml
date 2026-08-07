@@ -46,7 +46,14 @@ jobs:
         id: guard
         env:
           FORCE_POLL: ${{ inputs.force }}
-        run: python3 scripts/should_poll.py
+        run: |
+          # Checkout's snapshot can already be seconds stale, and the other
+          # collector polls every 15 minutes. Fetching first narrows the window
+          # in which both decide they are due; the push-race check in Commit
+          # closes what is left.
+          git fetch --quiet origin "${GITHUB_REF_NAME}"
+          git checkout --quiet "origin/${GITHUB_REF_NAME}" -- status/latest.json || true
+          python3 scripts/should_poll.py
 
       # The only step whose failure should abort the run. What it writes --
       # raw/, derived/, status/ -- is unrecoverable if lost, because OpenRouter
@@ -83,13 +90,31 @@ jobs:
               echo "pushed on attempt ${attempt}"
               exit 0
             fi
-            echo "push rejected, rebasing onto origin/${GITHUB_REF_NAME} (attempt ${attempt})"
+            echo "push rejected (attempt ${attempt})"
+            git fetch --quiet origin "${GITHUB_REF_NAME}"
+
+            # The usual reason for a rejection here is the other collector
+            # landing its own poll while this one was working -- the guard
+            # cleared at checkout, the race was lost at push. That makes this
+            # sample redundant rather than lost: the window is already covered
+            # by an observation seconds away from ours. Drop it and succeed,
+            # which is what the Railway collector already does. Reported as a
+            # failure, this fires the stale-collection alarm for a
+            # non-problem, and a monitor that cries wolf gets ignored.
+            if git show "origin/${GITHUB_REF_NAME}:status/latest.json" \
+                 > /tmp/remote-latest.json 2>/dev/null \
+               && LATEST_OVERRIDE=/tmp/remote-latest.json \
+                  python3 scripts/should_poll.py | grep -q '^poll=false'; then
+              echo "the other collector covered this window; dropping our sample"
+              exit 0
+            fi
+
+            # Otherwise the remote moved for some other reason (a code push,
+            # say), and rebasing is the right thing to try.
+            echo "rebasing onto origin/${GITHUB_REF_NAME}"
             if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
-              # This was `|| true`, which left the tree mid-rebase and made the
-              # following push fail for an unrelated-looking reason. Fail loudly
-              # instead; the next scheduled attempt re-polls within ~20 minutes.
               git rebase --abort || true
-              echo "rebase conflicted; aborting rather than guessing a resolution"
+              echo "rebase conflicted and the window is not covered; failing"
               exit 1
             fi
             sleep $(( attempt * 3 ))

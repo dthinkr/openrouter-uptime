@@ -26,7 +26,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-LATEST = ROOT / "status" / "latest.json"
+
+# LATEST_OVERRIDE lets a caller test freshness against a snapshot other than
+# the working tree's -- the push-race check feeds it the remote's latest.json
+# to ask "did the other collector already cover this window?" using exactly
+# this file's definition of fresh, rather than a second copy of the rule.
+LATEST = Path(os.environ["LATEST_OVERRIDE"]) if os.environ.get("LATEST_OVERRIDE") \
+    else ROOT / "status" / "latest.json"
 
 # Minimum spacing between polls. Kept a little under half the 15-minute target
 # cadence so a late-but-not-dropped run still counts rather than being

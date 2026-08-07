@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T02:16:07+00:00 UTC)
+## Current status (2026-08-07T02:31:13+00:00 UTC)
 
 400 models polled, 1153 inference endpoints:
-up 677, degraded 134, down 25, idle 317.
+up 668, degraded 131, down 28, idle 326.
 
-Currently down (25):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | n/a |
-| `anthropic/claude-fable-5` | `azure` | Azure | 77% | 49% |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 77% | 88% |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 63% | 47% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 78% | n/a |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 59% | 54% |
-| `deepseek/deepseek-v4-flash-0731` | `io-net/fp8` | Io Net | 70% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 77% | 87% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 46% |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 51% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 47% | 46% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 33% | 38% |
-| `mistralai/mistral-nemo` | `io-net/fp16` | Io Net | 75% | 74% |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 74% | n/a |
-| plus 10 more | | | | |
+| `anthropic/claude-fable-5` | `azure` | Azure | 74% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 77% | 67% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 75% | 44% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 60% | 25% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 61% | 67% |
+| `deepseek/deepseek-v4-flash` | `alibaba/fp8` | Alibaba | 79% | 97% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 76% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 63% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 99% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 50% | 29% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 38% |
+| `mistralai/mistral-nemo` | `io-net/fp16` | Io Net | 76% | 73% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 75% | 74% |
+| `moonshotai/kimi-k2.5` | `phala` | Phala | n/a | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

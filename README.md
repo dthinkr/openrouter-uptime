@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T00:30:39+00:00 UTC)
+## Current status (2026-08-07T00:46:25+00:00 UTC)
 
 400 models polled, 1153 inference endpoints:
-up 684, degraded 145, down 14, idle 310.
+up 703, degraded 120, down 16, idle 314.
 
-Currently down (14):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
-| `anthropic/claude-fable-5` | `azure` | Azure | 67% | n/a |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 72% | 62% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 58% | n/a |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `io-net/fp8` | Io Net | 68% | 69% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 30% | 24% |
-| `mistralai/mistral-nemo` | `io-net/fp16` | Io Net | 74% | 73% |
-| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 76% | 71% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | n/a |
+| `anthropic/claude-fable-5` | `azure` | Azure | 78% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 75% | 76% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 55% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 43% | n/a |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 27% | 24% |
+| `deepseek/deepseek-v4-flash-0731` | `io-net/fp8` | Io Net | 67% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 69% | 56% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 25% | 26% |
+| `mistralai/mistral-nemo` | `io-net/fp16` | Io Net | 73% | 74% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | 80% |
+| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 76% | 97% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 79% | 76% |
 | `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
-| `qwen/qwen3.5-35b-a3b` | `nextbit/fp8` | NextBit | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 64% | n/a |
-| `z-ai/glm-5` | `phala` | Phala | n/a | n/a |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 75% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

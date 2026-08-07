@@ -85,30 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-07T00:16:15+00:00 UTC)
+## Current status (2026-08-07T00:30:39+00:00 UTC)
 
 400 models polled, 1153 inference endpoints:
-up 680, degraded 140, down 15, idle 318.
+up 684, degraded 145, down 14, idle 310.
 
-Currently down (15):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 13% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 77% | 30% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
+| `anthropic/claude-fable-5` | `azure` | Azure | 67% | n/a |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 72% | 62% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 58% | n/a |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 24% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `io-net/fp8` | Io Net | 68% | 69% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 65% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 32% | 32% |
-| `mistralai/mistral-nemo` | `io-net/fp16` | Io Net | 74% | 74% |
-| `moonshotai/kimi-k2.5` | `phala` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 30% | 24% |
+| `mistralai/mistral-nemo` | `io-net/fp16` | Io Net | 74% | 73% |
+| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 76% | 71% |
 | `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 14% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 76% | n/a |
 | `qwen/qwen3.5-35b-a3b` | `nextbit/fp8` | NextBit | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
-| `z-ai/glm-5` | `gmicloud/fp8` | GMICloud | 78% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 64% | n/a |
+| `z-ai/glm-5` | `phala` | Phala | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

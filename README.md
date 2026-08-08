@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-08T18:00:55+00:00 UTC)
+## Current status (2026-08-08T18:14:26+00:00 UTC)
 
 400 models polled, 1159 inference endpoints:
-up 686, degraded 125, down 19, idle 329.
+up 694, degraded 129, down 19, idle 317.
 
 Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | 29% |
-| `anthropic/claude-fable-5` | `azure` | Azure | 68% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 76% | 94% |
-| `cohere/command-r-08-2024` | `cohere` | Cohere | 78% | 44% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 31% | 23% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 79% | 82% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 83% |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 73% | 73% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | 60% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | 15% |
+| `cohere/command-r-08-2024` | `cohere` | Cohere | 77% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 76% | 44% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 32% | 61% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 74% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 35% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 48% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 57% | 58% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 80% | 92% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 59% | 64% |
+| `openai/gpt-oss-120b` | `together` | Together | 76% | 97% |
 | `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 76% |
 | `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
 | plus 4 more | | | | |
 

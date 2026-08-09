@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-09T18:16:04+00:00 UTC)
+## Current status (2026-08-09T18:30:03+00:00 UTC)
 
 400 models polled, 1159 inference endpoints:
-up 670, degraded 130, down 21, idle 338.
+up 672, degraded 129, down 27, idle 331.
 
-Currently down (21):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 52% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 63% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 78% | 61% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 35% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | 24% |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 78% | 71% |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 74% | 70% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 80% | 84% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 75% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 27% |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | 0% |
-| `moonshotai/kimi-k3` | `together` | Together | 27% | 87% |
-| `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 60% | 83% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 60% | 67% |
-| `openai/gpt-5.5` | `openai` | OpenAI | 40% | 51% |
-| `openai/gpt-5.5` | `openai/flex` | OpenAI | 40% | 51% |
-| `openai/gpt-5.5` | `openai/priority` | OpenAI | 40% | 51% |
-| `openai/gpt-5.6-sol` | `openai` | OpenAI | 79% | 77% |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 79% | 77% |
-| `openai/gpt-5.6-sol` | `openai/priority` | OpenAI | 79% | 77% |
-| `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
-| plus 6 more | | | | |
+| `moonshotai/kimi-k3` | `together` | Together | 75% | 97% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 77% | 88% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 60% | 62% |
+| `openai/gpt-5.5` | `openai` | OpenAI | 44% | 55% |
+| `openai/gpt-5.5` | `openai/flex` | OpenAI | 44% | 55% |
+| `openai/gpt-5.5` | `openai/priority` | OpenAI | 44% | 55% |
+| `openai/gpt-5.6-sol` | `openai` | OpenAI | 80% | 79% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

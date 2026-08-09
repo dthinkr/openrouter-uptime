@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-09T22:59:33+00:00 UTC)
+## Current status (2026-08-09T23:15:08+00:00 UTC)
 
 400 models polled, 1159 inference endpoints:
-up 683, degraded 111, down 17, idle 348.
+up 678, degraded 113, down 21, idle 347.
 
-Currently down (17):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 80% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 64% | 81% |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 48% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 70% | 60% |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 69% |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 58% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 7% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 70% | 42% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 52% | 33% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 62% | 18% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 89% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 52% | 36% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | n/a |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 99% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 3% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 64% | 63% |
-| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 71% | 64% |
-| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 76% | 100% |
-| `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
-| plus 2 more | | | | |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 60% | 61% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 76% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 77% | 76% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 46% | 45% |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 70% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `siliconflow/fp8` | SiliconFlow | 80% | 99% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

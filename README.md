@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-09T13:46:05+00:00 UTC)
+## Current status (2026-08-09T14:00:32+00:00 UTC)
 
 400 models polled, 1159 inference endpoints:
-up 663, degraded 134, down 28, idle 334.
+up 661, degraded 134, down 26, idle 338.
 
-Currently down (28):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | `azure` | Azure | 70% | 91% |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 65% | 72% |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 74% | 70% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 42% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 15% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 74% | 70% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 72% | 69% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 57% | 41% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 79% | 100% |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 53% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 58% | 62% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 25% |
-| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 64% | 47% |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 56% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 20% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 59% | 86% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 22% | 25% |
+| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 66% | 74% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 77% | 84% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | 54% |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 100% |
-| `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | 63% | 80% |
-| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 74% | 67% |
-| plus 13 more | | | | |
+| `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | 60% | n/a |
+| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 78% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

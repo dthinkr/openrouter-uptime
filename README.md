@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-09T19:46:25+00:00 UTC)
+## Current status (2026-08-09T20:00:38+00:00 UTC)
 
 400 models polled, 1159 inference endpoints:
-up 671, degraded 128, down 16, idle 344.
+up 706, degraded 105, down 14, idle 334.
 
-Currently down (16):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 46% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 74% | 74% |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 78% | 71% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 68% | n/a |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 56% | 65% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 92% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | n/a |
-| `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 78% | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 43% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 60% | 55% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 73% | 80% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 76% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 68% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 80% | 85% |
+| `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | n/a | n/a |
+| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 63% | 67% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 60% | 66% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 19% | 0% |
 | `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
-| `qwen/qwen3.5-35b-a3b` | `nextbit/fp8` | NextBit | n/a | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 47% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 76% | n/a |
 | `z-ai/glm-5` | `phala` | Phala | n/a | n/a |
-| plus 1 more | | | | |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 79% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 69% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

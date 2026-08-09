@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-09T11:31:08+00:00 UTC)
+## Current status (2026-08-09T11:45:36+00:00 UTC)
 
 400 models polled, 1158 inference endpoints:
-up 670, degraded 116, down 22, idle 350.
+up 669, degraded 114, down 21, idle 354.
 
-Currently down (22):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 79% | 65% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 72% | 76% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 67% | 66% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 75% | 42% |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 79% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 44% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 64% | 54% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 79% | 75% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 26% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 63% | 100% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 55% | 31% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | 42% |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | 0% |
-| `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | 72% | n/a |
-| `moonshotai/kimi-k3` | `together` | Together | 63% | 78% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 60% | 62% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 75% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 75% | 75% |
-| `openai/gpt-5.5` | `openai` | OpenAI | 72% | 87% |
-| plus 7 more | | | | |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 77% | 98% |
+| `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | 64% | 96% |
+| `moonshotai/kimi-k3` | `together` | Together | 69% | 71% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 61% | 63% |
+| `openai/gpt-5.5` | `openai` | OpenAI | 77% | 76% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

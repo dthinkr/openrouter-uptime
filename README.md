@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-09T06:46:07+00:00 UTC)
+## Current status (2026-08-09T07:01:06+00:00 UTC)
 
 400 models polled, 1158 inference endpoints:
-up 656, degraded 117, down 17, idle 368.
+up 656, degraded 116, down 13, idle 373.
 
-Currently down (17):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 76% | 85% |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 67% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 41% | 97% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 100% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 75% | 78% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 76% | 67% |
+| `deepseek/deepseek-v4-pro` | `gmicloud/fp8` | GMICloud | 78% | 67% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | 72% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | n/a |
-| `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 84% |
-| `moonshotai/kimi-k3` | `together` | Together | 65% | 73% |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16` | DeepInfra | 77% | 100% |
-| `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 56% | 100% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 63% | 69% |
-| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 65% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 18% | n/a |
+| `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 58% |
+| `moonshotai/kimi-k3` | `together` | Together | 70% | 77% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 61% | 60% |
+| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 78% | 83% |
 | `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 80% | 100% |
-| plus 2 more | | | | |
+| `qwen/qwen3.5-35b-a3b` | `nextbit/fp8` | NextBit | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-09T19:01:30+00:00 UTC)
+## Current status (2026-08-09T19:16:07+00:00 UTC)
 
 400 models polled, 1159 inference endpoints:
-up 670, degraded 122, down 23, idle 344.
+up 681, degraded 112, down 22, idle 344.
 
-Currently down (23):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 32% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | 32% |
-| `deepseek/deepseek-v4-flash` | `phala` | Phala | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 77% | 79% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 47% | 43% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 79% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 66% | 40% |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 8% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 78% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | 89% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 79% |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | 0% |
-| `moonshotai/kimi-k3` | `together` | Together | 75% | 28% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 32% |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 69% | 100% |
+| `moonshotai/kimi-k3` | `together` | Together | 57% | 64% |
 | `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | n/a | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 59% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 60% | 65% |
-| `openai/gpt-5.5` | `openai` | OpenAI | 42% | 47% |
-| `openai/gpt-5.5` | `openai/flex` | OpenAI | 42% | 47% |
-| `openai/gpt-5.5` | `openai/priority` | OpenAI | 42% | 47% |
-| plus 8 more | | | | |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 61% | 65% |
+| `openai/gpt-5.5` | `openai` | OpenAI | 61% | 90% |
+| `openai/gpt-5.5` | `openai/flex` | OpenAI | 61% | 90% |
+| `openai/gpt-5.5` | `openai/priority` | OpenAI | 61% | 90% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

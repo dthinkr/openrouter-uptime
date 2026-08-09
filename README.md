@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-09T00:45:46+00:00 UTC)
+## Current status (2026-08-09T01:00:57+00:00 UTC)
 
 400 models polled, 1159 inference endpoints:
-up 670, degraded 138, down 14, idle 337.
+up 673, degraded 130, down 20, idle 336.
 
-Currently down (14):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | 6% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 69% | n/a |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `phala` | Phala | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 78% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 76% | 98% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 79% | 30% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | 46% |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 37% | 44% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 74% | 69% |
-| `moonshotai/kimi-k3` | `together` | Together | 70% | 87% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 70% | 63% |
-| `nvidia/nemotron-nano-9b-v2:free` | `nvidia/bf16` | Nvidia | 49% | 47% |
-| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 78% | 73% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 55% | 15% |
-| `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 64% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 78% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 57% |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 79% | n/a |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 79% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | 95% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 62% | 64% |
+| `nvidia/nemotron-nano-9b-v2:free` | `nvidia/bf16` | Nvidia | 53% | 77% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 49% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

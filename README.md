@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-10T11:30:48+00:00 UTC)
+## Current status (2026-08-10T11:45:13+00:00 UTC)
 
 400 models polled, 1158 inference endpoints:
-up 685, degraded 160, down 21, idle 292.
+up 701, degraded 136, down 23, idle 298.
 
-Currently down (21):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 78% | 82% |
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 61% | 49% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 49% | 62% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 71% |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 75% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | 58% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 36% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 75% | 76% |
+| `deepseek/deepseek-r1` | `azure` | Azure | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 42% | 58% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 53% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 76% | 100% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 77% | n/a |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 76% | 81% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 62% |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 69% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `akashml/bf16` | AkashML | 80% | 100% |
-| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 77% | 62% |
-| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 79% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 78% | 73% |
-| plus 6 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 77% |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 59% | n/a |
+| `moonshotai/kimi-k3` | `together` | Together | 73% | 97% |
+| `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 64% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

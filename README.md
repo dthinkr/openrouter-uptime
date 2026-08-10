@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-10T18:45:23+00:00 UTC)
+## Current status (2026-08-10T19:00:15+00:00 UTC)
 
 399 models polled, 1155 inference endpoints:
-up 688, degraded 122, down 29, idle 316.
+up 680, degraded 129, down 26, idle 320.
 
-Currently down (29):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | n/a |
-| `anthropic/claude-fable-5` | `azure` | Azure | 75% | 71% |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 70% | 60% |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 76% | 73% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 44% |
-| `google/gemma-4-31b-it` | `coreweave/bf16` | CoreWeave | 57% | 51% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 57% | 90% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 52% | 65% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 37% | 34% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 46% | n/a |
+| `anthropic/claude-fable-5` | `azure` | Azure | 72% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 73% | 76% |
+| `deepseek/deepseek-r1` | `azure` | Azure | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 72% | 94% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 41% |
+| `google/gemma-4-31b-it` | `coreweave/bf16` | CoreWeave | 51% | 52% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 53% | 60% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 45% | 37% |
+| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 80% | 91% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 79% | 64% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 38% | n/a |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 57% |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 74% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 61% | 62% |
-| `openai/gpt-oss-120b` | `coreweave/fp4` | CoreWeave | 61% | 100% |
-| plus 14 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 62% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-10T04:30:37+00:00 UTC)
+## Current status (2026-08-10T04:45:34+00:00 UTC)
 
 400 models polled, 1160 inference endpoints:
-up 693, degraded 132, down 17, idle 318.
+up 681, degraded 138, down 16, idle 325.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 47% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 77% | 83% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 80% |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 74% | 61% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 74% | 52% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 65% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 46% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 74% | n/a |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 98% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | n/a | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 66% |
-| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 76% | 99% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 33% | 6% |
+| `moonshotai/kimi-k3` | `together` | Together | 53% | 62% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 68% | 69% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 33% | n/a |
 | `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
-| `z-ai/glm-5` | `digitalocean` | DigitalOcean | 79% | 41% |
-| plus 2 more | | | | |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 66% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `nextbit/fp8` | NextBit | 0% | 0% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 54% | 48% |
+| `z-ai/glm-5` | `digitalocean` | DigitalOcean | 75% | n/a |
+| `z-ai/glm-5` | `phala` | Phala | n/a | n/a |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 77% | 73% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-11T06:14:06+00:00 UTC)
+## Current status (2026-08-11T06:31:22+00:00 UTC)
 
 402 models polled, 1160 inference endpoints:
-up 671, degraded 138, down 24, idle 327.
+up 679, degraded 140, down 20, idle 321.
 
-Currently down (24):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 12% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 79% | 86% |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 80% | 73% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 68% | 33% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 68% | 33% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 63% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 99% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | 49% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 69% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 78% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 69% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 76% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 76% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 38% | 39% |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | n/a | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 50% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 55% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 64% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 73% | 100% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `baseten/fp4` | BaseTen | 59% | 71% |
-| plus 9 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 69% | 70% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 68% | 73% |
+| `qwen/qwen3-32b` | `alibaba/fp8` | Alibaba | 0% | 0% |
+| `qwen/qwen3-coder` | `google-vertex/us-south1` | Google | 74% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 19% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

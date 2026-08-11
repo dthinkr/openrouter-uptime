@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-11T16:45:09+00:00 UTC)
+## Current status (2026-08-11T17:01:25+00:00 UTC)
 
-404 models polled, 1160 inference endpoints:
-up 688, degraded 154, down 27, idle 291.
+405 models polled, 1160 inference endpoints:
+up 688, degraded 153, down 30, idle 289.
 
-Currently down (27):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 77% | 57% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 50% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 59% | 77% |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 76% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 67% |
-| `google/gemma-4-31b-it` | `modelrun/fp4` | ModelRun | 35% | 0% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 77% | 94% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 66% | 36% |
+| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 77% | 95% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 78% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 74% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 74% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 67% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 80% |
+| `google/gemma-4-31b-it` | `modelrun/fp4` | ModelRun | 8% | 0% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 80% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | 46% |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 69% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 54% |
-| `moonshotai/kimi-k2.7-code` | `deepinfra/fp4` | DeepInfra | 79% | 95% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 50% | n/a |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | n/a | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 58% | 94% |
-| plus 12 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 78% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

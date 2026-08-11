@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-11T05:15:29+00:00 UTC)
+## Current status (2026-08-11T05:31:06+00:00 UTC)
 
 402 models polled, 1160 inference endpoints:
-up 696, degraded 102, down 25, idle 337.
+up 684, degraded 112, down 24, idle 340.
 
-Currently down (25):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 44% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | n/a |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 80% | 80% |
-| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 80% | 75% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 61% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 48% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | 46% |
-| `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 43% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 79% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 78% | 76% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 76% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 75% | 77% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | n/a |
+| `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 61% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 40% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `baseten/fp4` | BaseTen | 66% | 76% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 65% | 66% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 43% | 34% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 55% | 70% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 73% | 70% |
-| plus 10 more | | | | |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 72% | 69% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

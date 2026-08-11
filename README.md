@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-11T09:15:18+00:00 UTC)
+## Current status (2026-08-11T09:31:03+00:00 UTC)
 
-402 models polled, 1160 inference endpoints:
-up 664, degraded 155, down 41, idle 300.
+402 models polled, 1159 inference endpoints:
+up 671, degraded 151, down 36, idle 301.
 
-Currently down (41):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | 66% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 8% |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 44% | 55% |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 75% | 83% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 55% | n/a |
-| `deepseek/deepseek-v3.2` | `phala` | Phala | 73% | 100% |
-| `deepseek/deepseek-v4-flash` | `phala` | Phala | 32% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 79% | 78% |
-| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 74% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 76% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 78% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 19% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 19% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 19% | n/a |
-| `google/gemma-3-27b-it` | `phala` | Phala | 75% | 25% |
-| plus 26 more | | | | |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 28% | 38% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 68% | 90% |
+| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 78% | 66% |
+| `deepseek/deepseek-r1` | `azure` | Azure | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `phala` | Phala | 71% | 100% |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 77% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 65% | 100% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 29% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 29% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 72% | n/a |
+| `minimax/minimax-m2.7` | `novita/fp8` | Novita | 79% | n/a |
+| `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | 0% |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

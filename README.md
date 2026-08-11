@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-11T03:00:13+00:00 UTC)
+## Current status (2026-08-11T03:15:34+00:00 UTC)
 
 402 models polled, 1160 inference endpoints:
-up 689, degraded 122, down 21, idle 327.
+up 685, degraded 130, down 24, idle 321.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 5% |
+| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 80% | 80% |
 | `deepseek/deepseek-r1` | `azure` | Azure | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 76% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 41% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 84% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 30% | 14% |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 42% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 42% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 56% | 35% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | 38% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 30% | 14% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 84% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 51% | 41% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | n/a |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 89% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 18% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 31% | 22% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 1% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 67% | 69% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 82% |
-| plus 6 more | | | | |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 71% | n/a |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 76% | 100% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

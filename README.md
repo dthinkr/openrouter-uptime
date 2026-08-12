@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-12T00:46:13+00:00 UTC)
+## Current status (2026-08-12T01:00:33+00:00 UTC)
 
 406 models polled, 1164 inference endpoints:
-up 696, degraded 127, down 24, idle 317.
+up 689, degraded 124, down 22, idle 329.
 
-Currently down (24):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 25% | 18% |
-| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 79% | 77% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 67% | 27% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 79% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 65% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 41% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 65% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 78% | 78% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 78% | 78% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 78% | 78% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 57% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 45% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | n/a |
-| `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 20% |
-| plus 9 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | 59% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 22% | 41% |
+| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 78% | 82% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 42% | 74% |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 66% | 35% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 76% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 75% | 77% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 75% | 77% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 75% | 77% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 95% |
+| `meta-llama/llama-3.3-70b-instruct` | `sambanova-turbo` | SambaNova | 74% | 70% |
+| `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | 0% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 72% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 52% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

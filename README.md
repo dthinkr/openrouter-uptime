@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-12T13:16:25+00:00 UTC)
+## Current status (2026-08-12T13:30:42+00:00 UTC)
 
 406 models polled, 1165 inference endpoints:
-up 708, degraded 148, down 28, idle 281.
+up 693, degraded 163, down 24, idle 285.
 
-Currently down (28):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 54% | 19% |
-| `anthropic/claude-fable-5` | `google-vertex/global` | Google | 79% | 69% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 77% | 61% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 52% | n/a |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 78% | 64% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 77% | 82% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 19% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 16% | 6% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 74% | 98% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 56% | n/a |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 29% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `baidu/fp8` | Baidu | 78% | 66% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 78% | 100% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 79% | 99% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 65% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 65% | n/a |
 | `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 65% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 100% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 0% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 52% | 99% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | n/a |
-| plus 13 more | | | | |
+| `google/gemma-3-27b-it` | `phala` | Phala | 0% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | 99% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | 44% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

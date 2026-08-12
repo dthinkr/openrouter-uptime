@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-12T16:16:23+00:00 UTC)
+## Current status (2026-08-12T16:30:58+00:00 UTC)
 
-409 models polled, 1171 inference endpoints:
-up 686, degraded 165, down 26, idle 294.
+410 models polled, 1171 inference endpoints:
+up 690, degraded 165, down 26, idle 290.
 
 Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 59% | 82% |
-| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 64% | 39% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 44% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `atlas-cloud/fp8` | AtlasCloud | 75% | 98% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 43% | 44% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 9% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 70% | 77% |
+| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 57% | 90% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 43% | n/a |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | n/a | n/a |
-| `google/gemma-3-27b-it` | `phala` | Phala | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 70% | 32% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 81% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 37% | 92% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 95% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | n/a |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | 80% | 62% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 52% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 70% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 43% | 84% |
-| `openai/gpt-oss-120b` | `parasail/fp4` | Parasail | 77% | 91% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 73% | 91% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 73% |
 | plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

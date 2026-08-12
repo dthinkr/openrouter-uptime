@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-12T14:45:39+00:00 UTC)
+## Current status (2026-08-12T15:17:47+00:00 UTC)
 
 406 models polled, 1165 inference endpoints:
-up 711, degraded 152, down 22, idle 280.
+up 688, degraded 167, down 20, idle 290.
 
-Currently down (22):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | 32% |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 64% | 72% |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 79% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 76% | 63% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 0% | 0% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 0% | 0% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 61% | 99% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 100% |
+| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 57% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 76% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 0% | n/a |
 | `minimax/minimax-m2.7` | `sambanova/minimax-m2.7-dedicated` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 46% | 90% |
-| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 64% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 27% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 77% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 79% | 96% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 75% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 65% | 84% |
-| plus 7 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 71% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 67% | 68% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 56% | 38% |
+| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 78% | 96% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 69% | 73% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

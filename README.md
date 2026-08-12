@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-12T20:59:06+00:00 UTC)
+## Current status (2026-08-12T21:16:01+00:00 UTC)
 
 410 models polled, 1174 inference endpoints:
-up 689, degraded 154, down 22, idle 309.
+up 701, degraded 154, down 19, idle 300.
 
-Currently down (22):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | 17% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 69% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 56% | 94% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 58% | n/a |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 85% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 59% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 70% |
 | `google/gemma-3-27b-it` | `phala` | Phala | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 65% | 94% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 67% | 79% |
 | `google/gemma-4-31b-it` | `phala` | Phala | 0% | n/a |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 75% | 54% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 35% | 36% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 51% |
-| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 78% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 79% | 65% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 65% | 64% |
-| plus 7 more | | | | |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 67% | 79% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 67% | 39% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 68% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 35% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 55% |
+| `moonshotai/kimi-k3` | `phala` | Phala | n/a | 0% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 64% | 68% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

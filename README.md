@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-12T21:46:04+00:00 UTC)
+## Current status (2026-08-12T21:58:28+00:00 UTC)
 
 410 models polled, 1174 inference endpoints:
-up 722, degraded 128, down 13, idle 311.
+up 731, degraded 113, down 17, idle 313.
 
-Currently down (13):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 74% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 68% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 0% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 74% |
-| `google/gemma-4-31b-it` | `phala` | Phala | n/a | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 62% | 44% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | 39% |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 68% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 92% |
-| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 80% | 81% |
-| `moonshotai/kimi-k3` | `together` | Together | 75% | 52% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 63% | 65% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 69% | 12% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | 8% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 63% | n/a |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 89% |
+| `google/gemma-3-27b-it` | `phala` | Phala | n/a | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 76% | 55% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 0% | 0% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 33% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 60% |
+| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 79% | n/a |
+| `moonshotai/kimi-k3` | `together` | Together | 73% | 98% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 77% | 98% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 76% | 96% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 64% | 72% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

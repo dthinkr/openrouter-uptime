@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-12T17:00:51+00:00 UTC)
+## Current status (2026-08-12T17:15:05+00:00 UTC)
 
-410 models polled, 1172 inference endpoints:
-up 695, degraded 167, down 18, idle 292.
+410 models polled, 1173 inference endpoints:
+up 692, degraded 160, down 17, idle 304.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 50% | 15% |
-| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 60% | 63% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | 17% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 44% | 38% |
+| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 53% | 40% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 35% | n/a |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 58% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 80% |
 | `google/gemma-3-27b-it` | `phala` | Phala | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 49% | 87% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | 45% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 85% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 63% | 78% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 40% | 38% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 26% |
 | `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 66% | 72% |
-| `openai/gpt-oss-120b` | `parasail/fp4` | Parasail | 76% | 86% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 73% | 100% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 68% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 65% | n/a |
-| plus 3 more | | | | |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 74% | 82% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 75% | 73% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 63% | 98% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

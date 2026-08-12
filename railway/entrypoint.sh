@@ -38,12 +38,17 @@ esac
 
 log() { echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] $*"; }
 
-if [ ! -d "${WORKDIR}/.git" ]; then
-  # First run on a fresh volume. Full history is needed because the push has
-  # to fast-forward from a real ancestor; after this the pulls are small.
+clone_fresh() {
+  # Full history is needed because the push has to fast-forward from a real
+  # ancestor; after this the pulls are small.
   log "cloning ${REPO_URL} into ${WORKDIR}"
+  rm -rf "${WORKDIR}"
   mkdir -p "$(dirname "${WORKDIR}")"
   git clone --branch "${BRANCH}" "${AUTH_URL}" "${WORKDIR}"
+}
+
+if [ ! -d "${WORKDIR}/.git" ]; then
+  clone_fresh
 fi
 
 cd "${WORKDIR}"
@@ -67,18 +72,39 @@ clear_stale_git_locks() {
   done < <(find "${WORKDIR}/.git" -name '*.lock' -type f 2>/dev/null || true)
 }
 
-clear_stale_git_locks
-
-git config user.name  "openrouter-uptime-bot"
-git config user.email "railway@openrouter-uptime"
-git remote set-url origin "${AUTH_URL}"
-
 # Discard anything a previous run left behind mid-write. Everything here is
 # either committed or regenerable, so a hard reset is safe and is the only way
 # to guarantee a clean base after an interrupted container.
-git fetch --quiet origin "${BRANCH}"
-git reset --hard --quiet "origin/${BRANCH}"
-git clean -fdq
+#
+# Every step states `|| return 1` rather than leaning on set -e, because set -e
+# does not apply inside a function called from a condition: without them a
+# failed fetch would fall through to the reset and the function would report
+# the last command's status instead of the failure that mattered.
+prepare_worktree() {
+  git config user.name  "openrouter-uptime-bot" || return 1
+  git config user.email "railway@openrouter-uptime" || return 1
+  git remote set-url origin "${AUTH_URL}" || return 1
+  git fetch --quiet origin "${BRANCH}" || return 1
+  git reset --hard --quiet "origin/${BRANCH}" || return 1
+  git clean -fdq || return 1
+}
+
+clear_stale_git_locks
+
+# The volume is a cache of origin, not a second copy of the truth -- nothing is
+# authored here that is not immediately pushed -- so any state it reaches that
+# we cannot recover from is cheaper to discard than to diagnose. Re-cloning
+# costs one run; leaving the wreckage costs every run after it, because nothing
+# restarts and the next cron tick lands on the same broken volume. Locks are
+# only the failure mode we have already seen, and the sweep above handles those
+# without paying for a clone; this is what catches the ones we have not.
+if ! prepare_worktree; then
+  log "worktree unusable after clearing locks; discarding it and re-cloning"
+  cd /
+  clone_fresh
+  cd "${WORKDIR}"
+  prepare_worktree
+fi
 
 # The guard always exits 0 and states its decision on stdout; a crash here
 # would surface as empty output, which the case below treats as "not due" only

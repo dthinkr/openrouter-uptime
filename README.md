@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-12T19:15:11+00:00 UTC)
+## Current status (2026-08-12T19:31:18+00:00 UTC)
 
 410 models polled, 1174 inference endpoints:
-up 712, degraded 147, down 17, idle 298.
+up 706, degraded 140, down 24, idle 304.
 
-Currently down (17):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | 14% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 53% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 74% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 74% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 74% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 25% | n/a |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 22% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 67% | 99% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 78% |
 | `google/gemma-3-27b-it` | `phala` | Phala | 0% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 61% | 76% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 72% | 97% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 94% |
 | `google/gemma-4-31b-it` | `phala` | Phala | n/a | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 4% | 9% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 42% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 73% |
-| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 79% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `together` | Together | 74% | 99% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 67% |
-| plus 2 more | | | | |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 15% | 95% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 80% | 97% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 70% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | 24% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 18% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -105,6 +105,35 @@ class EntrypointRecoveryTest(unittest.TestCase):
         self.assertNotIn("removing stale git lock", result.stdout)
         self.assertNotIn("re-cloning", result.stdout)
 
+    def test_recovers_when_the_old_copy_cannot_be_deleted(self):
+        """Recovery must not depend on deleting the worktree in place.
+
+        On the Railway volume `rm -rf /data/repo` failed with "Directory not
+        empty" and, running under set -e, killed the run at the exact point it
+        was meant to recover -- the collector stayed down for the rest of the
+        afternoon. Here a root-owned undeletable entry stands in for whatever
+        the volume was actually holding: the run has to survive it.
+        """
+        if os.geteuid() == 0:
+            self.skipTest("root deletes everything; the trap cannot be set")
+        # A file inside a directory with no write permission cannot be
+        # unlinked, so any recovery that deletes before cloning fails here.
+        stuck = self.workdir / "stuck"
+        stuck.mkdir()
+        (stuck / "pinned").write_text("x")
+        stuck.chmod(0o500)
+        # A successful recovery renames the worktree out from under this path,
+        # so the trap may well be gone -- and taking it apart must not be what
+        # decides the verdict either way.
+        self.addCleanup(lambda: stuck.exists() and stuck.chmod(0o700))
+
+        (self.workdir / ".git" / "HEAD").write_text("this is not a ref\n")
+        result = self.run_entrypoint()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("guard:", result.stdout)
+        self.assertTrue((self.workdir / ".git" / "HEAD").read_text().startswith("ref:"),
+                        "the worktree was never actually replaced")
+
     def test_recovers_from_unusable_repo(self):
         """Corruption the lock sweep cannot name still has to self-heal.
 

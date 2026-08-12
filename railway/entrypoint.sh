@@ -41,10 +41,31 @@ log() { echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] $*"; }
 clone_fresh() {
   # Full history is needed because the push has to fast-forward from a real
   # ancestor; after this the pulls are small.
+  #
+  # Clone alongside and rename into place rather than deleting first. Deleting
+  # first is what killed this path in production: `rm -rf /data/repo` failed
+  # with "Directory not empty" on .git, and because that runs under set -e the
+  # run died at the exact point it was supposed to recover. A rename does not
+  # care what is still open underneath it or what reappears mid-delete, and the
+  # names carry the PID so a previous failed attempt cannot collide with this
+  # one. Deleting the old copy is best effort afterwards, when nothing depends
+  # on it: leftover bytes on a 48 GB volume are not worth an outage.
+  local staging="${WORKDIR}.staging.$$"
+  local doomed="${WORKDIR}.discarded.$$"
+
   log "cloning ${REPO_URL} into ${WORKDIR}"
-  rm -rf "${WORKDIR}"
   mkdir -p "$(dirname "${WORKDIR}")"
-  git clone --branch "${BRANCH}" "${AUTH_URL}" "${WORKDIR}"
+  git clone --branch "${BRANCH}" "${AUTH_URL}" "${staging}"
+
+  if [ -e "${WORKDIR}" ]; then
+    mv "${WORKDIR}" "${doomed}"
+  fi
+  mv "${staging}" "${WORKDIR}"
+
+  rm -rf "${doomed}" 2>/dev/null \
+    || log "could not delete ${doomed}; leaving it for a later run"
+  find "$(dirname "${WORKDIR}")" -maxdepth 1 \
+       -name "$(basename "${WORKDIR}").discarded.*" -exec rm -rf {} + 2>/dev/null || true
 }
 
 if [ ! -d "${WORKDIR}/.git" ]; then
@@ -63,13 +84,32 @@ cd "${WORKDIR}"
 # one container at a time, so no git process outlives the container that created
 # it, and none has started yet in this one. Sweeping on entry is what turns a
 # crashed run into a self-healing one.
+#
+# The sweep reports what it could not do rather than swallowing it. An earlier
+# version sent find's stderr to /dev/null, so a run that failed on HEAD.lock
+# immediately after a sweep that printed nothing left no way to tell whether
+# the sweep had looked and found nothing or had failed to look at all.
 clear_stale_git_locks() {
-  local lock
+  local lock listing
+  if ! listing="$(find "${WORKDIR}/.git" -name '*.lock' 2>&1)"; then
+    log "lock sweep could not read ${WORKDIR}/.git: ${listing}"
+    return 0
+  fi
+  [ -n "${listing}" ] || return 0
   while IFS= read -r lock; do
     [ -n "${lock}" ] || continue
     log "removing stale git lock ${lock}"
-    rm -f "${lock}"
-  done < <(find "${WORKDIR}/.git" -name '*.lock' -type f 2>/dev/null || true)
+    rm -rf "${lock}" || log "could not remove ${lock}"
+  done <<< "${listing}"
+}
+
+# Ground truth for the next occurrence. The lock that took this collector down
+# the second time was gone by every measure the script had, so the recovery
+# path guessed. This makes the volume state part of the record.
+dump_git_state() {
+  log "--- ${WORKDIR}/.git at failure ---"
+  ls -la "${WORKDIR}/.git" 2>&1 | while IFS= read -r line; do log "    ${line}"; done
+  log "--- end ---"
 }
 
 # Discard anything a previous run left behind mid-write. Everything here is
@@ -100,6 +140,7 @@ clear_stale_git_locks
 # without paying for a clone; this is what catches the ones we have not.
 if ! prepare_worktree; then
   log "worktree unusable after clearing locks; discarding it and re-cloning"
+  dump_git_state
   cd /
   clone_fresh
   cd "${WORKDIR}"

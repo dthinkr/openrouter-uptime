@@ -47,6 +47,28 @@ if [ ! -d "${WORKDIR}/.git" ]; then
 fi
 
 cd "${WORKDIR}"
+
+# A container that dies mid-git leaves its lock files behind on the volume, and
+# every run after it fails the same way on the same lock. Nothing here retries
+# and nothing restarts (restartPolicyType NEVER), so the collector simply stops
+# and stays stopped -- quietly, because GitHub Actions keeps committing and the
+# data never goes to zero, it only thins out. A stale HEAD.lock did exactly this.
+#
+# Any lock present at this point is stale by construction: the volume mounts to
+# one container at a time, so no git process outlives the container that created
+# it, and none has started yet in this one. Sweeping on entry is what turns a
+# crashed run into a self-healing one.
+clear_stale_git_locks() {
+  local lock
+  while IFS= read -r lock; do
+    [ -n "${lock}" ] || continue
+    log "removing stale git lock ${lock}"
+    rm -f "${lock}"
+  done < <(find "${WORKDIR}/.git" -name '*.lock' -type f 2>/dev/null || true)
+}
+
+clear_stale_git_locks
+
 git config user.name  "openrouter-uptime-bot"
 git config user.email "railway@openrouter-uptime"
 git remote set-url origin "${AUTH_URL}"

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-12T17:31:14+00:00 UTC)
+## Current status (2026-08-12T17:45:06+00:00 UTC)
 
-410 models polled, 1173 inference endpoints:
-up 703, degraded 147, down 21, idle 302.
+410 models polled, 1172 inference endpoints:
+up 699, degraded 156, down 22, idle 295.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 40% | 22% |
-| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 44% | 30% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 42% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 74% | 98% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 72% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 42% | 79% |
+| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 50% | 78% |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 79% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 78% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 77% | 57% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 77% | 57% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 77% | 57% |
 | `google/gemma-3-27b-it` | `phala` | Phala | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 70% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 37% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 80% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 72% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 66% | 66% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 67% | 74% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 77% | 85% |
-| plus 6 more | | | | |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 66% | 76% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 0% | 0% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 22% | 72% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | 40% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 87% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

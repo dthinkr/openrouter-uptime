@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-13T20:46:27+00:00 UTC)
+## Current status (2026-08-13T21:01:28+00:00 UTC)
 
-411 models polled, 1187 inference endpoints:
-up 738, degraded 119, down 18, idle 312.
+411 models polled, 1186 inference endpoints:
+up 737, degraded 118, down 13, idle 318.
 
-Currently down (18):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | n/a |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 78% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 78% | 73% |
 | `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `phala` | Phala | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 73% | 99% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 61% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 52% | 25% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | 40% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 70% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | 98% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 1% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 61% | 40% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 39% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 74% | 94% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 75% |
-| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 58% | 39% |
-| plus 3 more | | | | |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 73% |
+| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 60% | 100% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 76% | 98% |
+| `z-ai/glm-5.1` | `phala` | Phala | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

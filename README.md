@@ -85,27 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-13T07:01:03+00:00 UTC)
+## Current status (2026-08-13T07:16:17+00:00 UTC)
 
 410 models polled, 1180 inference endpoints:
-up 719, degraded 129, down 12, idle 320.
+up 691, degraded 157, down 14, idle 318.
 
-Currently down (12):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 71% | 12% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 78% | 74% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 51% | 99% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 55% | n/a |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 77% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 77% |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 60% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | 77% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 61% |
-| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 53% | 46% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 83% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
-| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 72% | 79% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 84% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 71% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 72% | 80% |
+| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 58% | 100% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 72% | 71% |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 73% | 79% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

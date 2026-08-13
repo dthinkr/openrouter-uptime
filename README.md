@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-13T09:01:18+00:00 UTC)
+## Current status (2026-08-13T09:15:41+00:00 UTC)
 
 409 models polled, 1178 inference endpoints:
-up 681, degraded 185, down 14, idle 298.
+up 696, degraded 173, down 17, idle 292.
 
-Currently down (14):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | 24% |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 63% | 63% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 77% | 69% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 79% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 79% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 79% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 67% | 100% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 59% | n/a |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 74% | 66% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 75% |
-| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 78% | 36% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 78% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 72% | n/a |
-| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 77% | 72% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 67% | 82% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 72% | 95% |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 81% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 51% | n/a |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 68% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | 69% |
+| `minimax/minimax-m2.7` | `atlas-cloud/fp8` | AtlasCloud | 76% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 37% |
+| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 28% | 23% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 82% |
+| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 72% | 100% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `siliconflow/fp8` | SiliconFlow | 78% | 80% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 76% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

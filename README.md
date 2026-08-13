@@ -85,24 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-13T06:01:19+00:00 UTC)
+## Current status (2026-08-13T06:15:30+00:00 UTC)
 
-410 models polled, 1179 inference endpoints:
-up 706, degraded 139, down 9, idle 325.
+410 models polled, 1180 inference endpoints:
+up 709, degraded 131, down 15, idle 325.
 
-Currently down (9):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 12% |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 55% | 52% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 76% |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 69% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 67% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 61% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | 95% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 82% |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 38% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 19% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 51% | 67% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 62% | 9% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 69% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 40% | 40% |
+| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 67% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 76% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 60% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | 79% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 67% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | 100% |
+| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 61% | 51% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 78% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 79% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

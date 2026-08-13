@@ -85,29 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-13T06:45:38+00:00 UTC)
+## Current status (2026-08-13T07:01:03+00:00 UTC)
 
 410 models polled, 1180 inference endpoints:
-up 715, degraded 131, down 14, idle 320.
+up 719, degraded 129, down 12, idle 320.
 
-Currently down (14):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 71% | 12% |
 | `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 62% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 57% | n/a |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 67% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 74% | 77% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 71% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 77% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 83% |
-| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 78% | 99% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 77% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 77% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 60% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | 77% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 61% |
+| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 53% | 46% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 83% |
 | `qwen/qwen3-30b-a3b-instruct-2507` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 78% | n/a |
-| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 72% | 72% |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 72% | 79% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

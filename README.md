@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-13T18:31:07+00:00 UTC)
+## Current status (2026-08-13T18:46:34+00:00 UTC)
 
-411 models polled, 1186 inference endpoints:
-up 729, degraded 143, down 15, idle 299.
+411 models polled, 1187 inference endpoints:
+up 721, degraded 144, down 22, idle 300.
 
-Currently down (15):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | 99% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 55% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 79% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 30% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 80% | 76% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 73% | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 70% | 76% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 72% | 100% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 77% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 54% | 100% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
-| `openai/gpt-oss-120b` | `parasail/fp4` | Parasail | 77% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | 67% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 80% | 50% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 48% | 59% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 78% | 65% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 21% | 35% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 57% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 69% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 72% | 74% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 69% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 41% | n/a |
+| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 51% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 60% | 57% |
+| `moonshotai/kimi-k2.6` | `siliconflow/fp8` | SiliconFlow | 51% | 100% |
+| `moonshotai/kimi-k2.6` | `phala` | Phala | 80% | 70% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 63% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

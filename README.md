@@ -85,27 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-13T05:45:05+00:00 UTC)
+## Current status (2026-08-13T06:01:19+00:00 UTC)
 
 410 models polled, 1179 inference endpoints:
-up 708, degraded 128, down 12, idle 331.
+up 706, degraded 139, down 9, idle 325.
 
-Currently down (12):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 70% | 66% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 73% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 28% | n/a |
-| `deepseek/deepseek-r1` | `azure` | Azure | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 63% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 54% | n/a |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 78% | 67% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 88% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 76% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 44% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `siliconflow/fp8` | SiliconFlow | 76% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 12% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 55% | 52% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 76% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 69% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 67% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 61% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | 95% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 82% |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 38% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

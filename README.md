@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T07:01:26+00:00 UTC)
+## Current status (2026-08-14T07:16:04+00:00 UTC)
 
 411 models polled, 1197 inference endpoints:
-up 710, degraded 152, down 18, idle 317.
+up 711, degraded 166, down 14, idle 306.
 
-Currently down (18):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 7% | 7% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 69% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 79% | 99% |
-| `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | n/a | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 7% | 8% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 68% | 100% |
 | `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 59% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 83% |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 14% | 16% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | 56% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 82% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 66% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 81% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 73% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
-| plus 3 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 54% |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 12% | 12% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 82% |
+| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 78% | n/a |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 74% | 54% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 79% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 70% | 90% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 80% | 82% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 59% | 17% |
+| `z-ai/glm-5.2` | `baidu/fp8` | Baidu | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

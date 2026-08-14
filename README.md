@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T23:31:01+00:00 UTC)
+## Current status (2026-08-14T23:45:33+00:00 UTC)
 
 411 models polled, 1210 inference endpoints:
-up 740, degraded 116, down 16, idle 338.
+up 752, degraded 108, down 14, idle 336.
 
-Currently down (16):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | 26% |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 4% | 16% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 100% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 6% | 6% |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 55% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 74% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 78% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 9% | 35% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 19% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 53% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 68% | 68% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 61% | n/a |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 48% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 47% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 37% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | 39% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 74% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 77% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 68% | 71% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 50% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 67% | 58% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 38% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

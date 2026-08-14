@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T23:15:19+00:00 UTC)
+## Current status (2026-08-14T23:31:01+00:00 UTC)
 
-411 models polled, 1209 inference endpoints:
-up 743, degraded 112, down 12, idle 342.
+411 models polled, 1210 inference endpoints:
+up 740, degraded 116, down 16, idle 338.
 
-Currently down (12):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 57% | 4% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | 26% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 4% | 16% |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 79% | 75% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 17% | 22% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 73% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 72% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 18% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 70% | 71% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 76% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 73% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 55% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 74% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 78% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 9% | 35% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 19% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 53% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 68% | 68% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 61% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

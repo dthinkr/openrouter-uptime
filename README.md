@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T23:00:56+00:00 UTC)
+## Current status (2026-08-14T23:15:19+00:00 UTC)
 
 411 models polled, 1209 inference endpoints:
-up 759, degraded 105, down 16, idle 329.
+up 743, degraded 112, down 12, idle 342.
 
-Currently down (16):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | n/a |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 57% | 4% |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 58% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 66% |
-| `moonshotai/kimi-k2-thinking` | `novita/bf16` | Novita | 80% | 76% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 78% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 77% | 78% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 20% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 64% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 70% | 73% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 38% | n/a |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 79% | 95% |
-| plus 1 more | | | | |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 79% | 75% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 17% | 22% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 73% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 72% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 18% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 70% | 71% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 76% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 73% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

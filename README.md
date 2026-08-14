@@ -85,25 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T01:16:13+00:00 UTC)
+## Current status (2026-08-14T01:31:25+00:00 UTC)
 
 411 models polled, 1195 inference endpoints:
-up 728, degraded 156, down 10, idle 301.
+up 737, degraded 147, down 14, idle 297.
 
-Currently down (10):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 73% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 83% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 37% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 61% | 55% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 80% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 84% |
-| `openai/gpt-5-mini` | `openai` | OpenAI | 77% | 82% |
-| `openai/gpt-5-mini` | `openai/flex` | OpenAI | 77% | 82% |
-| `z-ai/glm-5.2` | `together` | Together | 73% | 99% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | 13% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 69% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 91% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 45% | 26% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 75% | 77% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 51% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 57% | 100% |
+| `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 78% | 98% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 81% |
+| `openai/gpt-5-mini` | `openai` | OpenAI | 77% | 84% |
+| `openai/gpt-5-mini` | `openai/flex` | OpenAI | 77% | 84% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 79% | 99% |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 78% | 83% |
+| `z-ai/glm-5.2` | `together` | Together | 75% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T07:16:04+00:00 UTC)
+## Current status (2026-08-14T07:30:27+00:00 UTC)
 
 411 models polled, 1197 inference endpoints:
-up 711, degraded 166, down 14, idle 306.
+up 725, degraded 164, down 13, idle 295.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 7% | 8% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 68% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | 6% |
 | `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 54% |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 12% | 12% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 82% |
-| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 78% | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 74% | 54% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 79% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 70% | 90% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 80% | 82% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 59% | 17% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 58% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 53% | 23% |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 10% | 14% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 72% | 93% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 73% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 76% | 98% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 72% | 80% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 80% | n/a |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 57% | 100% |
 | `z-ai/glm-5.2` | `baidu/fp8` | Baidu | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

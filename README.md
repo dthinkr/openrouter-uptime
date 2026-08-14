@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T09:31:18+00:00 UTC)
+## Current status (2026-08-14T09:45:23+00:00 UTC)
 
 411 models polled, 1197 inference endpoints:
-up 714, degraded 142, down 34, idle 307.
+up 700, degraded 152, down 31, idle 314.
 
-Currently down (34):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 11% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 67% | 59% |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 66% | 6% |
-| `deepseek/deepseek-v3.2` | `phala` | Phala | 52% | n/a |
-| `deepseek/deepseek-v4-flash` | `ambient/fp4` | Ambient | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `phala` | Phala | 49% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 64% | 89% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | 3% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 78% | 80% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 24% | 89% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 50% | 99% |
+| `deepseek/deepseek-v3.2` | `phala` | Phala | 54% | n/a |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 36% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 54% | n/a |
+| `deepseek/deepseek-v4-pro` | `ionstream/fp4` | Ionstream | 78% | 79% |
 | `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | n/a | n/a |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 17% | 8% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 31% | 62% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 58% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 72% | 95% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
-| `meta/muse-glimmer-30b` | `phala` | Phala | 50% | 43% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 96% |
-| plus 19 more | | | | |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 48% | 87% |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 16% | 30% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 53% | 95% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 39% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | n/a |
+| `meta/muse-glimmer-30b` | `phala` | Phala | 65% | n/a |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

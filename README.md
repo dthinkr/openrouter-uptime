@@ -85,31 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-13T23:45:06+00:00 UTC)
+## Current status (2026-08-14T00:00:50+00:00 UTC)
 
 411 models polled, 1195 inference endpoints:
-up 736, degraded 125, down 17, idle 317.
+up 733, degraded 132, down 7, idle 323.
 
-Currently down (17):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 89% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 73% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 73% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 78% | 82% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 78% | 82% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 78% | 82% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | 60% |
-| `moonshotai/kimi-k2.6` | `parasail/int4` | Parasail | 79% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 79% | 100% |
-| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 55% | n/a |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 75% | n/a |
-| `moonshotai/kimi-k2.6` | `sail-research/int4` | Sail Research | 69% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 68% | 72% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 63% | 100% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 80% | 71% |
-| plus 2 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 79% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 72% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 75% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 80% | 100% |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 56% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T21:45:57+00:00 UTC)
+## Current status (2026-08-14T22:00:28+00:00 UTC)
 
-411 models polled, 1210 inference endpoints:
-up 767, degraded 102, down 21, idle 320.
+411 models polled, 1208 inference endpoints:
+up 757, degraded 94, down 16, idle 341.
 
-Currently down (21):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | 43% |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 74% | 70% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 85% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 55% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | 100% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 74% | 3% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 100% |
 | `google/gemma-3-27b-it` | `novita/bf16` | Novita | 76% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 31% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 72% | 55% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 39% | 27% |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 54% | 31% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 80% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 65% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 75% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 71% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | n/a | n/a |
-| plus 6 more | | | | |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 38% | 77% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
+| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 79% | 79% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 77% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 33% | n/a |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 46% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 31% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 69% | 49% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 70% | 73% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

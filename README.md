@@ -85,25 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T03:45:13+00:00 UTC)
+## Current status (2026-08-14T04:00:45+00:00 UTC)
 
 411 models polled, 1196 inference endpoints:
-up 709, degraded 137, down 10, idle 340.
+up 711, degraded 132, down 11, idle 342.
 
-Currently down (10):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | 54% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | 49% |
 | `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | n/a | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 65% | 75% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | 70% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 63% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 75% |
-| `openai/gpt-5.4-mini` | `openai` | OpenAI | 79% | 89% |
-| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 79% | 89% |
-| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 79% | 89% |
-| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 77% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 80% |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 36% | 28% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 68% | 72% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 73% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 77% |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 80% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 55% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

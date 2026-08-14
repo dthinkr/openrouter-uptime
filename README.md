@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T06:15:05+00:00 UTC)
+## Current status (2026-08-14T06:30:48+00:00 UTC)
 
 411 models polled, 1197 inference endpoints:
-up 733, degraded 137, down 17, idle 310.
+up 730, degraded 139, down 21, idle 307.
 
-Currently down (17):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 16% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 78% | 75% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 76% | 48% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 11% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 62% | 48% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 76% | 100% |
+| `deepseek/deepseek-r1-0528` | `streamlake` | StreamLake | 76% | 77% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 80% | 91% |
 | `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 79% | 94% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 78% | 94% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 79% | n/a |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 5% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | 50% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 82% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 72% | 71% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 87% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 80% | 87% |
-| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 63% | 100% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 69% | 80% |
-| plus 2 more | | | | |
+| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 77% | 93% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 72% | n/a |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 79% | 87% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 66% | n/a |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 5% | 8% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 47% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 63% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T07:30:27+00:00 UTC)
+## Current status (2026-08-14T07:45:49+00:00 UTC)
 
 411 models polled, 1197 inference endpoints:
-up 725, degraded 164, down 13, idle 295.
+up 719, degraded 154, down 13, idle 311.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | 6% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 58% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 53% | 23% |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 10% | 14% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 72% | 93% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 73% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 76% | 98% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 72% | 80% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 80% | n/a |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 57% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | 32% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 59% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 37% | 18% |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 18% | 12% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 87% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 87% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 84% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 79% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 81% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 79% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 60% | 75% |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 79% | 80% |
 | `z-ai/glm-5.2` | `baidu/fp8` | Baidu | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

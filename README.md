@@ -85,26 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T04:00:45+00:00 UTC)
+## Current status (2026-08-14T04:16:31+00:00 UTC)
 
 411 models polled, 1196 inference endpoints:
-up 711, degraded 132, down 11, idle 342.
+up 715, degraded 144, down 14, idle 323.
 
-Currently down (11):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | 49% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 80% |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 36% | 28% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 68% | 72% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 73% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 77% |
-| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 80% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 55% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 33% | 34% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 69% | 75% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 82% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 70% |
+| `openai/gpt-5.4-mini` | `openai` | OpenAI | 77% | 73% |
+| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 77% | 73% |
+| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 77% | 73% |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 80% | 69% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 76% | 97% |
+| `stepfun/step-3.7-flash` | `novita/fp8` | Novita | 68% | n/a |
+| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 59% | n/a |
+| `z-ai/glm-5.2` | `baidu/fp8` | Baidu | 80% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T02:00:55+00:00 UTC)
+## Current status (2026-08-14T02:16:07+00:00 UTC)
 
 411 models polled, 1195 inference endpoints:
-up 737, degraded 131, down 17, idle 310.
+up 727, degraded 125, down 15, idle 328.
 
-Currently down (17):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 69% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 91% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 79% | 97% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 65% | 81% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 94% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 82% |
-| `openai/gpt-5-mini` | `openai` | OpenAI | 75% | 79% |
-| `openai/gpt-5-mini` | `openai/flex` | OpenAI | 75% | 79% |
-| `openai/gpt-5.4-mini` | `openai` | OpenAI | 74% | 79% |
-| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 74% | 79% |
-| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 74% | 79% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 74% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 79% | n/a |
-| plus 2 more | | | | |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | 10% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 61% | 80% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 75% | 81% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | 59% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 49% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 79% |
+| `openai/gpt-5-mini` | `openai` | OpenAI | 74% | 83% |
+| `openai/gpt-5-mini` | `openai/flex` | OpenAI | 74% | 83% |
+| `openai/gpt-5.4-mini` | `openai` | OpenAI | 73% | 83% |
+| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 73% | 83% |
+| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 73% | 83% |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 77% | 69% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 42% | 73% |
+| `z-ai/glm-5.2` | `together` | Together | 78% | 99% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

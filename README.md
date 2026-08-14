@@ -85,22 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T00:00:50+00:00 UTC)
+## Current status (2026-08-14T00:15:16+00:00 UTC)
 
 411 models polled, 1195 inference endpoints:
-up 733, degraded 132, down 7, idle 323.
+up 729, degraded 140, down 8, idle 318.
 
-Currently down (7):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 79% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 72% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 75% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 80% | 100% |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 56% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 65% | 31% |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 64% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 77% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 73% | 65% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 72% | 73% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 64% | 86% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 79% | 85% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

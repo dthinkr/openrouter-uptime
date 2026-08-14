@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T03:00:49+00:00 UTC)
+## Current status (2026-08-14T03:16:00+00:00 UTC)
 
-411 models polled, 1195 inference endpoints:
-up 718, degraded 121, down 19, idle 337.
+412 models polled, 1196 inference endpoints:
+up 710, degraded 135, down 21, idle 330.
 
-Currently down (19):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 14% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 77% | 94% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | n/a |
 | `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 48% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 100% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 58% | 65% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 75% | 60% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 73% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 67% |
-| `openai/gpt-5.4-mini` | `openai` | OpenAI | 75% | 84% |
-| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 75% | 84% |
-| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 75% | 84% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 34% | 26% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 76% | 98% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 75% | 87% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 77% | 70% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 68% | 78% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 68% | 78% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 68% | 78% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 64% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 88% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 75% |
+| `openai/gpt-5.4-mini` | `openai` | OpenAI | 80% | 91% |
+| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 80% | 91% |
+| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 80% | 91% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 42% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 71% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

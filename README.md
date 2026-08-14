@@ -85,23 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T00:15:16+00:00 UTC)
+## Current status (2026-08-14T00:30:32+00:00 UTC)
 
 411 models polled, 1195 inference endpoints:
-up 729, degraded 140, down 8, idle 318.
+up 736, degraded 144, down 19, idle 296.
 
-Currently down (8):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 65% | 31% |
-| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 64% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 77% |
-| `moonshotai/kimi-k3` | `phala` | Phala | 73% | 65% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 72% | 73% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 64% | 86% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 79% | 85% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 56% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 55% | n/a |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 47% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 66% | 65% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | 52% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 44% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | `phala` | Phala | 73% | n/a |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 71% | 99% |
+| `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 77% | 100% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 70% |
+| `openai/gpt-5-mini` | `openai` | OpenAI | 80% | 77% |
+| `openai/gpt-5-mini` | `openai/flex` | OpenAI | 80% | 77% |
+| `openai/gpt-5.4-mini` | `openai` | OpenAI | 71% | 72% |
+| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 71% | 72% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -110,8 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-27 13:37** — **3 models removed from the catalog in one poll**: `inflection/inflection-3-pi`, `inflection/inflection-3-productivity`, `openai/gpt-4o-mini-search-preview`.
-- **2026-07-28 00:00** — provider `voyageai` changed its terms of service url.
 - **2026-07-28 00:00** — provider `voyageai` changed its privacy policy url.
 - **2026-07-28 16:39** — **28 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-haiku-4.5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-opus-5:batch`, +20 more.
 - **2026-07-30 15:51** — provider `phala` changed its terms of service url.
@@ -122,6 +128,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-08-07 10:31** — provider `streamlake` changed its status page.
 - **2026-08-07 12:30** — provider `upstage` changed its terms of service url.
 - **2026-08-07 12:30** — provider `upstage` changed its privacy policy url.
+- **2026-08-14 00:30** — provider `modelrun` changed its terms of service url.
+- **2026-08-14 00:30** — provider `modelrun` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

@@ -85,26 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T06:15:07+00:00 UTC)
+## Current status (2026-08-15T06:30:08+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 720, degraded 111, down 11, idle 370.
+up 730, degraded 112, down 10, idle 360.
 
-Currently down (11):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | 64% |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 66% | 2% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 87% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 63% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 99% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 77% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 46% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 32% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 43% | 38% |
-| `z-ai/glm-5` | `z-ai/fp8` | Z.AI | 67% | 55% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 54% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 1% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | 86% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 57% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 68% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 76% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 46% | n/a |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 72% | n/a |
+| `z-ai/glm-5` | `z-ai/fp8` | Z.AI | 64% | 74% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

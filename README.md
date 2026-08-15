@@ -85,29 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T13:15:05+00:00 UTC)
+## Current status (2026-08-15T13:31:32+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 771, degraded 126, down 14, idle 301.
+up 746, degraded 128, down 10, idle 328.
 
-Currently down (14):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 65% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 66% | 99% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | n/a |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 59% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 75% |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 77% | 98% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 79% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 84% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 74% | 100% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 54% | 41% |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 30% | n/a |
-| `sao10k/l3.1-euryale-70b` | `novita/fp8` | Novita | 30% | n/a |
-| `z-ai/glm-5.2` | `wafer/fast` | Wafer | 79% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | 11% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 46% | n/a |
+| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 79% | 84% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | 61% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 52% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 80% | 55% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 77% | 76% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 78% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 44% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 75% | 37% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,28 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T23:16:00+00:00 UTC)
+## Current status (2026-08-15T23:30:47+00:00 UTC)
 
 413 models polled, 1211 inference endpoints:
-up 736, degraded 102, down 13, idle 360.
+up 733, degraded 109, down 11, idle 358.
 
-Currently down (13):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 60% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | 83% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
-| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | 71% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 100% |
-| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 28% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 74% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 73% | 69% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 73% | 69% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 75% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 72% | 67% |
-| `thinkingmachines/inkling` | `together` | Together | 79% | 74% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 61% | 57% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 96% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 38% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 12% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 72% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 73% | 71% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 73% | 71% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 74% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 74% | 98% |
+| `thinkingmachines/inkling` | `together` | Together | 79% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

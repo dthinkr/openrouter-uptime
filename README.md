@@ -85,24 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T13:45:36+00:00 UTC)
+## Current status (2026-08-15T14:01:23+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 727, degraded 121, down 9, idle 355.
+up 723, degraded 118, down 22, idle 349.
 
-Currently down (9):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 53% | 11% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 62% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 60% |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 78% | 23% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 81% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 80% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 37% | 36% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 54% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 78% | 70% |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 56% | 75% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | 77% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 67% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 76% |
+| `moonshotai/kimi-k2-thinking` | `novita/bf16` | Novita | 76% | n/a |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 73% | 71% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 79% | 100% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 76% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 74% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 76% | 74% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 7% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

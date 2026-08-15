@@ -85,26 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T11:45:42+00:00 UTC)
+## Current status (2026-08-15T11:59:37+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 753, degraded 116, down 11, idle 332.
+up 745, degraded 122, down 12, idle 333.
 
-Currently down (11):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | 21% |
-| `deepseek/deepseek-v4-pro` | `coreweave/fp8` | CoreWeave | 76% | n/a |
-| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 78% | 94% |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 78% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 72% | 32% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | 100% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 81% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 32% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 52% | n/a |
-| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 57% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
+| `deepseek/deepseek-v4-pro` | `coreweave/fp8` | CoreWeave | 74% | n/a |
+| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 75% | 97% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 77% | 100% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 72% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 78% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 36% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 71% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 75% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 27% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

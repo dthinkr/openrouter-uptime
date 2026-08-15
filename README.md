@@ -85,25 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T21:30:17+00:00 UTC)
+## Current status (2026-08-15T21:45:58+00:00 UTC)
 
 413 models polled, 1211 inference endpoints:
-up 729, degraded 125, down 10, idle 347.
+up 739, degraded 122, down 9, idle 341.
 
-Currently down (10):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 77% | 71% |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 40% | 99% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | 61% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 98% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 68% | 74% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 75% | n/a |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 73% | 42% |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 79% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 47% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 42% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 37% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 73% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 72% | n/a |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 52% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 62% | n/a |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

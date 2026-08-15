@@ -85,30 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T10:15:06+00:00 UTC)
+## Current status (2026-08-15T10:31:32+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 757, degraded 128, down 15, idle 312.
+up 774, degraded 130, down 10, idle 298.
 
-Currently down (15):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 54% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | 32% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 19% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 79% | 76% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 76% | 97% |
-| `deepseek/deepseek-v3.2` | `phala` | Phala | 62% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 83% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 78% | 88% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | n/a |
 | `moonshotai/kimi-k2-thinking` | `novita/bf16` | Novita | 76% | n/a |
-| `openai/gpt-oss-120b` | `akashml/bf16` | AkashML | 78% | 99% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 35% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 80% | 100% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 57% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 53% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 78% | n/a |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 71% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 71% |
+| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 69% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 75% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 65% | 67% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T10:00:14+00:00 UTC)
+## Current status (2026-08-15T10:15:06+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 769, degraded 122, down 19, idle 302.
+up 757, degraded 128, down 15, idle 312.
 
-Currently down (19):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | 48% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | 76% |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 7% | 39% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 54% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | 32% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 19% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 79% | 76% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 76% | 97% |
 | `deepseek/deepseek-v3.2` | `phala` | Phala | 62% | 100% |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 76% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 74% | 98% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | 47% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 97% |
-| `moonshotai/kimi-k2-thinking` | `novita/bf16` | Novita | 78% | n/a |
-| `openai/gpt-oss-20b` | `phala` | Phala | 78% | 25% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 35% | 56% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 37% | 3% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 62% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 34% | 53% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 9% | n/a |
-| plus 4 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 100% |
+| `moonshotai/kimi-k2-thinking` | `novita/bf16` | Novita | 76% | n/a |
+| `openai/gpt-oss-120b` | `akashml/bf16` | AkashML | 78% | 99% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 35% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 80% | 100% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 57% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 53% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

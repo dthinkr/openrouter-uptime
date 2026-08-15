@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T15:30:14+00:00 UTC)
+## Current status (2026-08-15T15:45:44+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 730, degraded 136, down 22, idle 324.
+up 723, degraded 132, down 23, idle 334.
 
-Currently down (22):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | 10% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 77% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 70% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 79% | 38% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 79% | 94% |
-| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 65% | 69% |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 80% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 97% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 76% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 61% |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 77% | 49% |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 75% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 73% | 75% |
-| `openai/gpt-5.6-sol` | `openai` | OpenAI | 78% | 77% |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 78% | 77% |
-| plus 7 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 95% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 74% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 62% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 64% | 98% |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 74% | 77% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 53% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 80% | 44% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 71% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 89% |
+| `moonshotai/kimi-k2-thinking` | `novita/bf16` | Novita | 77% | 69% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 76% |
+| `openai/gpt-5.6-sol` | `openai` | OpenAI | 77% | 77% |
+| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 77% | 77% |
+| `openai/gpt-5.6-sol` | `openai/priority` | OpenAI | 77% | 77% |
+| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 74% | 72% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T16:16:01+00:00 UTC)
+## Current status (2026-08-15T16:30:16+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 715, degraded 152, down 15, idle 330.
+up 730, degraded 148, down 14, idle 320.
 
-Currently down (15):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | n/a |
-| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 78% | 85% |
-| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 63% | 100% |
-| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 77% | 72% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 72% | 70% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 54% |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 76% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 70% | 76% |
-| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 73% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 21% | 11% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 24% | 19% |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 66% | 63% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 74% | 47% |
-| `z-ai/glm-5.1` | `phala` | Phala | 73% | n/a |
+| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 75% | 91% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 90% |
+| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 77% | 54% |
+| `deepseek/deepseek-v4-pro` | `novita/fp8` | Novita | 75% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 72% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 99% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 83% |
+| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 59% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 21% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 17% | n/a |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 51% | 41% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 68% | n/a |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 64% | n/a |
+| `z-ai/glm-5.2` | `together` | Together | 78% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,27 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T18:15:35+00:00 UTC)
+## Current status (2026-08-15T18:30:55+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 735, degraded 118, down 12, idle 347.
+up 722, degraded 127, down 14, idle 349.
 
-Currently down (12):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | 62% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 70% | 0% |
-| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 41% | 66% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | 44% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 40% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 55% | 50% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 74% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 79% | 87% |
-| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 77% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 62% | n/a |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 78% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 66% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 58% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 77% | 73% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 38% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 58% | 97% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | 51% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 27% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 78% | 35% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 59% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 81% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 76% | 81% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 72% | 78% |
+| `z-ai/glm-5.1` | `phala` | Phala | 79% | 78% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T11:31:00+00:00 UTC)
+## Current status (2026-08-15T11:45:42+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 763, degraded 115, down 19, idle 315.
+up 753, degraded 116, down 11, idle 332.
 
-Currently down (19):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 79% | 100% |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 79% | 79% |
-| `google/gemini-2.5-pro` | `google-ai-studio/flex` | Google AI Studio | 79% | 79% |
-| `google/gemini-2.5-pro` | `google-ai-studio/priority` | Google AI Studio | 79% | 79% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 80% | 92% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio/flex` | Google AI Studio | 80% | 92% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio/priority` | Google AI Studio | 80% | 92% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 79% | 79% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio/flex` | Google AI Studio | 79% | 79% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio/priority` | Google AI Studio | 79% | 79% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 83% |
-| `moonshotai/kimi-k2-thinking` | `novita/bf16` | Novita | 79% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | 88% |
-| plus 4 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | 21% |
+| `deepseek/deepseek-v4-pro` | `coreweave/fp8` | CoreWeave | 76% | n/a |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 78% | 94% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 78% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 72% | 32% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | 100% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 81% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 32% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 52% | n/a |
+| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 57% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

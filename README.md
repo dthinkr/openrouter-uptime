@@ -85,22 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T09:31:24+00:00 UTC)
+## Current status (2026-08-15T09:45:40+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 776, degraded 119, down 7, idle 310.
+up 780, degraded 121, down 11, idle 300.
 
-Currently down (7):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
-| `deepseek/deepseek-v4-pro` | `together` | Together | 79% | 65% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 28% | 22% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 81% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 13% | n/a |
-| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 74% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | n/a |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 70% | 2% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 77% | 80% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 84% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | n/a |
+| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 72% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 73% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 12% | 5% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 11% | 6% |
+| `z-ai/glm-5.2` | `together` | Together | 69% | 99% |
+| `z-ai/glm-5.2` | `modelrun/fp4` | ModelRun | 79% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

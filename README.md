@@ -85,27 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T11:59:37+00:00 UTC)
+## Current status (2026-08-15T12:16:22+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 745, degraded 122, down 12, idle 333.
+up 731, degraded 119, down 10, idle 352.
 
-Currently down (12):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
-| `deepseek/deepseek-v4-pro` | `coreweave/fp8` | CoreWeave | 74% | n/a |
-| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 75% | 97% |
-| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 77% | 100% |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 72% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 78% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 36% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 71% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 75% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 27% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 49% | 43% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 76% | 95% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 77% | 68% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 97% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 78% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 64% | 59% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,25 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T08:46:32+00:00 UTC)
+## Current status (2026-08-15T09:00:28+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 793, degraded 127, down 10, idle 282.
+up 803, degraded 111, down 8, idle 290.
 
-Currently down (10):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 100% |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 1% | 2% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 90% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 75% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 27% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 69% | n/a |
-| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 70% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 65% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 80% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 100% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 39% | 99% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 79% | 88% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 78% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 62% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 17% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 78% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 79% | 68% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

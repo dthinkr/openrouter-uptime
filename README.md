@@ -85,23 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T09:00:28+00:00 UTC)
+## Current status (2026-08-15T09:16:26+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 803, degraded 111, down 8, idle 290.
+up 792, degraded 118, down 11, idle 291.
 
-Currently down (8):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 100% |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 39% | 99% |
-| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 79% | 88% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 78% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 62% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 17% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 78% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 79% | 68% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 61% |
+| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 80% | 84% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 79% | 82% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 78% | 91% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 78% | 81% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | 60% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 43% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 84% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 14% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 74% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

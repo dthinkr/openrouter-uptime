@@ -85,30 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T06:00:36+00:00 UTC)
+## Current status (2026-08-15T06:15:07+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 730, degraded 100, down 15, idle 367.
+up 720, degraded 111, down 11, idle 370.
 
-Currently down (15):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | 12% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 81% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 67% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | 67% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 24% | 9% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 72% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 85% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 85% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 41% | 37% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 65% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 31% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 77% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 65% | n/a |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 61% | n/a |
-| `z-ai/glm-5` | `z-ai/fp8` | Z.AI | 70% | 68% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | 64% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 66% | 2% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 87% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 63% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 99% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 77% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 46% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 32% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 43% | 38% |
+| `z-ai/glm-5` | `z-ai/fp8` | Z.AI | 67% | 55% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

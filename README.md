@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T07:00:21+00:00 UTC)
+## Current status (2026-08-15T07:15:05+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 705, degraded 124, down 13, idle 370.
+up 731, degraded 128, down 13, idle 340.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 100% |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 72% | 18% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 78% | 69% |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 74% | n/a |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 73% | 23% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 36% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 73% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 18% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 80% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 36% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 49% | 49% |
-| `z-ai/glm-5` | `z-ai/fp8` | Z.AI | 65% | 86% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | 24% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 57% | 2% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 76% | 100% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 55% | n/a |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 52% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 76% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 30% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 71% | 55% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 71% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 42% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 64% | 79% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 71% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 69% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

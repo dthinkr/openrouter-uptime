@@ -85,29 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-14T23:45:33+00:00 UTC)
+## Current status (2026-08-15T00:01:12+00:00 UTC)
 
 411 models polled, 1210 inference endpoints:
-up 752, degraded 108, down 14, idle 336.
+up 744, degraded 111, down 11, idle 344.
 
-Currently down (14):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 100% |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 6% | 6% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | 70% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 63% | n/a |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 48% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 47% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 37% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | 39% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 74% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 77% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 68% | 71% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 50% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 67% | 58% |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 38% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 82% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 92% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 90% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 64% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 70% | 74% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 65% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 43% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

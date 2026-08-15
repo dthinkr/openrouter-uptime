@@ -85,26 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T09:16:26+00:00 UTC)
+## Current status (2026-08-15T09:31:24+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 792, degraded 118, down 11, idle 291.
+up 776, degraded 119, down 7, idle 310.
 
-Currently down (11):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 61% |
-| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 80% | 84% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 79% | 82% |
-| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 78% | 91% |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 78% | 81% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | 60% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 43% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 84% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 14% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 74% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
+| `deepseek/deepseek-v4-pro` | `together` | Together | 79% | 65% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 28% | 22% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 81% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 13% | n/a |
+| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 74% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

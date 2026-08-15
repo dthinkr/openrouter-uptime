@@ -85,25 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T23:00:40+00:00 UTC)
+## Current status (2026-08-15T23:16:00+00:00 UTC)
 
 413 models polled, 1211 inference endpoints:
-up 720, degraded 110, down 10, idle 371.
+up 736, degraded 102, down 13, idle 360.
 
-Currently down (10):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 68% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 70% | 49% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | 66% |
-| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | 56% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 99% |
-| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 62% | 28% |
-| `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 69% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 67% | 71% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 77% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 77% | 77% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 60% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | 83% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | 71% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 100% |
+| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 28% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 69% | 74% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 73% | 69% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 73% | 69% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 75% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 72% | 67% |
+| `thinkingmachines/inkling` | `together` | Together | 79% | 74% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

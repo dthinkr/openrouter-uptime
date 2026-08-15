@@ -85,28 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T08:00:56+00:00 UTC)
+## Current status (2026-08-15T08:16:32+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 740, degraded 103, down 13, idle 356.
+up 735, degraded 112, down 11, idle 354.
 
-Currently down (13):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 27% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 55% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 84% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 83% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 80% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 25% | n/a |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 69% | n/a |
-| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 78% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 79% | 85% |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 48% | 53% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 76% | 80% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 78% | 85% |
+| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 74% | 94% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 34% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 26% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 78% | 100% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 81% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 81% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 76% | 81% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 50% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

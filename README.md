@@ -85,27 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T13:00:09+00:00 UTC)
+## Current status (2026-08-15T13:15:05+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 764, degraded 120, down 12, idle 316.
+up 771, degraded 126, down 14, idle 301.
 
-Currently down (12):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 69% | 57% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 69% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 43% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 33% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 63% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 76% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 81% |
-| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 79% | 90% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 65% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 29% | 24% |
-| `sao10k/l3.1-euryale-70b` | `novita/fp8` | Novita | 45% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 65% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 66% | 99% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 59% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 75% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 77% | 98% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 79% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 84% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 74% | 100% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 54% | 41% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 30% | n/a |
+| `sao10k/l3.1-euryale-70b` | `novita/fp8` | Novita | 30% | n/a |
+| `z-ai/glm-5.2` | `wafer/fast` | Wafer | 79% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

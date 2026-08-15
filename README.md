@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T02:15:25+00:00 UTC)
+## Current status (2026-08-15T02:30:59+00:00 UTC)
 
 412 models polled, 1211 inference endpoints:
-up 729, degraded 114, down 12, idle 356.
+up 738, degraded 110, down 13, idle 350.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 68% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 53% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | 52% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 83% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 52% | 80% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 75% | n/a |
-| `qwen/qwen3.5-9b` | `together` | Together | 78% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 35% | n/a |
-| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 72% | 66% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | 34% |
+| `deepseek/deepseek-v4-flash-0731` | `deepseek/fp8` | DeepSeek | 78% | 95% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 87% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 65% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 71% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 80% | 95% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 79% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 77% | 88% |
+| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 61% | 5% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 77% | 100% |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 72% | 94% |
+| `z-ai/glm-5.1` | `digitalocean` | DigitalOcean | 76% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

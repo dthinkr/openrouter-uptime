@@ -85,25 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T13:31:32+00:00 UTC)
+## Current status (2026-08-15T13:45:36+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 746, degraded 128, down 10, idle 328.
+up 727, degraded 121, down 9, idle 355.
 
-Currently down (10):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | 11% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 46% | n/a |
-| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 79% | 84% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | 61% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 52% |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 80% | 55% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 77% | 76% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 78% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 44% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 75% | 37% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 53% | 11% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 62% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 60% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 78% | 23% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 81% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 80% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 37% | 36% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

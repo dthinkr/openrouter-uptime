@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T06:46:02+00:00 UTC)
+## Current status (2026-08-15T07:00:21+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 716, degraded 116, down 15, idle 365.
+up 705, degraded 124, down 13, idle 370.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 48% | 100% |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 64% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 94% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | 65% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 65% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 66% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 78% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 80% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 80% | 63% |
-| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 76% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 40% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 46% | n/a |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 69% | n/a |
-| `z-ai/glm-5` | `z-ai/fp8` | Z.AI | 58% | 55% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 100% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 72% | 18% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 78% | 69% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 74% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 73% | 23% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 36% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 73% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 18% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 80% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 36% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 49% | 49% |
+| `z-ai/glm-5` | `z-ai/fp8` | Z.AI | 65% | 86% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

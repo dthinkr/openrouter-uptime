@@ -85,23 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T22:46:21+00:00 UTC)
+## Current status (2026-08-15T23:00:40+00:00 UTC)
 
 413 models polled, 1211 inference endpoints:
-up 723, degraded 107, down 8, idle 373.
+up 720, degraded 110, down 10, idle 371.
 
-Currently down (8):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 12% |
-| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | 62% | 74% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 19% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 68% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 70% | 49% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | 66% |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | 56% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 99% |
+| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 62% | 28% |
 | `nvidia/nemotron-3-super-120b-a12b` | `digitalocean` | DigitalOcean | 69% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 70% | 68% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 76% | n/a |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 25% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 67% | 71% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 77% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 77% | 77% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,26 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T09:45:40+00:00 UTC)
+## Current status (2026-08-15T10:00:14+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 780, degraded 121, down 11, idle 300.
+up 769, degraded 122, down 19, idle 302.
 
-Currently down (11):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | n/a |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 70% | 2% |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 77% | 80% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 84% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | n/a |
-| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 72% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 73% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 12% | 5% |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 11% | 6% |
-| `z-ai/glm-5.2` | `together` | Together | 69% | 99% |
-| `z-ai/glm-5.2` | `modelrun/fp4` | ModelRun | 79% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | 48% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | 76% |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 7% | 39% |
+| `deepseek/deepseek-v3.2` | `phala` | Phala | 62% | 100% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 76% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 74% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | 47% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 97% |
+| `moonshotai/kimi-k2-thinking` | `novita/bf16` | Novita | 78% | n/a |
+| `openai/gpt-oss-20b` | `phala` | Phala | 78% | 25% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 35% | 56% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 37% | 3% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 62% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 34% | 53% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 9% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

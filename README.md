@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T04:45:01+00:00 UTC)
+## Current status (2026-08-15T05:00:53+00:00 UTC)
 
 412 models polled, 1211 inference endpoints:
-up 726, degraded 112, down 17, idle 356.
+up 732, degraded 109, down 15, idle 355.
 
-Currently down (17):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 74% | 72% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 57% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 72% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
-| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 61% | 99% |
-| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 59% | n/a |
-| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 79% | 78% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 16% | 13% |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 32% | 30% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 72% | 99% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 12% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 60% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 82% |
-| plus 2 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | 55% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 66% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | 63% |
+| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 76% | 98% |
+| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 73% | 75% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 63% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 14% | n/a |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 22% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 32% | 22% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 79% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 80% | 79% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 39% | n/a |
+| `z-ai/glm-5` | `digitalocean` | DigitalOcean | 54% | n/a |
+| `z-ai/glm-5` | `z-ai/fp8` | Z.AI | 71% | 73% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

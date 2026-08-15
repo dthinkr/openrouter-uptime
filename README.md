@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T02:00:07+00:00 UTC)
+## Current status (2026-08-15T02:15:25+00:00 UTC)
 
 412 models polled, 1211 inference endpoints:
-up 743, degraded 95, down 16, idle 357.
+up 729, degraded 114, down 12, idle 356.
 
-Currently down (16):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | n/a |
-| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 2% | 3% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 84% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 54% | 75% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 76% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 9% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 74% | 99% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 37% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 80% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 88% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 72% | 41% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 69% | 89% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 76% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 74% | n/a |
-| `qwen/qwen3.5-9b` | `together` | Together | 33% | 100% |
-| plus 1 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
+| `anthropic/claude-opus-5` | `amazon-bedrock` | Amazon Bedrock | 68% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 53% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | 52% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 83% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 52% | 80% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 75% | n/a |
+| `qwen/qwen3.5-9b` | `together` | Together | 78% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 35% | n/a |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 72% | 66% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

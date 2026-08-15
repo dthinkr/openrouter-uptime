@@ -85,24 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-15T12:31:19+00:00 UTC)
+## Current status (2026-08-15T12:45:28+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 746, degraded 125, down 9, idle 332.
+up 750, degraded 123, down 12, idle 327.
 
-Currently down (9):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 44% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 78% | 27% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 63% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 76% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 26% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | 48% |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom` | Darkbloom | 63% | n/a |
-| `sao10k/l3.1-euryale-70b` | `deepinfra/fp8` | DeepInfra | 74% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 17% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 72% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | 66% |
+| `moonshotai/kimi-k2-thinking` | `novita/bf16` | Novita | 79% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 49% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 62% | 60% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 76% | 82% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 84% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 39% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 57% | n/a |
+| `sao10k/l3.1-euryale-70b` | `deepinfra/fp8` | DeepInfra | 80% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

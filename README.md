@@ -85,30 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T20:15:09+00:00 UTC)
+## Current status (2026-08-16T20:31:17+00:00 UTC)
 
 413 models polled, 1214 inference endpoints:
-up 729, degraded 123, down 15, idle 347.
+up 754, degraded 105, down 8, idle 347.
 
-Currently down (15):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 80% | 92% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 45% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 70% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 92% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 72% | 76% |
-| `openai/gpt-5.4-mini` | `openai` | OpenAI | 79% | 78% |
-| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 79% | 78% |
-| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 79% | 78% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 74% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 75% | 74% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 69% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 80% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | 49% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 29% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 78% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 77% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 76% | 77% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 74% | n/a |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 74% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 70% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

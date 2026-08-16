@@ -85,20 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T09:13:08+00:00 UTC)
+## Current status (2026-08-16T09:30:42+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 751, degraded 103, down 5, idle 353.
+up 739, degraded 119, down 8, idle 346.
 
-Currently down (5):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 60% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | 64% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 100% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 72% | 68% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 72% | 68% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 22% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 23% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 74% | 75% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 74% | 75% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 78% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 79% | 81% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 60% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

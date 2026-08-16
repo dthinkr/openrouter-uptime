@@ -85,23 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T01:15:20+00:00 UTC)
+## Current status (2026-08-16T01:31:15+00:00 UTC)
 
 413 models polled, 1211 inference endpoints:
-up 740, degraded 115, down 8, idle 348.
+up 730, degraded 119, down 13, idle 349.
 
-Currently down (8):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 74% | 36% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 47% | 55% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 61% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 80% | 39% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 63% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 71% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 47% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 82% |
+| `openai/gpt-5.6-terra` | `azure/us` | Azure | 77% | 70% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 44% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 60% | n/a |
 | `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
+| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 78% | 56% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 79% | n/a |
+| `stepfun/step-3.7-flash` | `novita/fp8` | Novita | 61% | n/a |
+| `z-ai/glm-5.2` | `inceptron/fp4` | Inceptron | 42% | 43% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T17:59:14+00:00 UTC)
+## Current status (2026-08-16T18:16:14+00:00 UTC)
 
 413 models polled, 1214 inference endpoints:
-up 725, degraded 119, down 12, idle 358.
+up 725, degraded 120, down 20, idle 349.
 
-Currently down (12):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 71% | 92% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 68% | 97% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 41% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 77% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 54% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 79% |
-| `openai/gpt-5.4-mini` | `openai` | OpenAI | 80% | 80% |
-| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 80% | 80% |
-| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 80% | 80% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 72% | 95% |
-| `z-ai/glm-5.2` | `coreweave/fp4` | CoreWeave | 72% | 32% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 66% | 55% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 70% | 59% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 77% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 64% | 19% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 73% | 27% |
+| `deepseek/deepseek-v4-pro` | `together` | Together | 75% | 32% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 71% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 60% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 81% |
+| `openai/gpt-5.4-mini` | `openai` | OpenAI | 80% | 79% |
+| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 80% | 79% |
+| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 80% | 79% |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 80% | 79% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 74% | 70% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

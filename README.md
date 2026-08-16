@@ -85,26 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T16:00:41+00:00 UTC)
+## Current status (2026-08-16T16:15:15+00:00 UTC)
 
-413 models polled, 1212 inference endpoints:
-up 713, degraded 128, down 11, idle 360.
+413 models polled, 1213 inference endpoints:
+up 697, degraded 148, down 14, idle 354.
 
-Currently down (11):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 69% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 76% | 74% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 77% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 38% | 54% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 70% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 86% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 88% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 75% | 69% |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 79% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 70% | 76% |
+| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 78% | 55% |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 74% | 99% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 79% | 88% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 95% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 80% | 75% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 73% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 38% | 27% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 69% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 79% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 64% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 71% | n/a |
+| `z-ai/glm-5.2` | `together` | Together | 78% | 73% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

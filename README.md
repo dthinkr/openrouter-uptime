@@ -85,24 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T21:59:43+00:00 UTC)
+## Current status (2026-08-16T22:16:16+00:00 UTC)
 
 413 models polled, 1214 inference endpoints:
-up 713, degraded 138, down 9, idle 354.
+up 725, degraded 125, down 17, idle 347.
 
-Currently down (9):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | 17% |
+| `anthropic/claude-fable-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 40% | 0% |
+| `anthropic/claude-opus-4.6` | `anthropic/2` | Anthropic | 41% | 0% |
+| `anthropic/claude-opus-4.7` | `anthropic/2` | Anthropic | 19% | 0% |
+| `anthropic/claude-opus-4.8` | `anthropic/2` | Anthropic | 24% | 0% |
+| `anthropic/claude-opus-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 29% | 0% |
+| `anthropic/claude-sonnet-4.6` | `anthropic/2` | Anthropic | 23% | 0% |
+| `anthropic/claude-sonnet-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 43% | 0% |
+| `anthropic/claude-sonnet-5` | `azure/us` | Azure | 55% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 37% | 16% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 72% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 73% | 70% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 71% | 58% |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
-| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 76% | 38% |
-| `qwen/qwen3-14b` | `deepinfra/fp8` | DeepInfra | 78% | 100% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 76% | 73% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | 64% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 60% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 70% | 75% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 79% | 9% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

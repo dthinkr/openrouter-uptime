@@ -85,25 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T08:01:05+00:00 UTC)
+## Current status (2026-08-16T08:15:55+00:00 UTC)
 
-413 models polled, 1212 inference endpoints:
-up 714, degraded 112, down 10, idle 376.
+413 models polled, 1211 inference endpoints:
+up 727, degraded 104, down 13, idle 367.
 
-Currently down (10):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | 8% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 99% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 72% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 77% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 97% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 77% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 71% | 67% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 71% | 67% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 60% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | 53% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 91% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4` | DeepInfra | 79% | 72% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 78% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 63% | 60% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 63% | 60% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 51% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 49% | 49% |
+| `xiaomi/mimo-v2.5-pro` | `novita` | Novita | 78% | 57% |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 46% | 44% |
+| `z-ai/glm-5.2` | `together` | Together | 78% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

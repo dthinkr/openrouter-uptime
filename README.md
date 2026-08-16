@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T17:46:34+00:00 UTC)
+## Current status (2026-08-16T17:59:14+00:00 UTC)
 
 413 models polled, 1214 inference endpoints:
-up 732, degraded 116, down 13, idle 353.
+up 725, degraded 119, down 12, idle 358.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | 100% |
-| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 79% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 74% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 52% | 74% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | 62% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 69% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 76% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 82% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 82% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 80% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 56% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 71% | 92% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 68% | 97% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 41% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 54% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 79% |
+| `openai/gpt-5.4-mini` | `openai` | OpenAI | 80% | 80% |
+| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 80% | 80% |
+| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 80% | 80% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 72% | 95% |
+| `z-ai/glm-5.2` | `coreweave/fp4` | CoreWeave | 72% | 32% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,28 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T14:15:58+00:00 UTC)
+## Current status (2026-08-16T14:30:27+00:00 UTC)
 
 413 models polled, 1213 inference endpoints:
-up 727, degraded 119, down 13, idle 354.
+up 731, degraded 114, down 10, idle 358.
 
-Currently down (13):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | 8% |
-| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 42% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 56% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 56% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 56% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | 65% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 37% | 87% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 80% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 49% |
 | `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 81% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 78% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 78% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 85% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 73% | 60% |
-| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 70% | 78% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 72% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 76% | 72% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 73% | 43% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 72% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 79% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

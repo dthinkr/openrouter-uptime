@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T19:31:26+00:00 UTC)
+## Current status (2026-08-16T19:44:10+00:00 UTC)
 
-413 models polled, 1214 inference endpoints:
-up 734, degraded 117, down 14, idle 349.
+413 models polled, 1213 inference endpoints:
+up 740, degraded 116, down 13, idle 344.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 70% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 71% | 69% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 75% | 95% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 100% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 80% | 78% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 77% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 76% | 5% |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 51% | n/a |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 75% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 75% | n/a |
-| `z-ai/glm-5.2` | `baidu/fp8` | Baidu | 67% | 76% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 59% | 84% |
+| `deepseek/deepseek-chat-v3.1` | `atlas-cloud/fp8` | AtlasCloud | 73% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 77% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 64% | 71% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | 51% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 76% | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 64% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 58% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 72% | n/a |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 79% | n/a |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 65% | n/a |
+| `x-ai/grok-4.20-multi-agent` | `xai/priority` | xAI | 65% | n/a |
+| `z-ai/glm-5.2` | `baidu/fp8` | Baidu | 26% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

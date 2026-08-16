@@ -85,23 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T20:31:17+00:00 UTC)
+## Current status (2026-08-16T20:45:32+00:00 UTC)
 
 413 models polled, 1214 inference endpoints:
-up 754, degraded 105, down 8, idle 347.
+up 742, degraded 109, down 7, idle 356.
 
-Currently down (8):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | 49% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 29% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 78% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | 10% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 90% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 76% |
 | `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 77% |
 | `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 76% | 77% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 74% | n/a |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 74% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 70% | n/a |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 76% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,22 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T20:45:32+00:00 UTC)
+## Current status (2026-08-16T21:00:50+00:00 UTC)
 
 413 models polled, 1214 inference endpoints:
-up 742, degraded 109, down 7, idle 356.
+up 739, degraded 117, down 9, idle 349.
 
-Currently down (7):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | 10% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 90% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 76% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 77% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 76% | 77% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 76% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 98% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 74% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 84% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 84% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 42% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `modal/nvfp4` | Modal | 79% | n/a |
+| `z-ai/glm-5.2` | `together` | Together | 79% | 100% |
+| `z-ai/glm-5.2` | `modelrun/fp4` | ModelRun | 14% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

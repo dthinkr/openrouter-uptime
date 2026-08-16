@@ -85,23 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T06:01:16+00:00 UTC)
+## Current status (2026-08-16T06:15:38+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 720, degraded 104, down 8, idle 380.
+up 717, degraded 104, down 9, idle 382.
 
-Currently down (8):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 76% | 81% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | 69% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 53% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 78% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 66% | 78% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 66% | 78% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 76% | 78% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 71% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | 81% |
+| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 77% | 77% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 87% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 77% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 86% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 75% | 86% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 77% | 94% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 86% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

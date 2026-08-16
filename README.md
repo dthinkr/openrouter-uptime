@@ -85,23 +85,20 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T09:00:35+00:00 UTC)
+## Current status (2026-08-16T09:13:08+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 740, degraded 102, down 8, idle 362.
+up 751, degraded 103, down 5, idle 353.
 
-Currently down (8):
+Currently down (5):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 77% | 75% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 93% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | 69% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 57% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 69% | 74% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 69% | 74% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 58% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 60% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | 64% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 100% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 72% | 68% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 72% | 68% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

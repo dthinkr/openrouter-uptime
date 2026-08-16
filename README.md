@@ -85,24 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T06:15:38+00:00 UTC)
+## Current status (2026-08-16T06:30:28+00:00 UTC)
 
-413 models polled, 1212 inference endpoints:
-up 717, degraded 104, down 9, idle 382.
+413 models polled, 1211 inference endpoints:
+up 726, degraded 101, down 11, idle 373.
 
-Currently down (9):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | 81% |
-| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 77% | 77% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 87% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 77% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 86% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 75% | 86% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 77% | 94% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 86% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 80% | 73% |
+| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 78% | 82% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 85% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 76% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 76% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | n/a |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 49% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

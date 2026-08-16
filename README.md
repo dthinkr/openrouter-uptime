@@ -85,25 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T14:45:42+00:00 UTC)
+## Current status (2026-08-16T15:00:55+00:00 UTC)
 
 413 models polled, 1213 inference endpoints:
-up 723, degraded 129, down 10, idle 351.
+up 720, degraded 133, down 13, idle 347.
 
-Currently down (10):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 79% | 71% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 71% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 54% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 83% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 73% | 75% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 73% | 75% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 60% | 100% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | 34% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 79% | 84% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 78% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 50% | 8% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 59% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 42% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 76% | 65% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 77% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 78% | 85% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 78% | 85% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 71% | 96% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 73% | n/a |
+| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 65% | 80% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

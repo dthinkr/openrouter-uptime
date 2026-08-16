@@ -85,26 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T15:45:24+00:00 UTC)
+## Current status (2026-08-16T16:00:41+00:00 UTC)
 
-413 models polled, 1213 inference endpoints:
-up 718, degraded 129, down 11, idle 355.
+413 models polled, 1212 inference endpoints:
+up 713, degraded 128, down 11, idle 360.
 
 Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 34% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 74% | 34% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 72% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | 57% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | 88% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 39% | 35% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 75% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 59% | 85% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 70% | n/a |
-| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 72% | 88% |
-| `z-ai/glm-5.1` | `phala` | Phala | 78% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 69% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 76% | 74% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 38% | 54% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 70% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 86% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 88% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 75% | 69% |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 79% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

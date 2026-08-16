@@ -85,28 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T12:16:25+00:00 UTC)
+## Current status (2026-08-16T12:30:15+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 720, degraded 109, down 13, idle 370.
+up 727, degraded 109, down 10, idle 366.
 
-Currently down (13):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 58% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 77% | 52% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 72% | 74% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 64% | 77% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 80% | 79% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 96% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 90% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 7% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 75% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 80% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 80% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 48% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 58% | n/a |
-| `z-ai/glm-5.2` | `together` | Together | 78% | 83% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 66% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 100% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 79% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 77% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 80% | 77% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

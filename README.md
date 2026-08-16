@@ -85,24 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T13:46:00+00:00 UTC)
+## Current status (2026-08-16T14:01:11+00:00 UTC)
 
 413 models polled, 1213 inference endpoints:
-up 725, degraded 125, down 9, idle 354.
+up 727, degraded 119, down 13, idle 354.
 
-Currently down (9):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 51% | 59% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 73% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 87% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 77% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 63% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
-| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 60% | 40% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 61% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 62% | 75% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 79% | 98% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 52% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 49% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 49% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 77% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 11% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 83% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 72% | 65% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 58% | n/a |
+| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 61% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

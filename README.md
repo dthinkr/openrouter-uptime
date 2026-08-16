@@ -85,27 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T03:00:34+00:00 UTC)
+## Current status (2026-08-16T03:16:00+00:00 UTC)
 
 413 models polled, 1211 inference endpoints:
-up 749, degraded 108, down 12, idle 342.
+up 744, degraded 112, down 9, idle 346.
 
-Currently down (12):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 76% | 83% |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 79% | 54% |
-| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 78% | 77% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 46% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 70% | 80% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 70% | 80% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 66% | n/a |
-| `z-ai/glm-5.2` | `together` | Together | 80% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | 67% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 73% | 97% |
+| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 66% | 99% |
+| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 74% | 73% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 84% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 78% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 78% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 75% | 78% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 67% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

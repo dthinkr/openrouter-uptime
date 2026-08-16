@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T17:16:30+00:00 UTC)
+## Current status (2026-08-16T17:31:19+00:00 UTC)
 
 413 models polled, 1214 inference endpoints:
-up 735, degraded 124, down 12, idle 343.
+up 735, degraded 115, down 16, idle 348.
 
-Currently down (12):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 12% |
-| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 75% | 87% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 56% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 52% | 23% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 53% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 41% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 76% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 77% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 77% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 48% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 78% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | n/a |
+| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 78% | 96% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 65% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 47% | 28% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | 39% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 63% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 49% | 100% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 73% | 75% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 82% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 77% | 82% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 79% | 73% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 59% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 71% | 100% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 62% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

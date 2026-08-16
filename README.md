@@ -85,21 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T05:46:17+00:00 UTC)
+## Current status (2026-08-16T06:01:16+00:00 UTC)
 
-413 models polled, 1211 inference endpoints:
-up 731, degraded 102, down 6, idle 372.
+413 models polled, 1212 inference endpoints:
+up 720, degraded 104, down 8, idle 380.
 
-Currently down (6):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 72% | 78% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 64% | 62% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 64% | 62% |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 78% | 52% |
+| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 76% | 81% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | 69% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 53% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 78% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 66% | 78% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 66% | 78% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 76% | 78% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 71% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

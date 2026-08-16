@@ -85,28 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T12:46:05+00:00 UTC)
+## Current status (2026-08-16T13:00:35+00:00 UTC)
 
 413 models polled, 1213 inference endpoints:
-up 711, degraded 130, down 13, idle 359.
+up 712, degraded 135, down 7, idle 359.
 
-Currently down (13):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 63% | 90% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 78% | 98% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 30% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 30% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 30% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | 55% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 100% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 79% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 75% | 35% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 32% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 68% | 52% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 82% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 65% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 44% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 64% | n/a |
+| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 38% | 12% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

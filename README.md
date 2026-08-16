@@ -85,31 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T13:31:03+00:00 UTC)
+## Current status (2026-08-16T13:46:00+00:00 UTC)
 
 413 models polled, 1213 inference endpoints:
-up 725, degraded 122, down 16, idle 350.
+up 725, degraded 125, down 9, idle 354.
 
-Currently down (16):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 50% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 57% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | 69% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 73% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 98% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 72% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 86% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 65% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 62% | 35% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 74% | n/a |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 78% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 63% | n/a |
-| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 59% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 79% | n/a |
-| plus 1 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 51% | 59% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 73% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 87% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 77% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 63% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 60% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T22:46:14+00:00 UTC)
+## Current status (2026-08-16T23:01:00+00:00 UTC)
 
-414 models polled, 1215 inference endpoints:
-up 743, degraded 99, down 18, idle 355.
+414 models polled, 1214 inference endpoints:
+up 748, degraded 103, down 7, idle 356.
 
-Currently down (18):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
-| `anthropic/claude-opus-4.6` | `anthropic/2` | Anthropic | 75% | 100% |
-| `anthropic/claude-opus-4.7` | `anthropic/2` | Anthropic | 68% | 100% |
-| `anthropic/claude-opus-4.8` | `anthropic/2` | Anthropic | 77% | 100% |
-| `anthropic/claude-opus-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 58% | 100% |
-| `anthropic/claude-sonnet-4.6` | `anthropic/2` | Anthropic | 72% | 100% |
-| `anthropic/claude-sonnet-5` | `amazon-bedrock/claude-on-aws` | Amazon Bedrock | 71% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 47% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 69% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 87% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 73% | 78% |
-| `openai/gpt-5.4-mini` | `openai` | OpenAI | 77% | 84% |
-| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 77% | 84% |
-| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 77% | 84% |
-| plus 3 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | 16% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 77% | 67% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 73% | 77% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 47% | n/a |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 79% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

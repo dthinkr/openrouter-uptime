@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T01:31:15+00:00 UTC)
+## Current status (2026-08-16T01:45:58+00:00 UTC)
 
 413 models polled, 1211 inference endpoints:
-up 730, degraded 119, down 13, idle 349.
+up 727, degraded 117, down 19, idle 348.
 
-Currently down (13):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 71% | 69% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 47% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 82% |
-| `openai/gpt-5.6-terra` | `azure/us` | Azure | 77% | 70% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 44% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 60% | n/a |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
-| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 78% | 56% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 79% | n/a |
-| `stepfun/step-3.7-flash` | `novita/fp8` | Novita | 61% | n/a |
-| `z-ai/glm-5.2` | `inceptron/fp4` | Inceptron | 42% | 43% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | 16% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 70% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 77% | 76% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 0% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 66% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 77% | 2% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 79% |
+| `openai/gpt-5.6-terra` | `azure` | Azure | 80% | 83% |
+| `openai/gpt-5.6-terra` | `azure/us` | Azure | 74% | 70% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 53% | 100% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 74% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 79% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 73% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 42% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 74% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

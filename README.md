@@ -85,31 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T02:15:35+00:00 UTC)
+## Current status (2026-08-16T02:30:42+00:00 UTC)
 
 413 models polled, 1211 inference endpoints:
-up 716, degraded 132, down 16, idle 347.
+up 730, degraded 128, down 10, idle 343.
 
-Currently down (16):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 49% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 73% | 71% |
-| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 77% | 78% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 66% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 63% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 46% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 79% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 69% | 81% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 69% | 81% |
-| `openai/gpt-5.6-terra` | `azure/us` | Azure | 71% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 60% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 70% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 56% | 100% |
-| `thedrummer/unslopnemo-12b` | `parasail/bf16` | Parasail | 69% | n/a |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 74% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 77% | 80% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 30% | 12% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 73% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 70% | 100% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 72% | 72% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 72% | 72% |
+| `openai/gpt-5.6-terra` | `azure/us` | Azure | 69% | n/a |
+| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 78% | 58% |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

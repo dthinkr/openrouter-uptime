@@ -85,25 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T12:00:20+00:00 UTC)
+## Current status (2026-08-16T12:16:25+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 731, degraded 105, down 10, idle 366.
+up 720, degraded 109, down 13, idle 370.
 
-Currently down (10):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 37% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 82% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 63% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 60% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 100% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 74% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 70% | 75% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 70% | 75% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 47% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 62% | 58% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 58% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 77% | 52% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 72% | 74% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 90% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 7% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 75% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 80% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 48% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 58% | n/a |
+| `z-ai/glm-5.2` | `together` | Together | 78% | 83% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

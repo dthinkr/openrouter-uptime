@@ -85,22 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T04:15:54+00:00 UTC)
+## Current status (2026-08-16T04:30:11+00:00 UTC)
 
 413 models polled, 1211 inference endpoints:
-up 716, degraded 117, down 7, idle 371.
+up 717, degraded 122, down 12, idle 360.
 
-Currently down (7):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | 12% |
-| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 76% | 72% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 78% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 64% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4` | DeepInfra | 69% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 70% | 100% |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 10% |
+| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 76% | 78% |
+| `google/gemini-3.6-flash` | `google-ai-studio` | Google AI Studio | 79% | 29% |
+| `google/gemini-3.6-flash` | `google-ai-studio/flex` | Google AI Studio | 79% | 29% |
+| `google/gemini-3.6-flash` | `google-ai-studio/priority` | Google AI Studio | 79% | 29% |
+| `meta-llama/llama-3.2-3b-instruct` | `cloudflare` | Cloudflare | 80% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | 82% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 76% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 78% | 74% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 78% | 74% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 39% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 36% | 35% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

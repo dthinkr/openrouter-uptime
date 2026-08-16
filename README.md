@@ -85,27 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T10:31:12+00:00 UTC)
+## Current status (2026-08-16T10:46:21+00:00 UTC)
 
 413 models polled, 1212 inference endpoints:
-up 744, degraded 107, down 12, idle 349.
+up 739, degraded 103, down 15, idle 355.
 
-Currently down (12):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 49% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 48% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 68% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 62% | 97% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 62% | 97% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 50% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 75% | 75% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 74% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 56% | 29% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 61% | n/a |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 65% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 61% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 52% | 50% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 66% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 70% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 70% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 74% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 17% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 81% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 78% | 65% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 78% | 65% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 46% | 43% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 77% | 94% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 61% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 71% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

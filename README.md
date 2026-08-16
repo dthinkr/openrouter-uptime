@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-16T19:15:54+00:00 UTC)
+## Current status (2026-08-16T19:31:26+00:00 UTC)
 
 413 models polled, 1214 inference endpoints:
-up 725, degraded 127, down 17, idle 345.
+up 734, degraded 117, down 14, idle 349.
 
-Currently down (17):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `together` | Together | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 86% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 83% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 78% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 80% |
-| `openai/gpt-5.4-mini` | `openai` | OpenAI | 79% | 83% |
-| `openai/gpt-5.4-mini` | `openai/flex` | OpenAI | 79% | 83% |
-| `openai/gpt-5.4-mini` | `openai/priority` | OpenAI | 79% | 83% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 38% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 56% | n/a |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 80% | 67% |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 73% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 80% | n/a |
-| plus 2 more | | | | |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 70% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 71% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 78% | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 75% | 95% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 100% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 80% | 78% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 77% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 76% | 5% |
+| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 51% | n/a |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 75% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 75% | n/a |
+| `z-ai/glm-5.2` | `baidu/fp8` | Baidu | 67% | 76% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

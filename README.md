@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T01:15:54+00:00 UTC)
+## Current status (2026-08-17T01:30:45+00:00 UTC)
 
 414 models polled, 1215 inference endpoints:
-up 719, degraded 143, down 12, idle 341.
+up 713, degraded 148, down 13, idle 341.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 59% | 58% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 88% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 53% | 51% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 62% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 76% | 43% |
-| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 59% | n/a |
-| `qwen/qwen3.5-9b` | `together` | Together | 5% | 5% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 76% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 73% | n/a |
-| `z-ai/glm-5.2` | `modelrun/fp4` | ModelRun | 76% | 100% |
-| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 36% | 26% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 14% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 76% | 97% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 61% |
+| `openai/gpt-5.6-sol` | `azure/us` | Azure | 77% | 100% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 62% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 64% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 70% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 51% | n/a |
+| `qwen/qwen3.5-9b` | `together` | Together | 39% | 100% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 69% | n/a |
+| `z-ai/glm-4.6v` | `novita/bf16` | Novita | 77% | n/a |
+| `z-ai/glm-5.2` | `coreweave/fp4` | CoreWeave | 60% | 9% |
+| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 39% | 43% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

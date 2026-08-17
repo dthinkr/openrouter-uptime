@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T00:45:37+00:00 UTC)
+## Current status (2026-08-17T01:00:48+00:00 UTC)
 
 414 models polled, 1215 inference endpoints:
-up 737, degraded 117, down 12, idle 349.
+up 736, degraded 112, down 13, idle 354.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 32% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 42% | 27% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 64% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 78% | 100% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 78% | 68% |
-| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 35% | 53% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 68% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 64% | n/a |
-| `qwen/qwen3.5-9b` | `together` | Together | 2% | n/a |
-| `qwen/qwen3.8-2.4t-a95b` | `modal/nvfp4` | Modal | 73% | 23% |
-| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 28% | 31% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 58% | 97% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 48% | 54% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 74% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 80% | 64% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
+| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 77% | 100% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 71% | 9% |
+| `qwen/qwen3.5-9b` | `together` | Together | 7% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `modal/nvfp4` | Modal | 71% | n/a |
+| `z-ai/glm-5.2` | `modelrun/fp4` | ModelRun | 76% | 77% |
+| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 36% | 52% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

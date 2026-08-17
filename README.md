@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T00:30:08+00:00 UTC)
+## Current status (2026-08-17T00:45:37+00:00 UTC)
 
 414 models polled, 1215 inference endpoints:
-up 714, degraded 130, down 17, idle 354.
+up 737, degraded 117, down 12, idle 349.
 
-Currently down (17):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 79% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 79% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 1% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 55% | 33% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 72% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 64% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 79% | n/a |
-| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 77% | n/a |
-| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 57% | 28% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 69% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 74% | 1% |
-| `qwen/qwen3.5-9b` | `together` | Together | 3% | 5% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 51% | 100% |
-| plus 2 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 32% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 42% | 27% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 64% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 78% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 78% | 68% |
+| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 35% | 53% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 68% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 64% | n/a |
+| `qwen/qwen3.5-9b` | `together` | Together | 2% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `modal/nvfp4` | Modal | 73% | 23% |
+| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 28% | 31% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

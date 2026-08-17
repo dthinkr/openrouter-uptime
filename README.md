@@ -85,23 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T01:45:35+00:00 UTC)
+## Current status (2026-08-17T02:00:49+00:00 UTC)
 
 414 models polled, 1215 inference endpoints:
-up 720, degraded 132, down 8, idle 355.
+up 728, degraded 118, down 17, idle 352.
 
-Currently down (8):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 72% | 39% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 68% | n/a |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 74% | 76% |
-| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 66% | 60% |
-| `qwen/qwen3.5-9b` | `together` | Together | 69% | n/a |
-| `qwen/qwen3.8-2.4t-a95b` | `modal/nvfp4` | Modal | 51% | 10% |
-| `z-ai/glm-5.2` | `coreweave/fp4` | CoreWeave | 43% | 99% |
-| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 44% | 34% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 76% | 78% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 45% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 78% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 63% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 75% | 63% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 71% | 99% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 47% | n/a |
+| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 69% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | 100% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 74% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `modal/nvfp4` | Modal | 19% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

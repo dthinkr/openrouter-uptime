@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T13:45:54+00:00 UTC)
+## Current status (2026-08-17T14:00:56+00:00 UTC)
 
 414 models polled, 1214 inference endpoints:
-up 707, degraded 182, down 16, idle 309.
+up 720, degraded 181, down 13, idle 300.
 
-Currently down (16):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 5% | 3% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 70% | 79% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 75% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 74% | 45% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | 45% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 72% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 87% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 83% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 75% | 89% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 72% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 71% | 45% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 42% | n/a |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 74% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 75% | n/a |
-| plus 1 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 5% | 7% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 76% | 99% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 68% | 87% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 77% | 100% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 53% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | 83% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 92% |
+| `meta/muse-glimmer-30b` | `together` | Together | 79% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 78% | 100% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 61% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `modal/nvfp4` | Modal | 66% | n/a |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 62% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 61% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

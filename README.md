@@ -85,24 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T00:16:05+00:00 UTC)
+## Current status (2026-08-17T00:30:08+00:00 UTC)
 
 414 models polled, 1215 inference endpoints:
-up 722, degraded 126, down 9, idle 358.
+up 714, degraded 130, down 17, idle 354.
 
-Currently down (9):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | 82% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 79% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 79% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 1% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 55% | 33% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 94% |
-| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 80% | 53% |
-| `qwen/qwen3.5-9b` | `together` | Together | 8% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 71% | 4% |
-| `z-ai/glm-5.2` | `modelrun/fp4` | ModelRun | 34% | n/a |
-| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 52% | 30% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 72% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 64% |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 79% | n/a |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 77% | n/a |
+| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 57% | 28% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 69% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 74% | 1% |
+| `qwen/qwen3.5-9b` | `together` | Together | 3% | 5% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 51% | 100% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

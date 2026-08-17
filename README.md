@@ -85,28 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T01:30:45+00:00 UTC)
+## Current status (2026-08-17T01:45:35+00:00 UTC)
 
 414 models polled, 1215 inference endpoints:
-up 713, degraded 148, down 13, idle 341.
+up 720, degraded 132, down 8, idle 355.
 
-Currently down (13):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 14% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp16` | Liquid | 76% | 97% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 61% |
-| `openai/gpt-5.6-sol` | `azure/us` | Azure | 77% | 100% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 62% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 64% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 70% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 51% | n/a |
-| `qwen/qwen3.5-9b` | `together` | Together | 39% | 100% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 69% | n/a |
-| `z-ai/glm-4.6v` | `novita/bf16` | Novita | 77% | n/a |
-| `z-ai/glm-5.2` | `coreweave/fp4` | CoreWeave | 60% | 9% |
-| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 39% | 43% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 74% | 76% |
+| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 66% | 60% |
+| `qwen/qwen3.5-9b` | `together` | Together | 69% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `modal/nvfp4` | Modal | 51% | 10% |
+| `z-ai/glm-5.2` | `coreweave/fp4` | CoreWeave | 43% | 99% |
+| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 44% | 34% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

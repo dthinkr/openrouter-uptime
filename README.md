@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T07:45:59+00:00 UTC)
+## Current status (2026-08-17T08:00:46+00:00 UTC)
 
 414 models polled, 1215 inference endpoints:
-up 729, degraded 150, down 16, idle 320.
+up 736, degraded 148, down 12, idle 319.
 
-Currently down (16):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 46% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | 100% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 79% | 86% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 70% | 72% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 8% | 78% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 53% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 76% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 80% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 42% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 74% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 78% | 87% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 78% | 87% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 64% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `akashml/fp8` | AkashML | 75% | n/a |
-| plus 1 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 17% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 68% | 83% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 79% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 70% | 70% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 75% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 60% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | 78% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 73% |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 80% | 80% |
+| `z-ai/glm-5.2` | `fireworks/fast` | Fireworks | 78% | 100% |
+| `z-ai/glm-5.2` | `modelrun/fp4` | ModelRun | 65% | 98% |
+| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 58% | 43% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

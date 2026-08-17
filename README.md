@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T03:46:18+00:00 UTC)
+## Current status (2026-08-17T04:01:31+00:00 UTC)
 
 414 models polled, 1214 inference endpoints:
-up 735, degraded 129, down 12, idle 338.
+up 733, degraded 115, down 17, idle 349.
 
-Currently down (12):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | 27% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 79% | 100% |
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 58% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 60% | 58% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 60% | 58% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 60% | 58% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 83% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 80% | 31% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 66% | 78% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 66% | 78% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 66% | 78% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 97% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 20% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 76% |
 | `openai/gpt-5.4-nano` | `openai` | OpenAI | 78% | 75% |
 | `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 78% | 75% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 18% | n/a |
-| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 57% | 51% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `modal/nvfp4` | Modal | 77% | n/a |
+| `stepfun/step-3.7-flash` | `novita/fp8` | Novita | 77% | n/a |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 79% | 79% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

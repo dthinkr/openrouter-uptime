@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T05:00:18+00:00 UTC)
+## Current status (2026-08-17T05:15:32+00:00 UTC)
 
 414 models polled, 1215 inference endpoints:
-up 729, degraded 113, down 16, idle 357.
+up 716, degraded 126, down 20, idle 353.
 
-Currently down (16):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 67% | 99% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 32% | 57% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 59% | 62% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 59% | 62% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 59% | 62% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 98% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 88% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 36% | 28% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 61% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 68% | 83% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 68% | 95% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 68% | 95% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 59% | 68% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 59% | 68% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 59% | 68% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 89% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 76% | 69% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 34% | 99% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 66% | 60% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 66% | 60% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 77% | n/a |
-| `z-ai/glm-5.2` | `modelrun/fp4` | ModelRun | 44% | 16% |
-| plus 1 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 70% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 68% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 61% | 72% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

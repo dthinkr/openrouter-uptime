@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-17T09:31:21+00:00 UTC)
+## Current status (2026-08-17T09:46:24+00:00 UTC)
 
 414 models polled, 1216 inference endpoints:
-up 758, degraded 152, down 22, idle 284.
+up 749, degraded 138, down 21, idle 308.
 
-Currently down (22):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 45% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 76% | 58% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 77% | 82% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 45% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 45% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 45% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 79% | 82% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 71% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 71% | 75% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 54% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 61% | 48% |
-| `qwen/qwen3-235b-a22b-2507` | `novita/fp8` | Novita | 76% | 74% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 50% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 77% | 73% |
-| plus 7 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | 19% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 70% | 63% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 52% | 47% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 76% | 76% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 99% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | 43% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 74% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 11% |
+| `moonshotai/kimi-k3` | `digitalocean` | DigitalOcean | 79% | 100% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 78% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 48% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 49% | 62% |
+| `qwen/qwen3-235b-a22b-2507` | `novita/fp8` | Novita | 75% | 99% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 40% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 100% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T02:30:56+00:00 UTC)
+## Current status (2026-08-18T02:44:56+00:00 UTC)
 
-414 models polled, 1210 inference endpoints:
-up 707, degraded 157, down 16, idle 330.
+414 models polled, 1209 inference endpoints:
+up 721, degraded 139, down 17, idle 332.
 
-Currently down (16):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 54% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 78% | 60% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 70% | n/a |
-| `deepseek/deepseek-v4-pro` | `together` | Together | 68% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 53% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 47% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | n/a |
-| `moonshotai/kimi-k2.6` | `together` | Together | 76% | 100% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 84% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 72% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | n/a | n/a |
-| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | n/a | n/a |
-| `tencent/hy3` | `baidu/fp8` | Baidu | 74% | n/a |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 75% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 73% | n/a |
-| plus 1 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 76% | 97% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 47% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 72% | 0% |
+| `deepseek/deepseek-v4-pro` | `gmicloud/fp8` | GMICloud | 73% | 34% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 68% | 30% |
+| `deepseek/deepseek-v4-pro` | `together` | Together | 62% | 76% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 59% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 77% | 87% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 83% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 69% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | n/a |
+| `stepfun/step-3.7-flash` | `novita/fp8` | Novita | 75% | n/a |
+| `tencent/hy3` | `baidu/fp8` | Baidu | 79% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T05:30:13+00:00 UTC)
+## Current status (2026-08-18T05:45:30+00:00 UTC)
 
 413 models polled, 1209 inference endpoints:
-up 730, degraded 139, down 14, idle 326.
+up 735, degraded 138, down 15, idle 321.
 
-Currently down (14):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 69% | 66% |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 80% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 50% | n/a |
-| `deepseek/deepseek-v4-pro` | `together` | Together | 79% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 66% | 15% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | 84% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 88% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 60% | 20% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 69% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 78% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 70% | 92% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 37% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 36% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | 61% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 43% | 0% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 77% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 70% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 75% | 70% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | 100% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 58% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

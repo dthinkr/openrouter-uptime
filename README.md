@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T03:00:07+00:00 UTC)
+## Current status (2026-08-18T03:15:37+00:00 UTC)
 
 413 models polled, 1209 inference endpoints:
-up 730, degraded 132, down 15, idle 332.
+up 718, degraded 136, down 18, idle 337.
 
-Currently down (15):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 51% | 49% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 77% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 50% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 54% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 63% | 68% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | 57% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 60% |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 79% | 90% |
-| `moonshotai/kimi-k2.6` | `together` | Together | 71% | 75% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 52% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 70% | 100% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 46% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 60% | n/a |
+| `deepseek/deepseek-v4-pro` | `together` | Together | 70% | 89% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 79% | 95% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | 89% |
+| `moonshotai/kimi-k2.6` | `together` | Together | 74% | 100% |
 | `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 72% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 79% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | 67% |
 | `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | n/a | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `tencent/hy3` | `baidu/fp8` | Baidu | 77% | n/a |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 48% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 77% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

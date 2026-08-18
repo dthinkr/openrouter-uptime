@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T01:31:12+00:00 UTC)
+## Current status (2026-08-18T01:46:09+00:00 UTC)
 
 414 models polled, 1209 inference endpoints:
-up 704, degraded 142, down 25, idle 338.
+up 701, degraded 149, down 23, idle 336.
 
-Currently down (25):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 25% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 69% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 57% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 48% | n/a |
-| `deepseek/deepseek-v4-pro` | `together` | Together | 66% | 76% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 86% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 70% | 98% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 98% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/priority` | Google | 70% | 98% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | n/a |
-| `google/gemma-3-27b-it` | `phala` | Phala | 73% | 36% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 36% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | 49% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 61% |
-| `moonshotai/kimi-k2.6` | `together` | Together | 65% | 100% |
-| plus 10 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 64% | n/a |
+| `deepseek/deepseek-v4-pro` | `together` | Together | 70% | 97% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 77% | 99% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 99% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/priority` | Google | 77% | 99% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | n/a |
+| `google/gemma-3-27b-it` | `phala` | Phala | 56% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 31% | 20% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 59% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 69% |
+| `moonshotai/kimi-k2.6` | `together` | Together | 77% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 51% | 62% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

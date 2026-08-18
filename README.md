@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T23:00:45+00:00 UTC)
+## Current status (2026-08-18T23:15:29+00:00 UTC)
 
 415 models polled, 1210 inference endpoints:
-up 747, degraded 115, down 19, idle 329.
+up 730, degraded 130, down 21, idle 329.
 
-Currently down (19):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 3% | 3% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 59% | 61% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 66% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 49% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 52% | 29% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 33% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 7% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 13% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 81% |
-| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 55% | 100% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 71% | n/a |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 57% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 56% | 65% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 64% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 57% | 30% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 39% | n/a |
+| `deepseek/deepseek-v4-pro` | `together` | Together | 53% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 2% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 27% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 32% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 42% | 63% |
+| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 74% | 77% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 54% | n/a |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 78% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 73% | 75% |
-| plus 4 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 76% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 71% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

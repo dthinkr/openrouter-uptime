@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T05:45:30+00:00 UTC)
+## Current status (2026-08-18T06:00:53+00:00 UTC)
 
 413 models polled, 1209 inference endpoints:
-up 735, degraded 138, down 15, idle 321.
+up 748, degraded 122, down 15, idle 324.
 
 Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 70% | 92% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 37% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 36% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | 61% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | 21% |
+| `deepseek/deepseek-v4-pro-0813` | `phala` | Phala | 79% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | 70% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 70% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
+| `moonshotai/kimi-k2.6` | `together` | Together | 68% | 45% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 43% | 0% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 77% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 70% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 75% | 70% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | 100% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 58% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 6% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 78% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 69% | 66% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 69% | 66% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 79% | 100% |
 | `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 0% | n/a |
 | `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 80% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

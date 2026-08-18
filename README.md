@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T04:46:32+00:00 UTC)
+## Current status (2026-08-18T05:01:20+00:00 UTC)
 
 413 models polled, 1209 inference endpoints:
-up 726, degraded 132, down 16, idle 335.
+up 743, degraded 130, down 11, idle 325.
 
-Currently down (16):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 66% | 87% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 68% | 76% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 86% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 63% | n/a |
-| `meta-llama/llama-3.2-3b-instruct` | `cloudflare` | Cloudflare | 62% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 77% | 100% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 73% | n/a |
-| `moonshotai/kimi-k2.6` | `together` | Together | 72% | 100% |
-| `openai/gpt-5.6-terra` | `azure/us` | Azure | 50% | n/a |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 60% | 90% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 79% | 40% |
-| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | n/a |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 68% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 69% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | n/a | n/a |
 | `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 0% | n/a |
 | `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 1 more | | | | |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 58% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

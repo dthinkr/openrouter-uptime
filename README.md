@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T18:14:14+00:00 UTC)
+## Current status (2026-08-18T18:30:26+00:00 UTC)
 
-413 models polled, 1208 inference endpoints:
-up 723, degraded 144, down 26, idle 315.
+414 models polled, 1209 inference endpoints:
+up 719, degraded 144, down 26, idle 320.
 
 Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | n/a |
-| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 57% | 84% |
-| `anthropic/claude-opus-5` | `anthropic` | Anthropic | 70% | 91% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 68% | 75% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 44% | 37% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 43% | n/a |
-| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 70% | 77% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 26% | n/a |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 75% | 33% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 35% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 68% | n/a |
-| `moonshotai/kimi-k2.6` | `together` | Together | 48% | 74% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 44% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 78% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 69% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 68% | 81% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 65% |
+| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 62% | 56% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 53% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 68% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 34% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 99% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 64% | n/a |
+| `moonshotai/kimi-k2.6` | `together` | Together | 39% | 71% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 16% | n/a |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 66% | n/a |
+| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 78% | 76% |
 | plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

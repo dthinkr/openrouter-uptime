@@ -85,26 +85,18 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T05:01:20+00:00 UTC)
+## Current status (2026-08-18T05:15:19+00:00 UTC)
 
 413 models polled, 1209 inference endpoints:
-up 743, degraded 130, down 11, idle 325.
+up 741, degraded 130, down 3, idle 335.
 
-Currently down (11):
+Currently down (3):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 77% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | n/a |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 68% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 69% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | n/a | n/a |
-| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 58% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 78% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 65% | 57% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 77% |
+| `moonshotai/kimi-k2.6` | `together` | Together | 79% | 91% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

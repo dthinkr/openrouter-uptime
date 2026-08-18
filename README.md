@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T06:16:14+00:00 UTC)
+## Current status (2026-08-18T06:30:28+00:00 UTC)
 
-413 models polled, 1209 inference endpoints:
-up 728, degraded 139, down 17, idle 325.
+413 models polled, 1210 inference endpoints:
+up 715, degraded 158, down 20, idle 317.
 
-Currently down (17):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 57% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 71% | 54% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 59% | 68% |
-| `deepseek/deepseek-v4-pro-0813` | `phala` | Phala | 76% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | 77% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 71% |
-| `moonshotai/kimi-k2.6` | `together` | Together | 71% | 100% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 60% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 77% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 67% | 73% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 67% | 73% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 77% | 66% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 90% |
-| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 68% | 49% |
-| plus 2 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 76% | 77% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 75% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 60% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 21% |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 80% | 99% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 77% | 82% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 69% | 72% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 69% | 72% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 61% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 71% | 78% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | n/a | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

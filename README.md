@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-18T11:15:12+00:00 UTC)
+## Current status (2026-08-18T11:30:15+00:00 UTC)
 
 412 models polled, 1206 inference endpoints:
-up 710, degraded 144, down 28, idle 324.
+up 709, degraded 147, down 29, idle 321.
 
-Currently down (28):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 16% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 71% | 100% |
-| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 71% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baidu/fp8` | Baidu | 70% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 61% | 60% |
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 71% | 0% |
-| `google/gemma-4-26b-a4b-it` | `nextbit/bf16` | NextBit | 56% | 52% |
-| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 74% | n/a |
-| `gryphe/mythomax-l2-13b` | `nextbit/int4` | NextBit | 70% | 41% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 78% | 67% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 74% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 72% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 75% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 78% |
-| plus 13 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | 11% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 33% | 0% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 40% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `baidu/fp8` | Baidu | 34% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 52% | n/a |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 29% | n/a |
+| `google/gemma-4-26b-a4b-it` | `nextbit/bf16` | NextBit | 48% | 99% |
+| `google/gemma-4-31b-it` | `morph/fp4` | Morph | 60% | 54% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 64% | n/a |
+| `gryphe/mythomax-l2-13b` | `nextbit/int4` | NextBit | 48% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 54% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 39% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 81% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 81% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

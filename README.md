@@ -85,25 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T02:01:06+00:00 UTC)
+## Current status (2026-08-19T02:16:31+00:00 UTC)
 
 414 models polled, 1207 inference endpoints:
-up 751, degraded 121, down 10, idle 325.
+up 760, degraded 127, down 14, idle 306.
 
-Currently down (10):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 42% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 63% | 70% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 5% | 4% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 75% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 70% | 99% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 36% | 19% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 79% | 91% |
-| `tencent/hy3` | `atlas-cloud/fp8` | AtlasCloud | 79% | 76% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | 85% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 69% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 32% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 4% | 4% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 63% | 50% |
+| `deepseek/deepseek-v4-pro` | `together` | Together | 79% | 73% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 44% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 73% | 44% |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 79% | 79% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 78% |
+| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 68% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 78% | 84% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 71% | 98% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T05:30:09+00:00 UTC)
+## Current status (2026-08-19T05:43:18+00:00 UTC)
 
 415 models polled, 1208 inference endpoints:
-up 709, degraded 136, down 13, idle 350.
+up 710, degraded 141, down 19, idle 338.
 
-Currently down (13):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 36% | 24% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 38% | n/a |
-| `deepseek/deepseek-v4-flash` | `deepseek` | DeepSeek | 65% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 14% | 22% |
-| `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 42% | 0% |
-| `deepseek/deepseek-v4-pro` | `deepseek` | DeepSeek | 45% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 87% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 66% | 35% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 74% | 80% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 78% | n/a |
-| `z-ai/glm-5.2` | `together` | Together | 62% | 100% |
+| `deepseek/deepseek-v4-flash` | `deepseek` | DeepSeek | 28% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 23% | 38% |
+| `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 5% | 0% |
+| `deepseek/deepseek-v4-pro` | `deepseek` | DeepSeek | 5% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 16% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 43% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 43% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 43% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | 41% |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 79% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 23% | 43% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 62% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 37% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

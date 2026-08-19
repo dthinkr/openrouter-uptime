@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T13:30:52+00:00 UTC)
+## Current status (2026-08-19T13:46:30+00:00 UTC)
 
 415 models polled, 1207 inference endpoints:
-up 733, degraded 148, down 39, idle 287.
+up 719, degraded 154, down 42, idle 292.
 
-Currently down (39):
+Currently down (42):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 5% | 3% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 61% | 43% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 63% | 50% |
-| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 78% | 58% |
-| `deepseek/deepseek-v3.2` | `friendli` | Friendli | 1% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 59% | 91% |
-| `deepseek/deepseek-v4-flash` | `deepseek` | DeepSeek | 51% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 75% | 42% |
-| `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 4% | 25% |
-| `deepseek/deepseek-v4-pro` | `deepseek` | DeepSeek | 20% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 64% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 58% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 75% | 6% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 63% | n/a |
+| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 78% | n/a |
+| `deepseek/deepseek-v3.2` | `friendli` | Friendli | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 63% | 90% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 73% | 100% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 55% | n/a |
-| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 76% | 89% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 79% | 91% |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 77% | 83% |
-| plus 24 more | | | | |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 79% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 71% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 24% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 44% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 80% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 43% | n/a |
+| plus 27 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,25 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T02:46:06+00:00 UTC)
+## Current status (2026-08-19T03:00:26+00:00 UTC)
 
 414 models polled, 1207 inference endpoints:
-up 778, degraded 104, down 10, idle 315.
+up 765, degraded 121, down 14, idle 307.
 
-Currently down (10):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 49% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 7% | 2% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 76% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 75% | 64% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 45% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 82% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 74% | 40% |
-| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 64% | n/a |
-| `z-ai/glm-5` | `digitalocean` | DigitalOcean | 45% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 78% | 99% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 5% | 2% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 64% | 97% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 29% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 70% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 40% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 39% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | 100% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 80% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 79% | 79% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 63% | 99% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | n/a |
+| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 75% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

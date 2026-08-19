@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T07:31:10+00:00 UTC)
+## Current status (2026-08-19T07:45:12+00:00 UTC)
 
 415 models polled, 1208 inference endpoints:
-up 718, degraded 150, down 25, idle 315.
+up 722, degraded 150, down 29, idle 307.
 
-Currently down (25):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 25% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 66% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 15% | 38% |
 | `deepseek/deepseek-v4-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 24% | 26% |
-| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 65% | 86% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 30% | 48% |
+| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 68% | 85% |
 | `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `deepseek` | DeepSeek | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 67% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 44% | 37% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | 51% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 60% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 76% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 34% | 77% |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 64% | 51% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 81% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 8% | 2% |
-| plus 10 more | | | | |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 35% | 26% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 79% | 100% |
+| `minimax/minimax-m2.7` | `minimax/fp8` | Minimax | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 30% |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 68% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

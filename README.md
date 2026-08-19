@@ -85,24 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T04:45:50+00:00 UTC)
+## Current status (2026-08-19T05:00:25+00:00 UTC)
 
 414 models polled, 1207 inference endpoints:
-up 754, degraded 108, down 9, idle 336.
+up 736, degraded 114, down 17, idle 340.
 
-Currently down (9):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 60% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 14% | 38% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 57% |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 74% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 40% | 42% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 81% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 79% | 81% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 36% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 52% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 19% | 6% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 59% | 95% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 57% |
+| `google/gemma-3n-e4b-it` | `together` | Together | 80% | 1% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 72% | n/a |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 78% | 2% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | 47% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 57% |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 71% | n/a |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 79% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 79% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 80% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | 71% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

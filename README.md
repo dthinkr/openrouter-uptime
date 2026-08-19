@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T03:46:25+00:00 UTC)
+## Current status (2026-08-19T04:00:53+00:00 UTC)
 
 414 models polled, 1207 inference endpoints:
-up 651, degraded 159, down 98, idle 299.
+up 740, degraded 142, down 12, idle 313.
 
-Currently down (98):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 81% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 26% | 97% |
-| `deepseek/deepseek-chat-v3.1` | `deepinfra/fp4` | DeepInfra | 79% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 29% | 16% |
-| `deepseek/deepseek-r1-0528` | `deepinfra/fp4` | DeepInfra | 60% | 100% |
-| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 34% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 31% | n/a |
-| `deepseek/deepseek-v4-flash` | `deepinfra/fp8` | DeepInfra | 71% | 100% |
-| `deepseek/deepseek-v4-flash` | `venice` | Venice | 46% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 11% | 10% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 56% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 76% | 97% |
-| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 74% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 75% | 96% |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 69% | 99% |
-| plus 83 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 41% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 11% | 15% |
+| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 73% | 56% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 75% | 67% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 79% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | 39% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 89% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 52% | n/a |
+| `stepfun/step-3.7-flash` | `stepfun/fp8` | StepFun | 61% | n/a |
+| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 63% | n/a |
+| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 44% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

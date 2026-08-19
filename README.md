@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T11:46:30+00:00 UTC)
+## Current status (2026-08-19T12:01:00+00:00 UTC)
 
 415 models polled, 1207 inference endpoints:
-up 765, degraded 119, down 27, idle 296.
+up 758, degraded 119, down 32, idle 298.
 
-Currently down (27):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 41% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 79% | 97% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 14% |
 | `deepseek/deepseek-v3.2` | `friendli` | Friendli | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 68% | 88% |
 | `deepseek/deepseek-v4-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 75% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `deepseek` | DeepSeek | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 56% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 57% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 56% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 22% | 15% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 45% | 38% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 37% | 53% |
-| plus 12 more | | | | |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 50% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 58% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 58% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 31% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 11% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 44% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 58% | n/a |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

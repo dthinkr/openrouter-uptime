@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T02:16:31+00:00 UTC)
+## Current status (2026-08-19T02:31:09+00:00 UTC)
 
 414 models polled, 1207 inference endpoints:
-up 760, degraded 127, down 14, idle 306.
+up 757, degraded 126, down 16, idle 308.
 
-Currently down (14):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | 85% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 69% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 32% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 4% | 4% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 63% | 50% |
-| `deepseek/deepseek-v4-pro` | `together` | Together | 79% | 73% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 44% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 73% | 44% |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 79% | 79% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 78% |
-| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 68% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 78% | 84% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 71% | 98% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | 61% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 75% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 33% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 5% | 2% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 52% | n/a |
+| `deepseek/deepseek-v4-pro` | `together` | Together | 78% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 47% | 47% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 88% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 69% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 73% | n/a |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 76% | 83% |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
+| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 52% | 72% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 71% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 77% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

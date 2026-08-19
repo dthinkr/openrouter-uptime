@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T07:15:03+00:00 UTC)
+## Current status (2026-08-19T07:31:10+00:00 UTC)
 
 415 models polled, 1208 inference endpoints:
-up 728, degraded 146, down 25, idle 309.
+up 718, degraded 150, down 25, idle 315.
 
 Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 21% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 5% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 25% |
 | `deepseek/deepseek-v4-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 25% | 40% |
-| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 79% | 41% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 24% | 26% |
+| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 65% | 86% |
 | `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 50% | 100% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | 82% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 78% | 39% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 9% |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 71% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 44% | 37% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | 51% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 60% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 76% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 34% | 77% |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 64% | 51% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 81% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 8% | 2% |
 | plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

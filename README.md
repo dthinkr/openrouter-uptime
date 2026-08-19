@@ -85,31 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T00:45:43+00:00 UTC)
+## Current status (2026-08-19T01:00:53+00:00 UTC)
 
 415 models polled, 1208 inference endpoints:
-up 738, degraded 123, down 16, idle 331.
+up 739, degraded 125, down 9, idle 335.
 
-Currently down (16):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 74% | 95% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | 17% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 71% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 73% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 66% | 33% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 70% | 15% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 74% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 75% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 76% | 74% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 38% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 87% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | n/a |
-| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 76% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 76% |
-| `tencent/hy3` | `atlas-cloud/fp8` | AtlasCloud | 76% | 77% |
-| plus 1 more | | | | |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 3% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 34% | 9% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 62% | 99% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 55% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 78% | 94% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | 37% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 51% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 78% | 53% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T14:45:19+00:00 UTC)
+## Current status (2026-08-19T15:01:27+00:00 UTC)
 
 415 models polled, 1208 inference endpoints:
-up 711, degraded 170, down 29, idle 298.
+up 718, degraded 173, down 27, idle 290.
 
-Currently down (29):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 7% | 26% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 69% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | 8% |
-| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 4% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 77% | 57% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 75% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 60% | 47% |
+| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
 | `deepseek/deepseek-v3.2` | `friendli` | Friendli | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 76% | 94% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 73% | 78% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 82% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 48% |
-| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 57% | 54% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 50% | 91% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 66% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 74% | n/a |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 77% | 71% |
-| plus 14 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 66% | 49% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | 80% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 64% |
+| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 47% | 40% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 51% | 98% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 78% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 74% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 47% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

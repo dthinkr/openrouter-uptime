@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T22:45:50+00:00 UTC)
+## Current status (2026-08-19T23:00:44+00:00 UTC)
 
 414 models polled, 1208 inference endpoints:
-up 755, degraded 113, down 12, idle 328.
+up 758, degraded 108, down 16, idle 326.
 
-Currently down (12):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 60% |
-| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 73% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | 4% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 60% | 42% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 70% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 59% | 68% |
 | `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 54% | 82% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 27% | 30% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 2% | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 12% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 26% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 46% |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 3% | n/a |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 5% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4` | DeepInfra | 75% | 85% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 79% | 86% |
 | `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 78% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 22% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | n/a | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

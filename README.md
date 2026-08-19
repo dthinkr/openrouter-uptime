@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T08:01:02+00:00 UTC)
+## Current status (2026-08-19T08:16:14+00:00 UTC)
 
 415 models polled, 1209 inference endpoints:
-up 722, degraded 140, down 26, idle 321.
+up 727, degraded 144, down 25, idle 313.
 
-Currently down (26):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 25% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 77% | 78% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 67% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | n/a |
 | `deepseek/deepseek-v4-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 31% | 27% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 24% | 20% |
 | `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 79% | 98% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 68% | 100% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 79% | 68% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 65% | 72% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 39% | 58% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 72% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
-| plus 11 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 78% | 26% |
+| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 72% | 62% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 48% | 33% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 34% | 80% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 45% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 78% | n/a |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 50% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 65% | 44% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

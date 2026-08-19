@@ -85,27 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T04:00:53+00:00 UTC)
+## Current status (2026-08-19T04:16:28+00:00 UTC)
 
 414 models polled, 1207 inference endpoints:
-up 740, degraded 142, down 12, idle 313.
+up 731, degraded 145, down 9, idle 322.
 
-Currently down (12):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 41% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 11% | 15% |
-| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 73% | 56% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 75% | 67% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 79% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | 39% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 89% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 52% | n/a |
-| `stepfun/step-3.7-flash` | `stepfun/fp8` | StepFun | 61% | n/a |
-| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 63% | n/a |
-| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 44% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 25% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 9% | 5% |
+| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 77% | 95% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 72% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 77% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 35% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 55% | 51% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 79% | 99% |
+| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 76% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

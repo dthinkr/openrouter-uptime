@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T14:16:06+00:00 UTC)
+## Current status (2026-08-19T14:30:16+00:00 UTC)
 
-415 models polled, 1207 inference endpoints:
-up 726, degraded 156, down 35, idle 290.
+415 models polled, 1209 inference endpoints:
+up 711, degraded 169, down 35, idle 294.
 
 Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 5% | 3% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 62% | 51% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 70% | 78% |
-| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 63% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 5% | 4% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 62% | 64% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 69% | n/a |
+| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 70% | 63% |
 | `deepseek/deepseek-v3.2` | `friendli` | Friendli | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 64% | 60% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 64% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 72% | 94% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 47% | 100% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 80% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 78% | 70% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 47% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 47% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 47% | n/a |
-| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 47% | 66% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 39% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 72% | 66% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 78% | 96% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 78% | 96% |
+| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 56% | 99% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 66% | 38% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 57% |
 | plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T15:15:55+00:00 UTC)
+## Current status (2026-08-19T15:30:56+00:00 UTC)
 
 416 models polled, 1209 inference endpoints:
-up 715, degraded 176, down 31, idle 287.
+up 722, degraded 164, down 27, idle 296.
 
-Currently down (31):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 4% | 3% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 44% | 44% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 3% | 6% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 42% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | 7% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 66% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 79% | 74% |
+| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 78% | n/a |
 | `deepseek/deepseek-v3.2` | `friendli` | Friendli | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 72% | 65% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 79% | 39% |
-| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 72% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 59% | 75% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 64% | 33% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 69% | 60% |
-| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 72% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 65% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 40% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 73% | 94% |
-| plus 16 more | | | | |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 75% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 67% | 82% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 74% | 100% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 61% | 67% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 91% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 55% | 68% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

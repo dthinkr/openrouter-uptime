@@ -85,29 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T04:31:30+00:00 UTC)
+## Current status (2026-08-19T04:45:50+00:00 UTC)
 
 414 models polled, 1207 inference endpoints:
-up 733, degraded 129, down 14, idle 331.
+up 754, degraded 108, down 9, idle 336.
 
-Currently down (14):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | 51% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 79% | 85% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 5% | 17% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 77% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 77% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | n/a |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 72% | 64% |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 69% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 39% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 50% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 78% | 97% |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 78% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 60% | 98% |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 77% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 60% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 14% | 38% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 57% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 74% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 40% | 42% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 81% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 79% | 81% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T10:14:01+00:00 UTC)
+## Current status (2026-08-19T10:30:42+00:00 UTC)
 
-415 models polled, 1209 inference endpoints:
-up 713, degraded 157, down 28, idle 311.
+415 models polled, 1207 inference endpoints:
+up 748, degraded 134, down 20, idle 305.
 
-Currently down (28):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 14% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 47% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 79% | 70% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 59% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 77% | 92% |
 | `deepseek/deepseek-v4-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 21% | 29% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 21% | 25% |
 | `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 77% | 100% |
-| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 78% | 100% |
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 78% | 100% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 79% | 100% |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 73% | 100% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | n/a |
-| plus 13 more | | | | |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 24% | 22% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 62% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 58% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 61% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 42% | n/a |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 70% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

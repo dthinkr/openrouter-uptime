@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T01:31:16+00:00 UTC)
+## Current status (2026-08-19T01:46:11+00:00 UTC)
 
 415 models polled, 1208 inference endpoints:
-up 739, degraded 126, down 13, idle 330.
+up 744, degraded 122, down 12, idle 330.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 29% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 25% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | 22% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 63% | 91% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 22% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 5% | 6% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 51% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 89% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 82% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | n/a |
-| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 79% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 87% |
-| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 78% | 89% |
-| `tencent/hy3` | `novita` | Novita | 79% | 89% |
-| `tencent/hy3` | `atlas-cloud/fp8` | AtlasCloud | 77% | 94% |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 80% | 64% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 70% | 48% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 40% | 38% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 24% |
+| `openai/gpt-5` | `openai/default` | OpenAI | 67% | 71% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 80% | 79% |
+| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 75% | 83% |
+| `tencent/hy3` | `baidu/fp8` | Baidu | 78% | 83% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

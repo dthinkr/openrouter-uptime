@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-19T07:00:27+00:00 UTC)
+## Current status (2026-08-19T07:15:03+00:00 UTC)
 
 415 models polled, 1208 inference endpoints:
-up 692, degraded 161, down 25, idle 330.
+up 728, degraded 146, down 25, idle 309.
 
 Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 21% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 5% | n/a |
 | `deepseek/deepseek-v4-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 24% | 30% |
-| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 79% | 82% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 25% | 40% |
+| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 79% | 41% |
 | `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 75% | n/a |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 66% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 50% | 100% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 91% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 40% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 69% | 100% |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | n/a | 0% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 70% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | 82% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 78% | 39% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 9% |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | n/a | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 71% | n/a |
 | plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

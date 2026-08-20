@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T02:46:13+00:00 UTC)
+## Current status (2026-08-20T03:01:21+00:00 UTC)
 
 414 models polled, 1210 inference endpoints:
-up 738, degraded 124, down 26, idle 322.
+up 751, degraded 120, down 27, idle 312.
 
-Currently down (26):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 4% | 5% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 54% | 98% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 60% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 76% | 93% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 3% | 3% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 43% | 44% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 76% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 79% | n/a |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 69% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 40% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 79% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 25% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 26% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 79% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 25% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 26% | n/a |
 | `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 79% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 25% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 48% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 1% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 66% | 98% |
-| plus 11 more | | | | |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 26% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 2% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 61% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `sambanova-turbo` | SambaNova | 74% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

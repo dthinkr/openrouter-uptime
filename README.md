@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T07:01:18+00:00 UTC)
+## Current status (2026-08-20T07:16:06+00:00 UTC)
 
-414 models polled, 1211 inference endpoints:
-up 740, degraded 123, down 31, idle 317.
+414 models polled, 1212 inference endpoints:
+up 728, degraded 135, down 31, idle 318.
 
 Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 8% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 74% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 62% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 78% | n/a |
-| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 49% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 49% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 28% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 33% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 56% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 35% | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 22% | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 8% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 7% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 63% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 78% | 84% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 31% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 63% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 76% | 74% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 76% | 74% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 76% | 74% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 39% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 75% | 95% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 76% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 94% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `cloudflare` | Cloudflare | 22% | 6% |
 | plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

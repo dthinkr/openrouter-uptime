@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T10:57:48+00:00 UTC)
+## Current status (2026-08-20T11:15:55+00:00 UTC)
 
 414 models polled, 1213 inference endpoints:
-up 766, degraded 128, down 16, idle 303.
+up 751, degraded 132, down 27, idle 303.
 
-Currently down (16):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | 96% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 15% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 65% | 51% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | 0% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 66% | 59% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 56% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 85% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 64% | 100% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 51% | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 33% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 79% | 46% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 45% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 71% | 76% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 75% | 84% |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 35% | 100% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 75% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 75% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 75% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 68% | 49% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 29% | 84% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 76% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 20% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.5` | `phala` | Phala | 78% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T00:15:58+00:00 UTC)
+## Current status (2026-08-20T00:31:35+00:00 UTC)
 
 414 models polled, 1209 inference endpoints:
-up 742, degraded 126, down 22, idle 319.
+up 743, degraded 123, down 22, idle 321.
 
 Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 3% | 3% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 41% | 46% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 68% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 3% | 15% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 40% | 100% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | n/a | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 34% | n/a |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 73% | 64% |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 76% | 100% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 22% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 74% | n/a |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 72% | n/a |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 14% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 42% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 59% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 30% |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 39% | n/a |
 | `moonshotai/kimi-k2.7-code` | `together` | Together | 9% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 74% | 100% |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 71% | 70% |
+| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 86% |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 78% | n/a |
 | `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 63% | n/a |
 | plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

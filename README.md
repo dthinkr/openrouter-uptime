@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T19:01:35+00:00 UTC)
+## Current status (2026-08-20T19:16:25+00:00 UTC)
 
 417 models polled, 1215 inference endpoints:
-up 707, degraded 180, down 29, idle 299.
+up 717, degraded 169, down 30, idle 299.
 
-Currently down (29):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 61% | n/a |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 63% | 58% |
-| `google/gemini-2.5-pro` | `google-ai-studio/flex` | Google AI Studio | 63% | 58% |
-| `google/gemini-2.5-pro` | `google-ai-studio/priority` | Google AI Studio | 63% | 58% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 53% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio/flex` | Google AI Studio | 60% | 53% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio/priority` | Google AI Studio | 60% | 53% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 60% | 53% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio/flex` | Google AI Studio | 60% | 53% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio/priority` | Google AI Studio | 60% | 53% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 95% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 61% | 86% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 31% | 30% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 88% |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 60% | 65% |
+| `google/gemini-2.5-pro` | `google-ai-studio/flex` | Google AI Studio | 60% | 65% |
+| `google/gemini-2.5-pro` | `google-ai-studio/priority` | Google AI Studio | 60% | 65% |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 61% | 74% |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio/flex` | Google AI Studio | 61% | 74% |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio/priority` | Google AI Studio | 61% | 74% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 61% | 74% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio/flex` | Google AI Studio | 61% | 74% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio/priority` | Google AI Studio | 61% | 74% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 57% | 40% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 28% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 22% | 6% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 98% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| plus 14 more | | | | |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,8 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-28 00:00** — provider `voyageai` changed its privacy policy url.
-- **2026-07-28 16:39** — **28 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-haiku-4.5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-opus-5:batch`, +20 more.
 - **2026-07-30 15:51** — provider `phala` changed its terms of service url.
 - **2026-07-30 15:51** — provider `phala` changed its privacy policy url.
 - **2026-07-30 19:21** — **3 models removed from the catalog in one poll**: `openai/gpt-5-codex`, `openai/o3-deep-research`, `openai/o4-mini-deep-research`.
@@ -130,6 +128,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-08-07 12:30** — provider `upstage` changed its privacy policy url.
 - **2026-08-14 00:30** — provider `modelrun` changed its terms of service url.
 - **2026-08-14 00:30** — provider `modelrun` changed its privacy policy url.
+- **2026-08-20 19:16** — provider `thinkingmachines` changed its terms of service url.
+- **2026-08-20 19:16** — provider `thinkingmachines` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

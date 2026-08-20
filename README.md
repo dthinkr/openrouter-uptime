@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T22:46:33+00:00 UTC)
+## Current status (2026-08-20T23:01:20+00:00 UTC)
 
 418 models polled, 1218 inference endpoints:
-up 760, degraded 120, down 20, idle 318.
+up 770, degraded 111, down 17, idle 320.
 
-Currently down (20):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 36% | 48% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 79% | 49% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 48% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 46% | 71% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 27% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 70% | 38% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 77% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 69% | 75% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | 35% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 59% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 56% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 65% | 42% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 31% | 29% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 35% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 70% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 42% | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 4% | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 51% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 73% | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `x-ai/grok-4.20-multi-agent` | `xai/zdr` | xAI | 78% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai/zdr/priority` | xAI | 78% | n/a |
-| plus 5 more | | | | |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 31% | n/a |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 8% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 60% | 30% |
+| `x-ai/grok-4.20-multi-agent` | `xai/priority` | xAI | 60% | 30% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 78% | 76% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

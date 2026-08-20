@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T03:16:12+00:00 UTC)
+## Current status (2026-08-20T03:31:20+00:00 UTC)
 
 414 models polled, 1210 inference endpoints:
-up 734, degraded 140, down 20, idle 316.
+up 741, degraded 138, down 20, idle 311.
 
 Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 3% | 7% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 47% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | 100% |
-| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 79% | 90% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 51% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 7% | 10% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 65% | 98% |
+| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 71% | 63% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 44% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 63% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 30% | 19% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 42% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 27% | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 35% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 92% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 92% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 62% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 30% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 33% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 19% | n/a |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 48% | 87% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 72% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 77% | 72% |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 77% | 85% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 74% | 74% |
 | plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

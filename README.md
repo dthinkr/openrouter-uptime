@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T10:16:30+00:00 UTC)
+## Current status (2026-08-20T10:31:18+00:00 UTC)
 
 414 models polled, 1213 inference endpoints:
-up 752, degraded 121, down 31, idle 309.
+up 757, degraded 121, down 27, idle 308.
 
-Currently down (31):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 64% | 62% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 69% | 65% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 20% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 76% | 99% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 62% | 75% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 57% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 70% | n/a |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 50% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 54% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 56% | 59% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 75% | 78% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 18% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 32% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 97% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 79% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 73% | 69% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 33% | 32% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 49% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 51% | n/a |
-| `moonshotai/kimi-k2.6` | `cloudflare` | Cloudflare | 22% | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 24% | n/a |
-| plus 16 more | | | | |
+| `moonshotai/kimi-k2.6` | `cloudflare` | Cloudflare | 14% | n/a |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 55% | 81% |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 6% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T18:31:23+00:00 UTC)
+## Current status (2026-08-20T18:46:27+00:00 UTC)
 
-417 models polled, 1216 inference endpoints:
-up 755, degraded 136, down 27, idle 298.
+417 models polled, 1215 inference endpoints:
+up 752, degraded 149, down 20, idle 294.
 
-Currently down (27):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `phala` | Phala | 36% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 64% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | 92% |
-| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 77% | 67% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 26% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 1% | n/a |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 67% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 77% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 77% | 100% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 28% | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 14% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `baseten/fp4` | BaseTen | 72% | 100% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 58% | 93% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| plus 12 more | | | | |
+| `deepseek/deepseek-v4-flash` | `phala` | Phala | 76% | 74% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 79% | 100% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 74% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | 86% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 95% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 75% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 28% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 45% |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 76% | 93% |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 8% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 57% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 9% | n/a |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 74% | 76% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 0% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

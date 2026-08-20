@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-20T19:45:34+00:00 UTC)
+## Current status (2026-08-20T20:01:32+00:00 UTC)
 
 417 models polled, 1216 inference endpoints:
-up 743, degraded 140, down 34, idle 299.
+up 744, degraded 139, down 32, idle 301.
 
-Currently down (34):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 79% | 96% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 76% | n/a |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 77% | 94% |
-| `google/gemini-2.5-pro` | `google-ai-studio/flex` | Google AI Studio | 77% | 94% |
-| `google/gemini-2.5-pro` | `google-ai-studio/priority` | Google AI Studio | 77% | 94% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | 95% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio/flex` | Google AI Studio | 75% | 95% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio/priority` | Google AI Studio | 75% | 95% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 77% | 94% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio/flex` | Google AI Studio | 77% | 94% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio/priority` | Google AI Studio | 77% | 94% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 53% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | 44% |
-| `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 74% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 20% |
-| plus 19 more | | | | |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 74% | 99% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 73% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 58% | 83% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 68% | 78% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | 75% |
+| `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 38% | 0% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 9% | 6% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 92% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 27% | n/a |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 46% | 70% |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 41% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 67% | 93% |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 31% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4` | DeepInfra | 73% | 98% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

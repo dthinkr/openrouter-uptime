@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-21T20:30:56+00:00 UTC)
+## Current status (2026-08-21T20:45:16+00:00 UTC)
 
 422 models polled, 1224 inference endpoints:
-up 756, degraded 124, down 25, idle 319.
+up 761, degraded 121, down 18, idle 324.
 
-Currently down (25):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 40% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 51% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 48% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 50% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 100% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 74% | 71% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 21% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 51% | 70% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 72% | 41% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 77% | 35% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | 33% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 47% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 27% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 43% | 45% |
-| `moonshotai/kimi-k3` | `phala` | Phala | 57% | 67% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 54% | 99% |
-| `moonshotai/kimi-k3` | `morph/fast` | Morph | 25% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 76% | 100% |
-| plus 10 more | | | | |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 11% | 21% |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 38% | 8% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 50% | 0% |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 16% | 29% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 47% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 75% | 85% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 67% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-21T20:15:12+00:00 UTC)
+## Current status (2026-08-21T20:30:56+00:00 UTC)
 
 422 models polled, 1224 inference endpoints:
-up 758, degraded 122, down 20, idle 324.
+up 756, degraded 124, down 25, idle 319.
 
-Currently down (20):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 19% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 46% | 53% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 68% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | 40% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 78% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | n/a | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 34% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 22% | 48% |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 5% | 9% |
-| `moonshotai/kimi-k3` | `phala` | Phala | 78% | 50% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 43% | 42% |
-| `moonshotai/kimi-k3` | `morph/fast` | Morph | 27% | 42% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 76% | 73% |
-| plus 5 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 40% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 51% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 48% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 50% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 100% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 74% | 71% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | n/a |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 47% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 27% | n/a |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 43% | 45% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 57% | 67% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 54% | 99% |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 25% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 76% | 100% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

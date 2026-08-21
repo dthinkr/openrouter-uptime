@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-21T17:15:16+00:00 UTC)
+## Current status (2026-08-21T17:31:00+00:00 UTC)
 
 420 models polled, 1220 inference endpoints:
-up 743, degraded 140, down 18, idle 319.
+up 749, degraded 134, down 23, idle 314.
 
-Currently down (18):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 79% | 22% |
-| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 77% | 91% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 37% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 43% | 7% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | n/a |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 73% | 96% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 44% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 27% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 66% | n/a |
-| `moonshotai/kimi-k3` | `phala` | Phala | 37% | 22% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 77% | 30% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
-| plus 3 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 65% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 28% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 79% | 89% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 32% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 78% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 50% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 58% | 33% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 8% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | 55% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 44% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 68% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 58% | n/a |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 65% | n/a |
+| `moonshotai/kimi-k3` | `phala` | Phala | 39% | 79% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

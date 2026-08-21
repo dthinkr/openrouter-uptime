@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-21T11:30:51+00:00 UTC)
+## Current status (2026-08-21T11:46:25+00:00 UTC)
 
 419 models polled, 1218 inference endpoints:
-up 752, degraded 142, down 20, idle 304.
+up 747, degraded 145, down 18, idle 308.
 
-Currently down (20):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 76% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 7% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 25% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 79% | 77% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 33% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 89% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 75% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 21% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 58% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 48% | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 11% | n/a |
-| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 79% | n/a |
-| `moonshotai/kimi-k3` | `phala` | Phala | 65% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b:free` | `nvidia/bf16` | Nvidia | 64% | 53% |
-| plus 5 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 79% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 46% |
+| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 70% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 25% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 84% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 39% | n/a |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 2% | n/a |
+| `moonshotai/kimi-k3` | `phala` | Phala | 52% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b:free` | `nvidia/bf16` | Nvidia | 68% | 53% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 94% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 77% | 83% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 72% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `novita` | Novita | 78% | 44% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-21T05:15:11+00:00 UTC)
+## Current status (2026-08-21T05:30:14+00:00 UTC)
 
 419 models polled, 1218 inference endpoints:
-up 740, degraded 118, down 30, idle 330.
+up 734, degraded 133, down 28, idle 323.
 
-Currently down (30):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 77% | 90% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 75% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 67% | 69% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 67% | 69% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 67% | 69% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 58% | 90% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 47% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 18% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 33% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 78% | 100% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 80% | 72% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 49% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 57% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 49% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 59% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 47% | 63% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 34% | 24% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | 66% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 61% | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 18% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 69% | n/a |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 10% | n/a |
 | `moonshotai/kimi-k2.7-code` | `together` | Together | 5% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 69% | 71% |
-| plus 15 more | | | | |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 70% | 69% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

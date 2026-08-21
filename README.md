@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-21T23:15:29+00:00 UTC)
+## Current status (2026-08-21T23:30:49+00:00 UTC)
 
 422 models polled, 1224 inference endpoints:
-up 767, degraded 103, down 18, idle 336.
+up 766, degraded 110, down 20, idle 328.
 
-Currently down (18):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 58% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 98% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 1% | 0% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 9% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 36% | 77% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 46% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 67% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 67% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 67% | n/a |
+| `google/gemma-3-27b-it` | `phala` | Phala | 68% | 95% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 4% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 55% | 12% |
 | `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 6% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 12% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 27% | 29% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 36% | 100% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 72% | 100% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 57% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 69% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 26% | 78% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom/fp4` | Darkbloom | 66% | n/a |
-| plus 3 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom/fp4` | Darkbloom | 52% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 16% | n/a |
+| `qwen/qwen3.8-27b` | `venice/fp8` | Venice | 33% | 38% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-21T12:45:55+00:00 UTC)
+## Current status (2026-08-21T13:00:29+00:00 UTC)
 
 420 models polled, 1219 inference endpoints:
-up 770, degraded 116, down 21, idle 312.
+up 775, degraded 116, down 24, idle 304.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 48% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 29% | 33% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 54% | 71% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 64% | 26% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 79% | 88% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 32% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 24% | 24% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 66% | 55% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 23% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 76% | n/a |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 75% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | n/a |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | n/a | 0% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 63% | 90% |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 13% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 64% | 100% |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 71% | 62% |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 30% | 24% |
-| `moonshotai/kimi-k3` | `morph/fast` | Morph | 71% | 99% |
-| plus 6 more | | | | |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 69% | 39% |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 74% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 79% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 77% | 17% |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 66% | 72% |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | 10% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

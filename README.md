@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-21T23:30:49+00:00 UTC)
+## Current status (2026-08-21T23:46:18+00:00 UTC)
 
 422 models polled, 1224 inference endpoints:
-up 766, degraded 110, down 20, idle 328.
+up 769, degraded 102, down 20, idle 333.
 
 Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 36% | 77% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 46% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 67% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 67% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 67% | n/a |
-| `google/gemma-3-27b-it` | `phala` | Phala | 68% | 95% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 4% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 55% | 12% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 6% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 27% | 29% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 36% | 100% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom/fp4` | Darkbloom | 52% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 16% | n/a |
-| `qwen/qwen3.8-27b` | `venice/fp8` | Venice | 33% | 38% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 43% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 70% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 62% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 62% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 62% | n/a |
+| `google/gemma-3-27b-it` | `phala` | Phala | 68% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 50% | 83% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 27% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 61% | 62% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `darkbloom/fp4` | Darkbloom | 70% | 70% |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 11% | n/a |
+| `qwen/qwen3.8-27b` | `venice/fp8` | Venice | 21% | n/a |
 | plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

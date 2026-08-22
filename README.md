@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T14:15:32+00:00 UTC)
+## Current status (2026-08-22T14:30:52+00:00 UTC)
 
 421 models polled, 1223 inference endpoints:
-up 786, degraded 92, down 18, idle 327.
+up 787, degraded 98, down 12, idle 326.
 
-Currently down (18):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | 52% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 25% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 36% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 83% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 79% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 36% | 41% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | 30% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 56% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 30% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 55% | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 75% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 38% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 60% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 51% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 71% | 45% |
-| plus 3 more | | | | |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 62% | 20% |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 70% | 64% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 62% | 82% |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 66% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T03:45:27+00:00 UTC)
+## Current status (2026-08-22T04:01:26+00:00 UTC)
 
 421 models polled, 1224 inference endpoints:
-up 762, degraded 101, down 18, idle 343.
+up 754, degraded 108, down 15, idle 347.
 
-Currently down (18):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 47% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 73% | 94% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 79% | 56% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 31% | n/a |
-| `google/gemma-3-27b-it` | `phala` | Phala | 73% | 70% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 34% | 26% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 79% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 21% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 67% | 100% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 22% | 0% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 14% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 78% | 78% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 78% | 78% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 70% | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 63% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 75% | 85% |
-| plus 3 more | | | | |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | 100% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 74% | 92% |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 49% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 67% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 64% | 100% |
+| `z-ai/glm-5.2` | `morph/fp4` | Morph | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T21:30:17+00:00 UTC)
+## Current status (2026-08-22T21:46:01+00:00 UTC)
 
 421 models polled, 1222 inference endpoints:
-up 798, degraded 71, down 12, idle 341.
+up 793, degraded 83, down 13, idle 333.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 4% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 18% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 70% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 75% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 66% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 5% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 82% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 100% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 53% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 32% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 80% | 43% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 1% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 67% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 80% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | 0% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 47% | 8% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 54% | 17% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,24 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T21:00:49+00:00 UTC)
+## Current status (2026-08-22T21:16:02+00:00 UTC)
 
 421 models polled, 1222 inference endpoints:
-up 816, degraded 61, down 10, idle 335.
+up 810, degraded 56, down 15, idle 341.
 
-Currently down (10):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 59% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 38% | 30% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 44% | 4% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 60% | 11% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 76% | 55% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 49% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 43% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 59% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 83% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 83% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 22% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 29% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 76% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 62% | 100% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 5% | n/a |
 | `thedrummer/rocinante-12b` | `parasail/bf16` | Parasail | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

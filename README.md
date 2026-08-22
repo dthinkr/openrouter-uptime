@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T14:45:37+00:00 UTC)
+## Current status (2026-08-22T15:00:25+00:00 UTC)
 
 421 models polled, 1223 inference endpoints:
-up 785, degraded 98, down 15, idle 325.
+up 784, degraded 102, down 15, idle 322.
 
 Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 61% | 75% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 43% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 53% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 63% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 75% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 87% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 62% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 71% | 94% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 36% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 16% | 10% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 54% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 23% | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 43% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 52% | 67% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 60% | 95% |
-| `z-ai/glm-5.2` | `mistral` | Mistral | 78% | 98% |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 37% | n/a |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 66% | n/a |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 52% | n/a |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 77% | n/a |
+| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 80% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T02:15:39+00:00 UTC)
+## Current status (2026-08-22T02:30:50+00:00 UTC)
 
 421 models polled, 1224 inference endpoints:
-up 765, degraded 106, down 16, idle 337.
+up 770, degraded 113, down 15, idle 326.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 61% | 34% |
-| `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 80% | 100% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 75% | 56% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 34% | 6% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 65% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 79% | 38% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 78% | 91% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 62% | 88% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 71% | 90% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 42% | 6% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 81% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | 62% | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 74% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 79% | 81% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 54% | 28% |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 72% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 64% |
-| plus 1 more | | | | |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 77% | 100% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 51% | 94% |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 77% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | n/a |
+| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 63% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T23:31:35+00:00 UTC)
+## Current status (2026-08-22T23:45:57+00:00 UTC)
 
-422 models polled, 1223 inference endpoints:
-up 778, degraded 88, down 24, idle 333.
+422 models polled, 1224 inference endpoints:
+up 783, degraded 80, down 24, idle 337.
 
 Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | 31% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 49% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 66% | 71% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 78% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 28% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 66% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 66% | 79% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 71% | 75% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 83% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 35% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 35% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 78% | 38% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 74% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 35% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 33% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 33% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 57% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 47% | 48% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 38% | n/a |
 | `minimax/minimax-m3` | `morph/fp4` | Morph | 77% | 100% |
-| `minimax/minimax-m3` | `together` | Together | 71% | 67% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 59% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `together` | Together | 51% | 0% |
+| `minimax/minimax-m3` | `together` | Together | 50% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 55% |
 | plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

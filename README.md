@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T18:45:59+00:00 UTC)
+## Current status (2026-08-22T19:01:13+00:00 UTC)
 
 421 models polled, 1222 inference endpoints:
-up 797, degraded 87, down 17, idle 321.
+up 797, degraded 91, down 18, idle 316.
 
-Currently down (17):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 56% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 5% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 76% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 41% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 63% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 42% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 59% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 57% | 43% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 5% | 4% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 55% | 83% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 36% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 76% | 99% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 6% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 68% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 19% | n/a |
 | `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 71% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 61% | 100% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 32% | n/a |
-| plus 2 more | | | | |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | n/a |
+| `thedrummer/rocinante-12b` | `parasail/bf16` | Parasail | n/a | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T01:01:03+00:00 UTC)
+## Current status (2026-08-22T01:15:09+00:00 UTC)
 
 421 models polled, 1224 inference endpoints:
-up 753, degraded 103, down 18, idle 350.
+up 764, degraded 103, down 14, idle 343.
 
-Currently down (18):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 55% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 70% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 71% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 76% | 82% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 76% | 82% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 76% | 82% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 57% | 90% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 39% | 39% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 39% | 48% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 77% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 73% | n/a |
-| `moonshotai/kimi-k3` | `phala` | Phala | 62% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 62% | n/a |
-| plus 3 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 74% | 72% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 26% | 32% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 78% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 69% | 18% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 15% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 65% | 34% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 64% | 89% |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 63% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 80% | 67% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

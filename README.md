@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T18:01:04+00:00 UTC)
+## Current status (2026-08-22T18:16:33+00:00 UTC)
 
 421 models polled, 1222 inference endpoints:
-up 804, degraded 92, down 19, idle 307.
+up 809, degraded 89, down 16, idle 308.
 
-Currently down (19):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 54% | 39% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | 11% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 75% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 40% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 67% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 80% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 55% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 38% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | 97% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 86% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 80% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 80% | 80% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 78% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 64% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 36% | 1% |
-| plus 4 more | | | | |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 27% | n/a |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `novita/fp8` | Novita | 73% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 79% | 94% |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 26% | n/a |
+| `thedrummer/rocinante-12b` | `parasail/bf16` | Parasail | n/a | n/a |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 61% | 57% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 63% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

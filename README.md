@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T17:16:13+00:00 UTC)
+## Current status (2026-08-22T17:30:56+00:00 UTC)
 
 421 models polled, 1222 inference endpoints:
-up 817, degraded 86, down 17, idle 302.
+up 825, degraded 82, down 19, idle 296.
 
-Currently down (17):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 50% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 75% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 74% | 98% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | 75% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 58% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 24% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 57% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 43% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 97% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 73% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 58% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 93% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 65% | 2% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 15% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 80% | 80% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 77% | 48% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 76% | 43% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 53% | 3% |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 74% | 100% |
-| plus 2 more | | | | |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 75% | 61% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

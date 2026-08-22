@@ -85,31 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T09:13:28+00:00 UTC)
+## Current status (2026-08-22T09:30:43+00:00 UTC)
 
 421 models polled, 1223 inference endpoints:
-up 846, degraded 71, down 16, idle 290.
+up 828, degraded 85, down 10, idle 300.
 
-Currently down (16):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 74% | 73% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 53% | n/a |
-| `google/gemma-3-27b-it` | `phala` | Phala | 76% | 100% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 64% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 22% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 70% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 64% | 23% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 57% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 64% | 58% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 43% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 29% | 30% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 47% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 63% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 27% | 77% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 74% | 83% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 74% | 83% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 77% | 75% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 60% | n/a |
-| plus 1 more | | | | |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 76% | n/a |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 65% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

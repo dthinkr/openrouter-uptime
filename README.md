@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T08:31:16+00:00 UTC)
+## Current status (2026-08-22T08:45:41+00:00 UTC)
 
 421 models polled, 1223 inference endpoints:
-up 815, degraded 72, down 18, idle 318.
+up 815, degraded 93, down 12, idle 303.
 
-Currently down (18):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 76% | 92% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 83% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | 37% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 60% | 76% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 48% | 2% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 37% | 55% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | n/a | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 79% | 97% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 42% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 52% | 98% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 54% | 64% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 51% | 96% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 26% | 17% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 88% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 73% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 73% | 78% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 73% | 78% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | n/a |
-| `qwen/qwen3-235b-a22b-thinking-2507` | `novita/fp8` | Novita | 77% | 61% |
-| plus 3 more | | | | |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 77% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 76% | 77% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

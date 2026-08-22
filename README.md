@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T01:15:09+00:00 UTC)
+## Current status (2026-08-22T01:30:12+00:00 UTC)
 
 421 models polled, 1224 inference endpoints:
-up 764, degraded 103, down 14, idle 343.
+up 782, degraded 95, down 17, idle 330.
 
-Currently down (14):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 74% | 72% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 57% | 70% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 70% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 35% | 23% |
+| `deepseek/deepseek-v4-flash-0731` | `deepseek` | DeepSeek | 73% | 73% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 26% | 32% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 78% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 69% | 18% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 25% | 24% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 80% | 92% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 71% | 10% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 15% | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 65% | 34% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 64% | 89% |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 63% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 80% | 67% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 25% | n/a |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 67% | 97% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 66% | 98% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

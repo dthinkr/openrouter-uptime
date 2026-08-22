@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T10:31:22+00:00 UTC)
+## Current status (2026-08-22T10:45:14+00:00 UTC)
 
 421 models polled, 1223 inference endpoints:
-up 822, degraded 85, down 15, idle 301.
+up 815, degraded 100, down 17, idle 291.
 
-Currently down (15):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 75% | 87% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 75% | 100% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 33% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 68% | 76% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 80% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 30% | n/a |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 65% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 45% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 42% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 69% | 99% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 31% | n/a |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 77% | 93% |
-| `moonshotai/kimi-k3` | `morph/fast` | Morph | 80% | 100% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 81% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 81% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | 70% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 68% |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 55% | n/a |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 53% | 13% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 75% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 75% |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

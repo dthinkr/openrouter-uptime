@@ -85,28 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T10:16:14+00:00 UTC)
+## Current status (2026-08-22T10:31:22+00:00 UTC)
 
 421 models polled, 1223 inference endpoints:
-up 811, degraded 100, down 13, idle 299.
+up 822, degraded 85, down 15, idle 301.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 68% | n/a |
-| `google/gemma-3-27b-it` | `phala` | Phala | 70% | 73% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 1% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 68% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 25% | 24% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 62% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 75% | 87% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 33% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 68% | 76% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 80% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 30% | n/a |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 63% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 82% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 82% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 78% |
-| `z-ai/glm-5.2` | `fireworks/fast` | Fireworks | 70% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 77% | 93% |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 80% | 100% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 81% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 81% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | 70% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 68% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

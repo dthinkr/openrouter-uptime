@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T12:31:17+00:00 UTC)
+## Current status (2026-08-22T12:45:12+00:00 UTC)
 
 421 models polled, 1223 inference endpoints:
-up 783, degraded 86, down 19, idle 335.
+up 788, degraded 80, down 19, idle 336.
 
 Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 62% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 48% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 86% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 85% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 41% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 45% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 72% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 48% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 67% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 83% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | 41% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 66% | 54% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 29% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 79% | 100% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 62% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 66% | n/a |
 | `moonshotai/kimi-k3` | `wafer` | Wafer | 14% | n/a |
-| `moonshotai/kimi-k3` | `morph/fast` | Morph | 44% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 94% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | 30% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | n/a | n/a |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 47% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 74% | 93% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 76% | 100% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 38% | 22% |
 | plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,30 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T04:01:26+00:00 UTC)
+## Current status (2026-08-22T04:16:35+00:00 UTC)
 
 421 models polled, 1224 inference endpoints:
-up 754, degraded 108, down 15, idle 347.
+up 767, degraded 102, down 12, idle 343.
 
-Currently down (15):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 79% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 21% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 67% | 100% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 22% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 14% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 37% | 75% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 71% | 42% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | 33% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 73% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 10% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 99% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | 100% |
 | `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 74% | 92% |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 49% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 67% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 64% | 100% |
-| `z-ai/glm-5.2` | `morph/fp4` | Morph | 78% | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 80% | n/a |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 55% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 26% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T20:30:09+00:00 UTC)
+## Current status (2026-08-22T20:46:03+00:00 UTC)
 
 421 models polled, 1222 inference endpoints:
-up 799, degraded 73, down 16, idle 334.
+up 795, degraded 82, down 15, idle 330.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 71% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 79% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 58% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 70% | 58% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | 39% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 25% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 41% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 68% | 100% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 79% | 93% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | n/a |
+| `mistralai/ministral-8b` | `mistral/zdr` | Mistral | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 39% | 77% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 31% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 81% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 61% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 10% | n/a |
-| `thedrummer/rocinante-12b` | `parasail/bf16` | Parasail | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 78% | 97% |
-| plus 1 more | | | | |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 67% | 100% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 34% | 10% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 37% | 14% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 7% | n/a |
+| `thedrummer/rocinante-12b` | `parasail/bf16` | Parasail | n/a | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 65% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T22:30:59+00:00 UTC)
+## Current status (2026-08-22T22:46:00+00:00 UTC)
 
 422 models polled, 1223 inference endpoints:
-up 784, degraded 87, down 16, idle 336.
+up 800, degraded 82, down 10, idle 331.
 
-Currently down (16):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 50% | 37% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 4% | 3% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 73% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 72% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 40% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 97% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 51% | 87% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 40% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 79% | 88% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 49% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 52% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 73% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 77% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 44% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 80% | 77% |
-| plus 1 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 77% | 81% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 72% | 36% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-22T13:15:43+00:00 UTC)
+## Current status (2026-08-22T13:31:18+00:00 UTC)
 
 421 models polled, 1223 inference endpoints:
-up 785, degraded 93, down 16, idle 329.
+up 789, degraded 89, down 17, idle 328.
 
-Currently down (16):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 69% |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 79% | 95% |
-| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 62% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 42% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 68% | 74% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 40% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 79% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 70% |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 80% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 63% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 37% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 75% | 66% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 64% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 2% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 8% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 75% | 83% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 62% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 56% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 60% | n/a |
-| plus 1 more | | | | |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | 0% |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 41% | 14% |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 13% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 72% | 81% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 80% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 7% | 2% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `novita/bf16` | Novita | 24% | 93% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

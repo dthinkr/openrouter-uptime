@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T09:00:41+00:00 UTC)
+## Current status (2026-08-23T09:14:02+00:00 UTC)
 
-422 models polled, 1226 inference endpoints:
-up 783, degraded 78, down 21, idle 344.
+422 models polled, 1225 inference endpoints:
+up 797, degraded 65, down 24, idle 339.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 62% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 72% | 30% |
-| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 53% | 19% |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 51% | 22% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 81% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 42% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 55% | 77% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 75% | 77% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 38% | 100% |
 | `google/gemma-3-27b-it` | `novita/bf16` | Novita | 72% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 61% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 12% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 72% | 72% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 15% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 71% | 68% |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 78% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | 0% |
-| plus 6 more | | | | |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

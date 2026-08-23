@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T18:31:01+00:00 UTC)
+## Current status (2026-08-23T18:46:03+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 780, degraded 99, down 12, idle 336.
+up 788, degraded 87, down 13, idle 339.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 71% | 48% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 7% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 69% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 28% | 29% |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 69% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 51% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 40% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | n/a |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 73% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 18% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 52% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 51% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 55% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 28% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 90% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 74% | 92% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 78% | 100% |
+| `z-ai/glm-5.2` | `crusoe/fp8` | Crusoe | 75% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

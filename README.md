@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T23:31:28+00:00 UTC)
+## Current status (2026-08-23T23:45:45+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 788, degraded 68, down 18, idle 353.
+up 792, degraded 65, down 17, idle 353.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 79% | 74% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 16% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 70% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 61% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 53% | 48% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 53% | 48% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 53% | 48% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 59% | 98% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 80% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 90% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 77% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 80% | 77% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 80% | 76% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 77% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| plus 3 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 75% | 78% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 20% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 43% | 63% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 64% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 49% | 62% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 49% | 62% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 49% | 62% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 45% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | 74% | 100% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 74% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 83% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 79% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 80% | 79% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 74% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

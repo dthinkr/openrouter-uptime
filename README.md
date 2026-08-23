@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T12:46:00+00:00 UTC)
+## Current status (2026-08-23T12:59:44+00:00 UTC)
 
 422 models polled, 1225 inference endpoints:
-up 764, degraded 98, down 17, idle 346.
+up 774, degraded 84, down 18, idle 349.
 
-Currently down (17):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 76% | 79% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 21% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 75% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 75% | 81% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 26% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 66% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 46% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | n/a |
 | `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 35% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 40% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 81% |
-| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 65% | 57% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 54% | 50% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 37% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 87% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 66% | 77% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 80% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 69% | 71% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom/fp4` | Darkbloom | 0% | n/a |
-| plus 2 more | | | | |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 72% | 74% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 71% | 100% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 78% | 52% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

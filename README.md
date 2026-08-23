@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T15:31:33+00:00 UTC)
+## Current status (2026-08-23T15:46:23+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 771, degraded 105, down 23, idle 328.
+up 781, degraded 91, down 21, idle 334.
 
-Currently down (23):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 74% | 78% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 28% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 43% | 67% |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 55% | 68% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 58% | 64% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 76% | 72% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 90% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 73% | 78% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 29% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 43% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 44% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 51% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 70% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 64% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 62% | 57% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `phala` | Phala | 74% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 60% | 100% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| plus 8 more | | | | |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 68% | 85% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 54% | 100% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

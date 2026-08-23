@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T11:00:45+00:00 UTC)
+## Current status (2026-08-23T11:16:18+00:00 UTC)
 
 422 models polled, 1225 inference endpoints:
-up 792, degraded 76, down 20, idle 337.
+up 796, degraded 69, down 17, idle 343.
 
-Currently down (20):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 58% | n/a |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 65% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 64% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 57% | 100% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 74% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 66% | 85% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 64% | 36% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 4% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 52% | n/a |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 27% | 30% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 62% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 28% |
+| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 70% | 69% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 74% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 75% | 74% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 75% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 36% | 100% |
-| plus 5 more | | | | |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 80% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 76% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 77% | 79% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 74% | 100% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 25% | n/a |
+| `qwen/qwen3.5-27b` | `deepinfra/fp8` | DeepInfra | 71% | 81% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

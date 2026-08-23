@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T14:30:41+00:00 UTC)
+## Current status (2026-08-23T14:45:48+00:00 UTC)
 
 422 models polled, 1226 inference endpoints:
-up 769, degraded 97, down 15, idle 345.
+up 776, degraded 93, down 19, idle 338.
 
-Currently down (15):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 76% | 79% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 17% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 60% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 1% | 97% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 75% | 72% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | 16% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 34% | 32% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 49% | 43% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 62% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 58% | 98% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 57% | 45% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 39% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 78% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 88% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | 75% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 49% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `darkbloom/fp4` | Darkbloom | 0% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 80% | 88% |
-| `z-ai/glm-5.2:free` | `decart/fp4` | Decart | 77% | 70% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | 100% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 73% | 77% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

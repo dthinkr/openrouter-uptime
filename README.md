@@ -85,23 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T19:46:00+00:00 UTC)
+## Current status (2026-08-23T20:00:52+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 796, degraded 91, down 8, idle 332.
+up 794, degraded 88, down 10, idle 335.
 
-Currently down (8):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 46% | 54% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 49% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 49% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 55% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 29% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 51% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 35% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | 59% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 76% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | 0% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 80% | 72% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
 | `qwen/qwen3-coder` | `venice/fp8` | Venice | 41% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 38% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 35% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

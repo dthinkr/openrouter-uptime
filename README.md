@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T21:01:23+00:00 UTC)
+## Current status (2026-08-23T21:16:31+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 788, degraded 77, down 13, idle 349.
+up 795, degraded 78, down 13, idle 341.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 78% | 75% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 11% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 72% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 53% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 59% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 71% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 79% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 56% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 75% | 77% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 16% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 68% | 42% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 53% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 69% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 72% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 72% |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 79% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 59% | 8% |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 77% | 88% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

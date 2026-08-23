@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T22:46:08+00:00 UTC)
+## Current status (2026-08-23T23:00:58+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 792, degraded 77, down 13, idle 345.
+up 769, degraded 87, down 16, idle 355.
 
-Currently down (13):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 75% | 80% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 75% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 73% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 73% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 73% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 68% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 79% | 68% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 70% | 100% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 47% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 73% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 61% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 59% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 46% | 28% |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 80% | 57% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 74% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 59% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 85% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 79% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 75% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 79% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 79% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 68% | 43% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 79% | n/a |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 73% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

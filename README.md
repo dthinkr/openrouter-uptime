@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T07:30:42+00:00 UTC)
+## Current status (2026-08-23T07:46:23+00:00 UTC)
 
 422 models polled, 1225 inference endpoints:
-up 790, degraded 87, down 16, idle 332.
+up 795, degraded 74, down 14, idle 342.
 
-Currently down (16):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 57% | 88% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 44% | 81% |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 45% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 43% | 25% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 68% | 45% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 47% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 48% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 53% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 77% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 98% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 76% | 65% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 2% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 84% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 77% | 84% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 63% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | n/a |
-| plus 1 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 69% | 61% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 79% | 80% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | 0% |
+| `thinkingmachines/inkling-small` | `together` | Together | 73% | 74% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

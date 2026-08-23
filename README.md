@@ -85,27 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T19:15:41+00:00 UTC)
+## Current status (2026-08-23T19:30:19+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 789, degraded 88, down 12, idle 338.
+up 794, degraded 83, down 11, idle 339.
 
-Currently down (12):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 51% | 88% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 5% | 37% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 25% | 0% |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 57% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 38% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 57% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | n/a | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 47% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | 49% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 24% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 42% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 44% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 57% | 100% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | 83% |
 | `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 69% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 72% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 60% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

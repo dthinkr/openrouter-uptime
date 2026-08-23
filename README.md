@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T06:15:49+00:00 UTC)
+## Current status (2026-08-23T06:30:51+00:00 UTC)
 
 422 models polled, 1225 inference endpoints:
-up 779, degraded 69, down 15, idle 362.
+up 772, degraded 81, down 18, idle 354.
 
-Currently down (15):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 42% | 10% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 77% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | 63% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 34% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 40% | 30% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 78% | 11% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 59% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 49% | 35% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 9% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | 0% |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 62% | n/a |
-| `moonshotai/kimi-k3` | `together` | Together | 0% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 67% | 71% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 67% | 71% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 77% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `thinkingmachines/inkling-small` | `together` | Together | 78% | n/a |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 80% | n/a |
+| `moonshotai/kimi-k3` | `together` | Together | 4% | n/a |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 71% | 73% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 71% | 73% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3-14b` | `alibaba` | Alibaba | 72% | 53% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 72% | 51% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T21:45:07+00:00 UTC)
+## Current status (2026-08-23T22:00:08+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 809, degraded 81, down 16, idle 321.
+up 810, degraded 76, down 15, idle 326.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 71% | 76% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 16% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 88% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 71% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 80% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 73% | 82% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 23% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 73% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 57% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 70% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 80% | 58% |
 | `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 60% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 28% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 33% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| plus 1 more | | | | |
+| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 61% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 71% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 75% | 47% |
+| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 59% | 100% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 62% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 78% | 66% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

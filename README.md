@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T20:45:12+00:00 UTC)
+## Current status (2026-08-23T21:01:23+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 791, degraded 84, down 15, idle 337.
+up 788, degraded 77, down 13, idle 349.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 78% | 76% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 16% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 39% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 58% | 59% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 84% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | 45% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 73% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 78% | 75% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 11% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 72% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 53% |
+| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 59% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 71% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 76% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 56% | 68% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 60% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 80% | 75% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 79% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 56% | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

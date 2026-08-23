@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T13:16:18+00:00 UTC)
+## Current status (2026-08-23T13:30:42+00:00 UTC)
 
 422 models polled, 1225 inference endpoints:
-up 780, degraded 84, down 19, idle 342.
+up 778, degraded 87, down 19, idle 341.
 
 Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 79% | 84% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 30% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | 71% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 79% | 74% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 19% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 60% | 47% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 55% |
 | `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 80% | 77% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | 39% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 53% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 65% | 71% |
+| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 66% | 61% |
 | `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 88% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 74% | 98% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 77% | 46% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
 | `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
 | plus 4 more | | | | |
 

@@ -85,28 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T18:46:03+00:00 UTC)
+## Current status (2026-08-23T19:01:04+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 788, degraded 87, down 13, idle 339.
+up 789, degraded 89, down 9, idle 340.
 
-Currently down (13):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 52% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 51% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 55% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 28% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 52% | 41% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 4% | 4% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 59% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 43% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 72% | 55% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 84% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 90% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 74% | 92% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 78% | 100% |
-| `z-ai/glm-5.2` | `crusoe/fp8` | Crusoe | 75% | 100% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | 0% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 78% | 79% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

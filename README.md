@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T11:31:12+00:00 UTC)
+## Current status (2026-08-23T11:46:08+00:00 UTC)
 
 422 models polled, 1225 inference endpoints:
-up 793, degraded 83, down 18, idle 331.
+up 790, degraded 92, down 19, idle 324.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 52% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 5% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 74% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 72% | 90% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 29% | n/a |
-| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | 79% | 31% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 66% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 63% | 49% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | 0% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 78% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 79% | 78% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 80% | 81% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 77% | 72% |
-| plus 3 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 57% | 44% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 4% | 4% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 69% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 39% | n/a |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | 56% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 32% | 22% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 67% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.5` | `siliconflow/int4` | SiliconFlow | 66% | 77% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 0% | n/a |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 76% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 76% | 76% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

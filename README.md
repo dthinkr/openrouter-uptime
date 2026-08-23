@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-23T18:01:05+00:00 UTC)
+## Current status (2026-08-23T18:15:07+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 776, degraded 95, down 19, idle 337.
+up 779, degraded 97, down 13, idle 338.
 
-Currently down (19):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 80% | 99% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 46% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 73% | 98% |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 58% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 78% | 86% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 34% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | n/a |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 7% | n/a |
-| `openai/gpt-5.6-sol` | `azure/us` | Azure | 77% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 74% | 79% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 34% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 51% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 52% |
+| `google/gemma-4-31b-it` | `together#8ece1e354a` | Together | 76% | 99% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | 59% |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 77% | 92% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 38% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 70% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 69% | 100% |
 | `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| plus 4 more | | | | |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | n/a |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 56% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

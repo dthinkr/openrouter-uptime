@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T09:14:14+00:00 UTC)
+## Current status (2026-08-24T09:30:45+00:00 UTC)
 
-422 models polled, 1226 inference endpoints:
-up 772, degraded 106, down 26, idle 322.
+419 models polled, 1223 inference endpoints:
+up 777, degraded 115, down 27, idle 304.
 
-Currently down (26):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 61% | 36% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | 2% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 50% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 60% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 60% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 42% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 64% | 98% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 77% | 84% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 67% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 55% | 44% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 4% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 77% | 25% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 73% | 75% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 27% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 27% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 27% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 71% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | n/a | n/a |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 80% | 38% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 37% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 46% | 33% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 76% |
-| plus 11 more | | | | |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 24% | n/a |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 63% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 80% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 48% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-30 15:51** — provider `phala` changed its terms of service url.
 - **2026-07-30 15:51** — provider `phala` changed its privacy policy url.
 - **2026-07-30 19:21** — **3 models removed from the catalog in one poll**: `openai/gpt-5-codex`, `openai/o3-deep-research`, `openai/o4-mini-deep-research`.
 - **2026-07-31 16:43** — **28 models removed from the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-sonnet-4.5:batch`, `anthropic/claude-sonnet-5:batch`, +20 more.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-08-14 00:30** — provider `modelrun` changed its privacy policy url.
 - **2026-08-20 19:16** — provider `thinkingmachines` changed its terms of service url.
 - **2026-08-20 19:16** — provider `thinkingmachines` changed its privacy policy url.
+- **2026-08-24 09:30** — **3 models removed from the catalog in one poll**: `inclusionai/ling-2.6-1t`, `inclusionai/ling-2.6-flash`, `inclusionai/ring-2.6-1t`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

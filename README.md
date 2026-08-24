@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T08:15:26+00:00 UTC)
+## Current status (2026-08-24T08:30:17+00:00 UTC)
 
 422 models polled, 1226 inference endpoints:
-up 772, degraded 117, down 19, idle 318.
+up 771, degraded 117, down 26, idle 312.
 
-Currently down (19):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 76% | 86% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
 | `anthropic/claude-opus-4.6` | `claude-on-aws` | Claude Platform on AWS | 0% | 0% |
-| `anthropic/claude-opus-4.8` | `claude-on-aws` | Claude Platform on AWS | 58% | 100% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 68% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 44% | 51% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 60% | 59% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 72% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 74% | 95% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 30% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 55% | 58% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 100% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 72% | 43% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 67% | 67% |
-| `openai/gpt-oss-20b` | `amazon-bedrock` | Amazon Bedrock | 57% | 79% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 72% | 30% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 64% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 49% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 78% | n/a |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 79% | 100% |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 71% | 57% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 39% | 94% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 79% | 0% |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 50% | n/a |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 71% | 6% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T09:00:33+00:00 UTC)
+## Current status (2026-08-24T09:14:14+00:00 UTC)
 
 422 models polled, 1226 inference endpoints:
-up 771, degraded 117, down 22, idle 316.
+up 772, degraded 106, down 26, idle 322.
 
-Currently down (22):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 17% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 46% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 67% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 67% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 67% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 60% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 71% | 97% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 75% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 76% | 61% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 51% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 61% | 36% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | 2% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 50% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 60% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 60% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 42% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 64% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 77% | 84% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 67% | n/a |
+| `minimax/minimax-m2.7` | `fireworks` | Fireworks | n/a | n/a |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 80% | 38% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 37% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 80% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 77% | 80% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 76% | 99% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 74% | 41% |
-| plus 7 more | | | | |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 46% | 33% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 76% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

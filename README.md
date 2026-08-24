@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T22:00:12+00:00 UTC)
+## Current status (2026-08-24T22:15:17+00:00 UTC)
 
 417 models polled, 1243 inference endpoints:
-up 781, degraded 96, down 46, idle 320.
+up 764, degraded 99, down 49, idle 331.
 
-Currently down (46):
+Currently down (49):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 44% |
-| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 33% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 74% | 14% |
-| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 60% | 6% |
-| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 33% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 46% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 74% | 46% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 55% | n/a |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 79% | 87% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | n/a |
-| `meta-llama/llama-4-maverick` | `digitalocean` | DigitalOcean | 55% | 7% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 29% | n/a |
-| `mistralai/codestral-2508` | `mistral/eu` | Mistral | n/a | n/a |
-| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 44% | 57% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 2% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 51% | n/a |
+| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 6% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 6% | 0% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 3% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 31% | 37% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | n/a |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 35% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 41% | n/a |
+| `meta-llama/llama-4-maverick` | `digitalocean` | DigitalOcean | 6% | n/a |
+| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 22% | n/a |
+| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | 0% |
 | `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
-| plus 31 more | | | | |
+| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | 0% | 0% |
+| plus 34 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

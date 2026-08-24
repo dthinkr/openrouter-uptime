@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T18:45:42+00:00 UTC)
+## Current status (2026-08-24T19:01:28+00:00 UTC)
 
-417 models polled, 1236 inference endpoints:
-up 763, degraded 113, down 37, idle 323.
+417 models polled, 1240 inference endpoints:
+up 769, degraded 111, down 35, idle 325.
 
-Currently down (37):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 80% | 98% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 20% | n/a |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
-| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 39% | 80% |
-| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 73% | 67% |
-| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 31% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 43% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 85% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 74% | 60% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 23% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 9% | n/a |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 73% | 100% |
-| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | 21% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 49% | n/a |
+| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 49% | 100% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 57% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 63% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 50% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 48% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 80% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 46% | 31% |
+| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | 0% |
 | `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
 | `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | 0% | 0% |
-| plus 22 more | | | | |
+| `mistralai/ministral-3b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
+| `mistralai/ministral-3b-2512` | `mistral/eu` | Mistral | 0% | n/a |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

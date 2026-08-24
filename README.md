@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T05:16:12+00:00 UTC)
+## Current status (2026-08-24T05:31:28+00:00 UTC)
 
 422 models polled, 1226 inference endpoints:
-up 768, degraded 88, down 16, idle 354.
+up 778, degraded 78, down 19, idle 351.
 
-Currently down (16):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 68% | 48% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 7% | 4% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 70% | 28% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 49% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 75% | 52% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 53% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 18% | 4% |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | n/a | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 74% | 70% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 74% | 70% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 75% | 99% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 73% | 68% |
-| plus 1 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 79% | 91% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | 22% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 77% | 94% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 54% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 60% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 40% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 72% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 26% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 77% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 61% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 57% | 74% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

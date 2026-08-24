@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T00:15:19+00:00 UTC)
+## Current status (2026-08-24T00:30:19+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 776, degraded 87, down 20, idle 344.
+up 774, degraded 89, down 11, idle 353.
 
-Currently down (20):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 63% | 49% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 5% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 55% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 48% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 78% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 59% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 59% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 82% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 67% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 56% | 100% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 75% | 89% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 71% | n/a |
-| plus 5 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 63% | 91% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 14% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 56% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | 47% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 96% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 56% | 99% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 37% | 70% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 88% |
+| `z-ai/glm-5.2` | `mistral` | Mistral | 64% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

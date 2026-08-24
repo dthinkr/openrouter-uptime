@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T17:15:12+00:00 UTC)
+## Current status (2026-08-24T17:31:22+00:00 UTC)
 
 417 models polled, 1235 inference endpoints:
-up 771, degraded 107, down 39, idle 318.
+up 756, degraded 107, down 53, idle 319.
 
-Currently down (39):
+Currently down (53):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 59% | n/a |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 79% | 0% |
-| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 75% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 77% | 83% |
-| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 74% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 40% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 27% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 56% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 75% | 0% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 78% | 55% |
-| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | n/a |
-| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | 0% | 0% |
-| `mistralai/ministral-3b-2512` | `mistral/eu` | Mistral | 0% | 0% |
-| `mistralai/ministral-8b-2512` | `mistral/eu` | Mistral | n/a | n/a |
-| plus 24 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | 16% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 41% | n/a |
+| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 27% | 2% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 76% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 58% | 1% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 29% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 35% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 43% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 74% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 74% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 74% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | 91% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 28% | n/a |
+| `meta-llama/llama-4-maverick` | `digitalocean` | DigitalOcean | 40% | n/a |
+| plus 38 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

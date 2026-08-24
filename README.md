@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T16:16:17+00:00 UTC)
+## Current status (2026-08-24T16:30:46+00:00 UTC)
 
-417 models polled, 1229 inference endpoints:
-up 787, degraded 104, down 21, idle 317.
+417 models polled, 1230 inference endpoints:
+up 781, degraded 105, down 25, idle 319.
 
-Currently down (21):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 62% | n/a |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | 47% |
+| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 68% | 42% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 73% | 81% |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 48% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 78% | 100% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 37% | 93% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 60% | 59% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 7% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 34% |
-| `mistralai/mistral-nemo` | `mistral/zdr` | Mistral | 0% | 0% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `mistral/zdr` | Mistral | n/a | 0% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 10% | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| plus 6 more | | | | |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 79% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 51% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | 52% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 61% | 92% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 6% | n/a |
+| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
+| `mistralai/ministral-3b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
+| `mistralai/ministral-8b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 0% | 0% |
+| `mistralai/mistral-medium-3` | `mistral/zdr` | Mistral | n/a | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

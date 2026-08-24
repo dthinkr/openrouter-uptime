@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T21:45:45+00:00 UTC)
+## Current status (2026-08-24T22:00:12+00:00 UTC)
 
 417 models polled, 1243 inference endpoints:
-up 795, degraded 96, down 38, idle 314.
+up 781, degraded 96, down 46, idle 320.
 
-Currently down (38):
+Currently down (46):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 45% |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 75% | 99% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 49% | n/a |
-| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 77% | 10% |
-| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 73% | 8% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 46% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 76% | 29% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | 56% |
-| `meta-llama/llama-4-maverick` | `digitalocean` | DigitalOcean | 66% | 8% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 76% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 44% |
+| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 33% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 74% | 14% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 60% | 6% |
+| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 33% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 46% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 74% | 46% |
+| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 55% | n/a |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 79% | 87% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | n/a |
+| `meta-llama/llama-4-maverick` | `digitalocean` | DigitalOcean | 55% | 7% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 29% | n/a |
 | `mistralai/codestral-2508` | `mistral/eu` | Mistral | n/a | n/a |
 | `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | n/a |
 | `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
-| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | 0% | 0% |
-| `mistralai/ministral-3b-2512` | `mistral/zdr` | Mistral | 0% | n/a |
-| plus 23 more | | | | |
+| plus 31 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

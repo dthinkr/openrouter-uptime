@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T14:29:03+00:00 UTC)
+## Current status (2026-08-24T14:46:34+00:00 UTC)
 
 416 models polled, 1219 inference endpoints:
-up 758, degraded 130, down 21, idle 310.
+up 764, degraded 127, down 24, idle 304.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 66% | 69% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 16% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 78% | 60% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 72% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 52% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 72% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 62% | 61% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 9% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | 68% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 72% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 66% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 63% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 43% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 53% | 1% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 8% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 55% | 53% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 77% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 72% | 86% |
-| plus 6 more | | | | |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 57% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 73% | 34% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 51% | 45% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,28 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T11:01:03+00:00 UTC)
+## Current status (2026-08-24T11:15:57+00:00 UTC)
 
 419 models polled, 1223 inference endpoints:
-up 813, degraded 85, down 13, idle 312.
+up 802, degraded 97, down 11, idle 313.
 
-Currently down (13):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 29% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 73% | 64% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 79% | 89% |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 73% | 42% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 45% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 78% | 72% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 62% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 76% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 73% | 44% |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 79% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 46% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 51% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 79% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 60% | 79% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 77% | 78% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 60% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 84% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 73% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

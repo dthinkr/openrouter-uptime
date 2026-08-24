@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T16:00:12+00:00 UTC)
+## Current status (2026-08-24T16:16:17+00:00 UTC)
 
-416 models polled, 1220 inference endpoints:
-up 794, degraded 100, down 18, idle 308.
+417 models polled, 1229 inference endpoints:
+up 787, degraded 104, down 21, idle 317.
 
-Currently down (18):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | n/a |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 69% | 65% |
-| `deepseek/deepseek-v4-pro-0813` | `phala` | Phala | 55% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 35% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 35% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 78% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 48% | 42% |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 78% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 51% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | 0% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 62% | n/a |
+| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 48% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 78% | 100% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 37% | 93% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 60% | 59% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 7% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 34% |
+| `mistralai/mistral-nemo` | `mistral/zdr` | Mistral | 0% | 0% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `mistral/zdr` | Mistral | n/a | 0% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 10% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
 | `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 36% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai/priority` | xAI | 36% | n/a |
-| plus 3 more | | | | |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

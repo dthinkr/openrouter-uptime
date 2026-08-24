@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T12:31:23+00:00 UTC)
+## Current status (2026-08-24T12:45:54+00:00 UTC)
 
 419 models polled, 1223 inference endpoints:
-up 792, degraded 107, down 21, idle 303.
+up 790, degraded 108, down 21, idle 304.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 65% | 64% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | 12% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 76% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 76% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 51% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 78% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 78% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 78% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 49% | 51% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 8% | 31% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 71% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 63% | 0% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | n/a | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 55% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 75% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 63% | 67% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | 17% |
+| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 65% | 51% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 79% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 54% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 70% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 70% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 70% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 69% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 52% | 80% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 10% | 96% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | 53% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 57% | n/a |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 75% | 96% |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

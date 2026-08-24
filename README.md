@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T07:00:47+00:00 UTC)
+## Current status (2026-08-24T07:16:38+00:00 UTC)
 
 422 models polled, 1226 inference endpoints:
-up 760, degraded 114, down 15, idle 337.
+up 763, degraded 113, down 20, idle 330.
 
-Currently down (15):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 74% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
-| `anthropic/claude-opus-4.8` | `claude-on-aws` | Claude Platform on AWS | 33% | 0% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 68% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 63% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 49% | 61% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | 94% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 23% | 100% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | n/a | 0% |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 29% | 16% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 80% | 65% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 96% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 67% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 47% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | 70% |
+| `anthropic/claude-opus-4.8` | `claude-on-aws` | Claude Platform on AWS | 0% | 0% |
+| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 57% | 22% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 78% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 59% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 74% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 77% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 71% | 3% |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 79% | 58% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 36% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 23% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 73% | 69% |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 46% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T01:30:42+00:00 UTC)
+## Current status (2026-08-24T01:46:08+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 772, degraded 92, down 17, idle 346.
+up 775, degraded 90, down 16, idle 346.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 56% | 36% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 5% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 39% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 70% | 81% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 55% |
-| `google/gemma-4-31b-it` | `together#a464ccc622` | Together | 60% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | 59% |
-| `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 10% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 55% | 59% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 74% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 72% | 17% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 35% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 67% | 99% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 60% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 78% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | 0% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 97% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `nvidia/nemotron-nano-12b-v2-vl:free` | `nvidia` | Nvidia | 78% | 94% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 41% | 92% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 78% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 65% | n/a |
-| plus 2 more | | | | |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 68% | 67% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 62% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

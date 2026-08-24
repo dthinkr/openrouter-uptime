@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T05:45:56+00:00 UTC)
+## Current status (2026-08-24T06:00:55+00:00 UTC)
 
 422 models polled, 1226 inference endpoints:
-up 778, degraded 89, down 18, idle 341.
+up 770, degraded 93, down 19, idle 344.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | 63% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 71% | 58% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 47% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | 21% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 71% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 70% | 42% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 57% |
 | `google/gemini-2.5-pro` | `google-vertex/us` | Google | 61% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 61% | n/a |
 | `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 61% | n/a |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | n/a |
 | `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 74% |
 | `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k3` | `alibaba` | Alibaba | 72% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 51% |
-| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 73% | 72% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 72% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| plus 3 more | | | | |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 69% | 46% |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 3% | 0% |
+| `moonshotai/kimi-k3` | `alibaba` | Alibaba | 75% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 68% | 70% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T04:14:32+00:00 UTC)
+## Current status (2026-08-24T04:30:50+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 766, degraded 96, down 20, idle 345.
+up 755, degraded 110, down 16, idle 346.
 
-Currently down (20):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 79% | 62% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 76% | 58% |
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | 7% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 73% | 81% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 75% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 48% | 28% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 74% | 62% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 80% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 37% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 78% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 100% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 62% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | n/a | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 50% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 79% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 43% |
+| `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | 0% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 20% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | n/a | 0% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | 53% |
 | `qwen/qwen-2.5-7b-instruct` | `together` | Together | n/a | n/a |
-| plus 5 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 71% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | n/a | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 51% | 93% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

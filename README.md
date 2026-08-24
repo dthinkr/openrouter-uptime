@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T19:31:18+00:00 UTC)
+## Current status (2026-08-24T19:46:32+00:00 UTC)
 
 417 models polled, 1240 inference endpoints:
-up 779, degraded 103, down 29, idle 329.
+up 773, degraded 105, down 24, idle 338.
 
-Currently down (29):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | 37% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 69% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 17% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 36% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 10% | n/a |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 79% | 89% |
-| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 36% | 34% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 15% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 55% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | 55% |
+| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | n/a |
 | `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
 | `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | 0% | 0% |
-| `mistralai/ministral-3b-2512` | `mistral/zdr` | Mistral | 0% | n/a |
-| `mistralai/ministral-3b-2512` | `mistral/eu` | Mistral | 0% | 0% |
+| `mistralai/ministral-3b-2512` | `mistral/zdr` | Mistral | n/a | 0% |
+| `mistralai/ministral-3b-2512` | `mistral/eu` | Mistral | 0% | n/a |
 | `mistralai/ministral-8b-2512` | `mistral/zdr` | Mistral | n/a | n/a |
 | `mistralai/ministral-8b-2512` | `mistral/eu` | Mistral | n/a | n/a |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 0% | n/a |
-| `mistralai/mistral-medium-3` | `mistral/zdr` | Mistral | n/a | n/a |
-| plus 14 more | | | | |
+| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 0% | 0% |
+| `mistralai/mistral-medium-3` | `mistral/eu` | Mistral | n/a | n/a |
+| `mistralai/mistral-nemo` | `mistral/eu` | Mistral | 0% | 0% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

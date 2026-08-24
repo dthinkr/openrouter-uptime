@@ -85,26 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T00:30:19+00:00 UTC)
+## Current status (2026-08-24T00:45:30+00:00 UTC)
 
 422 models polled, 1227 inference endpoints:
-up 774, degraded 89, down 11, idle 353.
+up 783, degraded 84, down 13, idle 347.
 
-Currently down (11):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 63% | 91% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 14% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 56% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 69% |
-| `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | 47% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 96% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 56% | 99% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 37% | 70% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 88% |
-| `z-ai/glm-5.2` | `mistral` | Mistral | 64% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 60% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 32% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 64% | 100% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 57% | 63% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 78% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 65% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `crusoe/bf16` | Crusoe | 28% | n/a |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | `together` | Together | 0% | 0% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 39% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 50% | n/a |
+| `z-ai/glm-5.2` | `mistral` | Mistral | 78% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

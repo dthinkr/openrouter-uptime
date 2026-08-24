@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T14:15:34+00:00 UTC)
+## Current status (2026-08-24T14:29:03+00:00 UTC)
 
 416 models polled, 1219 inference endpoints:
-up 758, degraded 129, down 25, idle 307.
+up 758, degraded 130, down 21, idle 310.
 
-Currently down (25):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 65% | 71% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 22% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 68% | 36% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 74% | 69% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 48% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 68% | 76% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 56% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 97% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 72% | 100% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 74% | 98% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | 36% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 66% | 69% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 16% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 78% | 60% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 72% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 52% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 72% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 5% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 74% | 94% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 75% | 78% |
-| plus 10 more | | | | |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 8% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 55% | 53% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 77% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 72% | 86% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

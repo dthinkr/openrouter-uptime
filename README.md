@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T09:30:45+00:00 UTC)
+## Current status (2026-08-24T09:45:17+00:00 UTC)
 
 419 models polled, 1223 inference endpoints:
-up 777, degraded 115, down 27, idle 304.
+up 775, degraded 112, down 25, idle 311.
 
-Currently down (27):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 55% | 44% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 4% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 77% | 25% |
-| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 73% | 75% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 27% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 27% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 27% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 71% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 65% | 96% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 70% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 50% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `decart/fp4` | Decart | 71% | 100% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 25% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 25% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 25% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | 36% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | n/a | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 24% | n/a |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 63% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 80% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 48% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| plus 12 more | | | | |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 20% | n/a |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 78% | n/a |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 61% | n/a |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 81% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

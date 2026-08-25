@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T06:16:31+00:00 UTC)
+## Current status (2026-08-25T06:31:37+00:00 UTC)
 
 419 models polled, 1244 inference endpoints:
-up 785, degraded 103, down 17, idle 339.
+up 771, degraded 121, down 14, idle 338.
 
-Currently down (17):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 45% | 53% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 8% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 67% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 47% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 78% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 77% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 97% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 77% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 76% | 74% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 24% | 19% |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 73% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 36% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 69% | 58% |
-| plus 2 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 47% | 38% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 4% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 73% | 72% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 54% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 83% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | 65% |
+| `nvidia/nemotron-3.5-lightning` | `coreweave/bf16` | CoreWeave | 78% | 99% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 66% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 54% | n/a |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 76% | 79% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 33% | 67% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 62% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 66% | 100% |
+| `z-ai/glm-5.2` | `fireworks/fast` | Fireworks | 75% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

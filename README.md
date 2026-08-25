@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T06:00:42+00:00 UTC)
+## Current status (2026-08-25T06:16:31+00:00 UTC)
 
-418 models polled, 1243 inference endpoints:
-up 788, degraded 90, down 19, idle 346.
+419 models polled, 1244 inference endpoints:
+up 785, degraded 103, down 17, idle 339.
 
-Currently down (19):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 45% | 58% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 10% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 73% | 49% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 56% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `google-vertex` | Google | 80% | 82% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 58% | 94% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 78% |
-| `nvidia/nemotron-3.5-lightning` | `coreweave/bf16` | CoreWeave | 46% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 49% |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 25% | n/a |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 75% | 88% |
-| plus 4 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 45% | 53% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 8% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 67% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 47% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 78% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 77% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 97% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 77% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 76% | 74% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 24% | 19% |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 73% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 36% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 69% | 58% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

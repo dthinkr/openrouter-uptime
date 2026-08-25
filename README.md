@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T04:01:10+00:00 UTC)
+## Current status (2026-08-25T04:15:38+00:00 UTC)
 
 418 models polled, 1243 inference endpoints:
-up 780, degraded 102, down 16, idle 345.
+up 774, degraded 110, down 16, idle 343.
 
 Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 59% | 62% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | 12% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 92% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 30% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 58% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 77% | 100% |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 78% | 100% |
-| `moonshotai/kimi-k3` | `alibaba` | Alibaba | 76% | 67% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 77% |
-| `qwen/qwen3-235b-a22b-2507` | `atlas-cloud/fp8` | AtlasCloud | 74% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 61% | 69% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | 14% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 76% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 40% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 40% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 76% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 59% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 81% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 79% | 72% |
 | `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 77% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
-| `qwen/qwen3.8-27b` | `phala` | Phala | 78% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 83% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 30% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | n/a |
+| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 36% | n/a |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 74% | 57% |
 | plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

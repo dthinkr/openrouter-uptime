@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T03:15:48+00:00 UTC)
+## Current status (2026-08-25T03:30:45+00:00 UTC)
 
 418 models polled, 1243 inference endpoints:
-up 764, degraded 117, down 20, idle 342.
+up 777, degraded 114, down 18, idle 334.
 
-Currently down (20):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 37% | 16% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 56% | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 35% | n/a |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 80% | 70% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 75% | 64% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 75% | 70% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 72% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 53% | 64% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 53% | 60% |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 65% | 54% |
-| `qwen/qwen3.8-27b` | `phala` | Phala | 28% | n/a |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 15% | 5% |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 16% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 8% | n/a |
-| plus 5 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 62% | 53% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 8% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 45% | n/a |
+| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 75% | 72% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 71% | 100% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 70% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 77% | 100% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 51% | 48% |
+| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 7% | n/a |
+| `thinkingmachines/inkling-small` | `together` | Together | 73% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 74% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

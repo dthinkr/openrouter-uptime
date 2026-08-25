@@ -85,29 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T11:00:57+00:00 UTC)
+## Current status (2026-08-25T11:14:31+00:00 UTC)
 
 419 models polled, 1245 inference endpoints:
-up 813, degraded 105, down 14, idle 313.
+up 793, degraded 124, down 11, idle 317.
 
-Currently down (14):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 64% | 66% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 23% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 67% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 34% | 40% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 79% | 95% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 27% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 35% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 23% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 70% | 100% |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | n/a | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 36% | 39% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 49% | 53% |
-| `z-ai/glm-5.1` | `venice/fp8` | Venice | 68% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 63% | 63% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | 17% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 71% | 72% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 38% | 51% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 74% | 75% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 13% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 96% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | n/a | n/a |
+| `qwen/qwen3.8-27b` | `phala` | Phala | 64% | 38% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 38% | 42% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 55% | 65% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T01:30:56+00:00 UTC)
+## Current status (2026-08-25T01:45:15+00:00 UTC)
 
-417 models polled, 1242 inference endpoints:
-up 750, degraded 121, down 30, idle 341.
+417 models polled, 1244 inference endpoints:
+up 775, degraded 102, down 36, idle 331.
 
-Currently down (30):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 74% | 73% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 31% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 41% | 33% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | 22% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 73% | 72% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 72% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/priority` | Google | 73% | 72% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 43% | 24% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
-| `mistralai/devstral-2512` | `mistral/eu` | Mistral | n/a | n/a |
-| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 0% | n/a |
-| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | n/a | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 67% | 65% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 26% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 79% | 100% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 40% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 32% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 75% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 75% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/priority` | Google | 75% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 46% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
+| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | n/a |
+| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
+| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | 0% | 0% |
 | `mistralai/ministral-3b-2512` | `mistral/zdr` | Mistral | 0% | n/a |
 | `mistralai/ministral-3b-2512` | `mistral/eu` | Mistral | 0% | n/a |
-| `mistralai/ministral-8b-2512` | `mistral/zdr` | Mistral | 0% | n/a |
-| plus 15 more | | | | |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

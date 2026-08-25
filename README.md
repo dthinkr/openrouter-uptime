@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T20:15:55+00:00 UTC)
+## Current status (2026-08-25T20:30:46+00:00 UTC)
 
 418 models polled, 1246 inference endpoints:
-up 789, degraded 98, down 24, idle 335.
+up 766, degraded 120, down 24, idle 336.
 
 Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 58% | 59% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 6% |
-| `anthropic/claude-opus-4.1` | `amazon-bedrock` | Amazon Bedrock | 51% | 67% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 41% | 48% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 20% | 16% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 6% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 53% | 49% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 60% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 69% | 16% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 40% | 3% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 29% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | n/a |
-| `meta/muse-glimmer-30b` | `phala` | Phala | 71% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 70% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 60% | 65% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | 20% |
+| `anthropic/claude-opus-4.1` | `amazon-bedrock` | Amazon Bedrock | 46% | 51% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 45% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 17% | 12% |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 4% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 51% | 89% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 37% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 60% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 72% | 99% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 29% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 19% | 3% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | 64% |
+| `moonshotai/kimi-k2.6` | `phala` | Phala | 68% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
 | plus 9 more | | | | |
 

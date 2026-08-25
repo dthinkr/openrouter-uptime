@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-24T23:46:09+00:00 UTC)
+## Current status (2026-08-25T00:00:59+00:00 UTC)
 
 417 models polled, 1242 inference endpoints:
-up 757, degraded 106, down 28, idle 351.
+up 765, degraded 103, down 35, idle 339.
 
-Currently down (28):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 51% | 49% |
-| `deepseek/deepseek-v4-flash` | `deepinfra/fp8` | DeepInfra | 80% | 99% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 69% | 56% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8` | DeepInfra | 70% | 97% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 50% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 58% | 0% |
-| `mistralai/codestral-2508` | `mistral/eu` | Mistral | n/a | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | 79% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 41% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 57% | 100% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8` | DeepInfra | 68% | 98% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 58% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 38% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 75% | 100% |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 68% | 100% |
 | `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | n/a |
-| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | n/a | n/a |
-| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | n/a | n/a |
-| `mistralai/ministral-3b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
-| `mistralai/ministral-3b-2512` | `mistral/eu` | Mistral | 0% | n/a |
-| `mistralai/ministral-8b-2512` | `mistral/zdr` | Mistral | n/a | n/a |
-| `mistralai/ministral-8b-2512` | `mistral/eu` | Mistral | n/a | n/a |
-| plus 13 more | | | | |
+| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | n/a | 0% |
+| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | n/a | 0% |
+| `mistralai/ministral-3b-2512` | `mistral/zdr` | Mistral | 0% | n/a |
+| `mistralai/ministral-3b-2512` | `mistral/eu` | Mistral | n/a | n/a |
+| `mistralai/ministral-8b-2512` | `mistral/zdr` | Mistral | n/a | 0% |
+| `mistralai/ministral-8b-2512` | `mistral/eu` | Mistral | n/a | 0% |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

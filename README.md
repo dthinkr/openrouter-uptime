@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T10:16:24+00:00 UTC)
+## Current status (2026-08-25T10:31:14+00:00 UTC)
 
 419 models polled, 1245 inference endpoints:
-up 792, degraded 123, down 15, idle 315.
+up 796, degraded 123, down 19, idle 307.
 
-Currently down (15):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 60% | 51% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 7% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 79% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 65% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 74% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 3% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 60% | 62% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 15% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 41% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 78% | n/a |
+| `meta/muse-glimmer-30b` | `phala` | Phala | 53% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 77% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 78% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 70% | 2% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 74% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 74% | 76% |
-| `openai/gpt-oss-20b` | `phala` | Phala | 51% | 0% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 19% | 15% |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 74% | 68% |
-| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 55% | 95% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 74% |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 47% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 73% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 100% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 79% | 53% |
+| `openai/gpt-oss-20b` | `phala` | Phala | 16% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 33% | 13% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

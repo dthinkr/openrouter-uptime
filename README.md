@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T01:45:15+00:00 UTC)
+## Current status (2026-08-25T02:01:34+00:00 UTC)
 
 417 models polled, 1244 inference endpoints:
-up 775, degraded 102, down 36, idle 331.
+up 770, degraded 96, down 31, idle 347.
 
-Currently down (36):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 67% | 65% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 26% |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 79% | 100% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 40% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 32% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 75% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 75% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/priority` | Google | 75% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 46% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 0% | n/a |
-| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 0% | 0% |
-| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | 0% | 0% |
-| `mistralai/ministral-3b-2512` | `mistral/zdr` | Mistral | 0% | n/a |
-| `mistralai/ministral-3b-2512` | `mistral/eu` | Mistral | 0% | n/a |
-| plus 21 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 64% | 61% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 17% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 78% | 92% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 78% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 33% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | 47% |
+| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 21% | n/a |
+| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 0% | n/a |
+| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | 0% | n/a |
+| `mistralai/ministral-8b-2512` | `mistral/zdr` | Mistral | 1% | n/a |
+| `mistralai/ministral-8b-2512` | `mistral/eu` | Mistral | 1% | n/a |
+| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 0% | n/a |
+| `mistralai/mistral-medium-3` | `mistral/zdr` | Mistral | n/a | n/a |
+| `mistralai/mistral-medium-3.1` | `mistral/zdr` | Mistral | n/a | n/a |
+| `mistralai/mistral-medium-3.1` | `mistral/eu` | Mistral | n/a | n/a |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-25T22:16:36+00:00 UTC)
+## Current status (2026-08-25T22:30:28+00:00 UTC)
 
 417 models polled, 1248 inference endpoints:
-up 767, degraded 115, down 17, idle 349.
+up 764, degraded 109, down 18, idle 357.
 
-Currently down (17):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 71% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 44% | 98% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 25% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 24% | 14% |
-| `google/gemma-4-31b-it` | `together#65cf694fb1` | Together | 78% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 31% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | 56% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 50% | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 26% | n/a |
-| `qwen/qwen2.5-vl-72b-instruct` | `nebius/fp8` | Nebius | 77% | 100% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 54% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 71% | 12% |
-| `qwen/qwen3.8-27b` | `phala` | Phala | 45% | 45% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 18% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai/priority` | xAI | 18% | n/a |
-| plus 2 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 77% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `baidu/fp8` | Baidu | 79% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 56% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 39% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 19% | 18% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 26% | 49% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 67% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 79% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 34% | 100% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 78% | n/a |
+| `qwen/qwen3.8-27b` | `phala` | Phala | 49% | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 50% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 74% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

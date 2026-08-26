@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T22:45:58+00:00 UTC)
+## Current status (2026-08-26T23:01:34+00:00 UTC)
 
-417 models polled, 1257 inference endpoints:
-up 790, degraded 90, down 19, idle 358.
+417 models polled, 1259 inference endpoints:
+up 792, degraded 94, down 12, idle 361.
 
-Currently down (19):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 72% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 75% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 15% | 7% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 0% | n/a |
-| `mistralai/mistral-medium-3-5` | `mistral/zdr` | Mistral | 80% | 90% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 79% | 100% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 26% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 78% | 92% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 71% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 14% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 22% | 3% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 47% | 56% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 80% | 40% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 73% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 20% | n/a |
+| `mistralai/mistral-medium-3-5` | `mistral` | Mistral | 77% | 89% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 74% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 78% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 41% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 18% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 33% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

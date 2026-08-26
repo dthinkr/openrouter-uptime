@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T08:30:26+00:00 UTC)
+## Current status (2026-08-26T08:45:45+00:00 UTC)
 
 417 models polled, 1248 inference endpoints:
-up 748, degraded 136, down 30, idle 334.
+up 763, degraded 131, down 22, idle 332.
 
-Currently down (30):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 73% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | n/a |
-| `deepseek/deepseek-v4-flash` | `alibaba/fp8` | Alibaba | 65% | 100% |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 52% | 30% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 71% | 53% |
-| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 32% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 13% | 99% |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 57% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 73% | 84% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 71% | 70% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 34% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 47% | 52% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 51% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 51% | n/a |
-| plus 15 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 71% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | n/a |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 37% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 66% | 77% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 46% | 67% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 8% | 2% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 69% | 67% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 63% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | 52% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 46% | 40% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 70% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 77% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 69% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 76% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

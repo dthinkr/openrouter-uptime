@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T19:45:11+00:00 UTC)
+## Current status (2026-08-26T20:00:36+00:00 UTC)
 
 416 models polled, 1249 inference endpoints:
-up 768, degraded 117, down 21, idle 343.
+up 779, degraded 112, down 21, idle 337.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 73% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 65% | 93% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 51% |
-| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 67% | 45% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 27% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 69% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 73% | 49% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 79% | 100% |
-| `qwen/qwen3-32b` | `nebius/base` | Nebius | 73% | 78% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 70% | 61% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 74% | 91% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 49% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 21% | 43% |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 61% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 74% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 66% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 73% | 44% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 58% |
+| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 67% | 57% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 75% | 40% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 28% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 68% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 71% | 100% |
+| `openai/gpt-oss-120b` | `together` | Together | 77% | 52% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 74% | 67% |
+| `qwen/qwen3-32b` | `nebius/base` | Nebius | 68% | 50% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 73% | 85% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 80% | 82% |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

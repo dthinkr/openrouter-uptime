@@ -85,30 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T21:46:28+00:00 UTC)
+## Current status (2026-08-26T22:01:20+00:00 UTC)
 
 417 models polled, 1251 inference endpoints:
-up 795, degraded 99, down 15, idle 342.
+up 798, degraded 97, down 10, idle 346.
 
-Currently down (15):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 61% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 70% |
-| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 79% | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 68% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 69% | 100% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 79% | 56% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 65% | 72% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 67% | 98% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 30% | 7% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 11% | 8% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 60% | n/a |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 61% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 84% |
-| `z-ai/glm-5.2` | `morph/fp4` | Morph | 56% | n/a |
-| `z-ai/glm-5.2` | `reka/fp8` | Reka | 54% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 72% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 66% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 21% | 16% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 60% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 74% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | 100% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 24% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 16% | 0% |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 76% | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 70% | 82% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T14:15:27+00:00 UTC)
+## Current status (2026-08-26T14:30:35+00:00 UTC)
 
-416 models polled, 1248 inference endpoints:
-up 709, degraded 165, down 46, idle 328.
+417 models polled, 1249 inference endpoints:
+up 700, degraded 165, down 54, idle 330.
 
-Currently down (46):
+Currently down (54):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-opus-4.5` | `amazon-bedrock` | Amazon Bedrock | 77% | 85% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 59% | 0% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 59% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 64% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 36% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 22% | 16% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 69% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `atlas-cloud/fp4` | AtlasCloud | 70% | 0% |
-| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 70% | 0% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 72% | 0% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 70% | 100% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
-| `kwaipilot/kat-coder-pro-v2` | `atlas-cloud/fp8` | AtlasCloud | 64% | 0% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 69% | 46% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
-| plus 31 more | | | | |
+| `anthropic/claude-opus-4.5` | `amazon-bedrock` | Amazon Bedrock | 76% | 80% |
+| `deepseek/deepseek-chat-v3.1` | `atlas-cloud/fp8` | AtlasCloud | 33% | 48% |
+| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 22% | n/a |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 32% | 43% |
+| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 24% | n/a |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 31% | 82% |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 52% | 86% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 19% | 96% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 67% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `atlas-cloud/fp4` | AtlasCloud | 38% | 74% |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 54% | 30% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 37% | 36% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 45% | 69% |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 52% | 25% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 80% | 100% |
+| plus 39 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

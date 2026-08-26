@@ -85,25 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T22:01:20+00:00 UTC)
+## Current status (2026-08-26T22:16:36+00:00 UTC)
 
 417 models polled, 1251 inference endpoints:
-up 798, degraded 97, down 10, idle 346.
+up 794, degraded 95, down 17, idle 345.
 
-Currently down (10):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 72% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 66% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 21% | 16% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 60% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 74% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | 100% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 24% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 16% | 0% |
-| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 76% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 70% | 82% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 73% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 72% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 42% | 71% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 42% | 71% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 42% | 71% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 41% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 24% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 78% | 0% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 73% | 50% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 53% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 32% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 15% | n/a |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 77% | n/a |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 13% | 2% |
+| `x-ai/grok-4.20-multi-agent` | `xai/priority` | xAI | 13% | 2% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

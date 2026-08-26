@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T04:45:56+00:00 UTC)
+## Current status (2026-08-26T05:01:22+00:00 UTC)
 
 417 models polled, 1248 inference endpoints:
-up 747, degraded 102, down 34, idle 365.
+up 738, degraded 103, down 31, idle 376.
 
-Currently down (34):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 77% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 74% | 100% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 68% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 24% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 60% | 14% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 35% | 53% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 17% | 17% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 12% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 17% | 17% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 12% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 17% | 17% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 12% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 22% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | n/a |
-| plus 19 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 68% | 65% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 80% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 46% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 47% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 64% | 53% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 49% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 15% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 17% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 15% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 17% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 15% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 17% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 33% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 48% | n/a |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

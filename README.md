@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T13:46:39+00:00 UTC)
+## Current status (2026-08-26T14:00:53+00:00 UTC)
 
-417 models polled, 1249 inference endpoints:
-up 740, degraded 157, down 27, idle 325.
+416 models polled, 1248 inference endpoints:
+up 761, degraded 138, down 20, idle 329.
 
-Currently down (27):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 54% | 96% |
-| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 71% | 12% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 18% | 85% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 78% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 77% | 99% |
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 78% | 59% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 78% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 63% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | n/a |
-| `minimax/minimax-m2.7` | `novita/fp8` | Novita | 59% | 100% |
-| `minimax/minimax-m2.7` | `minimax/fp8` | Minimax | 41% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 53% | n/a |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 5% | n/a |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 61% | 77% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 77% | 74% |
-| plus 12 more | | | | |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 78% | 87% |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 58% | 76% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 22% | 21% |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 76% | 100% |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 70% | 57% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | n/a |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 71% | 98% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 76% | 77% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 6% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 73% | 93% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 48% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 74% | 33% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 78% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 74% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

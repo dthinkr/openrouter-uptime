@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T11:31:32+00:00 UTC)
+## Current status (2026-08-26T11:46:20+00:00 UTC)
 
 417 models polled, 1248 inference endpoints:
-up 760, degraded 129, down 23, idle 336.
+up 748, degraded 135, down 23, idle 342.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 80% | 93% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 77% | 75% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 14% | 43% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 63% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 84% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 83% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 76% | 76% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 76% | n/a |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 64% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 62% | 69% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 53% | 46% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 49% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 54% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 75% | 86% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 17% | 96% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 70% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 55% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 56% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 72% | 60% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 79% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 44% | n/a |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 52% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 66% | 62% |
+| `moonshotai/kimi-k3` | `makora` | Makora | 36% | 26% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 42% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 80% | 98% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 80% | n/a |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

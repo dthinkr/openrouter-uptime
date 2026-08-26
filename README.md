@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T07:15:23+00:00 UTC)
+## Current status (2026-08-26T07:31:29+00:00 UTC)
 
 417 models polled, 1248 inference endpoints:
-up 751, degraded 120, down 28, idle 349.
+up 735, degraded 125, down 36, idle 352.
 
-Currently down (28):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 58% | 24% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 59% | 13% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 70% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 20% | 23% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 42% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | 22% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 75% | 87% |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 51% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 15% | 14% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 12% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 63% | 81% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 64% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 36% | n/a |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 13% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 20% | 23% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 36% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 13% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 21% | 32% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 11% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 94% |
-| `google/gemma-4-31b-it` | `together#65cf694fb1` | Together | 70% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 25% | 1% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 77% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 22% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 42% | 23% |
-| plus 13 more | | | | |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 36% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 13% | n/a |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

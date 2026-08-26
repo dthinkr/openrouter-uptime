@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T16:45:23+00:00 UTC)
+## Current status (2026-08-26T16:58:48+00:00 UTC)
 
 417 models polled, 1248 inference endpoints:
-up 765, degraded 138, down 21, idle 324.
+up 756, degraded 134, down 24, idle 334.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 74% | 92% |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 77% | 77% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 54% | 82% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 34% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 65% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | 71% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 76% | 69% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 36% | 75% |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 48% | 9% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 57% | 50% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 68% |
-| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 67% | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 73% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 64% | 22% |
-| plus 6 more | | | | |
+| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 80% | 99% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | 82% |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 61% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 55% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | 91% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 63% | 67% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 60% | 66% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 76% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 65% | 72% |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 43% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 59% | 67% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 88% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 58% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 58% | 9% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 71% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

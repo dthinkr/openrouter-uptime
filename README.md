@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T15:00:18+00:00 UTC)
+## Current status (2026-08-26T15:16:18+00:00 UTC)
 
 417 models polled, 1248 inference endpoints:
-up 722, degraded 164, down 28, idle 334.
+up 737, degraded 161, down 24, idle 326.
 
-Currently down (28):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 76% | 72% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 28% | 76% |
-| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 29% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 34% | 9% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 83% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 69% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 62% | 44% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 80% | 54% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 67% | 48% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
-| `minimax/minimax-m3` | `morph/fp4` | Morph | 37% | 76% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 73% | 67% |
-| `moonshotai/kimi-k3` | `morph/fp4` | Morph | 41% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 59% | 100% |
-| `openai/gpt-oss-120b` | `together` | Together | 67% | 100% |
-| plus 13 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 69% | 83% |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 52% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 25% | 99% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 37% | 99% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 85% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 56% | 100% |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 64% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 57% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 74% | 100% |
+| `google/gemma-4-31b-it` | `together#65cf694fb1` | Together | 74% | 18% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 41% | 48% |
+| `minimax/minimax-m3` | `morph/fp4` | Morph | 48% | 97% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 69% | 58% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 56% | 84% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

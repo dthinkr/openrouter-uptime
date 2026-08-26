@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T19:15:16+00:00 UTC)
+## Current status (2026-08-26T19:31:02+00:00 UTC)
 
-417 models polled, 1246 inference endpoints:
-up 769, degraded 129, down 17, idle 331.
+416 models polled, 1246 inference endpoints:
+up 768, degraded 128, down 11, idle 339.
 
-Currently down (17):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 72% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 83% |
-| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 67% | 65% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 23% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `nebius/fp8` | Nebius | 70% | 61% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 54% | 97% |
-| `openai/gpt-oss-120b` | `together` | Together | 69% | 98% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 76% | 100% |
-| `qwen/qwen3-32b` | `deepinfra/fp8` | DeepInfra | 66% | 73% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 50% | 72% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 74% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 72% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 58% | 24% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 49% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 78% | 66% |
-| plus 2 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 52% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 79% |
+| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 68% | 79% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `nebius/fp8` | Nebius | 73% | n/a |
+| `qwen/qwen3-32b` | `deepinfra/fp8` | DeepInfra | 78% | 78% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 60% | 74% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 24% | 8% |
+| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 56% | 78% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 76% | 77% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 69% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 79% | 86% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

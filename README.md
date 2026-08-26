@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-26T10:30:55+00:00 UTC)
+## Current status (2026-08-26T10:45:43+00:00 UTC)
 
 417 models polled, 1248 inference endpoints:
-up 777, degraded 121, down 19, idle 331.
+up 780, degraded 110, down 19, idle 339.
 
 Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 69% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 74% | 73% |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 71% | 91% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 41% | 4% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 43% | 42% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 67% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 64% | 70% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 75% | 71% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 61% | 53% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 67% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 80% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 64% | 45% |
-| `qwen/qwen3.8-27b` | `phala` | Phala | 59% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 28% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 77% | 78% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 15% | 69% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 28% | 8% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 62% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 63% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 69% | 79% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 76% | 81% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 62% | 49% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 74% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 79% |
+| `openai/gpt-oss-20b` | `phala` | Phala | n/a | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 57% | 88% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 67% | 88% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 67% | 68% |
 | plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

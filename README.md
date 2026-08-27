@@ -85,29 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T07:16:32+00:00 UTC)
+## Current status (2026-08-27T07:30:54+00:00 UTC)
 
 417 models polled, 1264 inference endpoints:
-up 773, degraded 120, down 14, idle 357.
+up 768, degraded 129, down 12, idle 355.
 
-Currently down (14):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 32% | 31% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 32% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 32% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 32% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 48% | 8% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 65% | 59% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 63% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 76% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 52% | 52% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | n/a |
-| `z-ai/glm-5.3-flash` | `venice` | Venice | 45% | 54% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 79% | 88% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 32% | 35% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 63% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 44% | n/a |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 78% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 64% | 81% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 77% | n/a |
+| `openai/gpt-5.6-sol` | `azure/us` | Azure | 79% | 68% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 72% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 57% | 72% |
+| `z-ai/glm-5.3-flash` | `venice` | Venice | 57% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

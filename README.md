@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T01:32:10+00:00 UTC)
+## Current status (2026-08-27T01:45:22+00:00 UTC)
 
 417 models polled, 1260 inference endpoints:
-up 770, degraded 115, down 20, idle 355.
+up 761, degraded 131, down 23, idle 345.
 
-Currently down (20):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 55% | 76% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 70% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 22% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 72% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 78% | 71% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 56% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 64% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 25% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 25% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 27% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 28% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 96% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 74% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 79% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | 81% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | 78% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 79% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 29% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 2% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 65% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 68% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 59% |
-| plus 5 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 70% | 47% |
+| `qwen/qwen3-32b` | `nebius/base` | Nebius | 63% | 91% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 60% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 65% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

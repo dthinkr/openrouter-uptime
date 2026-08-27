@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T15:01:05+00:00 UTC)
+## Current status (2026-08-27T15:15:18+00:00 UTC)
 
 417 models polled, 1269 inference endpoints:
-up 749, degraded 159, down 24, idle 337.
+up 762, degraded 152, down 25, idle 330.
 
-Currently down (24):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 71% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | 88% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 70% | 93% |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 78% | 100% |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 80% | n/a |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 71% | 99% |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 75% | 74% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 35% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 68% | 67% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 100% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 70% | 30% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 44% | 100% |
-| plus 9 more | | | | |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 78% | 84% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 83% |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 72% | 100% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 77% | 68% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 72% | n/a |
+| `minimax/minimax-m2.7` | `groq` | Groq | 76% | 100% |
+| `mistralai/mistral-large-2512` | `mistral` | Mistral | 69% | 99% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 82% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 75% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | n/a | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 63% | 61% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 48% | 91% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 36% | 13% |
+| `openai/gpt-oss-120b` | `together` | Together | 56% | 24% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 38% | 39% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

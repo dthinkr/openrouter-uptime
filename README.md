@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T13:16:38+00:00 UTC)
+## Current status (2026-08-27T13:31:09+00:00 UTC)
 
-417 models polled, 1267 inference endpoints:
-up 763, degraded 138, down 23, idle 343.
+417 models polled, 1268 inference endpoints:
+up 763, degraded 144, down 28, idle 333.
 
-Currently down (23):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 74% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 72% | 32% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 62% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 62% | 100% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 44% | 99% |
-| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 61% | 54% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 73% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 24% | n/a |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 64% | 55% |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 72% | 91% |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 70% | 57% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 78% | 84% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 82% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 82% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 49% | 100% |
-| plus 8 more | | | | |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | n/a |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 71% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 53% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 73% |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 50% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 38% | 100% |
+| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 56% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 29% | n/a |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 61% | 70% |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 77% | 69% |
+| `mistralai/mistral-large-2512` | `mistral` | Mistral | 66% | 90% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 77% | 77% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 60% |
+| `moonshotai/kimi-k3` | `morph/fp4` | Morph | n/a | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `crusoe/fp8` | Crusoe | 78% | 70% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T22:45:53+00:00 UTC)
+## Current status (2026-08-27T23:00:46+00:00 UTC)
 
 415 models polled, 1267 inference endpoints:
-up 777, degraded 113, down 18, idle 359.
+up 758, degraded 118, down 29, idle 362.
 
-Currently down (18):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 68% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `reka/fp4` | Reka | 59% | 51% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 34% | 25% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 67% | 66% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 46% | n/a |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 57% | 58% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 29% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `reka/fp4` | Reka | 53% | 57% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 42% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 80% | 85% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 80% | 85% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 80% | 85% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 67% | 100% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 56% | 51% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 58% | 74% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 53% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | 27% | n/a |
+| `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | n/a | n/a |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 58% | 99% |
-| `openai/gpt-oss-120b` | `together` | Together | 63% | 100% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 68% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
-| `qwen/qwen3-32b` | `nebius/base` | Nebius | 63% | 62% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 72% | 63% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 54% | n/a |
-| plus 3 more | | | | |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

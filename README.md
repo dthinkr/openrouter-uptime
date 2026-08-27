@@ -85,24 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T11:00:21+00:00 UTC)
+## Current status (2026-08-27T11:16:03+00:00 UTC)
 
 417 models polled, 1265 inference endpoints:
-up 779, degraded 126, down 9, idle 351.
+up 791, degraded 124, down 8, idle 342.
 
-Currently down (9):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 71% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | 80% |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 76% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 85% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 68% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 60% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 60% | 66% |
-| `z-ai/glm-5.3-flash` | `venice` | Venice | 58% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 69% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 49% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 76% | n/a |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 72% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 80% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 54% | n/a |
+| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 71% | 97% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 51% | 36% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

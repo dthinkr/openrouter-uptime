@@ -85,27 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T04:46:24+00:00 UTC)
+## Current status (2026-08-27T05:00:24+00:00 UTC)
 
-417 models polled, 1262 inference endpoints:
-up 789, degraded 97, down 12, idle 364.
+417 models polled, 1263 inference endpoints:
+up 785, degraded 97, down 10, idle 371.
 
-Currently down (12):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 80% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 60% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 25% | 22% |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 79% | n/a |
-| `mistralai/mistral-large` | `mistral` | Mistral | 77% | n/a |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 78% | 72% |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 71% | 95% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 74% | 70% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 69% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 76% | 97% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 69% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 37% | 37% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 74% | 96% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 52% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 26% | n/a |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 75% | n/a |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 79% | 79% |
+| `mistralai/mistral-large-2512` | `mistral` | Mistral | 73% | 64% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 85% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `baseten/fp4` | BaseTen | 79% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 72% | 72% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

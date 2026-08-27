@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T02:15:36+00:00 UTC)
+## Current status (2026-08-27T02:30:50+00:00 UTC)
 
 417 models polled, 1259 inference endpoints:
-up 740, degraded 141, down 14, idle 364.
+up 743, degraded 135, down 26, idle 355.
 
-Currently down (14):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 77% | 72% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 80% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 25% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 25% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 25% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 27% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 75% | 96% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 66% | 54% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 70% | 82% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 60% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 21% | 24% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 7% | 0% |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 53% | 69% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 76% | 60% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 78% | 88% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 80% | 78% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 64% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 24% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 24% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 24% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 26% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 46% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 80% | n/a |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 75% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 29% | n/a |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 78% | 71% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 76% |
+| `qwen/qwen3-32b` | `nebius/base` | Nebius | 18% | 28% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 78% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

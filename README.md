@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T03:46:07+00:00 UTC)
+## Current status (2026-08-27T04:01:13+00:00 UTC)
 
 417 models polled, 1261 inference endpoints:
-up 751, degraded 122, down 19, idle 369.
+up 761, degraded 119, down 17, idle 364.
 
-Currently down (19):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | n/a |
-| `deepseek/deepseek-v4-pro` | `together` | Together | 74% | 98% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 52% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 29% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 29% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 29% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 17% | 15% |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 71% | n/a |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 77% | 98% |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 69% | 53% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 90% |
-| `openai/gpt-5.6-terra` | `azure/us` | Azure | 66% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 78% |
-| `qwen/qwen3-32b` | `nebius/base` | Nebius | 71% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 66% | 46% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 64% | 96% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 90% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 23% | n/a |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 65% | n/a |
+| `mistralai/mistral-large` | `mistral` | Mistral | 77% | n/a |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 75% | 78% |
+| `mistralai/mistral-large-2512` | `mistral` | Mistral | 70% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 63% |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 78% | n/a |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 81% |
+| `openai/gpt-5.6-terra` | `azure` | Azure | 76% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 68% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 54% | 87% |
+| `z-ai/glm-5.2` | `io-net/fp4` | Io Net | 24% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

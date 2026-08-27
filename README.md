@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T10:30:51+00:00 UTC)
+## Current status (2026-08-27T10:46:25+00:00 UTC)
 
 417 models polled, 1265 inference endpoints:
-up 783, degraded 124, down 19, idle 339.
+up 776, degraded 133, down 18, idle 338.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 70% | 59% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 51% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 75% | 47% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 55% | n/a |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 75% | n/a |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 79% | 100% |
-| `mistralai/mistral-medium-3-5` | `mistral` | Mistral | 73% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 71% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 42% | 27% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 22% | 8% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 79% |
-| `openai/gpt-5.2` | `openai` | OpenAI | 75% | 44% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 80% | 80% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 75% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 68% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 49% | 46% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | 60% |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 79% | 70% |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 79% | n/a |
+| `mistralai/mistral-large` | `mistral` | Mistral | 79% | 78% |
+| `mistralai/mistral-medium-3-5` | `mistral` | Mistral | 79% | n/a |
+| `moonshotai/kimi-k3` | `makora` | Makora | 35% | n/a |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 50% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 83% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 84% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | 86% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 79% | 99% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 70% | 61% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

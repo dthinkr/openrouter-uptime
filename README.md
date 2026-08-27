@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-27T19:16:37+00:00 UTC)
+## Current status (2026-08-27T19:30:55+00:00 UTC)
 
 417 models polled, 1272 inference endpoints:
-up 777, degraded 132, down 18, idle 345.
+up 762, degraded 139, down 23, idle 348.
 
-Currently down (18):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 77% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 6% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 22% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 78% | 97% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 2% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 73% | 67% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 88% |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 27% | 0% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 51% | 96% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 70% | 32% |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 48% | 85% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 80% | 71% |
-| `qwen/qwen3.8-27b` | `morph/fp4` | Morph | 33% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 75% | 79% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 73% | n/a |
-| plus 3 more | | | | |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 81% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 49% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 42% | 99% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 31% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 23% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 74% | 67% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 78% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 54% | 100% |
+| `openai/gpt-oss-120b` | `together` | Together | 78% | 47% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 67% | 87% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 75% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 78% | 73% |
+| `qwen/qwen3.5-397b-a17b` | `morph/fp4` | Morph | 0% | 0% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 38% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

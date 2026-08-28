@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T20:01:10+00:00 UTC)
+## Current status (2026-08-28T20:16:15+00:00 UTC)
 
-397 models polled, 1231 inference endpoints:
-up 779, degraded 117, down 17, idle 318.
+398 models polled, 1232 inference endpoints:
+up 778, degraded 116, down 19, idle 319.
 
-Currently down (17):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -106,10 +106,10 @@ Currently down (17):
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
 | `moonshotai/kimi-k3` | `fireworks` | Fireworks | 79% | 100% |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 80% | 79% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 77% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 78% | 82% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 70% | 14% |
-| plus 2 more | | | | |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

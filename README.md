@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T08:00:49+00:00 UTC)
+## Current status (2026-08-28T08:16:04+00:00 UTC)
 
-381 models polled, 1206 inference endpoints:
-up 775, degraded 131, down 24, idle 276.
+387 models polled, 1212 inference endpoints:
+up 785, degraded 118, down 30, idle 279.
 
-Currently down (24):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 32% | 24% |
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 75% | 100% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | 31% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 77% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 79% | 80% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 31% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 88% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 55% | 62% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | 61% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 51% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 64% | 19% |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | n/a | n/a |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 92% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 76% |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| plus 9 more | | | | |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 67% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-07-31 16:43** — **28 models removed from the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-sonnet-4.5:batch`, `anthropic/claude-sonnet-5:batch`, +20 more.
 - **2026-08-06 15:11** — **60 models added to the catalog in one poll**: `anthropic/claude-fable-5:batch`, `anthropic/claude-haiku-4.5:batch`, `anthropic/claude-opus-4.1:batch`, `anthropic/claude-opus-4.5:batch`, `anthropic/claude-opus-4.6:batch`, `anthropic/claude-opus-4.7:batch`, `anthropic/claude-opus-4.8:batch`, `anthropic/claude-opus-5:batch`, +52 more.
 - **2026-08-07 10:31** — provider `streamlake` changed its status page.
 - **2026-08-07 12:30** — provider `upstage` changed its terms of service url.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-08-24 09:30** — **3 models removed from the catalog in one poll**: `inclusionai/ling-2.6-1t`, `inclusionai/ling-2.6-flash`, `inclusionai/ring-2.6-1t`.
 - **2026-08-24 13:15** — **3 models removed from the catalog in one poll**: `nvidia/nemotron-3-nano-30b-a3b:free`, `nvidia/nemotron-nano-12b-v2-vl:free`, `nvidia/nemotron-nano-9b-v2:free`.
 - **2026-08-28 02:46** — **35 models removed from the catalog in one poll**: `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, `openai/gpt-4.1-mini:batch`, `openai/gpt-4.1-nano:batch`, `openai/gpt-4.1:batch`, `openai/gpt-4o-mini:batch`, `openai/gpt-4o:batch`, `openai/gpt-5-codex:batch`, +27 more.
+- **2026-08-28 08:16** — **6 models added to the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3-5:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

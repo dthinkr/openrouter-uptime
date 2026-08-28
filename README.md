@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T11:16:02+00:00 UTC)
+## Current status (2026-08-28T11:30:57+00:00 UTC)
 
 387 models polled, 1211 inference endpoints:
-up 793, degraded 111, down 27, idle 280.
+up 782, degraded 110, down 23, idle 296.
 
-Currently down (27):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 54% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 53% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 70% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | 82% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 53% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 63% | 54% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
 | `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 59% | 72% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 67% |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | n/a | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 55% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 46% | 12% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 60% | 54% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 58% |
+| `moonshotai/kimi-k3` | `makora` | Makora | 46% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 58% | n/a |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| plus 12 more | | | | |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 83% |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `deepinfra/fp4` | DeepInfra | 64% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

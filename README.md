@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T09:01:10+00:00 UTC)
+## Current status (2026-08-28T09:15:31+00:00 UTC)
 
 387 models polled, 1212 inference endpoints:
-up 797, degraded 106, down 32, idle 277.
+up 792, degraded 123, down 25, idle 272.
 
-Currently down (32):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 72% | 57% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 70% | 49% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 65% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | 61% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 52% | 30% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 62% | 15% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | 42% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 56% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 70% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 54% |
+| `google/gemma-3-27b-it` | `phala` | Phala | 44% | 58% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 58% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | 42% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 59% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 56% | n/a |
-| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 50% | n/a |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | 0% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 75% | 60% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 44% |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 73% | 65% |
-| plus 17 more | | | | |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 72% | 76% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

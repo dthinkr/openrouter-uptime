@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T22:45:46+00:00 UTC)
+## Current status (2026-08-28T23:01:27+00:00 UTC)
 
-398 models polled, 1238 inference endpoints:
-up 806, degraded 86, down 19, idle 327.
+398 models polled, 1237 inference endpoints:
+up 805, degraded 90, down 24, idle 318.
 
-Currently down (19):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 58% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 64% | 29% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 18% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 38% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 72% | 73% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 36% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 75% | 63% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 41% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 75% | 98% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 39% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | 28% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 48% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 60% | 58% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 86% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 68% | 93% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 75% | 97% |
-| plus 4 more | | | | |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

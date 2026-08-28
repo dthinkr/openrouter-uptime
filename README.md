@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T02:46:29+00:00 UTC)
+## Current status (2026-08-28T03:00:47+00:00 UTC)
 
 380 models polled, 1206 inference endpoints:
-up 728, degraded 142, down 28, idle 308.
+up 725, degraded 148, down 28, idle 305.
 
 Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 68% | 83% |
-| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 80% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 26% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 65% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 79% | 23% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 25% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 28% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 69% | 72% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 54% |
 | `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 100% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 79% | 100% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 78% | 22% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 25% | n/a |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 65% | 95% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 49% | 52% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 45% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 24% | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 55% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 45% | 35% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 75% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 9% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 71% | 64% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
 | plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

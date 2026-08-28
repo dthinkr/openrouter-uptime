@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T09:15:31+00:00 UTC)
+## Current status (2026-08-28T09:31:04+00:00 UTC)
 
-387 models polled, 1212 inference endpoints:
-up 792, degraded 123, down 25, idle 272.
+387 models polled, 1211 inference endpoints:
+up 796, degraded 115, down 29, idle 271.
 
-Currently down (25):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 70% | 49% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 72% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 44% | 0% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 56% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 70% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 54% |
-| `google/gemma-3-27b-it` | `phala` | Phala | 44% | 58% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 58% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | 42% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | 55% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 83% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 63% | 91% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 57% | 100% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 66% | 66% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | 92% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 75% | 60% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 44% |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 72% | 76% |
-| plus 10 more | | | | |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 59% | 51% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 54% |
+| `moonshotai/kimi-k2.7-code` | `together` | Together | n/a | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T02:15:54+00:00 UTC)
+## Current status (2026-08-28T02:30:48+00:00 UTC)
 
 415 models polled, 1267 inference endpoints:
-up 738, degraded 129, down 25, idle 375.
+up 723, degraded 147, down 24, idle 373.
 
-Currently down (25):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 55% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 27% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 58% | 15% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 65% | 43% |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 79% | 63% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 32% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 57% | 55% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 24% | 19% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 51% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 30% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 28% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 25% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 54% | 55% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 80% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 79% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 50% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 54% | 58% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 83% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 68% | 70% |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 78% |
-| plus 10 more | | | | |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 81% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 60% | 100% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T06:31:10+00:00 UTC)
+## Current status (2026-08-28T06:46:09+00:00 UTC)
 
 381 models polled, 1206 inference endpoints:
-up 771, degraded 115, down 25, idle 295.
+up 768, degraded 119, down 29, idle 290.
 
-Currently down (25):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 35% | 34% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 51% | 97% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | 49% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 31% | 33% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 50% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 48% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 48% | n/a |
+| `google/gemma-4-31b-it` | `together` | Together | 72% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 54% | 56% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
 | `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 20% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 66% | 76% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 47% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 54% | 29% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 67% | 68% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 50% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 54% | n/a |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | n/a | n/a |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 78% | 81% |
-| plus 10 more | | | | |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

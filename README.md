@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T03:15:56+00:00 UTC)
+## Current status (2026-08-28T03:30:30+00:00 UTC)
 
 380 models polled, 1204 inference endpoints:
-up 721, degraded 146, down 36, idle 301.
+up 735, degraded 139, down 31, idle 299.
 
-Currently down (36):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 69% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 70% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `reka/fp4` | Reka | 76% | 61% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 47% | 79% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `reka/fp4` | Reka | 74% | 100% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 80% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 59% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 66% | 24% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 62% | 28% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 78% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 30% | 23% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 39% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 44% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 37% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 44% | n/a |
+| `google/gemma-3-27b-it` | `phala` | Phala | 79% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 47% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 33% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
 | `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 42% | 34% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 89% |
-| `moonshotai/kimi-k3` | `phala` | Phala | 75% | 58% |
-| plus 21 more | | | | |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 44% | 40% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

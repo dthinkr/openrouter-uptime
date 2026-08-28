@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T01:46:06+00:00 UTC)
+## Current status (2026-08-28T02:00:55+00:00 UTC)
 
 415 models polled, 1267 inference endpoints:
-up 750, degraded 128, down 33, idle 356.
+up 751, degraded 120, down 27, idle 369.
 
-Currently down (33):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | n/a |
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 68% | 35% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 78% | 93% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 36% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 55% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 51% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 55% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 51% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 57% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 51% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 46% | n/a |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 59% | 64% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 43% | n/a |
-| plus 18 more | | | | |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 61% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 80% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 78% | 0% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 19% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 63% | 9% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 52% | 62% |
+| `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 55% | 54% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 51% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 77% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 77% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T23:30:42+00:00 UTC)
+## Current status (2026-08-28T23:45:17+00:00 UTC)
 
 396 models polled, 1236 inference endpoints:
-up 801, degraded 92, down 22, idle 321.
+up 814, degraded 88, down 15, idle 319.
 
-Currently down (22):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 79% | 100% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 23% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 35% | 49% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 58% | 90% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 39% |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 23% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 94% |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 1% | n/a |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 74% | 89% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 49% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 27% | 51% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 66% | 100% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 42% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 72% | 83% |
+| `z-ai/glm-5.3-flash` | `relace/fp8` | Relace | 0% | n/a |
+| `z-ai/glm-5.3-flash` | `digitalocean` | DigitalOcean | 79% | 69% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 36% | 31% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

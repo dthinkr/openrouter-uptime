@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T19:45:28+00:00 UTC)
+## Current status (2026-08-28T20:01:10+00:00 UTC)
 
 397 models polled, 1231 inference endpoints:
-up 791, degraded 121, down 22, idle 297.
+up 779, degraded 117, down 17, idle 318.
 
-Currently down (22):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 22% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 61% | 5% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 61% | 71% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 25% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 34% | 32% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 76% | 100% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 56% | 0% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 3% | 76% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 68% | 98% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 58% | 78% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 25% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 68% |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 79% | 100% |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 76% | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 55% | 35% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 76% | 85% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 71% | 83% |
-| plus 7 more | | | | |
+| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 78% | 82% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 70% | 14% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T12:17:09+00:00 UTC)
+## Current status (2026-08-28T12:30:56+00:00 UTC)
 
 387 models polled, 1211 inference endpoints:
-up 762, degraded 132, down 29, idle 288.
+up 772, degraded 122, down 30, idle 287.
 
-Currently down (29):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 58% | 69% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 77% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 61% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 46% | 70% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 74% | 74% |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 77% | 44% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 59% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 69% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 69% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 66% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 74% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
 | `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 59% | 55% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 64% |
-| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 79% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 65% | 84% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 97% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 76% | n/a |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 70% | n/a |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 74% | n/a |
-| plus 14 more | | | | |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

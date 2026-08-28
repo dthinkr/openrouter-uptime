@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T18:15:20+00:00 UTC)
+## Current status (2026-08-28T18:31:15+00:00 UTC)
 
 388 models polled, 1223 inference endpoints:
-up 791, degraded 117, down 30, idle 285.
+up 786, degraded 122, down 30, idle 285.
 
 Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 76% | 98% |
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | 42% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 80% | 28% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 35% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 61% | 89% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 53% | n/a |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 49% | 60% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 31% | 34% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 32% | 36% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 54% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 70% | 41% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 12% | n/a |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 71% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 31% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 51% | 52% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 44% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 61% | 81% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 79% | 63% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
 | `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
 | plus 15 more | | | | |
 

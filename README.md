@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-28T17:16:32+00:00 UTC)
+## Current status (2026-08-28T17:31:04+00:00 UTC)
 
 388 models polled, 1221 inference endpoints:
-up 792, degraded 117, down 29, idle 283.
+up 800, degraded 115, down 28, idle 278.
 
-Currently down (29):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 36% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 56% | 45% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 48% | 58% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 71% | 98% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 33% | 35% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 28% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 76% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 59% | 100% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 46% | 0% |
+| `google/gemma-4-31b-it` | `together` | Together | 76% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 33% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 77% | 78% |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 79% | 75% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 74% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 40% | n/a |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k2.7-code` | `together` | Together | n/a | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 38% | 100% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 78% | 78% |
-| plus 14 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 79% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 46% | 100% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 71% | 88% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 0% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

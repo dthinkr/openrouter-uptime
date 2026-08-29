@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T01:30:58+00:00 UTC)
+## Current status (2026-08-29T01:46:31+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 787, degraded 101, down 22, idle 328.
+up 792, degraded 98, down 21, idle 327.
 
-Currently down (22):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 74% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 46% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 78% | 81% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 45% | 66% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 28% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 51% | 71% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 27% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 58% | 82% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 54% |
-| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 75% | 70% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 74% | 100% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 55% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 97% |
+| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 75% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-14b` | `deepinfra/fp8` | DeepInfra | 47% | 60% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 74% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 75% | 75% |
-| plus 7 more | | | | |
+| `qwen/qwen3-14b` | `deepinfra/fp8` | DeepInfra | 25% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 65% | 63% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T14:16:13+00:00 UTC)
+## Current status (2026-08-29T14:31:05+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 813, degraded 102, down 18, idle 309.
+up 811, degraded 104, down 18, idle 309.
 
 Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 75% | 88% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 76% | 30% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | 32% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 60% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 25% | 22% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 28% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 64% | 48% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 73% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 80% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 63% | 60% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 87% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 64% | n/a |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 69% | 67% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 36% | 100% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 67% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 80% | 89% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 79% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 75% |
 | `z-ai/glm-5.1` | `parasail/fp8` | Parasail | 0% | n/a |
 | plus 3 more | | | | |
 

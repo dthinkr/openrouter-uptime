@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T19:45:45+00:00 UTC)
+## Current status (2026-08-29T20:01:21+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 813, degraded 95, down 17, idle 317.
+up 808, degraded 96, down 13, idle 325.
 
-Currently down (17):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 28% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 79% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 55% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 25% | 26% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 17% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 97% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 22% | 14% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 51% | 49% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 90% |
-| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 78% | 88% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 47% | 50% |
+| `openai/gpt-5` | `openai/default` | OpenAI | 69% | 43% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 75% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 63% | 41% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 3% | n/a |
-| plus 2 more | | | | |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 63% | 93% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 8% | n/a |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

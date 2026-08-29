@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T06:30:45+00:00 UTC)
+## Current status (2026-08-29T06:46:15+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 782, degraded 96, down 17, idle 347.
+up 773, degraded 99, down 19, idle 351.
 
-Currently down (17):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 69% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 78% | 97% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 52% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 31% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 72% | 63% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 50% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 72% | 67% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 80% | 78% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 74% | 70% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 67% | 71% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 77% | 65% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 70% | 74% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 5% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 61% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 61% | 71% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 84% |
-| plus 2 more | | | | |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 46% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 27% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 62% | 67% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 57% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

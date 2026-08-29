@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T01:01:05+00:00 UTC)
+## Current status (2026-08-29T01:15:56+00:00 UTC)
 
 396 models polled, 1239 inference endpoints:
-up 787, degraded 107, down 18, idle 327.
+up 790, degraded 111, down 16, idle 322.
 
-Currently down (18):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 45% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 55% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 0% | 3% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 61% | 100% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 80% | 76% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 78% | 81% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 80% | n/a |
-| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
-| `z-ai/glm-5.3-flash` | `parasail/fp8` | Parasail | 80% | 91% |
-| plus 3 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 1% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 74% | 93% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 80% | 58% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 80% | 57% |
+| `z-ai/glm-5.3-flash` | `relace/fp8` | Relace | 8% | 0% |
+| `z-ai/glm-5.3-flash` | `wafer` | Wafer | 74% | 88% |
+| `z-ai/glm-5.3-flash` | `digitalocean` | DigitalOcean | 12% | 2% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

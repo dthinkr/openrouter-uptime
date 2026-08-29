@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T08:01:02+00:00 UTC)
+## Current status (2026-08-29T08:15:51+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 789, degraded 94, down 18, idle 341.
+up 805, degraded 98, down 14, idle 325.
 
-Currently down (18):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | 27% |
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 69% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 44% | 46% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 67% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 46% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 36% | 57% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 65% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 49% | 100% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 47% | 42% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 85% |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 75% | n/a |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 73% | 76% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 75% | 66% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 69% | 65% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| plus 3 more | | | | |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 69% | 64% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

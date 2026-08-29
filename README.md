@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T03:01:18+00:00 UTC)
+## Current status (2026-08-29T03:15:27+00:00 UTC)
 
 396 models polled, 1240 inference endpoints:
-up 781, degraded 103, down 21, idle 335.
+up 788, degraded 109, down 24, idle 319.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 74% | 68% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 34% | 19% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 27% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 63% | 62% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 69% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 26% | 24% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 72% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 69% | 54% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | 26% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 54% | 94% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 26% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 71% | 52% |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 78% | 90% |
-| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 75% | 68% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 75% |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 76% | 95% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 46% |
+| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 65% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 81% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-14b` | `deepinfra/fp8` | DeepInfra | 62% | 35% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 1% | n/a |
-| plus 6 more | | | | |
+| `qwen/qwen3-14b` | `deepinfra/fp8` | DeepInfra | 68% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

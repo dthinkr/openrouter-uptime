@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T09:30:54+00:00 UTC)
+## Current status (2026-08-29T09:46:00+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 809, degraded 87, down 16, idle 330.
+up 859, degraded 79, down 20, idle 284.
 
-Currently down (16):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 75% | 59% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 67% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 53% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 81% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | 49% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 28% | 21% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 69% | 75% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 28% | 38% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 76% | 76% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 68% | 73% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
-| `z-ai/glm-5.3` | `io-net/fp8` | Io Net | 5% | 13% |
-| `z-ai/glm-5.3` | `friendli` | Friendli | 44% | 61% |
-| `z-ai/glm-5.3` | `novita/fp8` | Novita | 60% | 63% |
-| `z-ai/glm-5.3` | `morph/fp4` | Morph | 31% | 55% |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 76% | 97% |
-| plus 1 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 22% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 68% | n/a |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 78% | 74% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

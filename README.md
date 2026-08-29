@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T18:00:45+00:00 UTC)
+## Current status (2026-08-29T18:16:10+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 806, degraded 106, down 20, idle 310.
+up 812, degraded 113, down 17, idle 300.
 
-Currently down (20):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 78% | 55% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 56% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | 30% |
-| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 76% | 83% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 36% | 27% |
+| `google/gemma-4-31b-it` | `open-inference/bf16` | OpenInference | 79% | 94% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 60% | n/a |
-| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 78% | n/a |
-| `openai/gpt-5` | `openai/default` | OpenAI | 60% | 94% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 75% | 54% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 92% |
+| `openai/gpt-5` | `openai/default` | OpenAI | 67% | 76% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 43% | 58% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 54% | 47% |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 71% | 80% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 63% | n/a |
-| plus 5 more | | | | |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 28% | 17% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 37% | 37% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | n/a |
+| `z-ai/glm-5` | `digitalocean` | DigitalOcean | 66% | 99% |
+| `z-ai/glm-5.2` | `fireworks/fast` | Fireworks | 65% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

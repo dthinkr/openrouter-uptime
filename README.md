@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T19:01:06+00:00 UTC)
+## Current status (2026-08-29T19:15:30+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 812, degraded 94, down 18, idle 318.
+up 810, degraded 102, down 16, idle 314.
 
-Currently down (18):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 55% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 79% | 60% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 64% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 74% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 59% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 61% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 49% | 31% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 17% | 8% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 54% | 43% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 88% |
-| `openai/gpt-5` | `openai/default` | OpenAI | 70% | 51% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 53% | 73% |
+| `openai/gpt-5` | `openai/default` | OpenAI | 73% | 95% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 51% | 88% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 66% | 97% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 54% | n/a |
-| plus 3 more | | | | |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 55% | 28% |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 74% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 52% | 42% |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 66% | 20% |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 75% | 64% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | n/a |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 73% | 59% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

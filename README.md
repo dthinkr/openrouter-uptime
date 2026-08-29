@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T15:30:13+00:00 UTC)
+## Current status (2026-08-29T15:45:48+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 797, degraded 106, down 12, idle 327.
+up 805, degraded 97, down 16, idle 324.
 
-Currently down (12):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 29% | 24% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 21% | 27% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 80% | 87% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 80% | 87% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 80% | 87% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 47% | 38% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 58% | 65% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 83% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 73% | 85% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 60% |
-| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
-| `z-ai/glm-5.3` | `friendli` | Friendli | 74% | 70% |
-| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 3% | n/a |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 70% | 85% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 49% | 36% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 60% | 60% |
+| `z-ai/glm-5.3` | `friendli` | Friendli | 77% | 100% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T20:45:34+00:00 UTC)
+## Current status (2026-08-29T21:01:35+00:00 UTC)
 
-396 models polled, 1242 inference endpoints:
-up 798, degraded 116, down 20, idle 308.
+396 models polled, 1241 inference endpoints:
+up 799, degraded 110, down 15, idle 317.
 
-Currently down (20):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 25% | 22% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 69% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 97% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 26% | 35% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 59% | 54% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 86% |
-| `openai/gpt-5` | `openai/default` | OpenAI | 70% | 100% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 81% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 58% | 64% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 85% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 1% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 72% | n/a |
-| `z-ai/glm-5.1` | `gmicloud/fp8` | GMICloud | 79% | n/a |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 78% | 95% |
-| plus 5 more | | | | |
+| `thinkingmachines/inkling-small` | `baseten/fp8` | BaseTen | 45% | 34% |
+| `thinkingmachines/inkling-small` | `together` | Together | 71% | 87% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 74% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 79% | 94% |
+| `z-ai/glm-5.3-flash` | `relace/fp8` | Relace | 55% | 37% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T14:45:44+00:00 UTC)
+## Current status (2026-08-29T15:01:18+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 812, degraded 101, down 14, idle 315.
+up 809, degraded 104, down 19, idle 310.
 
-Currently down (14):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 22% | 33% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 21% | 20% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 33% | 26% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 47% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 67% | 73% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 1% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 66% | 69% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 62% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 17% | 0% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 87% |
-| `z-ai/glm-5.2` | `decart/fp4` | Decart | 69% | 100% |
-| `z-ai/glm-5.3` | `io-net/fp8` | Io Net | 52% | 35% |
-| `z-ai/glm-5.3-flash` | `parasail/fp8` | Parasail | 71% | 100% |
-| `z-ai/glm-5.3-flash` | `venice` | Venice | 57% | 28% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 11% | n/a |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 47% |
+| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
+| `z-ai/glm-5.2` | `decart/fp4` | Decart | 59% | 99% |
+| `z-ai/glm-5.3` | `io-net/fp8` | Io Net | 2% | 100% |
+| `z-ai/glm-5.3` | `morph/fp4` | Morph | 74% | 80% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

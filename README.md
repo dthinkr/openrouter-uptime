@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T07:30:35+00:00 UTC)
+## Current status (2026-08-29T07:46:34+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 806, degraded 90, down 15, idle 331.
+up 810, degraded 89, down 15, idle 328.
 
 Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 68% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 66% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 25% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | 0% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 56% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 57% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 43% | 30% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 74% | 69% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 42% | 30% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 79% | 72% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 71% | 66% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 69% | 73% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 75% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 70% | 65% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | n/a |
 | `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
-| `z-ai/glm-5.3-flash` | `relace/fp8` | Relace | 72% | 100% |
-| `z-ai/glm-5.3-flash` | `venice` | Venice | 77% | 64% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 79% | 45% |
+| `z-ai/glm-5.3-flash` | `venice` | Venice | 75% | 89% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

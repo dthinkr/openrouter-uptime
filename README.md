@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T15:16:35+00:00 UTC)
+## Current status (2026-08-29T15:30:13+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 804, degraded 103, down 20, idle 315.
+up 797, degraded 106, down 12, idle 327.
 
-Currently down (20):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | 0% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 29% | 53% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 79% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 33% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 29% | 24% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 60% | 54% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 83% |
-| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 59% | n/a |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 58% | 65% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 83% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 78% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | n/a |
-| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | 0% | n/a |
-| plus 5 more | | | | |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 60% |
+| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
+| `z-ai/glm-5.3` | `friendli` | Friendli | 74% | 70% |
+| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 3% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

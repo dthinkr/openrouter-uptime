@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-29T07:16:17+00:00 UTC)
+## Current status (2026-08-29T07:30:35+00:00 UTC)
 
 396 models polled, 1242 inference endpoints:
-up 775, degraded 104, down 19, idle 344.
+up 806, degraded 90, down 15, idle 331.
 
-Currently down (19):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | 74% |
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 74% | 96% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 80% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 67% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 66% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 79% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 23% | 25% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 68% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 66% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 25% | n/a |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 49% | 37% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 82% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 77% | 78% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 43% | 30% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 74% | 69% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 66% | 97% |
-| plus 4 more | | | | |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 69% | 73% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 75% |
+| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
+| `z-ai/glm-5.3-flash` | `relace/fp8` | Relace | 72% | 100% |
+| `z-ai/glm-5.3-flash` | `venice` | Venice | 77% | 64% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

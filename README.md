@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T20:15:12+00:00 UTC)
+## Current status (2026-08-30T20:30:11+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 797, degraded 91, down 21, idle 329.
+up 785, degraded 111, down 19, idle 323.
 
-Currently down (21):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 40% | 47% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 6% | 81% |
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 45% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 73% | 95% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 39% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 74% | 74% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 79% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 36% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 76% | 78% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 36% | 44% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 75% | 62% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 70% | 65% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 75% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 77% | 77% |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 76% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 70% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 61% | 89% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 65% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 32% | 29% |
-| plus 6 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 51% | 27% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 39% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

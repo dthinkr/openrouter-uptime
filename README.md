@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T15:15:51+00:00 UTC)
+## Current status (2026-08-30T15:31:11+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 766, degraded 105, down 20, idle 347.
+up 765, degraded 115, down 23, idle 335.
 
-Currently down (20):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 72% | 78% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 25% | 39% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 66% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 73% | 76% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 64% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 69% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | 34% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 32% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 78% | 47% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | 52% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 72% | 66% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 84% |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k3` | `together` | Together | 77% | 84% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 77% | 69% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 74% | 68% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 63% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 78% | 90% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 70% | n/a |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `thinkingmachines/inkling` | `together` | Together | 79% | 96% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 48% | 35% |
-| plus 5 more | | | | |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

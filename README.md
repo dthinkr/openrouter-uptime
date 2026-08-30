@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T06:45:45+00:00 UTC)
+## Current status (2026-08-30T07:00:55+00:00 UTC)
 
 396 models polled, 1239 inference endpoints:
-up 769, degraded 83, down 24, idle 363.
+up 785, degraded 71, down 22, idle 361.
 
-Currently down (24):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 19% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | n/a |
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 69% | 100% |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 71% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 75% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 67% | 50% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 58% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 57% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 37% | 46% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 75% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 78% | 62% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 73% | 70% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 74% |
-| plus 9 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 68% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 68% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 43% | 43% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 70% | n/a |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 73% | 77% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 72% | 42% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 75% |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

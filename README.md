@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T19:00:21+00:00 UTC)
+## Current status (2026-08-30T19:15:26+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 756, degraded 125, down 20, idle 337.
+up 765, degraded 108, down 23, idle 342.
 
-Currently down (20):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 21% | 26% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 14% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 15% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 14% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 15% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 14% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 15% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 60% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 26% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 33% | 31% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 9% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 68% | 98% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 73% | 74% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 35% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 71% | 52% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 77% | 66% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 28% | 22% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 74% | 96% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 70% | 63% |
-| plus 5 more | | | | |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `novita/fp8` | Novita | 75% | n/a |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 37% | 25% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 74% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 62% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

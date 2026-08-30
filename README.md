@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T12:46:08+00:00 UTC)
+## Current status (2026-08-30T13:00:47+00:00 UTC)
 
 396 models polled, 1237 inference endpoints:
-up 779, degraded 104, down 16, idle 338.
+up 772, degraded 109, down 16, idle 340.
 
 Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 26% | 30% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 28% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 44% | 44% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 47% | 56% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 71% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 67% | n/a |
-| `moonshotai/kimi-k3` | `together` | Together | 64% | 70% |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 79% | 92% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | 42% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 12% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 49% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 70% | 0% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 43% | 38% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 91% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `moonshotai/kimi-k3` | `together` | Together | 64% | 65% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 75% | 93% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 60% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 73% | 62% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 56% | 67% |
 | `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
 | plus 1 more | | | | |
 

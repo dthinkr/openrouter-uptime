@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T05:00:37+00:00 UTC)
+## Current status (2026-08-30T05:15:15+00:00 UTC)
 
 396 models polled, 1239 inference endpoints:
-up 769, degraded 89, down 20, idle 361.
+up 778, degraded 78, down 21, idle 362.
 
-Currently down (20):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 56% | 43% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 24% |
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | 0% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 47% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 62% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 52% | 48% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 60% | 59% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 84% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 67% | 56% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 37% | n/a |
-| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 55% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 64% | 62% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | 30% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 47% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 53% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 55% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 56% | 55% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 59% | 60% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 46% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 75% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 70% | 28% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 56% | 63% |
-| plus 5 more | | | | |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 71% | 54% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 59% | 1% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

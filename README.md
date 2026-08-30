@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T13:30:47+00:00 UTC)
+## Current status (2026-08-30T13:46:09+00:00 UTC)
 
 396 models polled, 1237 inference endpoints:
-up 787, degraded 96, down 20, idle 334.
+up 787, degraded 92, down 21, idle 337.
 
-Currently down (20):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 40% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 10% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 46% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 64% | 99% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 50% | 65% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 63% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 78% | 37% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 34% | 38% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 64% | 98% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 74% | 50% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 20% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | 45% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 54% | 49% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 91% |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `moonshotai/kimi-k3` | `together` | Together | 65% | 100% |
+| `moonshotai/kimi-k3` | `together` | Together | 75% | 78% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 79% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 69% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 37% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 1% | n/a |
-| plus 5 more | | | | |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 80% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 14% | 0% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

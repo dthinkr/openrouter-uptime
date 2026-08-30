@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T07:31:12+00:00 UTC)
+## Current status (2026-08-30T07:45:45+00:00 UTC)
 
 396 models polled, 1239 inference endpoints:
-up 793, degraded 75, down 24, idle 347.
+up 794, degraded 74, down 24, idle 347.
 
 Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 28% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 76% | 99% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 33% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 18% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 44% | 49% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 78% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 80% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 73% | 48% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 74% | 97% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 80% | 84% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 77% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 31% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 21% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | 68% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 46% | 34% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 85% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 66% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 67% | 97% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 77% | 75% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 72% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
 | plus 9 more | | | | |
 

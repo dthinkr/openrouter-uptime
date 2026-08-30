@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T00:16:33+00:00 UTC)
+## Current status (2026-08-30T00:31:38+00:00 UTC)
 
 396 models polled, 1240 inference endpoints:
-up 786, degraded 93, down 12, idle 349.
+up 798, degraded 86, down 21, idle 335.
 
-Currently down (12):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 79% | 25% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 64% |
-| `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 80% | 75% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 26% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 51% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 78% | 67% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 78% | 67% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 78% | 67% |
+| `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 79% | 87% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 72% | 33% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 60% |
 | `minimax/minimax-m2.7` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 51% | 44% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 49% | 45% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 18% | n/a |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `z-ai/glm-5` | `gmicloud/fp8` | GMICloud | 74% | 90% |
-| `z-ai/glm-5.3` | `parasail/fp8` | Parasail | 55% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 1% | 0% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

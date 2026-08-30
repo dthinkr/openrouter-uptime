@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T17:01:36+00:00 UTC)
+## Current status (2026-08-30T17:16:15+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 762, degraded 106, down 23, idle 347.
+up 761, degraded 111, down 23, idle 343.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 52% | 46% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 45% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 35% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 71% | n/a |
-| `minimax/minimax-m2.7` | `groq` | Groq | 75% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 64% | 65% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 77% |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 57% | 63% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 35% | 27% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 16% | 12% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 39% | 34% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 65% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 65% | 74% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 76% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 77% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 54% | 44% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 73% | 88% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 76% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 6% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 64% | 52% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 77% | 67% |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

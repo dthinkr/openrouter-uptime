@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T09:46:20+00:00 UTC)
+## Current status (2026-08-30T10:01:19+00:00 UTC)
 
 396 models polled, 1239 inference endpoints:
-up 790, degraded 94, down 20, idle 335.
+up 786, degraded 96, down 17, idle 340.
 
-Currently down (20):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 53% | 84% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 37% | 91% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 61% | 53% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 54% | 100% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 31% | 39% |
-| `moonshotai/kimi-k3` | `together` | Together | 77% | 85% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 80% | 80% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 84% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 72% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 73% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 73% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 68% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 68% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 35% | 34% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 76% |
+| `moonshotai/kimi-k3` | `together` | Together | 79% | 81% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 78% | 80% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 78% | 63% |
-| plus 5 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 77% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 78% | 79% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

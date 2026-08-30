@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T03:01:05+00:00 UTC)
+## Current status (2026-08-30T03:16:14+00:00 UTC)
 
 396 models polled, 1239 inference endpoints:
-up 791, degraded 81, down 16, idle 351.
+up 781, degraded 92, down 21, idle 345.
 
-Currently down (16):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 51% | 63% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 60% | 26% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 50% | 47% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 87% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 71% | 72% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 52% | 31% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | 46% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 49% | 64% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 60% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 51% | 47% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 76% | 98% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 43% | 31% |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | 0% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 79% | 82% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 28% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 75% | 24% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 59% | 58% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 80% | 2% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 1% | n/a |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 39% | n/a |
-| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | 0% |
-| plus 1 more | | | | |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 49% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 63% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 33% | 8% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

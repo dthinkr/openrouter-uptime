@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T09:01:30+00:00 UTC)
+## Current status (2026-08-30T09:15:41+00:00 UTC)
 
 396 models polled, 1239 inference endpoints:
-up 783, degraded 85, down 22, idle 349.
+up 792, degraded 96, down 15, idle 336.
 
-Currently down (22):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 31% | 45% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 43% | 46% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 69% |
-| `openai/gpt-5.4-nano` | `openai` | OpenAI | 71% | 77% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 62% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `nextbit/fp8` | NextBit | 52% | 64% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 39% | 26% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 90% |
+| `openai/gpt-5.4-nano` | `openai` | OpenAI | 75% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 83% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 80% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 54% | 98% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 70% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 71% | 99% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 1% | n/a |
-| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 76% | 62% |
-| plus 7 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 45% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 80% | 73% |
+| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 79% | 98% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 69% | 59% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `z-ai/glm-5.3` | `parasail/fp8` | Parasail | 54% | 100% |
+| `z-ai/glm-5.3-flash` | `gmicloud/fp8` | GMICloud | 78% | 96% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

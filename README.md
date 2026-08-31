@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-30T23:45:50+00:00 UTC)
+## Current status (2026-08-31T00:00:47+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 782, degraded 87, down 21, idle 348.
+up 778, degraded 82, down 24, idle 354.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 73% | 88% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 26% | 31% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 76% | 29% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 61% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 43% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 48% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 59% | 50% |
-| `moonshotai/kimi-k2.7-code` | `coreweave/int4` | CoreWeave | 79% | n/a |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 70% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 21% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 72% | 82% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 76% | 82% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 76% | 82% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 76% | 82% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 66% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 54% | 58% |
+| `moonshotai/kimi-k2.7-code` | `coreweave/int4` | CoreWeave | 67% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 15% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| plus 6 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 80% | 80% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 14% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

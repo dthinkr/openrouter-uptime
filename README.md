@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T10:31:10+00:00 UTC)
+## Current status (2026-08-31T10:46:04+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 749, degraded 145, down 29, idle 315.
+up 763, degraded 140, down 26, idle 309.
 
-Currently down (29):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 80% | n/a |
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 80% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | 75% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 48% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | 80% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 33% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 50% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 48% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 49% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 71% | n/a |
-| `minimax/minimax-m3` | `gmicloud/fp8` | GMICloud | 70% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 77% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 48% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 77% | 79% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 96% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 80% | 68% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 1% | 2% |
-| plus 14 more | | | | |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 1% | 0% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

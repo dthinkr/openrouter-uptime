@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T22:30:48+00:00 UTC)
+## Current status (2026-08-31T22:46:31+00:00 UTC)
 
 425 models polled, 1259 inference endpoints:
-up 734, degraded 112, down 30, idle 383.
+up 731, degraded 112, down 31, idle 385.
 
-Currently down (30):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 34% | 28% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 3% | 1% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 33% | 29% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 3% | 4% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 70% | 66% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 53% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 59% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 60% | 0% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 69% | 58% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 44% | 77% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 47% | 74% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 7% | 86% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 44% | 45% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 71% | 71% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 62% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 44% | 38% |
 | `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 78% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 75% | 80% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 57% | 52% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
-| `openai/gpt-oss-20b` | `darkbloom/fp8` | Darkbloom | 66% | n/a |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 48% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `darkbloom/fp4` | Darkbloom | 52% | n/a |
-| plus 15 more | | | | |
+| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 73% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 63% | 62% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

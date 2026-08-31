@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T17:16:09+00:00 UTC)
+## Current status (2026-08-31T17:30:47+00:00 UTC)
 
 395 models polled, 1235 inference endpoints:
-up 735, degraded 157, down 32, idle 311.
+up 762, degraded 134, down 26, idle 313.
 
-Currently down (32):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | n/a |
-| `anthropic/claude-haiku-4.5` | `amazon-bedrock/global` | Amazon Bedrock | 72% | 79% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 52% | 98% |
-| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 77% | 100% |
+| `anthropic/claude-haiku-4.5` | `amazon-bedrock/global` | Amazon Bedrock | 64% | 38% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | 0% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 63% | 24% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 51% | 25% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 63% | 92% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 6% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 9% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 79% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 54% | 45% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 60% | 100% |
-| `openai/gpt-oss-20b` | `darkbloom/fp8` | Darkbloom | 3% | 14% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 48% | 32% |
-| plus 17 more | | | | |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 53% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 78% | 62% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 59% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 66% | 100% |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 1% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | 48% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 52% | 63% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 50% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 79% | n/a |
+| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `openai/gpt-oss-20b` | `darkbloom/fp8` | Darkbloom | 33% | 60% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

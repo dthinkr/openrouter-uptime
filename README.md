@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T07:30:29+00:00 UTC)
+## Current status (2026-08-31T07:46:25+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 740, degraded 149, down 33, idle 316.
+up 727, degraded 154, down 38, idle 319.
 
-Currently down (33):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 50% | 62% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 21% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 70% | 47% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 57% | 71% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 16% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 57% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 26% | n/a |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 68% | 53% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 69% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 43% | 29% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 43% | 29% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 43% | 29% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 76% | 80% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 76% | 80% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 76% | 80% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 60% | 71% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 49% | 0% |
-| plus 18 more | | | | |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 46% | n/a |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 56% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 63% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 46% | 43% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 52% | 31% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 46% | 43% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 52% | 31% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 46% | 43% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 52% | 31% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 74% | 78% |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

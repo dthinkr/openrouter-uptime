@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T12:01:22+00:00 UTC)
+## Current status (2026-08-31T12:15:34+00:00 UTC)
 
 396 models polled, 1239 inference endpoints:
-up 799, degraded 110, down 25, idle 305.
+up 792, degraded 122, down 22, idle 303.
 
-Currently down (25):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 66% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 65% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 41% | 97% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 51% | 45% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 58% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 76% | 72% |
-| `minimax/minimax-m3` | `gmicloud/fp8` | GMICloud | 70% | 52% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 78% | 83% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 67% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 76% | 76% |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 67% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 61% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 80% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 68% | 70% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 74% | n/a |
+| `minimax/minimax-m3` | `gmicloud/fp8` | GMICloud | 62% | n/a |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 78% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 43% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 76% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 69% | 98% |
-| plus 10 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 71% | 70% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 77% | 97% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 51% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

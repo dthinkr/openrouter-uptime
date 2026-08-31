@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T19:16:28+00:00 UTC)
+## Current status (2026-08-31T19:31:18+00:00 UTC)
 
-414 models polled, 1267 inference endpoints:
-up 772, degraded 113, down 33, idle 349.
+424 models polled, 1291 inference endpoints:
+up 774, degraded 116, down 33, idle 368.
 
 Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | 80% |
-| `anthropic/claude-haiku-4.5` | `amazon-bedrock/global` | Amazon Bedrock | 51% | 45% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 76% | n/a |
+| `anthropic/claude-haiku-4.5` | `amazon-bedrock/global` | Amazon Bedrock | 51% | 60% |
 | `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 65% | 55% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 80% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 71% | 98% |
+| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 63% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 78% | n/a |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 77% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 51% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | 61% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 65% | 68% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 84% |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 80% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 69% |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 64% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | n/a |
+| `minimax/minimax-m3` | `gmicloud/fp8` | GMICloud | 70% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 66% | 60% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 80% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 78% | 100% |
 | plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-08-14 00:30** — provider `modelrun` changed its privacy policy url.
 - **2026-08-20 19:16** — provider `thinkingmachines` changed its terms of service url.
 - **2026-08-20 19:16** — provider `thinkingmachines` changed its privacy policy url.
 - **2026-08-24 09:30** — **3 models removed from the catalog in one poll**: `inclusionai/ling-2.6-1t`, `inclusionai/ling-2.6-flash`, `inclusionai/ring-2.6-1t`.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-08-28 19:31** — **9 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `deepseek/deepseek-v4-pro-0813:batch`, `google/gemma-4-31b-it:batch`, `meta/muse-glimmer-30b:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `openai/gpt-oss-20b:batch`, `qwen/qwen3.5-9b:batch`, +1 more.
 - **2026-08-31 16:30** — provider `stepfun` changed its terms of service url.
 - **2026-08-31 19:16** — **19 models added to the catalog in one poll**: `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, `openai/gpt-4.1-mini:batch`, `openai/gpt-4.1-nano:batch`, `openai/gpt-4.1:batch`, `openai/gpt-4o-mini:batch`, `openai/gpt-4o:batch`, `openai/gpt-5-pro:batch`, +11 more.
+- **2026-08-31 19:31** — **10 models added to the catalog in one poll**: `openai/gpt-5-mini:batch`, `openai/gpt-5-nano:batch`, `openai/gpt-5.1:batch`, `openai/gpt-5.2:batch`, `openai/gpt-5.4-mini:batch`, `openai/gpt-5.4-nano:batch`, `openai/gpt-5.4:batch`, `openai/gpt-5.5-pro:batch`, +2 more.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

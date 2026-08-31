@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T07:01:06+00:00 UTC)
+## Current status (2026-08-31T07:15:28+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 760, degraded 119, down 34, idle 325.
+up 745, degraded 137, down 29, idle 327.
 
-Currently down (34):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 73% | 96% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 3% | 2% |
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | 0% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 79% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 48% | 43% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 4% | 17% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 64% |
-| `deepseek/deepseek-v4-flash-0731` | `akashml/fp8` | AkashML | 50% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 44% | 51% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 41% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 41% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 41% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 78% | 82% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 78% | 82% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 78% | 82% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | n/a |
-| plus 19 more | | | | |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 27% | 23% |
+| `deepseek/deepseek-v4-flash-0731` | `akashml/fp8` | AkashML | 80% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 51% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 47% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 47% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 47% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 76% | 83% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 76% | 83% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/priority` | Google | 76% | 83% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 58% | 70% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 72% | 86% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

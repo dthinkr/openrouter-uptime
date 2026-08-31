@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T10:46:04+00:00 UTC)
+## Current status (2026-08-31T11:00:47+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 763, degraded 140, down 26, idle 309.
+up 766, degraded 128, down 22, idle 322.
 
-Currently down (26):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 80% | n/a |
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 80% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | 0% |
+| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 79% | 70% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 33% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 50% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 48% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 48% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 76% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 58% | 61% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 19% |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 77% | 79% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 96% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | n/a |
+| `minimax/minimax-m3` | `gmicloud/fp8` | GMICloud | 67% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 40% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 76% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
 | `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 1% | 0% |
-| plus 11 more | | | | |
+| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 62% | 79% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 4% | 8% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 6% | 6% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

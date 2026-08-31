@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T16:15:20+00:00 UTC)
+## Current status (2026-08-31T16:30:28+00:00 UTC)
 
-395 models polled, 1233 inference endpoints:
-up 761, degraded 128, down 36, idle 308.
+395 models polled, 1234 inference endpoints:
+up 760, degraded 138, down 39, idle 297.
 
-Currently down (36):
+Currently down (39):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | 95% |
-| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 71% | 97% |
+| `anthropic/claude-haiku-4.5` | `amazon-bedrock/global` | Amazon Bedrock | 69% | 58% |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | 0% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 42% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 71% | 69% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 69% | 69% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 71% | 69% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 69% | 27% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 27% | 13% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 95% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 62% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 71% | n/a |
-| `minimax/minimax-m3` | `gmicloud/fp8` | GMICloud | 65% | n/a |
-| `mistralai/mistral-medium-3-5` | `mistral` | Mistral | 80% | n/a |
-| plus 21 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 81% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 65% | 76% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 70% | 96% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 65% | 76% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 49% | 100% |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 34% | n/a |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 79% | 64% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 76% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 14% | n/a |
+| `mistralai/mistral-medium-3.1` | `mistral` | Mistral | 74% | 82% |
+| `mistralai/mistral-medium-3.1` | `mistral/zdr` | Mistral | 75% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 69% | 72% |
+| plus 24 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-08-07 12:30** — provider `upstage` changed its privacy policy url.
 - **2026-08-14 00:30** — provider `modelrun` changed its terms of service url.
 - **2026-08-14 00:30** — provider `modelrun` changed its privacy policy url.
 - **2026-08-20 19:16** — provider `thinkingmachines` changed its terms of service url.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-08-28 15:30** — **10 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `google/gemma-4-31b-it:batch`, `meta/muse-glimmer-30b:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `openai/gpt-oss-20b:batch`, `qwen/qwen3.5-9b:batch`, `qwen/qwen3.8-2.4t-a95b:batch`, +2 more.
 - **2026-08-28 15:46** — **9 models removed from the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `google/gemma-4-31b-it:batch`, `meta/muse-glimmer-30b:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `openai/gpt-oss-20b:batch`, `qwen/qwen3.5-9b:batch`, `thinkingmachines/inkling-small:batch`, +1 more.
 - **2026-08-28 19:31** — **9 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `deepseek/deepseek-v4-pro-0813:batch`, `google/gemma-4-31b-it:batch`, `meta/muse-glimmer-30b:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `openai/gpt-oss-20b:batch`, `qwen/qwen3.5-9b:batch`, +1 more.
+- **2026-08-31 16:30** — provider `stepfun` changed its terms of service url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-08-31T00:45:14+00:00 UTC)
+## Current status (2026-08-31T01:00:37+00:00 UTC)
 
 396 models polled, 1238 inference endpoints:
-up 771, degraded 100, down 22, idle 345.
+up 786, degraded 91, down 15, idle 346.
 
-Currently down (22):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 54% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 7% | n/a |
+| `arcee-ai/trinity-large-thinking` | `parasail/fp4` | Parasail | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `akashml/fp8` | AkashML | 78% | 39% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 81% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 47% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 60% | 69% |
-| `moonshotai/kimi-k2.7-code` | `parasail/int4` | Parasail | n/a | n/a |
-| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 25% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `akashml/fp8` | AkashML | 70% | 97% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 74% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 63% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 63% | 61% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 61% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 73% | 72% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 8% | 9% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 14% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| plus 7 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `darkbloom/fp4` | Darkbloom | 64% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 54% | 100% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 64% | n/a |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 68% | 69% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 70% | 75% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 55% | n/a |
+| `z-ai/glm-5.1` | `parasail/fp8` | Parasail | n/a | n/a |
+| `z-ai/glm-5.3-flash` | `gmicloud/fp8` | GMICloud | 67% | 74% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

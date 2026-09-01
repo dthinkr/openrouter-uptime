@@ -102,21 +102,33 @@ def rows_from(snap: dict) -> list[dict]:
     return rows
 
 
-def build_history(snapshots: list[dict]):
-    """Pure raw-to-artifact transform used by both rebuild and audit."""
-    by_day: dict[str, list[dict]] = defaultdict(list)
-    incidents, last_seen, latest = [], {}, None
-    previous_snapshot_ts = None
-    latest_transition_count = 0
-    for snap in snapshots:
-        before = len(incidents)
+class History:
+    """Replays raw snapshots in order and accumulates the stateful artifacts.
+
+    One snapshot at a time: feed() returns that snapshot's derived rows and
+    advances incidents / last_seen / latest. Holding every snapshot in memory
+    at once is what took the daily audit past the runner's RAM -- it was
+    killed four days running once the archive passed ~2,500 snapshots -- and
+    the state that actually has to persist between snapshots is a few
+    thousand rows.
+    """
+
+    def __init__(self) -> None:
+        self.incidents: list[dict] = []
+        self.last_seen: dict = {}
+        self.latest = None
+        self.latest_transition_count = 0
+        self.previous_snapshot_ts = None
+
+    def feed(self, snap: dict) -> list[dict]:
+        before = len(self.incidents)
         rows = rows_from(snap)
-        by_day[snap["generated"][:10]].extend(rows)
         current = {(r["model"], r["endpoint_id"] or r["endpoint_tag"]
                     or f"provider:{r['provider']}"): r
                    for r in rows}
         ambiguous_groups = {(r["model"], r["endpoint_tag"]) for r in rows
                             if r.get("identity_ambiguous")}
+        last_seen = self.last_seen
         for key, old in list(last_seen.items()):
             if (old["model"], old.get("endpoint_tag")) in ambiguous_groups:
                 del last_seen[key]
@@ -128,8 +140,9 @@ def build_history(snapshots: list[dict]):
                     and old["state"] != row["state"] \
                     and "down" in (old["state"], row["state"]):
                 previous_ts = old["ts"]
-                gap = bool(previous_snapshot_ts and previous_ts != previous_snapshot_ts)
-                incidents.append({
+                gap = bool(self.previous_snapshot_ts
+                           and previous_ts != self.previous_snapshot_ts)
+                self.incidents.append({
                     "ts": row["ts"], "model": row["model"],
                     "provider": row["provider"], "endpoint_tag": row["endpoint_tag"],
                     "endpoint_id": row["endpoint_id"],
@@ -145,10 +158,26 @@ def build_history(snapshots: list[dict]):
                 })
             if row["state"] in STABLE:
                 last_seen[key] = row
-        previous_snapshot_ts = snap["generated"]
-        latest = (snap, rows)
-        latest_transition_count = len(incidents) - before
-    return by_day, incidents, last_seen, latest, latest_transition_count
+        self.previous_snapshot_ts = snap["generated"]
+        self.latest = (snap, rows)
+        self.latest_transition_count = len(self.incidents) - before
+        return rows
+
+
+def build_history(snapshots):
+    """Pure raw-to-artifact transform; History is the streaming form of it."""
+    history, by_day = History(), defaultdict(list)
+    for snap in snapshots:
+        by_day[snap["generated"][:10]].extend(history.feed(snap))
+    return (by_day, history.incidents, history.last_seen, history.latest,
+            history.latest_transition_count)
+
+
+def iter_snapshots(paths):
+    """Decode raw archives one at a time, in the order given."""
+    for path in paths:
+        with gzip.open(path, "rt") as f:
+            yield json.load(f)
 
 
 def last_seen_payload(last_seen: dict, generated: str) -> dict:
@@ -183,28 +212,39 @@ def main() -> None:
     paths = sorted(RAW.glob("*/*.json.gz"))
     if not paths:
         raise SystemExit("no raw archives")
-    snapshots = []
-    for path in paths:
-        with gzip.open(path, "rt") as f:
-            snapshots.append(json.load(f))
-    by_day, incidents, last_seen, latest, transition_count = build_history(snapshots)
-
     DERIVED.mkdir(exist_ok=True)
-    for day, rows in sorted(by_day.items()):
-        out = DERIVED / f"{day}.csv"
-        with open(out, "w", newline="", encoding="utf-8") as f:
+
+    def flush(day: str, rows: list[dict]) -> None:
+        with open(DERIVED / f"{day}.csv", "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=FIELDS)
             w.writeheader(); w.writerows(rows)
 
+    # A day's CSV is written as soon as the archive moves past that day. The
+    # archive directory is the snapshot's own date, so sorted paths visit each
+    # day exactly once; the guard turns any exception to that into a loud
+    # failure instead of a silently overwritten day.
+    history, day, buffered, total, seen_days = History(), None, [], 0, set()
+    for snap in iter_snapshots(paths):
+        this_day = snap["generated"][:10]
+        if this_day != day:
+            if day is not None:
+                flush(day, buffered); buffered = []
+            if this_day in seen_days:
+                raise SystemExit(f"raw archive revisits {this_day} out of order")
+            seen_days.add(this_day); day = this_day
+        rows = history.feed(snap)
+        buffered.extend(rows); total += len(rows)
+    flush(day, buffered)
+
     STATUS.mkdir(exist_ok=True)
     (STATUS / "incidents.jsonl").write_text(
-        "".join(json.dumps(x) + "\n" for x in incidents))
+        "".join(json.dumps(x) + "\n" for x in history.incidents))
     (STATUS / "last_seen.json").write_text(json.dumps(
-        last_seen_payload(last_seen, latest[0]["generated"]), indent=1))
+        last_seen_payload(history.last_seen, history.latest[0]["generated"]), indent=1))
     (STATUS / "latest.json").write_text(json.dumps(
-        latest_payload(latest, transition_count), indent=1))
-    print(f"rebuilt {len(paths)} snapshots, {sum(map(len, by_day.values()))} rows, "
-          f"{len(incidents)} transitions")
+        latest_payload(history.latest, history.latest_transition_count), indent=1))
+    print(f"rebuilt {len(paths)} snapshots, {total} rows, "
+          f"{len(history.incidents)} transitions")
 
 
 if __name__ == "__main__":

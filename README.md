@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-01T03:15:13+00:00 UTC)
+## Current status (2026-09-01T03:31:32+00:00 UTC)
 
 425 models polled, 1260 inference endpoints:
-up 737, degraded 120, down 23, idle 380.
+up 723, degraded 125, down 25, idle 387.
 
-Currently down (23):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 80% | 50% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 68% | 99% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 76% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 65% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 44% | 61% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | 68% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 37% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 60% | 68% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 82% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 75% | 35% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 65% | 92% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 32% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | 75% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 75% | 53% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 35% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 63% | 53% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 76% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 62% | 38% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 64% | n/a |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 78% | 49% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 80% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 75% | 62% |
-| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 5% | 2% |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 59% | n/a |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 75% | 77% |
-| plus 8 more | | | | |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 71% | 85% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

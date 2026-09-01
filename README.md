@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-01T15:31:14+00:00 UTC)
+## Current status (2026-09-01T15:45:45+00:00 UTC)
 
 418 models polled, 1254 inference endpoints:
-up 726, degraded 153, down 33, idle 342.
+up 750, degraded 130, down 29, idle 345.
 
-Currently down (33):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 69% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 70% | 67% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 71% | 92% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 61% | 61% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 37% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 58% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 51% | 59% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 8% | 1% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 39% | n/a |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 34% | 18% |
-| `mistralai/mistral-large` | `mistral` | Mistral | 77% | 71% |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 56% | 40% |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 68% | 90% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 99% |
-| plus 18 more | | | | |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 63% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 100% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 55% | 43% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 6% | 0% |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 45% | 67% |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 57% | 70% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 59% | 76% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 39% | 92% |
+| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 61% | 100% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 74% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-01T14:16:34+00:00 UTC)
+## Current status (2026-09-01T14:30:42+00:00 UTC)
 
-417 models polled, 1252 inference endpoints:
-up 781, degraded 124, down 30, idle 317.
+418 models polled, 1254 inference endpoints:
+up 745, degraded 149, down 30, idle 330.
 
 Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 72% | 97% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 39% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 89% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 67% | 68% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 26% | 24% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 72% | n/a |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 54% | 80% |
-| `mistralai/mistral-large` | `mistral` | Mistral | 74% | n/a |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 61% | 89% |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 76% | 93% |
-| `mistralai/mistral-medium-3.1` | `mistral` | Mistral | 79% | 84% |
-| `moonshotai/kimi-k2.5` | `phala` | Phala | 79% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 47% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 77% | 98% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 11% | 7% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
+| `meta-llama/llama-4-maverick` | `digitalocean` | DigitalOcean | 61% | 0% |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 78% | n/a |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 40% | n/a |
+| `mistralai/mistral-large` | `mistral` | Mistral | 78% | 57% |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 59% | 66% |
+| `mistralai/mistral-large-2512` | `mistral` | Mistral | 75% | 82% |
+| `mistralai/mistral-medium-3` | `mistral/zdr` | Mistral | 79% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 38% | n/a |
 | plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,15 +85,16 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-01T07:31:05+00:00 UTC)
+## Current status (2026-09-01T07:46:36+00:00 UTC)
 
 420 models polled, 1253 inference endpoints:
-up 747, degraded 115, down 25, idle 366.
+up 738, degraded 121, down 26, idle 368.
 
-Currently down (25):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 68% | 63% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 24% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `ambient/fp4` | Ambient | 76% | 100% |
@@ -101,15 +102,14 @@ Currently down (25):
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 75% | n/a |
 | `deepseek/deepseek-v4-pro` | `venice` | Venice | 78% | 45% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 26% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 48% | 1% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | 63% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 33% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 47% | 10% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | n/a |
 | `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 47% | 42% |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 52% | n/a |
 | `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 75% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 73% | 77% |
-| plus 10 more | | | | |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

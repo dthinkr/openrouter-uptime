@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-01T09:16:13+00:00 UTC)
+## Current status (2026-09-01T09:30:59+00:00 UTC)
 
 420 models polled, 1252 inference endpoints:
-up 757, degraded 115, down 28, idle 352.
+up 747, degraded 115, down 24, idle 366.
 
-Currently down (28):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 61% | 45% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | 10% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 80% | 65% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 76% | 69% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 32% | 100% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 76% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 74% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 75% | 90% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 47% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 68% | 71% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 68% | 100% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 61% | 1% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | 75% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 51% | 58% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 85% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 62% | 100% |
-| plus 13 more | | | | |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 78% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | 100% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 55% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | n/a |
+| `mistralai/mistral-medium-3` | `mistral/zdr` | Mistral | 75% | 41% |
+| `mistralai/mistral-medium-3` | `mistral` | Mistral | 73% | n/a |
+| `mistralai/mistral-medium-3-5` | `mistral` | Mistral | 72% | 65% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 54% | 55% |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 22% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

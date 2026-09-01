@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-01T23:30:46+00:00 UTC)
+## Current status (2026-09-01T23:45:53+00:00 UTC)
 
 419 models polled, 1273 inference endpoints:
-up 795, degraded 91, down 26, idle 361.
+up 795, degraded 84, down 25, idle 369.
 
-Currently down (26):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 59% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 100% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 11% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 33% | 36% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | n/a | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | n/a | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | n/a | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 58% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 7% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | 26% |
 | `meta/muse-glimmer-30b` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 83% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 64% | 67% |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 61% | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 79% | 87% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 38% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 61% | n/a |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 59% | n/a |
+| `moonshotai/kimi-k3` | `makora` | Makora | 74% | 39% |
 | `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | n/a | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 68% | 100% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| plus 11 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

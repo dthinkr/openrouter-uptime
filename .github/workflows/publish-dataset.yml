@@ -91,7 +91,15 @@ jobs:
       #
       # Granularity is one day, because that is this workflow's schedule. It
       # catches a collector that has stopped, not one that is merely late.
+      #
+      # Runs whether or not the steps before it succeeded. For four days the
+      # audit step was OOM-killed, every later step was skipped with it, and
+      # the alarm was silent through the collector outage it exists to
+      # report. It reads coverage.json from the working tree, so it needs
+      # only the Measure step; if that one failed too, the missing file
+      # fails this step, which is still the right signal.
       - name: Alarm on stale collection
+        if: always()
         env:
           MAX_STALENESS_HOURS: "6"
         run: |

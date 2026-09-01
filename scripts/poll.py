@@ -227,15 +227,42 @@ def endpoint_fingerprint(ep) -> str:
 
 
 def make_endpoint_identities(eps) -> list[tuple[str, bool]]:
+    """Unique endpoint IDs for one model's endpoint list.
+
+    A unique tag is its own ID. Duplicate tags get a content fingerprint.
+    Duplicate fingerprints -- endpoints that agree on every descriptive field
+    and differ only in their measurements -- get an ordinal in array order on
+    top of that. Baseten published exactly this on 2026-09-01 (two
+    `baseten/fp4` rows per model, identical except for `uptime_last_1d`), and
+    raising here cost every model's readings for the whole run. The ordinal
+    is a pure function of the archived list, so the audit's raw replay
+    reproduces it; it is not stable across runs, which is what
+    `identity_ambiguous` already means and why the incident logger skips
+    those rows.
+    """
     from collections import Counter
     bases = [endpoint_base(ep) for ep in eps]
     counts = Counter(bases)
     ids = [(base, False) if counts[base] == 1
            else (f"{base}#{endpoint_fingerprint(ep)}", True)
            for base, ep in zip(bases, eps)]
-    if len(ids) != len(set(ids)):
+    return _disambiguate_ordinals(ids)
+
+
+def _disambiguate_ordinals(ids: list[tuple[str, bool]]) -> list[tuple[str, bool]]:
+    from collections import Counter
+    counts = Counter(i for i, _ in ids)
+    seen: dict[str, int] = {}
+    out = []
+    for ident, ambiguous in ids:
+        if counts[ident] == 1:
+            out.append((ident, ambiguous))
+            continue
+        seen[ident] = seen.get(ident, 0) + 1
+        out.append((f"{ident}#{seen[ident]}", True))
+    if len(out) != len(set(out)):
         raise RuntimeError("upstream endpoints cannot be uniquely fingerprinted")
-    return ids
+    return out
 
 
 def make_endpoint_ids(eps) -> list[str]:

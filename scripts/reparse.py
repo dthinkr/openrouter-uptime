@@ -49,9 +49,20 @@ def endpoint_identities(eps) -> list[tuple[str, bool]]:
         signature["supported_parameters"] = sorted(ep.get("supported_parameters") or [])
         raw = json.dumps(signature, sort_keys=True, separators=(",", ":"))
         out.append((f"{base}#{hashlib.sha256(raw.encode()).hexdigest()[:10]}", True))
-    if len(out) != len(set(out)):
+    # Endpoints that agree on every descriptive field get an ordinal in array
+    # order; see make_endpoint_identities in poll.py. Kept byte-for-byte in
+    # step with it: the audit replays raw/ through this copy.
+    counts = Counter(i for i, _ in out)
+    seen: dict[str, int] = {}
+    final = []
+    for ident, ambiguous in out:
+        if counts[ident] == 1:
+            final.append((ident, ambiguous)); continue
+        seen[ident] = seen.get(ident, 0) + 1
+        final.append((f"{ident}#{seen[ident]}", True))
+    if len(final) != len(set(final)):
         raise RuntimeError("upstream endpoints cannot be uniquely fingerprinted")
-    return out
+    return final
 
 
 def main(path: str) -> None:

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-01T19:46:33+00:00 UTC)
+## Current status (2026-09-01T20:00:55+00:00 UTC)
 
 419 models polled, 1270 inference endpoints:
-up 767, degraded 106, down 24, idle 373.
+up 754, degraded 111, down 33, idle 372.
 
-Currently down (24):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 71% | 87% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 54% | 74% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 73% | 75% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 74% | 81% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 74% | 81% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 64% | 100% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 5% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | n/a |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 53% | 55% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 77% |
-| `openai/gpt-oss-120b` | `together` | Together | 80% | 71% |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 74% | 68% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 38% | n/a |
-| plus 9 more | | | | |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 7% | n/a |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 78% | 83% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 7% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 78% | 83% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 7% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 78% | 83% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 78% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 4% | 0% |
+| `meta/muse-glimmer-30b` | `parasail/bf16` | Parasail | 0% | 0% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 59% | 54% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 79% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 53% | 73% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

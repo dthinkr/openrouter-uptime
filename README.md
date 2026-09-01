@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-01T14:45:42+00:00 UTC)
+## Current status (2026-09-01T15:00:56+00:00 UTC)
 
 418 models polled, 1254 inference endpoints:
-up 746, degraded 146, down 28, idle 334.
+up 723, degraded 158, down 27, idle 346.
 
-Currently down (28):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 77% | 57% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 69% | 92% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 50% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 14% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | n/a |
-| `meta-llama/llama-4-maverick` | `digitalocean` | DigitalOcean | 15% | 100% |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 41% | 42% |
-| `mistralai/mistral-large` | `mistral` | Mistral | 58% | 29% |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 50% | 17% |
-| `mistralai/mistral-large-2512` | `mistral` | Mistral | 80% | 73% |
-| `mistralai/mistral-medium-3` | `mistral` | Mistral | 77% | n/a |
-| `mistralai/mistral-medium-3.1` | `mistral` | Mistral | 75% | 66% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 48% | n/a |
-| `openai/gpt-5.5` | `azure/us` | Azure | 53% | 31% |
-| plus 13 more | | | | |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 83% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | 67% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | 49% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 79% | 100% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 32% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | 28% |
+| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 64% | 94% |
+| `mistralai/mistral-large` | `mistral` | Mistral | 59% | n/a |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 56% | 98% |
+| `mistralai/mistral-medium-3.1` | `mistral` | Mistral | 72% | n/a |
+| `openai/gpt-5.5` | `azure/us` | Azure | 35% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 67% | 91% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

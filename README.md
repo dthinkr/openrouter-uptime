@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-01T23:45:53+00:00 UTC)
+## Current status (2026-09-02T00:01:34+00:00 UTC)
 
 419 models polled, 1273 inference endpoints:
-up 795, degraded 84, down 25, idle 369.
+up 778, degraded 92, down 25, idle 378.
 
 Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | 45% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | n/a | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | n/a | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 58% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 7% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | 26% |
-| `meta/muse-glimmer-30b` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 38% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 61% | n/a |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 59% | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 74% | 39% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 76% | 70% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 74% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 3% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
+| `meta/muse-glimmer-30b` | `parasail/bf16` | Parasail | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 77% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 62% | n/a |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 57% | n/a |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 57% | n/a |
 | `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | n/a | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 79% | 70% |
 | plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

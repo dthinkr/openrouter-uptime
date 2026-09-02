@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-02T20:30:58+00:00 UTC)
+## Current status (2026-09-02T20:46:33+00:00 UTC)
 
 425 models polled, 1282 inference endpoints:
-up 795, degraded 98, down 30, idle 359.
+up 785, degraded 104, down 24, idle 369.
 
-Currently down (30):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-sonnet-4.6` | `anthropic` | Anthropic | 78% | 64% |
+| `anthropic/claude-sonnet-4.6` | `anthropic` | Anthropic | 67% | 80% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 78% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 44% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 44% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 44% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 74% | 71% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 78% | 87% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 60% | 65% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 34% | 0% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 76% | 99% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 100% |
-| `moonshotai/kimi-k2.5` | `phala` | Phala | 68% | 51% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| plus 15 more | | | | |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 17% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 17% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 60% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 78% | 100% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 29% | 3% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 66% |
+| `moonshotai/kimi-k2.5` | `phala` | Phala | 62% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 53% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 75% | 67% |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

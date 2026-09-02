@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-02T21:01:20+00:00 UTC)
+## Current status (2026-09-02T21:16:23+00:00 UTC)
 
 425 models polled, 1282 inference endpoints:
-up 779, degraded 113, down 23, idle 367.
+up 790, degraded 110, down 16, idle 366.
 
-Currently down (23):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-sonnet-4.6` | `anthropic` | Anthropic | 78% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 57% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 43% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | 83% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 6% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 35% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 67% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 78% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 67% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 72% | 52% |
-| `openai/gpt-5.6-sol` | `openai/fast` | OpenAI | 79% | 100% |
-| `openai/gpt-5.6-sol-pro` | `openai/fast` | OpenAI | 76% | n/a |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 45% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 40% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 50% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 61% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 3% | 2% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 91% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 73% | 89% |
 | `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 69% | n/a |
-| plus 8 more | | | | |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 43% | 29% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 73% | 50% |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 68% | n/a |
+| `z-ai/glm-5.2` | `baidu/fp8` | Baidu | 74% | 74% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

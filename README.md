@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-02T00:01:34+00:00 UTC)
+## Current status (2026-09-02T00:15:27+00:00 UTC)
 
-419 models polled, 1273 inference endpoints:
-up 778, degraded 92, down 25, idle 378.
+419 models polled, 1272 inference endpoints:
+up 763, degraded 99, down 30, idle 380.
 
-Currently down (25):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | 45% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 51% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 76% | 70% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 74% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 3% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
-| `meta/muse-glimmer-30b` | `parasail/bf16` | Parasail | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 77% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 62% | n/a |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 57% | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 57% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 67% | 51% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 4% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 64% | 59% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 4% | 2% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 76% | 55% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 83% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 39% | n/a |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 54% | n/a |
 | `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | n/a | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 74% | 99% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 79% | 70% |
-| plus 10 more | | | | |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

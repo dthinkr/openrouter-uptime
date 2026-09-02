@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-02T20:16:32+00:00 UTC)
+## Current status (2026-09-02T20:30:58+00:00 UTC)
 
 425 models polled, 1282 inference endpoints:
-up 764, degraded 126, down 29, idle 363.
+up 795, degraded 98, down 30, idle 359.
 
-Currently down (29):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `anthropic/claude-sonnet-4.6` | `anthropic` | Anthropic | 78% | 64% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 78% | 76% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 78% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 75% | 100% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 38% | 73% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 43% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 38% | 73% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 69% | 79% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 5% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 24% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 59% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 44% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 44% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/us` | Google | 44% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 74% | 71% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 78% | 87% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 60% | 65% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 34% | 0% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 76% | 99% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 100% |
+| `moonshotai/kimi-k2.5` | `phala` | Phala | 68% | 51% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 64% | 20% |
-| `moonshotai/kimi-k3` | `baseten/fp8` | BaseTen | 78% | 78% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 73% | n/a |
-| plus 14 more | | | | |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

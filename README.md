@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-02T18:01:43+00:00 UTC)
+## Current status (2026-09-02T18:16:24+00:00 UTC)
 
 423 models polled, 1280 inference endpoints:
-up 769, degraded 135, down 17, idle 359.
+up 769, degraded 135, down 20, idle 356.
 
-Currently down (17):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 46% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 67% | 94% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 18% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 11% | 8% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 68% |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 18% | 29% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 52% | 57% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 79% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 48% | 90% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 64% | 100% |
+| `google/gemma-4-31b-it` | `phala` | Phala | 32% | 5% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 16% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 77% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 31% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 60% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 77% | 57% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 77% | 61% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 70% | 85% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 75% | 51% |
-| `z-ai/glm-5.2` | `crusoe/fp8` | Crusoe | 4% | n/a |
-| plus 2 more | | | | |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 59% | n/a |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 79% | n/a |
+| `thinkingmachines/inkling-small` | `together` | Together | 72% | 12% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

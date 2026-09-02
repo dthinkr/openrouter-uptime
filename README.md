@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-02T21:16:23+00:00 UTC)
+## Current status (2026-09-02T21:31:32+00:00 UTC)
 
 425 models polled, 1282 inference endpoints:
-up 790, degraded 110, down 16, idle 366.
+up 795, degraded 103, down 22, idle 362.
 
-Currently down (16):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 45% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 40% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 50% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 61% | n/a |
-| `google/gemma-4-31b-it` | `phala` | Phala | 3% | 2% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 91% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 73% | 89% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 69% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 78% | 73% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 51% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 1% | 1% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 73% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | 39% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 45% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 77% | 75% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 54% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 76% | 80% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | 75% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 43% | 29% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 73% | 50% |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 68% | n/a |
-| `z-ai/glm-5.2` | `baidu/fp8` | Baidu | 74% | 74% |
-| plus 1 more | | | | |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 65% | 58% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

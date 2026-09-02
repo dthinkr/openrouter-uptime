@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-02T11:00:21+00:00 UTC)
+## Current status (2026-09-02T11:15:38+00:00 UTC)
 
 421 models polled, 1274 inference endpoints:
-up 803, degraded 94, down 28, idle 349.
+up 778, degraded 103, down 27, idle 366.
 
-Currently down (28):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 67% | 100% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 72% | 77% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | 14% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 80% | 100% |
-| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 67% | 100% |
-| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 64% | 100% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 79% | 98% |
+| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 54% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 61% | 100% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 55% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 94% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 100% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 10% | 1% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 44% | n/a |
-| `mistralai/mistral-large` | `mistral/zdr` | Mistral | 69% | 82% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 73% | 64% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 60% |
-| plus 13 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 50% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 69% | 62% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 33% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | n/a |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 66% | 75% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 68% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 64% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

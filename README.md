@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-02T02:45:33+00:00 UTC)
+## Current status (2026-09-02T03:01:19+00:00 UTC)
 
 420 models polled, 1273 inference endpoints:
-up 736, degraded 110, down 26, idle 401.
+up 738, degraded 109, down 22, idle 404.
 
-Currently down (26):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `streamlake` | StreamLake | 25% | n/a |
+| `deepseek/deepseek-chat` | `streamlake` | StreamLake | 62% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 42% | 78% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 30% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 58% | 53% |
-| `google/gemma-4-31b-it` | `phala` | Phala | 22% | 2% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 73% | 78% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 55% |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 65% | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 50% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 44% | 36% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 33% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | n/a |
+| `google/gemma-4-31b-it` | `phala` | Phala | 3% | 1% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 54% | 51% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8` | DeepInfra | 72% | 63% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 87% |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 64% | n/a |
+| `moonshotai/kimi-k3` | `makora` | Makora | 55% | n/a |
 | `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | 0% | n/a |
-| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 47% | n/a |
-| `openai/gpt-oss-120b` | `together` | Together | 71% | 100% |
+| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 75% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| plus 11 more | | | | |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

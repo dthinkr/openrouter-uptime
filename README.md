@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-03T16:15:55+00:00 UTC)
+## Current status (2026-09-03T16:31:20+00:00 UTC)
 
 424 models polled, 1280 inference endpoints:
-up 774, degraded 137, down 20, idle 349.
+up 781, degraded 133, down 22, idle 344.
 
-Currently down (20):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-sonnet-4.5` | `anthropic` | Anthropic | 67% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global` | Google | 78% | 77% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 44% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | 87% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 51% | 57% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 50% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 19% | n/a |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 10% | 11% |
-| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | 0% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 67% | 41% |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 62% | n/a |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 60% | n/a |
-| plus 5 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global` | Google | 77% | 75% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | 64% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 58% | 82% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 42% | 30% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 53% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 51% | 68% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 13% | 39% |
+| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | 0% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 57% | 45% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 50% | 77% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 60% | 100% |
+| `openai/gpt-oss-120b` | `together` | Together | 76% | 69% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

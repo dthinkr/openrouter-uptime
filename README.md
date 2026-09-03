@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-03T15:16:30+00:00 UTC)
+## Current status (2026-09-03T15:30:50+00:00 UTC)
 
 424 models polled, 1279 inference endpoints:
-up 755, degraded 148, down 33, idle 343.
+up 748, degraded 149, down 36, idle 346.
 
-Currently down (33):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 79% | 99% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global` | Google | 79% | 75% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 44% | 67% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 88% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 77% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 41% | n/a |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 33% | 23% |
+| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 80% | 34% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | 1% |
+| `google/gemini-3-flash-preview` | `google-vertex/global` | Google | 75% | 75% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 54% | 81% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 40% | 37% |
+| `mistralai/mistral-medium-3` | `mistral` | Mistral | 71% | 72% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 71% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 55% | n/a |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 20% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `phala` | Phala | 53% | n/a |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| plus 18 more | | | | |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-03T23:31:23+00:00 UTC)
+## Current status (2026-09-03T23:46:10+00:00 UTC)
 
-425 models polled, 1283 inference endpoints:
-up 800, degraded 108, down 15, idle 360.
+425 models polled, 1284 inference endpoints:
+up 792, degraded 105, down 15, idle 372.
 
 Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 49% | 51% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 80% | 98% |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 68% | 82% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | 4% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 46% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 46% | 29% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 63% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 38% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 84% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 67% | 99% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 85% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | 38% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 99% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 63% | 12% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 25% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 73% |
+| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 80% | n/a |
-| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 78% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 65% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `z-ai/glm-5.2` | `mistral` | Mistral | 70% | 56% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

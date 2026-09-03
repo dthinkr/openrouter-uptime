@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-03T15:30:50+00:00 UTC)
+## Current status (2026-09-03T15:45:26+00:00 UTC)
 
-424 models polled, 1279 inference endpoints:
-up 748, degraded 149, down 36, idle 346.
+424 models polled, 1280 inference endpoints:
+up 768, degraded 125, down 37, idle 350.
 
-Currently down (36):
+Currently down (37):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
+| `anthropic/claude-sonnet-4.5` | `anthropic` | Anthropic | 72% | 25% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 69% | 41% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 80% | 34% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | 1% |
-| `google/gemini-3-flash-preview` | `google-vertex/global` | Google | 75% | 75% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 54% | 81% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 40% | 37% |
-| `mistralai/mistral-medium-3` | `mistral` | Mistral | 71% | 72% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 71% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 55% | n/a |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 20% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| plus 21 more | | | | |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 65% | 19% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global` | Google | 75% | 80% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 68% | 42% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 98% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 59% | 46% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 41% | 47% |
+| `mistralai/mistral-medium-3` | `mistral/zdr` | Mistral | 76% | 71% |
+| `mistralai/mistral-medium-3` | `mistral` | Mistral | 78% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 45% |
+| plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

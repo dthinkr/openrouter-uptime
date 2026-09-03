@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-03T21:01:04+00:00 UTC)
+## Current status (2026-09-03T21:15:46+00:00 UTC)
 
 425 models polled, 1284 inference endpoints:
-up 804, degraded 97, down 31, idle 352.
+up 812, degraded 94, down 26, idle 352.
 
-Currently down (31):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 6% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 79% | 57% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 56% | 60% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 67% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | 1% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 44% | 23% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 35% | 49% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 36% | 37% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 79% |
-| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 69% | 93% |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 66% | 92% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 37% | 29% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 34% | 77% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 39% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 37% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 51% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 77% | 31% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-5.6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 59% | 100% |
+| `openai/gpt-5.6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 74% | 100% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| plus 16 more | | | | |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

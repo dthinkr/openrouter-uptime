@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-03T22:00:40+00:00 UTC)
+## Current status (2026-09-03T22:15:46+00:00 UTC)
 
 425 models polled, 1284 inference endpoints:
-up 799, degraded 101, down 23, idle 361.
+up 791, degraded 104, down 22, idle 367.
 
-Currently down (23):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 2% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 74% | 52% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 76% | 70% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 39% | 33% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 15% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 75% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | 52% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 39% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 70% | 66% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 76% | 59% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 26% | 9% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 37% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 24% | 13% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 41% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | 100% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 76% | 80% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 26% | n/a |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 45% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 75% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 59% | n/a |
-| plus 8 more | | | | |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

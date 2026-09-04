@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-04T04:45:22+00:00 UTC)
+## Current status (2026-09-04T05:00:59+00:00 UTC)
 
 427 models polled, 1287 inference endpoints:
-up 782, degraded 90, down 33, idle 382.
+up 768, degraded 86, down 36, idle 397.
 
-Currently down (33):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | 24% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 59% | 91% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 78% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 21% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 74% | 99% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 58% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 7% | n/a |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 72% | 84% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 5% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 74% | 74% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 7% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 72% | 84% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | 3% |
-| `google/gemma-4-31b-it` | `modelrun/fp4` | ModelRun | 64% | 56% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | 72% |
-| plus 18 more | | | | |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 80% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 79% | 83% |
+| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 77% | 76% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 63% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 6% | n/a |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 76% | 80% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 6% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 78% | 83% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 6% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 78% | 83% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

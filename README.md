@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-04T21:15:46+00:00 UTC)
+## Current status (2026-09-04T21:31:35+00:00 UTC)
 
-429 models polled, 1295 inference endpoints:
-up 783, degraded 101, down 18, idle 393.
+431 models polled, 1297 inference endpoints:
+up 785, degraded 101, down 14, idle 397.
 
-Currently down (18):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 30% | 95% |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 72% | 86% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 33% | 38% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 27% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 36% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | 66% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 98% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 70% | 81% |
-| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 61% | 26% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 33% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | n/a |
+| `moonshotai/kimi-k3` | `makora` | Makora | 56% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 27% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 78% | n/a |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | n/a | n/a |
-| `xiaomi/mimo-v2.5-pro` | `novita` | Novita | 29% | 23% |
-| plus 3 more | | | | |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 62% | 51% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 60% | 97% |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 78% | 99% |
+| `xiaomi/mimo-v2.5-pro` | `novita` | Novita | 27% | 6% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

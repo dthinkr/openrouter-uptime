@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-03T23:46:10+00:00 UTC)
+## Current status (2026-09-04T00:01:20+00:00 UTC)
 
-425 models polled, 1284 inference endpoints:
-up 792, degraded 105, down 15, idle 372.
+426 models polled, 1285 inference endpoints:
+up 777, degraded 101, down 23, idle 384.
 
-Currently down (15):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 80% | 98% |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 68% | 82% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 85% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | 38% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 99% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 63% | 12% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 25% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 32% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 73% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 66% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 34% | 74% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 38% | 30% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 31% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 100% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `z-ai/glm-5.2` | `mistral` | Mistral | 70% | 56% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 78% | 60% |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 68% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 73% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 71% | 34% |
+| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 78% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

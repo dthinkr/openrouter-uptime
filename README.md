@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-04T03:46:11+00:00 UTC)
+## Current status (2026-09-04T04:01:38+00:00 UTC)
 
 427 models polled, 1287 inference endpoints:
-up 756, degraded 102, down 36, idle 393.
+up 749, degraded 108, down 33, idle 397.
 
-Currently down (36):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 28% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 68% | 100% |
-| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 71% | n/a |
-| `deepseek/deepseek-v4-flash` | `nextbit/fp8` | NextBit | 80% | 6% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 73% | 95% |
-| `deepseek/deepseek-v4-flash-0731` | `nextbit/fp8` | NextBit | 79% | 76% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | 29% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 62% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 68% | n/a |
+| `deepseek/deepseek-v4-flash` | `nextbit/fp8` | NextBit | 64% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 77% | 99% |
+| `deepseek/deepseek-v4-flash-0731` | `nextbit/fp8` | NextBit | 72% | 100% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `nextbit/fp8` | NextBit | 80% | 5% |
-| `deepseek/deepseek-v4-pro-0813` | `nextbit/fp8` | NextBit | 79% | 2% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 66% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 8% | n/a |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 76% | 91% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 8% | n/a |
-| plus 21 more | | | | |
+| `deepseek/deepseek-v4-pro` | `nextbit/fp8` | NextBit | 61% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `nextbit/fp8` | NextBit | 47% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | 68% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 9% | 12% |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 73% | 73% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 9% | 12% |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 73% | 73% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

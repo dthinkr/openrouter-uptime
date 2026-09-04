@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-04T22:45:11+00:00 UTC)
+## Current status (2026-09-04T23:01:06+00:00 UTC)
 
 431 models polled, 1296 inference endpoints:
-up 810, degraded 60, down 17, idle 409.
+up 802, degraded 75, down 16, idle 403.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 38% | 53% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 47% | 46% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 18% | 1% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 49% | 32% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 47% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 69% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 56% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | 98% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 2% | 1% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | 32% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | 69% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 85% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 50% | 99% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 76% | 99% |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 79% | 98% |
-| plus 2 more | | | | |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `deepinfra/fp4` | DeepInfra | 51% | 19% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 60% | 31% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 80% | 79% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

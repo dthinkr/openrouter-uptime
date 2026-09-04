@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-04T00:16:37+00:00 UTC)
+## Current status (2026-09-04T00:30:26+00:00 UTC)
 
 426 models polled, 1285 inference endpoints:
-up 783, degraded 97, down 25, idle 380.
+up 781, degraded 106, down 26, idle 372.
 
-Currently down (25):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 71% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 84% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 35% | 27% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 74% |
-| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 52% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 13% | 7% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 68% | 89% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 28% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 62% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 37% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 36% |
+| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 83% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 77% | 97% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 64% | 61% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 71% | 90% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 47% | 21% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 17% | 3% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 59% | 60% |
-| plus 10 more | | | | |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 55% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 67% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

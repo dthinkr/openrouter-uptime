@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-04T21:31:35+00:00 UTC)
+## Current status (2026-09-04T21:46:37+00:00 UTC)
 
 431 models polled, 1297 inference endpoints:
-up 785, degraded 101, down 14, idle 397.
+up 788, degraded 96, down 23, idle 390.
 
-Currently down (14):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 33% | 38% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 33% | 35% |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 75% | 62% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 61% | 26% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 33% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 62% | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 56% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 24% | 2% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 15% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | 79% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 48% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
+| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 79% | 74% |
+| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
 | `openai/gpt-5.4` | `openai/flex` | OpenAI | 27% | n/a |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 62% | 51% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 60% | 97% |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 78% | 99% |
-| `xiaomi/mimo-v2.5-pro` | `novita` | Novita | 27% | 6% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | n/a |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 21% | 15% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 18% | 3% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

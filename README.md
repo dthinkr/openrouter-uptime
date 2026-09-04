@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-04T22:01:13+00:00 UTC)
+## Current status (2026-09-04T22:15:20+00:00 UTC)
 
 431 models polled, 1297 inference endpoints:
-up 783, degraded 88, down 22, idle 404.
+up 778, degraded 92, down 24, idle 403.
 
-Currently down (22):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 31% | 23% |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 62% | 49% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 31% | 37% |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 72% | 87% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 14% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 14% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 97% |
-| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 77% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 56% | 51% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | 61% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 91% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 15% | 19% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 70% | 39% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 15% | n/a |
-| `qwen/qwen3.5-9b` | `together` | Together | 42% | 30% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 21% | 12% |
-| plus 7 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 26% | 36% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 63% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 11% | n/a |
+| `qwen/qwen3.5-9b` | `together` | Together | 27% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

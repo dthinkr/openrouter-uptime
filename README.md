@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-05T09:01:03+00:00 UTC)
+## Current status (2026-09-05T09:15:52+00:00 UTC)
 
 431 models polled, 1298 inference endpoints:
-up 844, degraded 90, down 16, idle 348.
+up 852, degraded 88, down 21, idle 337.
 
-Currently down (16):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 70% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 78% | 90% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | 4% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 69% | 70% |
-| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 78% | 100% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 71% | 58% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 73% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 18% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 31% | 47% |
+| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 72% | n/a |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 69% | 90% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 76% | 72% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 85% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 79% | n/a |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 65% | 89% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 72% | 92% |
+| `openai/gpt-oss-120b` | `together` | Together | 69% | 9% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 76% | 75% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 7% | n/a |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 59% | 94% |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 65% | 86% |
-| plus 1 more | | | | |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 58% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

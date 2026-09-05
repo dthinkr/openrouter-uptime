@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-05T12:00:51+00:00 UTC)
+## Current status (2026-09-05T12:15:20+00:00 UTC)
 
 431 models polled, 1298 inference endpoints:
-up 783, degraded 92, down 19, idle 404.
+up 773, degraded 87, down 27, idle 411.
 
-Currently down (19):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 73% | 60% |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 74% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | 2% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 75% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 59% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 76% | 68% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 74% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | 9% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 2% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 68% | 56% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 72% | n/a |
+| `meta-llama/llama-4-scout` | `google-vertex/us-east5` | Google | 66% | 100% |
+| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 79% | n/a |
+| `moonshotai/kimi-k3` | `makora` | Makora | 77% | 42% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 50% | 45% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 28% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 61% | 41% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 54% | n/a |
-| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 68% | n/a |
-| plus 4 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 55% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

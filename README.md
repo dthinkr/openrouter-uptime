@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-05T22:30:17+00:00 UTC)
+## Current status (2026-09-05T22:46:31+00:00 UTC)
 
 431 models polled, 1296 inference endpoints:
-up 768, degraded 95, down 25, idle 408.
+up 776, degraded 90, down 14, idle 416.
 
-Currently down (25):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 78% | 75% |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 79% | 91% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | 10% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 29% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 59% | 90% |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 60% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 38% | 33% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 59% | n/a |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 58% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 51% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 46% | n/a |
-| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 79% | n/a |
-| plus 10 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 18% | 60% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 99% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 57% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | 60% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 30% | 43% |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 74% | 37% |
+| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 2% | n/a |
+| `z-ai/glm-5.3` | `decart/fp4` | Decart | 39% | n/a |
+| `z-ai/glm-5.3` | `wafer` | Wafer | 39% | n/a |
+| `z-ai/glm-5.3` | `phala` | Phala | 77% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

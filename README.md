@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-05T16:46:04+00:00 UTC)
+## Current status (2026-09-05T17:01:01+00:00 UTC)
 
 431 models polled, 1296 inference endpoints:
-up 765, degraded 95, down 33, idle 403.
+up 774, degraded 99, down 25, idle 398.
 
-Currently down (33):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 3% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 32% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | 38% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 77% | 80% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 81% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 41% | 67% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 70% | 42% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 73% | 73% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 43% |
-| `moonshotai/kimi-k2.5` | `phala` | Phala | 70% | 89% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 42% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 54% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 72% | 93% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | n/a |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 77% | 86% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 37% | 30% |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 80% | n/a |
 | `moonshotai/kimi-k3` | `makora` | Makora | n/a | n/a |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| plus 18 more | | | | |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

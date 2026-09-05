@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-05T15:00:52+00:00 UTC)
+## Current status (2026-09-05T15:15:56+00:00 UTC)
 
 431 models polled, 1297 inference endpoints:
-up 765, degraded 98, down 40, idle 394.
+up 759, degraded 104, down 32, idle 402.
 
-Currently down (40):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 76% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `phala` | Phala | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `phala` | Phala | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 0% | 2% |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 1% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 71% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 44% | 72% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 76% | 82% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 69% | 87% |
+| `deepseek/deepseek-v4-pro-0813` | `phala` | Phala | n/a | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 42% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 55% | 14% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 97% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | 61% |
 | `meta/muse-glimmer-30b` | `phala` | Phala | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 81% |
-| `moonshotai/kimi-k2.5` | `phala` | Phala | n/a | n/a |
-| plus 25 more | | | | |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 74% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 63% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 76% | n/a |
+| `moonshotai/kimi-k3` | `makora` | Makora | 0% | n/a |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

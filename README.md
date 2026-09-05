@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-05T09:45:54+00:00 UTC)
+## Current status (2026-09-05T10:00:57+00:00 UTC)
 
 431 models polled, 1298 inference endpoints:
-up 809, degraded 100, down 18, idle 371.
+up 819, degraded 92, down 17, idle 370.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 32% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 60% | n/a |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 62% | 67% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 66% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 19% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 13% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 29% | 8% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 80% | 90% |
+| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 60% | 100% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 64% | 67% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 80% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-oss-120b` | `together` | Together | 62% | 100% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 71% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 60% | n/a |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 79% | 100% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 67% | 78% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 76% | n/a |
-| plus 3 more | | | | |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 57% | n/a |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 76% | 73% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 79% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 77% | 88% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

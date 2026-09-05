@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-05T20:15:18+00:00 UTC)
+## Current status (2026-09-05T20:30:15+00:00 UTC)
 
 431 models polled, 1296 inference endpoints:
-up 776, degraded 86, down 22, idle 412.
+up 793, degraded 83, down 17, idle 403.
 
-Currently down (22):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 72% | 85% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 30% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 26% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | 60% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 33% |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 67% | n/a |
-| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 33% |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 68% | 52% |
-| `thinkingmachines/inkling` | `together` | Together | 63% | 18% |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 64% | 50% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 70% | 8% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 76% | 64% |
-| plus 7 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 23% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 55% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 43% |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 63% | 96% |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 75% | n/a |
+| `thinkingmachines/inkling` | `together` | Together | 54% | n/a |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 66% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 46% | 99% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 71% | 63% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 81% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

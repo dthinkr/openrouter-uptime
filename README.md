@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-05T07:15:55+00:00 UTC)
+## Current status (2026-09-05T07:30:54+00:00 UTC)
 
 431 models polled, 1297 inference endpoints:
-up 785, degraded 78, down 18, idle 416.
+up 780, degraded 77, down 21, idle 419.
 
-Currently down (18):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 76% | 92% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 75% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 72% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 17% | 15% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 70% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 52% | 49% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 31% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 71% | 67% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 94% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 79% | 93% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 71% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 78% | 77% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 87% |
+| `moonshotai/kimi-k3` | `makora` | Makora | 71% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 80% | 78% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 76% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 71% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 66% | 74% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 76% | 98% |
-| plus 3 more | | | | |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

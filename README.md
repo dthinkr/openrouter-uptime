@@ -85,27 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T09:46:40+00:00 UTC)
+## Current status (2026-09-06T10:01:19+00:00 UTC)
 
 431 models polled, 1295 inference endpoints:
-up 778, degraded 92, down 12, idle 413.
+up 781, degraded 81, down 14, idle 419.
 
-Currently down (12):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 41% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 18% | 10% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 79% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 27% |
-| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 60% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 80% | 100% |
-| `openai/gpt-oss-120b` | `together` | Together | 32% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | 2% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | 73% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 81% |
+| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 58% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 69% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 45% | 24% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 58% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 51% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 75% | 100% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 72% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 53% | 56% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

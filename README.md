@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T12:16:02+00:00 UTC)
+## Current status (2026-09-06T12:30:53+00:00 UTC)
 
 431 models polled, 1295 inference endpoints:
-up 791, degraded 82, down 14, idle 408.
+up 793, degraded 82, down 18, idle 402.
 
-Currently down (14):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 65% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | 2% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 82% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 3% | 3% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 31% | 10% |
+| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 65% | 75% |
+| `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | 79% | 86% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | 67% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 42% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 68% | 63% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 71% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 69% | 86% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 59% | 90% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 56% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 63% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 54% |
-| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 28% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 46% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 72% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 45% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

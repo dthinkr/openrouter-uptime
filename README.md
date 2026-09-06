@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T22:16:10+00:00 UTC)
+## Current status (2026-09-06T22:30:55+00:00 UTC)
 
 430 models polled, 1295 inference endpoints:
-up 789, degraded 80, down 20, idle 406.
+up 807, degraded 69, down 17, idle 402.
 
-Currently down (20):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 75% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 35% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 68% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 32% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 68% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 47% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 71% | 40% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 76% | 57% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | 69% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | 2% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 31% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 78% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 76% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 60% | 81% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 66% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 77% | 100% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 74% | 32% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 77% | n/a |
-| plus 5 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 74% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 43% | 99% |
+| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 39% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 59% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T01:30:55+00:00 UTC)
+## Current status (2026-09-06T01:45:35+00:00 UTC)
 
 431 models polled, 1296 inference endpoints:
-up 778, degraded 80, down 23, idle 415.
+up 773, degraded 84, down 13, idle 426.
 
-Currently down (23):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 56% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 71% | 83% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 77% | 99% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 77% | 85% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 77% | 85% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 77% | 85% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 20% | 34% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | 3% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 47% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 71% | 99% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 22% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 4% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 63% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 54% | 37% |
-| plus 8 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 55% | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 71% | n/a |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 67% | n/a |
+| `z-ai/glm-5.3` | `decart/fp4` | Decart | 40% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

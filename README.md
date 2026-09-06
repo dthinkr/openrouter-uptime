@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T06:01:16+00:00 UTC)
+## Current status (2026-09-06T06:15:17+00:00 UTC)
 
 431 models polled, 1296 inference endpoints:
-up 749, degraded 94, down 15, idle 438.
+up 756, degraded 86, down 17, idle 437.
 
-Currently down (15):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 68% | 63% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 21% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 79% | 84% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 50% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | 5% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 79% | n/a |
+| `meta/muse-glimmer-30b` | `together` | Together | 76% | 72% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 32% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-6-astra` | `azure/us` | Azure | 79% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 82% |
+| `openai/gpt-6-astra` | `azure/us` | Azure | 72% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 52% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 70% | 97% |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 57% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 79% | 83% |
-| `z-ai/glm-5.3` | `inceptron/fp4` | Inceptron | 72% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 76% | 95% |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 69% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

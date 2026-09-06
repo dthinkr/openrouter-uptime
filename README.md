@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T03:01:03+00:00 UTC)
+## Current status (2026-09-06T03:15:23+00:00 UTC)
 
 431 models polled, 1296 inference endpoints:
-up 767, degraded 73, down 23, idle 433.
+up 765, degraded 80, down 23, idle 428.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 70% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 74% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 54% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 89% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 77% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 77% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 77% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 13% | 14% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 54% | 8% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | 77% |
-| `meta/muse-glimmer-30b` | `together` | Together | 75% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 33% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 67% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 71% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 71% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 71% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 19% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | n/a |
+| `meta/muse-glimmer-30b` | `together` | Together | 71% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 26% | 15% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 58% |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 46% | 70% |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

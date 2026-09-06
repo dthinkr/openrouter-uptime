@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T10:16:02+00:00 UTC)
+## Current status (2026-09-06T10:31:10+00:00 UTC)
 
 431 models polled, 1295 inference endpoints:
-up 787, degraded 80, down 16, idle 412.
+up 785, degraded 86, down 16, idle 408.
 
 Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 55% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 73% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | 1% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 39% |
-| `openai/gpt-6-astra` | `azure/us` | Azure | 6% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 34% | 10% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 19% |
+| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 77% | 100% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 75% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 77% | 2% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 74% | 9% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 80% | 86% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 73% | n/a |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 78% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 54% | 59% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 77% | 31% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 3% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 23% | 72% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 72% |
 | plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

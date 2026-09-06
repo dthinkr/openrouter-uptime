@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T01:01:28+00:00 UTC)
+## Current status (2026-09-06T01:16:19+00:00 UTC)
 
 431 models polled, 1296 inference endpoints:
-up 782, degraded 76, down 14, idle 424.
+up 768, degraded 81, down 23, idle 424.
 
-Currently down (14):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 69% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 75% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 89% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 78% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 78% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 78% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 26% | 27% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | 1% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 21% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 72% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 61% | 64% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 62% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-5.6-luna` | `azure/eu` | Azure | 71% | 100% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 70% | 79% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 55% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 78% | n/a |
-| `z-ai/glm-5.1` | `venice/fp8` | Venice | 75% | n/a |
-| `z-ai/glm-5.2` | `baseten/fast#877fb4ce69#1` | BaseTen | 78% | n/a |
-| `z-ai/glm-5.3` | `phala` | Phala | 77% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

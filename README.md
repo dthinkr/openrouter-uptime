@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T09:30:46+00:00 UTC)
+## Current status (2026-09-06T09:46:40+00:00 UTC)
 
-431 models polled, 1296 inference endpoints:
-up 792, degraded 84, down 16, idle 404.
+431 models polled, 1295 inference endpoints:
+up 778, degraded 92, down 12, idle 413.
 
-Currently down (16):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 79% | 99% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | 45% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 12% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 51% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 63% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 79% |
-| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 55% | n/a |
-| `openai/gpt-oss-120b` | `together` | Together | 61% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 41% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 18% | 10% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 79% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 27% |
+| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 60% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 80% | 100% |
+| `openai/gpt-oss-120b` | `together` | Together | 32% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 73% | 98% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 91% |
-| plus 1 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 45% | 24% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 58% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

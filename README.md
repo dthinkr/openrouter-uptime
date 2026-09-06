@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-06T20:46:07+00:00 UTC)
+## Current status (2026-09-06T21:01:04+00:00 UTC)
 
 430 models polled, 1295 inference endpoints:
-up 789, degraded 82, down 14, idle 410.
+up 795, degraded 74, down 18, idle 408.
 
-Currently down (14):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 77% | 98% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 74% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 53% |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 75% | 59% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 31% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 55% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 80% | 59% |
+| `meta/muse-glimmer-30b` | `together` | Together | 75% | 75% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 53% |
 | `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 67% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 69% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 65% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 65% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 57% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 70% | 62% |
+| `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 59% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 47% | n/a |
+| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 77% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

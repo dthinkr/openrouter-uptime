@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-07T01:30:45+00:00 UTC)
+## Current status (2026-09-07T01:45:28+00:00 UTC)
 
 430 models polled, 1296 inference endpoints:
-up 756, degraded 97, down 12, idle 431.
+up 769, degraded 93, down 17, idle 417.
 
-Currently down (12):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 58% | 72% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 10% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 74% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 65% | 69% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 76% | n/a |
-| `openai/gpt-oss-120b` | `together` | Together | 49% | 100% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 53% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 26% | 11% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 85% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 16% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 10% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 67% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 68% | n/a |
+| `moonshotai/kimi-k2.5` | `phala` | Phala | 72% | n/a |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 50% | 40% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 77% | 63% |
+| `openai/gpt-oss-120b` | `together` | Together | 30% | n/a |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | 0% |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 72% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 61% |
-| `z-ai/glm-5.1` | `venice/fp8` | Venice | 70% | 78% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 67% | 81% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-07T08:00:14+00:00 UTC)
+## Current status (2026-09-07T08:16:27+00:00 UTC)
 
-430 models polled, 1298 inference endpoints:
-up 783, degraded 109, down 33, idle 373.
+430 models polled, 1299 inference endpoints:
+up 794, degraded 112, down 22, idle 371.
 
-Currently down (33):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 87% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 79% | 98% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 54% | 53% |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 55% | 58% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 57% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 12% | n/a |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 78% | 89% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 12% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 78% | 88% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 12% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 78% | 89% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | 6% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 69% | 57% |
-| plus 18 more | | | | |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 75% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 51% | 55% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | 14% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 3% | 1% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 18% | 98% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 74% | 73% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 57% | 54% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 18% |
+| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 72% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

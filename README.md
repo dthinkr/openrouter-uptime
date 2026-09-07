@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-07T22:46:40+00:00 UTC)
+## Current status (2026-09-07T23:00:51+00:00 UTC)
 
 428 models polled, 1295 inference endpoints:
-up 788, degraded 97, down 23, idle 387.
+up 793, degraded 91, down 21, idle 390.
 
-Currently down (23):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 29% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 33% | 32% |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 78% | 82% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 49% | 52% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 21% | 16% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 58% | 52% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 35% | 100% |
-| `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | 69% | 43% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 53% | 57% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 41% |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 73% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 63% | 59% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 70% | 91% |
-| plus 8 more | | | | |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 1% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 59% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 18% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 75% | 57% |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 74% | n/a |
+| `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | 64% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 54% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 53% |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 71% | n/a |
+| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | 0% | 0% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 64% | 90% |
+| `openai/gpt-6-astra-pro` | `azure/us` | Azure | 70% | 73% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

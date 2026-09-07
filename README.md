@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-07T01:00:11+00:00 UTC)
+## Current status (2026-09-07T01:15:56+00:00 UTC)
 
 430 models polled, 1296 inference endpoints:
-up 776, degraded 72, down 18, idle 430.
+up 776, degraded 76, down 19, idle 425.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 49% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 44% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | 30% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 68% | 100% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 77% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 60% |
-| `nousresearch/hermes-4-70b` | `nebius/fp8` | Nebius | 0% | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 73% | 36% |
-| `openai/gpt-oss-120b` | `together` | Together | 64% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 55% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 8% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 48% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 1% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | n/a |
+| `meta-llama/llama-3.1-8b-instruct` | `deepinfra/fp8` | DeepInfra | 73% | 89% |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | 50% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 71% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 58% | n/a |
+| `openai/gpt-oss-120b` | `phala` | Phala | 79% | 89% |
+| `openai/gpt-oss-120b` | `together` | Together | 70% | 42% |
 | `openai/gpt-oss-20b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 78% | 78% |
-| `qwen/qwen3.8-27b` | `reka/fp8` | Reka | 62% | n/a |
-| plus 3 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 77% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

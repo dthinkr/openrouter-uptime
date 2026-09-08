@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-08T15:31:13+00:00 UTC)
+## Current status (2026-09-08T15:46:23+00:00 UTC)
 
-426 models polled, 1291 inference endpoints:
-up 748, degraded 135, down 54, idle 354.
+429 models polled, 1295 inference endpoints:
+up 745, degraded 140, down 53, idle 357.
 
-Currently down (54):
+Currently down (53):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | 55% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 67% | 66% |
-| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 8% | 24% |
-| `deepseek/deepseek-v4-flash-0731` | `reka/fp4` | Reka | 69% | 93% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 68% | 94% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 73% | 99% |
-| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 55% | 60% |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 32% | 66% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 53% | 74% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 63% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 16% | 35% |
+| `deepseek/deepseek-v4-flash-0731` | `gmicloud/fp8` | GMICloud | 56% | 52% |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 69% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 77% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 10% | 13% |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 65% | 71% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 10% | 13% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 65% | 71% |
-| plus 39 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 76% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 17% | 32% |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 69% | 80% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 17% | 32% |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 69% | 80% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 17% | 32% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 69% | 80% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
+| plus 38 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-08-24 09:30** — **3 models removed from the catalog in one poll**: `inclusionai/ling-2.6-1t`, `inclusionai/ling-2.6-flash`, `inclusionai/ring-2.6-1t`.
 - **2026-08-24 13:15** — **3 models removed from the catalog in one poll**: `nvidia/nemotron-3-nano-30b-a3b:free`, `nvidia/nemotron-nano-12b-v2-vl:free`, `nvidia/nemotron-nano-9b-v2:free`.
 - **2026-08-28 02:46** — **35 models removed from the catalog in one poll**: `openai/gpt-3.5-turbo:batch`, `openai/gpt-4-turbo:batch`, `openai/gpt-4.1-mini:batch`, `openai/gpt-4.1-nano:batch`, `openai/gpt-4.1:batch`, `openai/gpt-4o-mini:batch`, `openai/gpt-4o:batch`, `openai/gpt-5-codex:batch`, +27 more.
 - **2026-08-28 08:16** — **6 models added to the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3-5:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-08-31 19:31** — **10 models added to the catalog in one poll**: `openai/gpt-5-mini:batch`, `openai/gpt-5-nano:batch`, `openai/gpt-5.1:batch`, `openai/gpt-5.2:batch`, `openai/gpt-5.4-mini:batch`, `openai/gpt-5.4-nano:batch`, `openai/gpt-5.4:batch`, `openai/gpt-5.5-pro:batch`, +2 more.
 - **2026-09-01 05:45** — **5 models removed from the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 - **2026-09-06 08:31** — provider `relace` changed its status page.
+- **2026-09-08 15:46** — **3 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-vision-exp:batch`, `z-ai/glm-5.2:batch`, `z-ai/glm-5.3:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

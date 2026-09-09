@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-09T21:15:43+00:00 UTC)
+## Current status (2026-09-09T21:31:14+00:00 UTC)
 
 430 models polled, 1299 inference endpoints:
-up 801, degraded 102, down 20, idle 376.
+up 797, degraded 102, down 24, idle 376.
 
-Currently down (20):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 79% | 92% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 72% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | 0% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 71% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 70% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 10% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 52% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 66% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 35% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | n/a | n/a |
+| `google/gemma-4-31b-it` | `together` | Together | 76% | n/a |
 | `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 30% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 21% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 51% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 49% | 100% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 2% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 54% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 73% | 67% |
-| plus 5 more | | | | |
+| `meta-llama/llama-3.1-8b-instruct` | `deepinfra/fp8` | DeepInfra | 32% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 98% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 53% | 53% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 39% | 95% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-08-28 15:30** — **10 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `google/gemma-4-31b-it:batch`, `meta/muse-glimmer-30b:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `openai/gpt-oss-20b:batch`, `qwen/qwen3.5-9b:batch`, `qwen/qwen3.8-2.4t-a95b:batch`, +2 more.
 - **2026-08-28 15:46** — **9 models removed from the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `google/gemma-4-31b-it:batch`, `meta/muse-glimmer-30b:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `openai/gpt-oss-20b:batch`, `qwen/qwen3.5-9b:batch`, `thinkingmachines/inkling-small:batch`, +1 more.
 - **2026-08-28 19:31** — **9 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `deepseek/deepseek-v4-pro-0813:batch`, `google/gemma-4-31b-it:batch`, `meta/muse-glimmer-30b:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `openai/gpt-oss-20b:batch`, `qwen/qwen3.5-9b:batch`, +1 more.
 - **2026-08-31 16:30** — provider `stepfun` changed its terms of service url.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-09-08 18:46** — **3 models added to the catalog in one poll**: `inception/mercury-2.5`, `nex-agi/nex-n2.5-mini:free`, `nex-agi/nex-n2.5-pro:free`.
 - **2026-09-08 20:31** — provider `ncompass` left the platform.
 - **2026-09-08 21:45** — provider `prime-intellect` left the platform.
+- **2026-09-09 21:31** — provider `inference-net` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

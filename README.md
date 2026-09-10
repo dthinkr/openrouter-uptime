@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-10T06:01:40+00:00 UTC)
+## Current status (2026-09-10T06:16:10+00:00 UTC)
 
 435 models polled, 1303 inference endpoints:
-up 755, degraded 116, down 33, idle 399.
+up 776, degraded 91, down 46, idle 390.
 
-Currently down (33):
+Currently down (46):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `atlas-cloud/fp8` | AtlasCloud | 72% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
-| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 78% | 0% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 26% | 17% |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 79% | 66% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 26% | 17% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 79% | 66% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 26% | 17% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 79% | 66% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | 42% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 100% |
-| `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 37% | n/a |
-| plus 18 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `atlas-cloud/fp8` | AtlasCloud | 25% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 56% | 0% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 48% | 0% |
+| `deepseek/deepseek-v3.2-exp` | `atlas-cloud/fp8` | AtlasCloud | 28% | n/a |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 37% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `atlas-cloud/fp4` | AtlasCloud | 43% | 0% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 53% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 44% | 0% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 73% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 18% | n/a |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 75% | 78% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 18% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | 78% |
+| plus 31 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-10T05:00:38+00:00 UTC)
+## Current status (2026-09-10T05:16:07+00:00 UTC)
 
 435 models polled, 1304 inference endpoints:
-up 795, degraded 92, down 25, idle 392.
+up 799, degraded 88, down 26, idle 391.
 
-Currently down (25):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | 37% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 72% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | 52% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 75% |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 79% | 80% |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 79% | 80% |
+| `google/gemini-2.5-pro-preview-05-06` | `google-ai-studio` | Google AI Studio | 79% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 83% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 38% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 53% | 1% |
+| `google/gemma-4-31b-it` | `together` | Together | 69% | 38% |
 | `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 34% | 32% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 19% | 19% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 19% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 36% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 16% | 97% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 51% | 99% |
-| plus 10 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 35% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 23% | 21% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 77% | 100% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

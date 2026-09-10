@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-10T22:30:56+00:00 UTC)
+## Current status (2026-09-10T22:45:51+00:00 UTC)
 
 437 models polled, 1310 inference endpoints:
-up 780, degraded 98, down 30, idle 402.
+up 772, degraded 89, down 35, idle 414.
 
-Currently down (30):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | 35% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 64% | 98% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 68% | 51% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 84% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 77% | 77% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 55% | 15% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 70% | 65% |
-| `google/gemma-4-31b-it` | `together` | Together | 76% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 61% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp4` | Morph | 54% | 22% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 49% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 77% | 79% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 63% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 55% | n/a |
+| `google/gemma-4-31b-it` | `together` | Together | 77% | n/a |
 | `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | 46% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 45% | 14% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 49% | 8% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| plus 15 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | n/a |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

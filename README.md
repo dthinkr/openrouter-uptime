@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-10T04:15:16+00:00 UTC)
+## Current status (2026-09-10T04:31:02+00:00 UTC)
 
 435 models polled, 1304 inference endpoints:
-up 804, degraded 87, down 20, idle 393.
+up 813, degraded 79, down 23, idle 389.
 
-Currently down (20):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 73% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 72% | 49% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 74% | 27% |
-| `google/gemma-4-31b-it` | `together` | Together | 78% | 63% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 62% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 62% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 82% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 71% | 99% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | 83% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 31% | n/a |
+| `google/gemma-4-31b-it` | `together` | Together | 75% | n/a |
 | `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | 48% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 19% | 21% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 24% | n/a |
-| `openai/gpt-5.6-luna` | `azure/eu` | Azure | 75% | 45% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 74% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 76% | 86% |
-| plus 5 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 41% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 19% | 19% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

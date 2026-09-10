@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-10T11:30:20+00:00 UTC)
+## Current status (2026-09-10T11:46:39+00:00 UTC)
 
 436 models polled, 1305 inference endpoints:
-up 791, degraded 112, down 29, idle 373.
+up 780, degraded 121, down 29, idle 375.
 
 Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 98% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 49% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 49% | 94% |
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 63% | 52% |
-| `deepseek/deepseek-v4-pro` | `baseten/fp4#eb9b47c8f4#1` | BaseTen | 71% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 75% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 60% | 99% |
-| `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 45% | 25% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 34% | 6% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 100% |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 26% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 57% | n/a |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 54% | 71% |
+| `deepseek/deepseek-v4-pro` | `baseten/fp4#eb9b47c8f4#1` | BaseTen | 76% | 71% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 79% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 72% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 72% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 72% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 4% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 46% | 45% |
+| `google/gemma-4-31b-it` | `together` | Together | 80% | 0% |
+| `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 28% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 8% | 3% |
 | plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

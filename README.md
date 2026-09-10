@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-10T18:45:13+00:00 UTC)
+## Current status (2026-09-10T19:00:33+00:00 UTC)
 
 437 models polled, 1307 inference endpoints:
-up 790, degraded 97, down 28, idle 392.
+up 788, degraded 103, down 23, idle 393.
 
-Currently down (28):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 78% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 69% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 63% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp4` | Morph | 56% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | n/a |
 | `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | n/a |
 | `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 0% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 45% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
 | `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | n/a |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 73% | n/a |
 | `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | 73% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | n/a |
-| plus 13 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 56% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

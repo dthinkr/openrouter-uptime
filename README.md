@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-10T21:00:54+00:00 UTC)
+## Current status (2026-09-10T21:16:25+00:00 UTC)
 
 437 models polled, 1310 inference endpoints:
-up 805, degraded 93, down 24, idle 388.
+up 794, degraded 100, down 26, idle 390.
 
-Currently down (24):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 76% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 73% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp4` | Morph | 59% | n/a |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 45% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 46% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 69% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 42% | n/a |
 | `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | n/a |
 | `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 52% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 20% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 73% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 70% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 63% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 32% | n/a |
-| plus 9 more | | | | |
+| `minimax/minimax-m2.7` | `mara` | Mara | 12% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 21% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 24% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

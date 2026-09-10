@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-10T01:15:49+00:00 UTC)
+## Current status (2026-09-10T01:31:18+00:00 UTC)
 
 430 models polled, 1300 inference endpoints:
-up 795, degraded 79, down 19, idle 407.
+up 778, degraded 89, down 19, idle 414.
 
 Currently down (19):
 
@@ -96,19 +96,19 @@ Currently down (19):
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 27% | 88% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 35% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 65% | 86% |
 | `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 29% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 19% | 28% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 28% | 26% |
-| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 50% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 72% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 81% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 61% | n/a |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 65% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 78% | 89% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 14% | 6% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 25% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 72% | n/a |
+| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 67% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 47% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 62% | 66% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 72% | n/a |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 80% | 81% |
 | plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

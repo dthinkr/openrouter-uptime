@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-10T00:30:49+00:00 UTC)
+## Current status (2026-09-10T00:45:27+00:00 UTC)
 
 430 models polled, 1300 inference endpoints:
-up 798, degraded 74, down 24, idle 404.
+up 794, degraded 74, down 32, idle 400.
 
-Currently down (24):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 44% | 42% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 37% | 100% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 76% | 55% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 9% | 13% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 79% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 52% | n/a |
 | `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 36% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 8% | 4% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 35% | n/a |
-| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 80% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 77% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 62% | 70% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 76% | 87% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 49% | 100% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 17% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 57% | n/a |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 68% | 89% |
-| plus 9 more | | | | |
+| `minimax/minimax-m2.7` | `mara` | Mara | 11% | 8% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 30% | n/a |
+| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 69% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 76% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 61% | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 38% | 100% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-11T07:30:14+00:00 UTC)
+## Current status (2026-09-11T07:46:31+00:00 UTC)
 
 439 models polled, 1318 inference endpoints:
-up 773, degraded 146, down 27, idle 372.
+up 767, degraded 142, down 30, idle 379.
 
-Currently down (27):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 9% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 57% | 100% |
-| `deepseek/deepseek-v4-flash` | `alibaba/fp8` | Alibaba | 64% | 100% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 79% | 72% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 71% | 39% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 71% | 62% |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 76% | 100% |
+| `deepseek/deepseek-v4-flash` | `alibaba/fp8` | Alibaba | 70% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 78% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 72% | 79% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 61% | 58% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 61% | 74% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 75% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 97% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 94% |
-| `google/gemma-4-26b-a4b-it` | `makora` | Makora | 0% | 0% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 68% | 78% |
-| plus 12 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 73% | 99% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 8% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 16% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 97% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 76% | 74% |
+| `google/gemma-4-26b-a4b-it` | `makora` | Makora | 0% | n/a |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

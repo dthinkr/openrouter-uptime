@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-11T20:16:20+00:00 UTC)
+## Current status (2026-09-11T20:31:17+00:00 UTC)
 
-443 models polled, 1328 inference endpoints:
-up 786, degraded 113, down 22, idle 407.
+443 models polled, 1329 inference endpoints:
+up 788, degraded 112, down 19, idle 410.
 
-Currently down (22):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 82% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 69% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 69% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 65% | 95% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 9% | 4% |
-| `google/gemma-4-31b-it` | `together` | Together | 47% | 47% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 66% | 56% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 76% | 97% |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 73% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 38% | n/a |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 11% | 1% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 38% | 80% |
-| plus 7 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 65% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 25% | 12% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 19% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 23% | n/a |
+| `google/gemma-4-31b-it` | `together` | Together | 54% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 72% | 98% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 79% | 94% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 22% | n/a |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 3% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 55% | 54% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 72% | 98% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 25% | 55% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

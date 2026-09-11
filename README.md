@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-11T23:00:39+00:00 UTC)
+## Current status (2026-09-11T23:15:39+00:00 UTC)
 
 443 models polled, 1330 inference endpoints:
-up 802, degraded 89, down 12, idle 427.
+up 824, degraded 86, down 12, idle 408.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 53% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 66% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 21% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 100% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 79% | 79% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 40% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 74% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 67% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 52% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 76% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 79% | 73% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 48% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 77% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 54% | 74% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 57% | 95% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 67% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

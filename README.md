@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-11T03:01:34+00:00 UTC)
+## Current status (2026-09-11T03:16:41+00:00 UTC)
 
-437 models polled, 1308 inference endpoints:
-up 758, degraded 100, down 28, idle 422.
+437 models polled, 1307 inference endpoints:
+up 760, degraded 103, down 29, idle 415.
 
-Currently down (28):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 37% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 78% | 77% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 80% | 80% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 75% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 70% | 74% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 86% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 73% | 74% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | 8% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 67% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 49% | 77% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 32% | 21% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 42% | n/a |
-| plus 13 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 78% | 84% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 77% | 70% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 46% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 66% | 74% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 84% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 79% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 79% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 79% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 71% | 72% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 52% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

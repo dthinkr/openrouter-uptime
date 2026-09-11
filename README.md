@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-11T15:01:05+00:00 UTC)
+## Current status (2026-09-11T15:15:49+00:00 UTC)
 
 443 models polled, 1324 inference endpoints:
-up 818, degraded 126, down 19, idle 361.
+up 829, degraded 121, down 21, idle 353.
 
-Currently down (19):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 83% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 11% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 21% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 72% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 72% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 25% | 5% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 59% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 71% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 25% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 75% | 84% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 68% | 68% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 62% | 60% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 75% | 86% |
-| plus 4 more | | | | |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 70% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 98% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 54% | 21% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 67% | 50% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 41% | 49% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 55% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 76% | 97% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 77% | 70% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 81% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 68% | 49% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 79% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 61% | 78% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

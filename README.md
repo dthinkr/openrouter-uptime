@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-11T01:30:43+00:00 UTC)
+## Current status (2026-09-11T01:46:25+00:00 UTC)
 
 437 models polled, 1309 inference endpoints:
-up 767, degraded 99, down 32, idle 411.
+up 773, degraded 92, down 28, idle 416.
 
-Currently down (32):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 69% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 47% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 68% | 90% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 73% | 91% |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 56% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 51% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 23% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 87% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 78% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 78% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 78% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | 1% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 58% | 60% |
-| plus 17 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 48% | 14% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 68% | 55% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 28% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 79% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 79% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 79% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global` | Google | 55% | 57% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 69% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 68% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 64% | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

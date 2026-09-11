@@ -85,16 +85,16 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-11T00:00:17+00:00 UTC)
+## Current status (2026-09-11T00:15:24+00:00 UTC)
 
 437 models polled, 1310 inference endpoints:
-up 792, degraded 72, down 26, idle 420.
+up 790, degraded 73, down 27, idle 420.
 
-Currently down (26):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 47% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 51% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 77% | 55% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
@@ -109,7 +109,7 @@ Currently down (26):
 | `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 36% | n/a |
 | `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 29% | n/a |
 | `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 100% |
-| plus 11 more | | | | |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

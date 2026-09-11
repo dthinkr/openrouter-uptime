@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-11T00:30:34+00:00 UTC)
+## Current status (2026-09-11T00:46:11+00:00 UTC)
 
 437 models polled, 1310 inference endpoints:
-up 779, degraded 92, down 28, idle 411.
+up 782, degraded 93, down 25, idle 410.
 
-Currently down (28):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | 30% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 65% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 60% | 69% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 68% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 68% | 67% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 68% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 68% | 99% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 58% | 68% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 70% | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | 0% |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 58% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 70% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 8% | n/a |
 | `google/gemma-4-31b-it` | `cerebras/fp16` | Cerebras | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 54% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 16% | 7% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 5% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 81% |
-| plus 13 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `nebius/fp8` | Nebius | 50% | 100% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 32% | 24% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 18% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 22% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 82% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

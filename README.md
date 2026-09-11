@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-11T08:31:07+00:00 UTC)
+## Current status (2026-09-11T08:45:57+00:00 UTC)
 
 439 models polled, 1318 inference endpoints:
-up 760, degraded 137, down 31, idle 390.
+up 783, degraded 117, down 30, idle 388.
 
-Currently down (31):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | 100% |
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 74% | 92% |
-| `deepseek/deepseek-v4-flash` | `alibaba/fp8` | Alibaba | 68% | 84% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 75% | 100% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 57% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 58% | 78% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 62% | 80% |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 76% | 99% |
+| `deepseek/deepseek-v4-flash` | `alibaba/fp8` | Alibaba | 69% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 76% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 58% | 49% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#b635da8df9` | BaseTen | 63% | 54% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773` | BaseTen | 61% | 51% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 64% | 99% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 12% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 8% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | n/a |
-| `google/gemma-4-31b-it` | `together` | Together | 71% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 51% | 100% |
-| plus 16 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 78% | 23% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 29% | 27% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 65% | 75% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 76% | n/a |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

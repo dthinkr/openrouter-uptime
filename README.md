@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T17:15:53+00:00 UTC)
+## Current status (2026-09-12T17:31:13+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 790, degraded 91, down 19, idle 433.
+up 774, degraded 106, down 17, idle 436.
 
-Currently down (19):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | 98% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 75% | 8% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 66% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 79% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 79% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 19% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 99% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 71% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 75% | n/a |
-| plus 4 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 70% | 98% |
+| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 80% | 85% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 65% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 16% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 4% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 96% |
+| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 77% | n/a |
+| `google/gemma-4-31b-it` | `together` | Together | 80% | 29% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 36% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 65% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 67% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

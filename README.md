@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T04:45:56+00:00 UTC)
+## Current status (2026-09-12T05:01:41+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 792, degraded 73, down 14, idle 454.
+up 788, degraded 79, down 13, idle 453.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 10% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 60% | 60% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 72% | 98% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 42% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 42% | n/a |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 42% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 78% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 62% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 67% |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 80% | 79% |
-| `sao10k/l3.1-euryale-70b` | `deepinfra/fp8` | DeepInfra | 78% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 59% |
+| `google/gemini-3.8-flash` | `google-ai-studio/priority` | Google AI Studio | 58% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 99% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 79% | 70% |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 76% | 39% |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 76% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 69% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 54% | 65% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

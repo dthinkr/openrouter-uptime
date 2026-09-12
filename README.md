@@ -85,28 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T09:16:38+00:00 UTC)
+## Current status (2026-09-12T09:31:40+00:00 UTC)
 
 445 models polled, 1334 inference endpoints:
-up 860, degraded 96, down 13, idle 365.
+up 850, degraded 92, down 11, idle 381.
 
-Currently down (13):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | 2% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | 70% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 26% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 4% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 42% | 98% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 70% | 25% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 55% | 60% |
-| `z-ai/glm-5.3-flash` | `near-ai/fp8` | Near AI | 56% | n/a |
-| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 73% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 65% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 4% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 47% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 37% | 100% |
+| `xiaomi/mimo-v2.5-pro` | `novita` | Novita | 80% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 56% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 72% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

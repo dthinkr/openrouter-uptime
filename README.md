@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T20:30:51+00:00 UTC)
+## Current status (2026-09-12T20:46:42+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 794, degraded 74, down 20, idle 445.
+up 809, degraded 77, down 15, idle 432.
 
-Currently down (20):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 67% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 21% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | n/a |
-| `google/gemma-4-31b-it` | `together` | Together | 78% | 92% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 78% | 92% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 72% | 68% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 70% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 19% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 74% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 65% | 97% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 34% | 41% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 70% | n/a |
-| plus 5 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 75% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 54% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 67% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 100% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 73% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 64% | 93% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 44% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 53% | n/a |
+| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 65% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 69% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 79% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

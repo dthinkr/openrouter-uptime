@@ -85,25 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T01:01:05+00:00 UTC)
+## Current status (2026-09-12T01:16:38+00:00 UTC)
 
 443 models polled, 1331 inference endpoints:
-up 800, degraded 80, down 10, idle 441.
+up 792, degraded 88, down 18, idle 433.
 
-Currently down (10):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 11% | 22% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 69% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 72% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 99% |
-| `qwen/qwen3.8-2.4t-a95b` | `deepinfra/fp4` | DeepInfra | 69% | n/a |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 78% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 53% |
-| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 66% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 56% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 78% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 28% | 13% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 60% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 77% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 47% | 28% |
+| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 79% | 87% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 36% | 38% |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 59% | 47% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 40% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

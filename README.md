@@ -85,22 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T02:46:27+00:00 UTC)
+## Current status (2026-09-12T03:01:44+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 787, degraded 94, down 7, idle 445.
+up 789, degraded 99, down 16, idle 429.
 
-Currently down (7):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | 54% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 58% | 36% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 73% | 65% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 76% | 37% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 68% |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 13% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 63% | n/a |
+| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 75% | n/a |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 77% | 77% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 21% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 64% | n/a |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 56% | n/a |
+| `moonshotai/kimi-k2.6` | `phala` | Phala | 65% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 64% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 67% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 57% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

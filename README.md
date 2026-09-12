@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T18:00:57+00:00 UTC)
+## Current status (2026-09-12T18:16:10+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 780, degraded 98, down 15, idle 440.
+up 767, degraded 102, down 20, idle 444.
 
-Currently down (15):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 78% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 61% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 4% | 0% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 38% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 100% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 68% | 44% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 66% | 46% |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 33% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 72% | 79% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 78% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 74% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 11% | 8% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 99% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 100% |
+| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 77% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 62% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 33% | n/a |
+| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 80% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 75% | 100% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 69% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 73% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | n/a | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

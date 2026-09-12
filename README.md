@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T01:29:43+00:00 UTC)
+## Current status (2026-09-12T01:45:59+00:00 UTC)
 
-443 models polled, 1331 inference endpoints:
-up 791, degraded 79, down 20, idle 441.
+445 models polled, 1333 inference endpoints:
+up 809, degraded 70, down 15, idle 439.
 
-Currently down (20):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 75% | 94% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 15% | 11% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 72% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 79% | 90% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 79% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 77% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 25% | n/a |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 79% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 25% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 77% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 43% | n/a |
-| plus 5 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 15% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 8% | n/a |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 69% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 55% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 98% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 32% | 19% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 75% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 27% | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 79% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 65% |
+| `z-ai/glm-5.3` | `digitalocean` | DigitalOcean | 62% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

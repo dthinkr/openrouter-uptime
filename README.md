@@ -85,30 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T18:45:34+00:00 UTC)
+## Current status (2026-09-12T19:01:19+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 773, degraded 103, down 15, idle 442.
+up 781, degraded 96, down 14, idle 442.
 
-Currently down (15):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 68% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | 65% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 63% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 13% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | n/a |
-| `google/gemma-4-31b-it` | `together` | Together | 66% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 18% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 54% | 81% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 65% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 32% | 99% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 78% | 90% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 79% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 60% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 75% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 51% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 34% | 39% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 26% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 73% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 54% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 28% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 56% | n/a |
+| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 75% | 100% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 65% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 67% |
+| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

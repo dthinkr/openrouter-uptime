@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T21:16:43+00:00 UTC)
+## Current status (2026-09-12T21:30:59+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 786, degraded 97, down 17, idle 433.
+up 796, degraded 86, down 12, idle 439.
 
-Currently down (17):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 80% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 34% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 8% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 43% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 97% |
-| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 70% | n/a |
-| `google/gemma-4-31b-it` | `together` | Together | 61% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 51% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 24% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 67% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 57% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 49% | n/a |
-| plus 2 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 35% | n/a |
+| `google/gemma-4-31b-it` | `crusoe` | Crusoe | 80% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 78% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 47% | 65% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 62% | 62% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 48% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 80% | 65% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 73% | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 72% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

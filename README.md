@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T00:16:37+00:00 UTC)
+## Current status (2026-09-12T00:31:23+00:00 UTC)
 
 443 models polled, 1331 inference endpoints:
-up 792, degraded 90, down 16, idle 433.
+up 795, degraded 85, down 22, idle 429.
 
-Currently down (16):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 68% | 53% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 76% | 69% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | n/a |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 47% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 78% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 30% | 18% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 56% | 75% |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 67% | 73% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 51% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 71% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 53% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 71% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 53% | 58% |
-| plus 1 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 64% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 87% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 70% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 70% | 74% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 46% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 75% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 36% | 65% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 56% | 48% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 34% | 95% |
+| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 51% | 100% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 32% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T09:00:41+00:00 UTC)
+## Current status (2026-09-12T09:16:38+00:00 UTC)
 
 445 models polled, 1334 inference endpoints:
-up 874, degraded 77, down 12, idle 371.
+up 860, degraded 96, down 13, idle 365.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.7-flash` | `google-ai-studio/priority` | Google AI Studio | 77% | n/a |
-| `google/gemini-3.8-flash` | `google-ai-studio/priority` | Google AI Studio | 77% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 67% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 34% | 100% |
-| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 73% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 52% |
-| `z-ai/glm-5.3-flash` | `near-ai/fp8` | Near AI | 78% | 30% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | 2% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | 70% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 26% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 4% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 42% | 98% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 70% | 25% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 55% | 60% |
+| `z-ai/glm-5.3-flash` | `near-ai/fp8` | Near AI | 56% | n/a |
+| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 73% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

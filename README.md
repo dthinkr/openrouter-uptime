@@ -85,29 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T06:16:35+00:00 UTC)
+## Current status (2026-09-12T06:31:16+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 808, degraded 81, down 14, idle 430.
+up 802, degraded 86, down 15, idle 430.
 
-Currently down (14):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 37% | 64% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 78% | 100% |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | n/a |
-| `google/gemini-3.7-flash` | `google-ai-studio/priority` | Google AI Studio | 75% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 80% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 78% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 19% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 71% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 63% | 82% |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 80% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 58% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 78% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 20% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 8% | 5% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | n/a |
+| `google/gemini-3.7-flash` | `google-ai-studio/priority` | Google AI Studio | 74% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 77% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 79% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 56% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 79% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 55% | 43% |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 77% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

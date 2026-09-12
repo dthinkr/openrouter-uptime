@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T21:44:12+00:00 UTC)
+## Current status (2026-09-12T22:01:34+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 796, degraded 78, down 13, idle 446.
+up 790, degraded 70, down 21, idle 452.
 
-Currently down (13):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 48% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 55% | 87% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 73% | 97% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 51% | 42% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 65% | 63% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 73% | 100% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 74% | n/a |
-| `qwen/qwen3.8-27b` | `dekallm` | DekaLLM | 38% | n/a |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 18% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 68% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 80% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 69% | 78% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 98% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | 97% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 29% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 99% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 67% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 70% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 77% | n/a |
+| `qwen/qwen3.8-27b` | `dekallm` | DekaLLM | n/a | n/a |
+| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 74% | 91% |
+| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 34% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

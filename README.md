@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T00:31:23+00:00 UTC)
+## Current status (2026-09-12T00:46:04+00:00 UTC)
 
 443 models polled, 1331 inference endpoints:
-up 795, degraded 85, down 22, idle 429.
+up 797, degraded 74, down 19, idle 441.
 
-Currently down (22):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 79% | 97% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 64% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 87% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 70% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 70% | 74% |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 46% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 75% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 36% | 65% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 56% | 48% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 34% | 95% |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 51% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 32% | n/a |
-| plus 7 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 84% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 49% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 100% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 73% | 73% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 92% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 15% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 42% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 84% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 50% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 53% | 100% |
+| `qwen/qwen3.8-2.4t-a95b` | `deepinfra/fp4` | DeepInfra | 73% | 74% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

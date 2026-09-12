@@ -85,31 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T08:31:10+00:00 UTC)
+## Current status (2026-09-12T08:46:35+00:00 UTC)
 
 445 models polled, 1334 inference endpoints:
-up 799, degraded 85, down 18, idle 432.
+up 872, degraded 81, down 7, idle 374.
 
-Currently down (18):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 75% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 14% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 26% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | 98% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 16% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 71% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 61% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 67% | 98% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 77% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 78% | n/a |
-| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 76% | 44% |
-| plus 3 more | | | | |
+| `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 61% |
+| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 65% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 56% | 50% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

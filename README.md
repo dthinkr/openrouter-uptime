@@ -85,26 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T09:31:40+00:00 UTC)
+## Current status (2026-09-12T09:46:25+00:00 UTC)
 
 445 models polled, 1334 inference endpoints:
-up 850, degraded 92, down 11, idle 381.
+up 860, degraded 86, down 10, idle 378.
 
-Currently down (11):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 65% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 71% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 4% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 47% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 37% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `novita` | Novita | 80% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 56% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 72% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 70% | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 73% | 79% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 48% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

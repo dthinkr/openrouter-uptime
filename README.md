@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T11:01:29+00:00 UTC)
+## Current status (2026-09-12T11:15:51+00:00 UTC)
 
 445 models polled, 1334 inference endpoints:
-up 809, degraded 88, down 13, idle 424.
+up 793, degraded 91, down 19, idle 431.
 
-Currently down (13):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | 77% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 68% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 15% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 65% | 57% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 98% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 77% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 63% | 66% |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 74% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 75% |
-| `z-ai/glm-5.3-flash` | `venice` | Venice | 76% | 82% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 82% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | 3% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 26% | 2% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 66% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 43% |
+| `google/gemma-4-31b-it` | `together` | Together | 79% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 31% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 76% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 65% | 89% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 51% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 72% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 79% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

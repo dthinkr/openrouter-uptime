@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T20:01:35+00:00 UTC)
+## Current status (2026-09-12T20:15:49+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 793, degraded 86, down 19, idle 435.
+up 798, degraded 83, down 13, idle 439.
 
-Currently down (19):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 67% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 24% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 72% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 44% | 45% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 64% | 78% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 49% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 43% | 63% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 17% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 77% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 65% | 99% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 72% | n/a |
-| plus 4 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 69% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 27% | 19% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 33% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 69% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 55% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 53% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 76% | 77% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 66% | 59% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 73% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

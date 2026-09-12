@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T11:15:51+00:00 UTC)
+## Current status (2026-09-12T11:31:39+00:00 UTC)
 
 445 models polled, 1334 inference endpoints:
-up 793, degraded 91, down 19, idle 431.
+up 790, degraded 86, down 21, idle 437.
 
-Currently down (19):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 79% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 82% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | 3% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 26% | 2% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 66% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 43% |
-| `google/gemma-4-31b-it` | `together` | Together | 79% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 31% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 76% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 65% | 89% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 51% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 72% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 79% | n/a |
-| plus 4 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 80% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 23% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 65% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 100% |
+| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 79% | 54% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 97% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 73% | 40% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 53% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 71% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 27% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

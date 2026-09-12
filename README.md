@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T03:01:44+00:00 UTC)
+## Current status (2026-09-12T03:15:50+00:00 UTC)
 
 445 models polled, 1333 inference endpoints:
-up 789, degraded 99, down 16, idle 429.
+up 797, degraded 78, down 19, idle 439.
 
-Currently down (16):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | 54% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 74% | 32% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 58% | 61% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `fireworks` | Fireworks | n/a | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 13% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 63% | n/a |
-| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 75% | n/a |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 77% | 77% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 21% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 64% | n/a |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 56% | n/a |
-| `moonshotai/kimi-k2.6` | `phala` | Phala | 65% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 64% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 67% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 57% | n/a |
-| plus 1 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 8% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 20% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 28% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 14% |
+| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 52% | n/a |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 74% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 9% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 42% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 53% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

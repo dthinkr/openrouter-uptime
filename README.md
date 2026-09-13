@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T07:01:17+00:00 UTC)
+## Current status (2026-09-13T07:16:23+00:00 UTC)
 
 445 models polled, 1335 inference endpoints:
-up 781, degraded 76, down 12, idle 466.
+up 791, degraded 73, down 13, idle 458.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 32% | 22% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 42% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 76% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 68% | 56% |
-| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 62% | n/a |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 2% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 45% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 66% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 61% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 73% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 28% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 69% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 2% | 0% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 50% | 34% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 68% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

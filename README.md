@@ -85,30 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T02:01:16+00:00 UTC)
+## Current status (2026-09-13T02:15:47+00:00 UTC)
 
 445 models polled, 1335 inference endpoints:
-up 828, degraded 70, down 15, idle 422.
+up 814, degraded 78, down 11, idle 432.
 
-Currently down (15):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 35% | n/a |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 78% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 37% | 96% |
-| `google/gemma-4-31b-it` | `together` | Together | 75% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 56% | 100% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 33% | n/a |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 47% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 74% | 100% |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 69% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 51% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 28% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 64% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | 97% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 98% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 64% | 57% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 46% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 7% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

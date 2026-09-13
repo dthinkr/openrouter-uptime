@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T10:01:29+00:00 UTC)
+## Current status (2026-09-13T10:16:41+00:00 UTC)
 
-445 models polled, 1335 inference endpoints:
-up 787, degraded 82, down 16, idle 450.
+445 models polled, 1336 inference endpoints:
+up 788, degraded 83, down 11, idle 454.
 
-Currently down (16):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 74% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 13% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 74% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 24% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 63% | 68% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 59% | 83% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 73% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 78% | n/a |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 57% | 50% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 70% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 66% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 63% |
-| plus 1 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 78% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | 3% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 70% | 71% |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 61% | 54% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 73% | 87% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 63% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 25% | 2% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

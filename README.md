@@ -85,24 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T03:45:58+00:00 UTC)
+## Current status (2026-09-13T04:01:00+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 797, degraded 74, down 9, idle 456.
+up 796, degraded 71, down 16, idle 453.
 
-Currently down (9):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 83% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 4% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 72% | 53% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 65% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 26% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 17% | 27% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 44% |
-| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 62% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 37% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 56% | 56% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 78% |
+| `google/gemma-4-31b-it` | `together` | Together | 74% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 72% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 19% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 100% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 74% | 50% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 43% | 7% |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 72% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

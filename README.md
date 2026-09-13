@@ -85,26 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T11:15:54+00:00 UTC)
+## Current status (2026-09-13T11:30:54+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 796, degraded 83, down 11, idle 446.
+up 796, degraded 85, down 9, idle 446.
 
-Currently down (11):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | 48% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 55% | 56% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 39% | 38% |
-| `openai/gpt-oss-120b` | `together` | Together | 65% | n/a |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 50% | 55% |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 62% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 59% |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 5% | 9% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 78% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | 2% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 75% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 62% | 74% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 44% | 74% |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 54% | 53% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 62% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 7% | 3% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

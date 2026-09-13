@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T08:01:28+00:00 UTC)
+## Current status (2026-09-13T08:15:46+00:00 UTC)
 
 445 models polled, 1335 inference endpoints:
-up 779, degraded 83, down 13, idle 460.
+up 782, degraded 80, down 13, idle 460.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | 83% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 68% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 83% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 74% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 19% | 50% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 72% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 90% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | 1% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 83% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 75% | 58% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 66% | 47% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 67% | 63% |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 46% | 49% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 79% | 80% |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 69% | 81% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

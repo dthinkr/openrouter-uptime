@@ -85,31 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T01:15:45+00:00 UTC)
+## Current status (2026-09-13T01:31:23+00:00 UTC)
 
 445 models polled, 1335 inference endpoints:
-up 803, degraded 79, down 17, idle 436.
+up 812, degraded 86, down 9, idle 428.
 
-Currently down (17):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 75% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 61% | 100% |
-| `google/gemma-4-31b-it` | `together` | Together | 73% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 34% | 100% |
-| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 59% | 99% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 21% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 100% |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 8% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 73% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 79% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 60% | 72% |
-| plus 2 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 85% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 65% | 98% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 13% | 10% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 40% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 46% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T23:16:18+00:00 UTC)
+## Current status (2026-09-13T23:31:02+00:00 UTC)
 
 445 models polled, 1339 inference endpoints:
-up 818, degraded 72, down 21, idle 428.
+up 809, degraded 73, down 22, idle 435.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 78% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 76% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 71% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 93% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 46% | 81% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 55% | 97% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 79% | 37% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 38% | 71% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 77% | 84% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 72% | 77% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 79% | 93% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 74% | n/a |
-| `openai/gpt-oss-120b` | `together` | Together | 55% | n/a |
-| plus 6 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 89% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | 54% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | 97% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 57% | 98% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 50% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 50% | 89% |
+| `google/gemma-4-31b-it` | `together` | Together | 78% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 49% | 100% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 74% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 62% | 82% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 58% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

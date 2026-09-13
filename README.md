@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T12:00:16+00:00 UTC)
+## Current status (2026-09-13T12:15:34+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 792, degraded 84, down 17, idle 443.
+up 800, degraded 81, down 18, idle 437.
 
-Currently down (17):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 8% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 100% |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 2% | 2% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 70% | 70% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 74% | 77% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 79% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 70% | n/a |
-| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 75% | n/a |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 54% | 70% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 74% | 92% |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
-| plus 2 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 74% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | 6% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 71% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 68% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 11% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 71% | 71% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 73% |
+| `openai/gpt-oss-120b` | `together` | Together | 70% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 57% | n/a |
+| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 69% | n/a |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 56% | 32% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 56% | 70% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

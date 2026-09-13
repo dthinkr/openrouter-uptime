@@ -85,23 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T05:30:54+00:00 UTC)
+## Current status (2026-09-13T05:46:29+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 792, degraded 80, down 8, idle 456.
+up 805, degraded 69, down 13, idle 449.
 
-Currently down (8):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 49% | 48% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 86% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 62% | 57% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 17% | 11% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 73% | 46% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 46% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 79% | 95% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 76% | 72% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 14% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 36% |
+| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 68% | n/a |
 | `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 2% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 52% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 69% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

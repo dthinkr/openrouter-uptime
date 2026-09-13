@@ -85,26 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T02:15:47+00:00 UTC)
+## Current status (2026-09-13T02:30:50+00:00 UTC)
 
 445 models polled, 1335 inference endpoints:
-up 814, degraded 78, down 11, idle 432.
+up 810, degraded 70, down 18, idle 437.
 
-Currently down (11):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 64% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 73% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | 97% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 98% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 64% | 57% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 46% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 7% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 90% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 29% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 90% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 77% | 67% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 70% | 99% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 79% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 37% | 29% |
+| `openai/gpt-5.5` | `openai` | OpenAI | 73% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 78% | 93% |
+| `qwen/qwen3.5-35b-a3b` | `deepinfra/fp8` | DeepInfra | 75% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 28% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

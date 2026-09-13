@@ -85,27 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-12T23:45:43+00:00 UTC)
+## Current status (2026-09-13T00:02:03+00:00 UTC)
 
-445 models polled, 1333 inference endpoints:
-up 774, degraded 83, down 12, idle 464.
+445 models polled, 1334 inference endpoints:
+up 784, degraded 92, down 8, idle 450.
 
-Currently down (12):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 79% | 99% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 34% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 45% | n/a |
 | `google/gemma-4-31b-it` | `together` | Together | 76% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 22% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 74% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 45% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 76% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 66% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 19% | 18% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 20% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 42% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 74% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

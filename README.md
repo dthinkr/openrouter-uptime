@@ -85,26 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T03:30:42+00:00 UTC)
+## Current status (2026-09-13T03:45:58+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 790, degraded 77, down 11, idle 458.
+up 797, degraded 74, down 9, idle 456.
 
-Currently down (11):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 37% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 70% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 29% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 24% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 16% | n/a |
-| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 73% | 6% |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 59% | 100% |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 78% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 48% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 83% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 4% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 17% | 27% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 44% |
+| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 62% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 37% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 56% | 56% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

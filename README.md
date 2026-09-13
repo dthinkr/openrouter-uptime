@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T23:31:02+00:00 UTC)
+## Current status (2026-09-13T23:45:30+00:00 UTC)
 
 445 models polled, 1339 inference endpoints:
-up 809, degraded 73, down 22, idle 435.
+up 741, degraded 130, down 30, idle 438.
 
-Currently down (22):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 78% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 89% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | 54% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | 97% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 57% | 98% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 50% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 50% | 89% |
-| `google/gemma-4-31b-it` | `together` | Together | 78% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 49% | 100% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 74% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 62% | 82% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 58% | 100% |
-| plus 7 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 77% | 78% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 69% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 75% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 56% | 26% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 58% | n/a |
+| `google/gemma-4-31b-it` | `together` | Together | 56% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 62% | 36% |
+| `moonshotai/kimi-k3` | `makora` | Makora | 55% | n/a |
+| `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | 79% | 100% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 68% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 64% | 83% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

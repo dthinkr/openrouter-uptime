@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T03:15:41+00:00 UTC)
+## Current status (2026-09-13T03:30:42+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 786, degraded 80, down 17, idle 453.
+up 790, degraded 77, down 11, idle 458.
 
-Currently down (17):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | 36% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 37% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 62% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 13% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 20% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 68% | 99% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 46% | 97% |
-| `google/gemma-4-31b-it` | `together` | Together | 61% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 70% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 29% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | n/a |
 | `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 24% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 21% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 33% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 79% | 99% |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 76% | 75% |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
-| plus 2 more | | | | |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 16% | n/a |
+| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 73% | 6% |
+| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 59% | 100% |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 48% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

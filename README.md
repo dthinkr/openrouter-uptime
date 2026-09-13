@@ -85,28 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T07:16:23+00:00 UTC)
+## Current status (2026-09-13T07:30:36+00:00 UTC)
 
 445 models polled, 1335 inference endpoints:
-up 791, degraded 73, down 13, idle 458.
+up 787, degraded 81, down 8, idle 459.
 
-Currently down (13):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 78% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 61% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 73% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 28% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 69% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 2% | 0% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 50% | 34% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 68% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | 1% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 52% | n/a |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 2% | n/a |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 65% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 52% | 39% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 76% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

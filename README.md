@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T02:46:17+00:00 UTC)
+## Current status (2026-09-13T03:01:37+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 801, degraded 75, down 14, idle 446.
+up 795, degraded 73, down 13, idle 455.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 80% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 79% | 91% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 84% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | 98% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 45% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 80% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 98% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 66% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 79% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 75% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 5% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 69% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 42% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 53% | 30% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 77% | 69% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 99% |
+| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 67% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 70% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 68% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 72% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 2% | 3% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

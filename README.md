@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T20:31:08+00:00 UTC)
+## Current status (2026-09-13T20:45:38+00:00 UTC)
 
-445 models polled, 1339 inference endpoints:
-up 796, degraded 88, down 14, idle 441.
+445 models polled, 1338 inference endpoints:
+up 810, degraded 74, down 14, idle 440.
 
 Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 76% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 90% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 80% | 98% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 43% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 99% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 70% | 68% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 72% | 55% |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 3% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 8% | n/a |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 60% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 68% |
-| `z-ai/glm-5.3-flash` | `open-inference/fp4` | OpenInference | 16% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 75% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 56% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 88% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 39% | 100% |
+| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 66% | 100% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 71% | 74% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 69% | 76% |
+| `openai/gpt-oss-120b` | `together` | Together | 78% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 77% | 49% |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 4% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 78% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

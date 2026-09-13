@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T14:45:54+00:00 UTC)
+## Current status (2026-09-13T15:01:20+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 777, degraded 92, down 29, idle 438.
+up 770, degraded 93, down 33, idle 440.
 
-Currently down (29):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 81% |
-| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 63% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 82% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 59% | 100% |
-| `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | 58% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 50% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 55% | 0% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 69% | 73% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 71% | 80% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 52% | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 50% | 100% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 57% | n/a |
-| plus 14 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 69% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 13% | n/a |
+| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 8% | 97% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 90% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 78% | 48% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 64% | 76% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 71% | n/a |
+| `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | 4% | 96% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 100% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 29% | 100% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 69% | 66% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 70% | 59% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 20% | 100% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

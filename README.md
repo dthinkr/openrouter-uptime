@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T07:46:27+00:00 UTC)
+## Current status (2026-09-13T08:01:28+00:00 UTC)
 
 445 models polled, 1335 inference endpoints:
-up 771, degraded 91, down 15, idle 458.
+up 779, degraded 83, down 13, idle 460.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 52% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 75% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 70% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 21% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 66% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 80% | 70% |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 2% | 5% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 71% | 75% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 56% | 60% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 69% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 68% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 83% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 74% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 19% | 50% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 72% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 90% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

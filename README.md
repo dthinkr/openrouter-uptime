@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T13:30:50+00:00 UTC)
+## Current status (2026-09-13T13:45:54+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 816, degraded 74, down 21, idle 425.
+up 810, degraded 75, down 24, idle 427.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 69% | 90% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 73% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 75% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 75% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 95% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 72% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 69% | 97% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 56% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 69% | 71% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 73% | 81% |
-| `openai/gpt-oss-120b` | `together` | Together | 60% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 75% | 3% |
-| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 73% | 82% |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 56% | 65% |
-| plus 6 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 72% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 51% |
+| `google/gemma-4-31b-it` | `together` | Together | 80% | 95% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 61% | 48% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 78% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 79% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 70% | 68% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 74% | 67% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 61% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

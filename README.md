@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-13T08:15:46+00:00 UTC)
+## Current status (2026-09-13T08:31:35+00:00 UTC)
 
 445 models polled, 1335 inference endpoints:
-up 782, degraded 80, down 13, idle 460.
+up 780, degraded 82, down 17, idle 456.
 
-Currently down (13):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | 83% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | 1% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 83% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 75% | 58% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 66% | 47% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 67% | 63% |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 46% | 49% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 79% | 80% |
-| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 69% | 81% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 69% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 66% | 49% |
+| `google/gemma-4-31b-it` | `together` | Together | 72% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 79% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 100% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 66% | 78% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 59% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 65% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 59% | n/a |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 60% | 23% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 71% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

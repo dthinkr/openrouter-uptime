@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-14T22:30:00+00:00 UTC)
+## Current status (2026-09-14T22:46:10+00:00 UTC)
 
 445 models polled, 1335 inference endpoints:
-up 814, degraded 99, down 21, idle 401.
+up 818, degraded 89, down 17, idle 411.
 
-Currently down (21):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 72% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 34% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 97% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | 46% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 76% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 75% | 61% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 29% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 61% | 29% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 65% | 58% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 81% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 60% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 76% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | 33% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 63% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 65% | 66% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 75% | 90% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 39% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 76% | 100% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 49% | 46% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 69% | 90% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 61% | n/a |
-| plus 6 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 69% | 100% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 80% | 53% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 51% | 49% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 70% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

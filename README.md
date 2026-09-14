@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-14T15:15:58+00:00 UTC)
+## Current status (2026-09-14T15:31:16+00:00 UTC)
 
-445 models polled, 1341 inference endpoints:
-up 750, degraded 168, down 50, idle 373.
+447 models polled, 1343 inference endpoints:
+up 772, degraded 162, down 42, idle 367.
 
-Currently down (50):
+Currently down (42):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 33% | 34% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 46% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 79% | 99% |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 60% | 100% |
-| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 70% | 97% |
-| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 68% | 87% |
-| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 71% | 90% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 70% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 25% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `siliconflow/fp8` | SiliconFlow | 71% | 100% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 60% | 38% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 60% | 38% |
-| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 60% | 38% |
-| plus 35 more | | | | |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 77% | 70% |
+| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 70% | 41% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 61% | 48% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 75% | 60% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 39% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 39% | n/a |
+| `google/gemini-2.5-pro-preview-05-06` | `google-vertex/eu` | Google | 39% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 53% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 97% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 74% | 59% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 65% |
+| plus 27 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

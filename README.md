@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-14T02:01:35+00:00 UTC)
+## Current status (2026-09-14T02:15:20+00:00 UTC)
 
 445 models polled, 1340 inference endpoints:
-up 792, degraded 74, down 28, idle 446.
+up 788, degraded 88, down 24, idle 440.
 
-Currently down (28):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 70% | 70% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 77% | 79% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 72% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 68% | n/a |
-| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 42% | 74% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 68% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 66% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 71% | n/a |
+| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 58% | 18% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 76% | 73% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 61% | 90% |
-| `openai/gpt-oss-120b` | `together` | Together | 75% | 58% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 79% | n/a |
-| plus 13 more | | | | |
+| `nvidia/nemotron-3-nano-30b-a3b` | `nebius/fp8` | Nebius | 76% | 47% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 77% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 79% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 70% | 97% |
+| `openai/gpt-oss-120b` | `together` | Together | 69% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 68% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 52% | 100% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

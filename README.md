@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-14T00:15:49+00:00 UTC)
+## Current status (2026-09-14T00:30:55+00:00 UTC)
 
 445 models polled, 1338 inference endpoints:
-up 772, degraded 95, down 21, idle 450.
+up 778, degraded 90, down 24, idle 446.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 73% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 22% | n/a |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 78% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 74% | 80% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 55% | 91% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 24% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 25% | 27% |
-| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 61% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 77% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 72% | 73% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 56% | 77% |
-| `openai/gpt-oss-120b` | `together` | Together | 54% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `streamlake` | StreamLake | 70% | 29% |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 2% | n/a |
-| plus 6 more | | | | |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 93% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 6% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 45% | 100% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 77% | n/a |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 76% | 78% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 86% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 71% | 74% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 87% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 70% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `atlas-cloud/fp8` | AtlasCloud | 39% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `streamlake` | StreamLake | 58% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 72% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

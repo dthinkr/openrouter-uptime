@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-14T20:30:58+00:00 UTC)
+## Current status (2026-09-14T20:45:34+00:00 UTC)
 
 447 models polled, 1341 inference endpoints:
-up 768, degraded 127, down 48, idle 398.
+up 768, degraded 124, down 43, idle 406.
 
-Currently down (48):
+Currently down (43):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 58% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 77% | 94% |
-| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 65% | 95% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 42% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 75% | 97% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `gmicloud/fp8` | GMICloud | n/a | n/a |
 | `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `novita` | Novita | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 77% | 98% |
-| `deepseek/deepseek-v4-pro-0813` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `novita` | Novita | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 78% | 85% |
 | `deepseek/deepseek-v4.1-flash` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| plus 33 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 33% | 80% |
+| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 10% | 35% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 27% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
+| plus 28 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

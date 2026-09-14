@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-14T03:01:31+00:00 UTC)
+## Current status (2026-09-14T03:15:44+00:00 UTC)
 
 445 models polled, 1341 inference endpoints:
-up 777, degraded 96, down 20, idle 448.
+up 780, degraded 96, down 20, idle 445.
 
 Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 42% | 12% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 61% | 26% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 24% | 22% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 58% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 79% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 75% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 74% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 74% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 80% | 78% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 97% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 21% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 77% | 1% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 96% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 77% | 43% |
-| `openai/gpt-oss-120b` | `together` | Together | 78% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 79% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 40% | 100% |
+| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 48% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 74% | 91% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 75% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 35% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 78% | 70% |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 68% | n/a |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 76% | 82% |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 75% | 79% |
 | plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-14T01:15:37+00:00 UTC)
+## Current status (2026-09-14T01:30:14+00:00 UTC)
 
 445 models polled, 1339 inference endpoints:
-up 788, degraded 97, down 19, idle 435.
+up 770, degraded 95, down 30, idle 444.
 
-Currently down (19):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4#75902459f9#1` | BaseTen | 69% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4#75902459f9#2` | BaseTen | 77% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 74% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 74% | 73% |
 | `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 78% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 100% |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 73% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 95% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 64% | 26% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 79% | n/a |
-| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 2% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 69% | 99% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 70% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 53% |
-| plus 4 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | 3% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 67% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 56% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 68% | 36% |
+| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 53% | 31% |
+| `moonshotai/kimi-k2.6` | `novita` | Novita | 79% | n/a |
+| `moonshotai/kimi-k3` | `inference-net` | InferenceNet | 70% | 73% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 82% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 74% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 62% | 93% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 69% | 21% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

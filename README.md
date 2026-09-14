@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-14T19:31:10+00:00 UTC)
+## Current status (2026-09-14T19:46:41+00:00 UTC)
 
-447 models polled, 1344 inference endpoints:
-up 771, degraded 137, down 37, idle 399.
+447 models polled, 1343 inference endpoints:
+up 767, degraded 132, down 44, idle 400.
 
-Currently down (37):
+Currently down (44):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 77% | 59% |
+| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 61% | 44% |
+| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 67% | 61% |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 72% | 86% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 79% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `novita` | Novita | n/a | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 77% | 76% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `novita` | Novita | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 67% | 69% |
+| `deepseek/deepseek-v4-pro-0813` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `gmicloud/fp8` | GMICloud | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 66% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 57% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 61% | n/a |
-| plus 22 more | | | | |
+| plus 29 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

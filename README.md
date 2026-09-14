@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-14T05:15:59+00:00 UTC)
+## Current status (2026-09-14T05:31:14+00:00 UTC)
 
 445 models polled, 1341 inference endpoints:
-up 794, degraded 93, down 17, idle 437.
+up 788, degraded 93, down 19, idle 441.
 
-Currently down (17):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 86% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 66% | 68% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 79% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 75% | 52% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | 98% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 28% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 67% | 68% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 67% | 55% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 26% | n/a |
-| `openai/gpt-6-astra` | `azure/us` | Azure | 63% | 88% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 79% | n/a |
-| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 79% | 93% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 60% |
-| plus 2 more | | | | |
+| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 79% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 18% | 98% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 68% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 79% | 77% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 81% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 69% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 63% | 63% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 59% | 64% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 30% | n/a |
+| `openai/gpt-6-astra` | `azure/us` | Azure | 69% | 100% |
+| `tencent/hy3` | `deepinfra/fp8` | DeepInfra | 57% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

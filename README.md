@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T02:15:57+00:00 UTC)
+## Current status (2026-09-15T02:31:10+00:00 UTC)
 
 445 models polled, 1337 inference endpoints:
-up 788, degraded 97, down 23, idle 429.
+up 768, degraded 126, down 31, idle 412.
 
-Currently down (23):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 27% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 49% | 29% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 64% | 63% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 78% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 71% | 75% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 26% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 31% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 62% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 7% | 33% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 64% | 83% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 67% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 68% | 55% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 98% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-6-astra-pro` | `azure/us` | Azure | 42% | 98% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 69% | 79% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 78% | 100% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 77% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 54% | n/a |
-| plus 8 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 78% |
+| `openai/gpt-6-astra` | `azure/us` | Azure | 76% | 94% |
+| `openai/gpt-6-astra-pro` | `azure/us` | Azure | 62% | n/a |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 66% | 16% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 59% | 22% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

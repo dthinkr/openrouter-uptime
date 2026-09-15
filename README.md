@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T05:31:22+00:00 UTC)
+## Current status (2026-09-15T05:46:33+00:00 UTC)
 
 445 models polled, 1337 inference endpoints:
-up 785, degraded 86, down 29, idle 437.
+up 783, degraded 87, down 27, idle 440.
 
-Currently down (29):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 75% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 85% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 15% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 69% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 70% | 89% |
-| `minimax/minimax-m3` | `mara` | Mara | 73% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 77% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 78% | 76% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 4% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 21% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 63% | 87% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 72% | n/a |
 | `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 57% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 75% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 73% |
 | `openai/gpt-5.6-luna` | `azure/us` | Azure | 61% | 85% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 59% | 50% |
-| plus 14 more | | | | |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 60% | n/a |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 45% | 41% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 49% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 73% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 35% | 100% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

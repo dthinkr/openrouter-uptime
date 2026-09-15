@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T01:30:56+00:00 UTC)
+## Current status (2026-09-15T01:45:32+00:00 UTC)
 
 445 models polled, 1337 inference endpoints:
-up 788, degraded 111, down 20, idle 418.
+up 803, degraded 98, down 18, idle 418.
 
-Currently down (20):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `reka/fp4` | Reka | 58% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 81% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 5% | 3% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 64% | n/a |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 77% | 95% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 63% | 17% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 63% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 75% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 49% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 66% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 53% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 65% | n/a |
-| plus 5 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `io-net/fp8` | Io Net | 74% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `reka/fp4` | Reka | 36% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | 9% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 5% | 29% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 71% | 75% |
+| `minimax/minimax-m3` | `mara` | Mara | 79% | n/a |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 74% | n/a |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 76% | 100% |
+| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 75% | 96% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 55% | 30% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 72% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 48% | 26% |
+| `z-ai/glm-4.6` | `atlas-cloud/fp8` | AtlasCloud | 70% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 54% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

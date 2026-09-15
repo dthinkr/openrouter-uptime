@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T06:01:05+00:00 UTC)
+## Current status (2026-09-15T06:16:08+00:00 UTC)
 
 445 models polled, 1337 inference endpoints:
-up 786, degraded 87, down 23, idle 441.
+up 799, degraded 91, down 23, idle 424.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 80% | 98% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 64% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 100% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 75% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 64% | 89% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 38% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 69% | 42% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 69% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 64% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 8% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 37% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | 58% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 65% | 57% |
+| `minimax/minimax-m3` | `mara` | Mara | 60% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 100% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 42% | 99% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 76% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 68% | 88% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 71% | n/a |
+| `openai/gpt-6-astra-pro` | `azure/us` | Azure | 76% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 39% | 39% |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

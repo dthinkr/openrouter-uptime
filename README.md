@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T03:00:54+00:00 UTC)
+## Current status (2026-09-15T03:16:37+00:00 UTC)
 
 445 models polled, 1336 inference endpoints:
-up 787, degraded 106, down 19, idle 424.
+up 784, degraded 105, down 27, idle 420.
 
-Currently down (19):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | 62% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 53% | 46% |
-| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 56% | 30% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 35% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 51% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 53% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 14% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 72% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 87% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 100% |
+| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 49% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 49% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 79% | n/a |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 28% | 24% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 76% | 36% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 100% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 23% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 99% |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 75% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 77% | 83% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 79% | 89% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 74% | 73% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 72% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T11:15:54+00:00 UTC)
+## Current status (2026-09-15T11:30:51+00:00 UTC)
 
 445 models polled, 1338 inference endpoints:
-up 757, degraded 138, down 44, idle 399.
+up 745, degraded 155, down 48, idle 390.
 
-Currently down (44):
+Currently down (48):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 39% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 75% | 65% |
-| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 67% | 0% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 75% | 68% |
-| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 74% | 8% |
-| `deepseek/deepseek-v4-flash-0731` | `reka/fp4` | Reka | 43% | 3% |
-| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 77% | 80% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | 72% | 53% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 79% | 71% |
-| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 66% | 53% |
-| `deepseek/deepseek-v4.1-flash` | `reka/fp4` | Reka | 72% | 2% |
-| `deepseek/deepseek-v4.1-flash` | `siliconflow/fp8` | SiliconFlow | 68% | 52% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 80% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 8% | n/a |
-| plus 29 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 41% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
+| `deepseek/deepseek-v4-flash` | `wafer` | Wafer | 71% | 100% |
+| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 70% | 72% |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 58% | 76% |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 66% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `reka/fp4` | Reka | 28% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | 73% | 50% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
+| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 70% | 53% |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 65% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `reka/fp4` | Reka | 48% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `siliconflow/fp8` | SiliconFlow | 64% | 43% |
+| plus 33 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

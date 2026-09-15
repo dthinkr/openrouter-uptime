@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T15:31:31+00:00 UTC)
+## Current status (2026-09-15T15:46:41+00:00 UTC)
 
 446 models polled, 1337 inference endpoints:
-up 783, degraded 142, down 34, idle 378.
+up 805, degraded 123, down 34, idle 375.
 
 Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 77% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `reka/fp4` | Reka | 39% | 97% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 66% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 69% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | 4% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 66% | 62% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 91% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 75% | 83% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 83% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 12% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 67% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 57% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 64% | 25% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 61% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 19% | 63% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 60% | 58% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 58% | n/a |
 | `mistralai/mistral-nemo` | `novita/fp8` | Novita | 26% | 100% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 52% | 17% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 77% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
 | plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

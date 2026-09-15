@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T05:15:36+00:00 UTC)
+## Current status (2026-09-15T05:31:22+00:00 UTC)
 
 445 models polled, 1337 inference endpoints:
-up 786, degraded 92, down 24, idle 435.
+up 785, degraded 86, down 29, idle 437.
 
-Currently down (24):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 97% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 75% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 74% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 75% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 85% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 78% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 70% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 15% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 69% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 70% | 89% |
+| `minimax/minimax-m3` | `mara` | Mara | 73% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 77% | n/a |
 | `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 74% | 76% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 30% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 73% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 68% | n/a |
-| plus 9 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 57% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 75% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 61% | 85% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 59% | 50% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

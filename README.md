@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T04:31:32+00:00 UTC)
+## Current status (2026-09-15T04:46:06+00:00 UTC)
 
 445 models polled, 1337 inference endpoints:
-up 792, degraded 99, down 26, idle 420.
+up 800, degraded 88, down 14, idle 435.
 
-Currently down (26):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | 37% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 72% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | 3% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | 33% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 100% |
-| `google/gemma-4-31b-it` | `together` | Together | 71% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 60% | 100% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 79% | 83% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 28% | 0% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 74% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 73% | 91% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 74% | n/a |
-| plus 11 more | | | | |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 47% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 82% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 64% | 89% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 80% | 84% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 3% | 0% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 79% | 97% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 65% | 26% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 80% | 77% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 79% | 94% |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 71% | 73% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 60% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

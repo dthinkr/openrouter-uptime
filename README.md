@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T06:46:41+00:00 UTC)
+## Current status (2026-09-15T07:01:23+00:00 UTC)
 
-445 models polled, 1337 inference endpoints:
-up 784, degraded 102, down 38, idle 413.
+445 models polled, 1336 inference endpoints:
+up 772, degraded 118, down 40, idle 406.
 
-Currently down (38):
+Currently down (40):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 37% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 64% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | 0% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 72% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 71% | 96% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 71% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 66% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 66% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | 22% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 50% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 78% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 61% | n/a |
-| `google/gemma-4-31b-it` | `together` | Together | 68% | n/a |
-| plus 23 more | | | | |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 74% | 68% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 51% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 41% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 55% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 53% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 53% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 35% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 74% | 74% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 57% | 24% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 66% | 93% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
+| `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
+| plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

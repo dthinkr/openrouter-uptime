@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-15T18:45:41+00:00 UTC)
+## Current status (2026-09-15T19:00:51+00:00 UTC)
 
 446 models polled, 1336 inference endpoints:
-up 796, degraded 116, down 33, idle 391.
+up 786, degraded 124, down 34, idle 392.
 
-Currently down (33):
+Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 74% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 72% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 84% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | 67% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 46% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 47% | 64% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 79% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 64% | 12% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 2% | 4% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 32% | 51% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 66% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 16% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 73% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 21% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 44% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 72% | 82% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 55% | 93% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 84% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 30% | 99% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 3% | 7% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 42% | 87% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 5% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 66% | 44% |
-| plus 18 more | | | | |
+| plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

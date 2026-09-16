@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T17:16:45+00:00 UTC)
+## Current status (2026-09-16T17:31:25+00:00 UTC)
 
 444 models polled, 1335 inference endpoints:
-up 745, degraded 155, down 32, idle 403.
+up 747, degraded 163, down 40, idle 385.
 
-Currently down (32):
+Currently down (40):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 34% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 78% | 13% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 84% |
+| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 16% | 100% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 74% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 74% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 74% | 49% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 27% | 71% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 40% | 50% |
-| `minimax/minimax-m3` | `mara` | Mara | 41% | n/a |
-| `moonshotai/kimi-k2.6` | `novita` | Novita | 78% | n/a |
-| `moonshotai/kimi-k2.6` | `phala` | Phala | 76% | n/a |
-| `moonshotai/kimi-k2.7-code` | `inceptron/int4` | Inceptron | 77% | 69% |
-| plus 17 more | | | | |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 2% | 0% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 76% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 85% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 24% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 53% | 91% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 43% | 64% |
+| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 58% | n/a |
+| plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

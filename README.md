@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T01:00:17+00:00 UTC)
+## Current status (2026-09-16T01:16:37+00:00 UTC)
 
 443 models polled, 1335 inference endpoints:
-up 777, degraded 86, down 24, idle 448.
+up 772, degraded 88, down 27, idle 448.
 
-Currently down (24):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 45% |
-| `anthropic/claude-sonnet-4` | `google-vertex/global` | Google | n/a | n/a |
-| `anthropic/claude-sonnet-4` | `google-vertex` | Google | 0% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 79% | 57% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 2% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | 58% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 68% | 4% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 43% | 0% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 62% | n/a |
-| `openai/gpt-4.1` | `openai` | OpenAI | 52% | 33% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 77% | 98% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 79% | 39% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 36% | n/a |
-| plus 9 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 1% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 66% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 68% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 37% | n/a |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 20% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 71% |
+| `openai/gpt-4.1` | `openai` | OpenAI | 47% | 100% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 77% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 75% | 97% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 34% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

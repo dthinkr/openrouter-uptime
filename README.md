@@ -85,29 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T05:31:21+00:00 UTC)
+## Current status (2026-09-16T05:46:02+00:00 UTC)
 
 443 models polled, 1336 inference endpoints:
-up 799, degraded 97, down 14, idle 426.
+up 795, degraded 100, down 15, idle 426.
 
-Currently down (14):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 72% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 88% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 74% | 100% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 28% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 26% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 71% | 57% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 79% | 31% |
+| `openai/gpt-5.6-luna` | `azure/us` | Azure | 74% | 55% |
 | `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 80% | n/a |
-| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 79% | 78% |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 41% | n/a |
-| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 75% | 67% |
-| `z-ai/glm-5.3-flash` | `io-net/fp8` | Io Net | 78% | 73% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 70% | 67% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 71% | n/a |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 87% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 58% | 78% |
+| `z-ai/glm-5.3-flash` | `open-inference/fp4` | OpenInference | 19% | 1% |
+| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 68% | 77% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

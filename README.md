@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T05:16:41+00:00 UTC)
+## Current status (2026-09-16T05:31:21+00:00 UTC)
 
-443 models polled, 1335 inference endpoints:
-up 804, degraded 85, down 14, idle 432.
+443 models polled, 1336 inference endpoints:
+up 799, degraded 97, down 14, idle 426.
 
 Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 61% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 28% |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 68% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 72% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 88% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 74% | 100% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 78% | n/a |
-| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 76% | 82% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 80% | 85% |
-| `z-ai/glm-5.3` | `baseten/fp8` | BaseTen | 76% | n/a |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 47% | 41% |
-| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 80% | 88% |
-| `z-ai/glm-5.3-flash` | `io-net/fp8` | Io Net | 70% | 56% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 28% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 80% | n/a |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 79% | 78% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 41% | n/a |
+| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 75% | 67% |
+| `z-ai/glm-5.3-flash` | `io-net/fp8` | Io Net | 78% | 73% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

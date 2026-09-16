@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T23:15:59+00:00 UTC)
+## Current status (2026-09-16T23:30:58+00:00 UTC)
 
-444 models polled, 1339 inference endpoints:
-up 824, degraded 87, down 15, idle 413.
+444 models polled, 1340 inference endpoints:
+up 819, degraded 81, down 13, idle 427.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `reka/fp4` | Reka | 48% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 70% |
+| `deepseek/deepseek-v4.1-flash` | `reka/fp4` | Reka | 23% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 70% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 64% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | n/a |
 | `mistralai/mistral-nemo` | `novita/fp8` | Novita | 13% | 100% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 60% | 94% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 74% | 94% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 18% | 19% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 71% | 89% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 19% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 75% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 71% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 79% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 76% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 21% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 75% | 45% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 72% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 80% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

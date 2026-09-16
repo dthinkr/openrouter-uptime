@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T22:45:38+00:00 UTC)
+## Current status (2026-09-16T23:01:20+00:00 UTC)
 
 444 models polled, 1336 inference endpoints:
-up 826, degraded 94, down 21, idle 395.
+up 818, degraded 82, down 16, idle 420.
 
-Currently down (21):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `anthropic/claude-sonnet-4` | `google-vertex` | Google | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 80% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 69% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 27% | 100% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 51% | 72% |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 76% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 100% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 66% | 80% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 21% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 55% | 37% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 79% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 73% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 76% | 51% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 64% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 80% | 79% |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 58% | 48% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 11% | 6% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 77% | 57% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 76% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 68% |
+| `z-ai/glm-5.3` | `inference-net/fp4` | InferenceNet | 11% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

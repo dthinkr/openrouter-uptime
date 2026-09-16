@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T23:30:58+00:00 UTC)
+## Current status (2026-09-16T23:45:59+00:00 UTC)
 
-444 models polled, 1340 inference endpoints:
-up 819, degraded 81, down 13, idle 427.
+444 models polled, 1341 inference endpoints:
+up 820, degraded 79, down 13, idle 429.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `reka/fp4` | Reka | 23% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 70% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 13% | 100% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 74% | 94% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 62% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | n/a |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 21% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 75% | 45% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 72% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 80% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 11% | 8% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 79% | 95% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 52% | 72% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 79% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `io-net/fp8` | Io Net | 80% | n/a |
+| `qwen/qwen3.8-27b` | `venice/fp8` | Venice | 75% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 72% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 77% | 68% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

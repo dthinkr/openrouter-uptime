@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T01:16:37+00:00 UTC)
+## Current status (2026-09-16T01:31:21+00:00 UTC)
 
 443 models polled, 1335 inference endpoints:
-up 772, degraded 88, down 27, idle 448.
+up 786, degraded 87, down 27, idle 435.
 
 Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | n/a |
+| `anthropic/claude-sonnet-4` | `google-vertex` | Google | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 79% | 57% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 66% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 68% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 37% | n/a |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 20% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 71% |
-| `openai/gpt-4.1` | `openai` | OpenAI | 47% | 100% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 77% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 75% | 97% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 34% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 67% | 35% |
+| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 76% | n/a |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 64% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 64% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 78% | 81% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 72% | 53% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 22% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 66% | 49% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 51% | n/a |
 | plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T02:46:35+00:00 UTC)
+## Current status (2026-09-16T03:01:28+00:00 UTC)
 
 443 models polled, 1335 inference endpoints:
-up 789, degraded 87, down 20, idle 439.
+up 771, degraded 108, down 16, idle 440.
 
-Currently down (20):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | n/a |
 | `anthropic/claude-sonnet-4` | `google-vertex/global` | Google | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 60% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `atlas-cloud/fp8` | AtlasCloud | 76% | 79% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 84% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 59% | 48% |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 74% | n/a |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 79% | 67% |
-| `openai/gpt-4o-2024-05-13` | `azure` | Azure | 79% | n/a |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 45% | 43% |
-| `openai/gpt-oss-120b` | `together` | Together | 78% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 76% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 65% | n/a |
-| plus 5 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 26% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 58% | 66% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 64% | 41% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `crusoe/fp8` | Crusoe | 73% | n/a |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 44% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 63% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `io-net/fp8` | Io Net | 79% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 69% | 98% |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 74% | n/a |
+| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 73% | 68% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

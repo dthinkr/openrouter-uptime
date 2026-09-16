@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T16:46:41+00:00 UTC)
+## Current status (2026-09-16T17:01:21+00:00 UTC)
 
 444 models polled, 1335 inference endpoints:
-up 801, degraded 119, down 30, idle 385.
+up 797, degraded 109, down 30, idle 399.
 
 Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | 67% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 34% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 62% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 46% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 61% | 87% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 26% | 55% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 66% | 84% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 49% | 58% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 67% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 73% | n/a |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 37% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 55% | n/a |
-| `moonshotai/kimi-k3` | `morph/fast` | Morph | 59% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 83% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | 53% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | 89% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 95% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 23% | 2% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 78% | 87% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 49% | 33% |
+| `minimax/minimax-m3` | `mara` | Mara | 43% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 28% | 62% |
+| `moonshotai/kimi-k2.6` | `novita` | Novita | 79% | 92% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 71% | n/a |
+| `moonshotai/kimi-k2.6` | `phala` | Phala | 79% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 82% |
 | plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T07:00:38+00:00 UTC)
+## Current status (2026-09-16T07:16:19+00:00 UTC)
 
 443 models polled, 1335 inference endpoints:
-up 770, degraded 114, down 28, idle 423.
+up 772, degraded 128, down 26, idle 409.
 
-Currently down (28):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | 0% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 52% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 57% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 73% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 18% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 60% | 46% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 62% | 98% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 81% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | 3% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 66% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 21% | 19% |
+| `google/gemma-4-26b-a4b-it` | `venice/bf16` | Venice | 79% | 68% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 78% | 81% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
 | `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 51% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 23% | 37% |
-| `openai/gpt-5.6-luna` | `azure/us` | Azure | 62% | 85% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 70% | 100% |
-| plus 13 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 100% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 41% | 67% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

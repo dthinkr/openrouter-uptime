@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T22:15:19+00:00 UTC)
+## Current status (2026-09-16T22:30:56+00:00 UTC)
 
 444 models polled, 1336 inference endpoints:
-up 840, degraded 80, down 19, idle 397.
+up 836, degraded 86, down 18, idle 396.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | n/a |
-| `anthropic/claude-fable-5` | `azure` | Azure | 32% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 51% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 40% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 62% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 27% | 30% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 13% | 100% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 69% | 47% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 70% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 35% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 32% | 16% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 56% | 31% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 53% | 100% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 5% | 64% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 73% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 60% |
-| plus 4 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 17% | n/a |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 62% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 38% | 52% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 77% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 66% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 56% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 63% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

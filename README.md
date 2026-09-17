@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-16T23:45:59+00:00 UTC)
+## Current status (2026-09-17T00:01:51+00:00 UTC)
 
 444 models polled, 1341 inference endpoints:
-up 820, degraded 79, down 13, idle 429.
+up 811, degraded 93, down 16, idle 421.
 
-Currently down (13):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 62% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 87% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 79% | 75% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 41% | n/a |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 11% | 8% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 79% | 95% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 52% | 72% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 79% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `io-net/fp8` | Io Net | 80% | n/a |
-| `qwen/qwen3.8-27b` | `venice/fp8` | Venice | 75% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 72% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 77% | 68% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 9% | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 77% | 52% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 62% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 54% | 86% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 70% | n/a |
+| `qwen/qwen3.8-27b` | `venice/fp8` | Venice | 73% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 77% | 82% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 70% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

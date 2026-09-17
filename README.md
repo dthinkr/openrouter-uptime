@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-17T00:01:51+00:00 UTC)
+## Current status (2026-09-17T00:15:48+00:00 UTC)
 
-444 models polled, 1341 inference endpoints:
-up 811, degraded 93, down 16, idle 421.
+444 models polled, 1339 inference endpoints:
+up 806, degraded 101, down 14, idle 418.
 
-Currently down (16):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 87% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 79% | 75% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 41% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 73% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 61% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 58% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 77% | n/a |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 9% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 77% | 52% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 62% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 54% | 86% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 70% | n/a |
-| `qwen/qwen3.8-27b` | `venice/fp8` | Venice | 73% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 77% | 82% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 70% |
-| plus 1 more | | | | |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 9% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 52% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 64% | 72% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 76% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 79% | 34% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 78% |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 54% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

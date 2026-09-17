@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-17T23:16:38+00:00 UTC)
+## Current status (2026-09-17T23:30:59+00:00 UTC)
 
 445 models polled, 1340 inference endpoints:
-up 787, degraded 101, down 27, idle 425.
+up 796, degraded 107, down 23, idle 414.
 
-Currently down (27):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-haiku-4.5` | `google-vertex/global` | Google | 79% | 100% |
-| `anthropic/claude-sonnet-4.5` | `claude-on-aws` | Claude Platform on AWS | 75% | 100% |
+| `anthropic/claude-sonnet-4` | `google-vertex` | Google | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 74% | n/a |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 75% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 42% | 64% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 69% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 49% | 36% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 52% | 45% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 67% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 83% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 52% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 52% | 30% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 68% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 79% | n/a |
-| plus 12 more | | | | |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 75% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 70% | 39% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 61% | n/a |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 55% | n/a |
+| `openai/gpt-oss-120b` | `phala` | Phala | 52% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

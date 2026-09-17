@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-17T14:16:10+00:00",
+ "generated": "2026-09-17T14:30:53+00:00",
  "models_polled": 444,
  "providers": 107,
  "endpoint_count": 1337,
- "down_or_degraded": 143,
- "transitions_this_run": 12,
+ "down_or_degraded": 160,
+ "transitions_this_run": 17,
  "schema_version": 2,
  "endpoint_identity": "model + endpoint_id",
  "endpoints": [
@@ -65,8 +65,8 @@
    "endpoint_id": "amazon-bedrock",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": null,
+   "up30m": 99.7229916897507
   },
   {
    "model": "amazon/nova-lite-v1",
@@ -75,8 +75,8 @@
    "endpoint_id": "amazon-bedrock/eu-west-1",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 82.57575757575758,
-   "up30m": 91.49175412293853
+   "up5m": 100,
+   "up30m": 88.03373748023195
   },
   {
    "model": "amazon/nova-lite-v1",
@@ -85,8 +85,8 @@
    "endpoint_id": "amazon-bedrock",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.880810488677,
+   "up30m": 99.98301053346925
   },
   {
    "model": "amazon/nova-micro-v1",
@@ -94,9 +94,9 @@
    "endpoint_tag": "amazon-bedrock/eu-west-1",
    "endpoint_id": "amazon-bedrock/eu-west-1",
    "identity_ambiguous": false,
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "down",
+   "up5m": 10.07252215954875,
+   "up30m": 28.476331360946745
   },
   {
    "model": "amazon/nova-micro-v1",
@@ -105,8 +105,8 @@
    "endpoint_id": "amazon-bedrock",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.97878659312686
+   "up5m": 99.98445515311674,
+   "up30m": 99.98121854105626
   },
   {
    "model": "amazon/nova-premier-v1",
@@ -125,7 +125,7 @@
    "endpoint_id": "amazon-bedrock/eu-west-1",
    "identity_ambiguous": false,
    "state": "idle",
-   "up5m": 100,
+   "up5m": null,
    "up30m": null
   },
   {
@@ -135,7 +135,7 @@
    "endpoint_id": "amazon-bedrock",
    "identity_ambiguous": false,
    "state": "idle",
-   "up5m": 100,
+   "up5m": null,
    "up30m": null
   },
   {
@@ -145,7 +145,7 @@
    "endpoint_id": "mancer/fp8",
    "identity_ambiguous": false,
    "state": "idle",
-   "up5m": 100,
+   "up5m": null,
    "up30m": null
   },
   {
@@ -206,7 +206,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.66685174902833
+   "up30m": 99.8923863330643
   },
   {
    "model": "anthropic/claude-fable-5",
@@ -226,7 +226,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.85401459854015
   },
   {
    "model": "anthropic/claude-fable-5.1",
@@ -235,8 +235,8 @@
    "endpoint_id": "anthropic",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.71910112359551,
-   "up30m": 99.80449657869013
+   "up5m": 99.6779388083736,
+   "up30m": 99.72234562416705
   },
   {
    "model": "anthropic/claude-fable-5.1",
@@ -255,8 +255,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.33333333333333,
-   "up30m": 99.80449657869013
+   "up5m": 99.6124031007752,
+   "up30m": 99.29961089494164
   },
   {
    "model": "anthropic/claude-fable-5.1:batch",
@@ -285,8 +285,8 @@
    "endpoint_id": "azure/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.78213507625271
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-haiku-4.5",
@@ -295,8 +295,8 @@
    "endpoint_id": "amazon-bedrock/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.9918533604888,
-   "up30m": 99.97923202203592
+   "up5m": 99.97028585012183,
+   "up30m": 99.97590361445783
   },
   {
    "model": "anthropic/claude-haiku-4.5",
@@ -306,7 +306,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.82253771073647
+   "up30m": 99.95735607675907
   },
   {
    "model": "anthropic/claude-haiku-4.5",
@@ -316,7 +316,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96398343237888
+   "up30m": 99.98791540785498
   },
   {
    "model": "anthropic/claude-haiku-4.5",
@@ -355,7 +355,7 @@
    "endpoint_id": "google-vertex/europe",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -376,7 +376,7 @@
    "identity_ambiguous": false,
    "state": "down",
    "up5m": 0,
-   "up30m": null
+   "up30m": 0
   },
   {
    "model": "anthropic/claude-opus-4.1",
@@ -446,7 +446,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.9925821526593
   },
   {
    "model": "anthropic/claude-opus-4.5",
@@ -455,8 +455,8 @@
    "endpoint_id": "anthropic",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "up5m": 100,
+   "up30m": 99.3006993006993
   },
   {
    "model": "anthropic/claude-opus-4.5",
@@ -486,7 +486,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.9733865602129
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-opus-4.6",
@@ -516,7 +516,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.5475113122172
+   "up30m": 99.81916817359856
   },
   {
    "model": "anthropic/claude-opus-4.6",
@@ -526,7 +526,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.88713318284425
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-opus-4.6",
@@ -596,7 +596,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.7624703087886
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-opus-4.7",
@@ -646,7 +646,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97148153429346
+   "up30m": 99.98549463301421
   },
   {
    "model": "anthropic/claude-opus-4.8",
@@ -686,7 +686,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.95886466474701
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-opus-4.8",
@@ -696,7 +696,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.9729070712544
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-opus-4.8",
@@ -745,7 +745,7 @@
    "endpoint_id": "anthropic/fast",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -775,8 +775,8 @@
    "endpoint_id": "claude-on-aws",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.96461429582449,
-   "up30m": 99.98638406027322
+   "up5m": 99.97422680412372,
+   "up30m": 99.98268548177647
   },
   {
    "model": "anthropic/claude-opus-5",
@@ -865,7 +865,7 @@
    "endpoint_id": "anthropic/fast",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -936,7 +936,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96820349761526
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-sonnet-4.5",
@@ -955,8 +955,8 @@
    "endpoint_id": "amazon-bedrock",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.88927335640139,
-   "up30m": 99.91236895913796
+   "up5m": 100,
+   "up30m": 99.94665632122593
   },
   {
    "model": "anthropic/claude-sonnet-4.5",
@@ -966,7 +966,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.87171263630532
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-sonnet-4.5",
@@ -1015,8 +1015,8 @@
    "endpoint_id": "claude-on-aws",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.99196674231318
+   "up5m": 99.96544574982723,
+   "up30m": 99.9900939097357
   },
   {
    "model": "anthropic/claude-sonnet-4.6",
@@ -1045,8 +1045,8 @@
    "endpoint_id": "amazon-bedrock/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.95548300934857
+   "up5m": 99.89212513484358,
+   "up30m": 99.95395948434623
   },
   {
    "model": "anthropic/claude-sonnet-4.6",
@@ -1115,8 +1115,8 @@
    "endpoint_id": "claude-on-aws",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97104526590097,
-   "up30m": 99.96657027763385
+   "up5m": 99.98414082943462,
+   "up30m": 99.97784506314157
   },
   {
    "model": "anthropic/claude-sonnet-5",
@@ -1134,9 +1134,9 @@
    "endpoint_tag": "azure/global",
    "endpoint_id": "azure/global",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "degraded",
    "up5m": null,
-   "up30m": 100
+   "up30m": 96.26168224299066
   },
   {
    "model": "anthropic/claude-sonnet-5",
@@ -1145,8 +1145,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.56140350877193,
+   "up30m": 99.87929993964997
   },
   {
    "model": "anthropic/claude-sonnet-5",
@@ -1155,8 +1155,8 @@
    "endpoint_id": "amazon-bedrock/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.96975425330812
+   "up5m": 99.94697773064686,
+   "up30m": 99.97714808043877
   },
   {
    "model": "anthropic/claude-sonnet-5",
@@ -1165,8 +1165,8 @@
    "endpoint_id": "anthropic",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.94845360824742,
+   "up30m": 99.9771079740557
   },
   {
    "model": "anthropic/claude-sonnet-5",
@@ -1174,9 +1174,9 @@
    "endpoint_tag": "amazon-bedrock/eu-west-1",
    "endpoint_id": "amazon-bedrock/eu-west-1",
    "identity_ambiguous": false,
-   "state": "idle",
-   "up5m": 100,
-   "up30m": null
+   "state": "up",
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "anthropic/claude-sonnet-5",
@@ -1196,7 +1196,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.94369369369369
+   "up30m": 99.95249406175772
   },
   {
    "model": "anthropic/claude-sonnet-5",
@@ -1245,7 +1245,7 @@
    "endpoint_id": "seed/fp8",
    "identity_ambiguous": false,
    "state": "idle",
-   "up5m": 100,
+   "up5m": null,
    "up30m": null
   },
   {
@@ -1285,7 +1285,7 @@
    "endpoint_id": "seed/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -1325,7 +1325,7 @@
    "endpoint_id": "cohere",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -1336,7 +1336,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": null,
-   "up30m": 98.75
+   "up30m": 99.52380952380952
   },
   {
    "model": "cohere/command-r-plus-08-2024",
@@ -1365,8 +1365,8 @@
    "endpoint_id": "cohere",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.54823151125403,
-   "up30m": 96.3078930202218
+   "up5m": 96.86780285582681,
+   "up30m": 96.84813753581662
   },
   {
    "model": "deepseek/deepseek-chat",
@@ -1375,8 +1375,8 @@
    "endpoint_id": "streamlake",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.70014992503748,
-   "up30m": 98.75048809058961
+   "up5m": 96.77023712183156,
+   "up30m": 98.42162952137376
   },
   {
    "model": "deepseek/deepseek-chat",
@@ -1385,8 +1385,8 @@
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 67.54966887417218,
-   "up30m": 94.2190199300552
+   "up5m": 99.7584541062802,
+   "up30m": 92.82827116295185
   },
   {
    "model": "deepseek/deepseek-chat-v3-0324",
@@ -1395,8 +1395,8 @@
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 64.84375,
-   "up30m": 72.96718972895863
+   "up5m": 100,
+   "up30m": 65.03800217155266
   },
   {
    "model": "deepseek/deepseek-chat-v3-0324",
@@ -1404,9 +1404,9 @@
    "endpoint_tag": "siliconflow/fp8",
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 98.76907927129493,
-   "up30m": 98.4251968503937
+   "state": "degraded",
+   "up5m": 97.46063991874048,
+   "up30m": 97.59736620902214
   },
   {
    "model": "deepseek/deepseek-chat-v3-0324",
@@ -1414,9 +1414,9 @@
    "endpoint_tag": "gmicloud/fp8",
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 98.30287206266318,
-   "up30m": 97.96689456639078
+   "state": "up",
+   "up5m": 99.01960784313727,
+   "up30m": 98.12379449412589
   },
   {
    "model": "deepseek/deepseek-chat-v3.1",
@@ -1435,8 +1435,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 87.5,
-   "up30m": 92.56897449245184
+   "up5m": 93.13632030505244,
+   "up30m": 86.89282960678489
   },
   {
    "model": "deepseek/deepseek-chat-v3.1",
@@ -1446,7 +1446,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.98259658893143
   },
   {
    "model": "deepseek/deepseek-chat-v3.1",
@@ -1455,8 +1455,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.52830188679245,
-   "up30m": 99.24134660976766
+   "up5m": 98.87429643527204,
+   "up30m": 99.04446894524071
   },
   {
    "model": "deepseek/deepseek-chat-v3.1",
@@ -1475,8 +1475,8 @@
    "endpoint_id": "mara",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.27972027972028,
-   "up30m": 93.16044457110287
+   "up5m": 95.32710280373831,
+   "up30m": 93.98578458173866
   },
   {
    "model": "deepseek/deepseek-chat-v3.1",
@@ -1496,7 +1496,7 @@
    "identity_ambiguous": false,
    "state": "degraded",
    "up5m": null,
-   "up30m": 96.99248120300751
+   "up30m": 96.40718562874252
   },
   {
    "model": "deepseek/deepseek-r1",
@@ -1526,7 +1526,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98339422118897
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-r1-0528",
@@ -1536,7 +1536,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.2248062015504
+   "up30m": 99.3723849372385
   },
   {
    "model": "deepseek/deepseek-r1-0528",
@@ -1554,9 +1554,9 @@
    "endpoint_tag": "novita/bf16",
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v3.1-terminus",
@@ -1565,8 +1565,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 88.70056497175142,
-   "up30m": 94.88409272581934
+   "up5m": 95.51282051282051,
+   "up30m": 89.81481481481481
   },
   {
    "model": "deepseek/deepseek-v3.1-terminus",
@@ -1585,8 +1585,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 97.54098360655738,
-   "up30m": 99.77454396392703
+   "up5m": 97.70992366412213,
+   "up30m": 99.56313709174121
   },
   {
    "model": "deepseek/deepseek-v3.1-terminus",
@@ -1595,8 +1595,8 @@
    "endpoint_id": "streamlake",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.61904761904762,
-   "up30m": 97.75280898876404
+   "up5m": 97.91666666666666,
+   "up30m": 97.56944444444444
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1605,8 +1605,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.81549815498155,
-   "up30m": 99.12621359223301
+   "up5m": 99.60095770151636,
+   "up30m": 99.12851848141841
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1615,8 +1615,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.68406800060178,
-   "up30m": 99.47543089604967
+   "up5m": 99.18105077485197,
+   "up30m": 99.44907620763334
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1625,8 +1625,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.48344370860927,
-   "up30m": 97.50851788756388
+   "up5m": 96.27507163323781,
+   "up30m": 96.68814748348153
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1645,8 +1645,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 97.21691098364138,
-   "up30m": 98.66728859865395
+   "up5m": 98.1797497155859,
+   "up30m": 98.09757953580942
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1666,7 +1666,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99319033026897
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1676,7 +1676,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98760689056884
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1684,9 +1684,9 @@
    "endpoint_tag": "digitalocean",
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 97.6367319378798,
-   "up30m": 95.61748633879782
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.31787175989086
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1695,8 +1695,8 @@
    "endpoint_id": "alibaba/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.33993399339934,
-   "up30m": 99.23847695390782
+   "up5m": 99.73544973544973,
+   "up30m": 99.39810834049871
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1716,7 +1716,7 @@
    "identity_ambiguous": false,
    "state": "degraded",
    "up5m": null,
-   "up30m": 97.59036144578313
+   "up30m": 97.03703703703704
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1726,7 +1726,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.32631578947368
+   "up30m": 99.63527851458885
   },
   {
    "model": "deepseek/deepseek-v3.2",
@@ -1755,8 +1755,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.62118126272912,
-   "up30m": 96.24752359864817
+   "up5m": 92.77272727272728,
+   "up30m": 94.66036054561656
   },
   {
    "model": "deepseek/deepseek-v3.2-exp",
@@ -1765,8 +1765,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.63800904977376
+   "up5m": 98.89705882352942,
+   "up30m": 99.37067337948395
   },
   {
    "model": "deepseek/deepseek-v3.2-exp",
@@ -1776,7 +1776,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.95777027027027
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1785,8 +1785,8 @@
    "endpoint_id": "baidu/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.9975849494047,
-   "up30m": 99.68912617422451
+   "up5m": 99.98993508127421,
+   "up30m": 99.96896530320899
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1795,8 +1795,8 @@
    "endpoint_id": "open-inference/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.99501271757019,
-   "up30m": 99.98365222840562
+   "up5m": 99.98931795118303,
+   "up30m": 99.99246833276275
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1805,8 +1805,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.19215233698789,
-   "up30m": 98.66143693188893
+   "up5m": 99.27963326784544,
+   "up30m": 98.93572275259059
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1815,8 +1815,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.63663701290565,
-   "up30m": 99.7413834775463
+   "up5m": 99.56118355065196,
+   "up30m": 99.70296093084855
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1825,8 +1825,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97931462456043,
-   "up30m": 99.72304536129474
+   "up5m": 100,
+   "up30m": 99.9862796833773
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1835,8 +1835,8 @@
    "endpoint_id": "venice",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.19969512195121,
-   "up30m": 99.37080536912751
+   "up5m": 99.65317919075144,
+   "up30m": 99.49431424390995
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1845,8 +1845,8 @@
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.86769570011025,
-   "up30m": 99.95746603929075
+   "up5m": 100,
+   "up30m": 99.9550738473634
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1865,8 +1865,8 @@
    "endpoint_id": "alibaba/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.84785783836416,
-   "up30m": 99.71974137129035
+   "up5m": 99.79166666666667,
+   "up30m": 99.78208207903833
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1875,8 +1875,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.95330497042649,
-   "up30m": 99.90892667851118
+   "up5m": 99.92759219926627,
+   "up30m": 99.94695713239798
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1885,8 +1885,8 @@
    "endpoint_id": "atlas-cloud/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.94535220503853,
-   "up30m": 99.9546965954064
+   "up5m": 99.9699555341906,
+   "up30m": 99.95367590289096
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1895,8 +1895,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.10076089462763,
-   "up30m": 98.95459428301936
+   "up5m": 97.77777777777777,
+   "up30m": 98.39172243153573
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1905,8 +1905,8 @@
    "endpoint_id": "nextbit/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.21517331589274,
-   "up30m": 98.67280979232568
+   "up5m": 97.72241992882562,
+   "up30m": 98.21473262701261
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1915,8 +1915,8 @@
    "endpoint_id": "mancer/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 99.83922829581994,
-   "up30m": 97.5896644812958
+   "up5m": 87.60932944606414,
+   "up30m": 95.24899828277046
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1926,7 +1926,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.73998827896074
+   "up30m": 99.58075673409496
   },
   {
    "model": "deepseek/deepseek-v4-flash",
@@ -1935,8 +1935,8 @@
    "endpoint_id": "azure/us",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 93.22381930184805,
-   "up30m": 92.13720316622691
+   "up5m": 95.41547277936962,
+   "up30m": 93.67887014945838
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -1945,8 +1945,8 @@
    "endpoint_id": "open-inference/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.9796121631829
+   "up5m": 99.99413059427734,
+   "up30m": 99.99056145838952
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -1955,8 +1955,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.03875743939614,
-   "up30m": 96.79926593620122
+   "up5m": 97.4473310068502,
+   "up30m": 96.8018447527681
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -1965,8 +1965,8 @@
    "endpoint_id": "inceptron/fp4",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 63.617886178861795,
-   "up30m": 95.59381653244469
+   "up5m": 97.71796372147455,
+   "up30m": 90.64594759293114
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -1975,8 +1975,8 @@
    "endpoint_id": "relace/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.7138667334311,
-   "up30m": 99.62574970011995
+   "up5m": 99.65073769421595,
+   "up30m": 99.7250256692795
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -1985,8 +1985,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.94644052666816,
-   "up30m": 99.90844025277671
+   "up5m": 99.79057591623037,
+   "up30m": 99.86133060158782
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -1995,8 +1995,8 @@
    "endpoint_id": "sail-research/us",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 85.41409147095179,
-   "up30m": 94.95803085299455
+   "up5m": 99.44013781223083,
+   "up30m": 93.30268519485946
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2005,8 +2005,8 @@
    "endpoint_id": "sail-research/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.01324503311258,
-   "up30m": 98.78517325917522
+   "up5m": 99.83633387888707,
+   "up30m": 98.54132901134521
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2015,8 +2015,8 @@
    "endpoint_id": "makora",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.57731595632265,
-   "up30m": 99.28857269897733
+   "up5m": 97.99062290689886,
+   "up30m": 99.10351659237247
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2025,8 +2025,8 @@
    "endpoint_id": "wafer/fast",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.98995883120794,
-   "up30m": 99.98642861451233
+   "up5m": 99.9259405549521,
+   "up30m": 99.97946902654867
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2036,7 +2036,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.92819960509782
+   "up30m": 99.97121473805412
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2045,8 +2045,8 @@
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.92080552098653
+   "up5m": 99.93510707332901,
+   "up30m": 99.92914083259522
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2056,7 +2056,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.95330920975837
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2075,8 +2075,8 @@
    "endpoint_id": "coreweave/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.9964789972184,
-   "up30m": 99.99736136617905
+   "up5m": 100,
+   "up30m": 99.99594439769236
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2085,8 +2085,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 97.72423025435074,
-   "up30m": 98.4898385412483
+   "up5m": 99.6152707901746,
+   "up30m": 98.74088291746641
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2095,8 +2095,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.62525458248473,
-   "up30m": 98.96770354093708
+   "up5m": 98.34334903362027,
+   "up30m": 98.62967002999727
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2106,7 +2106,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97038353324449
+   "up30m": 99.98096688237533
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2115,8 +2115,8 @@
    "endpoint_id": "venice",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.77307110438728,
-   "up30m": 99.8201629112451
+   "up5m": 99.62644751587598,
+   "up30m": 99.6906487537564
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2135,8 +2135,8 @@
    "endpoint_id": "mancer/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.74025974025975,
-   "up30m": 99.92716678805536
+   "up5m": 100,
+   "up30m": 99.85775248933145
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2145,8 +2145,8 @@
    "endpoint_id": "fireworks",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 90.625,
-   "up30m": 95.64591003681767
+   "up5m": 96.08540925266904,
+   "up30m": 96.53997378768021
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2156,7 +2156,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.92846924177397
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2165,8 +2165,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.96912150687047,
-   "up30m": 99.82954843446792
+   "up5m": 100,
+   "up30m": 99.91666666666667
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2175,8 +2175,8 @@
    "endpoint_id": "nextbit/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.14529914529915,
-   "up30m": 99
+   "up5m": 98.61111111111111,
+   "up30m": 98.51088201603666
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2186,7 +2186,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99620075225106
+   "up30m": 99.99611091665695
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2205,8 +2205,8 @@
    "endpoint_id": "baidu/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.98906386701663,
-   "up30m": 99.95189547351924
+   "up5m": 100,
+   "up30m": 99.98492022800616
   },
   {
    "model": "deepseek/deepseek-v4-flash-0731",
@@ -2255,8 +2255,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.90825688073394,
-   "up30m": 99.34224950668712
+   "up5m": 100,
+   "up30m": 99.72511574074075
   },
   {
    "model": "deepseek/deepseek-v4-flash-vision-exp",
@@ -2265,8 +2265,8 @@
    "endpoint_id": "fireworks",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.95047052996533,
-   "up30m": 98.9413680781759
+   "up5m": 98.60279441117764,
+   "up30m": 99.21375921375922
   },
   {
    "model": "deepseek/deepseek-v4-flash-vision-exp",
@@ -2275,8 +2275,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.82352941176471,
-   "up30m": 98.30159547092126
+   "up5m": 99.06666666666666,
+   "up30m": 99.29755549311604
   },
   {
    "model": "deepseek/deepseek-v4-flash-vision-exp",
@@ -2286,7 +2286,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.97044917257683
   },
   {
    "model": "deepseek/deepseek-v4-flash-vision-exp",
@@ -2296,7 +2296,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.92406985573272
   },
   {
    "model": "deepseek/deepseek-v4-flash-vision-exp:batch",
@@ -2315,8 +2315,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.26221577164974,
-   "up30m": 99.21361137047413
+   "up5m": 98.9042131116569,
+   "up30m": 98.51888329103376
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2325,8 +2325,8 @@
    "endpoint_id": "baidu/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.95388871810637
+   "up5m": 99.9526963103122,
+   "up30m": 99.94852215692163
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2335,8 +2335,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.03288201160542,
-   "up30m": 99.7997138769671
+   "up5m": 99.6415770609319,
+   "up30m": 99.75675018243736
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2346,7 +2346,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.92942836979535
+   "up30m": 99.92663242846662
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2356,7 +2356,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.90610328638498
+   "up30m": 99.91338241663058
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2365,8 +2365,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
-   "up30m": 99.13494809688581
+   "up5m": 100,
+   "up30m": 99.7907949790795
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2376,7 +2376,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97868712702473
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2385,8 +2385,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.97435897435898,
-   "up30m": 99.52004517221908
+   "up5m": 99.80353634577604,
+   "up30m": 99.40135346173868
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2395,8 +2395,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.98351467194198
+   "up5m": 99.87789987789988,
+   "up30m": 99.984
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2405,8 +2405,8 @@
    "endpoint_id": "venice",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 67.87003610108303,
-   "up30m": 91.85369908561928
+   "up5m": 100,
+   "up30m": 87.73651016117729
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2415,8 +2415,8 @@
    "endpoint_id": "atlas-cloud/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.69040247678018,
-   "up30m": 99.8240675580577
+   "up5m": 100,
+   "up30m": 99.75124378109453
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2425,8 +2425,8 @@
    "endpoint_id": "baseten/fp4#1b1c6c9d2f#1",
    "identity_ambiguous": true,
    "state": "up",
-   "up5m": 99.04761904761905,
-   "up30m": 99.71796937953263
+   "up5m": 98.6449864498645,
+   "up30m": 99.53307392996109
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2435,8 +2435,8 @@
    "endpoint_id": "baseten/fp4#1b1c6c9d2f#2",
    "identity_ambiguous": true,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.79253112033194
+   "up5m": 97.99426934097421,
+   "up30m": 99.53617810760667
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2455,8 +2455,8 @@
    "endpoint_id": "nextbit/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.83999999999999,
-   "up30m": 99.0228013029316
+   "up5m": 96.83908045977012,
+   "up30m": 98.66573033707866
   },
   {
    "model": "deepseek/deepseek-v4-pro",
@@ -2464,9 +2464,9 @@
    "endpoint_tag": "azure/us",
    "endpoint_id": "azure/us",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 98.70550161812298,
-   "up30m": 98.39679358717434
+   "state": "degraded",
+   "up5m": 99.19354838709677,
+   "up30m": 97.75353016688062
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2486,7 +2486,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.99301432064269
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2506,7 +2506,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.89572471324296
+   "up30m": 99.88829935772131
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2515,8 +2515,8 @@
    "endpoint_id": "sail-research/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.67741935483872,
-   "up30m": 99.81711777615216
+   "up5m": 100,
+   "up30m": 99.84399375975039
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2525,8 +2525,8 @@
    "endpoint_id": "phala",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.91379310344828,
-   "up30m": 99.85943539885206
+   "up5m": 99.8280309544282,
+   "up30m": 99.88614368666742
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2545,8 +2545,8 @@
    "endpoint_id": "streamlake",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.72611464968153,
-   "up30m": 99.28280674549332
+   "up5m": 99.33110367892976,
+   "up30m": 99.20376402461093
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2566,7 +2566,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.33333333333333
+   "up30m": 99.75062344139651
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2575,8 +2575,8 @@
    "endpoint_id": "nextbit/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 97.65886287625418
+   "up5m": null,
+   "up30m": 97.8021978021978
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2585,8 +2585,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.51456310679612,
-   "up30m": 99.35988620199147
+   "up5m": 100,
+   "up30m": 99.3514915693904
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2595,8 +2595,8 @@
    "endpoint_id": "coreweave/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.93629220641324
+   "up5m": 99.82014388489209,
+   "up30m": 99.90810934987365
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2616,7 +2616,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.84139571768438
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2625,8 +2625,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "up5m": 100,
+   "up30m": 99.83065198983911
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2635,7 +2635,7 @@
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -2646,7 +2646,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.9795918367347
+   "up30m": 99.66666666666667
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2655,8 +2655,8 @@
    "endpoint_id": "baseten/fp4#e04fe012db#2",
    "identity_ambiguous": true,
    "state": "up",
-   "up5m": 98.21428571428571,
-   "up30m": 99.58677685950413
+   "up5m": 97.36842105263158,
+   "up30m": 98.75776397515527
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2665,8 +2665,8 @@
    "endpoint_id": "cloudflare",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
-   "up30m": 99.10714285714286
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2674,9 +2674,9 @@
    "endpoint_tag": "fireworks",
    "endpoint_id": "fireworks",
    "identity_ambiguous": false,
-   "state": "down",
-   "up5m": null,
-   "up30m": 76
+   "state": "degraded",
+   "up5m": 100,
+   "up30m": 88.73239436619718
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813",
@@ -2686,7 +2686,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": null,
-   "up30m": 100
+   "up30m": 99.16666666666667
   },
   {
    "model": "deepseek/deepseek-v4-pro-0813:batch",
@@ -2715,8 +2715,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.96412556053812,
-   "up30m": 99.94529207950885
+   "up5m": 99.92323930147764,
+   "up30m": 99.91742596810934
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2724,9 +2724,9 @@
    "endpoint_tag": "relace/fp4",
    "endpoint_id": "relace/fp4",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 92.96740994854203,
-   "up30m": 98.63645217842996
+   "state": "degraded",
+   "up5m": 95.66787003610109,
+   "up30m": 97.04091854820066
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2735,8 +2735,8 @@
    "endpoint_id": "deepseek",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.99576245535444
+   "up5m": 99.99556206452758,
+   "up30m": 99.9931002471366
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2745,8 +2745,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.57454301526077,
-   "up30m": 99.12963207173942
+   "up5m": 98.75690607734806,
+   "up30m": 99.0238165245516
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2755,8 +2755,8 @@
    "endpoint_id": "fireworks",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.91816693944354,
-   "up30m": 99.78226444972287
+   "up5m": 99.84947315604616,
+   "up30m": 99.83390428734559
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2765,8 +2765,8 @@
    "endpoint_id": "morph/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.81017463933182,
-   "up30m": 99.53299369238235
+   "up5m": 99.37888198757764,
+   "up30m": 99.51444812884888
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2775,8 +2775,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.96465598491989,
-   "up30m": 99.75724378326227
+   "up5m": 99.9877660875948,
+   "up30m": 99.84336649011756
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2785,8 +2785,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.32998324958125,
-   "up30m": 99.72862957937585
+   "up5m": 99.73045822102425,
+   "up30m": 99.34065934065934
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2805,8 +2805,8 @@
    "endpoint_id": "makora",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.80838323353294,
-   "up30m": 93.79869118105329
+   "up5m": 94.38775510204081,
+   "up30m": 95.19094766619519
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2815,8 +2815,8 @@
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 94.47236180904522,
-   "up30m": 96.55172413793103
+   "up5m": 74.55919395465995,
+   "up30m": 91.3891779396462
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2825,8 +2825,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.96092223524813,
-   "up30m": 99.97990241505978
+   "up5m": 99.93522117342218,
+   "up30m": 99.97749730559843
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2835,8 +2835,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.95004995004994,
-   "up30m": 99.93316004455997
+   "up5m": 100,
+   "up30m": 99.95121951219512
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2845,8 +2845,8 @@
    "endpoint_id": "modal",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.08759124087592,
-   "up30m": 98.70442099639375
+   "up5m": 99.24882629107982,
+   "up30m": 98.94767190428139
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2855,8 +2855,8 @@
    "endpoint_id": "wafer",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.96230682246512,
-   "up30m": 99.99453880181312
+   "up5m": 100,
+   "up30m": 99.98974358974358
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2875,8 +2875,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.83999999999999,
-   "up30m": 98.79764065335753
+   "up5m": 96.64429530201343,
+   "up30m": 98.48769050410317
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2885,8 +2885,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.98914812805208,
-   "up30m": 99.99625103096649
+   "up5m": 100,
+   "up30m": 99.99280329609039
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2895,8 +2895,8 @@
    "endpoint_id": "phala",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.8914223669924,
-   "up30m": 99.7404703974047
+   "up5m": 99.69325153374233,
+   "up30m": 99.8166055351784
   },
   {
    "model": "deepseek/deepseek-v4.1-flash",
@@ -2905,8 +2905,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.81107397180642
+   "up5m": 99.87080103359173,
+   "up30m": 99.82408443946905
   },
   {
    "model": "dots-studio/dots-3-note-preview:free",
@@ -2915,8 +2915,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.95683142672135,
-   "up30m": 99.97505612372163
+   "up5m": 99.82725113366445,
+   "up30m": 99.8894348894349
   },
   {
    "model": "google/gemini-2.5-flash",
@@ -2925,8 +2925,8 @@
    "endpoint_id": "google-vertex/eu",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.41921072226359,
-   "up30m": 99.51850939466553
+   "up5m": 99.60284029365748,
+   "up30m": 99.42376076432029
   },
   {
    "model": "google/gemini-2.5-flash",
@@ -2935,8 +2935,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.18660698915475,
-   "up30m": 99.64739069111424
+   "up5m": 99.46879705537896,
+   "up30m": 99.51240861514184
   },
   {
    "model": "google/gemini-2.5-flash",
@@ -2965,8 +2965,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.9826046619506
+   "up5m": 99.64271536323938,
+   "up30m": 99.89272030651341
   },
   {
    "model": "google/gemini-2.5-flash",
@@ -2975,8 +2975,8 @@
    "endpoint_id": "google-vertex",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 82.5,
-   "up30m": 76.99775952203136
+   "up5m": 79.2828685258964,
+   "up30m": 76.41216635630043
   },
   {
    "model": "google/gemini-2.5-flash",
@@ -3035,8 +3035,8 @@
    "endpoint_id": "google-vertex/eu",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.48920012895368,
-   "up30m": 99.6703366744253
+   "up5m": 99.48332082588975,
+   "up30m": 99.50234042991114
   },
   {
    "model": "google/gemini-2.5-flash-lite",
@@ -3045,8 +3045,8 @@
    "endpoint_id": "google-vertex",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.35180836073275,
-   "up30m": 99.44486758846965
+   "up5m": 99.40197461212976,
+   "up30m": 99.26073284990053
   },
   {
    "model": "google/gemini-2.5-flash-lite",
@@ -3055,8 +3055,8 @@
    "endpoint_id": "google-ai-studio/flex",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97533300444006,
-   "up30m": 99.99302601297163
+   "up5m": 100,
+   "up30m": 99.99214762465645
   },
   {
    "model": "google/gemini-2.5-flash-lite",
@@ -3065,8 +3065,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.99364272091545,
-   "up30m": 99.98057036765182
+   "up5m": 99.96274911529149,
+   "up30m": 99.98655873831356
   },
   {
    "model": "google/gemini-2.5-flash-lite",
@@ -3115,8 +3115,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.86545576858393,
-   "up30m": 99.77521041350829
+   "up5m": 99.84082769598089,
+   "up30m": 99.75533216318281
   },
   {
    "model": "google/gemini-2.5-pro",
@@ -3155,8 +3155,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 98.54014598540147
+   "up5m": 98.83720930232558,
+   "up30m": 98.35255354200989
   },
   {
    "model": "google/gemini-2.5-pro",
@@ -3185,8 +3185,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.86545576858393,
-   "up30m": 99.77521041350829
+   "up5m": 99.84082769598089,
+   "up30m": 99.75533216318281
   },
   {
    "model": "google/gemini-2.5-pro-preview",
@@ -3225,8 +3225,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 98.54014598540147
+   "up5m": 98.83720930232558,
+   "up30m": 98.35255354200989
   },
   {
    "model": "google/gemini-2.5-pro-preview",
@@ -3265,8 +3265,8 @@
    "endpoint_id": "google-vertex/global/flex",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": null,
-   "up30m": 37.59590792838875
+   "up5m": 13.18181818181818,
+   "up30m": 21.63265306122449
   },
   {
    "model": "google/gemini-3-flash-preview",
@@ -3275,8 +3275,8 @@
    "endpoint_id": "google-ai-studio/flex",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.69635627530364,
-   "up30m": 99.85161203291514
+   "up5m": 100,
+   "up30m": 99.84202211690362
   },
   {
    "model": "google/gemini-3-flash-preview",
@@ -3285,8 +3285,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.93487887470695,
-   "up30m": 99.91264195682017
+   "up5m": 99.94692144373673,
+   "up30m": 99.92322936566032
   },
   {
    "model": "google/gemini-3-flash-preview",
@@ -3295,8 +3295,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.80444332873101,
-   "up30m": 99.18061755952381
+   "up5m": 98.5194668767645,
+   "up30m": 98.7628856486448
   },
   {
    "model": "google/gemini-3-flash-preview",
@@ -3305,8 +3305,8 @@
    "endpoint_id": "google-vertex/global/priority",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
-   "up30m": 99.91289198606272
+   "up5m": 100,
+   "up30m": 99.92743105950653
   },
   {
    "model": "google/gemini-3-flash-preview",
@@ -3315,7 +3315,7 @@
    "endpoint_id": "google-ai-studio/priority",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -3334,9 +3334,9 @@
    "endpoint_tag": "google-ai-studio/global",
    "endpoint_id": "google-ai-studio/global",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "google/gemini-3-pro-image",
@@ -3346,7 +3346,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.77924944812362
+   "up30m": 99.78609625668449
   },
   {
    "model": "google/gemini-3-pro-image-preview",
@@ -3354,9 +3354,9 @@
    "endpoint_tag": "google-ai-studio/global/flex",
    "endpoint_id": "google-ai-studio/global/flex",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "google/gemini-3-pro-image-preview",
@@ -3385,8 +3385,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.93308052643319
+   "up5m": 99.74937343358395,
+   "up30m": 99.88272087568413
   },
   {
    "model": "google/gemini-3.1-flash-image-preview",
@@ -3405,8 +3405,8 @@
    "endpoint_id": "google-vertex/global/flex",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": null,
-   "up30m": 37.93103448275862
+   "up5m": 0,
+   "up30m": 13.513513513513514
   },
   {
    "model": "google/gemini-3.1-flash-lite",
@@ -3416,7 +3416,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96137131820376
+   "up30m": 99.98110712261477
   },
   {
    "model": "google/gemini-3.1-flash-lite",
@@ -3425,8 +3425,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.90436722983742,
-   "up30m": 99.92938644668116
+   "up5m": 99.97337120539676,
+   "up30m": 99.89619160777937
   },
   {
    "model": "google/gemini-3.1-flash-lite",
@@ -3435,8 +3435,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.91982004053543,
-   "up30m": 99.92882562277579
+   "up5m": 99.97434462169979,
+   "up30m": 99.92163648548502
   },
   {
    "model": "google/gemini-3.1-flash-lite",
@@ -3515,8 +3515,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.93398795280139,
-   "up30m": 99.94085873122265
+   "up5m": 99.99231005844355,
+   "up30m": 99.94104624861639
   },
   {
    "model": "google/gemini-3.1-flash-lite-preview",
@@ -3545,8 +3545,8 @@
    "endpoint_id": "google-vertex/global/flex",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": null,
-   "up30m": 1.006711409395973
+   "up5m": 0,
+   "up30m": 1.0869565217391304
   },
   {
    "model": "google/gemini-3.1-pro-preview",
@@ -3556,7 +3556,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.88399071925754
+   "up30m": 99.64093357271095
   },
   {
    "model": "google/gemini-3.1-pro-preview",
@@ -3565,8 +3565,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 98.2312925170068,
-   "up30m": 97.67406827151939
+   "up5m": 99.60356788899901,
+   "up30m": 97.75002545220076
   },
   {
    "model": "google/gemini-3.1-pro-preview",
@@ -3575,8 +3575,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.76133651551312,
-   "up30m": 99.9245283018868
+   "up5m": 99.86577181208054,
+   "up30m": 99.9
   },
   {
    "model": "google/gemini-3.1-pro-preview",
@@ -3636,7 +3636,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.80314960629921
+   "up30m": 100
   },
   {
    "model": "google/gemini-3.5-flash",
@@ -3645,8 +3645,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.45344880915559,
-   "up30m": 98.376298106292
+   "up5m": 98.502886002886,
+   "up30m": 98.57547573230704
   },
   {
    "model": "google/gemini-3.5-flash",
@@ -3655,8 +3655,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.77426636568849,
-   "up30m": 99.96202050892518
+   "up5m": 100,
+   "up30m": 99.90191270230505
   },
   {
    "model": "google/gemini-3.5-flash",
@@ -3674,9 +3674,9 @@
    "endpoint_tag": "google-vertex/global/priority",
    "endpoint_id": "google-vertex/global/priority",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "google/gemini-3.5-flash",
@@ -3695,8 +3695,8 @@
    "endpoint_id": "google-vertex/global/flex",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.32432432432432,
-   "up30m": 99.2090395480226
+   "up5m": 98.65771812080537,
+   "up30m": 98.91304347826086
   },
   {
    "model": "google/gemini-3.5-flash-lite",
@@ -3716,7 +3716,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99779526864651
+   "up30m": 99.99795943353875
   },
   {
    "model": "google/gemini-3.5-flash-lite",
@@ -3725,8 +3725,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.91514309959115,
-   "up30m": 99.92240776359503
+   "up5m": 99.94637658955111,
+   "up30m": 99.92508802157465
   },
   {
    "model": "google/gemini-3.5-flash-lite",
@@ -3735,8 +3735,8 @@
    "endpoint_id": "google-vertex/eu",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 97.95918367346938,
-   "up30m": 99.76798143851508
+   "up5m": null,
+   "up30m": 99.71751412429379
   },
   {
    "model": "google/gemini-3.5-flash-lite",
@@ -3795,8 +3795,8 @@
    "endpoint_id": "google-vertex/global/flex",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 64.58333333333334,
-   "up30m": 77.96610169491525
+   "up5m": null,
+   "up30m": 70.37037037037037
   },
   {
    "model": "google/gemini-3.6-flash",
@@ -3816,7 +3816,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.83772087991345
+   "up30m": 99.83528550512445
   },
   {
    "model": "google/gemini-3.6-flash",
@@ -3825,8 +3825,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.85569985569985,
-   "up30m": 99.84760903836049
+   "up5m": 99.8989218328841,
+   "up30m": 99.86980522862203
   },
   {
    "model": "google/gemini-3.6-flash",
@@ -3835,7 +3835,7 @@
    "endpoint_id": "google-vertex/global/priority",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -3874,9 +3874,9 @@
    "endpoint_tag": "google-vertex/global/flex",
    "endpoint_id": "google-vertex/global/flex",
    "identity_ambiguous": false,
-   "state": "down",
-   "up5m": null,
-   "up30m": 77.27952167414051
+   "state": "degraded",
+   "up5m": 75.47169811320755,
+   "up30m": 82.39202657807309
   },
   {
    "model": "google/gemini-3.7-flash",
@@ -3885,8 +3885,8 @@
    "endpoint_id": "google-ai-studio/flex",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.95450409463147,
-   "up30m": 99.92540653438759
+   "up5m": 99.85322896281801,
+   "up30m": 99.87949245055646
   },
   {
    "model": "google/gemini-3.7-flash",
@@ -3895,8 +3895,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.92857142857143,
-   "up30m": 99.92892679459844
+   "up5m": 99.84152139461173,
+   "up30m": 99.93193971803598
   },
   {
    "model": "google/gemini-3.7-flash",
@@ -3905,8 +3905,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.14272685818514,
-   "up30m": 99.40636108732124
+   "up5m": 99.61048158640227,
+   "up30m": 99.27666591709767
   },
   {
    "model": "google/gemini-3.7-flash",
@@ -3915,8 +3915,8 @@
    "endpoint_id": "google-vertex/global/priority",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
-   "up30m": 98.9247311827957
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "google/gemini-3.7-flash",
@@ -3945,8 +3945,8 @@
    "endpoint_id": "google-ai-studio/flex",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.9227202472952
+   "up5m": 99.8792270531401,
+   "up30m": 99.95393827729157
   },
   {
    "model": "google/gemini-3.8-flash",
@@ -3956,7 +3956,7 @@
    "identity_ambiguous": false,
    "state": "down",
    "up5m": null,
-   "up30m": 78.4090909090909
+   "up30m": 71.57360406091371
   },
   {
    "model": "google/gemini-3.8-flash",
@@ -3965,8 +3965,8 @@
    "endpoint_id": "google-ai-studio",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.91930603187413,
-   "up30m": 99.90249451531649
+   "up5m": 99.91428081604663,
+   "up30m": 99.92188923894082
   },
   {
    "model": "google/gemini-3.8-flash",
@@ -3975,8 +3975,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.37458728299073,
-   "up30m": 96.29772798990219
+   "up5m": 97.44519707717745,
+   "up30m": 96.97152444351666
   },
   {
    "model": "google/gemini-3.8-flash",
@@ -3986,7 +3986,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.3732590529248
+   "up30m": 99.69372128637059
   },
   {
    "model": "google/gemini-3.8-flash",
@@ -3995,8 +3995,8 @@
    "endpoint_id": "google-vertex/global/priority",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.68304278922345
+   "up5m": 98.87640449438202,
+   "up30m": 99.77924944812362
   },
   {
    "model": "google/gemini-3.8-flash:batch",
@@ -4026,7 +4026,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96323625955202
+   "up30m": 99.98941933299476
   },
   {
    "model": "google/gemma-3-27b-it",
@@ -4035,8 +4035,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 96.9639468690702,
-   "up30m": 99.36758893280633
+   "up5m": 99.88031119090365,
+   "up30m": 99.40382805145906
   },
   {
    "model": "google/gemma-3-27b-it",
@@ -4045,8 +4045,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.46265448683504,
-   "up30m": 99.77263038226518
+   "up5m": 98.91996676820825,
+   "up30m": 99.48654851761589
   },
   {
    "model": "google/gemma-3-27b-it",
@@ -4054,9 +4054,9 @@
    "endpoint_tag": "nebius/fp8",
    "endpoint_id": "nebius/fp8",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 99.81818181818181,
-   "up30m": 99.92334227673439
+   "state": "down",
+   "up5m": 47.54643748267258,
+   "up30m": 72.18640881009938
   },
   {
    "model": "google/gemma-3-27b-it",
@@ -4065,8 +4065,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.59484777517564,
-   "up30m": 98.89874579382074
+   "up5m": 98.3957219251337,
+   "up30m": 98.73840445269016
   },
   {
    "model": "google/gemma-3-4b-it",
@@ -4085,8 +4085,8 @@
    "endpoint_id": "darkbloom",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.93529901099917,
-   "up30m": 99.81595776323617
+   "up5m": 99.98826635376943,
+   "up30m": 99.87860644917971
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4095,8 +4095,8 @@
    "endpoint_id": "dekallm/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.83476536682089,
-   "up30m": 99.88401412002017
+   "up5m": 99.8562467328803,
+   "up30m": 99.87339241687214
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4105,8 +4105,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.34847978616772,
-   "up30m": 99.53605706498101
+   "up5m": 99.54031117397454,
+   "up30m": 99.67734501037106
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4115,8 +4115,8 @@
    "endpoint_id": "nextbit/bf16",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.18522892799496,
-   "up30m": 95.86687085974785
+   "up5m": 94.92552097222752,
+   "up30m": 93.1354925200329
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4125,8 +4125,8 @@
    "endpoint_id": "cloudflare",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.9613164315896
+   "up5m": 99.9734219269103,
+   "up30m": 99.93559813234583
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4135,8 +4135,8 @@
    "endpoint_id": "makora",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 96.74115456238361,
-   "up30m": 98.78726629610914
+   "up5m": 97.12722298221614,
+   "up30m": 98.24009157247102
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4145,8 +4145,8 @@
    "endpoint_id": "venice/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.36913285600637,
-   "up30m": 98.61401673640168
+   "up5m": 98.145285935085,
+   "up30m": 98.60545193687231
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4155,8 +4155,8 @@
    "endpoint_id": "parasail/bf16",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.31109598366236,
-   "up30m": 97.98438451741514
+   "up5m": 92.92711273451768,
+   "up30m": 96.40716511970408
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4165,8 +4165,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.93804213135068,
-   "up30m": 99.86151981997577
+   "up5m": 99.37460913070669,
+   "up30m": 99.74517374517374
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4174,9 +4174,9 @@
    "endpoint_tag": "siliconflow/fp8",
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 99.84126984126985,
-   "up30m": 98.26963587120072
+   "state": "degraded",
+   "up5m": 99.04504504504504,
+   "up30m": 82.55270700011779
   },
   {
    "model": "google/gemma-4-26b-a4b-it",
@@ -4184,9 +4184,9 @@
    "endpoint_tag": "google-vertex/global",
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 99.5221843003413,
-   "up30m": 99.14466892788674
+   "state": "degraded",
+   "up5m": 88.77551020408163,
+   "up30m": 97.6147223757997
   },
   {
    "model": "google/gemma-4-26b-a4b-it:free",
@@ -4196,7 +4196,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.62962962962963
+   "up30m": 100
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4205,8 +4205,8 @@
    "endpoint_id": "deepinfra/turbo",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.26791005752136,
-   "up30m": 99.37776509205081
+   "up5m": 99.26362297496318,
+   "up30m": 99.29979795164773
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4215,8 +4215,8 @@
    "endpoint_id": "coreweave/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.64184450082078,
-   "up30m": 98.41648680059771
+   "up5m": 98.58875670632143,
+   "up30m": 99.02948138584033
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4225,8 +4225,8 @@
    "endpoint_id": "venice/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.82779058281199,
-   "up30m": 98.97235766151732
+   "up5m": 97.36747722545012,
+   "up30m": 98.47844715917017
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4235,8 +4235,8 @@
    "endpoint_id": "chutes/fp4",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 93.125,
-   "up30m": 49.279538904899134
+   "up5m": 97.2972972972973,
+   "up30m": 65.14983351831299
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4245,8 +4245,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.25725860904794,
-   "up30m": 98.98851148851149
+   "up5m": 98.61003861003861,
+   "up30m": 98.56416659234817
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4265,8 +4265,8 @@
    "endpoint_id": "friendli",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 98.0295566502463,
-   "up30m": 96.4312145382781
+   "up5m": 89.25097276264592,
+   "up30m": 92.30478779640538
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4275,8 +4275,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.88839941262849,
-   "up30m": 88.28840204558368
+   "up5m": 99.24631723192874,
+   "up30m": 93.80834444656125
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4285,8 +4285,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.63411201801294,
-   "up30m": 99.2955118036764
+   "up5m": 99.94924716630011,
+   "up30m": 99.58574331717993
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4295,8 +4295,8 @@
    "endpoint_id": "deepinfra/ultra",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 0,
-   "up30m": 5.581999134573778
+   "up5m": 8.539325842696629,
+   "up30m": 8.902496467263306
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4304,9 +4304,9 @@
    "endpoint_tag": "sambanova",
    "endpoint_id": "sambanova",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 98.59154929577466,
-   "up30m": 98.80851063829788
+   "state": "degraded",
+   "up5m": 99.01960784313727,
+   "up30m": 97.36842105263158
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4325,8 +4325,8 @@
    "endpoint_id": "modelrun/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.8282770463652,
-   "up30m": 99.97253049115483
+   "up5m": 100,
+   "up30m": 99.94288977727012
   },
   {
    "model": "google/gemma-4-31b-it",
@@ -4335,8 +4335,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 96.54015887025595,
-   "up30m": 62.0274457724657
+   "up5m": 97.94303797468355,
+   "up30m": 77.60756996671188
   },
   {
    "model": "google/gemma-4-31b-it:free",
@@ -4385,7 +4385,7 @@
    "endpoint_id": "mancer/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -4395,7 +4395,7 @@
    "endpoint_id": "deepinfra/fp16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -4415,7 +4415,7 @@
    "endpoint_id": "deepinfra/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -4466,7 +4466,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98521366257577
+   "up30m": 100
   },
   {
    "model": "inclusionai/ling-3.0-flash-fin",
@@ -4565,8 +4565,8 @@
    "endpoint_id": "liquid/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 31.818181818181817,
-   "up30m": 95.40882125354656
+   "up5m": null,
+   "up30m": 87.85900783289817
   },
   {
    "model": "mancer/weaver",
@@ -4595,8 +4595,8 @@
    "endpoint_id": "deepinfra/turbo",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 87.91208791208791,
-   "up30m": 91.62807267545422
+   "up5m": null,
+   "up30m": 90.65217391304347
   },
   {
    "model": "meta-llama/llama-3.1-70b-instruct",
@@ -4606,7 +4606,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96897300651567
+   "up30m": 99.97553816046967
   },
   {
    "model": "meta-llama/llama-3.1-8b-instruct",
@@ -4615,8 +4615,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.98115696250235,
-   "up30m": 99.97690731172243
+   "up5m": 99.98096688237533,
+   "up30m": 99.96886586850074
   },
   {
    "model": "meta-llama/llama-3.1-8b-instruct",
@@ -4625,8 +4625,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.92921189240208,
-   "up30m": 98.41000121373953
+   "up5m": 99.52481520591341,
+   "up30m": 99.03166918009366
   },
   {
    "model": "meta-llama/llama-3.1-8b-instruct",
@@ -4634,9 +4634,9 @@
    "endpoint_tag": "groq",
    "endpoint_id": "groq",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 95.85682765383673,
-   "up30m": 98.02659176713053
+   "state": "degraded",
+   "up5m": 93.73188405797102,
+   "up30m": 96.47527404744281
   },
   {
    "model": "meta-llama/llama-3.1-8b-instruct",
@@ -4656,7 +4656,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96209728363866
+   "up30m": 100
   },
   {
    "model": "meta-llama/llama-3.2-1b-instruct",
@@ -4686,7 +4686,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.97260273972603
+   "up30m": 98.84615384615385
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -4695,8 +4695,8 @@
    "endpoint_id": "deepinfra/turbo",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.53059805285119,
-   "up30m": 99.39501644799033
+   "up5m": 98.30718414533443,
+   "up30m": 99.37756543974162
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -4705,8 +4705,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.05405405405405,
-   "up30m": 99.38245315161839
+   "up5m": 99.84227129337539,
+   "up30m": 99.27210447441661
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -4715,8 +4715,8 @@
    "endpoint_id": "akashml/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.64374777342358,
-   "up30m": 99.68969666265595
+   "up5m": 100,
+   "up30m": 99.60859664104754
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -4725,8 +4725,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.57865168539325,
-   "up30m": 99.3990771542011
+   "up5m": 98.84437596302003,
+   "up30m": 99.40482874789444
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -4735,8 +4735,8 @@
    "endpoint_id": "cloudflare/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.2,
-   "up30m": 99.03758020164986
+   "up5m": 100,
+   "up30m": 98.94313034725717
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -4746,7 +4746,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.89462592202318
+   "up30m": 100
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -4755,8 +4755,8 @@
    "endpoint_id": "groq",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.7805413313826,
+   "up30m": 99.95854922279793
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -4766,7 +4766,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.70540098199673
+   "up30m": 99.84726995036274
   },
   {
    "model": "meta-llama/llama-3.3-70b-instruct",
@@ -4795,8 +4795,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95,
-   "up30m": 96.6824644549763
+   "up5m": null,
+   "up30m": 97.19626168224299
   },
   {
    "model": "meta-llama/llama-4-maverick",
@@ -4805,8 +4805,8 @@
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.98693664271718
+   "up5m": 99.95918367346938,
+   "up30m": 99.98837479655894
   },
   {
    "model": "meta-llama/llama-4-maverick",
@@ -4815,8 +4815,8 @@
    "endpoint_id": "deepinfra/base",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.13793103448276
+   "up5m": 99.75247524752476,
+   "up30m": 99.18878042073422
   },
   {
    "model": "meta-llama/llama-4-maverick",
@@ -4826,7 +4826,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.62962962962963
+   "up30m": 99.54170485792851
   },
   {
    "model": "meta-llama/llama-4-maverick",
@@ -4835,8 +4835,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 96.45776566757493,
-   "up30m": 98.96640826873386
+   "up5m": 98.23008849557522,
+   "up30m": 98.49514563106796
   },
   {
    "model": "meta-llama/llama-4-maverick",
@@ -4856,7 +4856,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97372431551842
+   "up30m": 99.97723305760037
   },
   {
    "model": "meta-llama/llama-4-scout",
@@ -4865,8 +4865,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.85358711566617,
-   "up30m": 99.80830670926517
+   "up5m": 100,
+   "up30m": 99.96607869742198
   },
   {
    "model": "meta-llama/llama-4-scout",
@@ -4895,8 +4895,8 @@
    "endpoint_id": "phala",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.20634920634922,
-   "up30m": 99.87129987129987
+   "up5m": 100,
+   "up30m": 99.87405541561712
   },
   {
    "model": "meta/muse-glimmer-30b",
@@ -4915,7 +4915,7 @@
    "endpoint_id": "fireworks",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -4955,7 +4955,7 @@
    "endpoint_id": "meta",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -4985,8 +4985,8 @@
    "endpoint_id": "meta",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.8689384010485,
-   "up30m": 99.98404849258255
+   "up5m": 100,
+   "up30m": 99.98473981382573
   },
   {
    "model": "meta/muse-spark-1.3-contributor",
@@ -5036,7 +5036,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.68987877079222
+   "up30m": 99.88623435722411
   },
   {
    "model": "minimax/minimax-m1",
@@ -5065,7 +5065,7 @@
    "endpoint_id": "google-vertex",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -5075,7 +5075,7 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -5125,8 +5125,8 @@
    "endpoint_id": "venice",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.87234042553192,
-   "up30m": 94.04255319148936
+   "up5m": null,
+   "up30m": 96.82539682539682
   },
   {
    "model": "minimax/minimax-m2.5",
@@ -5136,7 +5136,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.42252165543792
+   "up30m": 99.50207468879668
   },
   {
    "model": "minimax/minimax-m2.5",
@@ -5205,8 +5205,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 98.9820359281437
+   "up5m": 94.3820224719101,
+   "up30m": 98.75156054931335
   },
   {
    "model": "minimax/minimax-m2.7",
@@ -5215,8 +5215,8 @@
    "endpoint_id": "mara",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 94.71947194719472,
-   "up30m": 93.72839506172839
+   "up5m": 94.53924914675767,
+   "up30m": 93.67844698855153
   },
   {
    "model": "minimax/minimax-m2.7",
@@ -5226,7 +5226,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.75961538461539
+   "up30m": 99.72936400541272
   },
   {
    "model": "minimax/minimax-m2.7",
@@ -5235,8 +5235,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.7983193277311,
-   "up30m": 97.291807718348
+   "up5m": 95.17543859649122,
+   "up30m": 96.47371922821024
   },
   {
    "model": "minimax/minimax-m2.7",
@@ -5245,8 +5245,8 @@
    "endpoint_id": "minimax/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.16279069767442
+   "up5m": 98.9655172413793,
+   "up30m": 99.18788410886744
   },
   {
    "model": "minimax/minimax-m2.7",
@@ -5265,7 +5265,7 @@
    "endpoint_id": "groq",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -5295,8 +5295,8 @@
    "endpoint_id": "coreweave/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.25925925925925,
+   "up30m": 99.68499427262314
   },
   {
    "model": "minimax/minimax-m3",
@@ -5305,8 +5305,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.69040247678018,
-   "up30m": 99.20466595970308
+   "up5m": 100,
+   "up30m": 99.80343980343982
   },
   {
    "model": "minimax/minimax-m3",
@@ -5314,9 +5314,9 @@
    "endpoint_tag": "deepinfra/fp8",
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 90,
-   "up30m": 99.05956112852664
+   "state": "degraded",
+   "up5m": null,
+   "up30m": 97.60765550239235
   },
   {
    "model": "minimax/minimax-m3",
@@ -5325,8 +5325,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.87005649717514,
-   "up30m": 99.3305439330544
+   "up5m": 100,
+   "up30m": 99.3161094224924
   },
   {
    "model": "minimax/minimax-m3",
@@ -5335,8 +5335,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 93.70179948586119,
-   "up30m": 89.6419213973799
+   "up5m": 77.72727272727272,
+   "up30m": 93.73437270186791
   },
   {
    "model": "minimax/minimax-m3",
@@ -5345,8 +5345,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.78012313104662,
-   "up30m": 99.75812953507122
+   "up5m": 99.87365761212888,
+   "up30m": 99.87319478689679
   },
   {
    "model": "minimax/minimax-m3",
@@ -5356,7 +5356,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.84639016897081
   },
   {
    "model": "minimax/minimax-m3",
@@ -5365,8 +5365,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.33333333333333,
-   "up30m": 99.20494699646643
+   "up5m": 99.42363112391931,
+   "up30m": 99.3006993006993
   },
   {
    "model": "minimax/minimax-m3",
@@ -5375,8 +5375,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.74226804123711,
-   "up30m": 99.50698438783895
+   "up5m": 100,
+   "up30m": 99.77485928705441
   },
   {
    "model": "minimax/minimax-m3",
@@ -5386,7 +5386,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.69879518072288
+   "up30m": 99.60068454078723
   },
   {
    "model": "minimax/minimax-m3",
@@ -5395,8 +5395,8 @@
    "endpoint_id": "mara",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 93.93939393939394,
-   "up30m": 92.797783933518
+   "up5m": null,
+   "up30m": 90
   },
   {
    "model": "minimax/minimax-m3",
@@ -5405,8 +5405,8 @@
    "endpoint_id": "sambanova",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.77653631284916,
-   "up30m": 99.87696093509689
+   "up5m": 100,
+   "up30m": 99.93409779886649
   },
   {
    "model": "minimax/minimax-m3",
@@ -5475,8 +5475,8 @@
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.6866513473992,
-   "up30m": 99.67577582213988
+   "up5m": 98.73949579831933,
+   "up30m": 99.65683180814136
   },
   {
    "model": "mistralai/ministral-14b-2512",
@@ -5485,8 +5485,8 @@
    "endpoint_id": "mistral",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.67091731797613,
-   "up30m": 99.69405433300157
+   "up5m": 100,
+   "up30m": 99.65772506566903
   },
   {
    "model": "mistralai/ministral-14b-2512",
@@ -5505,8 +5505,8 @@
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.65065502183405,
-   "up30m": 99.59501052972622
+   "up5m": 99.3723849372385,
+   "up30m": 99.59447281465906
   },
   {
    "model": "mistralai/ministral-3b-2512",
@@ -5515,8 +5515,8 @@
    "endpoint_id": "mistral",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.56896551724138,
-   "up30m": 99.68371112282551
+   "up5m": 99.64726631393297,
+   "up30m": 99.47671376242805
   },
   {
    "model": "mistralai/ministral-3b-2512",
@@ -5534,9 +5534,9 @@
    "endpoint_tag": "mistral/zdr",
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 97.17277486910994,
-   "up30m": 98.95813047711782
+   "state": "degraded",
+   "up5m": 96.76308539944904,
+   "up30m": 97.21980886185926
   },
   {
    "model": "mistralai/ministral-8b-2512",
@@ -5545,8 +5545,8 @@
    "endpoint_id": "mistral",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.2638700947226,
-   "up30m": 97.75561097256858
+   "up5m": 96.67013527575442,
+   "up30m": 96.75445103857567
   },
   {
    "model": "mistralai/ministral-8b-2512",
@@ -5575,7 +5575,7 @@
    "endpoint_id": "mistral",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -5625,8 +5625,8 @@
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 97.47706422018348,
-   "up30m": 99.18876755070202
+   "up5m": 100,
+   "up30m": 99.19866444073456
   },
   {
    "model": "mistralai/mistral-large-2512",
@@ -5635,8 +5635,8 @@
    "endpoint_id": "mistral",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.38271604938271,
-   "up30m": 99.16743755781684
+   "up5m": 99.87452948557089,
+   "up30m": 99.6384872080089
   },
   {
    "model": "mistralai/mistral-large-2512",
@@ -5646,7 +5646,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.86936642717178
+   "up30m": 100
   },
   {
    "model": "mistralai/mistral-large-2512:batch",
@@ -5664,9 +5664,9 @@
    "endpoint_tag": "mistral/zdr",
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "degraded",
    "up5m": null,
-   "up30m": 98.68173258003766
+   "up30m": 97.63593380614657
   },
   {
    "model": "mistralai/mistral-medium-3",
@@ -5676,7 +5676,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": null,
-   "up30m": 99.47643979057592
+   "up30m": 99.42528735632183
   },
   {
    "model": "mistralai/mistral-medium-3",
@@ -5695,8 +5695,8 @@
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.35064935064936,
-   "up30m": 99.26940639269407
+   "up5m": 100,
+   "up30m": 99.1236611489776
   },
   {
    "model": "mistralai/mistral-medium-3-5",
@@ -5725,8 +5725,8 @@
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 93.41317365269461,
-   "up30m": 96.0352422907489
+   "up5m": 96.44444444444444,
+   "up30m": 95.15503875968993
   },
   {
    "model": "mistralai/mistral-medium-3.1",
@@ -5735,8 +5735,8 @@
    "endpoint_id": "mistral",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 91.69435215946844,
-   "up30m": 94.93307839388146
+   "up5m": 94.23076923076923,
+   "up30m": 93.19213313161876
   },
   {
    "model": "mistralai/mistral-medium-3.1",
@@ -5765,8 +5765,8 @@
    "endpoint_id": "dekallm/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.85002307337332,
-   "up30m": 99.61576573843757
+   "up5m": 99.88876529477196,
+   "up30m": 99.80408383860562
   },
   {
    "model": "mistralai/mistral-nemo",
@@ -5775,8 +5775,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.8650679260327,
-   "up30m": 99.8704097587086
+   "up5m": 99.8985865500412,
+   "up30m": 99.87556840535422
   },
   {
    "model": "mistralai/mistral-nemo",
@@ -5785,8 +5785,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 96.28571428571429,
-   "up30m": 94.03349616189811
+   "up5m": 98.27160493827161,
+   "up30m": 95.46666666666667
   },
   {
    "model": "mistralai/mistral-nemo",
@@ -5794,9 +5794,9 @@
    "endpoint_tag": "novita/fp8",
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
-   "state": "down",
+   "state": "up",
    "up5m": 100,
-   "up30m": 65.86252478519498
+   "up30m": 100
   },
   {
    "model": "mistralai/mistral-nemo",
@@ -5805,8 +5805,8 @@
    "endpoint_id": "io-net/fp16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.90869664460169
+   "up5m": 99.9001996007984,
+   "up30m": 99.9681807334341
   },
   {
    "model": "mistralai/mistral-saba",
@@ -5855,8 +5855,8 @@
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.77369876791552,
-   "up30m": 99.69598598443861
+   "up5m": 99.54497724886244,
+   "up30m": 99.72753104199914
   },
   {
    "model": "mistralai/mistral-small-2603",
@@ -5865,8 +5865,8 @@
    "endpoint_id": "mistral",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.48051948051948,
-   "up30m": 99.59388114254773
+   "up5m": 99.44598337950139,
+   "up30m": 99.59393611261505
   },
   {
    "model": "mistralai/mistral-small-2603",
@@ -5915,8 +5915,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.91142604074402,
-   "up30m": 99.9840434019467
+   "up5m": 100,
+   "up30m": 99.96691480562448
   },
   {
    "model": "mistralai/mistral-small-3.2-24b-instruct",
@@ -5925,8 +5925,8 @@
    "endpoint_id": "parasail/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.69465648854961,
-   "up30m": 99.93872549019608
+   "up5m": 100,
+   "up30m": 99.83979493752003
   },
   {
    "model": "mistralai/mistral-small-3.2-24b-instruct",
@@ -5936,7 +5936,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.69332253211434
+   "up30m": 99.93881750931642
   },
   {
    "model": "mistralai/mixtral-8x22b-instruct",
@@ -5975,8 +5975,8 @@
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.70717423133236,
-   "up30m": 99.6311475409836
+   "up5m": 99.48892674616695,
+   "up30m": 99.45689069925322
   },
   {
    "model": "mistralai/voxtral-small-24b-2507",
@@ -5985,8 +5985,8 @@
    "endpoint_id": "mistral",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.05482041587902,
-   "up30m": 99.49225013361838
+   "up5m": 99.03536977491962,
+   "up30m": 99.32397295891836
   },
   {
    "model": "mistralai/voxtral-small-24b-2507",
@@ -6035,8 +6035,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.65277777777779,
-   "up30m": 99.88785046728972
+   "up5m": 99.48979591836735,
+   "up30m": 99.7952497952498
   },
   {
    "model": "moonshotai/kimi-k2.5",
@@ -6045,8 +6045,8 @@
    "endpoint_id": "siliconflow/int4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.96371552975326
+   "up5m": 99.43977591036415,
+   "up30m": 99.89432898908066
   },
   {
    "model": "moonshotai/kimi-k2.5",
@@ -6055,8 +6055,8 @@
    "endpoint_id": "atlas-cloud/int4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.85239852398524
+   "up5m": 99.52153110047847,
+   "up30m": 99.1304347826087
   },
   {
    "model": "moonshotai/kimi-k2.5",
@@ -6065,8 +6065,8 @@
    "endpoint_id": "venice",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.58762886597938,
-   "up30m": 99.81696953850177
+   "up5m": 99.81981981981983,
+   "up30m": 99.71415676244922
   },
   {
    "model": "moonshotai/kimi-k2.5",
@@ -6075,8 +6075,8 @@
    "endpoint_id": "novita",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 94.48275862068965,
-   "up30m": 94.82071713147411
+   "up5m": 98.52216748768473,
+   "up30m": 94.95665878644603
   },
   {
    "model": "moonshotai/kimi-k2.5",
@@ -6086,7 +6086,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.6013986013986
+   "up30m": 99.60159362549801
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6096,7 +6096,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.9147485080989
+   "up30m": 99.9083129584352
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6116,7 +6116,7 @@
    "identity_ambiguous": false,
    "state": "degraded",
    "up5m": 100,
-   "up30m": 96.1038961038961
+   "up30m": 97.34151329243353
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6126,7 +6126,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.88439306358381
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6136,7 +6136,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98115341123257
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6145,8 +6145,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 98.26632239026189
+   "up5m": 97.36842105263158,
+   "up30m": 98.05510534846029
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6156,7 +6156,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.41348973607037
+   "up30m": 99.88492520138091
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6165,8 +6165,8 @@
    "endpoint_id": "crusoe/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.40119760479041
+   "up5m": 98,
+   "up30m": 99.74905897114178
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6195,8 +6195,8 @@
    "endpoint_id": "parasail/int4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.83633387888707,
-   "up30m": 99.69254419677172
+   "up5m": 100,
+   "up30m": 99.86525937570178
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6215,8 +6215,8 @@
    "endpoint_id": "novita",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
-   "up30m": 99.12280701754386
+   "up5m": 100,
+   "up30m": 99.33333333333333
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6225,8 +6225,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.77777777777777,
-   "up30m": 97.42857142857143
+   "up5m": 89.47368421052632,
+   "up30m": 96.36835278858625
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6255,8 +6255,8 @@
    "endpoint_id": "moonshotai/int4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.14529914529915,
-   "up30m": 99.24568965517241
+   "up5m": 97.54098360655738,
+   "up30m": 98.84169884169884
   },
   {
    "model": "moonshotai/kimi-k2.6",
@@ -6275,7 +6275,7 @@
    "endpoint_id": "baseten/fp4#5dab5ba2f2#1",
    "identity_ambiguous": true,
    "state": "idle",
-   "up5m": null,
+   "up5m": 92.10526315789474,
    "up30m": null
   },
   {
@@ -6284,7 +6284,7 @@
    "endpoint_tag": "fireworks",
    "endpoint_id": "fireworks",
    "identity_ambiguous": false,
-   "state": "down",
+   "state": "idle",
    "up5m": null,
    "up30m": null
   },
@@ -6305,7 +6305,7 @@
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -6315,8 +6315,8 @@
    "endpoint_id": "inceptron/int4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.29328621908127,
-   "up30m": 99.9034749034749
+   "up5m": 100,
+   "up30m": 99.90689013035382
   },
   {
    "model": "moonshotai/kimi-k2.7-code",
@@ -6334,9 +6334,9 @@
    "endpoint_tag": "streamlake",
    "endpoint_id": "streamlake",
    "identity_ambiguous": false,
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 97.36842105263158,
+   "up30m": 99.43181818181817
   },
   {
    "model": "moonshotai/kimi-k2.7-code",
@@ -6344,9 +6344,9 @@
    "endpoint_tag": "venice/int4",
    "endpoint_id": "venice/int4",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "down",
    "up5m": null,
-   "up30m": null
+   "up30m": 61.29032258064516
   },
   {
    "model": "moonshotai/kimi-k2.7-code",
@@ -6355,7 +6355,7 @@
    "endpoint_id": "modelrun/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -6375,7 +6375,7 @@
    "endpoint_id": "novita/int4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -6395,7 +6395,7 @@
    "endpoint_id": "baseten/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -6435,7 +6435,7 @@
    "endpoint_id": "moonshotai/int4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -6445,7 +6445,7 @@
    "endpoint_id": "moonshotai/highspeed",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -6455,8 +6455,8 @@
    "endpoint_id": "inference-net/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.74213836477988,
-   "up30m": 98.88697990587883
+   "up5m": 98.3676975945017,
+   "up30m": 98.56548856548856
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6465,8 +6465,8 @@
    "endpoint_id": "relace/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.33333333333333,
-   "up30m": 99.09392932648746
+   "up5m": 99.19028340080972,
+   "up30m": 98.58823529411764
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6474,9 +6474,9 @@
    "endpoint_tag": "morph/fp8",
    "endpoint_id": "morph/fp8",
    "identity_ambiguous": false,
-   "state": "degraded",
+   "state": "up",
    "up5m": 100,
-   "up30m": 94.83695652173914
+   "up30m": 99.30618401206637
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6484,9 +6484,9 @@
    "endpoint_tag": "makora",
    "endpoint_id": "makora",
    "identity_ambiguous": false,
-   "state": "degraded",
+   "state": "down",
    "up5m": null,
-   "up30m": 83.15217391304348
+   "up30m": 73.63636363636363
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6495,8 +6495,8 @@
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.91385767790261,
-   "up30m": 99.01867559240804
+   "up5m": 99.3984266543267,
+   "up30m": 99.09706546275395
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6505,8 +6505,8 @@
    "endpoint_id": "sail-research/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.7907949790795,
-   "up30m": 99.6712619300106
+   "up5m": 99.68374446552815,
+   "up30m": 99.67971174056652
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6515,8 +6515,8 @@
    "endpoint_id": "phala",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.71702755905511
+   "up5m": 99.57482993197279,
+   "up30m": 99.58099018634911
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6524,9 +6524,9 @@
    "endpoint_tag": "deepinfra/bf16",
    "endpoint_id": "deepinfra/bf16",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 95.8904109589041,
-   "up30m": 98.9710610932476
+   "state": "degraded",
+   "up5m": 100,
+   "up30m": 97.99518845228549
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6544,9 +6544,9 @@
    "endpoint_tag": "chutes/mxfp4",
    "endpoint_id": "chutes/mxfp4",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 98.30508474576271,
-   "up30m": 99.01960784313727
+   "state": "degraded",
+   "up5m": null,
+   "up30m": 97.3404255319149
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6555,8 +6555,8 @@
    "endpoint_id": "parasail/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.74640743871514
+   "up5m": 98.93842887473461,
+   "up30m": 99.58432304038006
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6565,8 +6565,8 @@
    "endpoint_id": "modal/mxfp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.27710843373494,
-   "up30m": 99.52346041055719
+   "up5m": 99.57805907172997,
+   "up30m": 99.40397350993378
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6575,8 +6575,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.52295766249254,
-   "up30m": 99.42838207273631
+   "up5m": 99.89588755856325,
+   "up30m": 99.69390157758417
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6596,7 +6596,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": null,
-   "up30m": 99.03846153846155
+   "up30m": 99.18032786885246
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6605,8 +6605,8 @@
    "endpoint_id": "moonshotai/mxfp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.59302325581395,
-   "up30m": 99.77489715128463
+   "up5m": 99.71925884334644,
+   "up30m": 99.64423820572313
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6615,8 +6615,8 @@
    "endpoint_id": "fireworks/us",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.37817976257773
+   "up5m": 98.87359198998749,
+   "up30m": 99.14320685434517
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6626,7 +6626,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.81167608286252
+   "up30m": 99.74958263772955
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6635,8 +6635,8 @@
    "endpoint_id": "fireworks/fast",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.59183673469387
+   "up5m": null,
+   "up30m": 99.5049504950495
   },
   {
    "model": "moonshotai/kimi-k3",
@@ -6645,8 +6645,8 @@
    "endpoint_id": "morph/fast",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.08256880733946
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "moonshotai/kimi-k3:batch",
@@ -6685,8 +6685,8 @@
    "endpoint_id": "nex-agi/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.84691924990432,
-   "up30m": 99.83610890827386
+   "up5m": 99.93153029784321,
+   "up30m": 99.8220937343637
   },
   {
    "model": "nex-agi/nex-n2.5-pro:free",
@@ -6695,8 +6695,8 @@
    "endpoint_id": "nex-agi/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.85486211901306,
-   "up30m": 99.85343511450382
+   "up5m": 99.86446803704541,
+   "up30m": 99.82631213288701
   },
   {
    "model": "nousresearch/hermes-3-llama-3.1-405b",
@@ -6736,7 +6736,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.07878787878788
+   "up30m": 99.59141981613891
   },
   {
    "model": "nvidia/nemotron-3-nano-30b-a3b",
@@ -6764,9 +6764,9 @@
    "endpoint_tag": "nebius/fp8",
    "endpoint_id": "nebius/fp8",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "degraded",
    "up5m": 100,
-   "up30m": 98.29589465530596
+   "up30m": 97.01897018970189
   },
   {
    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -6774,9 +6774,9 @@
    "endpoint_tag": "nvidia",
    "endpoint_id": "nvidia",
    "identity_ambiguous": false,
-   "state": "down",
-   "up5m": 83.07692307692308,
-   "up30m": 78.7062524577271
+   "state": "degraded",
+   "up5m": 74.67741935483872,
+   "up30m": 80.5766608221313
   },
   {
    "model": "nvidia/nemotron-3-super-120b-a12b",
@@ -6786,7 +6786,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.74276527331189
+   "up30m": 99.6033494931688
   },
   {
    "model": "nvidia/nemotron-3-super-120b-a12b",
@@ -6805,8 +6805,8 @@
    "endpoint_id": "nvidia",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.86295793758481,
-   "up30m": 97.66851626066834
+   "up5m": 97.20046985121378,
+   "up30m": 97.40547218861806
   },
   {
    "model": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -6826,7 +6826,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96339677891655
+   "up30m": 99.96420901932713
   },
   {
    "model": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -6836,7 +6836,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.71264367816092
+   "up30m": 99.75460122699387
   },
   {
    "model": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -6845,8 +6845,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 68.32844574780059,
-   "up30m": 90.92520382842963
+   "up5m": 94.43207126948775,
+   "up30m": 87.40431454418929
   },
   {
    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -6855,8 +6855,8 @@
    "endpoint_id": "nvidia",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.72177396917256,
-   "up30m": 99.68720132070553
+   "up5m": 99.6529160739687,
+   "up30m": 99.60284181711737
   },
   {
    "model": "nvidia/nemotron-3.5-content-safety",
@@ -6865,7 +6865,7 @@
    "endpoint_id": "deepinfra/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -6875,8 +6875,8 @@
    "endpoint_id": "nvidia",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 97.48283752860412,
-   "up30m": 99.03883121876201
+   "up5m": 100,
+   "up30m": 98.39449541284404
   },
   {
    "model": "nvidia/nemotron-3.5-lightning",
@@ -6896,7 +6896,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.94894486044929
+   "up30m": 99.98321302669129
   },
   {
    "model": "nvidia/nemotron-3.5-lightning",
@@ -6906,7 +6906,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99208923344672
+   "up30m": 99.99235649315906
   },
   {
    "model": "nvidia/nemotron-3.5-lightning",
@@ -6915,8 +6915,8 @@
    "endpoint_id": "deepinfra/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.58008398320337,
-   "up30m": 99.70041941282204
+   "up5m": 100,
+   "up30m": 99.75599495161968
   },
   {
    "model": "nvidia/nemotron-3.5-lightning:free",
@@ -6925,8 +6925,8 @@
    "endpoint_id": "nvidia/nvfp4",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 98.25460064503889,
-   "up30m": 97.0816246278299
+   "up5m": 97.87432407234756,
+   "up30m": 96.4687177484589
   },
   {
    "model": "openai/gpt-3.5-turbo",
@@ -7045,8 +7045,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.94718309859155,
-   "up30m": 99.9199658520969
+   "up5m": 99.96121024049651,
+   "up30m": 99.95142880271999
   },
   {
    "model": "openai/gpt-4.1",
@@ -7054,9 +7054,9 @@
    "endpoint_tag": "azure/swedencentral",
    "endpoint_id": "azure/swedencentral",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": null,
-   "up30m": 100
+   "state": "idle",
+   "up5m": 100,
+   "up30m": null
   },
   {
    "model": "openai/gpt-4.1-mini",
@@ -7066,7 +7066,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97510580034852
+   "up30m": 99.97513056453619
   },
   {
    "model": "openai/gpt-4.1-mini",
@@ -7075,8 +7075,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.9065333208711,
-   "up30m": 99.88823505648843
+   "up5m": 99.92873141926289,
+   "up30m": 99.89383979989529
   },
   {
    "model": "openai/gpt-4.1-mini",
@@ -7115,8 +7115,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.64765757536213,
-   "up30m": 99.92644261255549
+   "up5m": 99.93677288821446,
+   "up30m": 99.81958478541621
   },
   {
    "model": "openai/gpt-4.1-nano",
@@ -7156,7 +7156,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.97857754927165
   },
   {
    "model": "openai/gpt-4o",
@@ -7165,8 +7165,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.91934761179317
+   "up5m": 99.91452991452991,
+   "up30m": 99.89553953828477
   },
   {
    "model": "openai/gpt-4o-2024-05-13",
@@ -7174,9 +7174,9 @@
    "endpoint_tag": "azure",
    "endpoint_id": "azure",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 98.58657243816255
   },
   {
    "model": "openai/gpt-4o-2024-05-13",
@@ -7206,7 +7206,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.86868023637557
+   "up30m": 100
   },
   {
    "model": "openai/gpt-4o-2024-11-20",
@@ -7225,8 +7225,8 @@
    "endpoint_id": "azure",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.22780301006323,
-   "up30m": 98.14113218615566
+   "up5m": 98.10153048423518,
+   "up30m": 98.09377594848236
   },
   {
    "model": "openai/gpt-4o-mini",
@@ -7235,8 +7235,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.85148694171768,
-   "up30m": 99.89950098757693
+   "up5m": 99.91333237035967,
+   "up30m": 99.87945874411399
   },
   {
    "model": "openai/gpt-4o-mini",
@@ -7296,7 +7296,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96595551520655
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5",
@@ -7314,9 +7314,9 @@
    "endpoint_tag": "openai",
    "endpoint_id": "openai",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5-image-mini",
@@ -7324,9 +7324,9 @@
    "endpoint_tag": "openai",
    "endpoint_id": "openai",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5-mini",
@@ -7355,8 +7355,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97107318484235,
-   "up30m": 99.92085410211506
+   "up5m": 99.97913406364111,
+   "up30m": 99.95260740958638
   },
   {
    "model": "openai/gpt-5-mini",
@@ -7364,9 +7364,9 @@
    "endpoint_tag": "azure/swedencentral",
    "endpoint_id": "azure/swedencentral",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "openai/gpt-5-mini:batch",
@@ -7384,9 +7384,9 @@
    "endpoint_tag": "openai/flex",
    "endpoint_id": "openai/flex",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "idle",
+   "up5m": null,
+   "up30m": null
   },
   {
    "model": "openai/gpt-5-nano",
@@ -7405,8 +7405,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.98506794086904,
-   "up30m": 99.97785454867571
+   "up5m": 99.97635933806147,
+   "up30m": 99.98364108541399
   },
   {
    "model": "openai/gpt-5-nano",
@@ -7415,7 +7415,7 @@
    "endpoint_id": "azure/swedencentral",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -7476,7 +7476,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97089074325636
+   "up30m": 99.96360327570518
   },
   {
    "model": "openai/gpt-5.1",
@@ -7505,7 +7505,7 @@
    "endpoint_id": "azure",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -7525,7 +7525,7 @@
    "endpoint_id": "azure",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -7555,7 +7555,7 @@
    "endpoint_id": "azure",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -7565,8 +7565,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.87623762376238,
-   "up30m": 99.57567185289957
+   "up5m": 99.94490358126723,
+   "up30m": 99.73700915933618
   },
   {
    "model": "openai/gpt-5.2",
@@ -7664,9 +7664,9 @@
    "endpoint_tag": "openai/flex",
    "endpoint_id": "openai/flex",
    "identity_ambiguous": false,
-   "state": "idle",
-   "up5m": 15.384615384615385,
-   "up30m": null
+   "state": "down",
+   "up5m": null,
+   "up30m": 19.52861952861953
   },
   {
    "model": "openai/gpt-5.4",
@@ -7676,7 +7676,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.79838709677419
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5.4",
@@ -7685,8 +7685,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.91801038535118,
-   "up30m": 99.87775500665157
+   "up5m": 99.921875,
+   "up30m": 99.91975851132933
   },
   {
    "model": "openai/gpt-5.4",
@@ -7744,9 +7744,9 @@
    "endpoint_tag": "openai/flex",
    "endpoint_id": "openai/flex",
    "identity_ambiguous": false,
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5.4-mini",
@@ -7765,8 +7765,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.96201570017726,
-   "up30m": 99.94841785098096
+   "up5m": 99.95206136145734,
+   "up30m": 99.95182955071793
   },
   {
    "model": "openai/gpt-5.4-mini",
@@ -7784,9 +7784,9 @@
    "endpoint_tag": "openai/fast",
    "endpoint_id": "openai/fast",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "openai/gpt-5.4-mini:batch",
@@ -7804,9 +7804,9 @@
    "endpoint_tag": "openai/flex",
    "endpoint_id": "openai/flex",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5.4-nano",
@@ -7825,8 +7825,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97257268239166,
-   "up30m": 99.97087828446621
+   "up5m": 99.98982809480216,
+   "up30m": 99.97970696862697
   },
   {
    "model": "openai/gpt-5.4-nano",
@@ -7926,7 +7926,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97960848287113
+   "up30m": 99.97655059209755
   },
   {
    "model": "openai/gpt-5.5",
@@ -8016,7 +8016,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99494821924728
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5.6-luna",
@@ -8025,8 +8025,8 @@
    "endpoint_id": "azure",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 92.79461998292058
+   "up5m": 91.31268840778294,
+   "up30m": 93.0239447050111
   },
   {
    "model": "openai/gpt-5.6-luna",
@@ -8035,8 +8035,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.99000699510343,
-   "up30m": 99.97960002630522
+   "up5m": 99.98649154162683,
+   "up30m": 99.98532953531303
   },
   {
    "model": "openai/gpt-5.6-luna",
@@ -8064,9 +8064,9 @@
    "endpoint_tag": "azure/eu",
    "endpoint_id": "azure/eu",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 99.89775051124744,
-   "up30m": 99.9748490945674
+   "state": "degraded",
+   "up5m": 96.46330680813439,
+   "up30m": 97.92892445281242
   },
   {
    "model": "openai/gpt-5.6-luna",
@@ -8076,7 +8076,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.98089141546839
+   "up30m": 99.99516207063377
   },
   {
    "model": "openai/gpt-5.6-luna-pro",
@@ -8094,9 +8094,9 @@
    "endpoint_tag": "azure",
    "endpoint_id": "azure",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 100,
-   "up30m": 98.17444219066938
+   "state": "degraded",
+   "up5m": 77.14285714285715,
+   "up30m": 95.01466275659824
   },
   {
    "model": "openai/gpt-5.6-luna-pro",
@@ -8105,8 +8105,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.94585814834868,
-   "up30m": 99.96385193753615
+   "up5m": 100,
+   "up30m": 99.97652582159624
   },
   {
    "model": "openai/gpt-5.6-luna-pro",
@@ -8155,8 +8155,8 @@
    "endpoint_id": "openai/flex",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 70.17543859649122,
-   "up30m": 67.31234866828088
+   "up5m": 89.47368421052632,
+   "up30m": 66.4804469273743
   },
   {
    "model": "openai/gpt-5.6-sol",
@@ -8165,8 +8165,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97745886242393,
-   "up30m": 99.9313208253988
+   "up5m": 99.99333333333334,
+   "up30m": 99.95274244633251
   },
   {
    "model": "openai/gpt-5.6-sol",
@@ -8176,7 +8176,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.93581514762516
+   "up30m": 99.92795389048992
   },
   {
    "model": "openai/gpt-5.6-sol",
@@ -8196,7 +8196,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.99155833192638
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5.6-sol",
@@ -8236,7 +8236,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.92481203007519
   },
   {
    "model": "openai/gpt-5.6-sol-pro",
@@ -8296,7 +8296,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.8589562764457
+   "up30m": 100
   },
   {
    "model": "openai/gpt-5.6-terra",
@@ -8315,8 +8315,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.98341625207297,
-   "up30m": 99.96666190408153
+   "up5m": 99.96844928222117,
+   "up30m": 99.96348054730487
   },
   {
    "model": "openai/gpt-5.6-terra",
@@ -8375,7 +8375,7 @@
    "endpoint_id": "azure",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -8385,7 +8385,7 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -8445,8 +8445,8 @@
    "endpoint_id": "openai/flex",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.98999759032858
+   "up5m": 99.98259153948818,
+   "up30m": 99.99414973088761
   },
   {
    "model": "openai/gpt-6-astra",
@@ -8455,8 +8455,8 @@
    "endpoint_id": "azure",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.27325581395348
+   "up5m": 99.82456140350877,
+   "up30m": 99.90382303438327
   },
   {
    "model": "openai/gpt-6-astra",
@@ -8465,8 +8465,8 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97630893153281,
-   "up30m": 99.96327519933405
+   "up5m": 99.99556442670216,
+   "up30m": 99.98684700879058
   },
   {
    "model": "openai/gpt-6-astra",
@@ -8516,7 +8516,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.96039603960396
   },
   {
    "model": "openai/gpt-6-astra-pro",
@@ -8565,7 +8565,7 @@
    "endpoint_id": "openai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -8595,8 +8595,8 @@
    "endpoint_id": "akashml/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.57983193277312,
-   "up30m": 99.3015873015873
+   "up5m": 97.99728445349626,
+   "up30m": 99.16303089662541
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8605,8 +8605,8 @@
    "endpoint_id": "coreweave/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.70578620464204,
-   "up30m": 99.74056203476954
+   "up5m": 100,
+   "up30m": 99.92518994739919
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8615,8 +8615,8 @@
    "endpoint_id": "dekallm/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.90762124711317,
-   "up30m": 99.8151685047132
+   "up5m": 99.74536194979993,
+   "up30m": 99.84794728839331
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8625,8 +8625,8 @@
    "endpoint_id": "deepinfra/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.04693140794224,
-   "up30m": 98.86581469648561
+   "up5m": 93.20409496841646,
+   "up30m": 98.67292288734063
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8634,9 +8634,9 @@
    "endpoint_tag": "crusoe/bf16",
    "endpoint_id": "crusoe/bf16",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 99.91134751773049,
-   "up30m": 96.48447864154949
+   "state": "up",
+   "up5m": 99.89065062875888,
+   "up30m": 99.47760219407078
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8645,8 +8645,8 @@
    "endpoint_id": "novita/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.83050847457628,
-   "up30m": 98.38794926004229
+   "up5m": 100,
+   "up30m": 98.60379949645228
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8656,7 +8656,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.9444290080578
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8675,8 +8675,8 @@
    "endpoint_id": "google-vertex/global",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.69452449567724,
-   "up30m": 95.35778713168972
+   "up5m": 92.2785768357305,
+   "up30m": 97.35391400220507
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8686,7 +8686,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.9928607125009
+   "up30m": 99.98585372754279
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8706,7 +8706,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.98879865583869
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8715,8 +8715,8 @@
    "endpoint_id": "sambanova",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.66442953020133,
-   "up30m": 99.60175228992433
+   "up5m": 100,
+   "up30m": 99.95471014492753
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8735,8 +8735,8 @@
    "endpoint_id": "nebius/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.55849889624724,
-   "up30m": 99.83214435585397
+   "up5m": 100,
+   "up30m": 99.71718516053902
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8764,9 +8764,9 @@
    "endpoint_tag": "siliconflow/fp8",
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.4413407821229
+   "state": "degraded",
+   "up5m": 72.09302325581395,
+   "up30m": 95.97989949748744
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8776,7 +8776,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.13278008298755
+   "up30m": 98.19168173598554
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8784,9 +8784,9 @@
    "endpoint_tag": "together",
    "endpoint_id": "together",
    "identity_ambiguous": false,
-   "state": "down",
+   "state": "up",
    "up5m": 100,
-   "up30m": 68.11081974689317
+   "up30m": 98.63123993558777
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8795,8 +8795,8 @@
    "endpoint_id": "groq",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97838772422736,
-   "up30m": 99.9818664007072
+   "up5m": 100,
+   "up30m": 99.96585042486089
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8805,8 +8805,8 @@
    "endpoint_id": "mara",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 86.60714285714286,
-   "up30m": 89.79310344827586
+   "up5m": 90.35087719298247,
+   "up30m": 89.86767485822307
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8815,8 +8815,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 0,
-   "up30m": 21.837088388214905
+   "up5m": 1.5384615384615385,
+   "up30m": 12.995594713656388
   },
   {
    "model": "openai/gpt-oss-120b",
@@ -8825,8 +8825,8 @@
    "endpoint_id": "cerebras/fp16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97151808601538,
-   "up30m": 99.98990408884401
+   "up5m": 100,
+   "up30m": 99.99564308121298
   },
   {
    "model": "openai/gpt-oss-120b:batch",
@@ -8845,8 +8845,8 @@
    "endpoint_id": "darkbloom/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.84756097560977,
-   "up30m": 99.78502970770012
+   "up5m": 99.87763093489966,
+   "up30m": 99.78298080449933
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8855,8 +8855,8 @@
    "endpoint_id": "akashml/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.86639946559787,
-   "up30m": 99.96738421395955
+   "up5m": 100,
+   "up30m": 99.95745133496436
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8865,8 +8865,8 @@
    "endpoint_id": "dekallm/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.83093829247676,
-   "up30m": 99.74156496769562
+   "up5m": 99.89669421487604,
+   "up30m": 99.74289911851126
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8875,8 +8875,8 @@
    "endpoint_id": "coreweave/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.98245306194069
+   "up5m": 99.98336660013307,
+   "up30m": 99.98137207940816
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8885,8 +8885,8 @@
    "endpoint_id": "deepinfra/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.9769820971867,
-   "up30m": 99.46380697050938
+   "up5m": 99.79253112033194,
+   "up30m": 99.66622162883844
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8895,8 +8895,8 @@
    "endpoint_id": "parasail/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.41362201172757,
-   "up30m": 99.90032002518231
+   "up5m": 99.95246018540527,
+   "up30m": 98.56193655051939
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8905,8 +8905,8 @@
    "endpoint_id": "novita/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.88344988344988,
-   "up30m": 99.96533795493934
+   "up5m": 99.87113402061856,
+   "up30m": 99.94895354772844
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8915,8 +8915,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 95.51282051282051
+   "up5m": 98.26086956521739,
+   "up30m": 94.72361809045226
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8944,9 +8944,9 @@
    "endpoint_tag": "amazon-bedrock",
    "endpoint_id": "amazon-bedrock",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 100,
-   "up30m": 99.9662997079308
+   "state": "degraded",
+   "up5m": 99.93038635572572,
+   "up30m": 95.67541689938562
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8956,7 +8956,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.67741935483872
+   "up30m": 100
   },
   {
    "model": "openai/gpt-oss-20b",
@@ -8965,8 +8965,8 @@
    "endpoint_id": "groq",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.98532648569332,
-   "up30m": 99.90337580771785
+   "up5m": 99.92233009708738,
+   "up30m": 99.91907804782767
   },
   {
    "model": "openai/gpt-oss-safeguard-20b",
@@ -9014,9 +9014,9 @@
    "endpoint_tag": "openai",
    "endpoint_id": "openai",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "openai/o3-mini-high",
@@ -9185,8 +9185,8 @@
    "endpoint_id": "perplexity",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.42575881870386,
+   "up30m": 99.88437635496459
   },
   {
    "model": "perplexity/sonar-pro-search",
@@ -9206,7 +9206,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": null,
-   "up30m": 98.77300613496932
+   "up30m": 100
   },
   {
    "model": "poolside/laguna-s-2.1",
@@ -9226,7 +9226,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.97394702561876
+   "up30m": 100
   },
   {
    "model": "poolside/laguna-xs-2.1",
@@ -9235,7 +9235,7 @@
    "endpoint_id": "poolside/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -9245,8 +9245,8 @@
    "endpoint_id": "poolside/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.76851851851852,
-   "up30m": 99.86249570299071
+   "up5m": 100,
+   "up30m": 99.86187845303867
   },
   {
    "model": "qwen/qwen-2.5-72b-instruct",
@@ -9325,8 +9325,8 @@
    "endpoint_id": "nextbit/int4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.16897506925207
+   "up5m": 98.9795918367347,
+   "up30m": 98.96507115135834
   },
   {
    "model": "qwen/qwen3-14b",
@@ -9335,8 +9335,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.34640522875817,
-   "up30m": 99.34333958724203
+   "up5m": 100,
+   "up30m": 99.62935507783544
   },
   {
    "model": "qwen/qwen3-14b",
@@ -9364,9 +9364,9 @@
    "endpoint_tag": "gmicloud/fp8",
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 98.20439350525311,
-   "up30m": 98.2076584481717
+   "state": "degraded",
+   "up5m": 97.21685349826053,
+   "up30m": 97.78881126955719
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
@@ -9375,8 +9375,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.92552874590407,
-   "up30m": 99.80675083741303
+   "up5m": 99.97960848287113,
+   "up30m": 99.85892379005557
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
@@ -9385,8 +9385,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.97896065642752,
-   "up30m": 99.91542251967346
+   "up5m": 99.85785358919688,
+   "up30m": 99.91532886269728
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
@@ -9395,8 +9395,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.95892661555312
+   "up5m": 99.90069513406156,
+   "up30m": 99.93223965763195
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
@@ -9415,8 +9415,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.83268482490273,
-   "up30m": 99.68102073365232
+   "up5m": 100,
+   "up30m": 99.81600735970562
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
@@ -9424,9 +9424,9 @@
    "endpoint_tag": "nebius/fp8",
    "endpoint_id": "nebius/fp8",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "state": "down",
+   "up5m": 97.61904761904762,
+   "up30m": 49.892868074686255
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
@@ -9435,8 +9435,8 @@
    "endpoint_id": "streamlake",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.84649511978705,
-   "up30m": 98.72183298617686
+   "up5m": 97.93447293447294,
+   "up30m": 98.30114592515426
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
@@ -9446,7 +9446,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.77258812210269
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-235b-a22b-2507",
@@ -9456,7 +9456,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.72664606608033
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -9464,9 +9464,9 @@
    "endpoint_tag": "alibaba",
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
-   "state": "degraded",
+   "state": "up",
    "up5m": null,
-   "up30m": 97.32620320855615
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -9474,9 +9474,9 @@
    "endpoint_tag": "novita/fp8",
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 98.14814814814815
+   "up30m": null
   },
   {
    "model": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -9496,7 +9496,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.43502824858757
+   "up30m": 99.89816700610999
   },
   {
    "model": "qwen/qwen3-30b-a3b",
@@ -9505,7 +9505,7 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -9515,8 +9515,8 @@
    "endpoint_id": "streamlake",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.76468815908406,
-   "up30m": 98.28192826136623
+   "up5m": 97.9381443298969,
+   "up30m": 98.46217981379407
   },
   {
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -9525,8 +9525,8 @@
    "endpoint_id": "dekallm",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 98.30316742081448
+   "up5m": 97.91666666666666,
+   "up30m": 98.2102908277405
   },
   {
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -9535,8 +9535,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.91002044989774,
-   "up30m": 97.66306243460062
+   "up5m": 94.88291413703382,
+   "up30m": 95.28915576524412
   },
   {
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -9545,8 +9545,8 @@
    "endpoint_id": "nebius/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 83.7,
-   "up30m": 87.76356723124785
+   "up5m": 100,
+   "up30m": 90.78068823831535
   },
   {
    "model": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -9555,8 +9555,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.87546699875467,
-   "up30m": 99.95668182802686
+   "up5m": 100,
+   "up30m": 99.9776885319054
   },
   {
    "model": "qwen/qwen3-30b-a3b-thinking-2507",
@@ -9575,8 +9575,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.98093785741517,
-   "up30m": 99.69724840959607
+   "up5m": 100,
+   "up30m": 99.72036606624056
   },
   {
    "model": "qwen/qwen3-32b",
@@ -9585,8 +9585,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.24046920821115,
-   "up30m": 98.36601307189542
+   "up5m": 97.35099337748345,
+   "up30m": 98.43041506801534
   },
   {
    "model": "qwen/qwen3-8b",
@@ -9595,8 +9595,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.54792043399638,
-   "up30m": 99.3723849372385
+   "up5m": 99.56663055254604,
+   "up30m": 99.32820153953814
   },
   {
    "model": "qwen/qwen3-coder",
@@ -9615,8 +9615,8 @@
    "endpoint_id": "deepinfra/turbo",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 98.1418918918919
+   "up5m": 98.46153846153847,
+   "up30m": 98.94644424934152
   },
   {
    "model": "qwen/qwen3-coder",
@@ -9625,8 +9625,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.2972972972973,
-   "up30m": 95.14767932489451
+   "up5m": null,
+   "up30m": 96.73202614379085
   },
   {
    "model": "qwen/qwen3-coder",
@@ -9635,8 +9635,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 40.49295774647887,
-   "up30m": 29.38496583143508
+   "up5m": null,
+   "up30m": 38.857142857142854
   },
   {
    "model": "qwen/qwen3-coder",
@@ -9644,9 +9644,9 @@
    "endpoint_tag": "alibaba/opensource",
    "endpoint_id": "alibaba/opensource",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -9655,8 +9655,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 75.23809523809524,
-   "up30m": 89.51456310679612
+   "up5m": 100,
+   "up30m": 88.81118881118881
   },
   {
    "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -9664,9 +9664,9 @@
    "endpoint_tag": "siliconflow/fp8",
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 93.84615384615384,
-   "up30m": 96.65809768637533
+   "state": "up",
+   "up5m": 100,
+   "up30m": 98.01223241590215
   },
   {
    "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -9695,7 +9695,7 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -9716,7 +9716,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": null,
-   "up30m": 99.74093264248705
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3-coder-next",
@@ -9724,9 +9724,9 @@
    "endpoint_tag": "novita/fp8",
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "qwen/qwen3-coder-next",
@@ -9745,7 +9745,7 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -9764,9 +9764,9 @@
    "endpoint_tag": "alibaba",
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "qwen/qwen3-next-80b-a3b-instruct",
@@ -9795,8 +9795,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.40828402366864,
-   "up30m": 99.80879541108987
+   "up5m": 100,
+   "up30m": 99.9054820415879
   },
   {
    "model": "qwen/qwen3-next-80b-a3b-instruct",
@@ -9844,9 +9844,9 @@
    "endpoint_tag": "deepinfra/fp8",
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
-   "state": "down",
-   "up5m": 73.82198952879581,
-   "up30m": 76.44787644787645
+   "state": "degraded",
+   "up5m": 91.33858267716536,
+   "up30m": 90.77412513255567
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -9855,8 +9855,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 79.27927927927928,
-   "up30m": 88.9763779527559
+   "up5m": 87.56218905472637,
+   "up30m": 92.68146370725854
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -9865,8 +9865,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.47191011235955,
-   "up30m": 97.22938867077958
+   "up5m": 98.2174688057041,
+   "up30m": 97.9705827592627
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -9875,8 +9875,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.56140350877193,
-   "up30m": 99.68126385809313
+   "up5m": 99.46062567421791,
+   "up30m": 99.52874646559849
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -9885,8 +9885,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 94.3127962085308,
-   "up30m": 93.54925775978408
+   "up5m": 88.69047619047619,
+   "up30m": 92.60991580916745
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-thinking",
@@ -9894,9 +9894,9 @@
    "endpoint_tag": "alibaba",
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "down",
+   "up5m": 77.19298245614034,
+   "up30m": 75.24752475247524
   },
   {
    "model": "qwen/qwen3-vl-235b-a22b-thinking",
@@ -9905,7 +9905,7 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "idle",
-   "up5m": null,
+   "up5m": 100,
    "up30m": null
   },
   {
@@ -9915,8 +9915,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.06876790830945,
-   "up30m": 99.61322761554825
+   "up5m": 99.46996466431095,
+   "up30m": 99.09374535730203
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -9925,8 +9925,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": null,
-   "up30m": 8.656036446469248
+   "up5m": 1.574803149606299,
+   "up30m": 14.76510067114094
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -9935,8 +9935,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.55323901712583,
-   "up30m": 99.42510713912407
+   "up5m": 99.13700107874865,
+   "up30m": 99.22580645161291
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -9945,8 +9945,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 93.30783938814533,
-   "up30m": 97.86289203441576
+   "up5m": 99.71988795518207,
+   "up30m": 97.78585591539986
   },
   {
    "model": "qwen/qwen3-vl-30b-a3b-thinking",
@@ -9985,8 +9985,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.9185667752443,
-   "up30m": 99.97964169381108
+   "up5m": 100,
+   "up30m": 99.96195858920711
   },
   {
    "model": "qwen/qwen3-vl-8b-instruct",
@@ -9995,8 +9995,8 @@
    "endpoint_id": "parasail/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.47826086956522,
-   "up30m": 99.25479063165366
+   "up5m": 99.41706412294647,
+   "up30m": 99.47272358547961
   },
   {
    "model": "qwen/qwen3-vl-8b-thinking",
@@ -10024,9 +10024,9 @@
    "endpoint_tag": "alibaba",
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 98.93992932862191,
-   "up30m": 98.48254931714719
+   "state": "degraded",
+   "up5m": 95.50561797752809,
+   "up30m": 95.12862616310892
   },
   {
    "model": "qwen/qwen3.5-122b-a10b",
@@ -10046,7 +10046,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.23273657289002
+   "up30m": 99.48364888123923
   },
   {
    "model": "qwen/qwen3.5-122b-a10b",
@@ -10065,8 +10065,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 73.9938080495356,
-   "up30m": 90.57315233785822
+   "up5m": 100,
+   "up30m": 87.62376237623762
   },
   {
    "model": "qwen/qwen3.5-27b",
@@ -10074,9 +10074,9 @@
    "endpoint_tag": "siliconflow/fp8",
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
-   "state": "down",
-   "up5m": 68.26347305389223,
-   "up30m": 79.08127208480565
+   "state": "degraded",
+   "up5m": 92.7710843373494,
+   "up30m": 80.49886621315193
   },
   {
    "model": "qwen/qwen3.5-27b",
@@ -10086,7 +10086,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.73527465254797
+   "up30m": 99.84110169491525
   },
   {
    "model": "qwen/qwen3.5-27b",
@@ -10095,8 +10095,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.93645750595711
+   "up5m": 99.87908101571948,
+   "up30m": 99.88169680581376
   },
   {
    "model": "qwen/qwen3.5-27b",
@@ -10104,9 +10104,9 @@
    "endpoint_tag": "phala",
    "endpoint_id": "phala",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "degraded",
    "up5m": 100,
-   "up30m": 98.53968253968254
+   "up30m": 97.9852249832102
   },
   {
    "model": "qwen/qwen3.5-27b",
@@ -10116,7 +10116,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.89189189189189
+   "up30m": 99.94275901545507
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
@@ -10125,8 +10125,8 @@
    "endpoint_id": "darkbloom/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 96,
-   "up30m": 98.92703862660944
+   "up5m": 99.1869918699187,
+   "up30m": 98.68804664723032
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
@@ -10136,7 +10136,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.49622166246851
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
@@ -10155,8 +10155,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.97681965693093
+   "up5m": 99.92927864214994,
+   "up30m": 99.9645390070922
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
@@ -10174,9 +10174,9 @@
    "endpoint_tag": "siliconflow/fp8",
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "degraded",
    "up5m": null,
-   "up30m": null
+   "up30m": 97.3913043478261
   },
   {
    "model": "qwen/qwen3.5-35b-a3b",
@@ -10196,7 +10196,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.95737425404944
+   "up30m": 99.95238095238095
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -10205,8 +10205,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.70550161812298,
-   "up30m": 98.87775551102204
+   "up5m": 97.26775956284153,
+   "up30m": 98.18346957311535
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -10215,8 +10215,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 97.51552795031056,
-   "up30m": 99.6512641673932
+   "up5m": 98.6784140969163,
+   "up30m": 98.79608728367192
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -10226,7 +10226,7 @@
    "identity_ambiguous": false,
    "state": "degraded",
    "up5m": null,
-   "up30m": 92.16589861751152
+   "up30m": 94.86166007905138
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -10235,8 +10235,8 @@
    "endpoint_id": "phala",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.6875,
-   "up30m": 99.70934679516597
+   "up5m": 99.69604863221885,
+   "up30m": 99.12447658926531
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -10245,8 +10245,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 96.70781893004116,
-   "up30m": 95.98765432098766
+   "up5m": 96.63865546218487,
+   "up30m": 95.86614173228347
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -10255,8 +10255,8 @@
    "endpoint_id": "streamlake",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.1219512195122,
-   "up30m": 95.87155963302753
+   "up5m": null,
+   "up30m": 95.87628865979381
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -10265,8 +10265,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 98.23008849557522,
-   "up30m": 92.7038626609442
+   "up5m": 98.27586206896551,
+   "up30m": 95.81056466302368
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -10274,9 +10274,9 @@
    "endpoint_tag": "novita",
    "endpoint_id": "novita",
    "identity_ambiguous": false,
-   "state": "degraded",
+   "state": "up",
    "up5m": 100,
-   "up30m": 97.42930591259639
+   "up30m": 98.49849849849849
   },
   {
    "model": "qwen/qwen3.5-397b-a17b",
@@ -10286,7 +10286,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.0295566502463
+   "up30m": 98.05825242718447
   },
   {
    "model": "qwen/qwen3.5-9b",
@@ -10305,8 +10305,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.91472868217053,
-   "up30m": 98.87520525451559
+   "up5m": 99.72997299729973,
+   "up30m": 98.65889752127266
   },
   {
    "model": "qwen/qwen3.5-9b",
@@ -10316,7 +10316,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.92810927390366
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.5-9b",
@@ -10326,7 +10326,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.93263725159987
+   "up30m": 99.96412556053812
   },
   {
    "model": "qwen/qwen3.5-9b",
@@ -10345,8 +10345,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.7229916897507,
-   "up30m": 99.87639060568603
+   "up5m": 100,
+   "up30m": 99.95452478399272
   },
   {
    "model": "qwen/qwen3.5-9b:batch",
@@ -10365,8 +10365,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.99252839210997,
+   "up30m": 99.9990618784945
   },
   {
    "model": "qwen/qwen3.5-plus-02-15",
@@ -10396,7 +10396,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.17265280403277
+   "up30m": 98.00362976406534
   },
   {
    "model": "qwen/qwen3.6-27b",
@@ -10405,8 +10405,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": null,
-   "up30m": 93.47517730496455
+   "up5m": 72.72727272727273,
+   "up30m": 84.64730290456431
   },
   {
    "model": "qwen/qwen3.6-27b",
@@ -10416,7 +10416,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.66777408637874
+   "up30m": 99.71526195899773
   },
   {
    "model": "qwen/qwen3.6-27b",
@@ -10426,7 +10426,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.76158038147139
+   "up30m": 99.07692307692308
   },
   {
    "model": "qwen/qwen3.6-27b",
@@ -10435,8 +10435,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": null,
-   "up30m": 97.13322091062395
+   "up5m": 100,
+   "up30m": 97.1563981042654
   },
   {
    "model": "qwen/qwen3.6-27b",
@@ -10445,7 +10445,7 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -10456,7 +10456,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.87959060806743
+   "up30m": 99.96364958197019
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
@@ -10466,7 +10466,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.99535380755471
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
@@ -10476,7 +10476,7 @@
    "identity_ambiguous": false,
    "state": "degraded",
    "up5m": 100,
-   "up30m": 94.89953632148377
+   "up30m": 97.70114942528735
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
@@ -10496,7 +10496,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.26248576944018
+   "up30m": 99.99092476631273
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
@@ -10505,8 +10505,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 97.82608695652173,
-   "up30m": 98.95652173913044
+   "up5m": null,
+   "up30m": 99.12280701754386
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
@@ -10516,7 +10516,7 @@
    "identity_ambiguous": false,
    "state": "degraded",
    "up5m": null,
-   "up30m": 86.79245283018868
+   "up30m": 86.20689655172413
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
@@ -10534,9 +10534,9 @@
    "endpoint_tag": "siliconflow/fp8",
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 100
   },
   {
    "model": "qwen/qwen3.6-35b-a3b",
@@ -10605,8 +10605,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.99106344950849,
-   "up30m": 99.8039819663409
+   "up5m": 99.98232747194487,
+   "up30m": 99.9423449146842
   },
   {
    "model": "qwen/qwen3.8-2.4t-a95b",
@@ -10615,8 +10615,8 @@
    "endpoint_id": "novita",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 98.94736842105263,
+   "up30m": 99.87405541561712
   },
   {
    "model": "qwen/qwen3.8-2.4t-a95b",
@@ -10635,7 +10635,7 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -10655,7 +10655,7 @@
    "endpoint_id": "modal",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -10694,9 +10694,9 @@
    "endpoint_tag": "deepinfra/bf16",
    "endpoint_id": "deepinfra/bf16",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 99.54254345837145,
-   "up30m": 88.84540117416829
+   "state": "up",
+   "up5m": 98.21958456973294,
+   "up30m": 99.08097797815155
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10705,8 +10705,8 @@
    "endpoint_id": "darkbloom/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.83388704318938
+   "up5m": 99.1769547325103,
+   "up30m": 99.37434827945776
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10715,8 +10715,8 @@
    "endpoint_id": "dekallm",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.62894248608535,
-   "up30m": 99.90774907749078
+   "up5m": 100,
+   "up30m": 99.94049390062482
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10725,8 +10725,8 @@
    "endpoint_id": "phala",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.98843930635837,
-   "up30m": 99.70866715222141
+   "up5m": 98.03220035778175,
+   "up30m": 98.5681989449887
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10755,8 +10755,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.18367346938776,
-   "up30m": 99.4224924012158
+   "up5m": 99.72972972972973,
+   "up30m": 99.51472015528955
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10765,8 +10765,8 @@
    "endpoint_id": "chutes/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.9250936329588,
-   "up30m": 98.82959979864083
+   "up5m": 99.71264367816092,
+   "up30m": 99.19437340153453
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10775,8 +10775,8 @@
    "endpoint_id": "akashml/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.51923076923077,
-   "up30m": 99.9401913875598
+   "up5m": 99.67845659163987,
+   "up30m": 99.79064898813678
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10785,8 +10785,8 @@
    "endpoint_id": "ionstream/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.47560975609755,
-   "up30m": 99.64871194379391
+   "up5m": 100,
+   "up30m": 99.38080495356037
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10795,8 +10795,8 @@
    "endpoint_id": "io-net/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 96.46017699115043,
+   "up30m": 99.05020352781547
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10815,8 +10815,8 @@
    "endpoint_id": "novita",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.86310746064339
+   "up5m": 99.5475113122172,
+   "up30m": 99.81167608286252
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10835,8 +10835,8 @@
    "endpoint_id": "cloudflare",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 88.88888888888889,
-   "up30m": 93.47079037800687
+   "up5m": 92.85714285714286,
+   "up30m": 93.45238095238095
   },
   {
    "model": "qwen/qwen3.8-27b",
@@ -10845,8 +10845,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 94.20289855072464,
-   "up30m": 96.5675057208238
+   "up5m": 100,
+   "up30m": 97.99498746867168
   },
   {
    "model": "qwen/qwen3.8-flash",
@@ -10855,8 +10855,8 @@
    "endpoint_id": "alibaba",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.99574160030662
+   "up5m": 99.99009704892057,
+   "up30m": 99.99694269073788
   },
   {
    "model": "qwen/qwen3.8-max-0902",
@@ -10955,8 +10955,8 @@
    "endpoint_id": "parasail/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.27797833935018,
-   "up30m": 99.90356798457087
+   "up5m": 100,
+   "up30m": 99.85974754558204
   },
   {
    "model": "sao10k/l3-lunaris-8b",
@@ -10966,7 +10966,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.925205684368
   },
   {
    "model": "sao10k/l3-lunaris-8b",
@@ -10976,7 +10976,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.83739837398375
+   "up30m": 99.84101748807632
   },
   {
    "model": "sao10k/l3.1-euryale-70b",
@@ -11005,8 +11005,8 @@
    "endpoint_id": "nextbit/bf16",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.45454545454545,
-   "up30m": 87.19008264462809
+   "up5m": 95.3125,
+   "up30m": 90.58823529411765
   },
   {
    "model": "stealth/union-alpha",
@@ -11015,8 +11015,8 @@
    "endpoint_id": "stealth",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.85930107810549,
-   "up30m": 99.81117558844625
+   "up5m": 99.85671299613125,
+   "up30m": 99.80887268782887
   },
   {
    "model": "stepfun/step-3.5-flash",
@@ -11035,8 +11035,8 @@
    "endpoint_id": "deepinfra",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.63013698630137,
-   "up30m": 98.88888888888889
+   "up5m": 99.01960784313727,
+   "up30m": 98.52744310575636
   },
   {
    "model": "stepfun/step-3.7-flash",
@@ -11045,8 +11045,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
-   "up30m": 98.5981308411215
+   "up5m": 97.91666666666666,
+   "up30m": 98.4375
   },
   {
    "model": "stepfun/step-3.7-flash",
@@ -11055,8 +11055,8 @@
    "endpoint_id": "stepfun/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.2831541218638
+   "up5m": null,
+   "up30m": 98.93992932862191
   },
   {
    "model": "tencent/hunyuan-a13b-instruct",
@@ -11075,7 +11075,7 @@
    "endpoint_id": "tencent/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -11095,7 +11095,7 @@
    "endpoint_id": "tencent/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -11105,8 +11105,8 @@
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.69281045751634,
-   "up30m": 99.17582417582418
+   "up5m": 100,
+   "up30m": 99.71698113207546
   },
   {
    "model": "tencent/hy3",
@@ -11135,8 +11135,8 @@
    "endpoint_id": "gmicloud/bf16",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 98.7551867219917
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "tencent/hy3",
@@ -11155,8 +11155,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.47368421052632,
-   "up30m": 99.62880475129919
+   "up5m": 100,
+   "up30m": 99.67453213995118
   },
   {
    "model": "tencent/hy3-preview",
@@ -11186,7 +11186,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.87468671679198
+   "up30m": 99.87878787878788
   },
   {
    "model": "thedrummer/skyfall-36b-v2",
@@ -11194,9 +11194,9 @@
    "endpoint_tag": "parasail/fp8",
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "thedrummer/unslopnemo-12b",
@@ -11215,8 +11215,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 92.5925925925926,
-   "up30m": 85.20710059171599
+   "up5m": 91.11111111111111,
+   "up30m": 88.50746268656717
   },
   {
    "model": "thinkingmachines/inkling",
@@ -11224,9 +11224,9 @@
    "endpoint_tag": "baseten/fp8",
    "endpoint_id": "baseten/fp8#07a6c13a50#1",
    "identity_ambiguous": true,
-   "state": "degraded",
+   "state": "up",
    "up5m": 100,
-   "up30m": 84.71953578336557
+   "up30m": 99.81949458483754
   },
   {
    "model": "thinkingmachines/inkling",
@@ -11235,8 +11235,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 93.54838709677419,
-   "up30m": 93.32285938727416
+   "up5m": 98.61111111111111,
+   "up30m": 96.27483443708608
   },
   {
    "model": "thinkingmachines/inkling",
@@ -11244,9 +11244,9 @@
    "endpoint_tag": "baseten/fp8",
    "endpoint_id": "baseten/fp8#07a6c13a50#2",
    "identity_ambiguous": true,
-   "state": "degraded",
+   "state": "up",
    "up5m": 100,
-   "up30m": 97.15784871010057
+   "up30m": 99.94717379820392
   },
   {
    "model": "thinkingmachines/inkling-small",
@@ -11256,7 +11256,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.51503394762366
+   "up30m": 99.57582184517497
   },
   {
    "model": "thinkingmachines/inkling-small",
@@ -11285,8 +11285,8 @@
    "endpoint_id": "thinkingmachines/nvfp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.7872340425532,
-   "up30m": 99.71707455085584
+   "up5m": 100,
+   "up30m": 99.61508852963819
   },
   {
    "model": "thinkingmachines/inkling:batch",
@@ -11305,8 +11305,8 @@
    "endpoint_id": "thinkingmachines/nvfp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.86562751948401,
-   "up30m": 99.95223310246
+   "up5m": 99.795605518651,
+   "up30m": 99.84641544621799
   },
   {
    "model": "undi95/remm-slerp-l2-13b",
@@ -11315,7 +11315,7 @@
    "endpoint_id": "mancer/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -11345,8 +11345,8 @@
    "endpoint_id": "upstage/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.61315280464217,
-   "up30m": 99.4216703521007
+   "up5m": 99.89417989417989,
+   "up30m": 99.8485536877177
   },
   {
    "model": "upstage/solar-pro4",
@@ -11356,7 +11356,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.28209764918626
+   "up30m": 99.57007738607051
   },
   {
    "model": "writer/palmyra-x5",
@@ -11385,8 +11385,8 @@
    "endpoint_id": "xai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.81354878806712,
-   "up30m": 99.94188459941886
+   "up5m": 99.93898718730934,
+   "up30m": 99.91950630533941
   },
   {
    "model": "x-ai/grok-4.20",
@@ -11456,7 +11456,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.7974888618874
+   "up30m": 100
   },
   {
    "model": "x-ai/grok-4.3",
@@ -11465,8 +11465,8 @@
    "endpoint_id": "xai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.93389942543347
+   "up5m": 99.95456610631531,
+   "up30m": 99.99250524632757
   },
   {
    "model": "x-ai/grok-4.3",
@@ -11505,8 +11505,8 @@
    "endpoint_id": "xai/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.94366197183099,
-   "up30m": 99.33308632826973
+   "up5m": 99.82973893303064,
+   "up30m": 99.41528609216205
   },
   {
    "model": "x-ai/grok-4.5",
@@ -11515,8 +11515,8 @@
    "endpoint_id": "xai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 96.45922746781116,
-   "up30m": 98.4523617604385
+   "up5m": 99.32170542635659,
+   "up30m": 98.464025869038
   },
   {
    "model": "x-ai/grok-4.5",
@@ -11545,8 +11545,8 @@
    "endpoint_id": "xai/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.76931949250289,
-   "up30m": 99.80510276399717
+   "up5m": 99.76525821596243,
+   "up30m": 99.77560506491426
   },
   {
    "model": "x-ai/grok-4.6",
@@ -11555,8 +11555,8 @@
    "endpoint_id": "xai",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.45222154595253,
-   "up30m": 99.59072305593452
+   "up5m": 99.90393852065321,
+   "up30m": 99.65156794425087
   },
   {
    "model": "x-ai/grok-4.6",
@@ -11574,9 +11574,9 @@
    "endpoint_tag": "xai/zdr/priority",
    "endpoint_id": "xai/zdr/priority",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 99.19354838709677
+   "up30m": null
   },
   {
    "model": "x-ai/grok-4.6",
@@ -11584,9 +11584,9 @@
    "endpoint_tag": "xai/priority",
    "endpoint_id": "xai/priority",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "x-ai/grok-build-0.1",
@@ -11594,9 +11594,9 @@
    "endpoint_tag": "xai",
    "endpoint_id": "xai",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "up",
    "up5m": null,
-   "up30m": null
+   "up30m": 100
   },
   {
    "model": "x-ai/grok-build-0.1",
@@ -11635,8 +11635,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 81.14419147694105,
-   "up30m": 75.62067562067563
+   "up5m": 84.4155844155844,
+   "up30m": 75.83226258614648
   },
   {
    "model": "xiaomi/mimo-v2.5",
@@ -11645,8 +11645,8 @@
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": null,
-   "up30m": 65.61771561771562
+   "up5m": 100,
+   "up30m": 74.54323995127893
   },
   {
    "model": "xiaomi/mimo-v2.5",
@@ -11655,8 +11655,8 @@
    "endpoint_id": "xiaomi/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 96.79474008629546,
-   "up30m": 94.66070183592842
+   "up5m": 95.94189531934518,
+   "up30m": 95.91572775350656
   },
   {
    "model": "xiaomi/mimo-v2.5",
@@ -11665,8 +11665,8 @@
    "endpoint_id": "streamlake",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 88.8307155322862,
-   "up30m": 85.8204134366925
+   "up5m": 90.76305220883533,
+   "up30m": 87.55599800895968
   },
   {
    "model": "xiaomi/mimo-v2.5",
@@ -11675,8 +11675,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.24018573237653,
-   "up30m": 98.50974652385071
+   "up5m": 99.66650786088613,
+   "up30m": 98.97606857959282
   },
   {
    "model": "xiaomi/mimo-v2.5",
@@ -11684,9 +11684,9 @@
    "endpoint_tag": "venice/fp8",
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
-   "state": "degraded",
+   "state": "down",
    "up5m": null,
-   "up30m": 86.50519031141869
+   "up30m": 78.38983050847457
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
@@ -11694,9 +11694,9 @@
    "endpoint_tag": "gmicloud/bf16",
    "endpoint_id": "gmicloud/bf16",
    "identity_ambiguous": false,
-   "state": "idle",
+   "state": "down",
    "up5m": null,
-   "up30m": null
+   "up30m": 72.93233082706767
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
@@ -11704,9 +11704,9 @@
    "endpoint_tag": "deepinfra/fp8",
    "endpoint_id": "deepinfra/fp8",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 91.66666666666666,
-   "up30m": 96.55172413793103
+   "state": "down",
+   "up5m": null,
+   "up30m": 73.61702127659574
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
@@ -11725,8 +11725,8 @@
    "endpoint_id": "xiaomi/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.65738758029978,
-   "up30m": 99.0221187427241
+   "up5m": 99.87217724755007,
+   "up30m": 99.15127020785219
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
@@ -11735,8 +11735,8 @@
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 95.75971731448763,
-   "up30m": 98.80270692347736
+   "up5m": 100,
+   "up30m": 98.75943905070119
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
@@ -11745,8 +11745,8 @@
    "endpoint_id": "novita",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 98.46153846153847,
-   "up30m": 92.43856332703214
+   "up5m": 99.3006993006993,
+   "up30m": 95.00713266761768
   },
   {
    "model": "xiaomi/mimo-v2.5-pro",
@@ -11755,8 +11755,8 @@
    "endpoint_id": "streamlake",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.22222222222221,
-   "up30m": 89.19354838709678
+   "up5m": 100,
+   "up30m": 87.07317073170732
   },
   {
    "model": "z-ai/glm-4.5",
@@ -11765,7 +11765,7 @@
    "endpoint_id": "z-ai/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": null,
+   "up5m": 100,
    "up30m": 100
   },
   {
@@ -11785,7 +11785,7 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
+   "up5m": null,
    "up30m": 100
   },
   {
@@ -11795,8 +11795,8 @@
    "endpoint_id": "z-ai/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.38837920489296
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-4.5v",
@@ -11834,9 +11834,9 @@
    "endpoint_tag": "deepinfra/fp4",
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.47089947089947
   },
   {
    "model": "z-ai/glm-4.6",
@@ -11845,8 +11845,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.87628865979381,
-   "up30m": 95.55555555555556
+   "up5m": 96,
+   "up30m": 95.28718703976435
   },
   {
    "model": "z-ai/glm-4.6",
@@ -11856,7 +11856,7 @@
    "identity_ambiguous": false,
    "state": "down",
    "up5m": null,
-   "up30m": 71.00591715976331
+   "up30m": 64.51612903225806
   },
   {
    "model": "z-ai/glm-4.6v",
@@ -11865,8 +11865,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 92.05882352941175,
-   "up30m": 93.56494275562574
+   "up5m": 97.06601466992664,
+   "up30m": 93.66754617414247
   },
   {
    "model": "z-ai/glm-4.6v",
@@ -11875,8 +11875,8 @@
    "endpoint_id": "z-ai/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 81.30841121495327,
-   "up30m": 85.68249258160238
+   "up5m": 92.6829268292683,
+   "up30m": 87.35066760365426
   },
   {
    "model": "z-ai/glm-4.7",
@@ -11885,8 +11885,8 @@
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 74.19354838709677,
-   "up30m": 95.72580645161291
+   "up5m": 57.14285714285714,
+   "up30m": 84.39716312056737
   },
   {
    "model": "z-ai/glm-4.7",
@@ -11894,9 +11894,9 @@
    "endpoint_tag": "venice/fp4",
    "endpoint_id": "venice/fp4",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 79.77011494252874,
-   "up30m": 89.27927927927928
+   "state": "down",
+   "up5m": 65.32258064516128,
+   "up30m": 77.14021286441462
   },
   {
    "model": "z-ai/glm-4.7",
@@ -11905,8 +11905,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 93.96551724137932,
-   "up30m": 91.38950480413895
+   "up5m": 95.19038076152304,
+   "up30m": 93.23962516733602
   },
   {
    "model": "z-ai/glm-4.7",
@@ -11915,8 +11915,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 88.35758835758836,
-   "up30m": 92.21347331583553
+   "up5m": 92.36276849642005,
+   "up30m": 89.40420977524082
   },
   {
    "model": "z-ai/glm-4.7",
@@ -11935,8 +11935,8 @@
    "endpoint_id": "z-ai/fp4",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 70.11494252873564,
-   "up30m": 67.00955180014695
+   "up5m": 78.98832684824903,
+   "up30m": 65.00265533722784
   },
   {
    "model": "z-ai/glm-4.7",
@@ -11944,9 +11944,9 @@
    "endpoint_tag": "mancer/fp4",
    "endpoint_id": "mancer/fp4",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 78.67298578199052,
-   "up30m": 82.98755186721992
+   "state": "down",
+   "up5m": null,
+   "up30m": 78.3175355450237
   },
   {
    "model": "z-ai/glm-4.7-flash",
@@ -11955,8 +11955,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 94,
-   "up30m": 95.07908611599298
+   "up5m": 91.30434782608695,
+   "up30m": 95.51656920077973
   },
   {
    "model": "z-ai/glm-4.7-flash",
@@ -11965,8 +11965,8 @@
    "endpoint_id": "cloudflare",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.81167608286252,
-   "up30m": 99.13332104001475
+   "up5m": 99.67828418230563,
+   "up30m": 99.21795713688735
   },
   {
    "model": "z-ai/glm-4.7-flash",
@@ -11975,8 +11975,8 @@
    "endpoint_id": "novita/bf16",
    "identity_ambiguous": false,
    "state": "down",
-   "up5m": 55.319148936170215,
-   "up30m": 56.90298507462687
+   "up5m": 58.51851851851851,
+   "up30m": 54.18502202643172
   },
   {
    "model": "z-ai/glm-5",
@@ -11985,8 +11985,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.42028985507247,
-   "up30m": 99.5111111111111
+   "up5m": 99.55555555555556,
+   "up30m": 99.40036900369003
   },
   {
    "model": "z-ai/glm-5",
@@ -11994,9 +11994,9 @@
    "endpoint_tag": "gmicloud/fp8",
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 100,
-   "up30m": 98.03328290468987
+   "state": "degraded",
+   "up5m": 98.79518072289156,
+   "up30m": 97.85100286532952
   },
   {
    "model": "z-ai/glm-5",
@@ -12005,8 +12005,8 @@
    "endpoint_id": "baidu/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 97.22222222222221
+   "up5m": null,
+   "up30m": 97.31800766283524
   },
   {
    "model": "z-ai/glm-5",
@@ -12016,7 +12016,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.68354430379746
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-5",
@@ -12034,9 +12034,9 @@
    "endpoint_tag": "venice/fp8",
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "degraded",
    "up5m": null,
-   "up30m": 98.1981981981982
+   "up30m": 96.49122807017544
   },
   {
    "model": "z-ai/glm-5",
@@ -12076,7 +12076,7 @@
    "identity_ambiguous": false,
    "state": "degraded",
    "up5m": 100,
-   "up30m": 96.22298525550393
+   "up30m": 96.0470984020185
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12085,8 +12085,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.83720930232558,
-   "up30m": 98.95738893925657
+   "up5m": 97.80564263322884,
+   "up30m": 98.8619119878604
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12094,9 +12094,9 @@
    "endpoint_tag": "chutes/fp8",
    "endpoint_id": "chutes/fp8",
    "identity_ambiguous": false,
-   "state": "down",
-   "up5m": null,
-   "up30m": 73.72881355932203
+   "state": "idle",
+   "up5m": 80.32786885245902,
+   "up30m": null
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12104,9 +12104,9 @@
    "endpoint_tag": "deepinfra/fp4",
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12124,9 +12124,9 @@
    "endpoint_tag": "phala",
    "endpoint_id": "phala",
    "identity_ambiguous": false,
-   "state": "down",
-   "up5m": null,
-   "up30m": 79.91266375545851
+   "state": "idle",
+   "up5m": 81.3953488372093,
+   "up30m": null
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12135,8 +12135,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 100,
-   "up30m": 97.86385645115352
+   "up5m": 99.73262032085562,
+   "up30m": 97.61904761904762
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12156,7 +12156,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.69109947643979
+   "up30m": 98.60724233983287
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12164,9 +12164,9 @@
    "endpoint_tag": "nebius/fp8",
    "endpoint_id": "nebius/fp8",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 92.85714285714286,
-   "up30m": 97.92746113989638
+   "state": "up",
+   "up5m": 100,
+   "up30m": 98.63813229571986
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12185,8 +12185,8 @@
    "endpoint_id": "friendli",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 100
+   "up5m": 99.52380952380952,
+   "up30m": 99.93887530562347
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12196,7 +12196,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.43502824858757
+   "up30m": 99.86338797814209
   },
   {
    "model": "z-ai/glm-5.1",
@@ -12205,8 +12205,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 95.96774193548387,
-   "up30m": 93.97240377632534
+   "up5m": 100,
+   "up30m": 93.10344827586206
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12216,7 +12216,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.91482112436117
+   "up30m": 99.99137484905985
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12225,8 +12225,8 @@
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.60317460317461,
-   "up30m": 99.40119760479041
+   "up5m": 97.04433497536947,
+   "up30m": 98.6963190184049
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12236,7 +12236,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.7946611909651
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12245,8 +12245,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.85935302390999,
-   "up30m": 99.72322503008424
+   "up5m": 99.7355663287792,
+   "up30m": 99.72753811222836
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12255,8 +12255,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.98188733925014,
-   "up30m": 99.68058121692293
+   "up5m": 100,
+   "up30m": 99.68289153659062
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12265,8 +12265,8 @@
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 97.36070381231671,
-   "up30m": 96.95526450076544
+   "up5m": 99.5249406175772,
+   "up30m": 97.46633416458853
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12285,8 +12285,8 @@
    "endpoint_id": "atlas-cloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.71509971509973
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12295,8 +12295,8 @@
    "endpoint_id": "alibaba/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.50746268656717,
-   "up30m": 99.7560975609756
+   "up5m": 100,
+   "up30m": 99.35205183585313
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12304,9 +12304,9 @@
    "endpoint_tag": "inceptron/fp4",
    "endpoint_id": "inceptron/fp4",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "degraded",
    "up5m": 100,
-   "up30m": 99.83079526226734
+   "up30m": 96.08843537414967
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12326,7 +12326,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 98.09296781883194
+   "up30m": 98.36984207845136
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12335,8 +12335,8 @@
    "endpoint_id": "mistral/zdr",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.38962360122076,
-   "up30m": 99.52972079820361
+   "up5m": 99.67262654243264,
+   "up30m": 99.55003599712023
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12345,8 +12345,8 @@
    "endpoint_id": "mistral",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.49640287769785,
-   "up30m": 99.2765778989306
+   "up5m": 99.34167215273206,
+   "up30m": 99.25956825529252
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12356,7 +12356,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.8793242156074
+   "up30m": 99.89082969432314
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12365,8 +12365,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.88378849506101,
-   "up30m": 99.6516835296069
+   "up5m": 100,
+   "up30m": 99.63212273011898
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12386,7 +12386,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.29278642149929
+   "up30m": 99.52267303102626
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12395,8 +12395,8 @@
    "endpoint_id": "venice/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.70149253731343,
-   "up30m": 99.91832289681459
+   "up5m": 100,
+   "up30m": 99.92992291520673
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12405,8 +12405,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 98.83720930232558
+   "up5m": 97.67441860465115,
+   "up30m": 99.3103448275862
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12416,7 +12416,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.87449011609665
+   "up30m": 99.82166740971913
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12426,7 +12426,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.40546967895362
+   "up30m": 99.94242947610823
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12445,8 +12445,8 @@
    "endpoint_id": "z-ai/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.5016611295681,
-   "up30m": 99.72908906197088
+   "up5m": 100,
+   "up30m": 99.78813559322035
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12505,8 +12505,8 @@
    "endpoint_id": "decart/fast",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.42446043165467,
-   "up30m": 99.55517898750264
+   "up5m": 99.65986394557824,
+   "up30m": 99.69171483622351
   },
   {
    "model": "z-ai/glm-5.2",
@@ -12556,7 +12556,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.70674486803519
+   "up30m": 99.76662777129522
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12565,8 +12565,8 @@
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.10756223579145
+   "up5m": 98.66666666666667,
+   "up30m": 99.44055944055944
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12575,8 +12575,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.67497291440954,
-   "up30m": 99.8819641170916
+   "up5m": 98.79365079365078,
+   "up30m": 99.27545954649133
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12585,8 +12585,8 @@
    "endpoint_id": "io-net/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 95.52238805970148,
-   "up30m": 99.12152269399708
+   "up5m": 100,
+   "up30m": 99.42473633748801
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12605,8 +12605,8 @@
    "endpoint_id": "phala",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.89747795776091,
-   "up30m": 99.81814214010329
+   "up5m": 99.96752192270218,
+   "up30m": 99.83922829581994
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12614,9 +12614,9 @@
    "endpoint_tag": "gmicloud/fp8",
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
-   "state": "idle",
-   "up5m": null,
-   "up30m": null
+   "state": "up",
+   "up5m": 100,
+   "up30m": 99.19354838709677
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12624,9 +12624,9 @@
    "endpoint_tag": "makora/fp4",
    "endpoint_id": "makora/fp4",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": null,
-   "up30m": 89.77272727272727
+   "state": "up",
+   "up5m": 99.1166077738516,
+   "up30m": 98.35575485799701
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12635,8 +12635,8 @@
    "endpoint_id": "inceptron/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.72615244180739
+   "up5m": 99.43502824858757,
+   "up30m": 99.89130434782608
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12646,7 +12646,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 100
+   "up30m": 99.92135273299253
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12664,9 +12664,9 @@
    "endpoint_tag": "decart/fp4",
    "endpoint_id": "decart/fp4",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 94.15807560137456,
-   "up30m": 98.51279000594883
+   "state": "degraded",
+   "up5m": 100,
+   "up30m": 96.5636931620965
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12676,7 +12676,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.96225702962823
+   "up30m": 99.98622968879096
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12685,8 +12685,8 @@
    "endpoint_id": "sail-research/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.9594155844156
+   "up5m": 99.86684420772303,
+   "up30m": 99.93688860839382
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12716,7 +12716,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.0314769975787
+   "up30m": 99.52941176470588
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12754,9 +12754,9 @@
    "endpoint_tag": "crusoe/fp4",
    "endpoint_id": "crusoe/fp4",
    "identity_ambiguous": false,
-   "state": "degraded",
-   "up5m": 100,
-   "up30m": 92.33082706766918
+   "state": "up",
+   "up5m": 98.4034833091437,
+   "up30m": 99.14496696463272
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12765,8 +12765,8 @@
    "endpoint_id": "wafer",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.57482993197279,
-   "up30m": 99.53565505804312
+   "up5m": 99.23076923076923,
+   "up30m": 99.45608147205185
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12784,9 +12784,9 @@
    "endpoint_tag": "together",
    "endpoint_id": "together",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 99.34354485776805,
-   "up30m": 98.55419379548066
+   "state": "degraded",
+   "up5m": 94.9944382647386,
+   "up30m": 95.7519845526711
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12795,8 +12795,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.51923076923077,
-   "up30m": 99.40334128878283
+   "up5m": 100,
+   "up30m": 99.57310565635005
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12805,8 +12805,8 @@
    "endpoint_id": "modal",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.24159021406727,
-   "up30m": 98.65249572973998
+   "up5m": 99.47414548641542,
+   "up30m": 98.46180839864311
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12816,7 +12816,7 @@
    "identity_ambiguous": true,
    "state": "up",
    "up5m": null,
-   "up30m": 99.12280701754386
+   "up30m": 99.05660377358491
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12834,9 +12834,9 @@
    "endpoint_tag": "cloudflare",
    "endpoint_id": "cloudflare",
    "identity_ambiguous": false,
-   "state": "up",
+   "state": "idle",
    "up5m": null,
-   "up30m": 100
+   "up30m": null
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12856,7 +12856,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.95867341667528
+   "up30m": 99.97927246346772
   },
   {
    "model": "z-ai/glm-5.3",
@@ -12885,8 +12885,8 @@
    "endpoint_id": "deepinfra/fp4",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.48208864602307,
-   "up30m": 98.62440849565313
+   "up5m": 97.44429882044561,
+   "up30m": 98.52860537378906
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12895,8 +12895,8 @@
    "endpoint_id": "inference-net/fp4",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 92.9125138427464,
-   "up30m": 94.26289566236812
+   "up5m": 96.08981804103756,
+   "up30m": 95.37433829089993
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12905,8 +12905,8 @@
    "endpoint_id": "relace",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.91063142336645,
-   "up30m": 99.77770467617651
+   "up5m": 99.99456462658985,
+   "up30m": 99.9421614943619
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12915,8 +12915,8 @@
    "endpoint_id": "wafer",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.95773010673147,
-   "up30m": 99.90495845326672
+   "up5m": 99.93923435284586,
+   "up30m": 99.87690199114202
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12925,8 +12925,8 @@
    "endpoint_id": "gmicloud/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 94.76515621767018,
-   "up30m": 96.16489941532058
+   "up5m": 96.11461874696454,
+   "up30m": 95.59734920537522
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12935,8 +12935,8 @@
    "endpoint_id": "novita/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.47294938917976,
-   "up30m": 98.9292938510441
+   "up5m": 99.55081815265054,
+   "up30m": 99.13161079080362
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12945,8 +12945,8 @@
    "endpoint_id": "streamlake/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.36129444326166,
-   "up30m": 98.77481177275838
+   "up5m": 99.01905300886625,
+   "up30m": 98.94341526302513
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12955,8 +12955,8 @@
    "endpoint_id": "baseten/fp8#0ffe9a76d8#1",
    "identity_ambiguous": true,
    "state": "up",
-   "up5m": 100,
-   "up30m": 99.1769547325103
+   "up5m": null,
+   "up30m": 100
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12965,8 +12965,8 @@
    "endpoint_id": "near-ai/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.07834101382488,
-   "up30m": 98.50174216027875
+   "up5m": 99.23497267759562,
+   "up30m": 98.69800473452824
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12974,9 +12974,9 @@
    "endpoint_tag": "crusoe/fp4",
    "endpoint_id": "crusoe/fp4",
    "identity_ambiguous": false,
-   "state": "down",
-   "up5m": 83.80281690140845,
-   "up30m": 76.54028436018957
+   "state": "degraded",
+   "up5m": 78.41726618705036,
+   "up30m": 80.96017457719586
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -12995,8 +12995,8 @@
    "endpoint_id": "sail-research/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.68173138128581,
-   "up30m": 99.63798813833475
+   "up5m": 99.87778796211427,
+   "up30m": 99.64549483013295
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13006,7 +13006,7 @@
    "identity_ambiguous": false,
    "state": "up",
    "up5m": 100,
-   "up30m": 99.1808074897601
+   "up30m": 99.51219512195122
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13015,8 +13015,8 @@
    "endpoint_id": "fireworks",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.3920972644377,
-   "up30m": 99.21340629274967
+   "up5m": 98.61635220125787,
+   "up30m": 98.72264800622015
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13025,8 +13025,8 @@
    "endpoint_id": "phala/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 94.7750865051903,
-   "up30m": 95.83044982698962
+   "up5m": 96.98880976602237,
+   "up30m": 95.77452630670292
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13035,8 +13035,8 @@
    "endpoint_id": "friendli",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.09672563041023,
-   "up30m": 99.55940204563336
+   "up5m": 99.58100558659217,
+   "up30m": 99.35231773900011
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13045,8 +13045,8 @@
    "endpoint_id": "siliconflow/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.52408589669182,
-   "up30m": 99.51744617668894
+   "up5m": 99.32603201347936,
+   "up30m": 99.5262763274487
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13055,8 +13055,8 @@
    "endpoint_id": "digitalocean",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 99.60029069767442,
-   "up30m": 96.5567474506688
+   "up5m": 87.66165676336945,
+   "up30m": 95.37732474964234
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13065,8 +13065,8 @@
    "endpoint_id": "together",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.85641352903637,
-   "up30m": 99.70576492440155
+   "up5m": 99.25775978407557,
+   "up30m": 99.69403630077788
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13075,8 +13075,8 @@
    "endpoint_id": "reka/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 98.5121378230227,
-   "up30m": 98.90562357785242
+   "up5m": 99.8259860788863,
+   "up30m": 99.24862729987477
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13085,8 +13085,8 @@
    "endpoint_id": "parasail/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.94604640009592,
-   "up30m": 99.5668235343041
+   "up5m": 98.06107910549464,
+   "up30m": 99.43318341445382
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13095,8 +13095,8 @@
    "endpoint_id": "baseten/fp8#0ffe9a76d8#2",
    "identity_ambiguous": true,
    "state": "up",
-   "up5m": 99.87730061349693,
-   "up30m": 99.63773164274767
+   "up5m": 99.67707212055974,
+   "up30m": 99.68729427254773
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13105,8 +13105,8 @@
    "endpoint_id": "venice",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 94.92753623188406,
-   "up30m": 96.5319662243667
+   "up5m": 93.37016574585635,
+   "up30m": 95.79638752052546
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13115,8 +13115,8 @@
    "endpoint_id": "io-net/fp8",
    "identity_ambiguous": false,
    "state": "degraded",
-   "up5m": 96.71052631578947,
-   "up30m": 96.90831556503198
+   "up5m": 98.79518072289156,
+   "up30m": 97.19917012448133
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13125,8 +13125,8 @@
    "endpoint_id": "cloudflare",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.59100204498978,
-   "up30m": 99.09857516719977
+   "up5m": 99.77207977207976,
+   "up30m": 99.0011750881316
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13135,8 +13135,8 @@
    "endpoint_id": "z-ai/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.3292817331612,
-   "up30m": 99.1855248156563
+   "up5m": 99.50767155622998,
+   "up30m": 99.26289154680616
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13144,9 +13144,9 @@
    "endpoint_tag": "nextbit/fp8",
    "endpoint_id": "nextbit/fp8",
    "identity_ambiguous": false,
-   "state": "up",
-   "up5m": 98.81124963757611,
-   "up30m": 98.5769982904301
+   "state": "degraded",
+   "up5m": 97.25778808347616,
+   "up30m": 97.87673724805356
   },
   {
    "model": "z-ai/glm-5.3-flash",
@@ -13155,8 +13155,8 @@
    "endpoint_id": "modal/fp8",
    "identity_ambiguous": false,
    "state": "up",
-   "up5m": 99.86513823331086,
-   "up30m": 99.40152339499456
+   "up5m": 99.69969969969969,
+   "up30m": 99.61832061068702
   },
   {
    "model": "z-ai/glm-5.3-flash:batch",

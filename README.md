@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-17T04:15:59+00:00 UTC)
+## Current status (2026-09-17T04:31:14+00:00 UTC)
 
 444 models polled, 1338 inference endpoints:
-up 788, degraded 100, down 21, idle 429.
+up 792, degraded 100, down 27, idle 419.
 
-Currently down (21):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 65% |
-| `anthropic/claude-sonnet-4` | `google-vertex` | Google | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 63% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 72% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 67% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 58% | 16% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 79% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 54% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 34% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 69% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 19% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 73% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 78% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 98% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `inference-net/fp4` | InferenceNet | 55% | 28% |
-| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 71% | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 61% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 45% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 6 more | | | | |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 67% | n/a |
+| `moonshotai/kimi-k3` | `inference-net/fp4` | InferenceNet | 32% | n/a |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 70% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 39% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

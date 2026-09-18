@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-18T23:31:20+00:00 UTC)
+## Current status (2026-09-18T23:45:52+00:00 UTC)
 
 446 models polled, 1335 inference endpoints:
-up 806, degraded 97, down 16, idle 416.
+up 803, degraded 79, down 19, idle 434.
 
-Currently down (16):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 87% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 54% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 95% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 67% | 73% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 39% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 78% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 70% | 88% |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 79% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 52% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 59% | 60% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 56% |
-| `z-ai/glm-5.1` | `phala` | Phala | 75% | n/a |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 78% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 28% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 61% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 72% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 63% | n/a |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 63% | 31% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 69% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 73% | 100% |
+| `qwen/qwen3.5-9b` | `together` | Together | 80% | 96% |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 62% | n/a |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 65% | 100% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 61% | 50% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

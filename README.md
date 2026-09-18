@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-18T06:16:33+00:00 UTC)
+## Current status (2026-09-18T06:31:37+00:00 UTC)
 
-445 models polled, 1333 inference endpoints:
-up 788, degraded 113, down 20, idle 412.
+445 models polled, 1334 inference endpoints:
+up 788, degraded 121, down 18, idle 407.
 
-Currently down (20):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | 33% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 36% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 74% | 67% |
-| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 41% | 100% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 60% | 71% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 24% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 24% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 13% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 31% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 79% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 59% |
-| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 57% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 34% | 39% |
-| plus 5 more | | | | |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 66% | 47% |
+| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 73% | 45% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 61% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 30% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 30% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 78% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 55% | 79% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 74% | 46% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 56% | n/a |
+| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 34% | 62% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 74% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

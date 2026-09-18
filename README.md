@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-18T20:15:22+00:00 UTC)
+## Current status (2026-09-18T20:31:18+00:00 UTC)
 
 446 models polled, 1335 inference endpoints:
-up 814, degraded 106, down 18, idle 397.
+up 793, degraded 120, down 27, idle 395.
 
-Currently down (18):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 51% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 52% | n/a |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 84% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 29% | 22% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 29% | 84% |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 73% | 98% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 46% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 71% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 40% | 99% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 39% | 47% |
-| `qwen/qwen3.8-27b` | `deepinfra/bf16` | DeepInfra | 69% | 53% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 59% |
-| plus 3 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 72% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 27% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 7% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 70% | 59% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 78% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 31% | n/a |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 80% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 44% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 37% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 58% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 30% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

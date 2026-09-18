@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-18T21:01:08+00:00 UTC)
+## Current status (2026-09-18T21:15:44+00:00 UTC)
 
 446 models polled, 1335 inference endpoints:
-up 803, degraded 90, down 25, idle 417.
+up 809, degraded 92, down 32, idle 402.
 
-Currently down (25):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 74% | 100% |
 | `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 78% | 28% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 73% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 57% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 74% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 8% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 61% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 29% | 79% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | 92% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 22% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 64% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | 61% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 15% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 58% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 1% | n/a |
+| `minimax/minimax-m3` | `mara` | Mara | 79% | 62% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 68% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 48% | 73% |
-| plus 10 more | | | | |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 78% | n/a |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 56% | n/a |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

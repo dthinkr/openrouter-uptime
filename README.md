@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T09:15:23+00:00 UTC)
+## Current status (2026-09-19T09:30:44+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 877, degraded 85, down 12, idle 364.
+up 859, degraded 101, down 12, idle 366.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 74% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 8% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 98% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | 90% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 37% | n/a |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 78% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 61% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 61% |
-| `z-ai/glm-5.1` | `phala` | Phala | 70% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 100% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 76% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 80% | 94% |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 79% | 100% |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 77% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 64% |
+| `z-ai/glm-5.3` | `together` | Together | 80% | 92% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

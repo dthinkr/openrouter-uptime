@@ -85,26 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T22:31:23+00:00 UTC)
+## Current status (2026-09-19T22:46:00+00:00 UTC)
 
 447 models polled, 1340 inference endpoints:
-up 802, degraded 84, down 11, idle 443.
+up 808, degraded 81, down 13, idle 438.
 
-Currently down (11):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph` | Morph | 72% | 84% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 84% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | 73% |
-| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 60% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph` | Morph | 65% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 77% |
+| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 34% | n/a |
+| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 19% | n/a |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 79% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 60% | n/a |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 75% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 78% | 59% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 70% |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 69% | 100% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 76% | 98% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 75% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 72% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 68% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 79% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 77% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

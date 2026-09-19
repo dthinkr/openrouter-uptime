@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T18:31:05+00:00 UTC)
+## Current status (2026-09-19T18:45:34+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 811, degraded 87, down 19, idle 421.
+up 806, degraded 88, down 17, idle 427.
 
-Currently down (19):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 51% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 15% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 32% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 97% |
-| `google/gemma-4-31b-it` | `modelrun/fp4` | ModelRun | 63% | 63% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 39% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 61% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 14% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
-| `qwen/qwen3.8-27b:free` | `modelrun/fp4` | ModelRun | 69% | 62% |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 77% | 52% |
-| plus 4 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 66% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 10% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemma-4-31b-it` | `modelrun/fp4` | ModelRun | 63% | 67% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 68% | 52% |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 40% | 27% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 72% | 58% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 46% | 100% |
+| `qwen/qwen3.8-27b:free` | `modelrun/fp4` | ModelRun | 69% | 64% |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 66% | n/a |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 75% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 72% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 71% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T16:16:33+00:00 UTC)
+## Current status (2026-09-19T16:30:34+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 792, degraded 102, down 14, idle 430.
+up 802, degraded 97, down 12, idle 427.
 
-Currently down (14):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 52% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 11% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 73% | 73% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 1% | n/a |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 68% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 42% | 32% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 71% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 77% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 63% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 39% | 72% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 72% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 53% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 69% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 46% | 44% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 41% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 85% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 80% | 93% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 47% | 36% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 54% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 44% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 33% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

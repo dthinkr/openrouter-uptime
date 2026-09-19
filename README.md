@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T08:30:25+00:00 UTC)
+## Current status (2026-09-19T08:46:00+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 847, degraded 79, down 16, idle 396.
+up 901, degraded 71, down 18, idle 348.
 
-Currently down (16):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 76% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | 88% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 78% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 59% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 100% |
-| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 64% | n/a |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 68% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 70% | 64% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 35% | n/a |
-| plus 1 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 3% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | 89% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 71% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 61% | 96% |
+| `minimax/minimax-m2.5` | `venice` | Venice | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 24% |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 74% | n/a |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 77% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 60% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 69% | n/a |
+| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 37% | n/a |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 79% | 84% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

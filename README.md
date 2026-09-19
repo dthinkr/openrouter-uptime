@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T09:45:52+00:00 UTC)
+## Current status (2026-09-19T10:01:08+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 853, degraded 96, down 17, idle 372.
+up 870, degraded 83, down 16, idle 369.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 23% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | 7% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 19% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 54% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 85% |
 | `minimax/minimax-m2.5` | `venice` | Venice | 67% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 100% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 71% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 63% | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 49% | n/a |
-| `openai/gpt-oss-120b` | `phala` | Phala | 60% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | 98% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 78% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 76% | n/a |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 52% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 55% |
-| plus 2 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 57% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 56% | n/a |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 20% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 25% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 78% | 74% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 76% | 84% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 59% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 75% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 67% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

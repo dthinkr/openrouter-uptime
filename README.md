@@ -85,28 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T22:46:00+00:00 UTC)
+## Current status (2026-09-19T23:01:47+00:00 UTC)
 
 447 models polled, 1340 inference endpoints:
-up 808, degraded 81, down 13, idle 438.
+up 811, degraded 78, down 10, idle 441.
 
-Currently down (13):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph` | Morph | 65% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 77% |
-| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 34% | n/a |
-| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 19% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 79% | n/a |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 69% | 100% |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 76% | 98% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 75% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 72% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 68% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 20% | n/a |
+| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 37% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 79% | 79% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 80% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 65% |
 | `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 79% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 77% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 76% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T04:01:01+00:00 UTC)
+## Current status (2026-09-19T04:16:01+00:00 UTC)
 
 447 models polled, 1337 inference endpoints:
-up 774, degraded 90, down 15, idle 458.
+up 792, degraded 85, down 13, idle 447.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 70% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 26% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 65% | n/a |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 47% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 90% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 64% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 27% | 100% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 79% | 78% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 60% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 55% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 78% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 65% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 70% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 100% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 77% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 63% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 79% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 82% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

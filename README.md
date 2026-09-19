@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T06:46:40+00:00 UTC)
+## Current status (2026-09-19T07:00:56+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 795, degraded 78, down 12, idle 453.
+up 790, degraded 76, down 12, idle 460.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 49% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 72% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 100% |
-| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 72% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 57% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 32% | n/a |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 67% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 58% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 81% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 81% |
+| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 73% | n/a |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 80% | 66% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | 2% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 47% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 52% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 78% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

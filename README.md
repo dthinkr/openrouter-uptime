@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T04:31:06+00:00 UTC)
+## Current status (2026-09-19T04:45:58+00:00 UTC)
 
 447 models polled, 1337 inference endpoints:
-up 789, degraded 88, down 12, idle 448.
+up 764, degraded 89, down 17, idle 467.
 
-Currently down (12):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 21% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 79% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 11% | 8% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 72% | 31% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 21% | 11% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 34% |
-| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 77% | 73% |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 78% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 66% | 62% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 41% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 50% | 15% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 76% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 8% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 53% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 15% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | 80% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 63% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 100% |
+| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 79% | 98% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 71% | n/a |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 78% | 99% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T19:01:07+00:00 UTC)
+## Current status (2026-09-19T19:15:29+00:00 UTC)
 
 447 models polled, 1339 inference endpoints:
-up 791, degraded 89, down 16, idle 443.
+up 798, degraded 98, down 13, idle 430.
 
-Currently down (16):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 60% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 8% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 80% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 65% | n/a |
-| `google/gemma-4-31b-it` | `modelrun/fp4` | ModelRun | 69% | 81% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 43% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 57% | n/a |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 75% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| `qwen/qwen3.8-27b:free` | `modelrun/fp4` | ModelRun | 69% | 74% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 72% |
-| `z-ai/glm-5.1` | `venice/fp8` | Venice | 77% | n/a |
-| `z-ai/glm-5.3-flash` | `crusoe/fp4` | Crusoe | 3% | n/a |
-| plus 1 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 69% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 16% | 1% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 64% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | n/a | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 10% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 10% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 64% |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 74% | n/a |
+| `z-ai/glm-5.3-flash` | `crusoe/fp4` | Crusoe | 19% | n/a |
+| `z-ai/glm-5.3-flash` | `coreweave/nvfp4` | CoreWeave | 31% | 38% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

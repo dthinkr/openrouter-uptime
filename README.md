@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T02:46:09+00:00 UTC)
+## Current status (2026-09-19T03:00:54+00:00 UTC)
 
 446 models polled, 1337 inference endpoints:
-up 789, degraded 83, down 16, idle 449.
+up 778, degraded 85, down 19, idle 455.
 
-Currently down (16):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 32% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | 78% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 86% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 67% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 76% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 74% | n/a |
-| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 76% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 38% | n/a |
-| `x-ai/grok-4.3` | `xai/zdr/priority` | xAI | 60% | 42% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 63% | n/a |
-| `z-ai/glm-4.7` | `z-ai/fp4` | Z.AI | 80% | 79% |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 67% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 77% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 30% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | 11% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 71% | 67% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 59% | 52% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 75% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 100% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 66% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 56% | n/a |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 79% | n/a |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 71% | 95% |
+| `x-ai/grok-4.3` | `xai/zdr/priority` | xAI | 50% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

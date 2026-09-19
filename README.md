@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T07:46:04+00:00 UTC)
+## Current status (2026-09-19T08:01:23+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 801, degraded 82, down 15, idle 440.
+up 798, degraded 83, down 15, idle 442.
 
 Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | 18% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 60% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 48% | 9% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 80% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 100% |
-| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 73% | n/a |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 58% | n/a |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 72% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 73% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 44% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 30% | 100% |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 57% | n/a |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 79% | 76% |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 43% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 72% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 17% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 51% | 39% |
-| `z-ai/glm-5.3` | `decart/fp4` | Decart | 64% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 70% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 48% | 63% |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 47% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 47% | 54% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 75% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T13:01:44+00:00 UTC)
+## Current status (2026-09-19T13:16:19+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 797, degraded 92, down 18, idle 431.
+up 807, degraded 86, down 21, idle 424.
 
-Currently down (18):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 74% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `baseten/fp4#1b1c6c9d2f#2` | BaseTen | 80% | 35% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 71% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 12% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 58% | 90% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 42% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 42% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 25% | 34% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
-| `openai/gpt-oss-120b` | `phala` | Phala | 36% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 73% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 77% | n/a |
-| plus 3 more | | | | |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 67% | n/a |
+| `deepseek/deepseek-v4-pro` | `baseten/fp4#1b1c6c9d2f#2` | BaseTen | 68% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 60% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | 2% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 79% | 92% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 34% |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 78% | n/a |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 33% | 35% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 4% | n/a |
+| `openai/gpt-oss-120b` | `phala` | Phala | 40% | 45% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 65% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 73% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

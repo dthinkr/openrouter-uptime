@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T14:46:13+00:00 UTC)
+## Current status (2026-09-19T15:00:48+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 816, degraded 86, down 18, idle 418.
+up 802, degraded 93, down 16, idle 427.
 
-Currently down (18):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `anthropic/claude-opus-4` | `google-vertex` | Google | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `baseten/fp4#1b1c6c9d2f#2` | BaseTen | 78% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 88% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 77% | 67% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 38% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 38% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 68% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 38% | 45% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 77% | 70% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 78% | 82% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 68% | n/a |
-| plus 3 more | | | | |
+| `deepseek/deepseek-v4-pro` | `baseten/fp4#1b1c6c9d2f#2` | BaseTen | 69% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 77% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 21% | 2% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 57% |
+| `minimax/minimax-m2.5` | `venice` | Venice | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 9% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 74% | 46% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 24% | 92% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 70% | 45% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 66% | 60% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 60% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 72% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

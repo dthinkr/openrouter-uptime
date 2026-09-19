@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T21:15:59+00:00 UTC)
+## Current status (2026-09-19T21:30:44+00:00 UTC)
 
 447 models polled, 1340 inference endpoints:
-up 829, degraded 87, down 12, idle 412.
+up 827, degraded 74, down 18, idle 421.
 
-Currently down (12):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 7% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 43% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 54% | n/a |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 38% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 35% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 58% |
-| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 63% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 66% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 6% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 56% | 80% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 54% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 43% | n/a |
+| `moonshotai/kimi-k3` | `morph/fast` | Morph | 76% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 75% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 73% | 99% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 56% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 72% | 65% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 70% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 66% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

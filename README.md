@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T18:15:31+00:00 UTC)
+## Current status (2026-09-19T18:31:05+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 805, degraded 86, down 19, idle 428.
+up 811, degraded 87, down 19, idle 421.
 
 Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 70% | 99% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 70% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 15% | 7% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 13% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | 95% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 69% |
-| `google/gemma-4-31b-it` | `modelrun/fp4` | ModelRun | 64% | 69% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 58% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 28% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 48% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 78% | 92% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 51% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 15% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 32% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 97% |
+| `google/gemma-4-31b-it` | `modelrun/fp4` | ModelRun | 63% | 63% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 39% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 61% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 14% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
+| `qwen/qwen3.8-27b:free` | `modelrun/fp4` | ModelRun | 69% | 62% |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 77% | 52% |
 | plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T07:00:56+00:00 UTC)
+## Current status (2026-09-19T07:16:07+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 790, degraded 76, down 12, idle 460.
+up 791, degraded 84, down 16, idle 447.
 
-Currently down (12):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 81% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 81% |
-| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 73% | n/a |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 80% | 66% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | 2% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 47% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 52% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 78% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 21% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 49% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 4% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 100% |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 77% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 65% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 78% | 58% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 66% | 58% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 78% | 67% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 55% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 58% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T17:01:20+00:00 UTC)
+## Current status (2026-09-19T17:15:37+00:00 UTC)
 
 447 models polled, 1338 inference endpoints:
-up 805, degraded 95, down 18, idle 420.
+up 805, degraded 86, down 21, idle 426.
 
-Currently down (18):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 79% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 63% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 48% | 47% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 30% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 46% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 73% | 82% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 61% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 49% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 21% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 77% | 78% |
+| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 71% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 25% | 98% |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 60% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 38% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 59% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 67% | 62% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 79% | 84% |
-| plus 3 more | | | | |
+| `moonshotai/kimi-k2.7-code` | `modelrun/fp4` | ModelRun | 79% | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 66% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 57% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 56% | 56% |
+| `qwen/qwen3.8-27b:free` | `modelrun/fp4` | ModelRun | 73% | 70% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

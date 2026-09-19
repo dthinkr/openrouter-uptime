@@ -85,28 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T23:31:27+00:00 UTC)
+## Current status (2026-09-19T23:46:22+00:00 UTC)
 
 447 models polled, 1340 inference endpoints:
-up 805, degraded 72, down 13, idle 450.
+up 796, degraded 77, down 15, idle 452.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `morph` | Morph | 78% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 58% | 29% |
-| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 32% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 75% | 97% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 49% | 67% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 79% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 80% | 78% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 61% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 59% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 74% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph` | Morph | 62% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 76% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 60% | 68% |
+| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 35% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 100% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 79% | 85% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 79% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 74% | 64% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 64% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 56% | 54% |
+| `z-ai/glm-5.1` | `phala` | Phala | 68% | 64% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

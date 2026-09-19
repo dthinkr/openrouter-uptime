@@ -85,25 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-19T19:46:03+00:00 UTC)
+## Current status (2026-09-19T20:01:40+00:00 UTC)
 
 447 models polled, 1339 inference endpoints:
-up 810, degraded 99, down 10, idle 420.
+up 808, degraded 96, down 10, idle 425.
 
 Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 71% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 74% | 89% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 100% |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 55% | n/a |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 80% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 70% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 89% |
-| `z-ai/glm-5.3-flash` | `coreweave/nvfp4` | CoreWeave | 31% | 27% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 86% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 29% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 56% | n/a |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 73% | 60% |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 75% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 72% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 53% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 38% | n/a |
+| `z-ai/glm-5.3-flash` | `coreweave/nvfp4` | CoreWeave | 30% | 38% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-18T23:45:52+00:00 UTC)
+## Current status (2026-09-19T00:01:00+00:00 UTC)
 
 446 models polled, 1335 inference endpoints:
-up 803, degraded 79, down 19, idle 434.
+up 811, degraded 70, down 18, idle 436.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 78% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 28% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 61% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 72% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 63% | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 63% | 31% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 69% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 73% | 100% |
-| `qwen/qwen3.5-9b` | `together` | Together | 80% | 96% |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 62% | n/a |
-| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#2` | BaseTen | 65% | 100% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 61% | 50% |
-| plus 4 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 29% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 18% | 4% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 3% | 0% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 67% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 73% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 70% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 64% | n/a |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 35% | n/a |
+| `openai/gpt-oss-120b` | `phala` | Phala | 43% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 60% | 71% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 79% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 23% | n/a |
+| `thinkingmachines/inkling` | `baseten/fp8#07a6c13a50#1` | BaseTen | 67% | 87% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

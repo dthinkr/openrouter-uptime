@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T08:46:34+00:00 UTC)
+## Current status (2026-09-20T09:01:33+00:00 UTC)
 
 446 models polled, 1339 inference endpoints:
-up 803, degraded 77, down 13, idle 446.
+up 811, degraded 75, down 20, idle 433.
 
-Currently down (13):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 79% | 67% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 66% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 23% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 42% | 0% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `gmicloud/fp8` | GMICloud | 78% | 54% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | 77% | 27% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `novita` | Novita | 66% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 76% | 64% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 84% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 26% | 14% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 53% | 71% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 54% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 70% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 100% |
 | `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 77% | 55% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 72% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 57% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 80% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 76% | n/a |
-| `z-ai/glm-5.1` | `venice/fp8` | Venice | 71% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

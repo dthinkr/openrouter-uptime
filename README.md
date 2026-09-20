@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T22:16:35+00:00 UTC)
+## Current status (2026-09-20T22:31:17+00:00 UTC)
 
 446 models polled, 1340 inference endpoints:
-up 786, degraded 78, down 13, idle 463.
+up 790, degraded 74, down 19, idle 457.
 
-Currently down (13):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 67% | 62% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 46% | 9% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 63% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 69% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 59% | n/a |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 35% | 100% |
-| `qwen/qwen3-coder-next` | `alibaba` | Alibaba | 62% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 30% | n/a |
-| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 77% | 79% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 53% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 44% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 76% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 37% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 72% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 58% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 81% |
+| `openai/gpt-oss-120b` | `together` | Together | 78% | 67% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 61% | 77% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 72% | 45% |
+| `qwen/qwen3-coder-next` | `alibaba` | Alibaba | 75% | 97% |
+| `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 78% | 65% |
+| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 76% | 87% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 79% | 76% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T22:46:33+00:00 UTC)
+## Current status (2026-09-20T23:01:32+00:00 UTC)
 
 446 models polled, 1340 inference endpoints:
-up 786, degraded 81, down 21, idle 452.
+up 798, degraded 75, down 23, idle 444.
 
-Currently down (21):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 21% | 10% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 32% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 39% | 26% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 15% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 15% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 57% | 53% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 3% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | 75% |
-| `openai/gpt-oss-120b` | `together` | Together | 78% | 72% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 77% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 67% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 73% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 47% | 10% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
-| plus 6 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 9% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 21% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 20% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 49% | n/a |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 77% | 81% |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 58% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 49% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 77% | 81% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 58% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 65% | 69% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 100% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 73% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 72% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

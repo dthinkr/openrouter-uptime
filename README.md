@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T08:31:41+00:00 UTC)
+## Current status (2026-09-20T08:46:34+00:00 UTC)
 
-446 models polled, 1340 inference endpoints:
-up 789, degraded 89, down 12, idle 450.
+446 models polled, 1339 inference endpoints:
+up 803, degraded 77, down 13, idle 446.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 79% | 67% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 78% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | 42% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 72% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 74% | 76% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 62% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 79% | 79% |
-| `z-ai/glm-5.1` | `phala` | Phala | 77% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 23% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 73% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 42% | 0% |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 77% | 55% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 72% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 57% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 80% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 76% | n/a |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 71% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

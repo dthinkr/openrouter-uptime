@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T16:45:30+00:00 UTC)
+## Current status (2026-09-20T17:02:21+00:00 UTC)
 
 446 models polled, 1339 inference endpoints:
-up 800, degraded 82, down 16, idle 441.
+up 807, degraded 75, down 15, idle 442.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 76% | 74% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 69% | 41% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 89% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 16% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 75% | 100% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 53% | 59% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 80% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 65% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 59% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 59% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 76% | 100% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 56% | 56% |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 75% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 49% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 74% |
 | `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 55% | n/a |
 | `z-ai/glm-5.1` | `phala` | Phala | 26% | n/a |
-| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 78% | n/a |
-| plus 1 more | | | | |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 34% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

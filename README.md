@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T20:45:39+00:00 UTC)
+## Current status (2026-09-20T21:01:41+00:00 UTC)
 
-446 models polled, 1339 inference endpoints:
-up 793, degraded 74, down 13, idle 459.
+446 models polled, 1340 inference endpoints:
+up 791, degraded 78, down 13, idle 458.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 69% | 42% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 67% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 65% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 18% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 80% | 71% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 71% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 64% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 70% | 20% |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 75% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 62% | 60% |
-| `z-ai/glm-5.1` | `phala` | Phala | 53% | n/a |
-| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 72% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 59% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 76% | 90% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 28% | n/a |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | n/a | n/a |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 77% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 64% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 64% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 76% | 88% |
+| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 76% | 53% |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 79% | 61% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

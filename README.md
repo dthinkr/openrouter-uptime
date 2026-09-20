@@ -85,29 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T21:15:37+00:00 UTC)
+## Current status (2026-09-20T21:31:20+00:00 UTC)
 
 446 models polled, 1340 inference endpoints:
-up 792, degraded 74, down 14, idle 460.
+up 784, degraded 80, down 11, idle 465.
 
-Currently down (14):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 69% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 80% | 75% |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 79% | n/a |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 67% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 80% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 52% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 4% | 4% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 68% | n/a |
+| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 69% | 100% |
 | `qwen/qwen3.5-9b` | `together` | Together | n/a | n/a |
 | `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | n/a | n/a |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 74% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 39% |
-| `z-ai/glm-5.1` | `phala` | Phala | 76% | n/a |
-| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 60% | n/a |
-| `z-ai/glm-5.1` | `venice/fp8` | Venice | 70% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 56% | 59% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 57% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 49% | 48% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

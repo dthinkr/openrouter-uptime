@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T08:15:57+00:00 UTC)
+## Current status (2026-09-20T08:31:41+00:00 UTC)
 
-446 models polled, 1339 inference endpoints:
-up 803, degraded 80, down 12, idle 444.
+446 models polled, 1340 inference endpoints:
+up 789, degraded 89, down 12, idle 450.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | 4% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 31% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 78% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 74% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | 63% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 39% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 85% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 46% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 52% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 78% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | 42% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 72% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 74% | 76% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 62% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 79% | 79% |
+| `z-ai/glm-5.1` | `phala` | Phala | 77% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T18:46:19+00:00 UTC)
+## Current status (2026-09-20T19:01:19+00:00 UTC)
 
 446 models polled, 1339 inference endpoints:
-up 811, degraded 78, down 17, idle 433.
+up 814, degraded 82, down 14, idle 429.
 
-Currently down (17):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 53% | 100% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 63% | 36% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 96% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 77% | 69% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 99% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 59% | 68% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 70% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 99% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 78% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 75% | 84% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 49% | 85% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 66% | 96% |
+| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 79% | 9% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 82% |
+| `openai/gpt-oss-120b` | `together` | Together | 74% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 66% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 66% | n/a |
 | `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 66% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 60% | 56% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 50% | n/a |
-| plus 2 more | | | | |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 71% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 51% | 49% |
+| `z-ai/glm-5.1` | `venice/fp8` | Venice | 69% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

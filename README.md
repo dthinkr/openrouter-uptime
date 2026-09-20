@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T05:01:44+00:00 UTC)
+## Current status (2026-09-20T05:16:12+00:00 UTC)
 
 446 models polled, 1338 inference endpoints:
-up 797, degraded 64, down 14, idle 463.
+up 800, degraded 76, down 13, idle 449.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 49% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | 19% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 73% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 65% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 81% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 21% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 67% | 96% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 52% | 10% |
-| `z-ai/glm-4.5-air` | `z-ai/fp8` | Z.AI | 79% | 100% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 64% | 66% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 60% | 58% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 72% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 72% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 80% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 100% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 80% | 100% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 50% | 19% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 58% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 58% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

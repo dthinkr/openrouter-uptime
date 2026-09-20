@@ -85,31 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T02:01:22+00:00 UTC)
+## Current status (2026-09-20T02:16:04+00:00 UTC)
 
 447 models polled, 1339 inference endpoints:
-up 766, degraded 86, down 16, idle 471.
+up 768, degraded 97, down 10, idle 464.
 
-Currently down (16):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 60% | 18% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 14% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | n/a |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 65% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 57% | n/a |
-| `moonshotai/kimi-k3` | `digitalocean` | DigitalOcean | 79% | 86% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 92% |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 75% | 97% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 13% | 73% |
-| `qwen/qwen3.5-9b` | `together` | Together | 74% | 99% |
-| `x-ai/grok-4.3` | `xai/zdr/priority` | xAI | 79% | n/a |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 46% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 60% | n/a |
-| plus 1 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 41% | 64% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 19% | 2% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 78% | n/a |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 73% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 98% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 59% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 54% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

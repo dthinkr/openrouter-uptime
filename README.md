@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-21T02:30:37+00:00 UTC)
+## Current status (2026-09-21T02:46:10+00:00 UTC)
 
 446 models polled, 1341 inference endpoints:
-up 798, degraded 86, down 21, idle 436.
+up 791, degraded 93, down 21, idle 436.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 45% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | n/a |
 | `anthropic/claude-sonnet-4` | `google-vertex` | Google | n/a | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 74% | 26% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 79% | 80% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 74% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 73% | 99% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 77% | 65% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 77% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 8% | 3% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 78% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 43% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `phala` | Phala | 74% | 70% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 61% | 74% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 39% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
+| `moonshotai/kimi-k3` | `phala` | Phala | 74% | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 74% | 38% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 73% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 65% | 81% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 75% | 75% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 65% | n/a |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

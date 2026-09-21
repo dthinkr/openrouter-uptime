@@ -85,28 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-21T07:16:19+00:00 UTC)
+## Current status (2026-09-21T07:31:13+00:00 UTC)
 
 446 models polled, 1341 inference endpoints:
-up 802, degraded 108, down 13, idle 418.
+up 805, degraded 122, down 10, idle 404.
 
-Currently down (13):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | n/a |
-| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 69% | 94% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `streamlake` | StreamLake | 35% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 6% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 57% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 56% | 44% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 72% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 82% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 78% | 69% |
-| `z-ai/glm-5.1` | `streamlake/fp8` | StreamLake | 22% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 72% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 16% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 81% |
+| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 65% | 61% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 75% | 67% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 76% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 79% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-21T20:16:00+00:00 UTC)
+## Current status (2026-09-21T20:31:26+00:00 UTC)
 
-440 models polled, 1333 inference endpoints:
-up 819, degraded 101, down 22, idle 391.
+443 models polled, 1336 inference endpoints:
+up 826, degraded 94, down 28, idle 388.
 
-Currently down (22):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 29% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 59% | 83% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 60% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 75% | 86% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 59% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 78% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 20% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 53% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 22% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 33% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 91% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 78% | 71% |
 | `minimax/minimax-m2.5` | `venice` | Venice | n/a | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 75% | 71% |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 70% | 90% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 82% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 69% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 70% | 38% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 60% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
-| plus 7 more | | | | |
+| `minimax/minimax-m2.7` | `mara` | Mara | 71% | 71% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 75% | 100% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-01 05:45** — **5 models removed from the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 - **2026-09-06 08:31** — provider `relace` changed its status page.
 - **2026-09-08 15:46** — **3 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-vision-exp:batch`, `z-ai/glm-5.2:batch`, `z-ai/glm-5.3:batch`.
 - **2026-09-08 18:46** — **3 models added to the catalog in one poll**: `inception/mercury-2.5`, `nex-agi/nex-n2.5-mini:free`, `nex-agi/nex-n2.5-pro:free`.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-09-18 00:45** — provider `typesafe` changed its terms of service url.
 - **2026-09-18 00:45** — provider `typesafe` changed its privacy policy url.
 - **2026-09-21 17:30** — **6 models removed from the catalog in one poll**: `minimax/minimax-m3:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `qwen/qwen3.5-9b:batch`, `qwen/qwen3.8-2.4t-a95b:batch`, `thinkingmachines/inkling:batch`.
+- **2026-09-21 20:31** — **3 models added to the catalog in one poll**: `xiaomi/mimo-v2.6-flash`, `xiaomi/mimo-v2.6-pro`, `xiaomi/mimo-v2.6-pro-ultraspeed`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

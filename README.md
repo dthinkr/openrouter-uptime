@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-21T06:46:10+00:00 UTC)
+## Current status (2026-09-21T07:01:23+00:00 UTC)
 
 446 models polled, 1341 inference endpoints:
-up 788, degraded 110, down 21, idle 422.
+up 802, degraded 98, down 16, idle 425.
 
-Currently down (21):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 26% |
-| `deepseek/deepseek-chat` | `streamlake` | StreamLake | 70% | 92% |
-| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 79% | 54% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-r1-0528` | `streamlake` | StreamLake | 13% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 13% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 32% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 65% | 93% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 8% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 75% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 80% |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 74% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 81% |
-| plus 6 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | 4% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 3% | 1% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 89% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 82% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 76% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 62% | n/a |
+| `thinkingmachines/inkling-small` | `deepinfra/fp8` | DeepInfra | 35% | n/a |
+| `z-ai/glm-5.1` | `streamlake/fp8` | StreamLake | 11% | 9% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

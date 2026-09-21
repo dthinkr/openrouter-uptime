@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-21T05:45:51+00:00 UTC)
+## Current status (2026-09-21T06:15:17+00:00 UTC)
 
 446 models polled, 1341 inference endpoints:
-up 805, degraded 78, down 12, idle 446.
+up 793, degraded 97, down 12, idle 439.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 68% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 16% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 75% | 71% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 80% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 73% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 2% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 28% | 13% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 79% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 82% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 79% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 75% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 69% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 66% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 100% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 69% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 76% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 72% | 75% |
+| `z-ai/glm-5.3` | `inference-net/fp4` | InferenceNet | 79% | 68% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-21T17:15:31+00:00 UTC)
+## Current status (2026-09-21T17:30:21+00:00 UTC)
 
-446 models polled, 1343 inference endpoints:
-up 809, degraded 112, down 28, idle 394.
+440 models polled, 1333 inference endpoints:
+up 809, degraded 111, down 31, idle 382.
 
-Currently down (28):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 5% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | 27% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 56% | 30% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 3% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 77% | 90% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 9% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 81% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 18% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 59% | 100% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 5% | 6% |
-| `minimax/minimax-m3` | `mara` | Mara | 2% | 3% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 73% |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 67% | 86% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 4% | n/a |
-| `openai/gpt-oss-20b` | `amazon-bedrock` | Amazon Bedrock | 71% | 39% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 70% | 40% |
-| plus 13 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 42% | 13% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 78% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 70% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 79% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 76% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 76% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 62% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 71% | 33% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 43% | n/a |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-08-31 19:31** — **10 models added to the catalog in one poll**: `openai/gpt-5-mini:batch`, `openai/gpt-5-nano:batch`, `openai/gpt-5.1:batch`, `openai/gpt-5.2:batch`, `openai/gpt-5.4-mini:batch`, `openai/gpt-5.4-nano:batch`, `openai/gpt-5.4:batch`, `openai/gpt-5.5-pro:batch`, +2 more.
 - **2026-09-01 05:45** — **5 models removed from the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 - **2026-09-06 08:31** — provider `relace` changed its status page.
 - **2026-09-08 15:46** — **3 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-vision-exp:batch`, `z-ai/glm-5.2:batch`, `z-ai/glm-5.3:batch`.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-09-11 13:01** — **3 models added to the catalog in one poll**: `~openai/gpt-astra-latest`, `~openai/gpt-luna-latest`, `~openai/gpt-terra-latest`.
 - **2026-09-18 00:45** — provider `typesafe` changed its terms of service url.
 - **2026-09-18 00:45** — provider `typesafe` changed its privacy policy url.
+- **2026-09-21 17:30** — **6 models removed from the catalog in one poll**: `minimax/minimax-m3:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `qwen/qwen3.5-9b:batch`, `qwen/qwen3.8-2.4t-a95b:batch`, `thinkingmachines/inkling:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

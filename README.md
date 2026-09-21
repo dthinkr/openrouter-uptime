@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-21T22:31:21+00:00 UTC)
+## Current status (2026-09-21T22:45:48+00:00 UTC)
 
 443 models polled, 1336 inference endpoints:
-up 809, degraded 88, down 26, idle 413.
+up 810, degraded 84, down 29, idle 413.
 
-Currently down (26):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 78% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 54% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 76% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 13% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | 57% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 47% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 77% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 51% | 25% |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 79% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 74% | 74% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 100% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 69% | 68% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 76% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 56% | 93% |
-| plus 11 more | | | | |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 75% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 75% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 1% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 10% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 78% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | 40% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 62% | 65% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 28% | 9% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 22% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 77% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 68% | 61% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 78% | 69% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

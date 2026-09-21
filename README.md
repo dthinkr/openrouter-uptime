@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T23:45:37+00:00 UTC)
+## Current status (2026-09-21T00:32:05+00:00 UTC)
 
-446 models polled, 1340 inference endpoints:
-up 796, degraded 80, down 12, idle 452.
+446 models polled, 1341 inference endpoints:
+up 782, degraded 89, down 23, idle 447.
 
-Currently down (12):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 58% | 78% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 74% | 80% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 25% | 9% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 33% | 27% |
-| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 78% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 33% | 27% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 78% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 77% | 71% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 86% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 71% | 100% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 67% | n/a |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 78% | 68% |
+| `deepseek/deepseek-v3.2` | `google-vertex` | Google | 61% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `phala` | Phala | 74% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 68% | 87% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 46% | 21% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 29% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/us` | Google | 75% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 29% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 75% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 19% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 26% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 88% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 19% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

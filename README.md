@@ -85,26 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-21T09:45:39+00:00 UTC)
+## Current status (2026-09-21T10:01:18+00:00 UTC)
 
 446 models polled, 1343 inference endpoints:
-up 823, degraded 126, down 11, idle 383.
+up 804, degraded 138, down 16, idle 385.
 
-Currently down (11):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 80% | 65% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | 5% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 3% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 70% | 79% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 67% | 71% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 37% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 75% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 79% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 51% | 45% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 18% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 4% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 53% | 58% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 72% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 69% |
+| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 80% | 77% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 72% | 94% |
+| `qwen/qwen3.6-35b-a3b` | `io-net/fp8` | Io Net | 71% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 53% |
+| `z-ai/glm-5.3` | `venice` | Venice | 66% | 42% |
+| `z-ai/glm-5.3` | `baseten/fp8#1bc437e346#1` | BaseTen | 0% | 0% |
 | `z-ai/glm-5.3` | `baseten/fp8#1bc437e346#2` | BaseTen | n/a | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

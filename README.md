@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-21T21:15:45+00:00 UTC)
+## Current status (2026-09-21T21:30:37+00:00 UTC)
 
 443 models polled, 1336 inference endpoints:
-up 821, degraded 96, down 22, idle 397.
+up 824, degraded 85, down 25, idle 402.
 
-Currently down (22):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 78% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 18% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 19% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 1% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 74% | 96% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 65% | 86% |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 75% | 56% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 66% | 62% |
-| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 73% | n/a |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 63% | 78% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 42% | 63% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 80% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 41% | n/a |
-| plus 7 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 54% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `wafer` | Wafer | 75% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 10% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 50% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 72% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 73% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 67% | 72% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 79% | n/a |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 39% | 23% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 77% | 72% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
+| `openai/gpt-oss-120b` | `phala` | Phala | 40% | 38% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 67% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

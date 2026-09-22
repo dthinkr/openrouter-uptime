@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-22T18:01:27+00:00 UTC)
+## Current status (2026-09-22T18:15:58+00:00 UTC)
 
-444 models polled, 1342 inference endpoints:
-up 820, degraded 111, down 28, idle 383.
+447 models polled, 1350 inference endpoints:
+up 809, degraded 111, down 33, idle 397.
 
-Currently down (28):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 78% | 100% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 65% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 63% | 22% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 75% | 66% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 62% | 88% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 1% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 35% | 6% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 46% | 38% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 23% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 79% | 75% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 83% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 33% | 32% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 21% | 0% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 27% | 33% |
-| plus 13 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 56% | 98% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 61% | 63% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 13% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 10% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 5% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 57% | 55% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 81% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 0% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 7% | 65% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 39% | 43% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 100% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-08 18:46** — **3 models added to the catalog in one poll**: `inception/mercury-2.5`, `nex-agi/nex-n2.5-mini:free`, `nex-agi/nex-n2.5-pro:free`.
 - **2026-09-08 20:31** — provider `ncompass` left the platform.
 - **2026-09-08 21:45** — provider `prime-intellect` left the platform.
 - **2026-09-09 21:31** — provider `inference-net` changed its status page.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-09-21 20:31** — **3 models added to the catalog in one poll**: `xiaomi/mimo-v2.6-flash`, `xiaomi/mimo-v2.6-pro`, `xiaomi/mimo-v2.6-pro-ultraspeed`.
 - **2026-09-22 15:01** — **3 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-20b:batch`.
 - **2026-09-22 15:15** — **5 models removed from the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `deepseek/deepseek-v4-flash-vision-exp:batch`, `deepseek/deepseek-v4-pro-0813:batch`, `meta/muse-glimmer-30b:batch`, `z-ai/glm-5.2:batch`.
+- **2026-09-22 18:15** — **3 models added to the catalog in one poll**: `openai/gpt-6-sol`, `openai/gpt-6-sol-pro`, `openai/gpt-6-sol:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

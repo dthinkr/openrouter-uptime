@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-22T05:46:35+00:00 UTC)
+## Current status (2026-09-22T06:01:48+00:00 UTC)
 
 445 models polled, 1339 inference endpoints:
-up 812, degraded 87, down 13, idle 427.
+up 808, degraded 83, down 13, idle 435.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | 11% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 9% | 12% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 63% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 40% | 7% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 13% | 22% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 5% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 74% | 59% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 67% | 86% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 74% | 78% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 34% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 76% | 67% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 76% | 88% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 74% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 27% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 70% | n/a |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `openai/gpt-oss-120b` | `phala` | Phala | 31% | n/a |
-| `openai/gpt-oss-20b` | `amazon-bedrock` | Amazon Bedrock | 78% | 62% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 65% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 78% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 38% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 72% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-22T23:01:54+00:00 UTC)
+## Current status (2026-09-22T23:16:35+00:00 UTC)
 
 454 models polled, 1365 inference endpoints:
-up 847, degraded 81, down 17, idle 420.
+up 843, degraded 91, down 15, idle 416.
 
-Currently down (17):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 79% | 93% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 24% | 73% |
-| `deepseek/deepseek-v4-flash-0731` | `cohere` | Cohere | 79% | 100% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 60% | 53% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 84% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 86% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 100% |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 73% | 99% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 47% | 0% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 60% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 78% | 100% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 78% | 64% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 69% | n/a |
-| plus 2 more | | | | |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 23% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 60% | 65% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 69% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 67% | 67% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 72% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 14% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 26% | 79% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 53% | 24% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 80% | 32% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 78% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 79% | 88% |
+| `z-ai/glm-5.3` | `baseten/fp8#1bc437e346#1` | BaseTen | 21% | 82% |
+| `z-ai/glm-5.3` | `baseten/fp8#1bc437e346#2` | BaseTen | 73% | 8% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-22T02:46:18+00:00 UTC)
+## Current status (2026-09-22T03:01:06+00:00 UTC)
 
 443 models polled, 1337 inference endpoints:
-up 808, degraded 95, down 14, idle 420.
+up 802, degraded 96, down 16, idle 423.
 
-Currently down (14):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 25% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 15% | 9% |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 8% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 62% | 63% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 77% | 76% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 76% | 100% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 71% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 73% | 63% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 73% | 47% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 77% | n/a |
-| `x-ai/grok-4.3` | `xai/zdr/priority` | xAI | 57% | n/a |
-| `z-ai/glm-4.6` | `z-ai/fp4` | Z.AI | 71% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 55% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 63% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 27% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 64% | 56% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 63% | 100% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 80% | 84% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 78% | n/a |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 61% | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 78% | 0% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 66% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 75% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 73% | 96% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 67% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 78% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

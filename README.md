@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T04:00:59+00:00 UTC)
+## Current status (2026-09-23T04:15:29+00:00 UTC)
 
 454 models polled, 1381 inference endpoints:
-up 829, degraded 93, down 19, idle 440.
+up 826, degraded 98, down 20, idle 437.
 
-Currently down (19):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 19% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 68% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 74% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 21% | 100% |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 69% | n/a |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 78% | 84% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 58% | n/a |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 65% | 62% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 54% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | 75% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 69% | 54% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 78% | 79% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 53% | 56% |
+| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 62% | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
+| `openai/gpt-oss-120b` | `phala` | Phala | 41% | 58% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 78% | 26% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 64% | 37% |
 | `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 70% | 72% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 37% | 33% |
-| plus 4 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 56% | 42% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 43% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 72% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

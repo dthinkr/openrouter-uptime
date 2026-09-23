@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T05:01:51+00:00 UTC)
+## Current status (2026-09-23T05:16:14+00:00 UTC)
 
 454 models polled, 1381 inference endpoints:
-up 833, degraded 91, down 18, idle 439.
+up 846, degraded 93, down 11, idle 431.
 
-Currently down (18):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | 76% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 62% | 98% |
-| `deepseek/deepseek-v4.1-flash` | `krea/fp8` | Krea | 64% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 60% | n/a |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 70% | 64% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 38% | 37% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 64% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 37% | n/a |
-| `openai/gpt-oss-120b` | `phala` | Phala | 37% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 46% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 62% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 70% |
-| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 75% | n/a |
-| plus 3 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 60% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 73% | 69% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 77% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 99% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 62% | 40% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 35% | 38% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 75% | 96% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 51% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 71% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

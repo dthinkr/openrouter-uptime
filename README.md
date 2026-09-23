@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T21:00:19+00:00 UTC)
+## Current status (2026-09-23T21:16:27+00:00 UTC)
 
 457 models polled, 1385 inference endpoints:
-up 864, degraded 85, down 19, idle 417.
+up 872, degraded 87, down 23, idle 403.
 
-Currently down (19):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 58% | 99% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 68% | 98% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 60% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 73% | 21% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 77% | 68% |
+| `deepseek/deepseek-v4.1-flash` | `krea/fp8` | Krea | 64% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 46% |
 | `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 100% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 71% | 100% |
-| `openai/gpt-6-luna` | `azure` | Azure | 73% | 90% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 66% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 61% | 86% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 53% | 51% |
-| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 7% | 0% |
-| plus 4 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 66% | 56% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 48% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 4% | 68% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 72% | 80% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 70% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

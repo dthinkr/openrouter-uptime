@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T03:00:51+00:00 UTC)
+## Current status (2026-09-23T03:16:21+00:00 UTC)
 
-454 models polled, 1378 inference endpoints:
-up 827, degraded 100, down 17, idle 434.
+454 models polled, 1380 inference endpoints:
+up 823, degraded 108, down 17, idle 432.
 
 Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 37% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 75% | 100% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 67% | 56% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 56% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 62% | 3% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 49% | 58% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 72% | n/a |
-| `openai/gpt-oss-120b` | `phala` | Phala | 64% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 54% | 54% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 80% | 77% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 66% | 69% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 87% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 99% |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 26% | 20% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 72% | 90% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 37% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 66% | 67% |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 8% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 65% |
-| `z-ai/glm-5.3` | `alibaba` | Alibaba | 63% | 100% |
-| `z-ai/glm-5.3` | `baseten/fp8#1bc437e346#1` | BaseTen | 34% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 67% | 47% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 77% | 65% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 77% |
+| `z-ai/glm-5.3` | `alibaba` | Alibaba | 65% | 100% |
+| `z-ai/glm-5.3` | `baseten/fp8#1bc437e346#1` | BaseTen | 30% | n/a |
 | plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

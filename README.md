@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T02:00:50+00:00 UTC)
+## Current status (2026-09-23T02:15:52+00:00 UTC)
 
-454 models polled, 1377 inference endpoints:
-up 831, degraded 102, down 22, idle 422.
+454 models polled, 1378 inference endpoints:
+up 830, degraded 108, down 18, idle 422.
 
-Currently down (22):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph` | Morph | 73% | 100% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 60% | 52% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 77% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 73% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 47% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 78% | 100% |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 70% | n/a |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 57% | 80% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 38% | 21% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 22% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 65% | 100% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 29% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 58% | 67% |
-| plus 7 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 58% | 61% |
+| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 68% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 78% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 69% | n/a |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 65% | 70% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 26% | 65% |
+| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 41% | 65% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 46% | 34% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 11% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 66% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 44% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 63% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

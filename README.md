@@ -85,27 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T23:31:28+00:00 UTC)
+## Current status (2026-09-23T23:46:40+00:00 UTC)
 
 459 models polled, 1387 inference endpoints:
-up 865, degraded 79, down 12, idle 431.
+up 876, degraded 79, down 11, idle 421.
 
-Currently down (12):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 40% | 51% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 66% | 79% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 54% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 85% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 59% | 100% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 46% | 74% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 59% | 78% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 70% |
-| `z-ai/glm-5.3-flash` | `morph` | Morph | 53% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 40% | 99% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 59% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 36% | n/a |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 57% | 100% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 52% | 100% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 60% | 74% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 80% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 78% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 65% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T03:46:04+00:00 UTC)
+## Current status (2026-09-23T04:00:59+00:00 UTC)
 
-454 models polled, 1380 inference endpoints:
-up 827, degraded 99, down 24, idle 430.
+454 models polled, 1381 inference endpoints:
+up 829, degraded 93, down 19, idle 440.
 
-Currently down (24):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
-| `anthropic/claude-opus-4.6` | `azure/global` | Azure | 5% | n/a |
-| `anthropic/claude-opus-4.6` | `amazon-bedrock` | Amazon Bedrock | 48% | 100% |
-| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 41% | 100% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 4% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 19% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 68% | 56% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 78% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 29% | 10% |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 68% | 68% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 62% | 80% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 60% | 78% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 74% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
-| plus 9 more | | | | |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 68% | 100% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 74% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 21% | 100% |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 69% | n/a |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 78% | 84% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 58% | n/a |
+| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 65% | 62% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 54% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 70% | 72% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 37% | 33% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

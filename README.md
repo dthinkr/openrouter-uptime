@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T20:01:45+00:00 UTC)
+## Current status (2026-09-23T20:16:02+00:00 UTC)
 
 457 models polled, 1385 inference endpoints:
-up 880, degraded 92, down 14, idle 399.
+up 883, degraded 85, down 16, idle 401.
 
-Currently down (14):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 73% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 95% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 78% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 48% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 31% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 3% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 57% | 42% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 57% | 50% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 78% | 74% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 52% | 49% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 77% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 78% | 38% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 76% | 91% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 71% | 65% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 57% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 98% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 78% | 66% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 23% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 61% | 81% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 80% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 52% | 54% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 74% | 98% |
+| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 77% | 85% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

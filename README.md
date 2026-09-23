@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T01:31:19+00:00 UTC)
+## Current status (2026-09-23T01:45:51+00:00 UTC)
 
 454 models polled, 1377 inference endpoints:
-up 831, degraded 103, down 24, idle 419.
+up 832, degraded 99, down 20, idle 426.
 
-Currently down (24):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 76% | 98% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 63% | 61% |
-| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 85% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 100% |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 72% | 78% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 86% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 50% | 73% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 67% | 73% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 65% | 75% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 25% | 23% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
-| plus 9 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `morph` | Morph | 77% | 81% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 61% | 60% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 70% | n/a |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 52% | n/a |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi/bf16` | Nex AGI | 62% | 28% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 46% | 36% |
+| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 52% | n/a |
+| `openai/gpt-oss-120b` | `phala` | Phala | 29% | 32% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 60% | 74% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 28% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 80% | 82% |
+| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 18% | 19% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 67% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T18:30:53+00:00 UTC)
+## Current status (2026-09-24T18:45:37+00:00 UTC)
 
 458 models polled, 1393 inference endpoints:
-up 865, degraded 105, down 26, idle 397.
+up 851, degraded 112, down 35, idle 395.
 
-Currently down (26):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 54% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 49% | 100% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 70% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 74% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 73% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | 25% | 100% |
-| `mistralai/mistral-nemo` | `io-net/fp16` | Io Net | 63% | 100% |
-| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 67% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 68% | n/a |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 71% | 56% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 75% | 61% |
-| `openai/gpt-6-luna` | `azure/eu` | Azure | 74% | 100% |
-| plus 11 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 50% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 74% | 23% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 64% | 61% |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 66% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `together` | Together | 73% | 14% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 78% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 78% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 69% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 77% | n/a |
+| `minimax/minimax-m3` | `together` | Together | 73% | 1% |
+| `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | 22% | 100% |
+| `mistralai/mistral-nemo` | `io-net/fp16` | Io Net | 47% | 98% |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

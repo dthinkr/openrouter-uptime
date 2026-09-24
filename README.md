@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T15:45:57+00:00 UTC)
+## Current status (2026-09-24T16:01:44+00:00 UTC)
 
 458 models polled, 1388 inference endpoints:
-up 859, degraded 116, down 31, idle 382.
+up 868, degraded 115, down 21, idle 384.
 
-Currently down (31):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 58% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 72% | 99% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 68% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 73% | 99% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 63% | 59% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 71% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 95% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 71% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 66% | 84% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 89% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 39% |
 | `minimax/minimax-m2.5` | `venice` | Venice | n/a | n/a |
 | `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 55% | 50% |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 53% | n/a |
-| `moonshotai/kimi-k3` | `makora` | Makora | 58% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 73% |
-| `openai/gpt-6-luna` | `azure` | Azure | 79% | 89% |
-| plus 16 more | | | | |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 53% | 45% |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 55% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 79% |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 78% | 98% |
+| `openai/gpt-6-luna` | `azure/eu` | Azure | 79% | 100% |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 6% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 71% | 98% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

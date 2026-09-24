@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T19:31:20+00:00 UTC)
+## Current status (2026-09-24T19:45:27+00:00 UTC)
 
 458 models polled, 1394 inference endpoints:
-up 886, degraded 95, down 13, idle 400.
+up 888, degraded 94, down 12, idle 400.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 62% | 69% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 81% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 76% | 100% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 9% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 25% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 72% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | 41% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 60% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 70% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 78% |
-| `z-ai/glm-5.3-flash` | `morph` | Morph | 59% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 73% | 74% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 89% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 75% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 85% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 61% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 72% | 54% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 61% | 95% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 77% | 80% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 68% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T15:16:36+00:00 UTC)
+## Current status (2026-09-24T15:31:02+00:00 UTC)
 
-458 models polled, 1387 inference endpoints:
-up 873, degraded 115, down 27, idle 372.
+458 models polled, 1388 inference endpoints:
+up 872, degraded 115, down 32, idle 369.
 
-Currently down (27):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | 24% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 75% | 45% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 65% | 63% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 58% |
-| `google/gemini-3.6-flash` | `google-vertex/global/priority` | Google | 66% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 68% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 42% | 39% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 72% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 76% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 61% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 77% | 99% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 64% | 66% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 82% |
+| `google/gemini-3.6-flash` | `google-vertex/global/priority` | Google | 64% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 51% | 64% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | 97% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 53% | 98% |
 | `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 66% | 50% |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 50% | 52% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 34% | 99% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 72% | 80% |
-| plus 12 more | | | | |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 60% | 61% |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 51% | 52% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 96% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

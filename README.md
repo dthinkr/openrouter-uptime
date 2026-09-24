@@ -85,29 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T21:00:19+00:00 UTC)
+## Current status (2026-09-24T21:15:18+00:00 UTC)
 
 458 models polled, 1396 inference endpoints:
-up 903, degraded 77, down 14, idle 402.
+up 893, degraded 93, down 10, idle 400.
 
-Currently down (14):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 60% | 57% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 87% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 88% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 28% | 11% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 79% | 96% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 77% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 63% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 55% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 72% | n/a |
-| `z-ai/glm-4.6` | `novita/bf16` | Novita | 73% | 67% |
-| `z-ai/glm-5.3-flash` | `decart/fp4` | Decart | 57% | 6% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 60% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 76% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 23% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 72% | 70% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 25% | 62% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 41% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 69% | 46% |
+| `z-ai/glm-4.6` | `novita/bf16` | Novita | 70% | 98% |
+| `z-ai/glm-5.3-flash` | `decart/fp4` | Decart | 2% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

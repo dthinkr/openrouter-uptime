@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T22:01:15+00:00 UTC)
+## Current status (2026-09-24T22:15:51+00:00 UTC)
 
 460 models polled, 1405 inference endpoints:
-up 889, degraded 73, down 18, idle 425.
+up 892, degraded 69, down 17, idle 427.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 49% | 22% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 6% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 61% | 59% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 72% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 34% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 9% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 63% | 62% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 79% |
+| `meta/muse-spark-1.2-contributor` | `meta` | Meta | n/a | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 100% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 77% | 64% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 66% | 100% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 77% | 92% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 76% | 84% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 75% | 22% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 64% | 56% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 46% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 76% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 71% | 96% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 61% | 99% |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
-| plus 3 more | | | | |
+| `z-ai/glm-4.6` | `novita/bf16` | Novita | 43% | 58% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T12:16:09+00:00 UTC)
+## Current status (2026-09-24T12:31:38+00:00 UTC)
 
 458 models polled, 1385 inference endpoints:
-up 904, degraded 95, down 13, idle 373.
+up 884, degraded 107, down 13, idle 381.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 63% | 61% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 44% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 49% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 72% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 1% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 74% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 69% | 16% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 71% | 56% |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 79% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 63% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 63% | 69% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 63% | 12% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 75% |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | n/a | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 75% | 82% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 55% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 68% | n/a |
+| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 54% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 72% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

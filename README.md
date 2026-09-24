@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T23:01:06+00:00 UTC)
+## Current status (2026-09-24T23:16:26+00:00 UTC)
 
-460 models polled, 1404 inference endpoints:
-up 872, degraded 67, down 19, idle 446.
+460 models polled, 1403 inference endpoints:
+up 874, degraded 78, down 13, idle 438.
 
-Currently down (19):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 26% | 100% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 48% | 41% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 78% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 63% | 71% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 48% | 38% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 83% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 66% | 96% |
 | `meta/muse-spark-1.2-contributor` | `meta` | Meta | n/a | n/a |
-| `meta/muse-spark-1.3` | `meta` | Meta | 0% | n/a |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 0% | 0% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 41% | 96% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 53% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 76% | 35% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 41% | 51% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 2% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 77% | 73% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 77% | 100% |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 68% | 93% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 37% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 74% | 87% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 66% | 88% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 69% | 56% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

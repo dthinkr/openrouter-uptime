@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T19:16:25+00:00 UTC)
+## Current status (2026-09-24T19:31:20+00:00 UTC)
 
 458 models polled, 1394 inference endpoints:
-up 875, degraded 110, down 14, idle 395.
+up 886, degraded 95, down 13, idle 400.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 75% | 100% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 62% | 56% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 94% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 71% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 60% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 69% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 69% | 93% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 71% | 59% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 66% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 62% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 76% |
-| `z-ai/glm-5.3-flash` | `morph` | Morph | 56% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 62% | 69% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 81% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 76% | 100% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 9% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 25% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 72% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | 41% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 60% | 100% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 70% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 78% |
+| `z-ai/glm-5.3-flash` | `morph` | Morph | 59% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

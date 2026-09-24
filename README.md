@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T02:31:26+00:00 UTC)
+## Current status (2026-09-24T02:45:29+00:00 UTC)
 
 459 models polled, 1387 inference endpoints:
-up 845, degraded 85, down 27, idle 430.
+up 833, degraded 90, down 26, idle 438.
 
-Currently down (27):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 50% | 100% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 62% | 58% |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 62% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 78% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 57% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 66% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 79% | 86% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 77% | 99% |
-| `minimax/minimax-m3` | `mara` | Mara | 80% | 94% |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 77% | n/a |
-| `openai/gpt-6-luna` | `azure` | Azure | 80% | 85% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 50% |
-| plus 12 more | | | | |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 62% | 63% |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 79% | 97% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 67% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 75% | 100% |
+| `minimax/minimax-m3` | `mara` | Mara | 79% | 88% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 83% |
+| `openai/gpt-6-luna` | `azure` | Azure | 79% | 78% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 59% | 82% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 79% | 100% |
+| `openai/gpt-oss-120b` | `together` | Together | 59% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 77% | 77% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

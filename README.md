@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T04:15:17+00:00 UTC)
+## Current status (2026-09-24T04:31:17+00:00 UTC)
 
 459 models polled, 1387 inference endpoints:
-up 849, degraded 85, down 20, idle 433.
+up 859, degraded 75, down 29, idle 424.
 
-Currently down (20):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 63% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | 18% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 61% | 54% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 74% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 56% | 100% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 72% | 71% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 54% | n/a |
-| `minimax/minimax-m3` | `mara` | Mara | 76% | 80% |
-| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 76% | 97% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 51% | 23% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 71% | 100% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 38% | 99% |
-| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 79% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `novita/fp8` | Novita | 39% | 35% |
-| plus 5 more | | | | |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 59% | 59% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 62% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 54% | 19% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 78% | 65% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 70% | 75% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 76% | 58% |
+| `minimax/minimax-m3` | `mara` | Mara | 76% | 81% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 100% |
+| `moonshotai/kimi-k3` | `deepinfra/bf16` | DeepInfra | 80% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 84% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 74% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 2% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

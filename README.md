@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T23:16:26+00:00 UTC)
+## Current status (2026-09-24T23:31:41+00:00 UTC)
 
 460 models polled, 1403 inference endpoints:
-up 874, degraded 78, down 13, idle 438.
+up 852, degraded 80, down 12, idle 459.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 48% | 38% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 83% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 66% | 96% |
-| `meta/muse-spark-1.2-contributor` | `meta` | Meta | n/a | n/a |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 41% | 96% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 53% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 68% | 93% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 37% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 74% | 87% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 66% | 88% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 69% | 56% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 61% | 79% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 96% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 49% | 84% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 78% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 83% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 68% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 76% | 73% |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 63% | n/a |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 64% | 50% |
+| `z-ai/glm-4.5-air` | `z-ai/fp8` | Z.AI | 76% | 97% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

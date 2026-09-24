@@ -85,29 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T20:01:24+00:00 UTC)
+## Current status (2026-09-24T20:15:26+00:00 UTC)
 
 458 models polled, 1396 inference endpoints:
-up 893, degraded 91, down 14, idle 398.
+up 883, degraded 102, down 11, idle 400.
 
-Currently down (14):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 70% | 58% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 80% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 59% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 70% | 84% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 74% | 70% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 72% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 73% | 75% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 48% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 74% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 76% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 78% | 77% |
-| `z-ai/glm-5.3-flash` | `morph` | Morph | 77% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 65% | 62% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 58% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 70% | 91% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 74% | 95% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 77% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 55% | 36% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 70% | 97% |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 75% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

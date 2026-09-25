@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T19:46:17+00:00 UTC)
+## Current status (2026-09-25T20:00:52+00:00 UTC)
 
 458 models polled, 1407 inference endpoints:
-up 892, degraded 87, down 20, idle 408.
+up 882, degraded 84, down 19, idle 422.
 
-Currently down (20):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `anthropic/claude-3-haiku` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `reka` | Reka | 74% | 62% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 97% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 77% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 78% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 54% | 58% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 49% | 0% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 74% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 68% | 68% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 34% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 74% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 44% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `novita` | Novita | 55% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 55% | n/a |
-| plus 5 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 50% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 50% | n/a |
+| `google/gemma-4-31b-it` | `reka` | Reka | 69% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 63% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 23% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 50% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 59% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 21% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 70% | 67% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 57% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 77% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

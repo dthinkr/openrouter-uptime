@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T05:45:17+00:00 UTC)
+## Current status (2026-09-25T06:01:46+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 838, degraded 85, down 12, idle 467.
+up 860, degraded 73, down 13, idle 456.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 76% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 57% | n/a |
-| `moonshotai/kimi-k3` | `digitalocean` | DigitalOcean | 40% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 76% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 67% | 77% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 71% | 75% |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 73% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 73% | 74% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 74% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 18% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 68% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 64% | 67% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 33% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 82% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 73% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 70% | 58% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 74% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 70% | 76% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 73% | 93% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 76% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

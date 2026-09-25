@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T07:31:22+00:00 UTC)
+## Current status (2026-09-25T07:46:02+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 881, degraded 89, down 14, idle 418.
+up 884, degraded 87, down 17, idle 414.
 
-Currently down (14):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 71% | 100% |
-| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 66% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 67% | 92% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | 0% |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 38% | 100% |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 52% | 100% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 84% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 72% | 79% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 96% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 81% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 75% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 65% | 83% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 65% | 98% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 76% | 96% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 71% | 73% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 52% | 46% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 78% | 89% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `nebius/fp8` | Nebius | 69% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 72% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 72% | 57% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 78% | 100% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

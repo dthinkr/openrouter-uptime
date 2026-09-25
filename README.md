@@ -85,28 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T01:01:43+00:00 UTC)
+## Current status (2026-09-25T01:15:19+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 852, degraded 89, down 13, idle 448.
+up 840, degraded 94, down 14, idle 454.
 
-Currently down (13):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 65% | 100% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 48% | 37% |
-| `deepseek/deepseek-v4.1-flash` | `krea/fp8` | Krea | 74% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 89% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 75% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 47% | 45% |
+| `deepseek/deepseek-v4.1-flash` | `krea/fp8` | Krea | 78% | n/a |
 | `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 30% | n/a |
 | `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 69% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 72% | 35% |
 | `nex-agi/nex-n2.5-pro:free` | `nex-agi/fp8` | Nex AGI | 58% | 12% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 82% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 64% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 65% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 70% | 82% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 78% | 100% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 59% | 33% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 62% | 74% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 67% | 75% |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 75% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

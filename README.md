@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T14:15:59+00:00 UTC)
+## Current status (2026-09-25T14:30:46+00:00 UTC)
 
 458 models polled, 1406 inference endpoints:
-up 879, degraded 117, down 19, idle 391.
+up 890, degraded 102, down 25, idle 389.
 
-Currently down (19):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | 71% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fp8#b58f89459c` | BaseTen | 65% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 67% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 58% | 50% |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 58% | 69% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 80% | 58% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fp8#b58f89459c` | BaseTen | 47% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 38% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 15% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 63% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 48% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 73% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 15% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
-| `tencent/hy4-preview` | `siliconflow/fp8` | SiliconFlow | 23% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 74% | 68% |
-| plus 4 more | | | | |
+| `moonshotai/kimi-k3` | `morph` | Morph | 56% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 73% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 44% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `novita/fp8` | Novita | 68% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T03:01:45+00:00 UTC)
+## Current status (2026-09-25T03:16:21+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 851, degraded 82, down 14, idle 455.
+up 856, degraded 87, down 18, idle 441.
 
-Currently down (14):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 83% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 50% | n/a |
-| `nex-agi/nex-n2.5-pro:free` | `nex-agi/fp8` | Nex AGI | 79% | 79% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 73% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 78% | 21% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 79% | 76% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 72% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 79% | 88% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 54% | 99% |
-| `z-ai/glm-4.5-air` | `z-ai/fp8` | Z.AI | 73% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 55% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 75% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 80% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 31% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 52% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 37% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 73% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 77% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 75% | 100% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 66% | 86% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 76% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 79% | 83% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 73% | 57% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

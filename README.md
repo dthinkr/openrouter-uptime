@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T04:01:36+00:00 UTC)
+## Current status (2026-09-25T04:15:52+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 851, degraded 81, down 17, idle 453.
+up 838, degraded 86, down 13, idle 465.
 
-Currently down (17):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 56% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `krea/fp8` | Krea | 69% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 18% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 18% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | 58% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 68% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 32% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 76% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 99% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 61% | n/a |
-| `moonshotai/kimi-k3` | `digitalocean` | DigitalOcean | 48% | 24% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 74% | 77% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 68% | 59% |
-| plus 2 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `krea/fp8` | Krea | 46% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | 89% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 8% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 28% | n/a |
+| `moonshotai/kimi-k3` | `digitalocean` | DigitalOcean | 35% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 74% | 73% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 67% | 89% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 35% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 74% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

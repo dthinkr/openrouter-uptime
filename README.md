@@ -85,29 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T06:45:52+00:00 UTC)
+## Current status (2026-09-25T07:00:55+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 859, degraded 87, down 14, idle 442.
+up 859, degraded 84, down 15, idle 444.
 
-Currently down (14):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 68% | n/a |
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | 76% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 57% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 84% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 71% | 70% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 67% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 26% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 51% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 74% | 83% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 71% | 79% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 73% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 100% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `minimax/minimax-m3` | `mara` | Mara | 79% | 81% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 5% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 69% | 71% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 72% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 75% | 67% |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 79% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 80% | 90% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 75% | 31% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 66% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

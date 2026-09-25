@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T00:45:36+00:00 UTC)
+## Current status (2026-09-25T01:01:43+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 849, degraded 89, down 15, idle 449.
+up 852, degraded 89, down 13, idle 448.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 56% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 70% | 64% |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 55% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 58% | 32% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 86% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 63% | n/a |
-| `nex-agi/nex-n2.5-pro:free` | `nex-agi/fp8` | Nex AGI | 58% | 17% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 76% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 65% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 59% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 73% | 60% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 76% | 65% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 77% | 82% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 65% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 48% | 37% |
+| `deepseek/deepseek-v4.1-flash` | `krea/fp8` | Krea | 74% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 89% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 30% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 69% |
+| `nex-agi/nex-n2.5-pro:free` | `nex-agi/fp8` | Nex AGI | 58% | 12% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 82% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 64% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 65% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 70% | 82% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

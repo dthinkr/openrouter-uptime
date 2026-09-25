@@ -85,28 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T04:15:52+00:00 UTC)
+## Current status (2026-09-25T04:31:25+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 838, degraded 86, down 13, idle 465.
+up 862, degraded 80, down 14, idle 446.
 
-Currently down (13):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 56% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | 12% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `krea/fp8` | Krea | 46% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 62% | 89% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 8% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 28% | n/a |
-| `moonshotai/kimi-k3` | `digitalocean` | DigitalOcean | 35% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 47% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 4% | n/a |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 32% | 9% |
+| `moonshotai/kimi-k3` | `digitalocean` | DigitalOcean | 37% | 39% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 87% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 74% | 73% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 67% | 89% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 35% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 74% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 73% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 65% | 59% |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 74% | 26% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 34% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 79% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

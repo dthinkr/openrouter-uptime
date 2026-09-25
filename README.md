@@ -85,25 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T22:31:18+00:00 UTC)
+## Current status (2026-09-25T22:46:19+00:00 UTC)
 
 459 models polled, 1409 inference endpoints:
-up 854, degraded 96, down 10, idle 449.
+up 872, degraded 72, down 18, idle 447.
 
-Currently down (10):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 15% | 15% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 85% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 40% |
-| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 71% | 45% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 61% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 32% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 46% | n/a |
-| `z-ai/glm-5.3-flash` | `phala/fp8` | Phala | 74% | 73% |
+| `google/gemma-4-31b-it` | `reka` | Reka | 70% | 99% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 38% | 100% |
+| `moonshotai/kimi-k2.6` | `baseten/fp4#5dab5ba2f2#1` | BaseTen | 74% | 100% |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 88% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 80% | 61% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 71% | 35% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 74% | 73% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 76% | 53% |
+| `qwen/qwen3.5-122b-a10b` | `deepinfra/fp4` | DeepInfra | 72% | n/a |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 77% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 77% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

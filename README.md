@@ -85,25 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T00:01:36+00:00 UTC)
+## Current status (2026-09-25T00:16:41+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 875, degraded 69, down 10, idle 448.
+up 850, degraded 97, down 9, idle 446.
 
-Currently down (10):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 49% | 34% |
-| `google/gemini-3.8-flash` | `google-ai-studio/priority` | Google AI Studio | 41% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 100% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 79% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 66% | 73% |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 80% | n/a |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 73% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 72% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 48% | 43% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `nex-agi/nex-n2.5-pro:free` | `nex-agi/fp8` | Nex AGI | 64% | 11% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 75% | 68% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 71% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 73% | 99% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 72% | 67% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

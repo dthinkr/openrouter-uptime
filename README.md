@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T01:46:38+00:00 UTC)
+## Current status (2026-09-25T02:01:21+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 865, degraded 64, down 19, idle 454.
+up 870, degraded 68, down 13, idle 451.
 
-Currently down (19):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 71% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 56% | 42% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 98% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 55% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `nex-agi/nex-n2.5-pro:free` | `nex-agi/fp8` | Nex AGI | 63% | 32% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 72% | 45% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 72% | 72% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 68% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 52% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 74% | 75% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 77% | 72% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 48% | 36% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 83% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 60% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 61% | 22% |
+| `nex-agi/nex-n2.5-pro:free` | `nex-agi/fp8` | Nex AGI | 64% | 31% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 80% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 71% | 93% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 80% | 91% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 70% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 60% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T02:15:37+00:00 UTC)
+## Current status (2026-09-25T02:31:12+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 863, degraded 77, down 14, idle 448.
+up 854, degraded 87, down 13, idle 448.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 48% | 39% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 71% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 62% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `nex-agi/nex-n2.5-pro:free` | `nex-agi/fp8` | Nex AGI | 66% | 35% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 77% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 78% | 65% |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 76% | n/a |
-| `z-ai/glm-4.5-air` | `z-ai/fp8` | Z.AI | 72% | 100% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 53% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 78% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 60% | 100% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 42% | n/a |
+| `nex-agi/nex-n2.5-pro:free` | `nex-agi/fp8` | Nex AGI | 67% | 49% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 78% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 69% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 79% | 85% |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 72% | n/a |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 78% | 68% |
+| `z-ai/glm-4.5-air` | `z-ai/fp8` | Z.AI | 80% | 100% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 36% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 72% | 74% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,28 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T23:30:59+00:00 UTC)
+## Current status (2026-09-25T23:46:09+00:00 UTC)
 
 459 models polled, 1410 inference endpoints:
-up 858, degraded 86, down 13, idle 453.
+up 869, degraded 67, down 10, idle 464.
 
-Currently down (13):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `inference-net` | InferenceNet | 52% | 99% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 77% | 84% |
+| `deepseek/deepseek-v4.1-flash` | `inference-net` | InferenceNet | 65% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 47% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 62% | 17% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 51% | 68% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 79% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 70% | 63% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 59% | 80% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 60% | n/a |
-| `xiaomi/mimo-v2.5` | `venice/fp8` | Venice | 65% | n/a |
-| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 18% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 65% | 62% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | n/a | 0% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 70% | 92% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

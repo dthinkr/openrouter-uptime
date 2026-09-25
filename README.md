@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T14:30:46+00:00 UTC)
+## Current status (2026-09-25T14:46:36+00:00 UTC)
 
 458 models polled, 1406 inference endpoints:
-up 890, degraded 102, down 25, idle 389.
+up 879, degraded 111, down 26, idle 390.
 
-Currently down (25):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | 71% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 58% | 50% |
-| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 58% | 69% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 80% | 58% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fp8#b58f89459c` | BaseTen | 47% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 38% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 15% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 63% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 58% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 26% | 14% |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 46% | 36% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 77% | 99% |
+| `deepseek/deepseek-v4-flash` | `alibaba/fp8` | Alibaba | 74% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 71% | 98% |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 70% | 79% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 59% | 84% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 87% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 25% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `moonshotai/kimi-k3` | `morph` | Morph | 56% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 73% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 44% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
-| `qwen/qwen3-235b-a22b-thinking-2507` | `novita/fp8` | Novita | 68% | n/a |
-| plus 10 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 79% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 36% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

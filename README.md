@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-25T19:00:55+00:00 UTC)
+## Current status (2026-09-25T19:16:02+00:00 UTC)
 
-459 models polled, 1407 inference endpoints:
-up 886, degraded 96, down 17, idle 408.
+458 models polled, 1406 inference endpoints:
+up 867, degraded 105, down 18, idle 416.
 
-Currently down (17):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 68% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | 69% |
 | `anthropic/claude-3-haiku` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 72% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 62% | 34% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 42% | 95% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 61% | 96% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 76% | 79% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 76% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 62% | 71% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 44% | n/a |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 65% | 47% |
-| plus 2 more | | | | |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 56% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 56% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 59% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 77% | 63% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 72% | 99% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 64% | 68% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 45% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 59% | 33% |
+| `qwen/qwen3.5-397b-a17b` | `novita` | Novita | 72% | 62% |
+| `xiaomi/mimo-v2.5` | `venice/fp8` | Venice | 75% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

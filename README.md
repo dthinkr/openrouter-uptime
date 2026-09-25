@@ -85,26 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T23:46:31+00:00 UTC)
+## Current status (2026-09-25T00:01:36+00:00 UTC)
 
 460 models polled, 1402 inference endpoints:
-up 853, degraded 81, down 11, idle 457.
+up 875, degraded 69, down 10, idle 448.
 
-Currently down (11):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 64% | 43% |
-| `google/gemini-3.8-flash` | `google-ai-studio/priority` | Google AI Studio | 74% | 13% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 22% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 44% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 84% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 55% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 62% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 76% | 92% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 49% | 64% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 49% | 34% |
+| `google/gemini-3.8-flash` | `google-ai-studio/priority` | Google AI Studio | 41% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 100% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 79% | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 66% | 73% |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 80% | n/a |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 73% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

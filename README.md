@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T07:00:55+00:00 UTC)
+## Current status (2026-09-26T07:16:26+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 852, degraded 68, down 20, idle 465.
+up 844, degraded 78, down 22, idle 461.
 
-Currently down (20):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 26% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 41% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 40% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 73% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 61% |
 | `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | n/a | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 73% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 58% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 76% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 55% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 78% | 99% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 73% | 86% |
-| plus 5 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 53% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 66% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

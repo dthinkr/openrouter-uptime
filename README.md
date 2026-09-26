@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T02:00:41+00:00 UTC)
+## Current status (2026-09-26T02:16:14+00:00 UTC)
 
-458 models polled, 1401 inference endpoints:
-up 835, degraded 88, down 16, idle 462.
+458 models polled, 1400 inference endpoints:
+up 829, degraded 100, down 12, idle 459.
 
-Currently down (16):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 79% |
-| `google/gemma-4-31b-it` | `reka` | Reka | 69% | 74% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 97% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 24% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 82% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 45% |
+| `google/gemma-4-31b-it` | `reka` | Reka | 38% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 52% | 43% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | n/a | n/a |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 64% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 15% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 41% | 53% |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 35% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 39% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 67% | 82% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 60% | n/a |
-| plus 1 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 68% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 46% | 41% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 14% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 71% | 83% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T05:46:12+00:00 UTC)
+## Current status (2026-09-26T06:01:25+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 857, degraded 64, down 20, idle 464.
+up 854, degraded 63, down 20, idle 468.
 
 Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 34% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 52% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 63% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 32% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 32% | n/a |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
-| `google/gemma-4-31b-it` | `reka` | Reka | 74% | 79% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 70% |
+| `google/gemma-4-31b-it` | `reka` | Reka | 70% | 100% |
 | `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 60% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 70% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 100% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 59% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 62% |
 | plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

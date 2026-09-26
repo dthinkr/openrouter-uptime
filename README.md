@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T03:16:41+00:00 UTC)
+## Current status (2026-09-26T03:30:59+00:00 UTC)
 
-458 models polled, 1402 inference endpoints:
-up 833, degraded 91, down 17, idle 461.
+458 models polled, 1403 inference endpoints:
+up 837, degraded 87, down 20, idle 459.
 
-Currently down (17):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 62% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 67% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 39% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 79% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 66% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 77% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 59% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 59% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 71% | 100% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 55% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 51% | 45% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 42% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 74% | 86% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 64% | n/a |
-| `z-ai/glm-5.2` | `fireworks/fast-us` | Fireworks | 0% | n/a |
-| plus 2 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 63% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 68% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 48% | 49% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 34% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T15:01:01+00:00 UTC)
+## Current status (2026-09-26T15:16:27+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 855, degraded 86, down 19, idle 445.
+up 860, degraded 85, down 23, idle 437.
 
-Currently down (19):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 59% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 58% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 62% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 69% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 71% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 75% | 36% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 76% |
+| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 72% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 49% | 65% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 78% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 69% | 50% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 72% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 28% | n/a |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 29% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 79% | 98% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 71% | 98% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

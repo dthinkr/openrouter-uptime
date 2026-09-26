@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T15:16:27+00:00 UTC)
+## Current status (2026-09-26T15:31:39+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 860, degraded 85, down 23, idle 437.
+up 865, degraded 87, down 22, idle 431.
 
-Currently down (23):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 58% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 63% | 98% |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 69% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 71% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 75% | 36% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 77% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 98% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 69% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 72% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 66% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 76% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 29% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 79% | 98% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 71% | 98% |
-| plus 8 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 30% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 12% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

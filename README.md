@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T13:30:58+00:00 UTC)
+## Current status (2026-09-26T13:46:05+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 850, degraded 76, down 21, idle 458.
+up 850, degraded 79, down 22, idle 454.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 59% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 63% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 65% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 86% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 66% | n/a |
 | `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 34% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 54% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 84% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 41% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 74% |
+| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 38% | n/a |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 53% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 66% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 76% | 75% |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 46% | 78% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

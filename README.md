@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T04:16:18+00:00 UTC)
+## Current status (2026-09-26T04:30:40+00:00 UTC)
 
 458 models polled, 1404 inference endpoints:
-up 862, degraded 67, down 27, idle 448.
+up 875, degraded 62, down 24, idle 443.
 
-Currently down (27):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 46% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 73% | 72% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 77% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 39% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 68% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 63% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 66% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 58% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 67% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 100% |
 | `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 100% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 62% |
-| plus 12 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 97% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 62% | 62% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 75% | 84% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

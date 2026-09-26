@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T04:45:17+00:00 UTC)
+## Current status (2026-09-26T05:01:22+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 865, degraded 60, down 18, idle 462.
+up 859, degraded 68, down 23, idle 455.
 
-Currently down (18):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 52% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 41% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 76% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 74% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 79% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 74% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 53% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 57% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 60% | 55% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | 38% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 63% | n/a |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 44% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 80% | n/a |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 76% | 98% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,26 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T00:01:33+00:00 UTC)
+## Current status (2026-09-26T00:15:41+00:00 UTC)
 
-459 models polled, 1410 inference endpoints:
-up 865, degraded 79, down 11, idle 455.
+459 models polled, 1401 inference endpoints:
+up 860, degraded 97, down 10, idle 434.
 
-Currently down (11):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 62% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 32% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 70% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 66% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 37% | 44% |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 76% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 73% | 74% |
-| `z-ai/glm-5.3-flash` | `phala/fp8` | Phala | 69% | 99% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 47% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 65% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 67% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 69% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 43% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 73% | 100% |
+| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 57% | 49% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

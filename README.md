@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T03:46:08+00:00 UTC)
+## Current status (2026-09-26T04:00:32+00:00 UTC)
 
 458 models polled, 1404 inference endpoints:
-up 848, degraded 70, down 26, idle 460.
+up 846, degraded 70, down 21, idle 467.
 
-Currently down (26):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 75% | 87% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 69% | n/a |
+| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 76% | 96% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 54% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 77% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 87% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 62% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 78% | 100% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 68% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 70% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| plus 11 more | | | | |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 61% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 60% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 46% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 77% | 100% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 59% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 64% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 59% | 56% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 69% | 96% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T22:31:23+00:00 UTC)
+## Current status (2026-09-28T22:45:33+00:00 UTC)
 
 460 models polled, 1411 inference endpoints:
-up 873, degraded 96, down 18, idle 424.
+up 884, degraded 76, down 18, idle 433.
 
 Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 78% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 77% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 84% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 74% | 100% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 58% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 42% | 44% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 60% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 22% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 44% | n/a |
-| `thinkingmachines/inkling-small:free` | `thinkingmachines/nvfp4` | Thinking Machines | 46% | 54% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 38% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 59% | 92% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 46% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 79% | 72% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 68% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 46% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 61% | 66% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 39% | 39% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 71% | 0% |
+| `openai/gpt-oss-120b` | `together` | Together | 67% | 31% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 22% | n/a |
+| `thinkingmachines/inkling-small:free` | `thinkingmachines/nvfp4` | Thinking Machines | 49% | 3% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 37% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 68% | 91% |
+| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 61% | 80% |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 78% | 76% |
 | plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

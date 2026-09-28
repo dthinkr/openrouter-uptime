@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T22:16:40+00:00 UTC)
+## Current status (2026-09-28T22:31:23+00:00 UTC)
 
 460 models polled, 1411 inference endpoints:
-up 885, degraded 85, down 24, idle 417.
+up 873, degraded 96, down 18, idle 424.
 
-Currently down (24):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | 91% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 25% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 76% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 77% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 73% | 95% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 35% | 86% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 27% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 75% | 95% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 74% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 44% | 36% |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 22% | n/a |
-| `thinkingmachines/inkling-small:free` | `thinkingmachines/nvfp4` | Thinking Machines | 42% | 24% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 31% | n/a |
-| plus 9 more | | | | |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 78% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 84% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 74% | 100% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 58% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 42% | 44% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 60% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 22% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 44% | n/a |
+| `thinkingmachines/inkling-small:free` | `thinkingmachines/nvfp4` | Thinking Machines | 46% | 54% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 38% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 59% | 92% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 46% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,25 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T22:45:21+00:00 UTC)
+## Current status (2026-09-29T23:02:07+00:00 UTC)
 
 464 models polled, 1427 inference endpoints:
-up 898, degraded 78, down 11, idle 440.
+up 888, degraded 81, down 14, idle 444.
 
-Currently down (11):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 29% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 64% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 51% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 65% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 46% | 40% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 69% | 100% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 76% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 65% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 22% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 70% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 41% | 35% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 58% | 24% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 76% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 71% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 63% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 79% | 56% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 75% |
 | `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

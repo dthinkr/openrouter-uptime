@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T21:16:44+00:00 UTC)
+## Current status (2026-09-29T21:31:47+00:00 UTC)
 
 464 models polled, 1427 inference endpoints:
-up 883, degraded 82, down 29, idle 433.
+up 897, degraded 83, down 26, idle 421.
 
-Currently down (29):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 29% | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 68% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 71% | 67% |
-| `minimax/minimax-m3` | `mara` | Mara | 79% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 46% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 68% | 67% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 77% | 76% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 77% | 100% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 60% | 61% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 53% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 39% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 69% | 79% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 75% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 73% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 74% | 99% |
-| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 76% | 92% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 56% | n/a |
-| plus 14 more | | | | |
+| `openai/gpt-oss-120b` | `mara` | Mara | 61% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 66% | 98% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 67% | 100% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 60% | 77% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

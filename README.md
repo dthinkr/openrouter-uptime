@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T11:00:24+00:00 UTC)
+## Current status (2026-09-29T11:16:08+00:00 UTC)
 
 460 models polled, 1412 inference endpoints:
-up 903, degraded 91, down 18, idle 400.
+up 877, degraded 108, down 20, idle 407.
 
-Currently down (18):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 52% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 49% | 49% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 72% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 88% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 73% | 100% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 75% | 72% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 73% | 13% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 62% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 80% | n/a |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 25% | 2% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 70% | 74% |
-| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 59% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 0% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 72% | 63% |
-| plus 3 more | | | | |
+| `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 7% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 66% | 57% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 31% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 61% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 30% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

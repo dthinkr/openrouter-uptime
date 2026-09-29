@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T17:48:06+00:00 UTC)
+## Current status (2026-09-29T18:00:59+00:00 UTC)
 
 464 models polled, 1422 inference endpoints:
-up 891, degraded 94, down 25, idle 412.
+up 896, degraded 88, down 27, idle 411.
 
-Currently down (25):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 78% | 85% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `venice` | Venice | 71% | 52% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 73% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 75% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 60% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 61% | 98% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 71% | 0% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 80% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 94% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 77% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 54% | 55% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 77% | n/a |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 77% | 52% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 72% | 64% |
-| plus 10 more | | | | |
+| `deepseek/deepseek-v4-flash` | `venice` | Venice | 70% | 99% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 69% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 87% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 56% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 60% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 76% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 32% | 37% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 79% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 65% | 81% |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 74% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 72% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | n/a | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T04:01:06+00:00 UTC)
+## Current status (2026-09-29T04:16:01+00:00 UTC)
 
 460 models polled, 1411 inference endpoints:
-up 852, degraded 82, down 21, idle 456.
+up 853, degraded 87, down 23, idle 448.
 
-Currently down (21):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | n/a |
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 68% | 81% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 61% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 82% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 41% |
-| `openai/gpt-oss-120b` | `mara` | Mara | n/a | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 48% | 32% |
-| `qwen/qwen3-235b-a22b-2507` | `novita/fp8` | Novita | 66% | 59% |
-| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 67% | 69% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 39% | 27% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 72% | 67% |
-| plus 6 more | | | | |
+| `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 72% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 44% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 37% | 45% |
+| `qwen/qwen3-235b-a22b-2507` | `novita/fp8` | Novita | 61% | 60% |
+| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 73% | 79% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 34% | 38% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 71% | 80% |
+| `qwen/qwen3-235b-a22b-2507` | `streamlake` | StreamLake | 69% | 93% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 78% | 100% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

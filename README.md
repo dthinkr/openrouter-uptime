@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T18:15:19+00:00 UTC)
+## Current status (2026-09-29T18:30:56+00:00 UTC)
 
-464 models polled, 1422 inference endpoints:
-up 895, degraded 90, down 30, idle 407.
+464 models polled, 1421 inference endpoints:
+up 886, degraded 111, down 21, idle 403.
 
-Currently down (30):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 65% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 78% | 70% |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `venice` | Venice | 71% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 72% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 49% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 45% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 73% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 74% | 69% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 72% | 81% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 67% | 66% |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 74% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 72% | n/a |
-| plus 15 more | | | | |
+| `deepseek/deepseek-v4-flash` | `venice` | Venice | 78% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 92% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 65% | 66% |
+| `minimax/minimax-m3` | `mara` | Mara | 80% | 68% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 5% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 68% | 26% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 68% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 79% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 70% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 64% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 77% | 93% |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 64% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

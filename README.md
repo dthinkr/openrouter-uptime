@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T22:16:28+00:00 UTC)
+## Current status (2026-09-29T22:31:43+00:00 UTC)
 
 464 models polled, 1427 inference endpoints:
-up 872, degraded 94, down 19, idle 442.
+up 889, degraded 93, down 20, idle 425.
 
-Currently down (19):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 1% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 100% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 65% | 51% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 27% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 74% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 64% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 59% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 68% | 68% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 79% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 69% | 93% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 64% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 55% | n/a |
-| plus 4 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 74% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 13% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | 100% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 67% | 99% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 20% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 63% | n/a |
+| `moonshotai/kimi-k3` | `inference-net/fp4` | InferenceNet | 75% | 100% |
+| `moonshotai/kimi-k3` | `makora` | Makora | 66% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 69% | 56% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 87% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 52% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 53% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 66% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

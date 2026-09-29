@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T00:46:19+00:00 UTC)
+## Current status (2026-09-29T01:00:51+00:00 UTC)
 
 460 models polled, 1412 inference endpoints:
-up 868, degraded 90, down 18, idle 436.
+up 880, degraded 84, down 18, idle 430.
 
 Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | 31% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 46% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 62% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `dekallm` | DekaLLM | 72% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 35% | 2% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 58% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 76% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 72% | 76% |
-| `openai/gpt-5.2` | `openai` | OpenAI | 41% | 96% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 39% | 42% |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 71% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 74% | 52% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 73% | n/a |
-| `xiaomi/mimo-v2.5` | `venice/fp8` | Venice | 78% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 56% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `dekallm` | DekaLLM | 42% | 99% |
+| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 28% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 71% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 27% | 99% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 74% |
+| `openai/gpt-5.2` | `openai` | OpenAI | 63% | 54% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 26% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 47% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 68% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 78% | 69% |
+| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 79% | 81% |
 | plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

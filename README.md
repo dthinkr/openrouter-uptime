@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T14:31:44+00:00 UTC)
+## Current status (2026-09-29T14:47:17+00:00 UTC)
 
 460 models polled, 1408 inference endpoints:
-up 868, degraded 134, down 31, idle 375.
+up 858, degraded 122, down 51, idle 377.
 
-Currently down (31):
+Currently down (51):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5` | `azure` | Azure | 68% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 73% | 91% |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 48% | 48% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 75% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 79% | 42% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | 85% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
-| `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 25% | n/a |
-| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 73% | 31% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 29% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 71% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 55% |
-| plus 16 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 25% |
+| `anthropic/claude-fable-5` | `azure` | Azure | 13% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 74% | 100% |
+| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 74% | 100% |
+| `anthropic/claude-haiku-4.5` | `azure/global` | Azure | 49% | n/a |
+| `anthropic/claude-opus-4.6` | `claude-on-aws` | Claude Platform on AWS | 61% | 9% |
+| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 76% | 99% |
+| `anthropic/claude-opus-4.7` | `claude-on-aws` | Claude Platform on AWS | 69% | 9% |
+| `anthropic/claude-opus-4.8` | `claude-on-aws` | Claude Platform on AWS | 72% | 8% |
+| `anthropic/claude-opus-4.8` | `anthropic` | Anthropic | 62% | 99% |
+| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 67% | 8% |
+| `anthropic/claude-opus-5.5` | `azure/global` | Azure | 77% | 100% |
+| `anthropic/claude-opus-5.5` | `claude-on-aws` | Claude Platform on AWS | 72% | 11% |
+| `anthropic/claude-sonnet-4.6` | `claude-on-aws` | Claude Platform on AWS | 62% | 10% |
+| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 10% | n/a |
+| plus 36 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

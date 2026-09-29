@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T13:31:22+00:00 UTC)
+## Current status (2026-09-29T13:45:46+00:00 UTC)
 
 460 models polled, 1408 inference endpoints:
-up 880, degraded 115, down 30, idle 383.
+up 882, degraded 126, down 20, idle 380.
 
-Currently down (30):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 48% | 49% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 74% | 80% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 74% | 80% |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 76% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 99% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 80% |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 48% | 48% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 62% | 51% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
 | `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 14% | 18% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 72% | 14% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 79% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 62% | 70% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 74% | 65% |
-| plus 15 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 14% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 63% | 65% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 71% | 72% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 60% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 63% | 100% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 73% | 76% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 75% | 69% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 73% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

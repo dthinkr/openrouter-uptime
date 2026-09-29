@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T20:00:47+00:00 UTC)
+## Current status (2026-09-29T20:16:32+00:00 UTC)
 
-464 models polled, 1424 inference endpoints:
-up 884, degraded 101, down 31, idle 408.
+464 models polled, 1425 inference endpoints:
+up 896, degraded 96, down 34, idle 399.
 
-Currently down (31):
+Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 58% | 3% |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 23% | 0% |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 60% | 11% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 76% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 59% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 97% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 11% | 100% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 46% | 0% |
-| `minimax/minimax-m3` | `mara` | Mara | 77% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 9% |
-| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 76% | 26% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 60% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 75% |
-| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| plus 16 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 28% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 71% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 49% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 48% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 22% | 100% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 36% | 13% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 28% | n/a |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 75% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 79% | 59% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 59% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 65% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 68% |
+| plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

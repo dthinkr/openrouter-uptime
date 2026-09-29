@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T00:01:08+00:00 UTC)
+## Current status (2026-09-29T00:16:30+00:00 UTC)
 
 460 models polled, 1412 inference endpoints:
-up 885, degraded 75, down 13, idle 439.
+up 863, degraded 95, down 23, idle 431.
 
-Currently down (13):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 61% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 78% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 83% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 77% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 24% | 33% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 36% | 33% |
-| `openai/gpt-oss-120b` | `together` | Together | 24% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 55% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 54% | 37% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 61% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 76% | 80% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 61% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 63% | 95% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 87% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 52% | 75% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 60% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 24% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 72% | 64% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 44% | 52% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 26% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 79% | 78% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | 58% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 76% | 81% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 56% | n/a |
+| `thinkingmachines/inkling-small:free` | `thinkingmachines/nvfp4` | Thinking Machines | 78% | 100% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

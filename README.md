@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T14:17:06+00:00 UTC)
+## Current status (2026-09-29T14:31:44+00:00 UTC)
 
 460 models polled, 1408 inference endpoints:
-up 864, degraded 139, down 23, idle 382.
+up 868, degraded 134, down 31, idle 375.
 
-Currently down (23):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `anthropic/claude-fable-5` | `azure` | Azure | 68% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 48% | 49% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 52% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 88% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 73% | 91% |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 48% | 48% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 75% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 79% | 42% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | 85% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
 | `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 18% | n/a |
-| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 78% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 34% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 68% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 62% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 64% | 16% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 65% | 100% |
-| plus 8 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 25% | n/a |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 73% | 31% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 29% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 71% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 55% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

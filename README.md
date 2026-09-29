@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T03:00:55+00:00 UTC)
+## Current status (2026-09-29T03:15:58+00:00 UTC)
 
 460 models polled, 1413 inference endpoints:
-up 862, degraded 87, down 21, idle 443.
+up 852, degraded 98, down 20, idle 443.
 
-Currently down (21):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 66% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | 27% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | 0% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 59% | 95% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
-| `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 38% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 72% | 62% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 76% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 31% | 25% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 79% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 68% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 75% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 64% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 25% | n/a |
-| plus 6 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 100% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 65% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 72% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 32% | 39% |
+| `openai/gpt-oss-120b` | `mara` | Mara | n/a | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | 70% |
+| `qwen/qwen3-235b-a22b-2507` | `streamlake` | StreamLake | 66% | 81% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 49% | 55% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 75% | 35% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 66% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

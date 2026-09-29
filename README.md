@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T14:47:17+00:00 UTC)
+## Current status (2026-09-29T15:00:41+00:00 UTC)
 
 460 models polled, 1408 inference endpoints:
-up 858, degraded 122, down 51, idle 377.
+up 856, degraded 127, down 50, idle 375.
 
-Currently down (51):
+Currently down (50):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 25% |
-| `anthropic/claude-fable-5` | `azure` | Azure | 13% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 74% | 100% |
-| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 74% | 100% |
-| `anthropic/claude-haiku-4.5` | `azure/global` | Azure | 49% | n/a |
-| `anthropic/claude-opus-4.6` | `claude-on-aws` | Claude Platform on AWS | 61% | 9% |
-| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 76% | 99% |
-| `anthropic/claude-opus-4.7` | `claude-on-aws` | Claude Platform on AWS | 69% | 9% |
-| `anthropic/claude-opus-4.8` | `claude-on-aws` | Claude Platform on AWS | 72% | 8% |
-| `anthropic/claude-opus-4.8` | `anthropic` | Anthropic | 62% | 99% |
-| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 67% | 8% |
-| `anthropic/claude-opus-5.5` | `azure/global` | Azure | 77% | 100% |
-| `anthropic/claude-opus-5.5` | `claude-on-aws` | Claude Platform on AWS | 72% | 11% |
-| `anthropic/claude-sonnet-4.6` | `claude-on-aws` | Claude Platform on AWS | 62% | 10% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 10% | n/a |
-| plus 36 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | n/a |
+| `anthropic/claude-fable-5` | `claude-on-aws` | Claude Platform on AWS | 17% | n/a |
+| `anthropic/claude-fable-5` | `azure` | Azure | 2% | n/a |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 77% | 100% |
+| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 63% | 100% |
+| `anthropic/claude-opus-4.6` | `claude-on-aws` | Claude Platform on AWS | 13% | 13% |
+| `anthropic/claude-opus-4.6` | `azure/global` | Azure | 44% | n/a |
+| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 75% | 100% |
+| `anthropic/claude-opus-4.7` | `claude-on-aws` | Claude Platform on AWS | 12% | 10% |
+| `anthropic/claude-opus-4.8` | `claude-on-aws` | Claude Platform on AWS | 13% | 12% |
+| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 17% | 19% |
+| `anthropic/claude-opus-5.5` | `claude-on-aws` | Claude Platform on AWS | 18% | 14% |
+| `anthropic/claude-sonnet-4.5` | `claude-on-aws` | Claude Platform on AWS | 40% | n/a |
+| `anthropic/claude-sonnet-4.6` | `claude-on-aws` | Claude Platform on AWS | 15% | 12% |
+| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 23% | n/a |
+| plus 35 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

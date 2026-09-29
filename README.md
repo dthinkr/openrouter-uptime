@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T22:31:43+00:00 UTC)
+## Current status (2026-09-29T22:45:21+00:00 UTC)
 
 464 models polled, 1427 inference endpoints:
-up 889, degraded 93, down 20, idle 425.
+up 898, degraded 78, down 11, idle 440.
 
-Currently down (20):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 74% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 13% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | 100% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 67% | 99% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 20% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 63% | n/a |
-| `moonshotai/kimi-k3` | `inference-net/fp4` | InferenceNet | 75% | 100% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 66% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 69% | 56% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 87% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 52% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 53% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 66% | n/a |
-| plus 5 more | | | | |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 29% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 64% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 51% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 65% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 46% | 40% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 69% | 100% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 76% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 65% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

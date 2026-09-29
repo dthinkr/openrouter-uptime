@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T11:45:52+00:00 UTC)
+## Current status (2026-09-29T12:00:24+00:00 UTC)
 
 460 models polled, 1412 inference endpoints:
-up 911, degraded 89, down 20, idle 392.
+up 900, degraded 93, down 22, idle 397.
 
-Currently down (20):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 48% | 47% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 80% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 91% |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 49% | 50% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 76% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 80% | 94% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 79% | 97% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | 100% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
 | `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 65% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 61% | 57% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 44% | 41% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 26% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 60% | 56% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 42% | 37% |
 | `openai/gpt-oss-120b` | `mara` | Mara | n/a | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 79% | 99% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 76% | 52% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | n/a | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
-| plus 5 more | | | | |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 74% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 50% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

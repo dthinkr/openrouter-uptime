@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T19:31:47+00:00 UTC)
+## Current status (2026-09-29T19:45:49+00:00 UTC)
 
-464 models polled, 1423 inference endpoints:
-up 864, degraded 119, down 29, idle 411.
+464 models polled, 1424 inference endpoints:
+up 887, degraded 105, down 29, idle 403.
 
 Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 75% | 82% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 74% | 100% |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 69% | 50% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 69% | 50% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | 50% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 66% | 62% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 47% |
-| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 76% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 30% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 77% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 79% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 69% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | 68% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 14% | 4% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 60% | 18% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 39% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 47% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 61% | 41% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 69% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 62% | 56% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 53% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 67% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 77% | 79% |
 | plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

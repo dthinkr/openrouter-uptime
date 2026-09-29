@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T22:01:20+00:00 UTC)
+## Current status (2026-09-29T22:16:28+00:00 UTC)
 
 464 models polled, 1427 inference endpoints:
-up 895, degraded 77, down 18, idle 437.
+up 872, degraded 94, down 19, idle 442.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 54% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 93% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 65% | 74% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 70% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 81% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 60% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 63% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 71% | 100% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 74% | n/a |
-| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 79% | 81% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 1% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 100% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 65% | 51% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 27% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 74% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 64% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 59% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 68% | 68% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
 | `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 79% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 71% | 36% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 74% | n/a |
-| plus 3 more | | | | |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 69% | 93% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 64% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 55% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

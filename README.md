@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T23:15:39+00:00 UTC)
+## Current status (2026-09-29T23:31:01+00:00 UTC)
 
 464 models polled, 1427 inference endpoints:
-up 881, degraded 68, down 19, idle 459.
+up 880, degraded 77, down 19, idle 451.
 
 Currently down (19):
 
@@ -96,19 +96,19 @@ Currently down (19):
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 61% | 88% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 58% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 59% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 26% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 72% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 58% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 53% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
-| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 73% | 89% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 68% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 76% | 68% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 68% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 52% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 72% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 61% | 72% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 21% | n/a |
+| `moonshotai/kimi-k3` | `makora` | Makora | 60% | 26% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 76% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 58% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 51% | 74% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 52% | 100% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | n/a | n/a |
+| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 76% | 90% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 75% | 100% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 58% | n/a |
 | plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T05:46:36+00:00 UTC)
+## Current status (2026-09-29T06:02:21+00:00 UTC)
 
 460 models polled, 1412 inference endpoints:
-up 854, degraded 92, down 23, idle 443.
+up 845, degraded 84, down 21, idle 462.
 
-Currently down (23):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 18% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | 37% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 79% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 67% | 69% |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 36% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 87% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 64% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 77% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
-| `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 67% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 82% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 54% | 39% |
-| `openai/gpt-oss-120b` | `together` | Together | 76% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 16% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 76% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 44% | 37% |
+| `openai/gpt-oss-120b` | `together` | Together | 59% | n/a |
 | `openai/gpt-oss-120b` | `mara` | Mara | n/a | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 72% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 71% | 100% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 64% | 100% |
-| plus 8 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 79% | 98% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 69% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T10:31:35+00:00 UTC)
+## Current status (2026-09-29T10:46:16+00:00 UTC)
 
 460 models polled, 1412 inference endpoints:
-up 889, degraded 99, down 25, idle 399.
+up 888, degraded 99, down 22, idle 403.
 
-Currently down (25):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | 28% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 48% | 47% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 73% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | 96% |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 78% | 88% |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 48% | 48% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 68% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 50% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | 56% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
 | `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
-| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 76% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 66% | 76% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 80% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 69% | 68% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 56% | 57% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 11% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 0% | n/a |
-| plus 10 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 73% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 1% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 0% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

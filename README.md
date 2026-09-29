@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T01:16:43+00:00 UTC)
+## Current status (2026-09-29T01:31:05+00:00 UTC)
 
 460 models polled, 1412 inference endpoints:
-up 892, degraded 89, down 15, idle 416.
+up 875, degraded 91, down 17, idle 429.
 
-Currently down (15):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | 53% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 33% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 73% |
-| `openai/gpt-5.2` | `openai` | OpenAI | 63% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 36% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 20% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 41% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 45% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 55% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 46% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 61% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 65% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 54% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 72% |
+| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 72% | 97% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 71% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 77% | 59% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 79% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 35% | 34% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 60% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 60% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 50% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 29% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 27% | 89% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 55% | 37% |
+| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 80% | 59% |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 65% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

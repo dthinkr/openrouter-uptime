@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T15:00:41+00:00 UTC)
+## Current status (2026-09-29T15:16:15+00:00 UTC)
 
 460 models polled, 1408 inference endpoints:
-up 856, degraded 127, down 50, idle 375.
+up 862, degraded 121, down 41, idle 384.
 
-Currently down (50):
+Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | n/a |
-| `anthropic/claude-fable-5` | `claude-on-aws` | Claude Platform on AWS | 17% | n/a |
-| `anthropic/claude-fable-5` | `azure` | Azure | 2% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 77% | 100% |
-| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 63% | 100% |
-| `anthropic/claude-opus-4.6` | `claude-on-aws` | Claude Platform on AWS | 13% | 13% |
-| `anthropic/claude-opus-4.6` | `azure/global` | Azure | 44% | n/a |
-| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 75% | 100% |
-| `anthropic/claude-opus-4.7` | `claude-on-aws` | Claude Platform on AWS | 12% | 10% |
-| `anthropic/claude-opus-4.8` | `claude-on-aws` | Claude Platform on AWS | 13% | 12% |
-| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 17% | 19% |
-| `anthropic/claude-opus-5.5` | `claude-on-aws` | Claude Platform on AWS | 18% | 14% |
-| `anthropic/claude-sonnet-4.5` | `claude-on-aws` | Claude Platform on AWS | 40% | n/a |
-| `anthropic/claude-sonnet-4.6` | `claude-on-aws` | Claude Platform on AWS | 15% | 12% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 23% | n/a |
-| plus 35 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
+| `anthropic/claude-opus-4.6` | `claude-on-aws` | Claude Platform on AWS | 40% | 100% |
+| `anthropic/claude-opus-4.7` | `claude-on-aws` | Claude Platform on AWS | 53% | 100% |
+| `anthropic/claude-opus-4.8` | `claude-on-aws` | Claude Platform on AWS | 52% | 100% |
+| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 67% | 100% |
+| `anthropic/claude-opus-5.5` | `claude-on-aws` | Claude Platform on AWS | 66% | 100% |
+| `anthropic/claude-sonnet-4.6` | `claude-on-aws` | Claude Platform on AWS | 61% | 100% |
+| `anthropic/claude-sonnet-5` | `claude-on-aws` | Claude Platform on AWS | 65% | 100% |
+| `anthropic/claude-sonnet-5.5` | `claude-on-aws` | Claude Platform on AWS | 56% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 61% | 64% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 60% | 60% |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 56% | 76% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 77% |
+| plus 26 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T07:45:37+00:00 UTC)
+## Current status (2026-09-29T08:02:29+00:00 UTC)
 
 460 models polled, 1412 inference endpoints:
-up 874, degraded 105, down 19, idle 414.
+up 867, degraded 110, down 18, idle 417.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 16% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 79% | 63% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 79% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 67% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 73% | 100% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
-| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 79% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 70% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 69% | 57% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 73% | 100% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 8% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 46% | 41% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 67% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 78% | n/a |
-| plus 4 more | | | | |
+| `minimax/minimax-m3` | `mara` | Mara | n/a | n/a |
+| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 75% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 39% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 79% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 44% |
+| `openai/gpt-oss-120b` | `mara` | Mara | n/a | n/a |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 80% | 74% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 51% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 78% | 100% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 69% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

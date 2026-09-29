@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T18:00:59+00:00 UTC)
+## Current status (2026-09-29T18:15:19+00:00 UTC)
 
 464 models polled, 1422 inference endpoints:
-up 896, degraded 88, down 27, idle 411.
+up 895, degraded 90, down 30, idle 407.
 
-Currently down (27):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 78% | 85% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 78% | 70% |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `venice` | Venice | 70% | 99% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 69% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 87% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 56% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 60% | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 76% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 32% | 37% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 79% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 65% | 81% |
+| `deepseek/deepseek-v4-flash` | `venice` | Venice | 71% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 72% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 100% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 49% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 45% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 73% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 74% | 69% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 72% | 81% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 67% | 66% |
 | `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 74% | 100% |
 | `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 72% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | n/a | n/a |
-| plus 12 more | | | | |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

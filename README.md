@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T01:46:32+00:00 UTC)
+## Current status (2026-09-30T02:00:48+00:00 UTC)
 
 464 models polled, 1427 inference endpoints:
-up 865, degraded 72, down 22, idle 468.
+up 862, degraded 82, down 23, idle 460.
 
-Currently down (22):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 0% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 69% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 76% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 74% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 70% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 71% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 68% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `baidu/fp8` | Baidu | 78% | 72% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 54% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 62% | 56% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 0% | n/a |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 79% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 76% | 52% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 83% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 49% |
 | `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 66% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 50% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 67% | 69% |
-| `xiaomi/mimo-v2.5` | `venice/fp8` | Venice | 76% | 88% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 49% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 70% | 65% |
-| plus 7 more | | | | |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 71% | 84% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

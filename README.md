@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T22:30:52+00:00 UTC)
+## Current status (2026-09-30T22:46:28+00:00 UTC)
 
 464 models polled, 1421 inference endpoints:
-up 881, degraded 82, down 23, idle 435.
+up 890, degraded 72, down 19, idle 440.
 
-Currently down (23):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 75% | 64% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 46% | 10% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 56% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 73% | 46% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 100% |
-| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 2% |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 52% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 35% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 22% | 28% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 67% | 77% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 74% | 25% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 72% | 94% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 9% | n/a |
-| plus 8 more | | | | |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 76% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 1% | 2% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 44% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 70% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 74% | 96% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 100% |
+| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 63% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 27% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 22% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 77% | 90% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 62% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 75% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 59% | 84% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 67% | 95% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

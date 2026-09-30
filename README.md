@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T16:31:17+00:00 UTC)
+## Current status (2026-09-30T16:45:24+00:00 UTC)
 
 464 models polled, 1421 inference endpoints:
-up 855, degraded 147, down 28, idle 391.
+up 850, degraded 135, down 26, idle 410.
 
-Currently down (28):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 44% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 70% | 92% |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 55% | 93% |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 79% | 79% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 41% | 61% |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 18% | 10% |
-| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 54% | 14% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | n/a |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 66% | 1% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 64% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 65% | 64% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 74% | 32% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 46% | n/a |
-| plus 13 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 79% | 73% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 45% | n/a |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 8% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 23% | 1% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 99% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 100% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 47% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 63% | 99% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 44% | 99% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 66% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 5% |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 77% | 80% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 62% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 73% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

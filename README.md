@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T19:01:39+00:00 UTC)
+## Current status (2026-09-30T19:17:58+00:00 UTC)
 
 464 models polled, 1421 inference endpoints:
-up 874, degraded 104, down 23, idle 420.
+up 887, degraded 98, down 21, idle 415.
 
-Currently down (23):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 55% | 45% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 68% | 96% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 65% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 66% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 60% | 88% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 60% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 74% | 85% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 35% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 89% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 99% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 61% | 78% |
 | `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 60% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 81% |
-| `nvidia/nemotron-3.5-lightning` | `phala` | Phala | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 71% | 65% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 73% | n/a |
-| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 76% | 47% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 60% |
+| `nvidia/nemotron-3.5-lightning` | `phala` | Phala | 3% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 65% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 62% | n/a |
+| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 75% | 100% |
 | `perceptron/perceptron-mk1.5` | `perceptron` | Perceptron | n/a | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 74% | 70% |
-| plus 8 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 57% | 42% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

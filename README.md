@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T06:01:49+00:00 UTC)
+## Current status (2026-09-30T06:15:40+00:00 UTC)
 
 464 models polled, 1424 inference endpoints:
-up 862, degraded 91, down 16, idle 455.
+up 881, degraded 92, down 17, idle 434.
 
-Currently down (16):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 20% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 80% | 52% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baidu/fp8` | Baidu | 77% | 74% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 74% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 38% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 77% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 49% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | 69% |
-| `qwen/qwen3-235b-a22b-2507` | `streamlake` | StreamLake | 78% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 47% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 73% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 70% | 74% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 51% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 70% |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 79% | 86% |
+| `deepseek/deepseek-v4-flash-0731` | `baidu/fp8` | Baidu | 78% | 80% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 69% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 63% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 60% |
+| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | 67% |
+| `qwen/qwen3-235b-a22b-2507` | `streamlake` | StreamLake | 73% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 51% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 74% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 59% | 64% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 59% | 87% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

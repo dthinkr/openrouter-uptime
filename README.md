@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T20:17:45+00:00 UTC)
+## Current status (2026-09-30T20:33:19+00:00 UTC)
 
 464 models polled, 1421 inference endpoints:
-up 876, degraded 113, down 18, idle 414.
+up 877, degraded 102, down 20, idle 422.
 
-Currently down (18):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 25% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 28% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 31% | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 79% | 79% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 56% | 63% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 32% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 58% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 64% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 52% | 72% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 77% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 74% | n/a |
-| plus 3 more | | | | |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 58% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 100% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 61% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 68% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 60% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 73% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 18% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 79% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 46% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 53% | 51% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 44% | n/a |
+| `perceptron/perceptron-mk1.5` | `perceptron` | Perceptron | n/a | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

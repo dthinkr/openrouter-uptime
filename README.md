@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T00:01:45+00:00 UTC)
+## Current status (2026-09-30T00:15:33+00:00 UTC)
 
 464 models polled, 1427 inference endpoints:
-up 877, degraded 69, down 22, idle 459.
+up 874, degraded 71, down 26, idle 456.
 
-Currently down (22):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 73% | 71% |
-| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 59% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 73% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 26% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 72% | 100% |
-| `moonshotai/kimi-k2.6` | `moonshotai/int4` | Moonshot AI | 7% | 47% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 32% | n/a |
-| `moonshotai/kimi-k3` | `moonshotai/mxfp4` | Moonshot AI | 14% | 66% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 75% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 54% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 54% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 61% | n/a |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 63% | n/a |
+| `moonshotai/kimi-k2.6` | `moonshotai/int4` | Moonshot AI | 73% | 100% |
+| `moonshotai/kimi-k2.7-code` | `moonshotai/int4` | Moonshot AI | 56% | n/a |
+| `moonshotai/kimi-k3` | `moonshotai/mxfp4` | Moonshot AI | 65% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 61% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 68% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 61% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 70% | 93% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 72% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 74% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 58% | 100% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

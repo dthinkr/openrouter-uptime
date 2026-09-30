@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T02:31:09+00:00 UTC)
+## Current status (2026-09-30T02:45:39+00:00 UTC)
 
 464 models polled, 1427 inference endpoints:
-up 875, degraded 91, down 23, idle 438.
+up 880, degraded 84, down 25, idle 438.
 
-Currently down (23):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-sonnet-4.5` | `google-vertex/global` | Google | 61% | n/a |
+| `anthropic/claude-sonnet-4.5` | `google-vertex/global` | Google | 74% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 63% | 72% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 61% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 75% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 73% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 53% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | n/a |
 | `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 33% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 69% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 35% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 85% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 47% |
+| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | n/a |
 | `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 79% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 72% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 71% | 56% |
-| plus 8 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 76% | n/a |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 71% | 42% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T17:45:39+00:00 UTC)
+## Current status (2026-09-30T18:01:32+00:00 UTC)
 
 464 models polled, 1421 inference endpoints:
-up 855, degraded 122, down 21, idle 423.
+up 879, degraded 102, down 17, idle 423.
 
-Currently down (21):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 72% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 37% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 55% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 60% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 69% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 95% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 70% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 78% |
-| `nvidia/nemotron-3.5-lightning` | `phala` | Phala | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 68% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 60% | 0% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 64% | n/a |
-| `qwen/qwen-2.5-72b-instruct` | `deepinfra/fp8` | DeepInfra | 70% | n/a |
-| plus 6 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 58% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 75% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | n/a |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 44% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 82% |
+| `nvidia/nemotron-3.5-lightning` | `phala` | Phala | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 62% | 53% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 35% | n/a |
+| `perceptron/perceptron-mk1.5` | `perceptron` | Perceptron | n/a | n/a |
+| `qwen/qwen-2.5-72b-instruct` | `deepinfra/fp8` | DeepInfra | 67% | 50% |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 76% | 85% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 67% | 59% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 4% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

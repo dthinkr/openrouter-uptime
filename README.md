@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T06:46:05+00:00 UTC)
+## Current status (2026-09-30T07:01:28+00:00 UTC)
 
 464 models polled, 1424 inference endpoints:
-up 887, degraded 89, down 19, idle 429.
+up 878, degraded 97, down 21, idle 428.
 
-Currently down (19):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 35% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baidu/fp8` | Baidu | 78% | 81% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 47% | 33% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 58% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 99% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 80% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 49% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | 68% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 64% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 47% | 54% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 61% | 50% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 44% | 49% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 24% | n/a |
-| plus 4 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `baidu/fp8` | Baidu | 78% | 75% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 37% | n/a |
+| `google/gemma-4-26b-a4b-it` | `reka` | Reka | 76% | 58% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 76% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 79% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 19% | 72% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 44% | 57% |
+| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | 59% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 73% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 55% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `streamlake` | StreamLake | 79% | 85% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 64% | 33% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 48% | 38% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

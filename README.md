@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T15:31:31+00:00 UTC)
+## Current status (2026-09-30T15:46:34+00:00 UTC)
 
 464 models polled, 1422 inference endpoints:
-up 885, degraded 121, down 29, idle 387.
+up 880, degraded 120, down 29, idle 393.
 
 Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 69% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 55% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 100% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 50% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 38% | 97% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 98% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 69% | n/a |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 77% | 97% |
-| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 20% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | n/a | 0% |
-| `moonshotai/kimi-k3` | `phala` | Phala | 73% | 61% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 44% | 22% |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 72% | 40% |
-| `moonshotai/kimi-k3` | `alibaba` | Alibaba | 70% | 79% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 79% | 84% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 67% | n/a |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 77% | 61% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 42% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 70% | 98% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | n/a |
+| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 60% | 100% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 0% | n/a |
+| `moonshotai/kimi-k3` | `phala` | Phala | 39% | 99% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 4% | 56% |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 61% | n/a |
+| `moonshotai/kimi-k3` | `alibaba` | Alibaba | 55% | 99% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 70% | 68% |
 | plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

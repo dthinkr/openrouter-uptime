@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T19:17:58+00:00 UTC)
+## Current status (2026-09-30T19:32:00+00:00 UTC)
 
 464 models polled, 1421 inference endpoints:
-up 887, degraded 98, down 21, idle 415.
+up 901, degraded 92, down 20, idle 408.
 
-Currently down (21):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 68% | 96% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 76% | 68% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 56% | 35% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 35% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 89% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 99% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 61% | 78% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 60% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 60% |
-| `nvidia/nemotron-3.5-lightning` | `phala` | Phala | 3% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 65% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 62% | n/a |
-| `openai/gpt-oss-20b` | `novita/fp4` | Novita | 75% | 100% |
-| `perceptron/perceptron-mk1.5` | `perceptron` | Perceptron | n/a | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 57% | 42% |
-| plus 6 more | | | | |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 64% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 58% | 21% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 84% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 52% | 5% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 75% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 54% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 63% | n/a |
+| `perceptron/perceptron-mk1.5` | `perceptron` | Perceptron | 52% | 100% |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 78% | 75% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 58% | 64% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 79% | 73% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T20:30:35+00:00 UTC)
+## Current status (2026-10-01T20:47:59+00:00 UTC)
 
 464 models polled, 1421 inference endpoints:
-up 885, degraded 94, down 23, idle 419.
+up 899, degraded 78, down 23, idle 421.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `novita` | Novita | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 36% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 40% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 67% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 73% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 75% | n/a |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 72% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | 69% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 77% | 75% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 58% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 37% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 55% | 87% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 45% | 48% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 19% | n/a |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 46% | 40% |
+| `perceptron/perceptron-mk1` | `perceptron` | Perceptron | 80% | 76% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 69% | 85% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 51% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 65% | 61% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 54% | 86% |
+| `tencent/hy4-preview` | `tencent/fp8` | Tencent | 78% | n/a |
+| `tencent/hy4-preview` | `novita/fp8` | Novita | 71% | n/a |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

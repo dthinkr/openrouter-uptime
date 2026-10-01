@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T12:17:05+00:00 UTC)
+## Current status (2026-10-01T12:32:04+00:00 UTC)
 
 462 models polled, 1422 inference endpoints:
-up 914, degraded 94, down 14, idle 400.
+up 907, degraded 111, down 14, idle 390.
 
 Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | 26% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 35% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 69% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 56% | 62% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 75% | 94% |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 57% | 95% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 61% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 78% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 70% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 59% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 47% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 51% | 69% |
+| `meta/muse-glimmer-30b` | `phala` | Phala | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 38% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 75% |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 58% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 78% | 62% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 69% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 54% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

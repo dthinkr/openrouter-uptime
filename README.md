@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T11:01:36+00:00 UTC)
+## Current status (2026-10-01T11:18:09+00:00 UTC)
 
 462 models polled, 1422 inference endpoints:
-up 896, degraded 89, down 12, idle 425.
+up 907, degraded 98, down 13, idle 404.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 77% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 41% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 99% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 67% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 54% | 52% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 58% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 59% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 74% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 66% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 47% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 68% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 40% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 69% | 74% |
+| `nvidia/nemotron-3.5-lightning` | `phala` | Phala | 52% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 56% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 55% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 71% | 41% |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 34% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 78% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 71% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

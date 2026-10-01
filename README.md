@@ -85,26 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T08:00:57+00:00 UTC)
+## Current status (2026-10-01T08:16:35+00:00 UTC)
 
 462 models polled, 1421 inference endpoints:
-up 892, degraded 93, down 11, idle 425.
+up 892, degraded 96, down 19, idle 414.
 
-Currently down (11):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 11% | 14% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 38% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 60% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 80% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 88% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 51% | 47% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 72% | 27% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 65% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 63% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 100% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 70% | 76% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 55% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 61% | 62% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 72% | 11% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 68% | 59% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 71% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 78% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 56% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 71% | 100% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 79% | 51% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 58% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 73% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

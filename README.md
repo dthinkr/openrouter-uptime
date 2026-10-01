@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T08:16:35+00:00 UTC)
+## Current status (2026-10-01T08:31:34+00:00 UTC)
 
 462 models polled, 1421 inference endpoints:
-up 892, degraded 96, down 19, idle 414.
+up 913, degraded 93, down 17, idle 398.
 
-Currently down (19):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 38% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 32% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 100% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 70% | 76% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 55% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 61% | 62% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 72% | 11% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 68% | 59% |
-| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 71% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 78% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 56% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 71% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 79% | 51% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 58% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 73% | n/a |
-| plus 4 more | | | | |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 32% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 45% | 48% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 62% | 82% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 26% | n/a |
+| `minimax/minimax-m2.7` | `mara` | Mara | 72% | 96% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 100% |
+| `moonshotai/kimi-k2.6` | `decart/fp4` | Decart | 67% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 76% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 62% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 50% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 79% | 86% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

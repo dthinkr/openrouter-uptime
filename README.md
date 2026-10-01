@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T20:00:59+00:00 UTC)
+## Current status (2026-10-01T20:15:54+00:00 UTC)
 
 464 models polled, 1421 inference endpoints:
-up 888, degraded 100, down 23, idle 410.
+up 890, degraded 86, down 24, idle 421.
 
-Currently down (23):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `novita` | Novita | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 31% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 30% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 5% | 12% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | 63% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 85% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 24% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 67% | n/a |
 | `google/gemma-4-31b-it` | `sambanova` | SambaNova | n/a | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 9% | 19% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 59% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 23% | n/a |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 80% | 66% |
 | `minimax/minimax-m2.7` | `mara` | Mara | 0% | 0% |
 | `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 40% | 20% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 56% |
-| plus 8 more | | | | |
+| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 77% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 68% | 96% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 48% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 62% | 100% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 59% | 62% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T12:32:04+00:00 UTC)
+## Current status (2026-10-01T12:47:33+00:00 UTC)
 
 462 models polled, 1422 inference endpoints:
-up 907, degraded 111, down 14, idle 390.
+up 901, degraded 100, down 18, idle 403.
 
-Currently down (14):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | 26% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 47% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 51% | 69% |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 75% | 71% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 33% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 100% |
 | `meta/muse-glimmer-30b` | `phala` | Phala | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 38% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 75% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 78% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 58% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 78% | 62% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 69% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 54% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 39% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 75% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | 79% |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 38% | 70% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 14% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T04:47:28+00:00 UTC)
+## Current status (2026-10-01T05:00:50+00:00 UTC)
 
 462 models polled, 1421 inference endpoints:
-up 866, degraded 83, down 22, idle 450.
+up 858, degraded 91, down 14, idle 458.
 
-Currently down (22):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 83% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 79% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 79% | n/a |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 70% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 47% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 54% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 81% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 51% | n/a |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 21% | 57% |
-| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 51% | 48% |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 69% | 100% |
-| plus 7 more | | | | |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 6% | n/a |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 79% | 40% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 73% | 81% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 43% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 100% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 44% | n/a |
+| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 59% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 48% | 53% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 32% | 21% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 64% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 78% | 91% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 62% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

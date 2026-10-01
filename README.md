@@ -85,25 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T05:46:00+00:00 UTC)
+## Current status (2026-10-01T06:01:31+00:00 UTC)
 
 462 models polled, 1422 inference endpoints:
-up 869, degraded 97, down 10, idle 446.
+up 868, degraded 97, down 14, idle 443.
 
-Currently down (10):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `meta/muse-glimmer-30b` | `phala` | Phala | 76% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 56% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 76% | 65% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 70% | 56% |
-| `upstage/solar-pro4` | `upstage` | Upstage | 71% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 70% | 68% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 75% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
+| `meta/muse-glimmer-30b` | `phala` | Phala | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 57% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 64% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 74% | 66% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 78% | 66% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 62% | 90% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 72% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 72% | 80% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 68% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 73% | 66% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

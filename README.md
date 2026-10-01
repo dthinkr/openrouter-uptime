@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T09:31:57+00:00 UTC)
+## Current status (2026-10-01T09:45:37+00:00 UTC)
 
 462 models polled, 1422 inference endpoints:
-up 910, degraded 97, down 15, idle 400.
+up 913, degraded 86, down 13, idle 410.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 46% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 61% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 61% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 49% | 58% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 23% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 81% |
-| `nvidia/nemotron-3.5-lightning` | `phala` | Phala | 17% | 100% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 55% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 54% | 51% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 59% | 55% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 54% | 59% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 79% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 80% | 57% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 54% | 53% |
 | `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 78% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 74% | 69% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 75% | 79% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 80% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 78% | 100% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 76% | 64% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 68% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 67% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

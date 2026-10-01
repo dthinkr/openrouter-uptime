@@ -85,31 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-01T07:30:34+00:00 UTC)
+## Current status (2026-10-01T07:47:01+00:00 UTC)
 
 462 models polled, 1421 inference endpoints:
-up 881, degraded 104, down 17, idle 419.
+up 895, degraded 89, down 10, idle 427.
 
-Currently down (17):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | 12% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 74% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 57% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | n/a |
-| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 68% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 79% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 21% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 48% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 62% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | 100% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 58% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 61% | n/a |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 64% | n/a |
-| plus 2 more | | | | |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 48% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 62% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 75% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 58% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 79% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 64% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

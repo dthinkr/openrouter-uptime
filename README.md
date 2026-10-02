@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-02T20:00:43+00:00 UTC)
+## Current status (2026-10-02T20:16:09+00:00 UTC)
 
 465 models polled, 1421 inference endpoints:
-up 907, degraded 76, down 20, idle 418.
+up 894, degraded 91, down 23, idle 413.
 
-Currently down (20):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 48% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 49% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 65% | 97% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 59% | 100% |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 53% | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 69% | 100% |
 | `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 44% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 43% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | 87% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 45% | 67% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 79% | 71% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 50% |
-| `openai/gpt-oss-120b` | `together` | Together | 71% | 72% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 63% | 20% |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 71% | 72% |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 77% | 97% |
-| plus 5 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 53% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 56% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 98% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 77% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 67% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `sambanova-turbo` | SambaNova | 72% | 50% |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 12% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 56% | 57% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-02T01:47:25+00:00 UTC)
+## Current status (2026-10-02T02:00:29+00:00 UTC)
 
 464 models polled, 1420 inference endpoints:
-up 890, degraded 63, down 18, idle 449.
+up 882, degraded 64, down 18, idle 456.
 
 Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 25% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 70% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 60% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 30% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 69% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 35% | 0% |
 | `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 54% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 100% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 80% | 98% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 85% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 42% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 52% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 44% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 16% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 65% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 64% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 77% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 35% | 27% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 79% | 15% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 77% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 74% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 15% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 63% | 72% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 18% | n/a |
 | plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

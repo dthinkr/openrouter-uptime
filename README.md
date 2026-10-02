@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-02T03:02:22+00:00 UTC)
+## Current status (2026-10-02T03:17:43+00:00 UTC)
 
 464 models polled, 1420 inference endpoints:
-up 878, degraded 79, down 14, idle 449.
+up 879, degraded 85, down 16, idle 440.
 
-Currently down (14):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 53% | 14% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 26% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 57% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 25% | n/a |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 33% | 36% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 63% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 79% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 52% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 75% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 62% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 70% | 58% |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 79% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 24% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 74% | 65% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 74% | 65% |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 36% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 66% | 33% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 67% | 77% |
+| `xiaomi/mimo-v2.6-flash` | `novita/fp8` | Novita | 77% | 99% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 43% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 83% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

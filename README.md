@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-02T09:31:34+00:00 UTC)
+## Current status (2026-10-02T09:47:34+00:00 UTC)
 
 464 models polled, 1418 inference endpoints:
-up 904, degraded 85, down 18, idle 411.
+up 918, degraded 85, down 14, idle 401.
 
-Currently down (18):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 67% | 100% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 45% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 52% | n/a |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 72% | 40% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 43% | 82% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | n/a |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 70% | 100% |
 | `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 87% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 68% | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 70% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 41% | 36% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 62% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
-| `qwen/qwen3.8-27b` | `reka` | Reka | 34% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 66% | 89% |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 44% | 47% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 77% | 49% |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 78% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 36% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 77% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 78% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 80% | n/a |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

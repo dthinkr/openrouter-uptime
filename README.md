@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-02T19:47:14+00:00 UTC)
+## Current status (2026-10-02T20:00:43+00:00 UTC)
 
 465 models polled, 1421 inference endpoints:
-up 914, degraded 77, down 17, idle 413.
+up 907, degraded 76, down 20, idle 418.
 
-Currently down (17):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 13% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 48% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 2% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 49% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 44% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 5% | n/a |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 65% | 97% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 59% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 44% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 43% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | 87% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 45% | 67% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 79% | 71% |
 | `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 44% | 50% |
-| `openai/gpt-oss-120b` | `together` | Together | 71% | n/a |
-| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 80% | 84% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 5% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 79% | 77% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 72% | 74% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 73% | n/a |
-| plus 2 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 50% |
+| `openai/gpt-oss-120b` | `together` | Together | 71% | 72% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 63% | 20% |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 71% | 72% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 77% | 97% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

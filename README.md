@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-02T12:30:51+00:00 UTC)
+## Current status (2026-10-02T12:47:51+00:00 UTC)
 
 464 models polled, 1417 inference endpoints:
-up 899, degraded 102, down 21, idle 395.
+up 918, degraded 86, down 23, idle 390.
 
-Currently down (21):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 52% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 75% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 73% | 100% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 66% | 100% |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 43% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 48% | 48% |
-| `qwen/qwen3.8-27b` | `reka` | Reka | 65% | n/a |
-| `tencent/hy4-preview` | `novita/fp8` | Novita | 75% | 76% |
-| `tencent/hy4-preview` | `siliconflow/fp8` | SiliconFlow | 66% | 100% |
-| `tencent/hy4-preview` | `tencent/fp8` | Tencent | 76% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 40% | 97% |
-| `xiaomi/mimo-v2.6-flash` | `novita/fp8` | Novita | 79% | 91% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 56% | 63% |
-| plus 6 more | | | | |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 62% | 97% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 65% | 59% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 20% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 68% | 50% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 49% | 50% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 45% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 77% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 57% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
+| `qwen/qwen3.8-27b` | `reka` | Reka | 61% | n/a |
+| `tencent/hy4-preview` | `novita/fp8` | Novita | 73% | 74% |
+| `tencent/hy4-preview` | `siliconflow/fp8` | SiliconFlow | 74% | 100% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

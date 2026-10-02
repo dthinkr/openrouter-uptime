@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-02T10:17:44+00:00 UTC)
+## Current status (2026-10-02T10:32:41+00:00 UTC)
 
 464 models polled, 1418 inference endpoints:
-up 915, degraded 87, down 21, idle 395.
+up 898, degraded 86, down 19, idle 415.
 
-Currently down (21):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 79% | 100% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 30% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 56% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 99% |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
-| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 72% | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 77% | 76% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 50% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 63% | 19% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 78% | 94% |
-| `qwen/qwen3.8-27b` | `reka` | Reka | 44% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 77% | 59% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 31% | n/a |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 99% |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 72% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 77% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 37% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 55% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
 | `tencent/hy4-preview` | `novita/fp8` | Novita | 77% | 79% |
-| `tencent/hy4-preview` | `tencent/fp8` | Tencent | 77% | 72% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| plus 6 more | | | | |
+| `tencent/hy4-preview` | `siliconflow/fp8` | SiliconFlow | 71% | 100% |
+| `tencent/hy4-preview` | `tencent/fp8` | Tencent | 75% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 78% | 100% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 69% | 65% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-02T08:48:04+00:00 UTC)
+## Current status (2026-10-02T09:02:00+00:00 UTC)
 
 464 models polled, 1418 inference endpoints:
-up 908, degraded 76, down 13, idle 421.
+up 914, degraded 82, down 13, idle 409.
 
 Currently down (13):
 
@@ -96,16 +96,16 @@ Currently down (13):
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 73% | 100% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 57% | 88% |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 56% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 42% | 50% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 65% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 80% | 96% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 56% | 44% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 77% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 51% | 98% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | n/a |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | 0% |
+| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 65% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 54% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 52% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 53% | 85% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 76% | 61% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 49% | 54% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 79% |
 | `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

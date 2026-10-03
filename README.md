@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T22:47:21+00:00 UTC)
+## Current status (2026-10-03T23:02:59+00:00 UTC)
 
 466 models polled, 1425 inference endpoints:
-up 865, degraded 69, down 20, idle 471.
+up 856, degraded 76, down 16, idle 477.
 
-Currently down (20):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 59% | 77% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 49% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 46% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 83% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 68% | 56% |
 | `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
-| `moonshotai/kimi-k3` | `inference-net/fp4` | InferenceNet | 76% | 100% |
-| `moonshotai/kimi-k3` | `inference-net/fast` | InferenceNet | 23% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 49% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 79% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 70% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 72% | 98% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 95% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 49% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 35% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 76% | 71% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 52% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 75% | n/a |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 33% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `alibaba` | Alibaba | 77% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 69% | 90% |
-| plus 5 more | | | | |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 29% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 70% | 98% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 75% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

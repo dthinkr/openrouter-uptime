@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T04:15:27+00:00 UTC)
+## Current status (2026-10-03T04:32:10+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 860, degraded 83, down 14, idle 463.
+up 861, degraded 82, down 13, idle 464.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 57% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 36% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `ionstream` | Ionstream | 80% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 40% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 62% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 33% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 74% |
 | `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 58% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 9% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 98% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 76% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 56% | 58% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 77% | n/a |
 | `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 60% | 46% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 72% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 60% | 72% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 71% |
 | `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
@@ -116,8 +115,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-09 21:31** — provider `inference-net` changed its status page.
-- **2026-09-10 02:01** — **5 models added to the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 - **2026-09-11 13:01** — **3 models added to the catalog in one poll**: `~openai/gpt-astra-latest`, `~openai/gpt-luna-latest`, `~openai/gpt-terra-latest`.
 - **2026-09-18 00:45** — provider `typesafe` changed its terms of service url.
 - **2026-09-18 00:45** — provider `typesafe` changed its privacy policy url.
@@ -128,6 +125,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-09-22 18:15** — **3 models added to the catalog in one poll**: `openai/gpt-6-sol`, `openai/gpt-6-sol-pro`, `openai/gpt-6-sol:batch`.
 - **2026-09-22 18:31** — **5 models added to the catalog in one poll**: `openai/gpt-6-luna`, `openai/gpt-6-luna-pro`, `openai/gpt-6-luna-pro:batch`, `openai/gpt-6-luna:batch`, `openai/gpt-6-sol-pro:batch`.
 - **2026-09-29 17:48** — **4 models added to the catalog in one poll**: `openai/gpt-6.1-sol`, `openai/gpt-6.1-sol-pro`, `openai/gpt-6.1-sol-pro:batch`, `openai/gpt-6.1-sol:batch`.
+- **2026-10-03 04:32** — provider `tenstorrent` changed its terms of service url.
+- **2026-10-03 04:32** — provider `tenstorrent` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

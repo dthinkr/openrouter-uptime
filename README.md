@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T22:16:00+00:00 UTC)
+## Current status (2026-10-03T22:32:32+00:00 UTC)
 
-466 models polled, 1424 inference endpoints:
-up 854, degraded 81, down 21, idle 468.
+466 models polled, 1425 inference endpoints:
+up 866, degraded 68, down 22, idle 469.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 73% | 98% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 44% | 87% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 63% | 60% |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 59% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 41% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 65% | 6% |
-| `openai/gpt-oss-120b` | `together` | Together | 74% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 38% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 44% | 28% |
-| `qwen/qwen3.5-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 73% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `alibaba` | Alibaba | 76% | n/a |
-| plus 6 more | | | | |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 61% | 94% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 46% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 97% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 79% | n/a |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 100% |
+| `moonshotai/kimi-k3` | `inference-net/fast` | InferenceNet | 72% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 42% | 37% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 57% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 41% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 64% | 31% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

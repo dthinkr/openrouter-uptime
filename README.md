@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T02:32:55+00:00 UTC)
+## Current status (2026-10-03T02:47:04+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 883, degraded 70, down 16, idle 451.
+up 875, degraded 68, down 13, idle 464.
 
-Currently down (16):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 73% | 100% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 23% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 59% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 27% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 8% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 22% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 62% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 59% | 70% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 76% | n/a |
 | `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 59% | n/a |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 76% | 97% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 51% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 74% | 88% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 58% | 93% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 47% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 64% | n/a |
 | `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 72% | 71% |
-| `z-ai/glm-5.2` | `morph/fp8` | Morph | 67% | n/a |
-| plus 1 more | | | | |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 69% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

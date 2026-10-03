@@ -85,27 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T02:47:04+00:00 UTC)
+## Current status (2026-10-03T03:02:10+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 875, degraded 68, down 13, idle 464.
+up 878, degraded 62, down 15, idle 465.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 22% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 62% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 59% | 70% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 76% | n/a |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 47% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 40% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 64% | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 79% | 69% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 14% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 67% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 77% | n/a |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 47% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 46% | 74% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 36% | n/a |
 | `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 69% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 60% | 62% |
 | `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

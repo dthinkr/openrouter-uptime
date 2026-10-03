@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T08:47:14+00:00 UTC)
+## Current status (2026-10-03T09:02:10+00:00 UTC)
 
 466 models polled, 1421 inference endpoints:
-up 910, degraded 68, down 20, idle 423.
+up 937, degraded 70, down 14, idle 400.
 
-Currently down (20):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-2-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 73% |
-| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 68% | 99% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 56% | n/a |
+| `amazon/nova-2-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 54% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 44% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 76% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 55% | 84% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 73% | 95% |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 59% | 48% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 71% | 48% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 48% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 68% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 80% | 96% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
-| plus 5 more | | | | |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 54% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 99% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 65% | 100% |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 79% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 54% | 42% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 74% | 63% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 62% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

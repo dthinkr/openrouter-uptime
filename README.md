@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T10:17:41+00:00 UTC)
+## Current status (2026-10-03T10:33:11+00:00 UTC)
 
 466 models polled, 1421 inference endpoints:
-up 896, degraded 84, down 21, idle 420.
+up 911, degraded 82, down 24, idle 404.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-2-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 69% | 83% |
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | n/a |
+| `amazon/nova-2-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | 100% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 49% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 63% | 59% |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 40% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 43% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `relace/fp4` | Relace | 75% | 54% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 69% | 74% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 97% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 100% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 79% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 80% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 69% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 73% | 35% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| plus 6 more | | | | |
+| `deepseek/deepseek-v4-flash` | `relace/fp4` | Relace | 66% | 70% |
+| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 48% | 23% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 78% | n/a |
+| `deepseek/deepseek-v4-pro` | `relace/fp4` | Relace | 72% | 38% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 42% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `relace/fp4` | Relace | 67% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 61% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 77% |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 73% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 68% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 74% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

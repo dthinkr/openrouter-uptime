@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T14:45:41+00:00 UTC)
+## Current status (2026-10-03T15:00:55+00:00 UTC)
 
 466 models polled, 1422 inference endpoints:
-up 866, degraded 90, down 22, idle 444.
+up 864, degraded 93, down 18, idle 447.
 
-Currently down (22):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-2-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 74% | 53% |
-| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 71% | 87% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 79% | 89% |
+| `amazon/nova-2-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 90% |
+| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 72% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 75% | 91% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 67% | 24% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 67% | n/a |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 73% | 50% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 57% | n/a |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 57% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 66% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 50% | 77% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 73% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 57% | n/a |
 | `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 54% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 77% | 48% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 12% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 18% | 17% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 80% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 33% | 53% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 24% | 21% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 66% | n/a |
+| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 75% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 73% | 88% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,26 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T03:47:51+00:00 UTC)
+## Current status (2026-10-04T04:02:13+00:00 UTC)
 
 466 models polled, 1436 inference endpoints:
-up 892, degraded 55, down 12, idle 477.
+up 879, degraded 55, down 9, idle 493.
 
-Currently down (12):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 34% | 32% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | 50% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 75% | n/a |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 78% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 70% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 41% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 51% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 63% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 66% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 66% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 69% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 45% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 74% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 69% |
 | `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

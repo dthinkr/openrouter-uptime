@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T22:16:25+00:00 UTC)
+## Current status (2026-10-04T22:30:53+00:00 UTC)
 
 466 models polled, 1437 inference endpoints:
-up 884, degraded 78, down 12, idle 463.
+up 874, degraded 80, down 13, idle 470.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | 0% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 49% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 74% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 76% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 65% | n/a |
-| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 41% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 76% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 64% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 18% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 65% | 7% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 58% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 46% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 73% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 50% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 25% |
+| `moonshotai/kimi-k3` | `relace/fp4` | Relace | n/a | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 39% | 32% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 52% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 40% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 33% | n/a |
+| `z-ai/glm-5.3` | `baseten/fast#fa2c2413c7#1` | BaseTen | 74% | n/a |
+| `z-ai/glm-5.3` | `baseten/fast#fa2c2413c7#2` | BaseTen | 48% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

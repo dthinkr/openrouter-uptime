@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T00:00:30+00:00 UTC)
+## Current status (2026-10-04T00:17:14+00:00 UTC)
 
 466 models polled, 1425 inference endpoints:
-up 843, degraded 85, down 15, idle 482.
+up 837, degraded 94, down 14, idle 480.
 
-Currently down (15):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 62% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 89% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 70% | n/a |
-| `minimax/minimax-m2.7` | `groq` | Groq | 78% | n/a |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 50% | 63% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 57% | 98% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 93% |
 | `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 45% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 40% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 63% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 76% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 39% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 73% | 17% |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 77% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `alibaba` | Alibaba | 72% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `novita` | Novita | 68% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 65% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 27% | 15% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 70% | 65% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 71% | n/a |
 | `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

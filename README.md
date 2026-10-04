@@ -85,24 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T11:18:16+00:00 UTC)
+## Current status (2026-10-04T11:33:17+00:00 UTC)
 
 466 models polled, 1437 inference endpoints:
-up 888, degraded 74, down 9, idle 466.
+up 879, degraded 67, down 12, idle 479.
 
-Currently down (9):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | 0% |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 69% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 49% | 100% |
-| `moonshotai/kimi-k3` | `relace/fp4` | Relace | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 42% | 45% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 79% | 72% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 46% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 56% | 49% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | 0% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | 49% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 46% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 39% | 32% |
+| `openai/gpt-oss-120b` | `together` | Together | 72% | 47% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 62% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 71% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 72% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 54% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 71% | 70% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 56% | 63% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

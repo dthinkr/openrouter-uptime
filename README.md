@@ -85,28 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T20:46:42+00:00 UTC)
+## Current status (2026-10-04T21:01:10+00:00 UTC)
 
 466 models polled, 1437 inference endpoints:
-up 886, degraded 74, down 13, idle 464.
+up 885, degraded 69, down 11, idle 472.
 
-Currently down (13):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 43% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 42% |
-| `google/gemini-3-pro-image` | `google-vertex/global` | Google | 64% | 67% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 49% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 47% | 87% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 58% | n/a |
+| `google/gemini-3-pro-image` | `google-vertex/global` | Google | 71% | 85% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 96% |
 | `moonshotai/kimi-k3` | `relace/fp4` | Relace | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 53% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | 58% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 79% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 68% | 100% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | n/a | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 71% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 78% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 59% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 75% | 100% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 69% | 100% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | n/a | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 50% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 65% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

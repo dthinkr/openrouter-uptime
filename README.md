@@ -85,26 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T08:15:41+00:00 UTC)
+## Current status (2026-10-04T08:32:25+00:00 UTC)
 
-466 models polled, 1438 inference endpoints:
-up 878, degraded 76, down 11, idle 473.
+466 models polled, 1437 inference endpoints:
+up 875, degraded 73, down 13, idle 476.
 
-Currently down (11):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | 74% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 42% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 39% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 80% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 28% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 52% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 48% | 70% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 51% | 60% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 36% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 54% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 75% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 32% | 24% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 48% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 70% | 89% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 54% | 62% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
+| `z-ai/glm-5.3-flash` | `inceptron/fp8` | Inceptron | 80% | 71% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T18:15:39+00:00 UTC)
+## Current status (2026-10-04T18:31:36+00:00 UTC)
 
 466 models polled, 1435 inference endpoints:
-up 865, degraded 86, down 12, idle 472.
+up 867, degraded 88, down 12, idle 468.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 53% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 98% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 32% | 100% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 74% | 53% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 37% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 18% | 10% |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 30% | 25% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 79% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 66% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 52% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 64% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 56% | n/a |
+| `minimax/minimax-m2.5` | `minimax/fp8` | Minimax | 80% | n/a |
+| `moonshotai/kimi-k3` | `relace/fp4` | Relace | n/a | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 49% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 18% | 24% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 72% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 30% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 70% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

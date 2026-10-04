@@ -85,25 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T22:01:58+00:00 UTC)
+## Current status (2026-10-04T22:16:25+00:00 UTC)
 
 466 models polled, 1437 inference endpoints:
-up 889, degraded 66, down 10, idle 472.
+up 884, degraded 78, down 12, idle 463.
 
-Currently down (10):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 51% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 55% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 63% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | 0% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 49% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 74% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 76% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 65% | n/a |
 | `moonshotai/kimi-k3` | `relace/fp4` | Relace | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 46% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 25% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 78% | 83% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 41% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 76% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 64% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 18% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 65% | 7% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 58% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,26 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T07:00:51+00:00 UTC)
+## Current status (2026-10-04T07:17:26+00:00 UTC)
 
 466 models polled, 1437 inference endpoints:
-up 881, degraded 60, down 11, idle 485.
+up 887, degraded 62, down 11, idle 477.
 
 Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 40% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 53% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 76% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 71% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 47% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 84% |
 | `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 36% | 35% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 39% | 18% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 63% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 39% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 49% | 74% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 68% |
 | `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
+| `z-ai/glm-5.3` | `baseten/fast#fa2c2413c7#1` | BaseTen | 72% | n/a |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

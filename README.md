@@ -85,25 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T02:47:18+00:00 UTC)
+## Current status (2026-10-04T03:02:30+00:00 UTC)
 
 466 models polled, 1436 inference endpoints:
-up 848, degraded 82, down 10, idle 496.
+up 864, degraded 72, down 15, idle 485.
 
-Currently down (10):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 75% |
-| `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | 78% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 37% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 74% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 57% | 97% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 72% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 73% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 81% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 67% | n/a |
+| `minimax/minimax-m2.7` | `groq` | Groq | 70% | n/a |
+| `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | 68% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 45% | 41% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 80% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | 43% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 76% | 100% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 68% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 78% | 50% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 69% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `dekallm` | DekaLLM | 66% | n/a |
+| `z-ai/glm-5.3-flash` | `io-net/fp8` | Io Net | 8% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

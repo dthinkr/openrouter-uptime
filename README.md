@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T23:46:42+00:00 UTC)
+## Current status (2026-10-04T00:00:30+00:00 UTC)
 
 466 models polled, 1425 inference endpoints:
-up 860, degraded 77, down 20, idle 468.
+up 843, degraded 85, down 15, idle 482.
 
-Currently down (20):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 54% | 100% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 44% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 68% | 88% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 62% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 89% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 70% | n/a |
+| `minimax/minimax-m2.7` | `groq` | Groq | 78% | n/a |
 | `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 39% | 32% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 79% | 100% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 44% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 68% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `deepinfra/fp8` | DeepInfra | 68% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `parasail/fp8` | Parasail | 77% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 30% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `alibaba` | Alibaba | 50% | n/a |
-| plus 5 more | | | | |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 45% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 40% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 63% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 77% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `alibaba` | Alibaba | 72% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `novita` | Novita | 68% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | n/a |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T01:33:09+00:00 UTC)
+## Current status (2026-10-04T01:45:23+00:00 UTC)
 
 466 models polled, 1437 inference endpoints:
-up 835, degraded 92, down 24, idle 486.
+up 849, degraded 72, down 25, idle 491.
 
-Currently down (24):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 77% | 77% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 29% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 41% | 32% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 61% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 76% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 78% | 82% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 70% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 75% | n/a |
-| `tencent/hy3` | `tencent/fp8` | Tencent | 56% | 59% |
-| `tencent/hy3` | `novita` | Novita | 40% | 45% |
-| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 30% | n/a |
-| `tencent/hy3` | `phala` | Phala | 33% | n/a |
-| plus 9 more | | | | |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 78% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 28% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 78% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 85% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 79% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 39% | 35% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 68% | 30% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 79% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 42% | 11% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 63% | n/a |
+| `tencent/hy3` | `tencent/fp8` | Tencent | 59% | 69% |
+| `tencent/hy3` | `novita` | Novita | 48% | 57% |
+| `tencent/hy3` | `gmicloud/bf16` | GMICloud | 42% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

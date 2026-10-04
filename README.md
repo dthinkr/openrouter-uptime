@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T18:02:00+00:00 UTC)
+## Current status (2026-10-04T18:15:39+00:00 UTC)
 
 466 models polled, 1435 inference endpoints:
-up 866, degraded 83, down 13, idle 473.
+up 865, degraded 86, down 12, idle 472.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | 35% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 76% | 97% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 54% | 97% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | 93% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 43% | 7% |
-| `moonshotai/kimi-k3` | `relace/fp4` | Relace | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 71% | 74% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 22% | 16% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 70% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 72% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 63% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 77% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 21% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 53% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 98% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 32% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 74% | 53% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 37% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 18% | 10% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 30% | 25% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 79% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 66% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

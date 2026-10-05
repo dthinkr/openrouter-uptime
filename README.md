@@ -85,25 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T10:02:57+00:00 UTC)
+## Current status (2026-10-05T10:18:12+00:00 UTC)
 
 466 models polled, 1423 inference endpoints:
-up 913, degraded 101, down 10, idle 399.
+up 939, degraded 99, down 16, idle 369.
 
-Currently down (10):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 74% | 25% |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `meta-llama/llama-3.2-3b-instruct` | `cloudflare` | Cloudflare | 79% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 48% | 41% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 79% | 100% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 74% | 100% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 76% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 65% |
-| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 57% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 58% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 62% | 97% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 71% | 100% |
+| `meta-llama/llama-3.2-3b-instruct` | `cloudflare` | Cloudflare | 67% | 47% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 77% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 26% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 76% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 51% | 60% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 20% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 74% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 80% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 75% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 68% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

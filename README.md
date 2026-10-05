@@ -85,26 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T09:16:21+00:00 UTC)
+## Current status (2026-10-05T09:30:58+00:00 UTC)
 
 466 models polled, 1424 inference endpoints:
-up 900, degraded 96, down 11, idle 417.
+up 901, degraded 100, down 8, idle 415.
 
-Currently down (11):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 75% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 86% |
-| `meta-llama/llama-3.2-3b-instruct` | `cloudflare` | Cloudflare | 72% | 57% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 71% | 2% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 68% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 53% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 77% | 99% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 71% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 69% |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 79% | n/a |
+| `meta-llama/llama-3.2-3b-instruct` | `cloudflare` | Cloudflare | 61% | 62% |
+| `moonshotai/kimi-k3` | `makora` | Makora | 62% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 51% | 49% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 65% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 80% | 88% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 64% | 81% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 65% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T14:30:19+00:00 UTC)
+## Current status (2026-10-05T14:47:42+00:00 UTC)
 
 466 models polled, 1422 inference endpoints:
-up 886, degraded 128, down 20, idle 388.
+up 891, degraded 131, down 17, idle 383.
 
-Currently down (20):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 71% | 100% |
-| `google/gemma-4-31b-it` | `venice/fp4` | Venice | 73% | 78% |
-| `meta-llama/llama-4-maverick` | `novita/fp8` | Novita | 64% | 95% |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 17% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 42% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 87% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 72% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 65% | 66% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 45% | 42% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 70% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 79% | 99% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 23% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 24% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| plus 5 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 74% | 45% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 71% | 97% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 100% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 43% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 73% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 71% | 80% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 77% | 8% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 54% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 52% | 31% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 79% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 55% | 58% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 62% | n/a |
+| `z-ai/glm-4.6` | `venice/fp4` | Venice | 28% | 17% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 71% | 53% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 35% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T07:17:02+00:00 UTC)
+## Current status (2026-10-05T07:32:10+00:00 UTC)
 
 466 models polled, 1424 inference endpoints:
-up 896, degraded 100, down 20, idle 408.
+up 899, degraded 98, down 18, idle 409.
 
-Currently down (20):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 77% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 80% | 49% |
 | `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 71% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 80% |
-| `openai/gpt-5.6-sol` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 23% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 65% | 54% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 64% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 76% | 84% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 74% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | n/a |
-| plus 5 more | | | | |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 68% | 45% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 77% | 100% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 79% | n/a |
+| `openai/gpt-5.6-sol` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 10% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 47% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 71% | 72% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 70% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 62% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T22:30:29+00:00 UTC)
+## Current status (2026-10-05T22:45:26+00:00 UTC)
 
 464 models polled, 1420 inference endpoints:
-up 873, degraded 97, down 14, idle 436.
+up 900, degraded 69, down 21, idle 430.
 
-Currently down (14):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 80% | 83% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 47% | 22% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 67% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 98% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 70% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 80% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 66% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 74% |
-| `openai/gpt-oss-120b` | `together` | Together | 79% | 83% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 28% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 33% | 23% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 78% |
-| `z-ai/glm-5.3-flash` | `fireworks` | Fireworks | 61% | 5% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 79% | 96% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 63% | 91% |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 69% | 72% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 59% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 73% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 45% | 74% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 66% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 79% |
+| `openai/gpt-oss-120b` | `together` | Together | 67% | 100% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 79% | 55% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 63% | 30% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 77% | n/a |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 58% | 100% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 24% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

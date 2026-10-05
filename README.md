@@ -85,23 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T11:15:21+00:00 UTC)
+## Current status (2026-10-05T11:30:26+00:00 UTC)
 
 466 models polled, 1422 inference endpoints:
-up 904, degraded 97, down 8, idle 413.
+up 925, degraded 95, down 7, idle 395.
 
-Currently down (8):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 21% | 28% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 80% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 59% | 62% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 57% | 37% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 77% | 63% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 79% | 100% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 68% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 74% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 17% | 13% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 67% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 47% | 44% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 70% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 57% | 62% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 80% | 76% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

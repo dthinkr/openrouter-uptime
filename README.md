@@ -85,27 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T11:03:04+00:00 UTC)
+## Current status (2026-10-05T11:15:21+00:00 UTC)
 
 466 models polled, 1422 inference endpoints:
-up 905, degraded 90, down 12, idle 415.
+up 904, degraded 97, down 8, idle 413.
 
-Currently down (12):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 62% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 61% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 74% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 23% | 10% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 77% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 56% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 79% | 30% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 65% | 69% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 77% | 98% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 58% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 69% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 21% | 28% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 59% | 62% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 57% | 37% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 77% | 63% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 79% | 100% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 68% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

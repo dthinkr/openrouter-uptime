@@ -85,28 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T22:17:58+00:00 UTC)
+## Current status (2026-10-05T22:30:29+00:00 UTC)
 
 464 models polled, 1420 inference endpoints:
-up 882, degraded 88, down 13, idle 437.
+up 873, degraded 97, down 14, idle 436.
 
-Currently down (13):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 58% | 54% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 97% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 73% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 73% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 73% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 65% | 61% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 57% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | n/a | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 62% | 99% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 21% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 81% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 77% | 86% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 80% | 83% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 47% | 22% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 67% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 98% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 70% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 80% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 66% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 74% |
+| `openai/gpt-oss-120b` | `together` | Together | 79% | 83% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 28% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 33% | 23% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 78% |
+| `z-ai/glm-5.3-flash` | `fireworks` | Fireworks | 61% | 5% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

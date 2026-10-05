@@ -85,26 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T11:46:22+00:00 UTC)
+## Current status (2026-10-05T12:03:16+00:00 UTC)
 
 466 models polled, 1422 inference endpoints:
-up 907, degraded 100, down 11, idle 404.
+up 925, degraded 89, down 14, idle 394.
 
-Currently down (11):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 31% | 89% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 28% | 100% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 14% | 8% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 33% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 70% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 100% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 13% | 9% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 65% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 62% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 66% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 54% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 22% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 71% |
-| `z-ai/glm-5.3-flash` | `dekallm` | DekaLLM | 73% | 100% |
-| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 75% | 96% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 76% | 65% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 79% | 66% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 26% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 69% | 78% |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 71% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `novita/fp8` | Novita | 73% | 88% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 66% | 3% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 63% |
+| `z-ai/glm-5.3-flash` | `dekallm` | DekaLLM | 78% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

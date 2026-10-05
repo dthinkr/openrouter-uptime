@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T03:02:01+00:00 UTC)
+## Current status (2026-10-05T03:16:06+00:00 UTC)
 
 466 models polled, 1426 inference endpoints:
-up 850, degraded 81, down 16, idle 479.
+up 845, degraded 86, down 17, idle 478.
 
-Currently down (16):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | 27% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 74% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 85% |
-| `moonshotai/kimi-k3` | `relace/fp4` | Relace | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 39% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 75% | 56% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 45% | 29% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 72% | 64% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 76% | 76% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 79% | 27% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 57% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 62% | 97% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 57% | 58% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 66% |
-| `z-ai/glm-5.3-flash` | `deepinfra/fp4` | DeepInfra | 68% | 100% |
-| plus 1 more | | | | |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 77% | 75% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 77% | 75% |
+| `google/gemma-4-31b-it` | `venice/fp4` | Venice | 78% | 87% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 41% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 55% | 14% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 42% | 34% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 72% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 68% | 88% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 55% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 58% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 64% | 73% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 75% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

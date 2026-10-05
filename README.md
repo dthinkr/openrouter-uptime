@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T23:18:03+00:00 UTC)
+## Current status (2026-10-05T23:31:51+00:00 UTC)
 
 464 models polled, 1424 inference endpoints:
-up 906, degraded 61, down 15, idle 442.
+up 904, degraded 63, down 15, idle 442.
 
 Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 74% | 98% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 72% | 97% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 73% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 66% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 78% | 78% |
-| `openai/gpt-oss-120b` | `together` | Together | 63% | 100% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 76% | 75% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 71% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 49% | 30% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 14% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 31% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 78% |
-| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 76% | 99% |
-| `z-ai/glm-5.3-flash` | `fireworks` | Fireworks | 57% | 99% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 23% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 78% | 92% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 77% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 47% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | 98% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 66% | 66% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 77% | 66% |
+| `openai/gpt-oss-120b` | `together` | Together | 70% | 100% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 73% | 84% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 63% | n/a |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 44% | 60% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 18% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 16% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 78% | 77% |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 74% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

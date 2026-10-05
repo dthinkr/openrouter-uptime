@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T06:32:51+00:00 UTC)
+## Current status (2026-10-05T06:45:27+00:00 UTC)
 
 466 models polled, 1424 inference endpoints:
-up 874, degraded 98, down 18, idle 434.
+up 882, degraded 91, down 14, idle 437.
 
-Currently down (18):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 71% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 64% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 59% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | n/a | n/a |
 | `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | n/a | n/a |
-| `moonshotai/kimi-k2.7-code` | `coreweave/int4` | CoreWeave | n/a | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | 85% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 58% | 73% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 80% | 91% |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 77% | 100% |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 51% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 56% | 73% |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 66% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 30% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 59% | 60% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 62% |
+| `z-ai/glm-5.3-flash` | `coreweave/nvfp4` | CoreWeave | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 72% | 88% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-05T22:45:26+00:00 UTC)
+## Current status (2026-10-05T23:00:43+00:00 UTC)
 
-464 models polled, 1420 inference endpoints:
-up 900, degraded 69, down 21, idle 430.
+464 models polled, 1424 inference endpoints:
+up 895, degraded 66, down 20, idle 443.
 
-Currently down (21):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 79% | 96% |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 63% | 91% |
-| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 69% | 72% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 59% | 60% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 73% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 45% | 74% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 66% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 79% |
-| `openai/gpt-oss-120b` | `together` | Together | 67% | 100% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 79% | 55% |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 63% | 30% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 77% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 58% | 100% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 24% | n/a |
-| plus 6 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | 74% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 61% | 100% |
+| `deepseek/deepseek-v4-flash` | `cloudflare` | Cloudflare | 70% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 52% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 63% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 44% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 44% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 63% | 72% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 59% | 85% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 56% | 72% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 69% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 70% | 59% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 77% | 85% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 71% | 83% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 59% | 100% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

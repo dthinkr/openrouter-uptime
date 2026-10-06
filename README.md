@@ -85,29 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T10:31:36+00:00 UTC)
+## Current status (2026-10-06T10:47:15+00:00 UTC)
 
 464 models polled, 1425 inference endpoints:
-up 921, degraded 103, down 14, idle 387.
+up 921, degraded 93, down 9, idle 402.
 
-Currently down (14):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 74% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 67% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 65% | 62% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 32% | n/a |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 65% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 48% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 49% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 69% | n/a |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 71% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 35% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 60% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 65% |
-| `z-ai/glm-5.2` | `baseten/fast#877fb4ce69#2` | BaseTen | 73% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 64% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 73% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 53% |
+| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 60% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 62% | 53% |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 38% | 63% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 64% |
+| `z-ai/glm-5.3` | `nebius/fp4` | Nebius | 78% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

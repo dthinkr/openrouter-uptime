@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T02:15:34+00:00 UTC)
+## Current status (2026-10-06T02:32:51+00:00 UTC)
 
-464 models polled, 1421 inference endpoints:
-up 885, degraded 78, down 19, idle 439.
+464 models polled, 1423 inference endpoints:
+up 894, degraded 70, down 12, idle 447.
 
-Currently down (19):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 55% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 59% | 85% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 62% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 77% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 40% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 75% | 61% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 53% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 77% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 73% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 70% | 78% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 70% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 72% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 59% | 80% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 33% | n/a |
-| plus 4 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 66% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 60% | 61% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 68% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 72% | 68% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 65% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 77% | n/a |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 75% | 89% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 39% | 36% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 64% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 80% | 83% |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 75% | 100% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 76% | 92% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

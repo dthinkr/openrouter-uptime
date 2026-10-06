@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T21:47:27+00:00 UTC)
+## Current status (2026-10-06T22:00:44+00:00 UTC)
 
-466 models polled, 1417 inference endpoints:
-up 893, degraded 86, down 12, idle 426.
+466 models polled, 1418 inference endpoints:
+up 897, degraded 85, down 12, idle 424.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 73% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 57% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 79% | 100% |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 58% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 71% | 72% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 72% | 19% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 67% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | 6% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 75% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 70% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 93% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 90% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 49% | n/a |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 14% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 53% | 18% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 55% | 50% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 77% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 78% |
+| `z-ai/glm-5.2` | `alibaba/fp8` | Alibaba | 79% | n/a |
+| `z-ai/glm-5.3` | `phala` | Phala | 68% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,25 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T09:02:20+00:00 UTC)
+## Current status (2026-10-06T09:17:40+00:00 UTC)
 
 464 models polled, 1425 inference endpoints:
-up 905, degraded 93, down 10, idle 417.
+up 922, degraded 97, down 12, idle 394.
 
-Currently down (10):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 70% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 29% | 69% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 54% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 60% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 59% | 65% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 43% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 82% |
-| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 78% | 91% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 53% | 92% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 29% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 89% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 29% | 16% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 79% | 90% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 64% | 60% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 64% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 30% | 50% |
+| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 71% | 79% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 71% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 52% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

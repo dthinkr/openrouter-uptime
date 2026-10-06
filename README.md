@@ -85,24 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T23:31:30+00:00 UTC)
+## Current status (2026-10-06T23:48:10+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 906, degraded 78, down 9, idle 427.
+up 899, degraded 74, down 9, idle 438.
 
 Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 67% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 55% | 73% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 45% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 55% | n/a |
-| `openai/gpt-oss-120b` | `together` | Together | 68% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 47% | 100% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 64% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 77% | 39% |
-| `z-ai/glm-5.3-flash` | `near-ai/fp8` | Near AI | 15% | 1% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 57% | 74% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 83% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 99% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 53% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 65% | 24% |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 63% | n/a |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 76% | 100% |
+| `z-ai/glm-5.3-flash` | `near-ai/fp8` | Near AI | 9% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -111,7 +111,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-18 00:45** — provider `typesafe` changed its terms of service url.
 - **2026-09-18 00:45** — provider `typesafe` changed its privacy policy url.
 - **2026-09-21 17:30** — **6 models removed from the catalog in one poll**: `minimax/minimax-m3:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `qwen/qwen3.5-9b:batch`, `qwen/qwen3.8-2.4t-a95b:batch`, `thinkingmachines/inkling:batch`.
 - **2026-09-21 20:31** — **3 models added to the catalog in one poll**: `xiaomi/mimo-v2.6-flash`, `xiaomi/mimo-v2.6-pro`, `xiaomi/mimo-v2.6-pro-ultraspeed`.
@@ -123,6 +122,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-03 04:32** — provider `tenstorrent` changed its terms of service url.
 - **2026-10-03 04:32** — provider `tenstorrent` changed its status page.
 - **2026-10-06 23:31** — provider `openai` changed its status page.
+- **2026-10-06 23:48** — provider `openai` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

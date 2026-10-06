@@ -85,21 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T23:02:33+00:00 UTC)
+## Current status (2026-10-06T23:16:19+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 909, degraded 67, down 6, idle 438.
+up 913, degraded 76, down 11, idle 420.
 
-Currently down (6):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 65% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 67% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 71% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 52% | 59% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 58% | 99% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 78% | 84% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 74% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 72% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 57% |
+| `openai/gpt-oss-120b` | `together` | Together | 78% | 98% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 65% | n/a |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 79% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 67% | 14% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 62% | 93% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 69% | 100% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 77% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

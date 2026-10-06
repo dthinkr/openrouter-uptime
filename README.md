@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T12:47:46+00:00 UTC)
+## Current status (2026-10-06T13:02:51+00:00 UTC)
 
 464 models polled, 1425 inference endpoints:
-up 921, degraded 96, down 12, idle 396.
+up 918, degraded 93, down 12, idle 402.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 43% |
-| `meta-llama/llama-4-maverick` | `digitalocean` | DigitalOcean | 20% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 65% | 80% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 71% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 99% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 100% |
 | `openai/gpt-5.6-terra` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 67% | 65% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 79% | n/a |
-| `upstage/solar-pro4` | `upstage` | Upstage | 75% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `xiaomi/mimo-v2.6-flash` | `novita/fp8` | Novita | 77% | 89% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 68% | 98% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 70% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 80% | 93% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 86% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 79% | 99% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 60% | 96% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 70% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 79% | 69% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T12:01:36+00:00 UTC)
+## Current status (2026-10-06T12:16:05+00:00 UTC)
 
 464 models polled, 1425 inference endpoints:
-up 914, degraded 98, down 14, idle 399.
+up 915, degraded 112, down 13, idle 385.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 66% | 88% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 75% | 94% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 62% | n/a |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 79% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 87% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 68% | 26% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 70% | 70% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 99% |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 55% | 40% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 63% |
 | `openai/gpt-5.6-terra` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 75% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 69% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 79% | 78% |
-| `tencent/hy4-preview` | `deepinfra/fp8` | DeepInfra | 72% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 52% | 41% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 85% |
-| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 65% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 73% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 50% | 100% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 78% | 62% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 67% |
+| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 78% | 1% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

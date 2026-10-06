@@ -85,28 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T21:18:01+00:00 UTC)
+## Current status (2026-10-06T21:31:05+00:00 UTC)
 
 466 models polled, 1417 inference endpoints:
-up 899, degraded 87, down 13, idle 418.
+up 888, degraded 86, down 11, idle 432.
 
-Currently down (13):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 72% | 35% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 59% | 87% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 76% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 49% | 45% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 69% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 54% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 75% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 77% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 74% | 53% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-5.3-flash` | `inceptron/fp8` | Inceptron | 63% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 79% | 72% |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 67% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 75% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 67% | 100% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 76% | 55% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 64% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 63% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 51% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 70% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 74% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

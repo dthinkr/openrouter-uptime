@@ -85,23 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T20:30:48+00:00 UTC)
+## Current status (2026-10-06T20:46:54+00:00 UTC)
 
-466 models polled, 1417 inference endpoints:
-up 916, degraded 89, down 8, idle 404.
+466 models polled, 1418 inference endpoints:
+up 901, degraded 100, down 11, idle 406.
 
-Currently down (8):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 69% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 73% | 74% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 71% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 46% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 48% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 68% | 58% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 18% | 87% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 58% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 60% | 49% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 59% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 74% | 73% |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
+| `moonshotai/kimi-k3` | `makora` | Makora | 46% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 59% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 68% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 67% | 76% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 65% | 56% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 71% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T09:17:40+00:00 UTC)
+## Current status (2026-10-06T09:32:25+00:00 UTC)
 
 464 models polled, 1425 inference endpoints:
-up 922, degraded 97, down 12, idle 394.
+up 906, degraded 103, down 13, idle 403.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 72% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 29% | n/a |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 78% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 89% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 29% | 16% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 79% | 90% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 64% | 60% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 64% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 30% | 50% |
-| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 71% | 79% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 71% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 52% | n/a |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 79% | 95% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 73% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 27% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 68% | 79% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 56% | 50% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 70% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 75% | n/a |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 67% | 96% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 49% | n/a |
+| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 77% | 88% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 70% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 59% | 58% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T10:17:01+00:00 UTC)
+## Current status (2026-10-06T10:31:36+00:00 UTC)
 
 464 models polled, 1425 inference endpoints:
-up 913, degraded 93, down 16, idle 403.
+up 921, degraded 103, down 14, idle 387.
 
-Currently down (16):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 79% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 64% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 70% | 46% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 56% | 62% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 37% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 65% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 64% | 61% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 78% | 45% |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 65% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 36% | n/a |
-| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 68% | 100% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 69% | n/a |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 74% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 67% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 65% | 62% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 32% | n/a |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 65% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 48% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 49% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 69% | n/a |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 71% | n/a |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 35% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 60% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 65% |
+| `z-ai/glm-5.2` | `baseten/fast#877fb4ce69#2` | BaseTen | 73% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

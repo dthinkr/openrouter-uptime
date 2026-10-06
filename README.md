@@ -85,25 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T22:17:12+00:00 UTC)
+## Current status (2026-10-06T22:31:22+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 907, degraded 86, down 10, idle 417.
+up 912, degraded 82, down 9, idle 417.
 
-Currently down (10):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 77% | 47% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 72% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 87% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 24% | n/a |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 43% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 53% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 76% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 78% |
-| `z-ai/glm-5.3` | `phala` | Phala | 65% | n/a |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 79% | 77% |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 70% | 99% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 57% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 77% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 66% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 62% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 50% | 98% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 81% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

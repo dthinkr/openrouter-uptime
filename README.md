@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T21:03:10+00:00 UTC)
+## Current status (2026-10-06T21:18:01+00:00 UTC)
 
 466 models polled, 1417 inference endpoints:
-up 902, degraded 91, down 14, idle 410.
+up 899, degraded 87, down 13, idle 418.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 50% | 61% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 79% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 50% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 63% | 80% |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 66% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 73% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 79% | 98% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 71% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 75% | 100% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 58% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 79% | 34% |
-| `z-ai/glm-5.3-flash` | `inceptron/fp8` | Inceptron | 54% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 72% | 35% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 59% | 87% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 76% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 49% | 45% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 69% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 54% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 75% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 77% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 74% | 53% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
+| `z-ai/glm-5.3-flash` | `inceptron/fp8` | Inceptron | 63% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

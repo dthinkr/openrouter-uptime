@@ -85,27 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T22:00:44+00:00 UTC)
+## Current status (2026-10-06T22:17:12+00:00 UTC)
 
-466 models polled, 1418 inference endpoints:
-up 897, degraded 85, down 12, idle 424.
+466 models polled, 1420 inference endpoints:
+up 907, degraded 86, down 10, idle 417.
 
-Currently down (12):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 70% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 93% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 90% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 49% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 77% | 47% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 72% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 87% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 24% | n/a |
 | `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 14% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 53% | 18% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 55% | 50% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 77% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 43% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 53% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 76% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 78% |
-| `z-ai/glm-5.2` | `alibaba/fp8` | Alibaba | 79% | n/a |
-| `z-ai/glm-5.3` | `phala` | Phala | 68% | n/a |
+| `z-ai/glm-5.3` | `phala` | Phala | 65% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

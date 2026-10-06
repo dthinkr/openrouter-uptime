@@ -85,31 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T20:17:45+00:00 UTC)
+## Current status (2026-10-06T20:30:48+00:00 UTC)
 
-466 models polled, 1412 inference endpoints:
-up 909, degraded 85, down 16, idle 402.
+466 models polled, 1417 inference endpoints:
+up 916, degraded 89, down 8, idle 404.
 
-Currently down (16):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 70% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 80% | 71% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 65% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 100% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 44% | 35% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 77% | 75% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 61% | 62% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 58% | 87% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 69% | n/a |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 57% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 45% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 60% | 100% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 19% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 27% | n/a |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 69% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 73% | 74% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 71% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 46% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 48% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 68% | 58% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 18% | 87% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 58% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

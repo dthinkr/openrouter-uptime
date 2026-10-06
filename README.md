@@ -85,28 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T00:00:19+00:00 UTC)
+## Current status (2026-10-06T00:16:33+00:00 UTC)
 
-464 models polled, 1424 inference endpoints:
-up 891, degraded 73, down 13, idle 447.
+464 models polled, 1421 inference endpoints:
+up 892, degraded 85, down 9, idle 435.
 
-Currently down (13):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 56% | 32% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 61% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 99% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 65% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 64% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 55% | 100% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 72% | 77% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 37% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 10% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 25% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 73% |
-| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 78% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 15% | 94% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 35% | 40% |
+| `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 65% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 64% | 86% |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 57% | 50% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 42% | n/a |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 78% | 57% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 78% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

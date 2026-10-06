@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T03:01:56+00:00 UTC)
+## Current status (2026-10-06T03:17:55+00:00 UTC)
 
 464 models polled, 1424 inference endpoints:
-up 876, degraded 71, down 16, idle 461.
+up 881, degraded 79, down 18, idle 446.
 
-Currently down (16):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 1% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 54% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 75% | 34% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 42% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 64% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 58% | 36% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 51% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 72% | 83% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 75% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 44% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 75% | 99% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 19% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 77% | 72% |
-| plus 1 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 66% | 21% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 74% | 90% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 52% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 43% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 49% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 30% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 64% | 38% |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 63% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 68% | 47% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 65% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 79% | 73% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 67% | 76% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

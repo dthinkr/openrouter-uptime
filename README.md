@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T18:46:44+00:00 UTC)
+## Current status (2026-10-06T19:02:24+00:00 UTC)
 
 466 models polled, 1421 inference endpoints:
-up 898, degraded 99, down 18, idle 406.
+up 904, degraded 89, down 16, idle 412.
 
-Currently down (18):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 78% | 49% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 77% | 86% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 71% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 71% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 98% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 22% | n/a |
-| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 54% | 50% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 74% | 100% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 66% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 76% | 65% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 73% | 63% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 73% | 63% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 60% | 60% |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 31% | 24% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 80% | 57% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 58% | 49% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 69% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 68% |
-| plus 3 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 41% | 43% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 79% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 59% | 100% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 74% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 67% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 76% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

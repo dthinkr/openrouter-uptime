@@ -85,24 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T22:31:22+00:00 UTC)
+## Current status (2026-10-06T22:46:35+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 912, degraded 82, down 9, idle 417.
+up 898, degraded 76, down 7, idle 439.
 
-Currently down (9):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 79% | 77% |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 70% | 99% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 57% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 77% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 66% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 62% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 50% | 98% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 79% | 81% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 79% | 85% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 52% | 51% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 69% | 64% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 50% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 56% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 59% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

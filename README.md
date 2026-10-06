@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T17:31:54+00:00 UTC)
+## Current status (2026-10-06T17:45:49+00:00 UTC)
 
 466 models polled, 1421 inference endpoints:
-up 892, degraded 122, down 16, idle 391.
+up 902, degraded 108, down 17, idle 394.
 
-Currently down (16):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 79% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 77% | 69% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 73% | 84% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 57% | 61% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 54% |
-| `openai/gpt-oss-120b` | `together` | Together | 69% | 68% |
+| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 80% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 74% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 72% | 85% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 77% | 77% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 77% | 77% |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 100% |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 72% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 57% | 55% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 79% | 77% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 81% |
 | `qwen/qwen3-coder` | `novita/fp8` | Novita | 71% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 21% | 18% |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 76% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 74% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 35% | n/a |
-| `z-ai/glm-5.1` | `phala` | Phala | 31% | n/a |
-| plus 1 more | | | | |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 20% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 70% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

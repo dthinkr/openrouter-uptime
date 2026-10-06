@@ -85,24 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T10:00:32+00:00 UTC)
+## Current status (2026-10-06T10:17:01+00:00 UTC)
 
 464 models polled, 1425 inference endpoints:
-up 896, degraded 112, down 9, idle 408.
+up 913, degraded 93, down 16, idle 403.
 
-Currently down (9):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 50% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 14% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 63% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 78% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 65% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 49% | n/a |
-| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 67% | 79% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 80% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 56% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 79% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 64% |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 70% | 46% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 56% | 62% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 37% | n/a |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 65% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 64% | 61% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 78% | 45% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 65% | n/a |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 36% | n/a |
+| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 68% | 100% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 69% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

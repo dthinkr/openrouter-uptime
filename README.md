@@ -85,29 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T08:46:56+00:00 UTC)
+## Current status (2026-10-06T09:02:20+00:00 UTC)
 
 464 models polled, 1425 inference endpoints:
-up 896, degraded 100, down 14, idle 415.
+up 905, degraded 93, down 10, idle 417.
 
-Currently down (14):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 31% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 7% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 64% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 72% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 65% | 60% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 75% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 53% | 45% |
-| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 78% | 81% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 65% |
-| `z-ai/glm-5.2` | `nebius/fp4` | Nebius | 64% | n/a |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 80% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 70% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 29% | 69% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 54% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 50% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 60% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 59% | 65% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 43% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 82% |
+| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 78% | 91% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 53% | 92% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

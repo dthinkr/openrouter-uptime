@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T00:32:10+00:00 UTC)
+## Current status (2026-10-06T00:47:17+00:00 UTC)
 
 464 models polled, 1421 inference endpoints:
-up 898, degraded 88, down 20, idle 415.
+up 908, degraded 71, down 19, idle 423.
 
-Currently down (20):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 74% | 44% |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 64% | 43% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 38% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 22% | 17% |
-| `google/gemma-4-26b-a4b-it` | `makora` | Makora | 67% | 0% |
-| `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 46% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 85% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 39% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 79% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 57% | 73% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 74% | 48% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 76% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 77% | 66% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 77% | 54% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 38% | n/a |
-| plus 5 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 62% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/us` | Sail Research | 53% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 50% | 42% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 15% | 22% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 65% | 56% |
+| `google/gemma-4-26b-a4b-it` | `makora` | Makora | 32% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 56% | 76% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 77% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 72% | 71% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 84% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 62% | 76% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

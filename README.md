@@ -85,27 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T09:46:52+00:00 UTC)
+## Current status (2026-10-06T10:00:32+00:00 UTC)
 
 464 models polled, 1425 inference endpoints:
-up 896, degraded 114, down 12, idle 403.
+up 896, degraded 112, down 9, idle 408.
 
-Currently down (12):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 41% | 100% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 65% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 73% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 54% | 48% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 58% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 56% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 70% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 64% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 59% | n/a |
-| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 80% | 90% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 63% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 57% | 98% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 50% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 14% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 63% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 78% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 65% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 49% | n/a |
+| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 67% | 79% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 80% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 56% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,23 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T20:18:13+00:00 UTC)
+## Current status (2026-10-07T20:30:40+00:00 UTC)
 
 467 models polled, 1428 inference endpoints:
-up 890, degraded 106, down 8, idle 424.
+up 900, degraded 100, down 13, idle 415.
 
-Currently down (8):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 77% | n/a |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 62% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 62% | 64% |
-| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 74% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 69% | 6% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 68% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 64% |
-| `z-ai/glm-5.1` | `nebius/fp8` | Nebius | 78% | n/a |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 62% | 12% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 80% | 77% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 49% | 85% |
+| `meta/muse-glimmer-30b` | `deepinfra/bf16` | DeepInfra | 79% | 94% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 79% | 54% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 72% | 95% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 76% | 61% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 77% | 50% |
+| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 70% | 87% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 56% | 45% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 95% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 38% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 66% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

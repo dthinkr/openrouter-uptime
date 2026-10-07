@@ -85,24 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T02:32:22+00:00 UTC)
+## Current status (2026-10-07T02:47:58+00:00 UTC)
 
-466 models polled, 1420 inference endpoints:
-up 882, degraded 76, down 9, idle 453.
+466 models polled, 1419 inference endpoints:
+up 869, degraded 81, down 11, idle 458.
 
-Currently down (9):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 69% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 80% |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 69% | 74% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 70% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 74% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 57% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 62% | 96% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 79% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 72% | 77% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 67% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 91% |
+| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 67% | 7% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 65% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 49% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 53% | 98% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 66% |
+| `z-ai/glm-5.3-flash` | `relace` | Relace | 77% | 86% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

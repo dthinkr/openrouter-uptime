@@ -85,30 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T22:47:25+00:00 UTC)
+## Current status (2026-10-07T23:01:06+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 901, degraded 88, down 15, idle 426.
+up 907, degraded 92, down 12, idle 419.
 
-Currently down (15):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `digitalocean` | DigitalOcean | 68% | 100% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 77% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 61% | 88% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 100% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | 32% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 75% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 73% | 5% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 70% | 8% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 46% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 54% | 100% |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 80% | 73% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 66% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 62% |
-| `z-ai/glm-5.3` | `novita/fp8` | Novita | 78% | 86% |
-| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 76% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 64% | 100% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 64% | 64% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 73% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 68% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 79% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 59% | 85% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 55% | 100% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 75% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 59% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 75% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

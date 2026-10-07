@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T14:02:41+00:00 UTC)
+## Current status (2026-10-07T14:18:09+00:00 UTC)
 
 465 models polled, 1416 inference endpoints:
-up 893, degraded 115, down 21, idle 387.
+up 873, degraded 128, down 21, idle 394.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 79% | 94% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 71% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 50% | 54% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | 85% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 75% | 98% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 39% | 97% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 74% | 41% |
-| `meta/muse-glimmer-30b` | `deepinfra/bf16` | DeepInfra | 77% | 90% |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 61% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 73% | 100% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 70% | 54% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 78% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 36% | 37% |
-| `qwen/qwen3-235b-a22b-2507` | `novita/fp8` | Novita | 73% | 82% |
-| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 61% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 65% | 87% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 48% | 48% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 45% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 85% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 51% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 78% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 79% |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 73% | 66% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 75% | 92% |
+| `openai/gpt-oss-120b` | `phala` | Phala | 67% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 64% | 91% |
+| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 79% | 48% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 57% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | 75% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 74% | n/a |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

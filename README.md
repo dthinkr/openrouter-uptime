@@ -85,26 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T01:32:01+00:00 UTC)
+## Current status (2026-10-07T01:47:36+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 859, degraded 99, down 11, idle 451.
+up 864, degraded 82, down 10, idle 464.
 
-Currently down (11):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 67% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 48% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 74% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 100% |
-| `moonshotai/kimi-k3` | `makora` | Makora | 73% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 78% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 52% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 53% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 77% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 69% | n/a |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 40% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 61% | 70% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 72% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 49% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 50% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 64% | 28% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 55% | 100% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 74% | n/a |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 59% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 79% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

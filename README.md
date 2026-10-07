@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T23:16:30+00:00 UTC)
+## Current status (2026-10-07T23:32:28+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 922, degraded 80, down 12, idle 416.
+up 915, degraded 80, down 12, idle 423.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 73% | 97% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 75% | 18% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 63% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 78% | 99% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 66% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 69% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 78% | 98% |
-| `xiaomi/mimo-v2.6-pro` | `novita/fp8` | Novita | 74% | 99% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 77% | 76% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 82% |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 78% | 68% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 49% | 87% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 59% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | n/a |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 57% | 65% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | 50% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 66% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 78% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 74% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 68% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 69% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

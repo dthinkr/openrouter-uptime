@@ -85,23 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T02:17:46+00:00 UTC)
+## Current status (2026-10-07T02:32:22+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 870, degraded 92, down 8, idle 450.
+up 882, degraded 76, down 9, idle 453.
 
-Currently down (8):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 75% |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 70% | 68% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 48% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 57% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 57% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 73% |
-| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 38% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 69% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 80% |
+| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 69% | 74% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 70% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 74% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 57% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 62% | 96% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 79% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 72% | 77% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

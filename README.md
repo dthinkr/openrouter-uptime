@@ -85,28 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T00:16:07+00:00 UTC)
+## Current status (2026-10-07T00:32:31+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 883, degraded 89, down 13, idle 435.
+up 907, degraded 88, down 7, idle 418.
 
-Currently down (13):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 80% | 71% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 79% | 97% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 67% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 46% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 66% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 59% | 62% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 57% | 100% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 78% | 90% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 67% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 77% | 100% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 35% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 77% | 79% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 79% | 81% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 79% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 82% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 78% |
+| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 75% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 45% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 45% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

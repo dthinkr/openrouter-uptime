@@ -85,27 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T22:02:26+00:00 UTC)
+## Current status (2026-10-07T22:17:55+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 890, degraded 100, down 12, idle 428.
+up 898, degraded 95, down 8, idle 429.
 
-Currently down (12):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | n/a |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 74% | 88% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 72% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 58% | 97% |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 49% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 62% |
-| `z-ai/glm-5.3` | `morph/fp8` | Morph | 67% | 100% |
-| `z-ai/glm-5.3-flash` | `sail-research/fp4` | Sail Research | 66% | 93% |
-| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 60% | 78% |
-| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 79% | 59% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 48% | 38% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 63% |
+| `z-ai/glm-5.2` | `morph/fp8` | Morph | 60% | 100% |
+| `z-ai/glm-5.3` | `morph/fp8` | Morph | 58% | 100% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 78% | 34% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 80% | 79% |
+| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 73% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

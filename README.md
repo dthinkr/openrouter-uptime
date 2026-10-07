@@ -85,28 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T02:01:18+00:00 UTC)
+## Current status (2026-10-07T02:17:46+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 869, degraded 79, down 13, idle 459.
+up 870, degraded 92, down 8, idle 450.
 
-Currently down (13):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 79% | 78% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 81% |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 78% | 71% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 28% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 57% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 51% | 51% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 59% | 100% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 64% | 100% |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 59% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 75% | 28% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 75% | 32% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 71% |
-| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 48% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 75% |
+| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 70% | 68% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 58% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 48% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 57% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 57% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 73% |
+| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 38% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

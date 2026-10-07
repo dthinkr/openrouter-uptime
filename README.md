@@ -85,26 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T12:17:28+00:00 UTC)
+## Current status (2026-10-07T12:30:51+00:00 UTC)
 
 465 models polled, 1416 inference endpoints:
-up 900, degraded 99, down 11, idle 406.
+up 895, degraded 99, down 14, idle 408.
 
-Currently down (11):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 69% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | n/a |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 76% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 61% |
-| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 20% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 62% | 75% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 80% | 66% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 49% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | 36% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 76% | n/a |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 65% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 79% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 61% | n/a |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 27% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 65% | 60% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 63% | n/a |
 | `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 59% |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 71% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 62% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 73% | 54% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

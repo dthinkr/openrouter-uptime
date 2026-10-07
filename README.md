@@ -85,22 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T00:32:31+00:00 UTC)
+## Current status (2026-10-07T00:47:01+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 907, degraded 88, down 7, idle 418.
+up 888, degraded 87, down 8, idle 437.
 
-Currently down (7):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 79% | 81% |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 79% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 82% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 78% |
-| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 75% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 45% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 45% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 78% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 82% |
+| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 76% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 41% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 65% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 59% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 75% | 50% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 47% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

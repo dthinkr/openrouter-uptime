@@ -85,28 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T22:33:13+00:00 UTC)
+## Current status (2026-10-07T22:47:25+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 893, degraded 98, down 13, idle 426.
+up 901, degraded 88, down 15, idle 426.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `digitalocean` | DigitalOcean | 74% | 100% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 76% | 92% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 70% |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 46% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 100% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 74% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 70% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 51% | 93% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 65% |
-| `z-ai/glm-5.3` | `novita/fp8` | Novita | 75% | 88% |
-| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 78% | 99% |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 34% | 100% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 78% | 93% |
+| `deepseek/deepseek-v4.1-flash` | `digitalocean` | DigitalOcean | 68% | 100% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 77% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 61% | 88% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | 32% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 75% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 73% | 5% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 70% | 8% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 46% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 54% | 100% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 80% | 73% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 66% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 62% |
+| `z-ai/glm-5.3` | `novita/fp8` | Novita | 78% | 86% |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 76% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

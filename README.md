@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T20:47:06+00:00 UTC)
+## Current status (2026-10-07T21:02:05+00:00 UTC)
 
 467 models polled, 1428 inference endpoints:
-up 898, degraded 102, down 14, idle 414.
+up 896, degraded 104, down 13, idle 415.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 60% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | 60% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 100% |
-| `meta/muse-glimmer-30b` | `together` | Together | 76% | 95% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 77% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 59% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 56% | 47% |
-| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 76% | 99% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 51% | 65% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 80% | 88% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 10% | 2% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 64% | 68% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 68% | 74% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 86% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 57% | 74% |
+| `qwen/qwen3-235b-a22b-2507` | `novita/fp8` | Novita | 80% | 94% |
+| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 69% | 44% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 64% | 92% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 59% | 100% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 69% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 27% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 12% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 61% |
+| `z-ai/glm-5.3` | `nebius/fp4` | Nebius | 72% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

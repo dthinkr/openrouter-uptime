@@ -85,23 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T22:17:55+00:00 UTC)
+## Current status (2026-10-07T22:33:13+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 898, degraded 95, down 8, idle 429.
+up 893, degraded 98, down 13, idle 426.
 
-Currently down (8):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 48% | 38% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 63% |
-| `z-ai/glm-5.2` | `morph/fp8` | Morph | 60% | 100% |
-| `z-ai/glm-5.3` | `morph/fp8` | Morph | 58% | 100% |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 78% | 34% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 80% | 79% |
-| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 73% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `digitalocean` | DigitalOcean | 74% | 100% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 76% | 92% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 70% |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 46% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 74% | 100% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 74% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 75% | 70% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 51% | 93% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 69% | 65% |
+| `z-ai/glm-5.3` | `novita/fp8` | Novita | 75% | 88% |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 78% | 99% |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 34% | 100% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 78% | 93% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T21:47:28+00:00 UTC)
+## Current status (2026-10-07T22:02:26+00:00 UTC)
 
-467 models polled, 1429 inference endpoints:
-up 891, degraded 90, down 15, idle 433.
+467 models polled, 1430 inference endpoints:
+up 890, degraded 100, down 12, idle 428.
 
-Currently down (15):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | n/a |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 79% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 79% | 83% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 77% | 72% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 51% | 96% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 82% |
-| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 77% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 64% | 99% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 100% |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 17% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 56% | 56% |
-| `z-ai/glm-5.3-flash` | `sail-research/fp4` | Sail Research | 75% | 70% |
-| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 59% | 55% |
-| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 76% | 93% |
-| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 79% | 100% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | n/a |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 74% | 88% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 72% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 58% | 97% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 49% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 62% |
+| `z-ai/glm-5.3` | `morph/fp8` | Morph | 67% | 100% |
+| `z-ai/glm-5.3-flash` | `sail-research/fp4` | Sail Research | 66% | 93% |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 60% | 78% |
+| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 79% | 59% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

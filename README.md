@@ -85,25 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T11:45:43+00:00 UTC)
+## Current status (2026-10-07T12:03:10+00:00 UTC)
 
 465 models polled, 1416 inference endpoints:
-up 923, degraded 83, down 10, idle 400.
+up 908, degraded 84, down 9, idle 415.
 
-Currently down (10):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 82% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 23% | 15% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 84% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 72% | n/a |
-| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 19% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 53% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 68% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 61% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 88% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 23% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 99% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 63% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 71% |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 20% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 54% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 61% | 65% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

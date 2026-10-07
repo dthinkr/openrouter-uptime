@@ -85,24 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T01:02:11+00:00 UTC)
+## Current status (2026-10-07T01:17:10+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 892, degraded 84, down 9, idle 435.
+up 881, degraded 89, down 11, idle 439.
 
-Currently down (9):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 76% | 81% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 76% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 66% | 73% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 75% | 49% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 47% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 39% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 62% | n/a |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 69% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 72% | 88% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 76% | 75% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 74% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 62% |
+| `moonshotai/kimi-k3` | `makora` | Makora | 78% | 64% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 49% | 48% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 68% | 64% |
+| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 75% | 100% |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 57% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

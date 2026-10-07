@@ -85,26 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T02:47:58+00:00 UTC)
+## Current status (2026-10-07T03:01:14+00:00 UTC)
 
-466 models polled, 1419 inference endpoints:
-up 869, degraded 81, down 11, idle 458.
+465 models polled, 1418 inference endpoints:
+up 849, degraded 91, down 16, idle 462.
 
-Currently down (11):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 67% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 91% |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 67% | 7% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 72% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 65% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 49% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 53% | 98% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 53% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 66% |
-| `z-ai/glm-5.3-flash` | `relace` | Relace | 77% | 86% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 70% | 59% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 71% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 85% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 94% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 76% | 92% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 63% | 51% |
+| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 51% | 18% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 61% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 84% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 55% | 53% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 33% | 7% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 17% | n/a |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 67% | 9% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 77% | 70% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,26 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T14:45:46+00:00 UTC)
+## Current status (2026-10-08T15:00:25+00:00 UTC)
 
 468 models polled, 1431 inference endpoints:
-up 948, degraded 99, down 41, idle 343.
+up 944, degraded 96, down 41, idle 350.
 
 Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 43% | 100% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 52% | 100% |
-| `deepseek/deepseek-v4-pro` | `gmicloud/fp8` | GMICloud | 37% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 23% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 40% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 7% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 33% | 20% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 57% | 40% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 0% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 63% | 20% |
+| `deepseek/deepseek-v4-pro` | `gmicloud/fp8` | GMICloud | 40% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 27% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 60% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 31% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 0% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 17% | 40% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 40% | 80% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 3% | 0% |
 | `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | 0% |
 | `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |

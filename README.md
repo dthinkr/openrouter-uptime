@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T15:30:28+00:00 UTC)
+## Current status (2026-10-08T15:45:23+00:00 UTC)
 
 468 models polled, 1432 inference endpoints:
-up 932, degraded 100, down 44, idle 356.
+up 946, degraded 82, down 40, idle 364.
 
-Currently down (44):
+Currently down (40):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 90% | 40% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-4.5` | `google-vertex/global` | Google | 46% | 0% |
-| `anthropic/claude-haiku-4.5` | `google-vertex/europe` | Google | 29% | 100% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 20% | 0% |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 23% | 60% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 7% | 25% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 59% | 100% |
-| `deepseek/deepseek-v4-pro` | `gmicloud/fp8` | GMICloud | 47% | 60% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 47% | 60% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 83% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 23% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 43% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 21% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 83% | n/a |
-| plus 29 more | | | | |
+| `anthropic/claude-haiku-4.5` | `google-vertex/global` | Google | 12% | 25% |
+| `anthropic/claude-haiku-4.5` | `google-vertex/europe` | Google | 64% | n/a |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 20% | 0% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 25% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `baidu/fp8` | Baidu | 53% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 20% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 37% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 37% | 40% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 27% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 80% | 100% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 22% | n/a |
+| plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

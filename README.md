@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T08:01:09+00:00 UTC)
+## Current status (2026-10-08T08:17:44+00:00 UTC)
 
 467 models polled, 1432 inference endpoints:
-up 937, degraded 89, down 27, idle 379.
+up 954, degraded 95, down 26, idle 357.
 
-Currently down (27):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `wafer` | Wafer | 47% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 69% | 100% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 73% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 38% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 60% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 90% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 38% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 73% | 100% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 73% | 100% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 83% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m3` | `mara` | Mara | 46% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | 40% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 23% | 40% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 23% | 60% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 12 more | | | | |
+| `openai/o3-mini` | `openai` | OpenAI | 42% | 60% |
+| `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 73% | 0% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T16:03:20+00:00 UTC)
+## Current status (2026-10-08T16:15:21+00:00 UTC)
 
 467 models polled, 1415 inference endpoints:
-up 921, degraded 95, down 41, idle 358.
+up 930, degraded 94, down 41, idle 350.
 
 Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | 60% |
-| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 90% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 47% | 60% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-4.5` | `google-vertex/global` | Google | 12% | 20% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 10% | 20% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 60% | 0% |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 87% | 40% |
+| `anthropic/claude-haiku-4.5` | `google-vertex/global` | Google | 11% | 20% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 7% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 47% | 60% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 67% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 77% | n/a |
 | `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 83% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 59% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `baidu/fp8` | Baidu | 13% | 80% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 57% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 34% | 100% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 50% | 0% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 38% | 25% |
+| `deepseek/deepseek-v4.1-flash` | `baidu/fp8` | Baidu | 40% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 40% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 60% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
 | plus 26 more | | | | |
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T06:16:52+00:00 UTC)
+## Current status (2026-10-08T06:31:24+00:00 UTC)
 
 467 models polled, 1431 inference endpoints:
-up 954, degraded 66, down 25, idle 386.
+up 951, degraded 63, down 27, idle 390.
 
-Currently down (25):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 25% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 17% | 0% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 60% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 24% | 40% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 20% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 31% | 0% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 31% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 29% | n/a |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 33% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `dekallm` | DekaLLM | 87% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 43% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 10% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 30% | 80% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 11% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 23% | 100% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 23% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 20% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 89% | 100% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 33% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 60% | 100% |
-| plus 10 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 25% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

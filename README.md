@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T04:30:58+00:00 UTC)
+## Current status (2026-10-08T04:47:58+00:00 UTC)
 
 467 models polled, 1431 inference endpoints:
-up 872, degraded 97, down 14, idle 448.
+up 926, degraded 61, down 20, idle 424.
 
-Currently down (14):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | 42% |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 11% | 21% |
-| `deepseek/deepseek-v4-flash` | `wafer` | Wafer | 77% | 100% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 34% | 16% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 24% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 84% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 69% | 69% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 65% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 27% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 62% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 62% |
-| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 49% | 100% |
-| `z-ai/glm-5.3-flash` | `dekallm` | DekaLLM | 41% | 62% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 33% | 20% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 0% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 100% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 31% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 0% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

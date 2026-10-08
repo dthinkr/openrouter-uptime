@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T07:02:50+00:00 UTC)
+## Current status (2026-10-08T07:16:08+00:00 UTC)
 
 467 models polled, 1432 inference endpoints:
-up 943, degraded 88, down 24, idle 377.
+up 930, degraded 108, down 30, idle 364.
 
-Currently down (24):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 38% | 50% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 60% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 20% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 52% | 50% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 67% | 100% |
-| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | 25% | 100% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 50% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 44% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 55% | 75% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 53% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 73% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 10% | 20% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 41% | n/a |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 92% | 60% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 54% | 100% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 83% | 100% |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 62% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 17% | 0% |
-| plus 9 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 3% | 0% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

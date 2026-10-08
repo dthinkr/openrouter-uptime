@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T06:31:24+00:00 UTC)
+## Current status (2026-10-08T06:46:19+00:00 UTC)
 
-467 models polled, 1431 inference endpoints:
-up 951, degraded 63, down 27, idle 390.
+467 models polled, 1432 inference endpoints:
+up 939, degraded 72, down 21, idle 400.
 
-Currently down (27):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 25% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 29% | n/a |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 33% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `dekallm` | DekaLLM | 87% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 43% | 40% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 10% | 40% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 30% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 11% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 23% | 100% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 23% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `dekallm` | DekaLLM | 76% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 30% | 80% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 18% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 80% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 27% | 0% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 27% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 75% | 25% |
-| plus 12 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

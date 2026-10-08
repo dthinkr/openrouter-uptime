@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T19:17:06+00:00 UTC)
+## Current status (2026-10-08T19:31:39+00:00 UTC)
 
 469 models polled, 1421 inference endpoints:
-up 950, degraded 75, down 29, idle 367.
+up 947, degraded 72, down 27, idle 375.
 
-Currently down (29):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 10% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 20% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 3% | 20% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 10% | 60% |
 | `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baidu/fp8` | Baidu | 70% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 9% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 9% | n/a |
-| `google/gemini-3.5-flash` | `google-ai-studio` | Google AI Studio | 3% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 8% | 25% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 70% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `baidu/fp8` | Baidu | 47% | 100% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 50% | 100% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 50% | 100% |
+| `google/gemini-3.5-flash` | `google-ai-studio` | Google AI Studio | 17% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 31% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 33% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 47% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | 33% |
-| plus 14 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

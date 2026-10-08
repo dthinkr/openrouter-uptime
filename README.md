@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T13:16:16+00:00 UTC)
+## Current status (2026-10-08T13:31:20+00:00 UTC)
 
 468 models polled, 1431 inference endpoints:
-up 967, degraded 94, down 33, idle 337.
+up 932, degraded 99, down 41, idle 359.
 
-Currently down (33):
+Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 56% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 75% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 43% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 37% | 60% |
-| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 29% | n/a |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 70% | 40% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 20% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 63% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `phala` | Phala | 73% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 13% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 40% | 60% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 80% | 40% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 21% | 0% |
+| `google/gemma-4-31b-it` | `friendli` | Friendli | 23% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 0% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 35% | 50% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 13% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 68% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| plus 18 more | | | | |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 17% | 0% |
+| plus 26 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

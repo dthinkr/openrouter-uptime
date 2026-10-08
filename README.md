@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T02:00:57+00:00 UTC)
+## Current status (2026-10-08T02:17:35+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 870, degraded 95, down 17, idle 448.
+up 878, degraded 114, down 11, idle 427.
 
-Currently down (17):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 78% | 81% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 70% | 41% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 58% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 42% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 100% |
-| `moonshotai/kimi-k3` | `together` | Together | 64% | 77% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 79% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 65% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 29% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 76% |
-| `z-ai/glm-5.2` | `nebius/fp4` | Nebius | 34% | n/a |
-| `z-ai/glm-5.3` | `novita/fp8` | Novita | 77% | 68% |
-| plus 2 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 44% | 65% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 62% | 31% |
+| `moonshotai/kimi-k3` | `together` | Together | 68% | 72% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 82% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 64% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 29% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 70% | 70% |
+| `z-ai/glm-5.2` | `nebius/fp4` | Nebius | 17% | n/a |
+| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 67% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

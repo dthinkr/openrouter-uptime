@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T11:18:02+00:00 UTC)
+## Current status (2026-10-08T11:31:55+00:00 UTC)
 
 467 models polled, 1432 inference endpoints:
-up 971, degraded 74, down 25, idle 362.
+up 975, degraded 68, down 22, idle 367.
 
-Currently down (25):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 30% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 17% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 38% | n/a |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 63% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 33% | 80% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 46% | n/a |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 81% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 56% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 40% | 80% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 7% | 20% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 60% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 20% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 62% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `alibaba` | Alibaba | 83% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 50% | 100% |
-| plus 10 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T05:45:34+00:00 UTC)
+## Current status (2026-10-08T06:01:37+00:00 UTC)
 
 467 models polled, 1431 inference endpoints:
-up 937, degraded 54, down 22, idle 418.
+up 934, degraded 63, down 19, idle 415.
 
-Currently down (22):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 31% | 67% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 5% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 47% | 80% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 45% | 100% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 45% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 38% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 6% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 50% | 20% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 93% | 80% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 87% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 67% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 30% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 33% | 50% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 57% | 0% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 37% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 20% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 71% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 25% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `alibaba` | Alibaba | 69% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

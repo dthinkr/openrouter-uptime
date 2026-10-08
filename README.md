@@ -85,24 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T23:47:06+00:00 UTC)
+## Current status (2026-10-08T00:00:49+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 919, degraded 70, down 9, idle 432.
+up 900, degraded 80, down 9, idle 441.
 
 Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 53% | 27% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 79% | 65% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 74% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 100% |
-| `meta/muse-glimmer-30b` | `together` | Together | 80% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 70% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 78% | 75% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 67% | 61% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 38% | 21% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 79% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 77% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 69% | 85% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 78% | 100% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 74% | 57% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 68% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 67% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

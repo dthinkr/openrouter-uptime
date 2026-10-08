@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T15:18:15+00:00 UTC)
+## Current status (2026-10-08T15:30:28+00:00 UTC)
 
 468 models polled, 1432 inference endpoints:
-up 931, degraded 102, down 44, idle 355.
+up 932, degraded 100, down 44, idle 356.
 
 Currently down (44):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-4.5` | `google-vertex/europe` | Google | 56% | 25% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 53% | 20% |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 13% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 17% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 48% | 0% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 70% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 10% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 40% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | 67% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 69% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 10% | 60% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 70% | 20% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 83% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `anthropic/claude-haiku-4.5` | `google-vertex/global` | Google | 46% | 0% |
+| `anthropic/claude-haiku-4.5` | `google-vertex/europe` | Google | 29% | 100% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 20% | 0% |
+| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 23% | 60% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 7% | 25% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 59% | 100% |
+| `deepseek/deepseek-v4-pro` | `gmicloud/fp8` | GMICloud | 47% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 47% | 60% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 83% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 23% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 43% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 21% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 83% | n/a |
 | plus 29 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

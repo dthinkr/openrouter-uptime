@@ -85,24 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T00:00:49+00:00 UTC)
+## Current status (2026-10-08T00:17:30+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 900, degraded 80, down 9, idle 441.
+up 898, degraded 92, down 11, idle 429.
 
-Currently down (9):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 38% | 21% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 79% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 77% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 69% | 85% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 78% | 100% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 74% | 57% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 68% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 67% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 76% | 59% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 74% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 25% | 29% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 54% | 16% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 28% | 20% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 79% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 71% | 68% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 76% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 66% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 71% | 79% |
+| `z-ai/glm-5.3` | `fireworks` | Fireworks | 55% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

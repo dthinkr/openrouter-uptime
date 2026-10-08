@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T06:46:19+00:00 UTC)
+## Current status (2026-10-08T07:02:50+00:00 UTC)
 
 467 models polled, 1432 inference endpoints:
-up 939, degraded 72, down 21, idle 400.
+up 943, degraded 88, down 24, idle 377.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `dekallm` | DekaLLM | 76% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 30% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 18% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 80% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 27% | 0% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 27% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 38% | 50% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 60% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 20% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 52% | 50% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 67% | 100% |
+| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | 25% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 100% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 0% | 0% |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 92% | 60% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 54% | 100% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
-| plus 6 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 17% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

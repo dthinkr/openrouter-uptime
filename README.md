@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T20:45:20+00:00 UTC)
+## Current status (2026-10-08T21:02:51+00:00 UTC)
 
 469 models polled, 1421 inference endpoints:
-up 938, degraded 70, down 28, idle 385.
+up 944, degraded 59, down 25, idle 393.
 
-Currently down (28):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 60% | 0% |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp4` | OpenInference | 75% | 100% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 67% | 40% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 20% | 0% |
 | `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 62% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `ionstream` | Ionstream | 13% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baidu/fp8` | Baidu | 50% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 56% | n/a |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `ionstream` | Ionstream | 3% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 62% | n/a |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 47% | 40% |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 77% | 60% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 47% | 60% |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 13 more | | | | |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 100% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 27% | 40% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

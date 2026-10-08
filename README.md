@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T17:00:59+00:00 UTC)
+## Current status (2026-10-08T17:16:20+00:00 UTC)
 
-467 models polled, 1415 inference endpoints:
-up 939, degraded 85, down 30, idle 361.
+467 models polled, 1417 inference endpoints:
+up 940, degraded 89, down 23, idle 365.
 
-Currently down (30):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-fable-5.1` | `azure` | Azure | 0% | n/a |
 | `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 53% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 20% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `baidu/fp8` | Baidu | 63% | 100% |
-| `google/gemini-3.5-flash` | `google-ai-studio` | Google AI Studio | 3% | 20% |
+| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 25% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 100% |
+| `nex-agi/nex-n2.5-pro` | `nex-agi/fp8` | Nex AGI | 33% | 50% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-5-nano` | `azure` | Azure | 20% | 100% |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 0% | n/a |
+| `openai/gpt-5-nano` | `azure` | Azure | 70% | 100% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | n/a | n/a |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 15 more | | | | |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 17% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 44% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 13% | 60% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

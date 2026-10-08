@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T03:32:55+00:00 UTC)
+## Current status (2026-10-08T03:45:29+00:00 UTC)
 
 467 models polled, 1431 inference endpoints:
-up 871, degraded 103, down 19, idle 438.
+up 879, degraded 90, down 18, idle 444.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 51% | n/a |
-| `deepseek/deepseek-v4-flash` | `wafer` | Wafer | 76% | 89% |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 0% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 100% |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 64% | n/a |
-| `moonshotai/kimi-k3` | `together` | Together | 59% | 53% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 77% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 79% | 100% |
-| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 76% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 62% | 59% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 60% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 75% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 75% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 58% | 15% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 79% | 86% |
+| `deepseek/deepseek-v4-flash` | `wafer` | Wafer | 68% | 100% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 60% |
+| `moonshotai/kimi-k3` | `together` | Together | 58% | 56% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 64% |
+| `openai/gpt-oss-120b` | `nebius/fp4` | Nebius | 65% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 72% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 30% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 64% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 74% | 57% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 75% | 80% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 72% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | 63% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

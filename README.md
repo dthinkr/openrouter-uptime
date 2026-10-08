@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T08:46:01+00:00 UTC)
+## Current status (2026-10-08T09:01:37+00:00 UTC)
 
 467 models polled, 1432 inference endpoints:
-up 953, degraded 73, down 28, idle 378.
+up 956, degraded 62, down 26, idle 388.
 
-Currently down (28):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 67% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `phala` | Phala | 38% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 58% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 30% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 27% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 83% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 0% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 57% | 100% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 40% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 40% | 60% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 0% | n/a |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | n/a |
-| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 50% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 33% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 6% | 0% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 50% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 13 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 33% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 20% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 44% | n/a |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 57% | 100% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

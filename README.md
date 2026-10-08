@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T19:45:26+00:00 UTC)
+## Current status (2026-10-08T20:01:36+00:00 UTC)
 
 469 models polled, 1421 inference endpoints:
-up 936, degraded 69, down 25, idle 391.
+up 946, degraded 69, down 24, idle 382.
 
-Currently down (25):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 33% | 40% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 60% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 53% | 0% |
 | `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `ionstream` | Ionstream | 50% | 80% |
-| `google/gemini-3.5-flash` | `google-ai-studio` | Google AI Studio | 33% | 40% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 36% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
-| `mistralai/mistral-medium-3` | `mistral` | Mistral | 0% | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 33% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 31% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 33% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 66% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 33% | 20% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 10 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 30% | 40% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 7% | 40% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 8% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 40% | 100% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

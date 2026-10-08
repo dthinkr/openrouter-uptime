@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T05:16:49+00:00 UTC)
+## Current status (2026-10-08T05:31:53+00:00 UTC)
 
 467 models polled, 1431 inference endpoints:
-up 950, degraded 57, down 21, idle 403.
+up 939, degraded 63, down 22, idle 407.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 56% | 50% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 40% | 80% |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 43% | 100% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 60% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 33% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 30% | 20% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 64% | 0% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 64% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 45% | 50% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 53% | 60% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 100% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 0% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 67% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 50% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 59% | n/a |
-| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
-| plus 6 more | | | | |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 57% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

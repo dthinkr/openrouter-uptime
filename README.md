@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T14:18:03+00:00 UTC)
+## Current status (2026-10-08T14:31:17+00:00 UTC)
 
 468 models polled, 1431 inference endpoints:
-up 958, degraded 92, down 33, idle 348.
+up 956, degraded 97, down 33, idle 345.
 
 Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 37% | 0% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 60% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 43% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 67% | 60% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 54% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 17% | 0% |
-| `google/gemma-4-31b-it` | `friendli` | Friendli | 57% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 0% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 10% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 3% | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 33% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 17% | 20% |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 37% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 57% | 20% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 0% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | 0% |
 | `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 7% | 0% |
-| `meta-llama/llama-4-maverick` | `novita/fp8` | Novita | 63% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 13% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 41% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 50% | 100% |
 | plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

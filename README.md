@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T19:47:26+00:00 UTC)
+## Current status (2026-10-09T20:02:32+00:00 UTC)
 
 458 models polled, 1390 inference endpoints:
-up 909, degraded 70, down 25, idle 386.
+up 916, degraded 58, down 25, idle 391.
 
 Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 40% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | n/a |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 8% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 44% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 73% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 83% | 80% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 54% | n/a |
 | `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `novita` | Novita | 25% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 50% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 33% | n/a |
 | plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

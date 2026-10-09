@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T08:15:44+00:00 UTC)
+## Current status (2026-10-09T08:31:26+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 961, degraded 79, down 23, idle 361.
+up 966, degraded 74, down 23, idle 361.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 20% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 100% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 33% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 27% | 25% |
-| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 57% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 20% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/priority` | Google | 50% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 68% | 67% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 23% | 0% |
+| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 76% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 53% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 27% | 80% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-5-nano` | `azure` | Azure | 27% | 20% |
-| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 57% | 100% |
+| `openai/gpt-5-nano` | `azure` | Azure | 10% | 20% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
-| `qwen/qwen3-235b-a22b` | `alibaba` | Alibaba | 30% | 25% |
+| `qwen/qwen3-235b-a22b` | `alibaba` | Alibaba | 32% | 60% |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

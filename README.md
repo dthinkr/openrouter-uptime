@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T22:45:37+00:00 UTC)
+## Current status (2026-10-09T23:01:18+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 917, degraded 46, down 23, idle 414.
+up 916, degraded 48, down 16, idle 420.
 
-Currently down (23):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 83% | 40% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 7% | 20% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 20% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 86% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `openai/gpt-oss-120b` | `together` | Together | 83% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 25% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 67% | n/a |
-| plus 8 more | | | | |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 83% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 13% | 20% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 50% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 57% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 20% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 69% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 17% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 31% | 100% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

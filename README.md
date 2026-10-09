@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T04:16:55+00:00 UTC)
+## Current status (2026-10-09T04:32:17+00:00 UTC)
 
 469 models polled, 1425 inference endpoints:
-up 904, degraded 77, down 25, idle 419.
+up 919, degraded 81, down 21, idle 404.
 
-Currently down (25):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 40% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 62% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 12% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 12% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
 | `openai/gpt-5-nano` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 37% | 80% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 63% | 0% |
-| plus 10 more | | | | |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
+| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 24% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 17% | n/a |
+| `x-ai/grok-4.20` | `xai/zdr` | xAI | 56% | n/a |
+| `x-ai/grok-4.20-multi-agent` | `xai/zdr` | xAI | 0% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T02:15:46+00:00 UTC)
+## Current status (2026-10-09T02:31:21+00:00 UTC)
 
 469 models polled, 1425 inference endpoints:
-up 923, degraded 59, down 17, idle 426.
+up 917, degraded 68, down 20, idle 420.
 
-Currently down (17):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 53% | 100% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 58% | 67% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 96% | 80% |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 69% | 100% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 52% | 80% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 37% | 80% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 40% | 40% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 25% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 47% | n/a |
-| plus 2 more | | | | |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 25% | 25% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 67% | 100% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

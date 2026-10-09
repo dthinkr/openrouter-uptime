@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T14:48:01+00:00 UTC)
+## Current status (2026-10-09T15:02:21+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 974, degraded 64, down 36, idle 350.
+up 972, degraded 54, down 35, idle 363.
 
-Currently down (36):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 60% | 0% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 60% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 33% | 40% |
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 43% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 40% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 80% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 3% | 20% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 40% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 30% | 33% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 46% | 40% |
+| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 27% | 20% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 10% | 0% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 35% | 60% |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 53% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 57% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 10% | 40% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 43% | 50% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 100% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 42% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 75% | 100% |
 | `moonshotai/kimi-k2.6` | `phala` | Phala | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 3% | 0% |
-| plus 21 more | | | | |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

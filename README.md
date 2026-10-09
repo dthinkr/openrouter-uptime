@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T07:32:54+00:00 UTC)
+## Current status (2026-10-09T07:47:38+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 954, degraded 79, down 17, idle 374.
+up 963, degraded 74, down 13, idle 374.
 
-Currently down (17):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 30% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 50% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 0% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 33% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 53% | 100% |
-| `openai/gpt-5-nano` | `azure` | Azure | 37% | 100% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
+| `qwen/qwen2.5-vl-72b-instruct` | `parasail/fp8` | Parasail | 43% | 80% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 20% | 80% |
-| plus 2 more | | | | |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 37% | 60% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `siliconflow/fp8` | SiliconFlow | 70% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

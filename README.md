@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T15:47:19+00:00 UTC)
+## Current status (2026-10-09T16:02:56+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 963, degraded 69, down 28, idle 364.
+up 968, degraded 69, down 27, idle 360.
 
-Currently down (28):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 30% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 3% | 20% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 27% | n/a |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 40% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 73% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 33% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 47% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 80% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 27% | 100% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 33% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 55% | 50% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 20% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 10% | 0% |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 33% | 0% |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 25% | 67% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 13 more | | | | |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

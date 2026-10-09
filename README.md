@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T19:01:03+00:00 UTC)
+## Current status (2026-10-09T19:16:12+00:00 UTC)
 
-458 models polled, 1393 inference endpoints:
-up 928, degraded 66, down 23, idle 376.
+458 models polled, 1390 inference endpoints:
+up 908, degraded 74, down 33, idle 375.
 
-Currently down (23):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | 40% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 67% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 11% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 56% | 50% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 47% | 20% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 40% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 3% | 0% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 56% | 75% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 86% | 20% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 3% | 0% |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 17% | 80% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 48% | 75% |
-| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| plus 8 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 57% | 100% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 67% | 80% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 58% | 100% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

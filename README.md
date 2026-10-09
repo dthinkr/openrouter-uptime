@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T07:16:51+00:00 UTC)
+## Current status (2026-10-09T07:32:54+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 955, degraded 74, down 21, idle 374.
+up 954, degraded 79, down 17, idle 374.
 
-Currently down (21):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 53% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 83% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 60% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 50% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 30% | 80% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 100% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 50% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 53% | 100% |
-| `openai/gpt-5-nano` | `azure` | Azure | 50% | 0% |
+| `openai/gpt-5-nano` | `azure` | Azure | 37% | 100% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai/zdr` | xAI | 0% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 17% | 0% |
-| plus 6 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 20% | 80% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

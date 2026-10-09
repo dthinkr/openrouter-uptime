@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T07:00:58+00:00 UTC)
+## Current status (2026-10-09T07:16:51+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 959, degraded 63, down 20, idle 382.
+up 955, degraded 74, down 21, idle 374.
 
-Currently down (20):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | 33% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 67% | n/a |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 53% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 83% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 60% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 50% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 63% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 45% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 57% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 53% | 100% |
+| `openai/gpt-5-nano` | `azure` | Azure | 50% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 100% | n/a |
-| `x-ai/grok-4.20` | `xai/zdr` | xAI | 44% | 20% |
 | `x-ai/grok-4.20-multi-agent` | `xai/zdr` | xAI | 0% | n/a |
 | `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
-| plus 5 more | | | | |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 17% | 0% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

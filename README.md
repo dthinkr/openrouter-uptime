@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T07:47:38+00:00 UTC)
+## Current status (2026-10-09T08:02:56+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 963, degraded 74, down 13, idle 374.
+up 959, degraded 66, down 19, idle 380.
 
-Currently down (13):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 50% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 50% | 60% |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 47% | 60% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
 | `minimax/minimax-m2.5` | `venice` | Venice | 33% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-5-nano` | `azure` | Azure | 70% | 0% |
+| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 40% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen2.5-vl-72b-instruct` | `parasail/fp8` | Parasail | 43% | 80% |
+| `qwen/qwen2.5-vl-72b-instruct` | `parasail/fp8` | Parasail | 47% | 100% |
+| `qwen/qwen3-235b-a22b` | `alibaba` | Alibaba | 48% | 25% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 54% | 0% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 37% | 60% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.3-flash` | `siliconflow/fp8` | SiliconFlow | 70% | 20% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T10:33:11+00:00 UTC)
+## Current status (2026-10-09T10:47:56+00:00 UTC)
 
 469 models polled, 1423 inference endpoints:
-up 960, degraded 71, down 30, idle 362.
+up 961, degraded 69, down 21, idle 372.
 
-Currently down (30):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `amazon/nova-pro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
-| `amazon/nova-pro-v1` | `amazon-bedrock` | Amazon Bedrock | 38% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 10% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 80% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 34% | 50% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 7% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 70% | n/a |
-| `mistralai/mistral-large-2407` | `mistral` | Mistral | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 11% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 44% | n/a |
+| `mistralai/mistral-large-2407` | `mistral` | Mistral | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5-nano` | `azure` | Azure | 77% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
-| plus 15 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 13% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 32% | 0% |
+| `x-ai/grok-4.20` | `xai/zdr` | xAI | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 46% | 67% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

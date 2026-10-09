@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T23:16:32+00:00 UTC)
+## Current status (2026-10-09T23:32:47+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 927, degraded 47, down 17, idle 409.
+up 919, degraded 54, down 21, idle 406.
 
-Currently down (17):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 7% | 20% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 19% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 10% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 59% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 40% | 100% |
+| `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
 | `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 33% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 60% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | n/a |
 | `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 28% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 32% | 0% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 12% | 0% |
-| plus 2 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 17% | 0% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

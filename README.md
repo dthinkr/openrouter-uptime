@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T18:17:36+00:00 UTC)
+## Current status (2026-10-09T18:32:52+00:00 UTC)
 
 458 models polled, 1393 inference endpoints:
-up 927, degraded 60, down 32, idle 374.
+up 950, degraded 63, down 27, idle 353.
 
-Currently down (32):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 20% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 20% | 33% |
+| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 53% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 60% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
-| `meta/muse-spark-1.3` | `meta` | Meta | 23% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 46% | 75% |
+| `meta/muse-spark-1.3` | `meta` | Meta | 37% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 25% | 25% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 27% | n/a |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 46% | 20% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 20% |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 83% | 100% |
-| plus 17 more | | | | |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 63% | 0% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T05:01:48+00:00 UTC)
+## Current status (2026-10-09T05:15:21+00:00 UTC)
 
 469 models polled, 1425 inference endpoints:
-up 917, degraded 68, down 20, idle 420.
+up 930, degraded 73, down 20, idle 402.
 
 Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 25% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/priority` | Google | 50% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 25% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 57% | 0% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 87% | 80% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 33% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-5-nano` | `azure` | Azure | 3% | 0% |
-| `openai/gpt-6-astra` | `azure` | Azure | 40% | 0% |
-| `openai/gpt-6-astra-pro` | `azure` | Azure | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 59% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 77% | 0% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 38% | n/a |
 | plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

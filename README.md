@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T03:16:34+00:00 UTC)
+## Current status (2026-10-09T03:30:31+00:00 UTC)
 
 469 models polled, 1425 inference endpoints:
-up 929, degraded 60, down 20, idle 416.
+up 938, degraded 51, down 24, idle 412.
 
-Currently down (20):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 56% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 33% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 80% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 30% | 40% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 27% | 60% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | 0% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 42% | 100% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 64% | 100% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 40% | 40% |
-| plus 5 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 50% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

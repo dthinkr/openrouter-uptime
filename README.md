@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T06:46:46+00:00 UTC)
+## Current status (2026-10-09T07:00:58+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 952, degraded 66, down 19, idle 387.
+up 959, degraded 63, down 20, idle 382.
 
-Currently down (19):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | 33% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 54% | 67% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 67% | n/a |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 55% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6-astra-pro` | `azure` | Azure | 25% | n/a |
-| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 57% | 40% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 20% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 54% | 50% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | n/a | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 23% | 0% |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 63% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 45% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 57% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 100% | n/a |
+| `x-ai/grok-4.20` | `xai/zdr` | xAI | 44% | 20% |
+| `x-ai/grok-4.20-multi-agent` | `xai/zdr` | xAI | 0% | n/a |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

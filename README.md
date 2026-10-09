@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T22:01:38+00:00 UTC)
+## Current status (2026-10-09T22:18:00+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 930, degraded 63, down 18, idle 389.
+up 943, degraded 53, down 19, idle 385.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthracite-org/magnum-v4-72b` | `mancer/fp8` | Mancer 2 | 41% | 0% |
+| `anthracite-org/magnum-v4-72b` | `mancer/fp8` | Mancer 2 | 20% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 40% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 50% |
-| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 50% | 0% |
-| `minimax/minimax-m2.5` | `novita/fp8` | Novita | 0% | n/a |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 40% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 33% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 66% | 80% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 83% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 53% | 60% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 79% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 52% | 60% |
 | `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| plus 3 more | | | | |
+| `undi95/remm-slerp-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 17% | 25% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

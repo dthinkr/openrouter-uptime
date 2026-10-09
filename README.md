@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T20:47:09+00:00 UTC)
+## Current status (2026-10-09T21:01:53+00:00 UTC)
 
-458 models polled, 1390 inference endpoints:
-up 895, degraded 64, down 25, idle 406.
+458 models polled, 1395 inference endpoints:
+up 911, degraded 61, down 23, idle 400.
 
-Currently down (25):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp4` | OpenInference | 63% | 20% |
-| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 70% | 80% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 37% | 40% |
-| `deepseek/deepseek-v4-flash` | `venice` | Venice | 50% | 80% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 57% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 60% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 33% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp4` | OpenInference | 83% | 100% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 63% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 70% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 40% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 60% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 33% | n/a |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 17% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 44% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 10 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 20% |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 21% | 50% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 11% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

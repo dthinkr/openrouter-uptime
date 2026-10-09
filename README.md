@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T17:16:30+00:00 UTC)
+## Current status (2026-10-09T17:33:14+00:00 UTC)
 
 458 models polled, 1393 inference endpoints:
-up 930, degraded 56, down 27, idle 380.
+up 927, degraded 65, down 27, idle 374.
 
 Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 40% | 40% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 33% | 0% |
+| `anthropic/claude-opus-4.8` | `amazon-bedrock/us` | Amazon Bedrock | 20% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 50% | 40% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 27% | 40% |
 | `google/gemma-4-31b-it` | `venice/fp4` | Venice | 0% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
-| `meta-llama/llama-4-maverick` | `novita/fp8` | Novita | 57% | 80% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 62% | 20% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 11% | 0% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 18% | n/a |
 | `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 17% | 40% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 27% | 40% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 7% | 0% |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 33% | 40% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
 | plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

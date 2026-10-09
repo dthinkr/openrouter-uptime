@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T08:02:56+00:00 UTC)
+## Current status (2026-10-09T08:15:44+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 959, degraded 66, down 19, idle 380.
+up 961, degraded 79, down 23, idle 361.
 
-Currently down (19):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 20% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 50% | 60% |
-| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 47% | 60% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 100% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 33% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 27% | 25% |
+| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 57% | 60% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5-nano` | `azure` | Azure | 70% | 0% |
-| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 40% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen2.5-vl-72b-instruct` | `parasail/fp8` | Parasail | 47% | 100% |
-| `qwen/qwen3-235b-a22b` | `alibaba` | Alibaba | 48% | 25% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 54% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| plus 4 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 53% | 0% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
+| `openai/gpt-5-nano` | `azure` | Azure | 27% | 20% |
+| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 57% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
+| `qwen/qwen3-235b-a22b` | `alibaba` | Alibaba | 30% | 25% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T11:31:48+00:00 UTC)
+## Current status (2026-10-09T11:46:58+00:00 UTC)
 
 469 models polled, 1423 inference endpoints:
-up 968, degraded 68, down 26, idle 361.
+up 972, degraded 68, down 24, idle 359.
 
-Currently down (26):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 25% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 37% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 13% | 40% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 17% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 11% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 43% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 10% | 0% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 64% | 20% |
-| `mistralai/mistral-small-2603` | `mistral` | Mistral | 60% | 20% |
-| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 38% | 20% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `mistral/eu` | Mistral | 0% | 0% |
+| `amazon/nova-pro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | 50% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 71% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 7% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 6% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 48% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 57% | 100% |
+| `mistralai/mistral-small-2603` | `mistral` | Mistral | 64% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 52% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `mistral/eu` | Mistral | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 40% | 0% |
-| plus 11 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 37% | 40% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 13% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-09T05:47:49+00:00 UTC)
+## Current status (2026-10-09T06:01:51+00:00 UTC)
 
 469 models polled, 1424 inference endpoints:
-up 939, degraded 62, down 22, idle 401.
+up 938, degraded 61, down 21, idle 404.
 
-Currently down (22):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 100% |
+| `google/gemini-3.5-flash` | `google-ai-studio` | Google AI Studio | 50% | 60% |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 57% | 20% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 83% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 59% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 65% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 9% | 0% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 50% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 50% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
 | `openai/gpt-5-nano` | `azure` | Azure | 7% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 38% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 3% | 0% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 33% | 100% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

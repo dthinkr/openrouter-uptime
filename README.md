@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T07:30:39+00:00 UTC)
+## Current status (2026-10-10T07:46:46+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 914, degraded 55, down 34, idle 399.
+up 894, degraded 63, down 27, idle 418.
 
-Currently down (34):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | 67% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 13% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 33% | 100% |
 | `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 77% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 60% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 10% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 17% | 20% |
-| `google/gemini-3.5-flash` | `google-ai-studio` | Google AI Studio | 55% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 71% | 33% |
-| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 33% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 60% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 20% | 60% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 85% | 100% |
+| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 33% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
-| plus 19 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 13% | 0% |
+| `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

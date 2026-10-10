@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T02:47:17+00:00 UTC)
+## Current status (2026-10-10T03:03:13+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 894, degraded 53, down 29, idle 424.
+up 909, degraded 51, down 26, idle 414.
 
-Currently down (29):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 67% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 89% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 80% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 50% | n/a |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 73% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 60% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 33% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 60% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `minimax/minimax-m2.7` | `groq` | Groq | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 40% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `openai/gpt-oss-20b` | `groq` | Groq | 7% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 31% | 20% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
 | `openai/o3-mini-high` | `openai` | OpenAI | 50% | n/a |
-| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
-| plus 14 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 100% | 100% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

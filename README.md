@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T15:02:08+00:00 UTC)
+## Current status (2026-10-10T15:17:18+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 924, degraded 46, down 26, idle 405.
+up 937, degraded 42, down 32, idle 390.
 
-Currently down (26):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 80% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 3% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 87% | 60% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 97% | 80% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 33% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 17% | 80% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 68% | 75% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `openai/gpt-oss-20b` | `groq` | Groq | 3% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| plus 11 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 73% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 33% | 80% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 20% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 50% | n/a |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 33% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 47% | 60% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 80% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 75% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 3% | 20% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

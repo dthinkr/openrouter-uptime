@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T09:45:35+00:00 UTC)
+## Current status (2026-10-10T10:02:09+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 985, degraded 52, down 25, idle 340.
+up 988, degraded 47, down 27, idle 340.
 
-Currently down (25):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 67% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 37% | 60% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | n/a |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 43% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 87% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 30% | 60% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 85% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 40% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 67% | 80% |
 | `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 14% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 88% | 60% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 63% | 100% |
-| plus 10 more | | | | |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 86% | 100% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

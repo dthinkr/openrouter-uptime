@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T11:47:33+00:00 UTC)
+## Current status (2026-10-10T12:02:40+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 992, degraded 55, down 19, idle 336.
+up 980, degraded 53, down 21, idle 348.
 
-Currently down (19):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 53% | n/a |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 27% | 40% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 67% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 70% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 20% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 40% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 33% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 60% |
-| `openai/gpt-oss-20b` | `groq` | Groq | 3% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 56% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 40% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 40% |
+| `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 47% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 70% | 80% |
-| `thinkingmachines/inkling-small:free` | `thinkingmachines/nvfp4` | Thinking Machines | 3% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 4% | 0% |
-| plus 4 more | | | | |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 67% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 62% | 67% |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 56% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

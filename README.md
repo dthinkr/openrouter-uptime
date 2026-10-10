@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T06:01:21+00:00 UTC)
+## Current status (2026-10-10T06:15:35+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 900, degraded 44, down 22, idle 436.
+up 907, degraded 47, down 23, idle 425.
 
-Currently down (22):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 70% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 20% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 9% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 13% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 60% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 57% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 20% |
-| `openai/gpt-oss-20b` | `groq` | Groq | 40% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 40% |
+| `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 80% | 100% |
 | `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3.8-27b` | `phala` | Phala | 52% | 80% |
-| plus 7 more | | | | |
+| `qwen/qwen3.8-27b` | `phala` | Phala | 43% | 33% |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

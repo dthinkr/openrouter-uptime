@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T02:00:20+00:00 UTC)
+## Current status (2026-10-10T02:17:06+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 911, degraded 41, down 29, idle 419.
+up 907, degraded 59, down 19, idle 415.
 
-Currently down (29):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 20% | 20% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 12% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 81% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 20% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 33% | n/a |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 17% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 20% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 27% | 33% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 40% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 80% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 80% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
 | `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 14 more | | | | |
+| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 27% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 33% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 20% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

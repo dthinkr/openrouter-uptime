@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T01:01:07+00:00 UTC)
+## Current status (2026-10-10T01:16:46+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 907, degraded 40, down 24, idle 429.
+up 912, degraded 47, down 27, idle 414.
 
-Currently down (24):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 30% | 0% |
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 83% | 60% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 80% | 60% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 7% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 80% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 13% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 60% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 17% | 20% |
-| `openai/gpt-oss-20b` | `groq` | Groq | 3% | 0% |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 30% | 20% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 69% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 42% | 100% |
-| plus 9 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 62% | 0% |
+| `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
+| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 23% | 40% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

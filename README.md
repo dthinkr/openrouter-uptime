@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T00:47:25+00:00 UTC)
+## Current status (2026-10-10T01:01:07+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 911, degraded 51, down 16, idle 422.
+up 907, degraded 40, down 24, idle 429.
 
-Currently down (16):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 10% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 20% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 23% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 30% | 0% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 83% | 60% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 80% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 7% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 80% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 27% | 20% |
-| `openai/gpt-oss-20b` | `groq` | Groq | 17% | 0% |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 17% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 50% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 58% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| plus 1 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 17% | 20% |
+| `openai/gpt-oss-20b` | `groq` | Groq | 3% | 0% |
+| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 30% | 20% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 69% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 42% | 100% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

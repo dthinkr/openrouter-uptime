@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T18:16:18+00:00 UTC)
+## Current status (2026-10-10T18:30:39+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 905, degraded 72, down 29, idle 395.
+up 903, degraded 66, down 41, idle 391.
 
-Currently down (29):
+Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 80% | 0% |
-| `deepseek/deepseek-v4-flash` | `cloudflare` | Cloudflare | 78% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 70% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 66% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 6% | 0% |
-| `minimax/minimax-m2.7` | `groq` | Groq | 50% | 0% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 64% | 60% |
-| `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 32% | 0% |
-| plus 14 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 77% | 20% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 90% | 40% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 26% | n/a |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 50% | 0% |
+| `deepseek/deepseek-v4-flash` | `cloudflare` | Cloudflare | 56% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 59% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 90% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 0% |
+| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 93% | 60% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 14% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 77% | 20% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 73% | 0% |
+| plus 26 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

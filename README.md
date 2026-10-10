@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T05:17:18+00:00 UTC)
+## Current status (2026-10-10T05:31:31+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 906, degraded 50, down 22, idle 424.
+up 899, degraded 51, down 23, idle 429.
 
-Currently down (22):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | 67% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 20% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 60% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 77% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 17% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 60% |
+| `google/gemini-3.5-flash` | `google-ai-studio` | Google AI Studio | 47% | 50% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 67% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 72% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 60% |
 | `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
-| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 53% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 0% | n/a |
 | `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| plus 7 more | | | | |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

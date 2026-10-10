@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T11:00:37+00:00 UTC)
+## Current status (2026-10-10T11:16:33+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 981, degraded 41, down 28, idle 352.
+up 978, degraded 57, down 25, idle 342.
 
-Currently down (28):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 33% | 20% |
-| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 77% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `baidu/fp8` | Baidu | 53% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 30% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 60% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 100% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 60% | 100% |
+| `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 7% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 33% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 20% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 76% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 80% | 100% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 88% | 0% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 100% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 0% |
+| `openai/gpt-5.4` | `azure` | Azure | 65% | 20% |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
 | `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
-| plus 13 more | | | | |
+| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

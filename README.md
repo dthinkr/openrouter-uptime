@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T09:02:02+00:00 UTC)
+## Current status (2026-10-10T09:15:25+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 990, degraded 53, down 26, idle 333.
+up 987, degraded 60, down 25, idle 330.
 
-Currently down (26):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 83% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 17% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 20% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 33% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 40% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 27% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 60% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 20% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 80% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 55% | 0% |
-| `openai/gpt-oss-120b` | `together` | Together | 63% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 33% | n/a |
 | `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
 | `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 23% | 50% |
-| plus 11 more | | | | |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 46% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

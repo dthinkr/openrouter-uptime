@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T01:16:46+00:00 UTC)
+## Current status (2026-10-10T01:30:29+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 912, degraded 47, down 27, idle 414.
+up 908, degraded 51, down 26, idle 415.
 
-Currently down (27):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 30% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 13% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 60% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 13% | 80% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 47% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 20% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 62% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 13% | 40% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
 | `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
 | `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 23% | 40% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| plus 12 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | 100% |
+| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 20% | 0% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

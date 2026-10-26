@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T10:32:58+00:00 UTC)
+## Current status (2026-10-26T10:46:44+00:00 UTC)
 
 467 models polled, 1503 inference endpoints:
-up 994, degraded 56, down 47, idle 406.
+up 996, degraded 53, down 46, idle 408.
 
-Currently down (47):
+Currently down (46):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (47):
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 56% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 72% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 46% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/priority` | Google | 83% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 84% | 40% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 41% | n/a |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 73% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `reka` | Reka | 22% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 69% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 10% | 50% |
-| plus 32 more | | | | |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 17% | 25% |
+| `meta/muse-glimmer-30b` | `together` | Together | 10% | 0% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
+| plus 31 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

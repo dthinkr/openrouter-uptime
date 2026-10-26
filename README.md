@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T21:46:50+00:00 UTC)
+## Current status (2026-10-26T22:01:07+00:00 UTC)
 
-468 models polled, 1508 inference endpoints:
-up 999, degraded 48, down 38, idle 423.
+463 models polled, 1504 inference endpoints:
+up 988, degraded 66, down 37, idle 413.
 
-Currently down (38):
+Currently down (37):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 62% | 80% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 86% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 90% | 80% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 4% | 0% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 7% | 25% |
 | `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
-| `minimax/minimax-m3` | `gmicloud/fp8` | GMICloud | 50% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 62% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 20% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 32% | 0% |
+| `minimax/minimax-m2.1` | `minimax` | Minimax | n/a | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 67% | 80% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 30% | 0% |
-| `openai/gpt-4-turbo` | `openai` | OpenAI | n/a | n/a |
-| plus 23 more | | | | |
+| plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-03 04:32** — provider `tenstorrent` changed its terms of service url.
 - **2026-10-03 04:32** — provider `tenstorrent` changed its status page.
 - **2026-10-06 23:31** — provider `openai` changed its status page.
 - **2026-10-06 23:48** — provider `openai` changed its status page.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-24 17:45** — **3 models removed from the catalog in one poll**: `openai/gpt-3.5-turbo`, `openai/gpt-3.5-turbo-instruct`, `openai/gpt-3.5-turbo:batch`.
 - **2026-10-26 11:47** — provider `azure` changed its terms of service url.
 - **2026-10-26 11:47** — provider `azure` changed its privacy policy url.
+- **2026-10-26 22:01** — **5 models removed from the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

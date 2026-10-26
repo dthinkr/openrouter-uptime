@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T21:17:45+00:00 UTC)
+## Current status (2026-10-26T21:31:03+00:00 UTC)
 
 468 models polled, 1508 inference endpoints:
-up 1012, degraded 46, down 46, idle 404.
+up 1003, degraded 47, down 45, idle 413.
 
-Currently down (46):
+Currently down (45):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (46):
 | `anthropic/claude-opus-4.6` | `azure/global` | Azure | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 47% | 80% |
-| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 33% | 60% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 65% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 34% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 57% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 55% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inception/mercury-2` | `inception` | Inception | 56% | 100% |
-| `inception/mercury-2.5` | `inception` | Inception | 63% | 100% |
-| `inception/mercury-3` | `inception` | Inception | 43% | 100% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 8% | 0% |
-| plus 31 more | | | | |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 80% | 60% |
+| `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 83% | 100% |
+| plus 30 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

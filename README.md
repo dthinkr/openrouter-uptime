@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T14:47:46+00:00 UTC)
+## Current status (2026-10-26T15:01:52+00:00 UTC)
 
 466 models polled, 1502 inference endpoints:
-up 1015, degraded 49, down 43, idle 395.
+up 1017, degraded 53, down 40, idle 392.
 
-Currently down (43):
+Currently down (40):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 100% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 17% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 50% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 10% | 0% |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 41% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 56% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 18% | 0% |
-| `meta/muse-glimmer-30b` | `together` | Together | 7% | 20% |
-| plus 28 more | | | | |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `meta/muse-glimmer-30b` | `together` | Together | 3% | 0% |
+| plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T11:30:51+00:00 UTC)
+## Current status (2026-10-26T11:47:42+00:00 UTC)
 
 467 models polled, 1503 inference endpoints:
-up 1012, degraded 49, down 38, idle 404.
+up 1013, degraded 42, down 40, idle 408.
 
-Currently down (38):
+Currently down (40):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 37% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 71% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 40% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | 50% |
-| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 53% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 48% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 27% | 20% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | 25% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 22% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 14% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 71% | n/a |
-| `minimax/minimax-m3` | `mara` | Mara | 0% | n/a |
-| plus 23 more | | | | |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 34% | 25% |
+| `meta/muse-glimmer-30b` | `together` | Together | 3% | 20% |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,8 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-22 18:31** — **5 models added to the catalog in one poll**: `openai/gpt-6-luna`, `openai/gpt-6-luna-pro`, `openai/gpt-6-luna-pro:batch`, `openai/gpt-6-luna:batch`, `openai/gpt-6-sol-pro:batch`.
-- **2026-09-29 17:48** — **4 models added to the catalog in one poll**: `openai/gpt-6.1-sol`, `openai/gpt-6.1-sol-pro`, `openai/gpt-6.1-sol-pro:batch`, `openai/gpt-6.1-sol:batch`.
 - **2026-10-03 04:32** — provider `tenstorrent` changed its terms of service url.
 - **2026-10-03 04:32** — provider `tenstorrent` changed its status page.
 - **2026-10-06 23:31** — provider `openai` changed its status page.
@@ -130,6 +128,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-17 22:01** — provider `inferact-vllm` changed its terms of service url.
 - **2026-10-17 22:01** — provider `inferact-vllm` changed its privacy policy url.
 - **2026-10-24 17:45** — **3 models removed from the catalog in one poll**: `openai/gpt-3.5-turbo`, `openai/gpt-3.5-turbo-instruct`, `openai/gpt-3.5-turbo:batch`.
+- **2026-10-26 11:47** — provider `azure` changed its terms of service url.
+- **2026-10-26 11:47** — provider `azure` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

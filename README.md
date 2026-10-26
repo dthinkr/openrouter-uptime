@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T22:32:46+00:00 UTC)
+## Current status (2026-10-26T22:47:39+00:00 UTC)
 
 463 models polled, 1506 inference endpoints:
-up 1009, degraded 50, down 37, idle 410.
+up 988, degraded 57, down 36, idle 425.
 
-Currently down (37):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 78% | 80% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 84% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 60% | 60% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 62% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 81% | 20% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 60% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 19% | 0% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 19% | 25% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 50% | 40% |
 | `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 60% | 100% |
-| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | 33% | 0% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 70% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
-| plus 22 more | | | | |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
+| `moonshotai/kimi-k3` | `makora/fp4` | Makora | 0% | 0% |
+| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | 0% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 42% | 100% |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-27T01:01:34+00:00 UTC)
+## Current status (2026-10-27T01:17:03+00:00 UTC)
 
-462 models polled, 1506 inference endpoints:
-up 999, degraded 60, down 41, idle 406.
+463 models polled, 1509 inference endpoints:
+up 974, degraded 70, down 42, idle 423.
 
-Currently down (41):
+Currently down (42):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 70% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 62% | 20% |
-| `deepseek/deepseek-v4-pro-0813` | `alibaba/us-east-1` | Alibaba | 100% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 62% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 66% | 60% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 52% | 100% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 36% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 60% | 20% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 67% | 50% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 43% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 52% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 40% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 13% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 85% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 6% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 43% | 100% |
-| `meta/muse-glimmer-30b` | `together` | Together | 3% | 0% |
-| `microsoft/phi-4` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| plus 26 more | | | | |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 4% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 83% | 100% |
+| `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
+| `microsoft/phi-4` | `deepinfra/bf16/flex` | DeepInfra | 33% | n/a |
+| plus 27 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

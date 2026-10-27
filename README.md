@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-27T16:31:35+00:00 UTC)
+## Current status (2026-10-27T16:46:50+00:00 UTC)
 
-463 models polled, 1515 inference endpoints:
-up 1018, degraded 61, down 36, idle 400.
+463 models polled, 1514 inference endpoints:
+up 1020, degraded 60, down 36, idle 398.
 
 Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 20% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | n/a |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| `minimax/minimax-m3` | `modelrun/fp8` | ModelRun | 40% | 20% |
+| `minimax/minimax-m3.1-flash` | `streamlake` | StreamLake | 33% | n/a |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 100% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-4-turbo` | `openai` | OpenAI | n/a | n/a |
 | `openai/gpt-4.1-nano` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-4o-2024-05-13` | `openai` | OpenAI | 0% | n/a |
 | plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

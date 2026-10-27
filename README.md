@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-27T20:17:45+00:00 UTC)
+## Current status (2026-10-27T20:30:40+00:00 UTC)
 
 464 models polled, 1513 inference endpoints:
-up 1006, degraded 63, down 42, idle 402.
+up 1010, degraded 64, down 41, idle 398.
 
-Currently down (42):
+Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 40% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 40% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 68% | 100% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 67% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 27% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 75% | 100% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 33% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 64% | 33% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 64% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 50% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 54% | 25% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2` | `google-vertex` | Google | 0% | 0% |
+| `minimax/minimax-m2` | `google-vertex` | Google | 0% | n/a |
+| `minimax/minimax-m3` | `gmicloud/fp8` | GMICloud | 45% | 25% |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 27 more | | | | |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 25% | n/a |
+| plus 26 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

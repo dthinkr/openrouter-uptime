@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-27T13:16:51+00:00 UTC)
+## Current status (2026-10-27T13:30:25+00:00 UTC)
 
 463 models polled, 1511 inference endpoints:
-up 1016, degraded 77, down 48, idle 370.
+up 992, degraded 84, down 54, idle 381.
 
-Currently down (48):
+Currently down (54):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 61% | 25% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 7% | 40% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 67% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 58% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 40% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 33% | 80% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks` | Fireworks | 33% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 71% | 0% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 4% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 57% | n/a |
-| `moonshotai/kimi-k2.7-code` | `coreweave/int4` | CoreWeave | 0% | n/a |
-| plus 33 more | | | | |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 10% | 75% |
+| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 0% | n/a |
+| plus 39 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

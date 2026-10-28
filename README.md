@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T07:01:11+00:00 UTC)
+## Current status (2026-10-28T07:16:56+00:00 UTC)
 
-464 models polled, 1515 inference endpoints:
-up 995, degraded 60, down 34, idle 426.
+464 models polled, 1513 inference endpoints:
+up 989, degraded 73, down 36, idle 415.
 
-Currently down (34):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 33% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 67% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 79% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 40% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 83% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 3% | 0% |
-| `minimax/minimax-m2` | `google-vertex` | Google | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `nebius/fp4` | Nebius | 38% | n/a |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 83% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 4% | 0% |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-4-turbo` | `openai` | OpenAI | n/a | n/a |
 | `openai/gpt-4.1-nano` | `openai` | OpenAI | 0% | 0% |
-| plus 19 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

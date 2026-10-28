@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T06:33:03+00:00 UTC)
+## Current status (2026-10-28T06:46:44+00:00 UTC)
 
 464 models polled, 1515 inference endpoints:
-up 1002, degraded 61, down 35, idle 417.
+up 1017, degraded 53, down 37, idle 408.
 
-Currently down (35):
+Currently down (37):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 25% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 67% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 50% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 61% | 50% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 81% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 45% | 100% |
-| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 9% | n/a |
+| `minimax/minimax-m2` | `google-vertex` | Google | 0% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| plus 20 more | | | | |
+| `moonshotai/kimi-k2.7-code` | `nebius/fp4` | Nebius | 58% | 0% |
+| plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

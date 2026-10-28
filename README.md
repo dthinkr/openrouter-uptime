@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T22:33:15+00:00 UTC)
+## Current status (2026-10-28T22:47:17+00:00 UTC)
 
 457 models polled, 1501 inference endpoints:
-up 986, degraded 66, down 21, idle 428.
+up 986, degraded 56, down 22, idle 437.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 57% | 60% |
-| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 80% | 60% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 60% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 83% | 100% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 71% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 60% | 40% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 75% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 70% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 83% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 52% | 100% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 50% | 0% |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 69% | 100% |
 | `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 33% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 33% | n/a |
 | `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 57% | 20% |
-| plus 6 more | | | | |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

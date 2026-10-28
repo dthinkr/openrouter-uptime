@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T17:31:50+00:00 UTC)
+## Current status (2026-10-28T17:45:55+00:00 UTC)
 
 456 models polled, 1494 inference endpoints:
-up 1004, degraded 75, down 32, idle 383.
+up 1010, degraded 57, down 28, idle 399.
 
-Currently down (32):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 47% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 17% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 31% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 100% |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 44% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 38% | 50% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 14% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 43% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 17% | 0% |
 | `google/gemini-3.8-flash` | `google-vertex/us` | Google | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 44% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 38% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 4% | 50% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 27% | 0% |
-| plus 17 more | | | | |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 40% | 60% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 84% | 100% |
+| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | n/a | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

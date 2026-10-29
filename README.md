@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-29T12:48:10+00:00 UTC)
+## Current status (2026-10-29T13:02:42+00:00 UTC)
 
 457 models polled, 1504 inference endpoints:
-up 1060, degraded 43, down 30, idle 371.
+up 1066, degraded 45, down 24, idle 369.
 
-Currently down (30):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 65% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 4% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 43% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 11% | 20% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 100% |
-| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 38% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 56% | 100% |
-| `meta/muse-glimmer-30b` | `together` | Together | 10% | 0% |
-| `minimax/minimax-m2.1` | `minimax` | Minimax | 40% | n/a |
-| `minimax/minimax-m2.1` | `minimax/highspeed` | Minimax | 25% | n/a |
-| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| plus 15 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 20% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 0% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
+| `meta/muse-glimmer-30b` | `together` | Together | 50% | 80% |
+| `minimax/minimax-m2.1` | `minimax` | Minimax | 25% | n/a |
+| `minimax/minimax-m2.1` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `nebius/bf16` | Nebius | 23% | 100% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 27% | 80% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

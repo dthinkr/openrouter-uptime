@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-29T14:45:33+00:00 UTC)
+## Current status (2026-10-29T15:03:10+00:00 UTC)
 
 457 models polled, 1503 inference endpoints:
-up 1029, degraded 60, down 32, idle 382.
+up 1047, degraded 67, down 28, idle 361.
 
-Currently down (32):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 82% | 50% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 61% | 20% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 13% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 10% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 100% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 61% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 19% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 40% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 62% | 100% |
-| `minimax/minimax-m2.1` | `minimax/highspeed` | Minimax | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 15% | 33% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `minimax/minimax-m2.1` | `minimax/highspeed` | Minimax | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 17 more | | | | |
+| `openai/gpt-3.5-turbo-16k` | `openai` | OpenAI | 0% | n/a |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 11% | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

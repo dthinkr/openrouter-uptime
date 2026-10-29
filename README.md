@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-29T09:01:52+00:00 UTC)
+## Current status (2026-10-29T09:17:52+00:00 UTC)
 
 457 models polled, 1504 inference endpoints:
-up 1010, degraded 54, down 27, idle 413.
+up 1024, degraded 54, down 26, idle 400.
 
-Currently down (27):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 83% | 60% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 66% | 20% |
-| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 7% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 74% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 23% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `phala` | Phala | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `alibaba` | Alibaba | 50% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 5% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 43% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 7% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 37% | 0% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| plus 12 more | | | | |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 54% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 64% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

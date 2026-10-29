@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-29T11:45:59+00:00 UTC)
+## Current status (2026-10-29T12:03:11+00:00 UTC)
 
 457 models polled, 1504 inference endpoints:
-up 1055, degraded 45, down 24, idle 380.
+up 1049, degraded 49, down 22, idle 384.
 
-Currently down (24):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 67% | 33% |
+| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 4% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 27% | 33% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 42% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 46% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 48% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `meta/muse-glimmer-30b` | `together` | Together | 13% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 8% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 42% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 38% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta/muse-glimmer-30b` | `together` | Together | 7% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 0% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| plus 9 more | | | | |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

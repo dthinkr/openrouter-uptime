@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-29T13:02:42+00:00 UTC)
+## Current status (2026-10-29T13:16:01+00:00 UTC)
 
-457 models polled, 1504 inference endpoints:
-up 1066, degraded 45, down 24, idle 369.
+457 models polled, 1503 inference endpoints:
+up 1069, degraded 60, down 25, idle 349.
 
-Currently down (24):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 25% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 11% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 20% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 0% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
-| `meta/muse-glimmer-30b` | `together` | Together | 50% | 80% |
-| `minimax/minimax-m2.1` | `minimax` | Minimax | 25% | n/a |
-| `minimax/minimax-m2.1` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 11% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 37% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 61% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 22% | n/a |
+| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 38% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 67% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `nebius/bf16` | Nebius | 23% | 100% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 27% | 80% |
+| `nvidia/nemotron-3.5-super-vl` | `nebius/bf16` | Nebius | 57% | 100% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 63% | 100% |
 | `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| plus 9 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

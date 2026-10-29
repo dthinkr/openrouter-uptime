@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-29T06:32:44+00:00 UTC)
+## Current status (2026-10-29T06:46:18+00:00 UTC)
 
 457 models polled, 1505 inference endpoints:
-up 1025, degraded 56, down 24, idle 400.
+up 1024, degraded 52, down 21, idle 408.
 
-Currently down (24):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 25% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 61% | 20% |
-| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 23% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 20% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 55% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 53% | 20% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 52% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 53% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 43% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 50% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta/muse-glimmer-30b` | `together` | Together | 39% | 100% |
-| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 33% | n/a |
+| `meta/muse-glimmer-30b` | `together` | Together | 46% | 60% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 53% | 80% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 50% | n/a |
-| plus 9 more | | | | |
+| `openai/gpt-6.1-terra` | `openai/flex` | OpenAI | 90% | 100% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

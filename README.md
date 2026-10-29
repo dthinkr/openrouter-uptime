@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T23:46:09+00:00 UTC)
+## Current status (2026-10-29T00:00:53+00:00 UTC)
 
-457 models polled, 1500 inference endpoints:
-up 1002, degraded 50, down 24, idle 424.
+457 models polled, 1503 inference endpoints:
+up 1012, degraded 57, down 21, idle 413.
 
-Currently down (24):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 70% | 60% |
-| `elorian/glimpse` | `together` | Together | 22% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 11% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 77% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 80% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 31% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 22% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 85% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 47% | 0% |
-| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 80% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
 | `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
-| plus 9 more | | | | |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 22% | 100% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | n/a | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 0% | 0% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

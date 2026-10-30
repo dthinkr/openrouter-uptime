@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T23:01:08+00:00 UTC)
+## Current status (2026-10-30T23:15:36+00:00 UTC)
 
 456 models polled, 1511 inference endpoints:
-up 985, degraded 58, down 26, idle 442.
+up 994, degraded 51, down 30, idle 436.
 
-Currently down (26):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-fable-5` | `azure` | Azure | 33% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 54% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 46% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 18% | 50% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 60% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 61% | 67% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `mistralai/mistral-large` | `mistral` | Mistral | 57% | 0% |
+| `mistralai/mistral-large-2407` | `mistral` | Mistral | 0% | 0% |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 55% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 0% | 0% |
-| plus 11 more | | | | |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

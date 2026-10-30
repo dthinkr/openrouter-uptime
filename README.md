@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T05:47:53+00:00 UTC)
+## Current status (2026-10-30T06:00:50+00:00 UTC)
 
 456 models polled, 1507 inference endpoints:
-up 986, degraded 58, down 23, idle 440.
+up 986, degraded 51, down 23, idle 447.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 25% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 87% | 20% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 60% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 60% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 60% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 72% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 63% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 44% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `moondream/moondream3.1-9b-a2b` | `primeintellect/fp8` | PrimeIntellect | 0% | n/a |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 53% | 60% |
+| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 57% | 60% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

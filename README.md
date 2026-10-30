@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T08:18:20+00:00 UTC)
+## Current status (2026-10-30T08:32:25+00:00 UTC)
 
 456 models polled, 1507 inference endpoints:
-up 1021, degraded 51, down 25, idle 410.
+up 1029, degraded 50, down 29, idle 399.
 
-Currently down (25):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 33% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 23% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 47% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks` | Fireworks | 50% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 10% | 50% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 13% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks` | Fireworks | 33% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 50% | 50% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 3% | 25% |
-| plus 10 more | | | | |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | 0% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

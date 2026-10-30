@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T01:32:07+00:00 UTC)
+## Current status (2026-10-30T01:48:04+00:00 UTC)
 
 456 models polled, 1509 inference endpoints:
-up 986, degraded 50, down 23, idle 450.
+up 1001, degraded 41, down 28, idle 439.
 
-Currently down (23):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 48% | 40% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 17% | 100% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
-| `openai/gpt-6-astra` | `openai` | OpenAI | 13% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 95% | 100% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
+| `minimax/minimax-m2.5` | `novita/fp8` | Novita | 0% | n/a |
+| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 53% | 80% |
+| `openai/gpt-6-astra` | `openai` | OpenAI | 43% | 100% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 63% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 47% | 0% |
-| plus 8 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 64% | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

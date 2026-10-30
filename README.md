@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T07:01:00+00:00 UTC)
+## Current status (2026-10-30T07:18:20+00:00 UTC)
 
 456 models polled, 1507 inference endpoints:
-up 1017, degraded 43, down 18, idle 429.
+up 1034, degraded 47, down 25, idle 401.
 
-Currently down (18):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 38% | 0% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 60% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 61% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 57% | 20% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 0% |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 70% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 20% | 20% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 3% | 20% |
-| `recursive/flint-v1.0:free` | `recursive/bf16` | Recursive | 13% | 0% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 0% | 0% |
-| plus 3 more | | | | |
+| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 0% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

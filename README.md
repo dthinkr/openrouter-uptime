@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-31T13:47:34+00:00 UTC)
+## Current status (2026-10-31T14:02:45+00:00 UTC)
 
 452 models polled, 1505 inference endpoints:
-up 967, degraded 49, down 37, idle 452.
+up 976, degraded 49, down 34, idle 446.
 
-Currently down (37):
+Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 40% | n/a |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 33% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `gmicloud/fp8` | GMICloud | 38% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `gmicloud/fp8` | GMICloud | 22% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 33% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | 0% |
-| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 17% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 43% | 100% |
-| `minimax/minimax-m3.1-flash` | `streamlake/fp8` | StreamLake | 36% | 100% |
-| `minimax/minimax-m3.1-flash` | `novita/fp16` | Novita | 39% | 100% |
-| `minimax/minimax-m3.1-flash` | `together` | Together | 7% | 0% |
-| `minimax/minimax-m3.1-flash` | `minimax` | Minimax | 3% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | n/a |
-| plus 22 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 50% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 77% | 100% |
+| `minimax/minimax-m3.1-flash` | `together` | Together | 38% | 100% |
+| `minimax/minimax-m3.1-flash` | `minimax` | Minimax | 47% | 100% |
+| plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

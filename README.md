@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T23:45:58+00:00 UTC)
+## Current status (2026-10-31T00:02:40+00:00 UTC)
 
 456 models polled, 1511 inference endpoints:
-up 987, degraded 46, down 30, idle 448.
+up 993, degraded 42, down 30, idle 446.
 
 Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-2-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 53% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 46% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `relace/mxfp4` | Relace | 32% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `mistralai/mistral-large` | `mistral` | Mistral | 25% | n/a |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 22% | 0% |
-| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 45% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 45% | 100% |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 61% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | 0% |
+| `mistralai/mistral-large` | `mistral` | Mistral | 25% | 100% |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 31% | 100% |
+| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | n/a |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 50% | 100% |
 | plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

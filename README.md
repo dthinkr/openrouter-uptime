@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-31T20:17:19+00:00 UTC)
+## Current status (2026-10-31T20:32:34+00:00 UTC)
 
 452 models polled, 1506 inference endpoints:
-up 994, degraded 77, down 35, idle 400.
+up 987, degraded 56, down 46, idle 417.
 
-Currently down (35):
+Currently down (46):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 100% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | n/a |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m3` | `together` | Together | 80% | n/a |
-| `minimax/minimax-m3` | `minimax` | Minimax | 47% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | n/a | n/a |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 93% | 100% |
-| plus 20 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 20% | 0% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 40% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 43% | 0% |
+| `minimax/minimax-m3` | `together` | Together | 0% | 0% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 23% | 0% |
+| `minimax/minimax-m3` | `minimax` | Minimax | 13% | 20% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 50% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
+| plus 31 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

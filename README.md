@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-31T23:01:45+00:00 UTC)
+## Current status (2026-10-31T23:16:43+00:00 UTC)
 
 452 models polled, 1506 inference endpoints:
-up 949, degraded 54, down 31, idle 472.
+up 937, degraded 61, down 35, idle 473.
 
-Currently down (31):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (31):
 | `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 25% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 30% | 0% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 60% | n/a |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 17% | 100% |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 25% | 25% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 71% | 60% |
+| `ibm-granite/granite-4.2-8b` | `deepinfra/bf16` | DeepInfra | 60% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 60% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 0% | n/a |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 16 more | | | | |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

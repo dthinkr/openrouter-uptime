@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-31T00:02:40+00:00 UTC)
+## Current status (2026-10-31T00:17:59+00:00 UTC)
 
 456 models polled, 1511 inference endpoints:
-up 993, degraded 42, down 30, idle 446.
+up 998, degraded 42, down 27, idle 444.
 
-Currently down (30):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 40% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `relace/mxfp4` | Relace | 32% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `relace/mxfp4` | Relace | 13% | 80% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 45% | 100% |
-| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 61% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | 0% |
-| `mistralai/mistral-large` | `mistral` | Mistral | 25% | 100% |
-| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 31% | 100% |
-| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 58% | 50% |
+| `inference-net/schematron-v2-small` | `inference-net/bf16` | InferenceNet | 0% | 0% |
+| `inference-net/schematron-v2-turbo` | `inference-net/bf16` | InferenceNet | 0% | 0% |
+| `mistralai/mistral-large-2407` | `mistral` | Mistral | 67% | n/a |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | n/a |
-| plus 15 more | | | | |
+| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | 0% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

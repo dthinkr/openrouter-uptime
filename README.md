@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-31T00:17:59+00:00 UTC)
+## Current status (2026-10-31T00:32:36+00:00 UTC)
 
 456 models polled, 1511 inference endpoints:
-up 998, degraded 42, down 27, idle 444.
+up 1007, degraded 37, down 34, idle 433.
 
-Currently down (27):
+Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 40% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 40% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `relace/mxfp4` | Relace | 13% | 80% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 58% | 50% |
-| `inference-net/schematron-v2-small` | `inference-net/bf16` | InferenceNet | 0% | 0% |
-| `inference-net/schematron-v2-turbo` | `inference-net/bf16` | InferenceNet | 0% | 0% |
-| `mistralai/mistral-large-2407` | `mistral` | Mistral | 67% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | 0% |
-| plus 12 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `relace/mxfp4` | Relace | 62% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 7% | 40% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 71% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 88% | 75% |
+| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `inference-net/schematron-v2-small` | `inference-net/bf16` | InferenceNet | 0% | n/a |
+| `inference-net/schematron-v2-turbo` | `inference-net/bf16` | InferenceNet | 0% | n/a |
+| `mistralai/mistral-large-2407` | `mistral/zdr` | Mistral | n/a | n/a |
+| plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

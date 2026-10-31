@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-31T13:16:47+00:00 UTC)
+## Current status (2026-10-31T13:32:26+00:00 UTC)
 
-452 models polled, 1506 inference endpoints:
-up 1012, degraded 47, down 29, idle 418.
+452 models polled, 1505 inference endpoints:
+up 1007, degraded 43, down 40, idle 415.
 
-Currently down (29):
+Currently down (40):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 71% | 100% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 60% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 54% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 17% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 0% |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 25% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | 100% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 56% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta/muse-spark-open` | `modal` | Modal | 33% | 0% |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 55% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 81% | 0% |
 | `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
-| plus 14 more | | | | |
+| plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

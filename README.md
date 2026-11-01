@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-01T17:01:05+00:00 UTC)
+## Current status (2026-11-01T17:17:29+00:00 UTC)
 
 452 models polled, 1506 inference endpoints:
-up 979, degraded 48, down 22, idle 457.
+up 985, degraded 44, down 24, idle 453.
 
-Currently down (22):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (22):
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 27% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 61% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 11% | 75% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 50% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 7% | 0% |
-| `moonshotai/kimi-k2.6` | `moonshotai` | Moonshot AI | 100% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 74% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 69% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 17% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | n/a | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 65% | 100% |
-| plus 7 more | | | | |
+| `openai/gpt-6.1-terra` | `openai/flex` | OpenAI | 63% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 20% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-01T11:17:53+00:00 UTC)
+## Current status (2026-11-01T11:31:10+00:00 UTC)
 
 452 models polled, 1505 inference endpoints:
-up 945, degraded 61, down 24, idle 475.
+up 956, degraded 59, down 26, idle 464.
 
-Currently down (24):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (24):
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 0% | n/a |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 46% | 75% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 47% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 43% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 70% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 44% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
 | `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 9 more | | | | |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

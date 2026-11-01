@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-01T01:31:44+00:00 UTC)
+## Current status (2026-11-01T01:48:03+00:00 UTC)
 
 452 models polled, 1505 inference endpoints:
-up 965, degraded 55, down 25, idle 460.
+up 964, degraded 46, down 22, idle 473.
 
-Currently down (25):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 88% | 100% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 60% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | n/a |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 71% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 0% | 0% |
-| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 17% | 100% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 0% | n/a |
-| plus 10 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 0% | 0% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 67% | n/a |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 67% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

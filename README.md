@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-01T16:31:19+00:00 UTC)
+## Current status (2026-11-01T16:48:16+00:00 UTC)
 
 452 models polled, 1506 inference endpoints:
-up 994, degraded 50, down 25, idle 437.
+up 976, degraded 46, down 26, idle 458.
 
-Currently down (25):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 50% | 100% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 77% | 100% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 10% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 30% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 30% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 79% | 100% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 20% | 50% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 87% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 73% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 10% | 20% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 10 more | | | | |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

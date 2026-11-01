@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-01T06:01:32+00:00 UTC)
+## Current status (2026-11-01T06:16:03+00:00 UTC)
 
 452 models polled, 1507 inference endpoints:
-up 962, degraded 31, down 27, idle 487.
+up 979, degraded 33, down 27, idle 468.
 
 Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 59% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 58% | 100% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 0% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 22% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 17% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 53% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 83% | 60% |
 | `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
 | plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

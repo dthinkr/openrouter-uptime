@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-02T08:32:31+00:00 UTC)
+## Current status (2026-11-02T08:47:40+00:00 UTC)
 
 452 models polled, 1512 inference endpoints:
-up 1057, degraded 49, down 25, idle 381.
+up 1036, degraded 47, down 27, idle 402.
 
-Currently down (25):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 40% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 30% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `inception/mercury-3` | `inception` | Inception | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 73% | 60% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | 0% |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 20% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 63% | 40% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 63% | 60% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 63% | 0% |
-| plus 10 more | | | | |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-02T06:31:51+00:00 UTC)
+## Current status (2026-11-02T06:46:06+00:00 UTC)
 
 452 models polled, 1510 inference endpoints:
-up 1036, degraded 40, down 24, idle 410.
+up 1029, degraded 38, down 25, idle 418.
 
-Currently down (24):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `aion-labs/aion-rp-llama-3.1-8b` | `aion-labs` | AionLabs | n/a | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
+| `aion-labs/aion-rp-llama-3.1-8b` | `aion-labs` | AionLabs | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 25% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 65% | 60% |
-| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 76% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 56% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 38% | 40% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | n/a |
 | `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 17% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 7% | 0% |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 70% | 80% |
-| plus 9 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

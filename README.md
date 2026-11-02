@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-02T22:30:50+00:00 UTC)
+## Current status (2026-11-02T22:46:43+00:00 UTC)
 
 451 models polled, 1519 inference endpoints:
-up 1007, degraded 55, down 37, idle 420.
+up 1013, degraded 43, down 35, idle 428.
 
-Currently down (37):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 80% | 100% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 78% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 87% | 100% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 20% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 25% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `makora/fp8` | Makora | 35% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `google-vertex/global` | Google | 50% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 56% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `google-vertex/global` | Google | 100% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 67% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 30% | 0% |
-| plus 22 more | | | | |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 17% | 40% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 20% | 0% |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

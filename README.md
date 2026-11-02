@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-02T09:32:50+00:00 UTC)
+## Current status (2026-11-02T09:45:48+00:00 UTC)
 
 452 models polled, 1512 inference endpoints:
-up 1020, degraded 49, down 34, idle 409.
+up 1022, degraded 59, down 30, idle 401.
 
-Currently down (34):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 42% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 83% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 0% |
 | `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 36% | 25% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 73% | n/a |
-| `minimax/minimax-m3` | `mara` | Mara | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 65% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 48% | 80% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 56% | n/a |
+| `minimax/minimax-m3` | `mara` | Mara | 71% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 46% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| plus 19 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 35% | 40% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

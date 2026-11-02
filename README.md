@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-02T14:02:08+00:00 UTC)
+## Current status (2026-11-02T14:18:10+00:00 UTC)
 
 451 models polled, 1511 inference endpoints:
-up 1018, degraded 62, down 30, idle 401.
+up 1027, degraded 70, down 35, idle 379.
 
-Currently down (30):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | 40% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 53% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 18% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 75% | 40% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 57% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 75% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 46% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| plus 15 more | | | | |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 48% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 50% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `nebius/fp8` | Nebius | 38% | n/a |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

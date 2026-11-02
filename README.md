@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-02T07:33:20+00:00 UTC)
+## Current status (2026-11-02T07:47:55+00:00 UTC)
 
 452 models polled, 1512 inference endpoints:
-up 1021, degraded 55, down 32, idle 404.
+up 1007, degraded 41, down 38, idle 426.
 
-Currently down (32):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (32):
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 48% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 100% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 43% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 33% | 20% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 50% | 60% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 55% | 20% |
 | `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 80% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 11% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 52% | 20% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 40% | 100% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| plus 17 more | | | | |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

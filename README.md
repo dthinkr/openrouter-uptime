@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-03T10:17:58+00:00 UTC)
+## Current status (2026-11-03T10:30:42+00:00 UTC)
 
 451 models polled, 1517 inference endpoints:
-up 1026, degraded 58, down 38, idle 395.
+up 1034, degraded 54, down 36, idle 393.
 
-Currently down (38):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 55% | 100% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 23% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 43% | 60% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 33% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 64% | 80% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 59% | 80% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 50% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 43% | 25% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 44% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 88% | n/a |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 73% | 100% |
-| plus 23 more | | | | |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 43% | 0% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 50% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

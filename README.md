@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-03T16:03:24+00:00 UTC)
+## Current status (2026-11-03T16:18:08+00:00 UTC)
 
 451 models polled, 1512 inference endpoints:
-up 1035, degraded 77, down 41, idle 359.
+up 1022, degraded 78, down 49, idle 363.
 
-Currently down (41):
+Currently down (49):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (41):
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 40% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 61% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 75% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta/muse-spark-open` | `modal` | Modal | 33% | n/a |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 100% | 100% |
-| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 71% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 77% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 100% |
+| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 67% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 50% | 75% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| plus 26 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 60% | 0% |
+| plus 34 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

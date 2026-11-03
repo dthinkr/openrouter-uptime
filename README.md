@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-03T06:47:33+00:00 UTC)
+## Current status (2026-11-03T07:01:56+00:00 UTC)
 
 451 models polled, 1517 inference endpoints:
-up 1033, degraded 50, down 30, idle 404.
+up 1028, degraded 46, down 33, idle 410.
 
-Currently down (30):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 20% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `open-inference/fp4` | OpenInference | 17% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `open-inference/fp4` | OpenInference | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 71% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 21% | 0% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 22% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta/muse-spark-open` | `makora/fp4` | Makora | 50% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| plus 15 more | | | | |
+| `meta/muse-spark-open` | `makora/fp4` | Makora | 0% | n/a |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

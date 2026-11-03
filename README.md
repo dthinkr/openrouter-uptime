@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-03T19:01:42+00:00 UTC)
+## Current status (2026-11-03T19:16:51+00:00 UTC)
 
 453 models polled, 1511 inference endpoints:
-up 1010, degraded 62, down 27, idle 412.
+up 1024, degraded 55, down 33, idle 399.
 
-Currently down (27):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 53% | 80% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 68% | 33% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
-| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 67% | 0% |
-| `mistralai/ministral-14b-2512` | `mistral` | Mistral | 67% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 68% | 20% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 7% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 33% | n/a |
+| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 53% | 100% |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 4% | 0% |
-| `openai/gpt-oss-120b` | `venice/int4` | Venice | 85% | 100% |
-| plus 12 more | | | | |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

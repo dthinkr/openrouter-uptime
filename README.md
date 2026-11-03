@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-03T17:17:54+00:00 UTC)
+## Current status (2026-11-03T17:30:35+00:00 UTC)
 
-451 models polled, 1512 inference endpoints:
-up 1019, degraded 73, down 47, idle 373.
+453 models polled, 1514 inference endpoints:
+up 1005, degraded 78, down 48, idle 383.
 
-Currently down (47):
+Currently down (48):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 17% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 43% | 50% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 50% | 0% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 17% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 33% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 50% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 20% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 57% | 100% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
-| plus 32 more | | | | |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 100% |
+| plus 33 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

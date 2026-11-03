@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-03T07:32:10+00:00 UTC)
+## Current status (2026-11-03T07:46:05+00:00 UTC)
 
 451 models polled, 1517 inference endpoints:
-up 1024, degraded 51, down 34, idle 408.
+up 1028, degraded 41, down 38, idle 410.
 
-Currently down (34):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 40% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 100% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `open-inference/fp4` | OpenInference | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 71% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 41% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `open-inference/fp4` | OpenInference | 52% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `ionstream` | Ionstream | 77% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `cohere` | Cohere | 86% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 72% | 100% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 40% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 100% |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 43% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 20% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
-| plus 19 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 14% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

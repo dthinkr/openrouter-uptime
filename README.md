@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-04T20:31:23+00:00 UTC)
+## Current status (2026-11-04T20:48:16+00:00 UTC)
 
-454 models polled, 1510 inference endpoints:
-up 1021, degraded 68, down 39, idle 382.
+454 models polled, 1511 inference endpoints:
+up 1004, degraded 61, down 38, idle 408.
 
-Currently down (39):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-haiku-4.5` | `amazon-bedrock/global` | Amazon Bedrock | 80% | 100% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 30% | 100% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 33% | 100% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 60% |
+| `anthropic/claude-haiku-4.5` | `amazon-bedrock/global` | Amazon Bedrock | 90% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 77% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 74% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | 100% |
-| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 41% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 100% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 64% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 33% | 0% |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 43% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 33% | n/a |
-| plus 24 more | | | | |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 50% | 67% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 50% | 80% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

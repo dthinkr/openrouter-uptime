@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-04T20:15:33+00:00 UTC)
+## Current status (2026-11-04T20:31:23+00:00 UTC)
 
 454 models polled, 1510 inference endpoints:
-up 1042, degraded 63, down 31, idle 374.
+up 1021, degraded 68, down 39, idle 382.
 
-Currently down (31):
+Currently down (39):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 3% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 83% | 80% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `anthropic/claude-haiku-4.5` | `amazon-bedrock/global` | Amazon Bedrock | 80% | 100% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 30% | 100% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 33% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 60% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 79% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 77% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | 100% |
+| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 41% | n/a |
 | `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 56% | 33% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 7% | 40% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 74% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 45% | 0% |
-| `nousresearch/hermes-4-405b` | `nebius/fp8` | Nebius | n/a | n/a |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 16 more | | | | |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 100% | n/a |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 43% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 33% | n/a |
+| plus 24 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

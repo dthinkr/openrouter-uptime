@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-04T20:02:40+00:00 UTC)
+## Current status (2026-11-04T20:15:33+00:00 UTC)
 
 454 models polled, 1510 inference endpoints:
-up 1051, degraded 50, down 33, idle 376.
+up 1042, degraded 63, down 31, idle 374.
 
-Currently down (33):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 7% | 0% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 3% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 83% | 80% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 79% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 68% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 25% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 50% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 56% | 33% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 7% | 40% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 74% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 45% | 0% |
 | `nousresearch/hermes-4-405b` | `nebius/fp8` | Nebius | n/a | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 18 more | | | | |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

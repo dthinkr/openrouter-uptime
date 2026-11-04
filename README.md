@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-04T12:32:19+00:00 UTC)
+## Current status (2026-11-04T12:46:43+00:00 UTC)
 
 455 models polled, 1511 inference endpoints:
-up 1063, degraded 46, down 19, idle 383.
+up 1061, degraded 37, down 17, idle 396.
 
-Currently down (19):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 77% | 80% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 76% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 7% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
-| `moondream/moondream3.1-9b-a2b` | `primeintellect/fp8` | PrimeIntellect | 44% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 67% |
+| `moondream/moondream3.1-9b-a2b` | `primeintellect/fp8` | PrimeIntellect | 28% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `stepfun/step-5-preview` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| plus 4 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 60% | 0% |
+| `stepfun/step-5-preview` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 0% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

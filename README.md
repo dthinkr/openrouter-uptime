@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-06T22:02:02+00:00 UTC)
+## Current status (2026-11-06T22:15:50+00:00 UTC)
 
 458 models polled, 1515 inference endpoints:
-up 1016, degraded 61, down 18, idle 420.
+up 1017, degraded 52, down 21, idle 425.
 
-Currently down (18):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 100% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 11% | 40% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 7% | 40% |
-| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | 100% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 13% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 7% | 40% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 47% | 20% |
-| plus 3 more | | | | |
+| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 12% | 25% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 9% | 67% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 12% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 7% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 17% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 0% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 0% | n/a |
+| `scaledown/extract` | `scaledown` | ScaleDown | 69% | 0% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

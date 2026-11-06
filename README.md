@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-06T16:32:47+00:00 UTC)
+## Current status (2026-11-06T16:47:22+00:00 UTC)
 
-453 models polled, 1511 inference endpoints:
-up 1034, degraded 60, down 29, idle 388.
+453 models polled, 1512 inference endpoints:
+up 1056, degraded 48, down 29, idle 379.
 
 Currently down (29):
 
@@ -96,19 +96,19 @@ Currently down (29):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 63% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 63% | 100% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 47% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 74% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 67% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 78% | 75% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 6% | 33% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 25% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 74% | 100% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | 0% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 12% | 0% |
 | plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-06T18:48:00+00:00 UTC)
+## Current status (2026-11-06T19:01:44+00:00 UTC)
 
-453 models polled, 1512 inference endpoints:
-up 1038, degraded 47, down 31, idle 396.
+457 models polled, 1516 inference endpoints:
+up 1028, degraded 46, down 27, idle 415.
 
-Currently down (31):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 53% | 25% |
-| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 55% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 74% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 96% | 80% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 43% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 100% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 82% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
 | `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 7% | 40% |
-| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | n/a | n/a |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 4% | 33% |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 80% | 100% |
-| plus 16 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-26 11:47** — provider `azure` changed its privacy policy url.
 - **2026-10-26 22:01** — **5 models removed from the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 - **2026-10-28 15:03** — **8 models removed from the catalog in one poll**: `openai/gpt-4-turbo`, `openai/o1`, `openai/o1-pro`, `openai/o3-mini`, `openai/o3-mini-high`, `openai/o4-mini`, `openai/o4-mini-high`, `qwen/qwen3-next-80b-a3b-thinking`.
 - **2026-10-28 18:31** — provider `primalabs` changed its terms of service url.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-04 16:47** — provider `antdigital` changed its terms of service url.
 - **2026-11-04 16:47** — provider `antdigital` changed its privacy policy url.
 - **2026-11-05 13:16** — **4 models removed from the catalog in one poll**: `minimax/minimax-01`, `minimax/minimax-m2`, `minimax/minimax-m2-her`, `minimax/minimax-m2.1`.
+- **2026-11-06 19:01** — **4 models added to the catalog in one poll**: `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-06T17:02:32+00:00 UTC)
+## Current status (2026-11-06T17:18:10+00:00 UTC)
 
 453 models polled, 1512 inference endpoints:
-up 1049, degraded 43, down 31, idle 389.
+up 1039, degraded 52, down 31, idle 390.
 
 Currently down (31):
 
@@ -96,18 +96,18 @@ Currently down (31):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 7% | 0% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 23% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 17% | 0% |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 89% | 100% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 22% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 61% | 25% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 71% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 61% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 25% |
 | `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
 | plus 16 more | | | | |
 

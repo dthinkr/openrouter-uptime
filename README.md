@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T00:32:04+00:00 UTC)
+## Current status (2026-11-07T00:47:39+00:00 UTC)
 
-458 models polled, 1515 inference endpoints:
-up 1017, degraded 55, down 21, idle 422.
+460 models polled, 1517 inference endpoints:
+up 1028, degraded 47, down 25, idle 417.
 
-Currently down (21):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 100% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 17% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
 | `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 5% | 25% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 24% | 33% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
+| `mistralai/mistral-large-4-0` | `mistral/zdr` | Mistral | 90% | 40% |
+| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | 90% | 40% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 14% | 50% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 5% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 28% | 100% |
-| `stepfun/step-5-preview` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `unbiased/pareto-26.9` | `unbiased` | Unbiased | 0% | n/a |
-| plus 6 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

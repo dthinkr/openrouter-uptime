@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T03:48:00+00:00 UTC)
+## Current status (2026-11-07T04:00:40+00:00 UTC)
 
-460 models polled, 1516 inference endpoints:
-up 1010, degraded 43, down 25, idle 438.
+460 models polled, 1517 inference endpoints:
+up 1007, degraded 39, down 27, idle 444.
 
-Currently down (25):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (25):
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 13% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 23% | 60% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 50% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 35% | 50% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 14% | 0% |
-| plus 10 more | | | | |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 14% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 20% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 37% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 13% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 60% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 43% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 30% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 10% | 0% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

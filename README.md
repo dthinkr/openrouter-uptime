@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T10:31:59+00:00 UTC)
+## Current status (2026-11-07T10:45:54+00:00 UTC)
 
 460 models polled, 1520 inference endpoints:
-up 1042, degraded 55, down 25, idle 398.
+up 1055, degraded 33, down 25, idle 407.
 
 Currently down (25):
 
@@ -96,19 +96,19 @@ Currently down (25):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 56% | 67% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 67% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 90% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 14% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 35% | 25% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | 33% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 21% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 18% | 67% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 53% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 86% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 19% | 100% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 16% | 0% |
+| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 82% | 20% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 29% | 50% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | n/a | n/a |
 | plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

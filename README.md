@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T13:31:58+00:00 UTC)
+## Current status (2026-11-07T13:47:35+00:00 UTC)
 
 460 models polled, 1519 inference endpoints:
-up 1038, degraded 57, down 22, idle 402.
+up 1062, degraded 37, down 28, idle 392.
 
-Currently down (22):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 88% | 67% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 88% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 55% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 100% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 13% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 20% | 25% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 7% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-5.5` | `azure` | Azure | 58% | 75% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
-| `qwen/qwen3.5-9b` | `darkbloom/fp4` | Darkbloom | 75% | n/a |
-| plus 7 more | | | | |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 63% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 22% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 12% | 33% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 12% | 0% |
+| `minimax/minimax-m3.1-flash` | `inference-net/fp4` | InferenceNet | 0% | n/a |
+| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | 64% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 7% | 50% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

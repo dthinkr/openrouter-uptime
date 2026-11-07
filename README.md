@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T11:03:14+00:00 UTC)
+## Current status (2026-11-07T11:16:23+00:00 UTC)
 
 460 models polled, 1520 inference endpoints:
-up 1055, degraded 40, down 23, idle 402.
+up 1035, degraded 52, down 24, idle 409.
 
-Currently down (23):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (23):
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 77% | 25% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 35% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 10% | 25% |
-| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 67% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 67% | 50% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 65% | 100% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 22% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 14% | 50% |
 | `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 20% | 33% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 22% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 33% | 60% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 5% | 0% |
 | `openai/gpt-6-astra` | `azure/us` | Azure | 0% | 0% |
-| plus 8 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T13:47:35+00:00 UTC)
+## Current status (2026-11-07T14:01:50+00:00 UTC)
 
 460 models polled, 1519 inference endpoints:
-up 1062, degraded 37, down 28, idle 392.
+up 1037, degraded 56, down 17, idle 409.
 
-Currently down (28):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 88% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 63% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 22% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 12% | 33% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 12% | 0% |
-| `minimax/minimax-m3.1-flash` | `inference-net/fp4` | InferenceNet | 0% | n/a |
-| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | 64% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 7% | 50% |
-| plus 13 more | | | | |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 11% | 67% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 4% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 24% | 20% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 4% | 0% |
+| `qwen/qwen3.8-2.4t-a95b` | `alibaba` | Alibaba | 33% | 33% |
+| `thinkingmachines/inkling` | `together` | Together | 0% | 0% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

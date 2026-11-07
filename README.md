@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T10:16:24+00:00 UTC)
+## Current status (2026-11-07T10:31:59+00:00 UTC)
 
 460 models polled, 1520 inference endpoints:
-up 1054, degraded 42, down 30, idle 394.
+up 1042, degraded 55, down 25, idle 398.
 
-Currently down (30):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 41% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 44% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 56% | 67% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 67% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 90% | 40% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 37% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 62% | 50% |
-| `nvidia/nemotron-3.5-super-vl` | `together` | Together | 60% | 100% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 23% | 50% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 4% | 0% |
-| `openai/gpt-6-astra-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 20% |
-| plus 15 more | | | | |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 14% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 35% | 25% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | 33% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 21% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 18% | 67% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

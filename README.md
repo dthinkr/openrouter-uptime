@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T08:16:41+00:00 UTC)
+## Current status (2026-11-07T08:30:42+00:00 UTC)
 
 460 models polled, 1519 inference endpoints:
-up 1027, degraded 48, down 25, idle 419.
+up 1042, degraded 40, down 28, idle 409.
 
-Currently down (25):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (25):
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 17% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | 40% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 79% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 65% | 75% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-6-astra` | `azure/us` | Azure | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 33% | 100% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 60% | n/a |
-| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 62% | 80% |
-| plus 10 more | | | | |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 67% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | n/a | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T14:47:13+00:00 UTC)
+## Current status (2026-11-07T15:01:52+00:00 UTC)
 
 460 models polled, 1519 inference endpoints:
-up 1059, degraded 41, down 18, idle 401.
+up 1033, degraded 39, down 25, idle 422.
 
-Currently down (18):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (18):
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 62% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 83% | 20% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 12% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 8% | 50% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 21% | 0% |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 37% | 20% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 21% | 67% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 4% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 32% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 24% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `thinkingmachines/inkling` | `together` | Together | 0% | 0% |
-| plus 3 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-06T23:46:12+00:00 UTC)
+## Current status (2026-11-07T00:02:58+00:00 UTC)
 
 458 models polled, 1515 inference endpoints:
-up 1001, degraded 46, down 22, idle 446.
+up 1001, degraded 49, down 24, idle 441.
 
-Currently down (22):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 29% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 5% | 25% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 50% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 9% | 50% |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 43% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | 67% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 18% | 33% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 11% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 9% | 0% |
+| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 17% | 0% |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 92% | 100% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 0% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

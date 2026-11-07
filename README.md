@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T11:45:56+00:00 UTC)
+## Current status (2026-11-07T12:00:33+00:00 UTC)
 
 460 models polled, 1520 inference endpoints:
-up 1067, degraded 36, down 25, idle 392.
+up 1051, degraded 33, down 27, idle 409.
 
-Currently down (25):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (25):
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 70% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 72% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 21% | 33% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 30% | 67% |
-| `minimax/minimax-m3.1-flash` | `inference-net/fp4/us` | InferenceNet | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-ai-studio/flex` | Google AI Studio | 23% | 0% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 44% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 63% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 43% | 40% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 12% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 29% | 0% |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 46% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6-astra` | `azure/us` | Azure | 0% | n/a |
-| plus 10 more | | | | |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 41% | 33% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

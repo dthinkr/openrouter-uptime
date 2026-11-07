@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T20:17:13+00:00 UTC)
+## Current status (2026-11-07T20:30:33+00:00 UTC)
 
 460 models polled, 1520 inference endpoints:
-up 1045, degraded 41, down 29, idle 405.
+up 1057, degraded 35, down 27, idle 401.
 
-Currently down (29):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 20% | 20% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 10% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 40% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 17% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 33% | 100% |
 | `meta/muse-spark-open` | `fireworks/us` | Fireworks | 3% | 20% |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 11% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 20% |
-| plus 14 more | | | | |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | 0% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

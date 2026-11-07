@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T00:02:58+00:00 UTC)
+## Current status (2026-11-07T00:15:38+00:00 UTC)
 
 458 models polled, 1515 inference endpoints:
-up 1001, degraded 49, down 24, idle 441.
+up 1001, degraded 62, down 21, idle 431.
 
-Currently down (24):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 50% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 9% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 71% | 67% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 70% | 80% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 9% | 67% |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 11% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 9% | 0% |
-| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 26% | 50% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 7% | 0% |
+| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 0% | n/a |
-| plus 9 more | | | | |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 80% | 100% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

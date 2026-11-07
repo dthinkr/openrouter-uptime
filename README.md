@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T09:17:47+00:00 UTC)
+## Current status (2026-11-07T09:32:21+00:00 UTC)
 
 460 models polled, 1520 inference endpoints:
-up 1036, degraded 45, down 27, idle 412.
+up 1043, degraded 44, down 30, idle 403.
 
-Currently down (27):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 50% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 77% | 40% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 88% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 50% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 10% | 25% |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 86% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 78% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 75% | 0% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 63% | 75% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 13% | 25% |
-| `openai/gpt-6-astra` | `azure/us` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 20% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
-| plus 12 more | | | | |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 59% | 50% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 52% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 48% | 33% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

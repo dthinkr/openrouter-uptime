@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T00:15:38+00:00 UTC)
+## Current status (2026-11-07T00:32:04+00:00 UTC)
 
 458 models polled, 1515 inference endpoints:
-up 1001, degraded 62, down 21, idle 431.
+up 1017, degraded 55, down 21, idle 422.
 
 Currently down (21):
 
@@ -96,19 +96,19 @@ Currently down (21):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 71% | 67% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 70% | 80% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 9% | 67% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 26% | 50% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 7% | 0% |
-| `openai/gpt-oss-120b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 5% | 25% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 24% | 33% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 80% | 100% |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 28% | 100% |
+| `stepfun/step-5-preview` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `unbiased/pareto-26.9` | `unbiased` | Unbiased | 0% | n/a |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

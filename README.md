@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T14:18:18+00:00 UTC)
+## Current status (2026-11-07T14:32:38+00:00 UTC)
 
 460 models polled, 1519 inference endpoints:
-up 1036, degraded 68, down 20, idle 395.
+up 1039, degraded 64, down 21, idle 395.
 
-Currently down (20):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 19% | 20% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 21% | 50% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 17% | 33% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 5% | 0% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 18% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
 | `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 20% | 50% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 20% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 27% | 80% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `tencent/hy4-preview` | `cohere/mxfp4` | Cohere | 60% | 50% |
-| plus 5 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 100% | n/a |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 67% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

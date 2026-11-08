@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T06:47:27+00:00 UTC)
+## Current status (2026-11-08T07:02:12+00:00 UTC)
 
 461 models polled, 1526 inference endpoints:
-up 1056, degraded 26, down 17, idle 427.
+up 1035, degraded 29, down 22, idle 440.
 
-Currently down (17):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 50% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 4% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 50% | 67% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 35% | 50% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 20% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 83% | 100% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 13% | 75% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 46% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 5% | 25% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 76% | 100% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 71% | 100% |
-| `scaledown/extract` | `scaledown` | ScaleDown | 100% | n/a |
-| `thinkingmachines/inkling` | `together` | Together | 0% | 0% |
-| plus 2 more | | | | |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 57% | 80% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

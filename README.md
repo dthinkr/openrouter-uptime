@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T21:02:28+00:00 UTC)
+## Current status (2026-11-08T21:16:50+00:00 UTC)
 
 461 models polled, 1525 inference endpoints:
-up 1036, degraded 38, down 18, idle 433.
+up 1023, degraded 48, down 25, idle 429.
 
-Currently down (18):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 43% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 20% | 20% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 63% | 40% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 80% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 14% | 50% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 22% | 100% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 3% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 33% | n/a |
-| plus 3 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

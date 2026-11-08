@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T07:47:21+00:00 UTC)
+## Current status (2026-11-08T08:01:41+00:00 UTC)
 
 461 models polled, 1526 inference endpoints:
-up 1016, degraded 34, down 21, idle 455.
+up 1011, degraded 36, down 20, idle 459.
 
-Currently down (21):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 33% | 60% |
-| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 13% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 47% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 80% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 88% | 0% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 13% | 40% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 43% | 33% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 11% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 63% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 4% | 33% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 39% | 50% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 13% | 20% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 24% | 100% |
-| plus 6 more | | | | |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 53% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 73% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

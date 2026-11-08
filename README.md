@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T10:46:50+00:00 UTC)
+## Current status (2026-11-08T11:01:25+00:00 UTC)
 
 461 models polled, 1525 inference endpoints:
-up 996, degraded 46, down 28, idle 455.
+up 999, degraded 43, down 25, idle 458.
 
-Currently down (28):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 30% | 60% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 7% | 20% |
+| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 37% | 40% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 40% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 30% | 40% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 35% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 44% | n/a |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 37% | 40% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 9% | 40% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 4% | 20% |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3` | `inference-net/fast` | InferenceNet | 30% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `alibaba` | Alibaba | 40% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 40% | 20% |
-| plus 13 more | | | | |
+| `moonshotai/kimi-k3` | `inference-net/us/fast` | InferenceNet | 33% | 33% |
+| `moonshotai/kimi-k3` | `inference-net/fast` | InferenceNet | 30% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `alibaba` | Alibaba | 40% | 50% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

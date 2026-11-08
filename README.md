@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T03:15:28+00:00 UTC)
+## Current status (2026-11-08T03:32:09+00:00 UTC)
 
 464 models polled, 1529 inference endpoints:
-up 1018, degraded 30, down 20, idle 461.
+up 1018, degraded 37, down 22, idle 452.
 
-Currently down (20):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 50% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 52% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 15% | 25% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 25% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 11% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 22% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 64% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 25% | 40% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 8% | 50% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 25% | n/a |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 71% | 100% |
-| plus 5 more | | | | |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 0% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

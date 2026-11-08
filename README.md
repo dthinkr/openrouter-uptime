@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T10:32:15+00:00 UTC)
+## Current status (2026-11-08T10:46:50+00:00 UTC)
 
 461 models polled, 1525 inference endpoints:
-up 1016, degraded 37, down 23, idle 449.
+up 996, degraded 46, down 28, idle 455.
 
-Currently down (23):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 13% | 20% |
+| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 30% | 60% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/eu` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 45% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 41% | 20% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 54% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 0% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 5% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 67% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `alibaba` | Alibaba | 40% | 50% |
-| plus 8 more | | | | |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 40% | 0% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 30% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 9% | 40% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3` | `inference-net/fast` | InferenceNet | 30% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `alibaba` | Alibaba | 40% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 40% | 20% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

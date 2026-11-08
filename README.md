@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T04:01:38+00:00 UTC)
+## Current status (2026-11-08T04:17:33+00:00 UTC)
 
 464 models polled, 1529 inference endpoints:
-up 1021, degraded 35, down 16, idle 457.
+up 1013, degraded 33, down 22, idle 461.
 
-Currently down (16):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 73% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 8% | 20% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 14% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 29% | 50% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 10% | 60% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `alibaba` | Alibaba | 100% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 13% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-6-astra-pro` | `azure` | Azure | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 23% | 0% |
-| `thinkingmachines/inkling` | `together` | Together | 0% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 0% | 0% |
-| plus 1 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

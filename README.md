@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T04:17:33+00:00 UTC)
+## Current status (2026-11-08T04:32:17+00:00 UTC)
 
 464 models polled, 1529 inference endpoints:
-up 1013, degraded 33, down 22, idle 461.
+up 1014, degraded 35, down 18, idle 462.
 
-Currently down (22):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 100% |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 10% | 60% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `alibaba` | Alibaba | 100% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 13% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6-astra-pro` | `azure` | Azure | 0% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 19% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 40% | 50% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 11% | 50% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 6% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| plus 7 more | | | | |
+| `reflection/beam-1.0-501b-a23b` | `nebius/fp4` | Nebius | 48% | 100% |
+| `scaledown/extract` | `scaledown` | ScaleDown | 62% | 50% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

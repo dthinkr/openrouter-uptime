@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T02:47:39+00:00 UTC)
+## Current status (2026-11-08T03:01:43+00:00 UTC)
 
 464 models polled, 1529 inference endpoints:
-up 1027, degraded 31, down 21, idle 450.
+up 1031, degraded 18, down 23, idle 457.
 
-Currently down (21):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 100% | 100% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/us` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 50% | 40% |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 10% | 50% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 19% | 33% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 14% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | 50% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 37% | 0% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 12% | 50% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 25% | 33% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 36% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 20% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `together` | Together | 14% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

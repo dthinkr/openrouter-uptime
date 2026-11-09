@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T07:01:34+00:00 UTC)
+## Current status (2026-11-09T07:18:14+00:00 UTC)
 
-461 models polled, 1522 inference endpoints:
-up 1044, degraded 39, down 26, idle 413.
+461 models polled, 1520 inference endpoints:
+up 1021, degraded 49, down 29, idle 421.
 
-Currently down (26):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `aion-labs/aion-3.0` | `aion-labs` | AionLabs | 89% | 75% |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `aion-labs/aion-2.0` | `aion-labs` | AionLabs | 83% | n/a |
+| `aion-labs/aion-3.0` | `aion-labs` | AionLabs | 57% | n/a |
+| `aion-labs/aion-3.0-mini` | `aion-labs` | AionLabs | 0% | n/a |
+| `aion-labs/aion-3.5` | `aion-labs` | AionLabs | 74% | 100% |
+| `aion-labs/aion-3.5-mini` | `aion-labs` | AionLabs | 70% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 83% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 0% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 0% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 10% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
-| plus 11 more | | | | |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 13% | 20% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

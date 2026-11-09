@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T05:02:52+00:00 UTC)
+## Current status (2026-11-09T05:18:09+00:00 UTC)
 
 461 models polled, 1522 inference endpoints:
-up 1041, degraded 44, down 19, idle 418.
+up 1044, degraded 45, down 21, idle 412.
 
-Currently down (19):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (19):
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 7% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 11% | 0% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 67% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 24% | 60% |
+| `deepseek/deepseek-v4.1-flash-1017` | `primalabs` | PrimaLabs | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 13% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 45% | n/a |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 21% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 86% | 100% |
-| `stepfun/step-5-preview` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 33% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

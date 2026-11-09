@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T19:01:22+00:00 UTC)
+## Current status (2026-11-09T19:15:57+00:00 UTC)
 
-462 models polled, 1508 inference endpoints:
-up 1033, degraded 46, down 29, idle 400.
+463 models polled, 1509 inference endpoints:
+up 1032, degraded 60, down 25, idle 392.
 
-Currently down (29):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 14% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 24% | 100% |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 75% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `baidu/fp8` | Baidu | 71% | 50% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 50% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 43% | 100% |
-| plus 14 more | | | | |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 80% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 55% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 0% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

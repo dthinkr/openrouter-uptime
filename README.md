@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T07:18:14+00:00 UTC)
+## Current status (2026-11-09T07:31:13+00:00 UTC)
 
-461 models polled, 1520 inference endpoints:
-up 1021, degraded 49, down 29, idle 421.
+461 models polled, 1518 inference endpoints:
+up 1020, degraded 49, down 30, idle 419.
 
-Currently down (29):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `aion-labs/aion-2.0` | `aion-labs` | AionLabs | 83% | n/a |
-| `aion-labs/aion-3.0` | `aion-labs` | AionLabs | 57% | n/a |
-| `aion-labs/aion-3.0-mini` | `aion-labs` | AionLabs | 0% | n/a |
-| `aion-labs/aion-3.5` | `aion-labs` | AionLabs | 74% | 100% |
-| `aion-labs/aion-3.5-mini` | `aion-labs` | AionLabs | 70% | 100% |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `aion-labs/aion-2.0` | `aion-labs` | AionLabs | 86% | 100% |
+| `aion-labs/aion-3.0` | `aion-labs` | AionLabs | 50% | 100% |
+| `aion-labs/aion-3.0-mini` | `aion-labs` | AionLabs | 17% | 100% |
+| `aion-labs/aion-3.5` | `aion-labs` | AionLabs | 79% | 100% |
+| `aion-labs/aion-3.5-mini` | `aion-labs` | AionLabs | 77% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 74% | 100% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 0% |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 13% | 20% |
-| plus 14 more | | | | |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 10% | 0% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

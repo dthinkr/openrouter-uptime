@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T08:47:24+00:00 UTC)
+## Current status (2026-11-09T09:02:41+00:00 UTC)
 
-461 models polled, 1518 inference endpoints:
-up 1048, degraded 58, down 29, idle 383.
+461 models polled, 1516 inference endpoints:
+up 1037, degraded 53, down 26, idle 400.
 
-Currently down (29):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 14% | 25% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 32% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 11% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 15% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 33% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
-| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 25% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 67% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 73% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | n/a |
 | `minimax/minimax-m2.5` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `minimax/minimax-m3.1-flash` | `minimax` | Minimax | 7% | 0% |
-| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 40% | n/a |
-| plus 14 more | | | | |
+| `minimax/minimax-m3.1-flash` | `minimax` | Minimax | 10% | 20% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

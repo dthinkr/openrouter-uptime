@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T03:01:42+00:00 UTC)
+## Current status (2026-11-09T03:17:07+00:00 UTC)
 
 461 models polled, 1522 inference endpoints:
-up 1002, degraded 55, down 23, idle 442.
+up 1005, degraded 47, down 25, idle 445.
 
-Currently down (23):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | 50% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 58% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 61% | 67% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 37% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 82% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 57% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 50% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 48% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 20% | 40% |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 29% | 33% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 93% | 60% |
-| plus 8 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

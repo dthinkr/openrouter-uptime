@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T03:32:31+00:00 UTC)
+## Current status (2026-11-10T03:47:13+00:00 UTC)
 
-464 models polled, 1514 inference endpoints:
-up 1060, degraded 36, down 31, idle 387.
+465 models polled, 1517 inference endpoints:
+up 1056, degraded 32, down 32, idle 397.
 
-Currently down (31):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
 | `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 69% | 100% |
-| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 76% | 80% |
+| `deepseek/deepseek-v4-pro` | `digitalocean` | DigitalOcean | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 13% | 80% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `near-ai` | Near AI | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 45% | 25% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 47% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| plus 16 more | | | | |
+| `deepseek/deepseek-v4.1-flash-1017` | `near-ai` | Near AI | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 13% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | n/a |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 82% | 100% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

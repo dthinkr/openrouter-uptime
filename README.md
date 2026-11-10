@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T10:33:11+00:00 UTC)
+## Current status (2026-11-10T10:45:48+00:00 UTC)
 
 465 models polled, 1514 inference endpoints:
-up 1069, degraded 38, down 18, idle 389.
+up 1063, degraded 40, down 19, idle 392.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 7% | 40% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 67% | 80% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 23% | 0% |
-| `minimax/minimax-m2.5` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 3% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 9% | 100% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 33% | n/a |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 86% | 25% |
-| `x-ai/grok-4.5` | `xai/zdr` | xAI | 10% | 0% |
-| `x-ai/grok-4.5` | `xai` | xAI | 0% | 0% |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `groq` | Groq | 47% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 57% | n/a |
+| `x-ai/grok-4.5` | `xai/zdr` | xAI | 43% | 100% |
+| `x-ai/grok-4.5` | `xai` | xAI | 30% | 80% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

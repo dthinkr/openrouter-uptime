@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T05:46:50+00:00 UTC)
+## Current status (2026-11-10T06:01:26+00:00 UTC)
 
 465 models polled, 1519 inference endpoints:
-up 1048, degraded 35, down 23, idle 413.
+up 1055, degraded 34, down 20, idle 410.
 
-Currently down (23):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `anthropic/claude-haiku-4.5` | `azure/global` | Azure | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 77% | 50% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3.5-lightning` | `darkbloom/int4` | Darkbloom | 17% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 60% |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3.5-lightning` | `darkbloom/int4` | Darkbloom | 33% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6-astra-pro` | `azure` | Azure | 59% | 80% |
-| plus 8 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 40% | 33% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 0% | n/a |
+| `qwen/qwen3.5-9b` | `darkbloom/fp4` | Darkbloom | 50% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 20% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,8 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-28 18:31** — provider `primalabs` changed its terms of service url.
-- **2026-10-28 18:31** — provider `primalabs` changed its privacy policy url.
 - **2026-10-28 18:31** — provider `primalabs` changed its status page.
 - **2026-10-31 13:16** — **4 models removed from the catalog in one poll**: `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`, `poolside/laguna-xs-2.1`, `poolside/laguna-xs-2.1:free`.
 - **2026-11-02 23:46** — provider `kt` changed its terms of service url.
@@ -130,6 +128,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-06 19:01** — **4 models added to the catalog in one poll**: `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
 - **2026-11-08 02:47** — **4 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash-1017:batch`, `morph/morph-v3-fast:batch`, `morph/morph-v3-large:batch`, `z-ai/glm-5.2:batch`.
 - **2026-11-08 05:18** — **3 models removed from the catalog in one poll**: `inception/mercury-2`, `inception/mercury-2.5`, `inception/mercury-3`.
+- **2026-11-10 06:01** — provider `primeintellect` changed its terms of service url.
+- **2026-11-10 06:01** — provider `primeintellect` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T07:02:10+00:00 UTC)
+## Current status (2026-11-10T07:16:03+00:00 UTC)
 
 465 models polled, 1519 inference endpoints:
-up 1073, degraded 36, down 18, idle 392.
+up 1064, degraded 34, down 25, idle 396.
 
-Currently down (18):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 70% | 0% |
-| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 25% | 40% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-ai-studio/flex` | Google AI Studio | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 100% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 71% | 100% |
+| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 20% | n/a |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 40% | n/a |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 77% | n/a |
-| `qwen/qwen3.8-27b` | `gmicloud/bf16` | GMICloud | 0% | n/a |
-| plus 3 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

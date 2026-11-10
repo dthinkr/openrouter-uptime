@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T22:45:54+00:00 UTC)
+## Current status (2026-11-10T23:02:55+00:00 UTC)
 
 469 models polled, 1522 inference endpoints:
-up 1033, degraded 46, down 21, idle 422.
+up 1046, degraded 39, down 17, idle 420.
 
-Currently down (21):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `wafer/us` | Wafer | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 50% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 40% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 79% | 75% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 37% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 27% | 20% |
-| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | 0% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 40% | 75% |
-| `openai/gpt-6-sol` | `azure` | Azure | 27% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 9% | n/a |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 27% | 0% |
+| `openai/gpt-6-sol` | `azure` | Azure | 7% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 100% |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 80% |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.2` | `baseten/fast` | BaseTen | 71% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

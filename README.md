@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T13:31:35+00:00 UTC)
+## Current status (2026-11-10T13:48:28+00:00 UTC)
 
 465 models polled, 1513 inference endpoints:
-up 1063, degraded 69, down 19, idle 362.
+up 1072, degraded 59, down 20, idle 362.
 
-Currently down (19):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `aion-labs/aion-3.0-mini` | `aion-labs` | AionLabs | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 83% | 100% |
 | `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 68% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 4% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 60% | 40% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 63% | 20% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 80% | 0% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 100% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 33% | 100% |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 100% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

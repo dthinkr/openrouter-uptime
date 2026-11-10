@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T08:15:34+00:00 UTC)
+## Current status (2026-11-10T08:30:56+00:00 UTC)
 
 465 models polled, 1520 inference endpoints:
-up 1055, degraded 46, down 23, idle 396.
+up 1064, degraded 39, down 25, idle 392.
 
-Currently down (23):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 63% | 100% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 77% | 100% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 3% | 20% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 25% | 0% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 50% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 53% | 0% |
-| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 50% | 0% |
-| plus 8 more | | | | |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 40% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 13% | 0% |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 30% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

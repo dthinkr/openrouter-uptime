@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T16:17:56+00:00 UTC)
+## Current status (2026-11-10T16:32:31+00:00 UTC)
 
-466 models polled, 1507 inference endpoints:
-up 1069, degraded 53, down 20, idle 365.
+467 models polled, 1510 inference endpoints:
+up 1064, degraded 58, down 18, idle 370.
 
-Currently down (20):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 53% | 60% |
+| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 27% | 40% |
 | `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 62% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 86% | 25% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 60% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 25% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 76% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | n/a |
 | `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 40% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 67% | 100% |
-| plus 5 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 56% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 28% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T20:03:06+00:00 UTC)
+## Current status (2026-11-10T20:17:48+00:00 UTC)
 
-469 models polled, 1518 inference endpoints:
-up 1050, degraded 51, down 26, idle 391.
+469 models polled, 1520 inference endpoints:
+up 1068, degraded 46, down 26, idle 380.
 
 Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 69% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 96% | 100% |
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 50% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 63% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 15% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/eu` | Google | 100% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 80% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 25% | 100% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 93% | 100% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 20% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.1-flash` | `novita` | Novita | 19% | 67% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 33% | n/a |
+| `inclusionai/ling-3.1-flash` | `novita` | Novita | 16% | 100% |
+| `nvidia/nemotron-3.5-super-vl` | `venice/fp4` | Venice | 50% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 7% | 0% |
 | plus 11 more | | | | |
 

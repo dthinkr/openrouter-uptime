@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T11:02:16+00:00 UTC)
+## Current status (2026-11-10T11:16:42+00:00 UTC)
 
-465 models polled, 1514 inference endpoints:
-up 1065, degraded 39, down 17, idle 393.
+465 models polled, 1513 inference endpoints:
+up 1074, degraded 36, down 18, idle 385.
 
-Currently down (17):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 65% | 25% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 3% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | 67% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 80% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `groq` | Groq | 40% | 40% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 0% | n/a |
-| `x-ai/grok-4.6` | `xai/zdr` | xAI | 76% | 100% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 71% | n/a |
-| plus 2 more | | | | |
+| `openai/gpt-oss-120b` | `together` | Together | 36% | n/a |
+| `openai/gpt-oss-120b` | `groq` | Groq | 43% | 60% |
+| `z-ai/glm-5.3` | `parasail/fp8` | Parasail | 46% | 100% |
+| `z-ai/glm-5.3` | `parasail/fast` | Parasail | 32% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

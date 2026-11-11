@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T18:46:16+00:00 UTC)
+## Current status (2026-11-11T19:00:47+00:00 UTC)
 
 466 models polled, 1499 inference endpoints:
-up 1030, degraded 65, down 20, idle 384.
+up 1044, degraded 57, down 25, idle 373.
 
-Currently down (20):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 43% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 30% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `ionstream/flex` | Ionstream | 47% | 80% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 63% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 7% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 73% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 39% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 44% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 33% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 18% | 20% |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 24% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 40% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 14% | 33% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 76% | 50% |
-| plus 5 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 33% | 50% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

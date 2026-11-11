@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T18:02:16+00:00 UTC)
+## Current status (2026-11-11T18:16:36+00:00 UTC)
 
 466 models polled, 1499 inference endpoints:
-up 1022, degraded 66, down 17, idle 394.
+up 1022, degraded 78, down 23, idle 376.
 
-Currently down (17):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 63% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemini-4-carbon` | `google-vertex/us` | Google | 52% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 67% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 36% | 80% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 86% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `primalabs` | PrimaLabs | 50% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 53% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 50% | 80% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 20% | 67% |
+| `nex-agi/nex-n2.5-pro` | `nex-agi/fp8` | Nex AGI | 0% | n/a |
+| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 64% | 0% |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 26% | 25% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 53% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 23% | n/a |
-| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
-| plus 2 more | | | | |
+| `perceptron/perceptron-mk1.5` | `perceptron` | Perceptron | 0% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

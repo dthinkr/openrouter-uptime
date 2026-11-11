@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T22:47:53+00:00 UTC)
+## Current status (2026-11-11T23:03:02+00:00 UTC)
 
-466 models polled, 1502 inference endpoints:
-up 1031, degraded 31, down 25, idle 415.
+467 models polled, 1503 inference endpoints:
+up 1023, degraded 30, down 24, idle 426.
 
-Currently down (25):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 27% | 60% |
 | `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 8% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/eu` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 17% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 17% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/eu` | Google | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 67% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 70% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 32% | 25% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 46% | 60% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 17% | n/a |
-| plus 10 more | | | | |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 3% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 25% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 56% | 40% |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 33% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

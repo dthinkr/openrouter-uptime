@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T02:00:53+00:00 UTC)
+## Current status (2026-11-11T02:16:48+00:00 UTC)
 
 469 models polled, 1504 inference endpoints:
-up 1014, degraded 53, down 26, idle 411.
+up 1022, degraded 52, down 21, idle 409.
 
-Currently down (26):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 74% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 67% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 3% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | 67% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `baseten` | BaseTen | 67% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 23% | 20% |
 | `google/gemini-4-carbon` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 40% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
 | `meta/muse-ember` | `google-vertex/global` | Google | 0% | 0% |
-| `meta/muse-spark-1.3` | `google-vertex/global` | Google | 0% | n/a |
+| `meta/muse-spark-1.3` | `google-vertex/global` | Google | 0% | 0% |
 | `meta/muse-wonder` | `google-vertex/global` | Google | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 10% | 0% |
-| plus 11 more | | | | |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 9% | 20% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 37% | 100% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

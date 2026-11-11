@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T11:00:50+00:00 UTC)
+## Current status (2026-11-11T11:15:28+00:00 UTC)
 
 469 models polled, 1499 inference endpoints:
-up 1023, degraded 59, down 25, idle 392.
+up 1019, degraded 58, down 26, idle 396.
 
-Currently down (25):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 80% |
-| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 69% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 22% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 56% | 20% |
 | `google/gemini-4-carbon` | `google-vertex/global` | Google | 0% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 67% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 53% | 20% |
 | `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 67% | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| plus 10 more | | | | |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

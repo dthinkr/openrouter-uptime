@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T13:01:26+00:00 UTC)
+## Current status (2026-11-11T13:16:27+00:00 UTC)
 
-469 models polled, 1500 inference endpoints:
-up 1035, degraded 49, down 24, idle 392.
+466 models polled, 1497 inference endpoints:
+up 1041, degraded 56, down 24, idle 376.
 
 Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 33% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `morph/fp8` | Morph | 27% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 62% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 55% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 27% | 100% |
-| `google/gemini-4-carbon` | `google-vertex/us` | Google | 67% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 31% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 60% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 47% | 40% |
+| `deepseek/deepseek-v4.1-flash-1017` | `morph/fp8` | Morph | 43% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 55% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 47% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/us` | Google | 50% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 20% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 62% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 8% | n/a |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 10% | n/a |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-28 18:31** — provider `primalabs` changed its status page.
 - **2026-10-31 13:16** — **4 models removed from the catalog in one poll**: `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`, `poolside/laguna-xs-2.1`, `poolside/laguna-xs-2.1:free`.
 - **2026-11-02 23:46** — provider `kt` changed its terms of service url.
 - **2026-11-02 23:46** — provider `kt` changed its privacy policy url.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-08 05:18** — **3 models removed from the catalog in one poll**: `inception/mercury-2`, `inception/mercury-2.5`, `inception/mercury-3`.
 - **2026-11-10 06:01** — provider `primeintellect` changed its terms of service url.
 - **2026-11-10 06:01** — provider `primeintellect` changed its privacy policy url.
+- **2026-11-11 13:16** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T20:30:54+00:00 UTC)
+## Current status (2026-11-11T20:47:34+00:00 UTC)
 
 466 models polled, 1501 inference endpoints:
-up 1014, degraded 58, down 21, idle 408.
+up 1013, degraded 56, down 18, idle 414.
 
-Currently down (21):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 67% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 69% | 67% |
-| `google/gemini-4-carbon` | `google-vertex/eu` | Google | 50% | 50% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 40% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 56% | 67% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 23% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 20% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 81% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | 50% |
+| `moonshotai/kimi-k3.1-pro` | `akashml/fp4` | AkashML | 89% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 12% | 0% |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 6% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 69% | 67% |
-| plus 6 more | | | | |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 11% | 0% |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
+| `xiaomi/mimo-v2.6-pro` | `primalabs/fp8` | PrimaLabs | 47% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

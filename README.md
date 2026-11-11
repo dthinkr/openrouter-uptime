@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T05:01:29+00:00 UTC)
+## Current status (2026-11-11T05:17:14+00:00 UTC)
 
 469 models polled, 1504 inference endpoints:
-up 1030, degraded 50, down 18, idle 406.
+up 1026, degraded 57, down 16, idle 405.
 
-Currently down (18):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 67% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 60% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 63% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `modal` | Modal | 20% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta/muse-wonder` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 21% | 50% |
+| `google/gemma-4-31b-it` | `modal` | Modal | 40% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 50% |
+| `meta/muse-wonder` | `google-vertex/global` | Google | 27% | 100% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 25% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 73% | 50% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 100% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 59% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 70% | 75% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 0% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 22% | n/a |
 | `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
-| plus 3 more | | | | |
+| `thinkingmachines/inkling` | `together` | Together | 20% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

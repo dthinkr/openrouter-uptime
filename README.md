@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T01:32:28+00:00 UTC)
+## Current status (2026-11-11T01:48:22+00:00 UTC)
 
-469 models polled, 1505 inference endpoints:
-up 974, degraded 81, down 36, idle 414.
+469 models polled, 1504 inference endpoints:
+up 986, degraded 74, down 28, idle 416.
 
-Currently down (36):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8/us-east-1` | Alibaba | 50% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 64% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 60% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 70% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten` | BaseTen | 0% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 29% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 76% | 75% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 85% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 50% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 30% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | 17% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `baseten` | BaseTen | 18% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `morph/fp8` | Morph | 50% | 60% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/gemini-4-carbon` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 78% | 50% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 40% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 73% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 87% | 100% |
-| `meta/muse-ember` | `google-vertex/global` | Google | 0% | 0% |
-| `meta/muse-spark-1.3` | `google-vertex/global` | Google | 0% | n/a |
-| `meta/muse-wonder` | `google-vertex/global` | Google | 0% | 0% |
-| plus 21 more | | | | |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

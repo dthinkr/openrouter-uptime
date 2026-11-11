@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T22:03:17+00:00 UTC)
+## Current status (2026-11-11T22:17:56+00:00 UTC)
 
 466 models polled, 1502 inference endpoints:
-up 1030, degraded 59, down 20, idle 393.
+up 1029, degraded 54, down 23, idle 396.
 
-Currently down (20):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 67% | 60% |
 | `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 3% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 67% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 76% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 93% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `fireworks` | Fireworks | 62% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 30% | 25% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 75% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 67% | 60% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `fireworks` | Fireworks | 70% | 100% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 90% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 23% | 0% |
-| plus 5 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 71% | 50% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 84% | 100% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

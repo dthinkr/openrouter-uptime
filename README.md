@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T03:16:38+00:00 UTC)
+## Current status (2026-11-11T03:31:05+00:00 UTC)
 
 469 models polled, 1503 inference endpoints:
-up 1031, degraded 47, down 22, idle 403.
+up 1034, degraded 45, down 25, idle 399.
 
-Currently down (22):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 23% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 18% | 0% |
-| `google/gemini-4-carbon` | `google-ai-studio` | Google AI Studio | 7% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 3% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 21% | 100% |
+| `google/gemini-4-carbon` | `google-ai-studio` | Google AI Studio | 53% | 100% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
 | `meta/muse-ember` | `google-vertex/global` | Google | 0% | 0% |
 | `meta/muse-spark-1.3` | `google-vertex/global` | Google | 0% | n/a |
 | `meta/muse-wonder` | `google-vertex/global` | Google | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 13% | 0% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 58% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 31% | 25% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 30% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 75% | 100% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 71% | 80% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

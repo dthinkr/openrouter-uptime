@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T15:17:56+00:00 UTC)
+## Current status (2026-11-11T15:30:34+00:00 UTC)
 
 466 models polled, 1498 inference endpoints:
-up 1051, degraded 56, down 21, idle 370.
+up 1057, degraded 58, down 22, idle 361.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 48% | 0% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 22% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 32% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 86% | 80% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 13% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 75% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | 0% | 0% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 12% | 0% |
+| `nvidia/nemotron-3.5-lightning` | `fireworks` | Fireworks | 30% | 0% |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 5% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 100% | n/a |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 67% | 100% |
-| plus 6 more | | | | |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 62% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

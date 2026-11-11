@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T19:16:47+00:00 UTC)
+## Current status (2026-11-11T19:31:50+00:00 UTC)
 
-466 models polled, 1499 inference endpoints:
-up 1019, degraded 84, down 31, idle 365.
+466 models polled, 1501 inference endpoints:
+up 1025, degraded 70, down 44, idle 362.
 
-Currently down (31):
+Currently down (44):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 7% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | 30% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 10% | 20% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 63% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp32` | BaseTen | 47% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 87% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 60% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | 7% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten` | BaseTen | 37% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 40% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `baseten/fast` | BaseTen | 47% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 25% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `baseten/fp4` | BaseTen | 78% | 60% |
-| `nvidia/nemotron-3.5-super-vl` | `venice/fp4` | Venice | 68% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `baseten/fp4` | BaseTen | 58% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 33% | 50% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| plus 16 more | | | | |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 90% | 60% |
+| plus 29 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

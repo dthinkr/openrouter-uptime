@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T18:16:36+00:00 UTC)
+## Current status (2026-11-11T18:33:14+00:00 UTC)
 
 466 models polled, 1499 inference endpoints:
-up 1022, degraded 78, down 23, idle 376.
+up 1041, degraded 64, down 22, idle 372.
 
-Currently down (23):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 20% |
-| `deepseek/deepseek-v4.1-flash-1017` | `primalabs` | PrimaLabs | 50% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 47% | 20% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 53% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 47% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nex-agi/nex-n2.5-pro` | `nex-agi/fp8` | Nex AGI | 0% | n/a |
-| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 64% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 26% | 25% |
+| `nex-agi/nex-n2.5-pro` | `nex-agi/fp8` | Nex AGI | 60% | 100% |
+| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 62% | 100% |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 19% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `perceptron/perceptron-mk1.5` | `perceptron` | Perceptron | 0% | 0% |
-| plus 8 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 25% | 0% |
+| `perceptron/perceptron-mk1.5` | `perceptron` | Perceptron | 33% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 83% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

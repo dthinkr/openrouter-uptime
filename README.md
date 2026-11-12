@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T11:18:18+00:00 UTC)
+## Current status (2026-11-12T11:30:34+00:00 UTC)
 
-468 models polled, 1506 inference endpoints:
-up 1059, degraded 44, down 28, idle 375.
+468 models polled, 1507 inference endpoints:
+up 1053, degraded 47, down 25, idle 382.
 
-Currently down (28):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 60% | 50% |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 83% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 80% |
-| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 37% | 100% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 29% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 71% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 56% | 67% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 62% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | 33% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 20% | 100% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 50% | 100% |
 | `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 37% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 40% |
-| plus 13 more | | | | |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 17% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 68% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

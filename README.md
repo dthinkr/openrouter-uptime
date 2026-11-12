@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T14:15:49+00:00 UTC)
+## Current status (2026-11-12T14:31:28+00:00 UTC)
 
 468 models polled, 1506 inference endpoints:
-up 1056, degraded 51, down 24, idle 375.
+up 1046, degraded 62, down 26, idle 372.
 
-Currently down (24):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `ionstream` | Ionstream | 83% | 40% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 29% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 53% | 20% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 71% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `ionstream` | Ionstream | 75% | 100% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 40% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 57% | 100% |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 70% | 100% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 33% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 27% | 33% |
-| `meta/muse-ember` | `google-vertex/global` | Google | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 58% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 50% | 100% |
-| plus 9 more | | | | |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 50% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-5.6-sol` | `azure` | Azure | 47% | 40% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 32% | 0% |
+| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 25% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

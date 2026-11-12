@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T19:46:16+00:00 UTC)
+## Current status (2026-11-12T20:03:12+00:00 UTC)
 
 473 models polled, 1519 inference endpoints:
-up 1042, degraded 54, down 21, idle 402.
+up 1048, degraded 55, down 21, idle 395.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 95% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 84% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `baseten/fast` | BaseTen | 43% | 40% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 65% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
 | `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 8% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
 | `openai/gpt-5.6-sol` | `azure` | Azure | 0% | 0% |
+| `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 100% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 80% | 50% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 10% | 0% |
 | `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 0% | 0% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 83% | n/a |
 | `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
@@ -118,8 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-31 13:16** — **4 models removed from the catalog in one poll**: `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`, `poolside/laguna-xs-2.1`, `poolside/laguna-xs-2.1:free`.
-- **2026-11-02 23:46** — provider `kt` changed its terms of service url.
 - **2026-11-02 23:46** — provider `kt` changed its privacy policy url.
 - **2026-11-04 16:47** — provider `antdigital` changed its terms of service url.
 - **2026-11-04 16:47** — provider `antdigital` changed its privacy policy url.
@@ -130,6 +128,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-10 06:01** — provider `primeintellect` changed its terms of service url.
 - **2026-11-10 06:01** — provider `primeintellect` changed its privacy policy url.
 - **2026-11-11 13:16** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
+- **2026-11-12 20:03** — provider `recraft` changed its terms of service url.
+- **2026-11-12 20:03** — provider `recraft` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T06:02:14+00:00 UTC)
+## Current status (2026-11-12T06:17:44+00:00 UTC)
 
 468 models polled, 1506 inference endpoints:
-up 1018, degraded 43, down 25, idle 420.
+up 1030, degraded 49, down 24, idle 403.
 
-Currently down (25):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | 69% | 60% |
-| `deepseek/deepseek-v4.1-flash` | `baseten` | BaseTen | 73% | 80% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 93% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 80% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 17% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | 20% |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 7% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 23% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 41% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | 55% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `baseten` | BaseTen | 73% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 97% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 21% | 80% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 29% | 33% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
 | `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | 0% |
-| plus 10 more | | | | |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 13% | 0% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 40% | 20% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T01:02:21+00:00 UTC)
+## Current status (2026-11-12T01:15:54+00:00 UTC)
 
 467 models polled, 1503 inference endpoints:
-up 998, degraded 65, down 27, idle 413.
+up 1019, degraded 58, down 25, idle 401.
 
-Currently down (27):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 27% | 60% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 12% | 50% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 43% | 40% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 38% | 25% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 64% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 37% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 10% | 20% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 13% | 0% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 41% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 18% | 0% |
-| plus 12 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 28% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 64% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 73% | 100% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

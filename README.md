@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T20:03:12+00:00 UTC)
+## Current status (2026-11-12T20:16:36+00:00 UTC)
 
 473 models polled, 1519 inference endpoints:
-up 1048, degraded 55, down 21, idle 395.
+up 1040, degraded 54, down 22, idle 403.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `baseten/fast` | BaseTen | 43% | 40% |
-| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 65% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 89% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `baseten/fast` | BaseTen | 57% | 100% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 70% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/eu` | Google | 0% | n/a |
 | `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `openai/gpt-5.6-sol` | `azure` | Azure | 0% | 0% |
-| `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 100% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 10% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 83% | n/a |
-| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
-| plus 6 more | | | | |
+| `openai/gpt-5.6-sol` | `azure` | Azure | 33% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 83% | 60% |
+| `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 83% | 100% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T13:47:40+00:00 UTC)
+## Current status (2026-11-12T14:02:42+00:00 UTC)
 
 468 models polled, 1507 inference endpoints:
-up 1047, degraded 55, down 18, idle 387.
+up 1046, degraded 55, down 25, idle 381.
 
-Currently down (18):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (18):
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 47% | 60% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 19% | 0% |
 | `google/gemini-4-carbon` | `google-vertex/eu` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 33% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 87% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 44% | 50% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 20% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 85% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 63% | 40% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
+| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 63% | 60% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 53% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 29% | 67% |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 75% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 67% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 0% | 0% |
-| plus 3 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

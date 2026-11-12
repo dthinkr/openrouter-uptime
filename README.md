@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T18:18:09+00:00 UTC)
+## Current status (2026-11-12T18:30:28+00:00 UTC)
 
-469 models polled, 1514 inference endpoints:
-up 1015, degraded 56, down 22, idle 421.
+470 models polled, 1516 inference endpoints:
+up 1017, degraded 62, down 29, idle 408.
 
-Currently down (22):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 33% | 20% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 80% | 60% |
+| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 80% | 40% |
 | `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 50% |
-| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 44% | 50% |
+| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 33% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 20% | 80% |
-| `openai/gpt-5.6-sol` | `azure` | Azure | 53% | 20% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 50% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 77% | 60% |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 89% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 50% | 60% |
-| plus 7 more | | | | |
+| `moonshotai/kimi-k3.1-pro` | `alibaba` | Alibaba | 50% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

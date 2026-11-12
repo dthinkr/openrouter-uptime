@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T20:16:36+00:00 UTC)
+## Current status (2026-11-12T20:32:02+00:00 UTC)
 
 473 models polled, 1519 inference endpoints:
-up 1040, degraded 54, down 22, idle 403.
+up 1052, degraded 43, down 20, idle 404.
 
-Currently down (22):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 89% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `baseten/fast` | BaseTen | 57% | 100% |
-| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 70% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 87% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/eu` | Google | 0% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 77% | 100% |
 | `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `openai/gpt-5.6-sol` | `azure` | Azure | 33% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 83% | 60% |
+| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 69% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 20% |
+| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 89% | 33% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 83% | 25% |
 | `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 83% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 90% | 40% |
 | `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | 0% |
-| plus 7 more | | | | |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T17:30:54+00:00 UTC)
+## Current status (2026-11-12T17:48:05+00:00 UTC)
 
 468 models polled, 1506 inference endpoints:
-up 1033, degraded 60, down 26, idle 387.
+up 1028, degraded 56, down 28, idle 394.
 
-Currently down (26):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 25% | n/a |
 | `elorian/glimpse` | `together` | Together | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 33% | 100% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 3% | 20% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 47% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 43% | 100% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 67% | 80% |
+| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 85% | 20% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 56% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | 100% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-5.6-sol` | `azure` | Azure | 53% | 40% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 33% | 20% |
-| plus 11 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 30% | 25% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

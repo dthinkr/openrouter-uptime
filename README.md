@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T20:48:21+00:00 UTC)
+## Current status (2026-11-12T21:01:34+00:00 UTC)
 
 473 models polled, 1520 inference endpoints:
-up 1038, degraded 44, down 23, idle 415.
+up 1037, degraded 53, down 28, idle 402.
 
-Currently down (23):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 65% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 61% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 40% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 44% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 53% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 27% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 65% | 80% |
+| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 77% | 80% |
 | `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 62% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 80% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 88% | 100% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 50% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 83% | 100% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 15% | n/a |
-| plus 8 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 8% | 100% |
+| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 25% | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T05:16:57+00:00 UTC)
+## Current status (2026-11-12T05:31:57+00:00 UTC)
 
 467 models polled, 1504 inference endpoints:
-up 1024, degraded 43, down 14, idle 423.
+up 1023, degraded 43, down 21, idle 417.
 
-Currently down (14):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 40% | 100% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 54% | 25% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 43% | 0% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 3% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 16% | 0% |
-| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 71% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 27% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 60% | 50% |
+| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 57% | n/a |
 | `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 10% | 0% |
-| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 3% | 20% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 100% |
-| `z-ai/glm-5.2` | `nebius/fp4` | Nebius | 40% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 14% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

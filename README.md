@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T17:01:42+00:00 UTC)
+## Current status (2026-11-12T17:17:33+00:00 UTC)
 
 468 models polled, 1506 inference endpoints:
-up 1029, degraded 61, down 28, idle 388.
+up 1033, degraded 59, down 27, idle 387.
 
-Currently down (28):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `cohere/command-r-08-2024` | `cohere` | Cohere | 100% | n/a |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 71% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 79% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 60% | 20% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 7% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 90% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
-| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 100% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 25% |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 67% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | 25% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 64% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 60% |
-| `qwen/qwen3-14b` | `nextbit/int4` | NextBit | 0% | n/a |
-| plus 13 more | | | | |
+| `openai/gpt-5.6-sol` | `azure` | Azure | 70% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 41% | 40% |
+| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 92% | 60% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

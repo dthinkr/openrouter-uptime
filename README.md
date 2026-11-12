@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T04:33:02+00:00 UTC)
+## Current status (2026-11-12T04:45:32+00:00 UTC)
 
 467 models polled, 1504 inference endpoints:
-up 1041, degraded 39, down 21, idle 403.
+up 1052, degraded 27, down 22, idle 403.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 37% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `alibaba` | Alibaba | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 21% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 27% | 100% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 63% | 100% |
 | `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 12% | 40% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 64% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 17% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 29% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 50% | 40% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 87% | n/a |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 14% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 57% | 100% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 67% | 20% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 33% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 23% | 20% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

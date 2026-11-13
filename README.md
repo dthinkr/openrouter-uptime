@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T07:48:02+00:00 UTC)
+## Current status (2026-11-13T08:03:14+00:00 UTC)
 
 475 models polled, 1523 inference endpoints:
-up 1060, degraded 50, down 14, idle 399.
+up 1049, degraded 48, down 20, idle 406.
 
-Currently down (14):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 87% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `alibaba` | Alibaba | 13% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 52% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 30% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 60% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 10% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `tenstorrent/fp8` | Tenstorrent | 43% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 93% | 60% |
+| `deepseek/deepseek-v4.1-flash-1017` | `alibaba` | Alibaba | 40% | 40% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 74% | 50% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 7% | 20% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 75% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 12% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 62% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 40% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

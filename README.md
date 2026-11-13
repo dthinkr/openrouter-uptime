@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T14:03:08+00:00 UTC)
+## Current status (2026-11-13T14:16:09+00:00 UTC)
 
 470 models polled, 1517 inference endpoints:
-up 1033, degraded 73, down 17, idle 394.
+up 1021, degraded 72, down 38, idle 386.
 
-Currently down (17):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-opus-4.5` | `anthropic` | Anthropic | 0% | n/a |
+| `anthropic/claude-fable-5.1` | `azure` | Azure | 83% | n/a |
+| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 70% | 0% |
+| `anthropic/claude-fable-5.2` | `azure` | Azure | 40% | 0% |
+| `anthropic/claude-fable-5.2` | `anthropic` | Anthropic | 70% | 0% |
+| `anthropic/claude-haiku-4.5` | `anthropic` | Anthropic | 70% | 0% |
+| `anthropic/claude-haiku-5.5` | `anthropic` | Anthropic | 70% | 0% |
+| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 69% | 0% |
+| `anthropic/claude-opus-4.8` | `anthropic` | Anthropic | 70% | 0% |
+| `anthropic/claude-opus-5` | `anthropic` | Anthropic | 72% | 0% |
+| `anthropic/claude-opus-5.5` | `anthropic` | Anthropic | 70% | 0% |
+| `anthropic/claude-sonnet-4.5` | `anthropic` | Anthropic | 60% | 0% |
 | `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
-| `anthropic/claude-sonnet-5` | `azure/global` | Azure | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 87% | 100% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 47% | 0% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 63% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 48% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 10% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| plus 2 more | | | | |
+| `anthropic/claude-sonnet-5` | `azure/global` | Azure | 0% | 0% |
+| `anthropic/claude-sonnet-5.5` | `azure/global` | Azure | 71% | 20% |
+| `anthropic/claude-sonnet-5.5` | `anthropic` | Anthropic | 70% | 0% |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

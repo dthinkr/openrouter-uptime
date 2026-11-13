@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T23:15:43+00:00 UTC)
+## Current status (2026-11-13T23:31:01+00:00 UTC)
 
-471 models polled, 1521 inference endpoints:
-up 1050, degraded 40, down 20, idle 411.
+471 models polled, 1522 inference endpoints:
+up 1044, degraded 40, down 25, idle 413.
 
-Currently down (20):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 33% | 25% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 67% | 50% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 71% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 37% | 40% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 88% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 67% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 23% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 57% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 56% | 50% |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 50% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 17% | 60% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 33% | 40% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 81% | 100% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 73% | n/a |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 0% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 60% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 23% | 20% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 90% | n/a |
+| `mistralai/mistral-small-2603` | `mistral/us` | Mistral | 54% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 20% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 20% |
 | `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 53% | 80% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 50% | n/a |
-| plus 5 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

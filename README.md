@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T09:47:49+00:00 UTC)
+## Current status (2026-11-13T10:02:59+00:00 UTC)
 
 472 models polled, 1521 inference endpoints:
-up 1052, degraded 54, down 21, idle 394.
+up 1043, degraded 60, down 16, idle 402.
 
-Currently down (21):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 87% | 100% |
-| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 62% | 100% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 93% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 43% | 80% |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 60% | 100% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 20% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 20% |
-| plus 6 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 90% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 90% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 24% | 100% |
+| `google/gemini-4-hydrogen` | `google-ai-studio` | Google AI Studio | 57% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 28% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 20% |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 75% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

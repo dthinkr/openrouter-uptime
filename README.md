@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T13:02:35+00:00 UTC)
+## Current status (2026-11-13T13:17:47+00:00 UTC)
 
-472 models polled, 1519 inference endpoints:
-up 1039, degraded 67, down 16, idle 397.
+470 models polled, 1517 inference endpoints:
+up 1004, degraded 80, down 31, idle 402.
 
-Currently down (16):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 40% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `ionstream` | Ionstream | 76% | 100% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 25% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 67% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 17% | 80% |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 41% | 40% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 40% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 13% | 80% |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| plus 1 more | | | | |
+| `anthropic/claude-fable-5.2` | `azure` | Azure | 63% | 100% |
+| `anthropic/claude-fable-5.2` | `anthropic` | Anthropic | 60% | 100% |
+| `anthropic/claude-haiku-4.5` | `anthropic` | Anthropic | 57% | 20% |
+| `anthropic/claude-opus-4.5` | `anthropic` | Anthropic | 40% | 50% |
+| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 57% | 20% |
+| `anthropic/claude-opus-4.8` | `anthropic` | Anthropic | 57% | 20% |
+| `anthropic/claude-opus-5` | `anthropic` | Anthropic | 32% | 0% |
+| `anthropic/claude-opus-5.5` | `anthropic` | Anthropic | 57% | 40% |
+| `anthropic/claude-opus-5.5` | `anthropic/fast` | Anthropic | 62% | 40% |
+| `anthropic/claude-sonnet-4.5` | `anthropic` | Anthropic | 0% | n/a |
+| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
+| `anthropic/claude-sonnet-5` | `azure/global` | Azure | 0% | 0% |
+| `anthropic/claude-sonnet-5` | `anthropic` | Anthropic | 53% | 20% |
+| `anthropic/claude-sonnet-5.5` | `anthropic` | Anthropic | 60% | 40% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 77% | 0% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

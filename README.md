@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T08:46:49+00:00 UTC)
+## Current status (2026-11-13T09:02:53+00:00 UTC)
 
-475 models polled, 1523 inference endpoints:
-up 1040, degraded 52, down 27, idle 404.
+472 models polled, 1520 inference endpoints:
+up 1050, degraded 56, down 19, idle 395.
 
-Currently down (27):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 93% | 100% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 60% |
-| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 48% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 58% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 61% | 0% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 13% | 20% |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 47% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 40% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| plus 12 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 60% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 4% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 20% | 60% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 63% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 40% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 12% | 100% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 7% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 13% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 67% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-02 23:46** — provider `kt` changed its privacy policy url.
 - **2026-11-04 16:47** — provider `antdigital` changed its terms of service url.
 - **2026-11-04 16:47** — provider `antdigital` changed its privacy policy url.
 - **2026-11-05 13:16** — **4 models removed from the catalog in one poll**: `minimax/minimax-01`, `minimax/minimax-m2`, `minimax/minimax-m2-her`, `minimax/minimax-m2.1`.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-11 13:16** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
 - **2026-11-12 20:03** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:03** — provider `recraft` changed its privacy policy url.
+- **2026-11-13 09:02** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

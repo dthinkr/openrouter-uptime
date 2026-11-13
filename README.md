@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T14:33:24+00:00 UTC)
+## Current status (2026-11-13T14:45:46+00:00 UTC)
 
 470 models polled, 1517 inference endpoints:
-up 1021, degraded 76, down 38, idle 382.
+up 1021, degraded 82, down 20, idle 394.
 
-Currently down (38):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5.1` | `azure` | Azure | 71% | n/a |
-| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 58% | 100% |
-| `anthropic/claude-fable-5.2` | `azure` | Azure | 25% | n/a |
-| `anthropic/claude-fable-5.2` | `anthropic` | Anthropic | 60% | 100% |
-| `anthropic/claude-haiku-4.5` | `anthropic` | Anthropic | 60% | 100% |
-| `anthropic/claude-haiku-5.5` | `azure/global` | Azure | 73% | 100% |
-| `anthropic/claude-haiku-5.5` | `anthropic` | Anthropic | 60% | 100% |
-| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 60% | 100% |
-| `anthropic/claude-opus-4.8` | `anthropic` | Anthropic | 60% | 100% |
-| `anthropic/claude-opus-5` | `anthropic` | Anthropic | 50% | 100% |
-| `anthropic/claude-opus-5.5` | `anthropic` | Anthropic | 60% | 100% |
-| `anthropic/claude-sonnet-4.5` | `anthropic` | Anthropic | 50% | 100% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
 | `anthropic/claude-sonnet-5` | `azure/global` | Azure | 0% | n/a |
-| `anthropic/claude-sonnet-5` | `anthropic` | Anthropic | 63% | 100% |
-| plus 23 more | | | | |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 79% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 14% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 68% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 12% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 75% | 33% |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 20% | 100% |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 72% | 100% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T13:17:47+00:00 UTC)
+## Current status (2026-11-13T13:31:37+00:00 UTC)
 
 470 models polled, 1517 inference endpoints:
-up 1004, degraded 80, down 31, idle 402.
+up 1013, degraded 78, down 39, idle 387.
 
-Currently down (31):
+Currently down (39):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5.2` | `azure` | Azure | 63% | 100% |
-| `anthropic/claude-fable-5.2` | `anthropic` | Anthropic | 60% | 100% |
-| `anthropic/claude-haiku-4.5` | `anthropic` | Anthropic | 57% | 20% |
-| `anthropic/claude-opus-4.5` | `anthropic` | Anthropic | 40% | 50% |
-| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 57% | 20% |
-| `anthropic/claude-opus-4.8` | `anthropic` | Anthropic | 57% | 20% |
-| `anthropic/claude-opus-5` | `anthropic` | Anthropic | 32% | 0% |
-| `anthropic/claude-opus-5.5` | `anthropic` | Anthropic | 57% | 40% |
-| `anthropic/claude-opus-5.5` | `anthropic/fast` | Anthropic | 62% | 40% |
-| `anthropic/claude-sonnet-4.5` | `anthropic` | Anthropic | 0% | n/a |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
-| `anthropic/claude-sonnet-5` | `azure/global` | Azure | 0% | 0% |
-| `anthropic/claude-sonnet-5` | `anthropic` | Anthropic | 53% | 20% |
-| `anthropic/claude-sonnet-5.5` | `anthropic` | Anthropic | 60% | 40% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 77% | 0% |
-| plus 16 more | | | | |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 0% | n/a |
+| `anthropic/claude-fable-5.1` | `azure` | Azure | 38% | n/a |
+| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 38% | 0% |
+| `anthropic/claude-fable-5.2` | `azure` | Azure | 50% | 0% |
+| `anthropic/claude-fable-5.2` | `anthropic` | Anthropic | 40% | 0% |
+| `anthropic/claude-fable-5.2` | `anthropic/fast` | Anthropic | 100% | n/a |
+| `anthropic/claude-haiku-4.5` | `anthropic` | Anthropic | 37% | 0% |
+| `anthropic/claude-haiku-5.5` | `anthropic` | Anthropic | 40% | 0% |
+| `anthropic/claude-opus-4.5` | `anthropic` | Anthropic | 50% | 0% |
+| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 37% | 0% |
+| `anthropic/claude-opus-4.7` | `anthropic` | Anthropic | 50% | n/a |
+| `anthropic/claude-opus-4.8` | `anthropic` | Anthropic | 37% | 0% |
+| `anthropic/claude-opus-5` | `anthropic` | Anthropic | 24% | 0% |
+| `anthropic/claude-opus-5.5` | `azure/global` | Azure | 58% | 20% |
+| `anthropic/claude-opus-5.5` | `anthropic` | Anthropic | 40% | 0% |
+| plus 24 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

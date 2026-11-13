@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T03:16:58+00:00 UTC)
+## Current status (2026-11-13T03:31:05+00:00 UTC)
 
 475 models polled, 1521 inference endpoints:
-up 1029, degraded 46, down 21, idle 425.
+up 1057, degraded 42, down 16, idle 406.
 
-Currently down (21):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 83% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 47% | 67% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 57% | 50% |
-| `nvidia/nemotron-3.5-lightning` | `darkbloom/int4` | Darkbloom | 0% | n/a |
-| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 50% | 50% |
-| `openai/gpt-oss-120b` | `venice/int4` | Venice | 38% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 80% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 33% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 3% | 20% |
-| plus 6 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 47% | 0% |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 71% | n/a |
+| `openai/gpt-oss-120b` | `venice/int4` | Venice | 60% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 10% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 40% | 60% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 89% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `cohere/fp8` | Cohere | 87% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T16:46:43+00:00 UTC)
+## Current status (2026-11-14T17:00:49+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1054, degraded 33, down 14, idle 428.
+up 1068, degraded 31, down 12, idle 418.
 
-Currently down (14):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-haiku-4.5` | `amazon-bedrock/us` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 3% | 20% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 40% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 47% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | 67% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 4% | 0% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 47% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 47% | 0% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 83% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 47% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 33% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 30% | 20% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 3% | 0% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 60% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 5% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 75% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 5% | 25% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 13% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 80% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

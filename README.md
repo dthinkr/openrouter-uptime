@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T15:45:43+00:00 UTC)
+## Current status (2026-11-14T16:00:54+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1078, degraded 34, down 16, idle 401.
+up 1081, degraded 28, down 15, idle 405.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 42% | 67% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 67% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 20% | 60% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 43% | 25% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 56% | 67% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 20% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 78% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 4% | 20% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 44% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 20% | n/a |
 | `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 65% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 30% | 20% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 30% | 0% |
 | `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 20% |
-| plus 1 more | | | | |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 47% | 60% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 20% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

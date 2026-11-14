@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T13:31:56+00:00 UTC)
+## Current status (2026-11-14T13:48:13+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1062, degraded 40, down 16, idle 411.
+up 1051, degraded 46, down 17, idle 415.
 
-Currently down (16):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 28% | 50% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
 | `google/gemini-4-carbon` | `google-vertex/eu` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 30% | 20% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 78% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
 | `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | 0% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 20% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 80% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 40% |
 | `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 13% | 40% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 27% | 0% |
-| plus 1 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 33% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 96% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,30 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T03:31:38+00:00 UTC)
+## Current status (2026-11-14T03:46:29+00:00 UTC)
 
 471 models polled, 1524 inference endpoints:
-up 1032, degraded 33, down 15, idle 444.
+up 1021, degraded 44, down 9, idle 450.
 
-Currently down (15):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 27% | 0% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 75% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 29% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 57% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 79% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 67% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 69% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 32% | 50% |
-| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 30% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 17% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 21% | 20% |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 27% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

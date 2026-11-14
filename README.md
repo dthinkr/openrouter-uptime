@@ -85,30 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T01:30:38+00:00 UTC)
+## Current status (2026-11-14T01:47:57+00:00 UTC)
 
-471 models polled, 1523 inference endpoints:
-up 1032, degraded 48, down 15, idle 428.
+471 models polled, 1524 inference endpoints:
+up 1023, degraded 36, down 9, idle 456.
 
-Currently down (15):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 25% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 80% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 25% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 80% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 60% | 33% |
-| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 47% | 80% |
-| `sao10k/l3-lunaris-8b` | `parasail/bf16` | Parasail | 86% | 100% |
-| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 93% | 100% |
-| `thedrummer/skyfall-36b-v2` | `parasail/fp8` | Parasail | 82% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 50% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 14% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

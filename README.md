@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T02:32:27+00:00 UTC)
+## Current status (2026-11-14T02:46:05+00:00 UTC)
 
 471 models polled, 1524 inference endpoints:
-up 1016, degraded 47, down 18, idle 443.
+up 1016, degraded 39, down 13, idle 456.
 
-Currently down (18):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 81% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 87% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 39% | 0% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 83% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 35% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 38% | 33% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 23% | 100% |
-| `qwen/qwen3.5-35b-a3b` | `venice` | Venice | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 29% | 50% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 10% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 80% | 100% |
-| plus 3 more | | | | |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 65% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 0% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 50% | n/a |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 44% | n/a |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 17% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

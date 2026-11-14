@@ -85,26 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T09:00:34+00:00 UTC)
+## Current status (2026-11-14T09:18:09+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1037, degraded 50, down 11, idle 431.
+up 1053, degraded 43, down 17, idle 416.
 
-Currently down (11):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 63% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 10% | 20% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | 50% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 20% | 20% |
+| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 86% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 11% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 80% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 29% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | 60% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 27% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 82% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

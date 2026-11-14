@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T00:47:44+00:00 UTC)
+## Current status (2026-11-14T01:01:42+00:00 UTC)
 
-471 models polled, 1527 inference endpoints:
-up 1044, degraded 44, down 15, idle 424.
+471 models polled, 1523 inference endpoints:
+up 1027, degraded 41, down 17, idle 438.
 
-Currently down (15):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 64% | 75% |
-| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 73% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 47% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 55% | n/a |
-| `openai/gpt-oss-120b` | `venice/int4` | Venice | 88% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 29% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 20% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
-| `z-ai/glm-5.3` | `fireworks/spot` | Fireworks | 50% | n/a |
-| `z-ai/glm-5.3` | `featherless` | Featherless | 5% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 22% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 30% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 50% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 67% | n/a |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T04:15:41+00:00 UTC)
+## Current status (2026-11-14T04:30:50+00:00 UTC)
 
-471 models polled, 1524 inference endpoints:
-up 1021, degraded 42, down 14, idle 447.
+471 models polled, 1525 inference endpoints:
+up 1033, degraded 42, down 17, idle 433.
 
-Currently down (14):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 14% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 77% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 17% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 79% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 23% | 60% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 28% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 23% | 20% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 10% | 20% |
-| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 13% | 40% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
-| `z-ai/glm-5.3-flash` | `darkbloom/fp4` | Darkbloom | 0% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | 80% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 14% | 0% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 88% | 33% |
+| `ricursiveai/ripple-65b-preview` | `primeintellect/bf16` | PrimeIntellect | 77% | 75% |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 57% | 100% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

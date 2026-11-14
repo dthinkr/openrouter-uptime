@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T23:02:56+00:00 UTC)
+## Current status (2026-11-14T23:16:11+00:00 UTC)
 
 471 models polled, 1528 inference endpoints:
-up 1064, degraded 33, down 14, idle 417.
+up 1052, degraded 41, down 14, idle 421.
 
 Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 43% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 40% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 7% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 58% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 12% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
 | `openai/gpt-5.6-luna` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | 0% |
 | `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 60% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 80% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 40% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | 40% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 80% | n/a |
+| `qwen/qwen3.8-27b` | `streamlake` | StreamLake | 0% | n/a |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

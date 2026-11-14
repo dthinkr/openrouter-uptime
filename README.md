@@ -85,27 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T06:02:36+00:00 UTC)
+## Current status (2026-11-14T06:15:46+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1029, degraded 35, down 13, idle 452.
+up 1028, degraded 41, down 15, idle 445.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | 62% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `baseten` | BaseTen | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 100% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 100% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 15% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 4% | 20% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 32% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 57% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 10% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 7% | 0% |
+| `qwen/qwen3.8-max-0902` | `alibaba/us-east-1` | Alibaba | 86% | 100% |
 | `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

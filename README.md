@@ -85,24 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T03:46:29+00:00 UTC)
+## Current status (2026-11-14T04:02:41+00:00 UTC)
 
 471 models polled, 1524 inference endpoints:
-up 1021, degraded 44, down 9, idle 450.
+up 1018, degraded 39, down 16, idle 451.
 
-Currently down (9):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 27% | 0% |
-| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 0% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 87% | 40% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 25% |
+| `google/gemini-4-hydrogen` | `google-ai-studio` | Google AI Studio | 76% | 33% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 23% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 21% | 20% |
-| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 27% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 54% | 100% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 40% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 3% | 0% |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 27% | 40% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 25% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

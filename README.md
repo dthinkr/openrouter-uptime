@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T01:16:52+00:00 UTC)
+## Current status (2026-11-14T01:30:38+00:00 UTC)
 
 471 models polled, 1523 inference endpoints:
-up 1010, degraded 52, down 17, idle 444.
+up 1032, degraded 48, down 15, idle 428.
 
-Currently down (17):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 77% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 14% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 23% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 27% | n/a |
-| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 43% | 20% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 25% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 80% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 60% | 33% |
+| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 47% | 80% |
+| `sao10k/l3-lunaris-8b` | `parasail/bf16` | Parasail | 86% | 100% |
 | `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 93% | 100% |
-| `thedrummer/skyfall-36b-v2` | `parasail/fp8` | Parasail | 79% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 20% |
-| plus 2 more | | | | |
+| `thedrummer/skyfall-36b-v2` | `parasail/fp8` | Parasail | 82% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

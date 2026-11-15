@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T01:32:17+00:00 UTC)
+## Current status (2026-11-15T01:47:05+00:00 UTC)
 
-471 models polled, 1570 inference endpoints:
-up 1021, degraded 48, down 24, idle 477.
+471 models polled, 1571 inference endpoints:
+up 1020, degraded 34, down 20, idle 497.
 
-Currently down (24):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 50% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 74% | 80% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
 | `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 40% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 67% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/priority` | DeepInfra | 0% | n/a |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 50% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 15% | 50% |
 | `openai/gpt-5.6-luna` | `azure` | Azure | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 60% | 100% |
-| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 33% | n/a |
-| plus 9 more | | | | |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 57% | 0% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 31% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 7% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

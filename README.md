@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T20:17:51+00:00 UTC)
+## Current status (2026-11-15T20:31:23+00:00 UTC)
 
 467 models polled, 1569 inference endpoints:
-up 1041, degraded 37, down 36, idle 455.
+up 1012, degraded 39, down 46, idle 472.
 
-Currently down (36):
+Currently down (46):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `coreweave/fp8` | CoreWeave | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 50% |
 | `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 59% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 67% | 40% |
 | `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 0% | 0% |
 | `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 77% | 100% |
 | `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 43% | 100% |
 | `meta-llama/llama-3.1-8b-instruct` | `coreweave/bf16` | CoreWeave | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| plus 21 more | | | | |
+| plus 31 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

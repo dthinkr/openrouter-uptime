@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T09:31:08+00:00 UTC)
+## Current status (2026-11-15T09:45:47+00:00 UTC)
 
 470 models polled, 1573 inference endpoints:
-up 1047, degraded 42, down 20, idle 464.
+up 1042, degraded 41, down 18, idle 472.
 
-Currently down (20):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 50% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 57% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 79% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 31% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 53% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 45% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 12% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 62% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 46% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4/priority` | DeepInfra | 78% | 60% |
 | `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | 0% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 48% | 50% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 0% |
-| plus 5 more | | | | |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 67% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 36% | 0% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 42% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | 20% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

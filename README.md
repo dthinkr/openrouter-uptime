@@ -85,28 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T22:33:04+00:00 UTC)
+## Current status (2026-11-15T22:48:18+00:00 UTC)
 
-467 models polled, 1567 inference endpoints:
-up 1047, degraded 34, down 15, idle 471.
+467 models polled, 1568 inference endpoints:
+up 1028, degraded 35, down 13, idle 492.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 45% | 75% |
-| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 3% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 14% | 0% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | 50% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 38% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 44% | 100% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 93% | 100% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 70% | 100% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `siliconflow/fp8` | SiliconFlow | 86% | 100% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 100% | n/a |
 | `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 27% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 5% | 0% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 69% | 100% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 | `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
 

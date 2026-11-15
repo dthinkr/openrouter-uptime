@@ -85,29 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T18:47:48+00:00 UTC)
+## Current status (2026-11-15T19:02:21+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1023, degraded 44, down 14, idle 487.
+up 1043, degraded 36, down 12, idle 477.
 
-Currently down (14):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 33% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 87% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 68% | 33% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 87% | 100% |
-| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 83% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 8% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `mistral/eu` | Mistral | 87% | 100% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 65% | 25% |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 83% | 100% |
-| `recursive/flint-v1.0:free` | `recursive/bf16` | Recursive | 0% | 0% |
-| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
-| `xiaomi/mimo-v2.6-pro` | `primalabs/fp8` | PrimaLabs | 43% | 33% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 81% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 62% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 9% | 0% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 33% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 56% | 0% |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16/priority` | DeepInfra | 33% | 0% |
+| `recursive/flint-v1.0:free` | `recursive/bf16` | Recursive | 37% | 100% |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | n/a |
+| `xiaomi/mimo-v2.6-pro` | `primalabs/fp8` | PrimaLabs | 39% | 60% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

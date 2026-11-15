@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T13:03:21+00:00 UTC)
+## Current status (2026-11-15T13:16:14+00:00 UTC)
 
-470 models polled, 1572 inference endpoints:
-up 1047, degraded 35, down 14, idle 476.
+467 models polled, 1569 inference endpoints:
+up 1045, degraded 31, down 14, idle 479.
 
 Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | 50% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 9% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 87% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 81% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 76% | 100% |
-| `morph/morph-v3-fast` | `morph/fp8` | Morph | 0% | n/a |
-| `openai/gpt-oss-120b` | `baseten/fp4/us` | BaseTen | 8% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 45% | 80% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 80% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 25% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 75% | 100% |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 50% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 13% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
-| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 77% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
+| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 70% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -116,7 +116,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-04 16:47** — provider `antdigital` changed its terms of service url.
 - **2026-11-04 16:47** — provider `antdigital` changed its privacy policy url.
 - **2026-11-05 13:16** — **4 models removed from the catalog in one poll**: `minimax/minimax-01`, `minimax/minimax-m2`, `minimax/minimax-m2-her`, `minimax/minimax-m2.1`.
 - **2026-11-06 19:01** — **4 models added to the catalog in one poll**: `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
@@ -128,6 +127,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-12 20:03** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:03** — provider `recraft` changed its privacy policy url.
 - **2026-11-13 09:02** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
+- **2026-11-15 13:16** — **3 models removed from the catalog in one poll**: `qwen/qwen3-vl-30b-a3b-thinking`, `stepfun/step-3.5-flash`, `tencent/hunyuan-a13b-instruct`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

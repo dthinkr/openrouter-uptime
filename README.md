@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T07:32:42+00:00 UTC)
+## Current status (2026-11-15T07:47:09+00:00 UTC)
 
 470 models polled, 1573 inference endpoints:
-up 1034, degraded 31, down 19, idle 489.
+up 1023, degraded 32, down 19, idle 499.
 
 Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 77% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 8% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 54% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | 50% |
+| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 89% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
+| `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 0% | n/a |
 | `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | 0% |
+| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | n/a |
 | `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 71% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 80% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 83% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 20% |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 76% | 100% |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 44% | n/a |
 | plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T07:47:09+00:00 UTC)
+## Current status (2026-11-15T08:00:50+00:00 UTC)
 
 470 models polled, 1573 inference endpoints:
-up 1023, degraded 32, down 19, idle 499.
+up 1016, degraded 41, down 14, idle 502.
 
-Currently down (19):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 85% | 40% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 89% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
+| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 75% | n/a |
 | `moonshotai/kimi-k2.6` | `atlas-cloud/int4` | AtlasCloud | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 83% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 20% |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 76% | 100% |
-| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 44% | n/a |
-| plus 4 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 10% | 0% |
+| `x-ai/grok-4.6` | `xai/zdr` | xAI | 90% | 100% |
+| `x-ai/grok-4.6` | `xai` | xAI | 87% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

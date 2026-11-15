@@ -85,23 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T13:46:20+00:00 UTC)
+## Current status (2026-11-15T14:02:32+00:00 UTC)
 
 467 models polled, 1569 inference endpoints:
-up 1047, degraded 28, down 11, idle 483.
+up 1046, degraded 33, down 15, idle 475.
 
-Currently down (11):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 56% | 67% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 22% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 80% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 73% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 43% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 25% | 25% |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 38% | 100% |
+| `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | n/a | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 63% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 30% | 20% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 | `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
 | `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 80% | 100% |

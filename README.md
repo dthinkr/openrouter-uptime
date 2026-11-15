@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T17:16:26+00:00 UTC)
+## Current status (2026-11-15T17:32:50+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1030, degraded 49, down 19, idle 470.
+up 1047, degraded 46, down 17, idle 458.
 
-Currently down (19):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 64% | 67% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 38% | 25% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 53% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 36% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 14% | 20% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 93% | 100% |
-| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 92% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `mistral/eu` | Mistral | 87% | 100% |
-| `mistralai/mixtral-8x22b-instruct` | `mistral/eu` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 46% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 65% | 100% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 43% | 80% |
-| plus 4 more | | | | |
+| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 17% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 82% | 25% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | 0% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 85% | 100% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 50% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 50% | 60% |
+| `qwen/qwen3.8-27b` | `streamlake` | StreamLake | 40% | n/a |
+| `xiaomi/mimo-v2.6-pro` | `streamlake` | StreamLake | 50% | 50% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

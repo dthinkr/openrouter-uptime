@@ -85,25 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T12:46:02+00:00 UTC)
+## Current status (2026-11-15T13:03:21+00:00 UTC)
 
-470 models polled, 1573 inference endpoints:
-up 1047, degraded 42, down 10, idle 474.
+470 models polled, 1572 inference endpoints:
+up 1047, degraded 35, down 14, idle 476.
 
-Currently down (10):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 17% | 33% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 9% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 87% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 81% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
-| `morph/morph-v3-fast` | `morph/fp8` | Morph | 67% | n/a |
-| `openai/gpt-oss-120b` | `baseten/fp4/us` | BaseTen | 42% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 23% | 20% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 76% | 100% |
+| `morph/morph-v3-fast` | `morph/fp8` | Morph | 0% | n/a |
+| `openai/gpt-oss-120b` | `baseten/fp4/us` | BaseTen | 8% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 | `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 77% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

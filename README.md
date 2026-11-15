@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T12:03:14+00:00 UTC)
+## Current status (2026-11-15T12:17:00+00:00 UTC)
 
 470 models polled, 1573 inference endpoints:
-up 1049, degraded 34, down 15, idle 475.
+up 1064, degraded 37, down 18, idle 454.
 
-Currently down (15):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 63% | 60% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 25% | 33% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 60% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 87% | 80% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 40% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 46% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 25% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 43% | 100% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 30% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | 0% |
+| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 55% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 86% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
-| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 26% | 25% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.1` | `alibaba/fp8` | Alibaba | 0% | n/a |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
-| `z-ai/glm-5.2` | `alibaba/fast` | Alibaba | 0% | n/a |
+| `morph/morph-v3-fast` | `morph/fp8` | Morph | 75% | 0% |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 28% | 60% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

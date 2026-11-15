@@ -85,26 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T11:01:47+00:00 UTC)
+## Current status (2026-11-15T11:18:06+00:00 UTC)
 
 470 models polled, 1573 inference endpoints:
-up 1034, degraded 40, down 11, idle 488.
+up 1081, degraded 37, down 14, idle 441.
 
-Currently down (11):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 50% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | 50% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 27% | 25% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 43% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 4% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 25% | 25% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 21% | 20% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 40% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 17% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 22% | 25% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 37% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 30% | 40% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

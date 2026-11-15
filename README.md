@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T20:03:25+00:00 UTC)
+## Current status (2026-11-15T20:17:51+00:00 UTC)
 
 467 models polled, 1569 inference endpoints:
-up 1036, degraded 32, down 33, idle 468.
+up 1041, degraded 37, down 36, idle 455.
 
-Currently down (33):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (33):
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
 | `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 0% | 0% |
 | `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 0% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 19% | 0% |
+| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 0% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 43% | 100% |
 | `meta-llama/llama-3.1-8b-instruct` | `coreweave/bf16` | CoreWeave | 0% | 0% |
 | `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 0% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 86% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 36% | n/a |
-| plus 18 more | | | | |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

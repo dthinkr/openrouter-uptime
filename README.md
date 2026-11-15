@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T21:02:26+00:00 UTC)
+## Current status (2026-11-15T21:17:34+00:00 UTC)
 
 467 models polled, 1569 inference endpoints:
-up 1007, degraded 41, down 42, idle 479.
+up 1027, degraded 45, down 32, idle 465.
 
-Currently down (42):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `coreweave/fp8` | CoreWeave | 10% | 60% |
-| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 23% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 15% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 40% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 29% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 12% | n/a |
-| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 73% | 100% |
-| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 23% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 62% | 100% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 73% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 85% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 67% | 100% |
+| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 73% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 48% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 24% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 0% | n/a |
-| plus 27 more | | | | |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 67% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | 33% |
+| `nvidia/nemotron-3.5-super-vl` | `coreweave/nvfp4` | CoreWeave | 0% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 47% | 80% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

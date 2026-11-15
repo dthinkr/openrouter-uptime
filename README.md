@@ -85,26 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T23:02:09+00:00 UTC)
+## Current status (2026-11-15T23:18:03+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1017, degraded 42, down 11, idle 498.
+up 1032, degraded 42, down 13, idle 481.
 
-Currently down (11):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 17% | 20% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 69% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 14% | 60% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 29% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 33% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 14% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 6% | 0% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 25% | n/a |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 78% | 33% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 87% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | 0% |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 64% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `coreweave/nvfp4` | CoreWeave | 50% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

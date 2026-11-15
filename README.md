@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T17:00:48+00:00 UTC)
+## Current status (2026-11-15T17:16:26+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1011, degraded 52, down 18, idle 487.
+up 1030, degraded 49, down 19, idle 470.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 27% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 50% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 50% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 64% | 67% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 38% | 25% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 93% | 100% |
+| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 92% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/mixtral-8x22b-instruct` | `mistral/zdr` | Mistral | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `mistral/eu` | Mistral | 87% | 100% |
 | `mistralai/mixtral-8x22b-instruct` | `mistral/eu` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 71% | 33% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 27% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 46% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 65% | 100% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 65% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 33% | n/a |
-| plus 3 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 43% | 80% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

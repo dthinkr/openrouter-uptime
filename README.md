@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T09:18:22+00:00 UTC)
+## Current status (2026-11-15T09:31:08+00:00 UTC)
 
 470 models polled, 1573 inference endpoints:
-up 1056, degraded 42, down 23, idle 452.
+up 1047, degraded 42, down 20, idle 464.
 
-Currently down (23):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 0% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 8% | 50% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `minimax/minimax-m2.5` | `venice` | Venice | 50% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 72% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 82% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 71% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 31% | 0% |
+| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 57% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 79% | 100% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 31% | 100% |
 | `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | 0% |
-| plus 8 more | | | | |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 48% | 50% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

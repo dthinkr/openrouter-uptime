@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T15:47:28+00:00 UTC)
+## Current status (2026-11-15T16:00:31+00:00 UTC)
 
 467 models polled, 1569 inference endpoints:
-up 1054, degraded 34, down 18, idle 463.
+up 1062, degraded 34, down 15, idle 458.
 
-Currently down (18):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 61% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 60% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 38% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 50% |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 45% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 52% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `parasail/fp8` | Parasail | 17% | 40% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 0% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 73% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 36% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 7% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 20% | 50% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 54% | 100% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `parasail/fp8` | Parasail | 50% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 9% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 73% | 75% |
 | `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 17% | 20% |
-| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 37% | 60% |
-| plus 3 more | | | | |
+| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 27% | 0% |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 53% | 0% |
+| `thinkingmachines/inkling-2-small` | `together` | Together | 60% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 50% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

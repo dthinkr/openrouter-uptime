@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T00:17:59+00:00 UTC)
+## Current status (2026-11-15T00:32:46+00:00 UTC)
 
-471 models polled, 1538 inference endpoints:
-up 1017, degraded 50, down 19, idle 452.
+471 models polled, 1541 inference endpoints:
+up 1011, degraded 51, down 20, idle 459.
 
-Currently down (19):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 71% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | 33% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 10% | 60% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 70% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 84% | 100% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 10% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 70% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 75% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 0% | 0% |
 | `openai/gpt-5.6-luna` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 33% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 71% | 50% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | 20% |
-| plus 4 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 43% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 50% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 47% | 60% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

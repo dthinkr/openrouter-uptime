@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T05:16:00+00:00 UTC)
+## Current status (2026-11-16T05:31:15+00:00 UTC)
 
-468 models polled, 1570 inference endpoints:
-up 1035, degraded 47, down 18, idle 470.
+468 models polled, 1569 inference endpoints:
+up 1051, degraded 44, down 23, idle 451.
 
-Currently down (18):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 83% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 87% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 20% | 0% |
-| `google/gemma-4-31b-it` | `modal` | Modal | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 10% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/gemma-4-31b-it` | `modal` | Modal | 8% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primeintellect/nvfp4` | PrimeIntellect | 64% | n/a |
-| `openai/gpt-6.1-sol` | `amazon-bedrock/global` | Amazon Bedrock | 14% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | 0% |
-| plus 3 more | | | | |
+| `nvidia/nemotron-3.5-super-vl` | `primeintellect/nvfp4` | PrimeIntellect | 0% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 47% | 0% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 33% | 0% |
+| `openai/gpt-6.1-sol` | `amazon-bedrock/global` | Amazon Bedrock | 3% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

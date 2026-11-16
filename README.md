@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T09:03:07+00:00 UTC)
+## Current status (2026-11-16T09:15:52+00:00 UTC)
 
 468 models polled, 1570 inference endpoints:
-up 1089, degraded 47, down 21, idle 413.
+up 1088, degraded 52, down 19, idle 411.
 
-Currently down (21):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 95% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 93% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | 100% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-4-31b-it` | `modal` | Modal | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 25% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 20% | n/a |
+| `google/gemma-4-31b-it` | `modal` | Modal | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `moonshotai/kimi-k3.1-pro` | `together` | Together | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 47% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 53% | 100% |
 | `openai/gpt-5.6-luna` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol` | `amazon-bedrock/global` | Amazon Bedrock | 3% | 20% |
-| plus 6 more | | | | |
+| `openai/gpt-6.1-sol` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

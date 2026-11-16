@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T00:18:01+00:00 UTC)
+## Current status (2026-11-16T00:32:30+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1038, degraded 45, down 13, idle 472.
+up 1026, degraded 49, down 17, idle 476.
 
-Currently down (13):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 79% | 40% |
 | `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 47% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 40% | 100% |
+| `google/gemma-4-31b-it` | `kt` | KT | 90% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 62% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 92% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 53% | 40% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.5-9b` | `together` | Together | 33% | 60% |
-| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 60% | 80% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 93% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 43% | 80% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 17% | n/a |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4/priority` | DeepInfra | 67% | 25% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 57% | 40% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 43% | 0% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 3% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 8% | 20% |
+| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 50% | 100% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T02:31:31+00:00 UTC)
+## Current status (2026-11-16T02:46:19+00:00 UTC)
 
-467 models polled, 1568 inference endpoints:
-up 1018, degraded 51, down 20, idle 479.
+468 models polled, 1569 inference endpoints:
+up 1035, degraded 38, down 13, idle 483.
 
-Currently down (20):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 33% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 38% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 25% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 29% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m3.1-flash` | `streamlake/fp8` | StreamLake | 60% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 86% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 5% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 33% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/priority` | DeepInfra | 0% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 43% | 20% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 17% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 80% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 20% | 0% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 11% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 100% |
 | `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| plus 5 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 20% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 40% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 37% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

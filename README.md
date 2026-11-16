@@ -85,27 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T22:30:35+00:00 UTC)
+## Current status (2026-11-16T22:47:11+00:00 UTC)
 
-469 models polled, 1569 inference endpoints:
-up 1071, degraded 63, down 12, idle 423.
+469 models polled, 1572 inference endpoints:
+up 1068, degraded 66, down 15, idle 423.
 
-Currently down (12):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 77% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 70% | 100% |
+| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 54% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
-| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 57% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
+| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 71% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 50% | 40% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 60% | 0% |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 52% | 100% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 41% | 80% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 75% | 100% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 38% | 0% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 40% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 50% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
+| `z-ai/glm-5.2` | `nebius/fp4` | Nebius | 50% | 50% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T01:17:32+00:00 UTC)
+## Current status (2026-11-16T01:32:25+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1037, degraded 56, down 18, idle 457.
+up 1031, degraded 50, down 22, idle 465.
 
-Currently down (18):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 17% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 37% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 50% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 83% | 100% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8/flex` | DeepInfra | 50% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 84% | 60% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 57% | 100% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 33% | n/a |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 76% | 100% |
+| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 73% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 50% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| plus 3 more | | | | |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 32% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

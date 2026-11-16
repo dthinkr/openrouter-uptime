@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T20:03:04+00:00 UTC)
+## Current status (2026-11-16T20:17:04+00:00 UTC)
 
-469 models polled, 1567 inference endpoints:
-up 1066, degraded 52, down 19, idle 430.
+469 models polled, 1568 inference endpoints:
+up 1056, degraded 51, down 18, idle 443.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 68% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 38% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 74% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 38% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 35% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 42% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 40% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 43% | 0% |
 | `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 13% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | 60% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 12% | 100% |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 73% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 85% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 23% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 83% | 100% |
-| plus 4 more | | | | |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 21% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

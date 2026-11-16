@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T21:15:40+00:00 UTC)
+## Current status (2026-11-16T21:30:49+00:00 UTC)
 
 469 models polled, 1569 inference endpoints:
-up 1071, degraded 50, down 27, idle 421.
+up 1080, degraded 53, down 22, idle 414.
 
-Currently down (27):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 57% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 36% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 64% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 40% | 100% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 33% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 91% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `parasail/fp8` | Parasail | 18% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 43% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 70% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `parasail/fp8` | Parasail | 0% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 37% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 46% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| plus 12 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | 50% |
+| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 47% | 100% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

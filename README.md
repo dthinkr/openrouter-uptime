@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T23:16:46+00:00 UTC)
+## Current status (2026-11-16T23:32:01+00:00 UTC)
 
 470 models polled, 1571 inference endpoints:
-up 1048, degraded 75, down 15, idle 433.
+up 1048, degraded 55, down 21, idle 447.
 
-Currently down (15):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 77% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 33% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 79% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 59% | 75% |
+| `openai/gpt-5.5` | `azure` | Azure | 80% | 40% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
 | `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 30% | 40% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 60% | 40% |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 17% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `cloudflare` | Cloudflare | 41% | 100% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 25% | 25% |
-| `z-ai/glm-5.2` | `nebius/fp4` | Nebius | 25% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 39% | 40% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 60% | 100% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 23% | 80% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

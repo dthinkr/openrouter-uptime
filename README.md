@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T18:16:24+00:00 UTC)
+## Current status (2026-11-16T18:30:39+00:00 UTC)
 
-469 models polled, 1566 inference endpoints:
-up 1076, degraded 58, down 26, idle 406.
+469 models polled, 1567 inference endpoints:
+up 1072, degraded 61, down 26, idle 408.
 
 Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `morph/fast` | Morph | 68% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `morph/fast` | Morph | 33% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 53% | 80% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 78% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 43% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 40% | 60% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 53% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 82% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/mixtral-8x22b-instruct` | `mistral/zdr` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 100% | 100% |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 75% | 0% |
 | plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

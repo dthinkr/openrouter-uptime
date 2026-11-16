@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T00:46:09+00:00 UTC)
+## Current status (2026-11-16T01:02:10+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1032, degraded 41, down 21, idle 474.
+up 1038, degraded 37, down 21, idle 472.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 70% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `reka` | Reka | 63% | 80% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 88% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `reka` | Reka | 63% | 100% |
 | `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 68% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 44% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 0% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 14% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 11% | 20% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4/priority` | DeepInfra | 60% | n/a |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 53% | 20% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 40% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 74% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 10% | 0% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 63% | 80% |
 | `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 61% | 0% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 56% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 44% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 33% | n/a |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

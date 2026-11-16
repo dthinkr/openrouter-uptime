@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T02:01:44+00:00 UTC)
+## Current status (2026-11-16T02:15:44+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1027, degraded 44, down 14, idle 483.
+up 1018, degraded 56, down 17, idle 477.
 
-Currently down (14):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 53% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 25% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 17% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 44% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 15% | 0% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 37% | 0% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 17% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 63% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 16% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 61% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 27% | 0% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 30% | 0% |
 | `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 21% | 0% |
-| `z-ai/glm-5.2` | `relace/fp4` | Relace | 93% | 60% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 89% | 60% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 44% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 28% | 60% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 57% | 0% |
+| `xiaomi/mimo-v2.6-pro` | `streamlake` | StreamLake | 0% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

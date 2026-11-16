@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T17:01:57+00:00 UTC)
+## Current status (2026-11-16T17:17:40+00:00 UTC)
 
 469 models polled, 1566 inference endpoints:
-up 1080, degraded 69, down 12, idle 405.
+up 1081, degraded 68, down 22, idle 395.
 
-Currently down (12):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 89% | 60% |
+| `deepseek/deepseek-chat-v3.1` | `coreweave/fp8` | CoreWeave | 80% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 94% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 54% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 20% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 50% | 40% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 7% | 0% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 67% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 72% | n/a |
+| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 83% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 23% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

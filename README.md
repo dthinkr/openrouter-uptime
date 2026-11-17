@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T12:16:23+00:00 UTC)
+## Current status (2026-11-17T12:32:43+00:00 UTC)
 
 470 models polled, 1581 inference endpoints:
-up 1109, degraded 62, down 13, idle 397.
+up 1127, degraded 48, down 16, idle 390.
 
-Currently down (13):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 67% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-4-carbon` | `google-vertex/us` | Google | 67% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/flex` | DeepInfra | 29% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 70% | 100% |
+| `google/gemini-4-carbon` | `google-vertex/us` | Google | 75% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `mistralai/mistral-large-2512` | `mistral/zdr` | Mistral | 30% | 20% |
+| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 43% | 60% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 86% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 53% | 100% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 57% | 0% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 25% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 80% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 45% | 0% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 23% | 0% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | n/a |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T22:30:47+00:00 UTC)
+## Current status (2026-11-17T22:46:31+00:00 UTC)
 
-474 models polled, 1607 inference endpoints:
-up 1077, degraded 65, down 19, idle 446.
+478 models polled, 1611 inference endpoints:
+up 1080, degraded 51, down 16, idle 464.
 
-Currently down (19):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 27% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 88% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 18% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 27% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 86% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 40% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 35% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 10% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 20% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 56% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 46% | 100% |
+| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 34% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 64% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 27% | 0% |
-| plus 4 more | | | | |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 24% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 75% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-06 19:01** — **4 models added to the catalog in one poll**: `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
 - **2026-11-08 02:47** — **4 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash-1017:batch`, `morph/morph-v3-fast:batch`, `morph/morph-v3-large:batch`, `z-ai/glm-5.2:batch`.
 - **2026-11-08 05:18** — **3 models removed from the catalog in one poll**: `inception/mercury-2`, `inception/mercury-2.5`, `inception/mercury-3`.
 - **2026-11-10 06:01** — provider `primeintellect` changed its terms of service url.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-15 13:16** — **3 models removed from the catalog in one poll**: `qwen/qwen3-vl-30b-a3b-thinking`, `stepfun/step-3.5-flash`, `tencent/hunyuan-a13b-instruct`.
 - **2026-11-17 18:15** — **3 models added to the catalog in one poll**: `openai/gpt-6.2-astra-pro`, `openai/gpt-6.2-sol`, `openai/gpt-6.2-sol-pro`.
 - **2026-11-17 21:16** — provider `pearl-research` changed its status page.
+- **2026-11-17 22:46** — **4 models added to the catalog in one poll**: `openai/gpt-6.2-astra-pro:batch`, `openai/gpt-6.2-astra:batch`, `openai/gpt-6.2-sol-pro:batch`, `openai/gpt-6.2-sol:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

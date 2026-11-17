@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T02:01:12+00:00 UTC)
+## Current status (2026-11-17T02:15:48+00:00 UTC)
 
 470 models polled, 1578 inference endpoints:
-up 1062, degraded 58, down 17, idle 441.
+up 1057, degraded 56, down 21, idle 444.
 
-Currently down (17):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 30% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 13% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 58% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 92% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 6% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4/priority` | DeepInfra | 50% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 7% | 33% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 3% | 0% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 53% | 100% |
-| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 7% | 20% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 80% | 40% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 0% | 0% |
-| plus 2 more | | | | |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 9% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 7% | 0% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 44% | 40% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 58% | 50% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 31% | 0% |
+| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 10% | 20% |
+| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 93% | 100% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

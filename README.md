@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T00:02:31+00:00 UTC)
+## Current status (2026-11-17T00:18:28+00:00 UTC)
 
-470 models polled, 1577 inference endpoints:
-up 1062, degraded 39, down 17, idle 459.
+470 models polled, 1576 inference endpoints:
+up 1065, degraded 53, down 22, idle 436.
 
-Currently down (17):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-4-carbon` | `google-vertex/eu` | Google | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 73% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 67% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 29% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 53% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 67% | 60% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 30% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | n/a | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 57% | 0% |
-| `openai/gpt-5.5` | `azure` | Azure | 82% | 100% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 53% | 40% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 50% | 25% |
-| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 0% | 0% |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 38% | 20% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
-| plus 2 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 72% | 40% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4/priority` | DeepInfra | 68% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 76% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

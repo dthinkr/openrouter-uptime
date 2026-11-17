@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T23:03:11+00:00 UTC)
+## Current status (2026-11-17T23:17:45+00:00 UTC)
 
 478 models polled, 1611 inference endpoints:
-up 1074, degraded 54, down 16, idle 467.
+up 1074, degraded 61, down 15, idle 461.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 54% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 23% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 20% | 33% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 53% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 26% | 100% |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 18% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 59% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 36% | 33% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | 100% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 53% | 60% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 31% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 0% | n/a |
+| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 30% | 50% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 5% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 35% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 71% | 75% |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
-| plus 1 more | | | | |
+| `qwen/qwen-plus` | `alibaba` | Alibaba | 50% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 20% |
+| `z-ai/glm-5.1` | `alibaba/fp8` | Alibaba | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

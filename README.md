@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T18:15:53+00:00 UTC)
+## Current status (2026-11-17T18:30:49+00:00 UTC)
 
-474 models polled, 1585 inference endpoints:
-up 1084, degraded 55, down 16, idle 430.
+474 models polled, 1589 inference endpoints:
+up 1094, degraded 52, down 17, idle 426.
 
-Currently down (16):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 47% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 41% | 75% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 38% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 34% | 0% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 57% | 40% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 40% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 10% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 68% | 100% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 58% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 79% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 13% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 10% | 0% |
-| `openai/gpt-6-luna` | `azure` | Azure | 40% | 0% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 40% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 12% | 0% |
+| `openai/gpt-6-luna` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| plus 1 more | | | | |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

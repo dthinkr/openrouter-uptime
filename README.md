@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T14:17:20+00:00 UTC)
+## Current status (2026-11-17T14:31:55+00:00 UTC)
 
 470 models polled, 1581 inference endpoints:
-up 1126, degraded 65, down 28, idle 362.
+up 1128, degraded 57, down 28, idle 368.
 
 Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-sonnet-4.5` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 62% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 53% | 60% |
+| `anthropic/claude-sonnet-4.5` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 31% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 68% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 10% | 60% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 25% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 67% | 100% |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 63% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 40% | 20% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 80% | 100% |
+| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 57% | 100% |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 7% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 40% | 40% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 67% | n/a |
-| `minimax/minimax-m3.1-flash` | `streamlake/fp8` | StreamLake | 0% | n/a |
+| `meta/muse-spark-1.3` | `google-vertex/global` | Google | 90% | 100% |
 | `minimax/minimax-m3.1-flash` | `makora/fp4` | Makora | 0% | n/a |
-| `minimax/minimax-m3.1-flash` | `together` | Together | 83% | 100% |
-| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T22:46:31+00:00 UTC)
+## Current status (2026-11-17T23:03:11+00:00 UTC)
 
 478 models polled, 1611 inference endpoints:
-up 1080, degraded 51, down 16, idle 464.
+up 1074, degraded 54, down 16, idle 467.
 
 Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 86% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 40% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 35% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 10% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 46% | 100% |
-| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 34% | 20% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 64% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 54% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 23% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 20% | 33% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 18% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 59% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 36% | 33% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 24% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 75% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | 100% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 53% | 60% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 31% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 0% | n/a |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
 | `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
 | plus 1 more | | | | |

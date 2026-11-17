@@ -85,26 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T19:47:38+00:00 UTC)
+## Current status (2026-11-17T20:01:48+00:00 UTC)
 
-474 models polled, 1604 inference endpoints:
-up 1090, degraded 49, down 11, idle 454.
+474 models polled, 1605 inference endpoints:
+up 1095, degraded 52, down 15, idle 443.
 
-Currently down (11):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 71% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 8% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 62% | 0% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 75% | 80% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 18% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 60% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 90% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 9% | 0% |
+| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 10% | n/a |
 | `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 75% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 44% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 60% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 38% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

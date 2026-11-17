@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T05:03:20+00:00 UTC)
+## Current status (2026-11-17T05:18:18+00:00 UTC)
 
-470 models polled, 1579 inference endpoints:
-up 1084, degraded 53, down 24, idle 418.
+470 models polled, 1580 inference endpoints:
+up 1075, degraded 65, down 24, idle 416.
 
 Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 75% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 5% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 44% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/us` | Google | 19% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `deepinfra/fp8/flex` | DeepInfra | 62% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 81% | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 60% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 80% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 25% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 8% | 20% |
+| `google/gemini-4-carbon` | `google-vertex/us` | Google | 14% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 33% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 53% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `openai/gpt-6-luna` | `azure` | Azure | 43% | 100% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 27% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 33% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 50% | 80% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
 | plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

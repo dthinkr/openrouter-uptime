@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-18T02:45:48+00:00 UTC)
+## Current status (2026-11-18T03:02:25+00:00 UTC)
 
 478 models polled, 1610 inference endpoints:
-up 1107, degraded 40, down 16, idle 447.
+up 1103, degraded 44, down 16, idle 447.
 
 Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 76% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 20% | 0% |
 | `elorian/glimpse` | `together` | Together | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 12% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 3% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 20% | 40% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 44% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 27% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | 100% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 33% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `moonshotai/kimi-k3` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
 | `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 23% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 33% | 50% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 59% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 36% | 50% |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 50% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 17% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 23% | 40% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 41% | 67% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 0% |
 | plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

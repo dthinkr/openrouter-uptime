@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-18T09:30:43+00:00 UTC)
+## Current status (2026-11-18T09:47:26+00:00 UTC)
 
-478 models polled, 1610 inference endpoints:
-up 1102, degraded 78, down 24, idle 406.
+478 models polled, 1609 inference endpoints:
+up 1104, degraded 65, down 19, idle 421.
 
-Currently down (24):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 38% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 43% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `primeintellect` | PrimeIntellect | 25% | 100% |
+| `anthropic/claude-sonnet-4.5` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 47% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `elorian/glimpse` | `together` | Together | 61% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 38% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 40% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 3% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 17% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 18% | 60% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 3% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | 100% |
 | `mistralai/mistral-medium-3.1` | `mistral/eu` | Mistral | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 90% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| plus 9 more | | | | |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 20% | 60% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | 0% |
+| `nvidia/nemotron-3.5-lightning` | `fireworks` | Fireworks | 81% | 100% |
+| `openai/gpt-6.1-terra` | `azure/us` | Azure | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 45% | 40% |
+| `reflection/beam-1.0-501b-a23b` | `together` | Together | 0% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

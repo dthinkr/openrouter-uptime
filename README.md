@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-18T03:17:51+00:00 UTC)
+## Current status (2026-11-18T03:30:51+00:00 UTC)
 
 478 models polled, 1610 inference endpoints:
-up 1094, degraded 55, down 18, idle 443.
+up 1088, degraded 52, down 19, idle 451.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 72% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 23% | 100% |
-| `elorian/glimpse` | `together` | Together | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 17% | 33% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 10% | 40% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 67% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 29% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 65% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 57% | 100% |
+| `elorian/glimpse` | `together` | Together | 0% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 25% | 50% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 33% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 60% | 80% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 25% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 55% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `openai/gpt-6-luna` | `azure` | Azure | 47% | 0% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 43% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 13% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 67% | 50% |
-| plus 3 more | | | | |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 30% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 65% | 25% |
+| `openai/gpt-6-luna` | `azure` | Azure | 17% | 20% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 14% | 20% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 13% | 40% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

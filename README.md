@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-19T02:01:48+00:00 UTC)
+## Current status (2026-11-19T02:16:38+00:00 UTC)
 
 480 models polled, 1478 inference endpoints:
-up 1064, degraded 51, down 21, idle 342.
+up 1051, degraded 70, down 22, idle 335.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 60% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `ambient/fp4` | Ambient | 43% | 40% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 71% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 47% | 40% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 43% | 40% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 25% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 38% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 48% | 100% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 42% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `kt/midm-k-3.0-pro` | `kt` | KT | 0% | n/a |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 71% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `fireworks` | Fireworks | 47% | 100% |
+| `motif-technologies/motif-3` | `kt` | KT | 33% | n/a |
 | `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 53% | 60% |
-| plus 6 more | | | | |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

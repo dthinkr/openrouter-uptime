@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-19T04:00:34+00:00 UTC)
+## Current status (2026-11-19T04:17:45+00:00 UTC)
 
 480 models polled, 1479 inference endpoints:
-up 1042, degraded 52, down 19, idle 366.
+up 1044, degraded 52, down 23, idle 360.
 
-Currently down (19):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 77% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 87% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 25% | 25% |
-| `deepseek/deepseek-v4.1-flash-1017` | `ambient/fp4` | Ambient | 33% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 67% | 40% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 17% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 54% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 11% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 100% |
 | `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
 | `minimax/minimax-m3` | `featherless/fp8` | Featherless | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 40% | 50% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | 0% |
-| plus 4 more | | | | |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

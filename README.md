@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-19T16:18:22+00:00 UTC)
+## Current status (2026-11-19T16:33:03+00:00 UTC)
 
 479 models polled, 1478 inference endpoints:
-up 1043, degraded 64, down 24, idle 347.
+up 1043, degraded 73, down 24, idle 338.
 
 Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 7% | 0% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 13% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 67% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 70% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 47% | 60% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 28% | 50% |
 | `google/gemini-4-carbon` | `google-vertex/global` | Google | 0% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 50% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 25% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 64% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/priority` | DeepInfra | 3% | 0% |
 | plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

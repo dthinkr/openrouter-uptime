@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-19T11:33:08+00:00 UTC)
+## Current status (2026-11-19T11:46:16+00:00 UTC)
 
 480 models polled, 1479 inference endpoints:
-up 1056, degraded 39, down 26, idle 358.
+up 1023, degraded 57, down 23, idle 376.
 
-Currently down (26):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 70% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 80% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 17% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 17% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 7% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 20% | 100% |
 | `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | 0% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 63% | 0% |
 | `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 40% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 44% | 20% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 36% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | 0% |
-| `motif-technologies/motif-3` | `kt` | KT | 67% | 100% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 44% | 25% |
-| plus 11 more | | | | |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 7% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 38% | 33% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 13% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

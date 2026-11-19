@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-19T01:01:25+00:00 UTC)
+## Current status (2026-11-19T01:16:31+00:00 UTC)
 
 480 models polled, 1477 inference endpoints:
-up 1049, degraded 42, down 18, idle 368.
+up 1024, degraded 62, down 18, idle 373.
 
 Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 75% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 79% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 83% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 58% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 79% | 100% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 37% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 33% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 18% | 75% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 40% | 80% |
 | `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | 0% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 7% | 40% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 34% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 33% | 60% |
+| `particle-ai/particle-1:free` | `particle-ai/us` | Particle AI | 33% | 40% |
+| `qwen/qwen-2.5-72b-instruct` | `deepinfra/fp8` | DeepInfra | 77% | 100% |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 53% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 46% | 50% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 17% | 0% |
 | plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

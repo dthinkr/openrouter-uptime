@@ -85,23 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T22:02:32+00:00 UTC)
+## Current status (2026-11-20T22:16:42+00:00 UTC)
 
 476 models polled, 1443 inference endpoints:
-up 1031, degraded 43, down 8, idle 361.
+up 1009, degraded 37, down 14, idle 383.
 
-Currently down (8):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 36% | 60% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 50% | 60% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 53% | 0% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 38% | 25% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 55% | 50% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 50% | 40% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 50% | 0% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 60% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | n/a | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 20% | 20% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 83% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 86% | 100% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 41% | 67% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

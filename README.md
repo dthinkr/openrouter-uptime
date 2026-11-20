@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T09:32:06+00:00 UTC)
+## Current status (2026-11-20T09:45:39+00:00 UTC)
 
-477 models polled, 1470 inference endpoints:
-up 1060, degraded 45, down 17, idle 348.
+477 models polled, 1471 inference endpoints:
+up 1061, degraded 44, down 19, idle 347.
 
-Currently down (17):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 60% | 20% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 60% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 3% | 20% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 41% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 25% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 53% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 28% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 43% | 100% |
 | `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | 0% |
 | `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 0% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 83% | 0% |
-| `moonshotai/kimi-k3` | `kt` | KT | 87% | 20% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 77% | 100% |
+| `moonshotai/kimi-k3` | `kt` | KT | 61% | n/a |
 | `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 20% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 3% | 0% |
-| plus 2 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 7% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

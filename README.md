@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T07:00:51+00:00 UTC)
+## Current status (2026-11-20T07:17:00+00:00 UTC)
 
 477 models polled, 1470 inference endpoints:
-up 1026, degraded 53, down 17, idle 374.
+up 1027, degraded 51, down 17, idle 375.
 
 Currently down (17):
 
@@ -97,18 +97,18 @@ Currently down (17):
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `anthropic/claude-opus-4.6` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 10% | 20% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 20% |
-| `moonshotai/kimi-k3` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 38% | n/a |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 3% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 89% | 80% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 30% | 80% |
-| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 89% | 33% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 9% | 50% |
+| `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 10% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 63% | 40% |
+| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 50% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 60% | 40% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 87% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 36% | 33% |
+| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 89% | 100% |
 | plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

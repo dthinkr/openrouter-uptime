@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T03:46:45+00:00 UTC)
+## Current status (2026-11-20T04:01:03+00:00 UTC)
 
 478 models polled, 1479 inference endpoints:
-up 1042, degraded 37, down 21, idle 379.
+up 1047, degraded 40, down 25, idle 367.
 
-Currently down (21):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 13% | 40% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 20% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 17% | 0% |
 | `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | n/a | n/a |
 | `meta-llama/llama-3.2-1b-instruct` | `cloudflare` | Cloudflare | 0% | 0% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 50% | 100% |
-| `openai/gpt-6-luna` | `azure` | Azure | 53% | 100% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 53% | 100% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 43% | 0% |
-| `openai/gpt-oss-120b` | `coreweave/fp4` | CoreWeave | 47% | 40% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 25% | 40% |
-| plus 6 more | | | | |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 73% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 61% | n/a |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 17% | 0% |
+| `openai/gpt-oss-120b` | `coreweave/fp4` | CoreWeave | 30% | 40% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

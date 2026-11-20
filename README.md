@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T09:16:35+00:00 UTC)
+## Current status (2026-11-20T09:32:06+00:00 UTC)
 
 477 models polled, 1470 inference endpoints:
-up 1053, degraded 40, down 18, idle 359.
+up 1060, degraded 45, down 17, idle 348.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 57% | 60% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 60% | 20% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 60% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 38% | 100% |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 41% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 25% | n/a |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | 0% |
 | `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 0% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 77% | 100% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 33% | 33% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 47% | 60% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 17% | 20% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 30% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 90% | 100% |
-| plus 3 more | | | | |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 83% | 0% |
+| `moonshotai/kimi-k3` | `kt` | KT | 87% | 20% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 20% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 3% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

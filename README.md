@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T21:15:58+00:00 UTC)
+## Current status (2026-11-20T21:30:44+00:00 UTC)
 
 476 models polled, 1443 inference endpoints:
-up 1030, degraded 54, down 14, idle 345.
+up 1024, degraded 64, down 17, idle 338.
 
-Currently down (14):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 43% | 40% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 50% | 60% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 37% | 40% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 53% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 48% | 60% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 13% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 35% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 53% | 0% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 33% | 40% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 12% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 13% | 20% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 0% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 33% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 36% | 40% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 23% | 0% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 100% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

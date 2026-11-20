@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T18:01:13+00:00 UTC)
+## Current status (2026-11-20T18:16:16+00:00 UTC)
 
 477 models polled, 1471 inference endpoints:
-up 1045, degraded 43, down 21, idle 362.
+up 1028, degraded 58, down 21, idle 364.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 33% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 17% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 31% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 75% | n/a |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 75% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 40% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 46% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 34% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 20% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 25% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 50% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 23% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 13% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 69% | 100% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 100% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 23% | 0% |
+| `minimax/minimax-m2.5` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 57% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 24% | 100% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 37% | 40% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 0% |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

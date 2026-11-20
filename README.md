@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T14:31:52+00:00 UTC)
+## Current status (2026-11-20T14:46:11+00:00 UTC)
 
-477 models polled, 1472 inference endpoints:
-up 1045, degraded 51, down 19, idle 357.
+477 models polled, 1471 inference endpoints:
+up 1033, degraded 53, down 24, idle 361.
 
-Currently down (19):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `tenstorrent/fp8` | Tenstorrent | 71% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 23% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 13% | 0% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 73% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 35% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 44% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 60% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 75% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 78% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 27% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 40% | 80% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 71% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 50% |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 7% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 55% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 47% | 60% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 4% | 0% |
-| `x-ai/grok-4.7` | `xai/zdr` | xAI | 13% | 40% |
-| `x-ai/grok-4.7` | `xai/zdr/priority` | xAI | 0% | n/a |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 57% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 53% | 60% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

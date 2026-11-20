@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T09:03:14+00:00 UTC)
+## Current status (2026-11-20T09:16:35+00:00 UTC)
 
 477 models polled, 1470 inference endpoints:
-up 1043, degraded 39, down 20, idle 368.
+up 1053, degraded 40, down 18, idle 359.
 
-Currently down (20):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 57% | 60% |
 | `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 25% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 38% | 100% |
 | `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
 | `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 0% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 67% | 100% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 48% | 100% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 77% | 100% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 33% | 33% |
 | `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 47% | 60% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 10% | 40% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 30% | 20% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 58% | 75% |
-| plus 5 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 17% | 20% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 30% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 90% | 100% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

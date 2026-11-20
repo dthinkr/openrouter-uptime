@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T03:16:43+00:00 UTC)
+## Current status (2026-11-20T03:33:29+00:00 UTC)
 
 478 models polled, 1479 inference endpoints:
-up 1062, degraded 36, down 22, idle 359.
+up 1046, degraded 45, down 21, idle 367.
 
-Currently down (22):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 31% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 23% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 62% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 45% | 40% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 68% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 10% | 20% |
 | `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | n/a | n/a |
 | `meta-llama/llama-3.2-1b-instruct` | `cloudflare` | Cloudflare | 0% | 0% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 89% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 20% |
-| `qwen/qwen3.5-35b-a3b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `venice` | Venice | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 43% | 20% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 40% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 47% | 60% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

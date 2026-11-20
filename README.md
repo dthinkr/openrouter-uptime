@@ -85,30 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T20:45:56+00:00 UTC)
+## Current status (2026-11-20T21:01:48+00:00 UTC)
 
-476 models polled, 1444 inference endpoints:
-up 1019, degraded 41, down 15, idle 369.
+476 models polled, 1443 inference endpoints:
+up 1028, degraded 43, down 14, idle 358.
 
-Currently down (15):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 57% | 20% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `particle-ai/us/flex` | Particle AI | 50% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 47% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 3% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 11% | 40% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 10% | 20% |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/priority` | DeepInfra | 59% | 100% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 44% | 40% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 80% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 12% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 66% | 100% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 22% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 13% | 40% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 36% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 60% | n/a |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 50% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 12% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

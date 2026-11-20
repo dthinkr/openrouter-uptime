@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T10:32:33+00:00 UTC)
+## Current status (2026-11-20T10:46:05+00:00 UTC)
 
 477 models polled, 1471 inference endpoints:
-up 1040, degraded 51, down 52, idle 328.
+up 1029, degraded 48, down 52, idle 342.
 
 Currently down (52):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
 | `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 | `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 | `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 53% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 100% |
 | `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 50% | 50% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 67% | 40% |
-| `deepseek/deepseek-v4-pro-0813` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 54% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
 | plus 37 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

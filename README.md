@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T05:15:37+00:00 UTC)
+## Current status (2026-11-20T05:31:06+00:00 UTC)
 
-477 models polled, 1471 inference endpoints:
-up 1042, degraded 37, down 19, idle 373.
+477 models polled, 1470 inference endpoints:
+up 1032, degraded 41, down 23, idle 374.
 
-Currently down (19):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 89% | 60% |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 57% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 20% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 62% | 100% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 20% |
-| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 11% | 0% |
-| plus 4 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 7% | n/a |
+| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 57% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 0% |
+| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 25% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 45% | 0% |
+| `openai/gpt-6-luna` | `azure` | Azure | 53% | 20% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 50% | 20% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

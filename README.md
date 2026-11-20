@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T22:45:44+00:00 UTC)
+## Current status (2026-11-20T23:01:20+00:00 UTC)
 
 476 models polled, 1443 inference endpoints:
-up 991, degraded 46, down 17, idle 389.
+up 995, degraded 41, down 16, idle 391.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 31% | 0% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 20% | 60% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 33% | 100% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 67% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 24% | 50% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 47% | 0% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 36% | 67% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 67% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 67% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
-| `google/gemma-3-4b-it` | `deepinfra/bf16/priority` | DeepInfra | 79% | 40% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 30% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemma-3-4b-it` | `deepinfra/bf16/priority` | DeepInfra | 79% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 60% | 100% |
+| `minimax/minimax-m3.1-flash` | `makora/fp4` | Makora | 65% | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 71% | n/a |
-| plus 2 more | | | | |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 44% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 7% | 40% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

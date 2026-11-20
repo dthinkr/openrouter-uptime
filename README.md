@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T17:00:59+00:00 UTC)
+## Current status (2026-11-20T17:17:20+00:00 UTC)
 
-477 models polled, 1472 inference endpoints:
-up 1055, degraded 53, down 20, idle 344.
+477 models polled, 1471 inference endpoints:
+up 1049, degraded 46, down 24, idle 352.
 
-Currently down (20):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 95% | 75% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 92% | n/a |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | 100% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 62% | n/a |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 77% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-3-27b-it` | `deepinfra/fp8/priority` | DeepInfra | 43% | 100% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 31% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 7% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 80% | 50% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 59% | 20% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `google/gemma-3-27b-it` | `deepinfra/fp8/priority` | DeepInfra | 58% | 0% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 57% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 0% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 82% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 36% | 25% |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 54% | 50% |
-| `openai/gpt-oss-120b` | `sail-research/fp4` | Sail Research | 50% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 0% |
-| plus 5 more | | | | |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

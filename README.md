@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T13:46:43+00:00 UTC)
+## Current status (2026-11-20T14:02:00+00:00 UTC)
 
 477 models polled, 1472 inference endpoints:
-up 1057, degraded 45, down 16, idle 354.
+up 1034, degraded 56, down 19, idle 363.
 
-Currently down (16):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 53% | 100% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 100% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 80% | 100% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 20% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 7% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 100% | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 7% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 76% | 25% |
 | `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 50% | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `moonshotai/kimi-k3.1-pro` | `deepinfra/bf16` | DeepInfra | 33% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 43% | 25% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 50% | n/a |
-| plus 1 more | | | | |
+| `nex-agi/nex-n2.5-pro` | `nex-agi/fp8` | Nex AGI | 33% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 45% | 80% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

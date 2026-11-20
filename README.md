@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T11:15:32+00:00 UTC)
+## Current status (2026-11-20T11:31:06+00:00 UTC)
 
 477 models polled, 1471 inference endpoints:
-up 1037, degraded 56, down 23, idle 355.
+up 1049, degraded 42, down 23, idle 357.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v3.2-exp` | `siliconflow/fp8` | SiliconFlow | 90% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 29% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 73% | 100% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
 | `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 0% | 0% |
-| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 83% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `siliconflow/fp8` | SiliconFlow | 57% | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 10% | 60% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 61% | 75% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 62% | 100% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 27% | 20% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 40% |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 44% | 0% |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

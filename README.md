@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T11:45:51+00:00 UTC)
+## Current status (2026-11-20T12:02:06+00:00 UTC)
 
 477 models polled, 1471 inference endpoints:
-up 1066, degraded 40, down 23, idle 342.
+up 1065, degraded 50, down 22, idle 334.
 
-Currently down (23):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 33% | 100% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
 | `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 71% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 12% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 7% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 29% | 33% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 50% | 80% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 20% |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 36% | n/a |
-| plus 8 more | | | | |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 71% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 50% | n/a |
+| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 0% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 57% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 33% | 60% |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 45% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

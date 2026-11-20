@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T08:30:57+00:00 UTC)
+## Current status (2026-11-20T08:46:15+00:00 UTC)
 
 477 models polled, 1470 inference endpoints:
-up 1059, degraded 46, down 21, idle 344.
+up 1046, degraded 49, down 19, idle 356.
 
-Currently down (21):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 50% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 33% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 100% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 20% | 20% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 73% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 48% | 100% |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 40% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 71% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 33% | 20% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 10% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 57% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 40% | 20% |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 30% | 80% |
-| plus 6 more | | | | |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 30% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

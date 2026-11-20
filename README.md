@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T14:17:14+00:00 UTC)
+## Current status (2026-11-20T14:31:52+00:00 UTC)
 
 477 models polled, 1472 inference endpoints:
-up 1050, degraded 48, down 20, idle 354.
+up 1045, degraded 51, down 19, idle 357.
 
-Currently down (20):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-v4.1-flash-1017` | `tenstorrent/fp8` | Tenstorrent | 71% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 64% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 20% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 23% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
 | `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 13% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 75% | 100% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 80% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 70% | 60% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 50% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 57% | 20% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 73% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 35% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 44% | 100% |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `nex-agi/nex-n2.5-pro` | `nex-agi/fp8` | Nex AGI | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 50% | 40% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 40% |
-| plus 5 more | | | | |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 47% | 60% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 4% | 0% |
+| `x-ai/grok-4.7` | `xai/zdr` | xAI | 13% | 40% |
+| `x-ai/grok-4.7` | `xai/zdr/priority` | xAI | 0% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

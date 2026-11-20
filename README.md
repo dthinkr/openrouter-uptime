@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T02:32:09+00:00 UTC)
+## Current status (2026-11-20T02:47:55+00:00 UTC)
 
-478 models polled, 1480 inference endpoints:
-up 1033, degraded 45, down 22, idle 380.
+478 models polled, 1479 inference endpoints:
+up 1050, degraded 41, down 18, idle 370.
 
-Currently down (22):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 50% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 29% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 100% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 10% | 20% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 89% | 100% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 36% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 27% | 20% |
 | `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | n/a | n/a |
 | `meta-llama/llama-3.2-1b-instruct` | `cloudflare` | Cloudflare | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `cloudflare` | Cloudflare | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `together` | Together | 37% | 100% |
-| plus 7 more | | | | |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 66% | 100% |
+| `moonshotai/kimi-k2.7-code` | `cloudflare` | Cloudflare | n/a | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 23% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 35% | 50% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

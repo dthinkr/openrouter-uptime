@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T06:46:49+00:00 UTC)
+## Current status (2026-11-20T07:00:51+00:00 UTC)
 
 477 models polled, 1470 inference endpoints:
-up 1023, degraded 45, down 31, idle 371.
+up 1026, degraded 53, down 17, idle 374.
 
-Currently down (31):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-opus-4.6` | `amazon-bedrock` | Amazon Bedrock | 43% | n/a |
+| `anthropic/claude-opus-4.6` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 33% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 33% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 30% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 81% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `digitalocean` | DigitalOcean | 30% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 94% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `digitalocean` | DigitalOcean | 33% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 60% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 0% | 0% |
-| plus 16 more | | | | |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 10% | 20% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 20% |
+| `moonshotai/kimi-k3` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 38% | n/a |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 3% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 89% | 80% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 30% | 80% |
+| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 89% | 33% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

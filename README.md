@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T23:18:00+00:00 UTC)
+## Current status (2026-11-20T23:32:12+00:00 UTC)
 
 476 models polled, 1441 inference endpoints:
-up 999, degraded 37, down 12, idle 393.
+up 996, degraded 38, down 12, idle 395.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 27% | 50% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 48% | 100% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 52% | 25% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 60% | 100% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 44% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 36% | 40% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 58% | 100% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 80% | 100% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | n/a | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 33% | 0% |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 39% | 50% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 43% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 38% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 37% | 40% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 67% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 50% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,26 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T14:18:15+00:00 UTC)
+## Current status (2026-11-21T14:31:20+00:00 UTC)
 
 476 models polled, 1426 inference endpoints:
-up 961, degraded 34, down 12, idle 419.
+up 969, degraded 32, down 10, idle 415.
 
-Currently down (12):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 47% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 35% | 67% |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | 0% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | n/a | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 55% | 25% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
 | `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 100% | 100% |
-| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | n/a | n/a |
-| `xiaomi/mimo-v2.6-flash` | `darkbloom/fp4` | Darkbloom | 25% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 33% | n/a |
+| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

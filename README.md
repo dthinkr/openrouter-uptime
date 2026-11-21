@@ -85,27 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T05:47:01+00:00 UTC)
+## Current status (2026-11-21T06:01:36+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 962, degraded 32, down 12, idle 419.
+up 980, degraded 31, down 9, idle 405.
 
-Currently down (12):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 7% | 0% |
-| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 17% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 11% | 60% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
 | `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 10% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | n/a | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 37% | 60% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 42% | 60% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 29% | n/a |
-| `z-ai/glm-5.3-flash` | `river` | River | 40% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

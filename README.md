@@ -85,28 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T10:18:20+00:00 UTC)
+## Current status (2026-11-21T10:33:26+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 980, degraded 36, down 13, idle 396.
+up 979, degraded 36, down 15, idle 395.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 73% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 64% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 25% | 25% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 32% | 20% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 63% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 20% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 31% | 20% |
 | `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 80% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 66% | 80% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 75% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 22% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 33% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

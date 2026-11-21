@@ -85,24 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T07:00:52+00:00 UTC)
+## Current status (2026-11-21T07:17:43+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 985, degraded 25, down 10, idle 405.
+up 988, degraded 25, down 9, idle 403.
 
-Currently down (10):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 89% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 33% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16/priority` | DeepInfra | 70% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 37% | 60% |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

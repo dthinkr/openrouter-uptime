@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T05:31:20+00:00 UTC)
+## Current status (2026-11-21T05:47:01+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 967, degraded 29, down 18, idle 411.
+up 962, degraded 32, down 12, idle 419.
 
-Currently down (18):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 8% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 37% | 67% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | 80% |
-| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 27% | 0% |
-| `google/gemma-4-31b-it` | `deepinfra/turbo` | DeepInfra | 80% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 3% | 20% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 43% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 20% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 61% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 70% | 100% |
-| `upstage/solar-pro4` | `kt` | KT | 0% | n/a |
-| plus 3 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 7% | 0% |
+| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 17% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 100% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 10% | 0% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | n/a | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 37% | 60% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 29% | n/a |
+| `z-ai/glm-5.3-flash` | `river` | River | 40% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T23:45:43+00:00 UTC)
+## Current status (2026-11-21T00:00:42+00:00 UTC)
 
 476 models polled, 1441 inference endpoints:
-up 984, degraded 35, down 14, idle 408.
+up 992, degraded 32, down 9, idle 408.
 
-Currently down (14):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 59% | 40% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 24% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 31% | 33% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 26% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | n/a | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 38% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 13% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 46% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 86% | 0% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 50% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 13% | 60% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 69% | n/a |
+| `z-ai/glm-5.3` | `fireworks/spot` | Fireworks | 70% | n/a |
+| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 27% | 60% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

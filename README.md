@@ -85,21 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T15:48:08+00:00 UTC)
+## Current status (2026-11-21T16:00:39+00:00 UTC)
 
 476 models polled, 1426 inference endpoints:
-up 1011, degraded 31, down 7, idle 377.
+up 1004, degraded 24, down 9, idle 389.
 
-Currently down (7):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 38% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 33% | 20% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 24% | 0% |
 | `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
-| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 48% | 0% |
+| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 67% | 100% |
+| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 33% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

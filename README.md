@@ -85,31 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T00:46:04+00:00 UTC)
+## Current status (2026-11-21T01:01:27+00:00 UTC)
 
-477 models polled, 1442 inference endpoints:
-up 998, degraded 41, down 17, idle 386.
+477 models polled, 1444 inference endpoints:
+up 980, degraded 53, down 11, idle 400.
 
-Currently down (17):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 60% | 100% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 43% | 67% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 47% | 0% |
 | `deepseek/deepseek-v4-pro` | `venice` | Venice | 67% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 73% | 100% |
-| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 59% | 100% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 13% | 20% |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 0% | 0% |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 27% | 0% |
-| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 33% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 48% | 60% |
-| plus 2 more | | | | |
+| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/priority` | DeepInfra | 20% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 10% | 60% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 17% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 38% | 33% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 24% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

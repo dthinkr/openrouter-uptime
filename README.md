@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T05:02:04+00:00 UTC)
+## Current status (2026-11-21T05:17:37+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 970, degraded 47, down 17, idle 391.
+up 969, degraded 44, down 20, idle 392.
 
-Currently down (17):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 74% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 38% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 7% | 0% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 59% | 75% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 17% | 0% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 78% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 48% | 20% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/turbo` | DeepInfra | 63% | 100% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 3% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 64% | n/a |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 17% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 37% | 100% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 | `upstage/solar-pro4` | `kt` | KT | 0% | n/a |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
-| `x-ai/grok-4.7` | `xai/zdr` | xAI | 67% | 20% |
-| plus 2 more | | | | |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

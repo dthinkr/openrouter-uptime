@@ -85,20 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T18:00:50+00:00 UTC)
+## Current status (2026-11-21T18:15:54+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 992, degraded 22, down 6, idle 410.
+up 999, degraded 29, down 8, idle 394.
 
-Currently down (6):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 33% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 30% | 0% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 47% | 100% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T11:32:10+00:00 UTC)
+## Current status (2026-11-21T11:47:47+00:00 UTC)
 
 476 models polled, 1426 inference endpoints:
-up 975, degraded 39, down 18, idle 394.
+up 990, degraded 33, down 13, idle 390.
 
-Currently down (18):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 79% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 0% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 62% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 42% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 58% | 67% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 39% | n/a |
 | `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 20% | n/a |
-| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 75% | 100% |
-| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 89% | 60% |
-| `openai/gpt-5.2` | `azure` | Azure | 100% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 41% | 50% |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 29% | 0% |
-| plus 3 more | | | | |
+| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 88% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 14% | 0% |
+| `openai/gpt-oss-120b` | `groq` | Groq | 77% | 60% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 44% | n/a |
+| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 38% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

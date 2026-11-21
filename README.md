@@ -85,29 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T04:30:38+00:00 UTC)
+## Current status (2026-11-21T04:47:32+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 969, degraded 53, down 14, idle 389.
+up 973, degraded 44, down 15, idle 393.
 
-Currently down (14):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 97% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 70% | 80% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 56% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 48% | 60% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 96% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 7% | 0% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 57% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 33% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 82% | 100% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 33% | 33% |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 3% | 0% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 10% | n/a |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 17% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 67% | 0% |
 | `upstage/solar-pro4` | `kt` | KT | 0% | n/a |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `river` | River | 20% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

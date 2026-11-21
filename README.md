@@ -85,27 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T02:02:38+00:00 UTC)
+## Current status (2026-11-21T02:16:27+00:00 UTC)
 
 477 models polled, 1444 inference endpoints:
-up 992, degraded 26, down 12, idle 414.
+up 1002, degraded 33, down 10, idle 399.
 
-Currently down (12):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 58% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 43% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 7% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 33% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 3% | 0% |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 27% | 20% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 24% | 33% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 47% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 35% | 67% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 23% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,27 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T23:17:38+00:00 UTC)
+## Current status (2026-11-21T23:31:09+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 991, degraded 25, down 12, idle 403.
+up 994, degraded 26, down 11, idle 400.
 
-Currently down (12):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 33% | 80% |
+| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 60% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 71% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 14% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `deepinfra/bf16` | DeepInfra | 33% | 100% |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 47% | 40% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 6% | 33% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 53% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 47% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 25% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 75% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

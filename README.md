@@ -85,23 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T22:03:04+00:00 UTC)
+## Current status (2026-11-21T22:17:42+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 992, degraded 30, down 8, idle 401.
+up 1001, degraded 28, down 8, idle 394.
 
 Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 69% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 3% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 0% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 30% | 20% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 23% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

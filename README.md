@@ -85,22 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T19:47:38+00:00 UTC)
+## Current status (2026-11-21T20:03:26+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 988, degraded 32, down 9, idle 402.
+up 998, degraded 35, down 9, idle 389.
 
 Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 20% | 100% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 33% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 83% | 100% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 23% | 100% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 67% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 47% | 100% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 0% |
 

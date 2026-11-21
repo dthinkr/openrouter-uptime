@@ -85,24 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T12:47:11+00:00 UTC)
+## Current status (2026-11-21T13:01:17+00:00 UTC)
 
 476 models polled, 1426 inference endpoints:
-up 963, degraded 39, down 12, idle 412.
+up 986, degraded 31, down 13, idle 396.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 40% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | n/a | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 79% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 23% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 29% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 67% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 28% | 25% |
+| `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | n/a | n/a |
 | `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
 | `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 0% | n/a |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | n/a | n/a |
 | `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 0% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 | `z-ai/glm-5.3` | `featherless` | Featherless | 0% | n/a |

@@ -85,25 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T08:16:03+00:00 UTC)
+## Current status (2026-11-21T08:32:33+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 977, degraded 35, down 12, idle 401.
+up 989, degraded 33, down 10, idle 393.
 
-Currently down (12):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 52% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 53% | 100% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 62% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 88% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 57% | 20% |
-| `qwen/qwen3.5-122b-a10b` | `novita/bf16` | Novita | 25% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 45% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 80% | 100% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 19% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `novita/bf16` | Novita | n/a | n/a |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 

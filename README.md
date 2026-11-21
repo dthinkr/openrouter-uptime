@@ -85,26 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T04:17:58+00:00 UTC)
+## Current status (2026-11-21T04:30:38+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 988, degraded 50, down 13, idle 374.
+up 969, degraded 53, down 14, idle 389.
 
-Currently down (13):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 37% | 100% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 83% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 100% | n/a |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 57% | 80% |
-| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | 75% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 97% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 70% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 56% | 20% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
 | `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 7% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 38% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 60% | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 57% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 33% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 82% | 100% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 33% | 33% |
 | `upstage/solar-pro4` | `kt` | KT | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 

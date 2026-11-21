@@ -85,20 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T15:02:14+00:00 UTC)
+## Current status (2026-11-21T15:15:47+00:00 UTC)
 
 476 models polled, 1426 inference endpoints:
-up 991, degraded 26, down 7, idle 402.
+up 1005, degraded 27, down 9, idle 385.
 
-Currently down (7):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 43% | 25% |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | 0% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 35% | 100% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | 0% |
 | `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 

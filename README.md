@@ -85,21 +85,21 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T17:02:05+00:00 UTC)
+## Current status (2026-11-21T17:17:42+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 992, degraded 26, down 8, idle 403.
+up 998, degraded 29, down 8, idle 394.
 
 Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 50% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 37% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
 | `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
 | `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 

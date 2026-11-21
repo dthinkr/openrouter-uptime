@@ -85,26 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T06:17:47+00:00 UTC)
+## Current status (2026-11-21T06:33:16+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 974, degraded 33, down 11, idle 407.
+up 984, degraded 27, down 11, idle 403.
 
 Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `primalabs` | PrimaLabs | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `primalabs` | PrimaLabs | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 70% | 100% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 3% | 20% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 69% | 0% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 43% | 60% |
-| `qwen/qwen3-30b-a3b` | `deepinfra/fp8/priority` | DeepInfra | 61% | 0% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
-| `z-ai/glm-5.3-flash` | `nebius/fp4` | Nebius | 50% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 53% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 64% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 50% | 60% |
+| `qwen/qwen3-30b-a3b` | `deepinfra/fp8/priority` | DeepInfra | 71% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

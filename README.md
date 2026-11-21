@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T11:47:47+00:00 UTC)
+## Current status (2026-11-21T12:01:57+00:00 UTC)
 
 476 models polled, 1426 inference endpoints:
-up 990, degraded 33, down 13, idle 390.
+up 993, degraded 30, down 13, idle 390.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 42% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 39% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 20% | n/a |
-| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 88% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 14% | 0% |
-| `openai/gpt-oss-120b` | `groq` | Groq | 77% | 60% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 50% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 4% | 0% |
+| `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | 50% | 50% |
+| `openai/gpt-oss-120b` | `groq` | Groq | 77% | 100% |
 | `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 44% | n/a |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 78% | 100% |
 | `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 0% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 38% | n/a |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 33% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,24 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T14:31:20+00:00 UTC)
+## Current status (2026-11-21T14:45:32+00:00 UTC)
 
 476 models polled, 1426 inference endpoints:
-up 969, degraded 32, down 10, idle 415.
+up 995, degraded 25, down 8, idle 398.
 
-Currently down (10):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | n/a | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 55% | 25% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 57% | 50% |
 | `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 100% | 100% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 33% | n/a |
-| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 100% | n/a |
+| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

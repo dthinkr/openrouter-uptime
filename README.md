@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T01:15:35+00:00 UTC)
+## Current status (2026-11-21T01:33:20+00:00 UTC)
 
 477 models polled, 1444 inference endpoints:
-up 975, degraded 57, down 18, idle 394.
+up 977, degraded 45, down 18, idle 404.
 
 Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 33% | 100% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 54% | 40% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 86% | 60% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 45% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 86% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 93% | 100% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 52% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 75% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 0% | 0% |
+| `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 43% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 17% | 60% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 77% | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 17% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 73% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 13% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 12% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 17% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 0% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 10% | 20% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 17% | n/a |
 | plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

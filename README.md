@@ -85,28 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T10:47:03+00:00 UTC)
+## Current status (2026-11-21T11:03:22+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 982, degraded 31, down 14, idle 398.
+up 978, degraded 36, down 15, idle 396.
 
-Currently down (14):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 17% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 20% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 71% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 25% | 33% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 33% | 25% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 67% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 25% | n/a |
+| `openai/gpt-5.2` | `azure` | Azure | 50% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 58% | 60% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | 0% |
+| `qwen/qwen3-14b` | `deepinfra/fp8/priority` | DeepInfra | 36% | 20% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 0% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 100% | 100% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

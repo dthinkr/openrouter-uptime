@@ -85,24 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T18:47:54+00:00 UTC)
+## Current status (2026-11-21T19:03:21+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 1005, degraded 23, down 10, idle 392.
+up 1004, degraded 23, down 14, idle 389.
 
-Currently down (10):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 30% | 25% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 50% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 48% | 50% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 17% | 100% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 33% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 40% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 45% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 81% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | 0% |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 23% | 0% |
+| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 33% | 100% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

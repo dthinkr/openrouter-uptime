@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T00:16:04+00:00 UTC)
+## Current status (2026-11-21T00:33:13+00:00 UTC)
 
 476 models polled, 1441 inference endpoints:
-up 1008, degraded 38, down 14, idle 381.
+up 1002, degraded 43, down 14, idle 382.
 
 Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 57% | 100% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 19% | 20% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 75% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 17% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 0% | 0% |
+| `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 0% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 40% | 0% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 82% | 50% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4/priority` | DeepInfra | 33% | 33% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 23% | 0% |
-| `openai/gpt-oss-120b` | `primeintellect/fp4` | PrimeIntellect | 0% | n/a |
-| `z-ai/glm-5.3` | `fireworks/spot` | Fireworks | 12% | n/a |
-| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 43% | 20% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 50% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 33% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | n/a |
+| `z-ai/glm-5.3` | `fireworks/spot` | Fireworks | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

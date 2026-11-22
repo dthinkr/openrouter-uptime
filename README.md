@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T21:17:46+00:00 UTC)
+## Current status (2026-11-22T21:32:05+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 994, degraded 35, down 17, idle 385.
+up 994, degraded 44, down 14, idle 379.
 
-Currently down (17):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 18% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 60% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 18% | 50% |
 | `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 14% | 40% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 10% | 20% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 48% | 33% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 40% | n/a |
-| `qwen/qwen3.8-27b` | `pearl-research/fp8` | Pearl Research | 93% | 100% |
-| plus 2 more | | | | |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 24% | 50% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 40% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 29% | 50% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 57% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.3-flash` | `darkbloom/fp4` | Darkbloom | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

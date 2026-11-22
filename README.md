@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T10:45:39+00:00 UTC)
+## Current status (2026-11-22T11:01:24+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 953, degraded 44, down 37, idle 395.
+up 959, degraded 43, down 37, idle 390.
 
 Currently down (37):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `coreweave/fp8` | CoreWeave | 47% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 47% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 48% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 47% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 60% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 59% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 60% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 60% | 40% |
+| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 60% | 100% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 47% | 0% |
-| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 47% | 0% |
+| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 60% | 100% |
+| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 33% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 60% | 100% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `meta-llama/llama-3.1-8b-instruct` | `coreweave/bf16` | CoreWeave | 47% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 47% | 0% |
+| `meta-llama/llama-3.1-8b-instruct` | `coreweave/bf16` | CoreWeave | 60% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 45% | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 59% | 100% |
 | plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

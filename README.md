@@ -85,25 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T23:15:33+00:00 UTC)
+## Current status (2026-11-22T23:33:05+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 991, degraded 40, down 11, idle 389.
+up 942, degraded 70, down 13, idle 406.
 
-Currently down (11):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 50% | n/a |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 17% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 36% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 28% | 40% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 38% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 80% | 0% |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 13% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 37% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `parasail/fp8` | Parasail | 70% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `primeintellect/fp8` | PrimeIntellect | 20% | 20% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

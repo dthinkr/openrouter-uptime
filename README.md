@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T13:02:25+00:00 UTC)
+## Current status (2026-11-22T13:16:39+00:00 UTC)
 
-476 models polled, 1428 inference endpoints:
-up 963, degraded 42, down 12, idle 411.
+476 models polled, 1427 inference endpoints:
+up 976, degraded 40, down 12, idle 399.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 17% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 29% | 100% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 19% | 33% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 17% | 20% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 38% | 20% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 88% | 33% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 40% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 20% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 7% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 17% | 20% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 75% | n/a |
 | `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 100% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.3` | `coreweave/nvfp4` | CoreWeave | 25% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

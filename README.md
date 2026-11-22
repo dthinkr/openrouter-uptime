@@ -85,21 +85,21 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T23:46:01+00:00 UTC)
+## Current status (2026-11-22T00:01:38+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 982, degraded 30, down 6, idle 413.
+up 972, degraded 26, down 6, idle 427.
 
 Currently down (6):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 20% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

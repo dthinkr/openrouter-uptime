@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T15:16:25+00:00 UTC)
+## Current status (2026-11-22T15:30:47+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 999, degraded 39, down 11, idle 380.
+up 1016, degraded 43, down 11, idle 359.
 
 Currently down (11):
 
@@ -98,12 +98,12 @@ Currently down (11):
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 25% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | n/a |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 92% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 25% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 33% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 6% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 38% | 100% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 30% | 25% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

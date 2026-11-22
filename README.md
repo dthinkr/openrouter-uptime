@@ -85,23 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T05:01:35+00:00 UTC)
+## Current status (2026-11-22T05:17:24+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 976, degraded 26, down 8, idle 421.
+up 980, degraded 27, down 14, idle 410.
 
-Currently down (8):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 63% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 66% | 0% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 88% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 23% | 0% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 25% | 25% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
+| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 57% | 50% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
+| `z-ai/glm-5.3-flash` | `river` | River | 74% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

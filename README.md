@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T07:32:53+00:00 UTC)
+## Current status (2026-11-22T07:48:09+00:00 UTC)
 
-476 models polled, 1430 inference endpoints:
-up 966, degraded 46, down 27, idle 391.
+476 models polled, 1428 inference endpoints:
+up 942, degraded 55, down 33, idle 398.
 
-Currently down (27):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `coreweave/fp8` | CoreWeave | 63% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 63% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 63% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `coreweave/fp8` | CoreWeave | 32% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 37% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 28% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 30% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 40% | 100% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 45% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | 100% |
-| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 63% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
+| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 37% | 100% |
+| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 37% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 22% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `meta-llama/llama-3.1-8b-instruct` | `coreweave/bf16` | CoreWeave | 63% | 0% |
-| `moonshotai/kimi-k2.7-code` | `coreweave/int4` | CoreWeave | 47% | 20% |
-| plus 12 more | | | | |
+| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 60% | 100% |
+| `meta-llama/llama-3.1-8b-instruct` | `coreweave/bf16` | CoreWeave | 30% | 100% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

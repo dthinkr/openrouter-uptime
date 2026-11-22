@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T23:33:05+00:00 UTC)
+## Current status (2026-11-22T23:47:29+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 942, degraded 70, down 13, idle 406.
+up 907, degraded 90, down 26, idle 408.
 
-Currently down (13):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 79% | 25% |
+| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 67% | 20% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 70% | 20% |
+| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 70% | 80% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 17% | 0% |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 17% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `meta-llama/llama-4-maverick` | `parasail/fp8` | Parasail | 67% | 20% |
 | `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
 | `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 28% | 40% |
+| `moonshotai/kimi-k3.1-pro` | `parasail/fp4` | Parasail | 63% | 0% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 20% | 20% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 13% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 37% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `parasail/fp8` | Parasail | 70% | 20% |
-| `qwen/qwen3.6-35b-a3b` | `primeintellect/fp8` | PrimeIntellect | 20% | 20% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `qwen/qwen3-vl-8b-instruct` | `parasail/bf16` | Parasail | 67% | 20% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

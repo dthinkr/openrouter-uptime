@@ -85,27 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T03:16:06+00:00 UTC)
+## Current status (2026-11-22T03:32:04+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 954, degraded 41, down 12, idle 422.
+up 962, degraded 43, down 11, idle 413.
 
-Currently down (12):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 50% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 94% | 67% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 40% | 100% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 75% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `tencent/hy4` | `tencent/fp4` | Tencent | 20% | 100% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 11% | 33% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 30% | 0% |
-| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 36% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 27% | 40% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 88% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 50% | n/a |
+| `tencent/hy4` | `tencent/fp4` | Tencent | 38% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 23% | 0% |
+| `z-ai/glm-5.3-flash` | `relace/fp4` | Relace | 60% | 60% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

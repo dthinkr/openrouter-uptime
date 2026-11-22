@@ -85,26 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T03:32:04+00:00 UTC)
+## Current status (2026-11-22T03:46:56+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 962, degraded 43, down 11, idle 413.
+up 964, degraded 59, down 7, idle 399.
 
-Currently down (11):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 94% | 67% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 40% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 92% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 88% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 50% | n/a |
-| `tencent/hy4` | `tencent/fp4` | Tencent | 38% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 23% | 0% |
-| `z-ai/glm-5.3-flash` | `relace/fp4` | Relace | 60% | 60% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
+| `z-ai/glm-5.3-flash` | `relace/fp4` | Relace | 60% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

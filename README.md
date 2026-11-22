@@ -85,27 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T08:32:11+00:00 UTC)
+## Current status (2026-11-22T08:47:34+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 979, degraded 50, down 13, idle 387.
+up 989, degraded 34, down 15, idle 391.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `fireworks/ember-1` | `fireworks` | Fireworks | 60% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/turbo` | DeepInfra | 80% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 24% | 20% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 71% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 34% | 25% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 20% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 5% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 8% | 0% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 67% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

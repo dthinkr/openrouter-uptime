@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T05:48:25+00:00 UTC)
+## Current status (2026-11-22T06:01:19+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 969, degraded 42, down 11, idle 409.
+up 963, degraded 37, down 11, idle 420.
 
 Currently down (11):
 
@@ -96,15 +96,15 @@ Currently down (11):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 33% | n/a |
+| `google/gemma-3-4b-it` | `deepinfra/bf16/priority` | DeepInfra | 64% | 0% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 100% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `coreweave/bf16` | CoreWeave | 58% | n/a |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 42% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | 0% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

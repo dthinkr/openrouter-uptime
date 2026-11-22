@@ -85,25 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T04:32:25+00:00 UTC)
+## Current status (2026-11-22T04:48:26+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 988, degraded 29, down 10, idle 404.
+up 975, degraded 26, down 9, idle 421.
 
-Currently down (10):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 17% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 33% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
 | `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `z-ai/glm-4.6` | `venice/fp4` | Venice | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 68% | 50% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 27% | 80% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 37% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

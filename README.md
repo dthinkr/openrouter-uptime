@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T19:47:35+00:00 UTC)
+## Current status (2026-11-22T20:01:49+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 993, degraded 37, down 17, idle 383.
+up 989, degraded 39, down 15, idle 387.
 
-Currently down (17):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 15% | 0% |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 7% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 33% | 50% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 20% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 33% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 46% | 25% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 25% | 25% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 17% | 20% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 10% | 20% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 33% | 40% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | 20% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 56% | n/a |
-| plus 2 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 0% | 0% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 38% | 33% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 33% | 40% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 17% | 60% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 33% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 60% | 60% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 39% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

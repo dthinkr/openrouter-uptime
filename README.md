@@ -85,29 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T12:03:18+00:00 UTC)
+## Current status (2026-11-22T12:18:30+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 962, degraded 45, down 15, idle 407.
+up 975, degraded 54, down 12, idle 388.
 
-Currently down (15):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 5% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 71% | 100% |
+| `google/gemini-4-carbon` | `google-ai-studio/priority` | Google AI Studio | 0% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 20% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 20% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | 67% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | 0% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 19% | 67% |
-| `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | 50% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 3% | 20% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 48% | 75% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 38% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 40% | 67% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 30% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 40% | n/a |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 33% | 25% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 7% | 20% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 10% | 40% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T19:32:21+00:00 UTC)
+## Current status (2026-11-22T19:47:35+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 1010, degraded 38, down 20, idle 362.
+up 993, degraded 37, down 17, idle 383.
 
-Currently down (20):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `deepinfra/turbo` | DeepInfra | 63% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 33% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 15% | 0% |
 | `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 54% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 45% | 100% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 48% | 50% |
-| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 48% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 8% | 100% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 58% | n/a |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 82% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 7% | 0% |
-| plus 5 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 20% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 33% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 46% | 25% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 25% | 25% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 17% | 20% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 10% | 20% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 33% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | 20% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 56% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,26 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T00:16:00+00:00 UTC)
+## Current status (2026-11-22T00:30:54+00:00 UTC)
 
-476 models polled, 1431 inference endpoints:
-up 989, degraded 33, down 11, idle 398.
+476 models polled, 1432 inference endpoints:
+up 989, degraded 33, down 20, idle 390.
 
-Currently down (11):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 12% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 33% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 47% | 100% |
+| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 43% | 100% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/mistral-nemo` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 77% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4/priority` | DeepInfra | 62% | n/a |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
 | `openai/gpt-oss-120b` | `primeintellect/fp4` | PrimeIntellect | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 76% | 50% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 86% | 75% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 7% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 71% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

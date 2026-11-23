@@ -85,27 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T21:33:06+00:00 UTC)
+## Current status (2026-11-23T21:47:21+00:00 UTC)
 
 476 models polled, 1439 inference endpoints:
-up 1012, degraded 43, down 12, idle 372.
+up 1012, degraded 42, down 15, idle 370.
 
-Currently down (12):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 40% | 20% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 30% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 8% | 0% |
+| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 81% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 27% | 20% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 40% | n/a |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 3% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 53% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 50% | 100% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 67% | 100% |
 | `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

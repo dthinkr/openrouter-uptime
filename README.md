@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T07:48:20+00:00 UTC)
+## Current status (2026-11-23T08:02:35+00:00 UTC)
 
 477 models polled, 1431 inference endpoints:
-up 993, degraded 32, down 21, idle 385.
+up 991, degraded 30, down 19, idle 391.
 
-Currently down (21):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 63% | 20% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 88% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `dekallm` | DekaLLM | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `dekallm` | DekaLLM | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 33% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
 | `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | n/a | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 86% | 100% |
 | `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 0% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 0% | 0% |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16/priority` | DeepInfra | 31% | 0% |
-| `qwen/qwen3.5-9b` | `together` | Together | 37% | 0% |
-| plus 6 more | | | | |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 0% | n/a |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16/priority` | DeepInfra | 13% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

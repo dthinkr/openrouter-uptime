@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T09:48:11+00:00 UTC)
+## Current status (2026-11-23T10:01:11+00:00 UTC)
 
 477 models polled, 1427 inference endpoints:
-up 1001, degraded 40, down 24, idle 362.
+up 1006, degraded 40, down 20, idle 361.
 
-Currently down (24):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 75% | 100% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 30% | 40% |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 96% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 20% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
+| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 94% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 100% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 43% | 100% |
-| `minimax/minimax-m3.1-flash` | `streamlake/fp8` | StreamLake | 33% | n/a |
-| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 58% | n/a |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 52% | 100% |
 | `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 37% | 0% |
-| `openai/gpt-6-luna` | `azure` | Azure | 27% | 60% |
-| plus 9 more | | | | |
+| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 7% | 0% |
+| `openai/gpt-6-luna` | `azure` | Azure | 33% | 40% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 38% | 40% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,26 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T11:46:33+00:00 UTC)
+## Current status (2026-11-23T12:01:54+00:00 UTC)
 
-477 models polled, 1426 inference endpoints:
-up 1033, degraded 40, down 12, idle 341.
+477 models polled, 1424 inference endpoints:
+up 1009, degraded 34, down 15, idle 366.
 
-Currently down (12):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 50% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | n/a | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 36% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 50% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 53% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `openai/gpt-4.1-mini` | `azure` | Azure | 90% | 80% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 92% | 100% |
-| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 60% | 40% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 50% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 67% | n/a |
+| `openai/gpt-4.1-mini` | `azure` | Azure | 97% | 100% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 83% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 83% | 0% |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

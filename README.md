@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T00:01:30+00:00 UTC)
+## Current status (2026-11-23T00:17:44+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 893, degraded 56, down 59, idle 422.
+up 903, degraded 77, down 51, idle 399.
 
-Currently down (59):
+Currently down (51):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 28% | 0% |
-| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 37% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 37% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 33% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `parasail/fast` | Parasail | 56% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 40% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fast` | Parasail | 36% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 40% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 37% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 67% | n/a |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 50% | 100% |
-| `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 40% | 0% |
-| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 63% | 80% |
-| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 37% | 0% |
-| plus 44 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 36% | 100% |
+| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 53% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 53% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 53% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fast` | Parasail | 9% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 53% | 100% |
+| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 53% | 100% |
+| `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 28% | n/a |
+| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 67% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 52% | n/a |
+| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 53% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
+| plus 36 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

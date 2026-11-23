@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T16:16:19+00:00 UTC)
+## Current status (2026-11-23T16:32:48+00:00 UTC)
 
-477 models polled, 1426 inference endpoints:
-up 1018, degraded 47, down 18, idle 343.
+477 models polled, 1427 inference endpoints:
+up 1012, degraded 48, down 20, idle 347.
 
-Currently down (18):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
 | `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 33% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 44% | 40% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `pearl-research/fp8` | Pearl Research | 90% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 90% | 100% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 5% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 7% | 40% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 37% | 60% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 43% | 40% |
-| `qwen/qwen3.8-27b` | `nebius/fp4` | Nebius | 48% | 100% |
-| plus 3 more | | | | |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 7% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 53% | 100% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

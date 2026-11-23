@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T06:16:50+00:00 UTC)
+## Current status (2026-11-23T06:32:51+00:00 UTC)
 
 477 models polled, 1431 inference endpoints:
-up 1007, degraded 31, down 19, idle 374.
+up 1013, degraded 37, down 22, idle 359.
 
-Currently down (19):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 27% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 23% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `dekallm` | DekaLLM | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 50% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 82% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | 0% | n/a |
 | `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 12% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 0% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 37% | 40% |
-| plus 4 more | | | | |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | n/a | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

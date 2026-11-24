@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T03:47:17+00:00 UTC)
+## Current status (2026-11-24T04:01:53+00:00 UTC)
 
 474 models polled, 1439 inference endpoints:
-up 997, degraded 48, down 14, idle 380.
+up 1012, degraded 40, down 13, idle 374.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8` | DeepInfra | 40% | 20% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 53% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 43% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8` | DeepInfra | 20% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 13% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 29% | 100% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 50% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 25% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `fireworks/us` | Fireworks | 76% | 100% |
+| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 53% | 20% |
+| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 33% | 0% |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
 | `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 20% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

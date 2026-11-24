@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T21:31:08+00:00 UTC)
+## Current status (2026-11-24T21:48:03+00:00 UTC)
 
 469 models polled, 1419 inference endpoints:
-up 981, degraded 35, down 36, idle 367.
+up 992, degraded 46, down 24, idle 357.
 
-Currently down (36):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 30% | 20% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 48% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 30% | 0% |
+| `elorian/glimpse` | `together` | Together | 40% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 53% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 33% | 0% |
-| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 43% | 0% |
-| `openai/gpt-4.1` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-4.1-mini` | `azure` | Azure | 27% | 60% |
-| `openai/gpt-4.1-nano` | `azure` | Azure | 44% | 100% |
-| `openai/gpt-5-mini` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-5-nano` | `azure` | Azure | 0% | 0% |
-| plus 21 more | | | | |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 64% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 33% | 100% |
+| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 53% | 100% |
+| `openai/gpt-4.1` | `azure` | Azure | 68% | 100% |
+| `openai/gpt-5-mini` | `azure` | Azure | 68% | 100% |
+| `openai/gpt-5.2` | `azure` | Azure | n/a | n/a |
+| `openai/gpt-5.4-nano` | `azure` | Azure | 50% | n/a |
+| `openai/gpt-5.5` | `azure` | Azure | 71% | 100% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 72% | 100% |
+| `openai/gpt-6-luna` | `azure` | Azure | 71% | 100% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

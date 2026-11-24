@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T03:33:10+00:00 UTC)
+## Current status (2026-11-24T03:47:17+00:00 UTC)
 
 474 models polled, 1439 inference endpoints:
-up 987, degraded 51, down 16, idle 385.
+up 997, degraded 48, down 14, idle 380.
 
-Currently down (16):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8` | DeepInfra | 40% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 53% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 37% | 60% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 43% | 100% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-3-27b-it` | `deepinfra/fp8/priority` | DeepInfra | 86% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 54% | 100% |
-| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 57% | n/a |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 62% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 50% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 25% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `fireworks/us` | Fireworks | 76% | 100% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
 | `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
-| plus 1 more | | | | |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

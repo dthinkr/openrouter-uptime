@@ -85,31 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T23:31:22+00:00 UTC)
+## Current status (2026-11-24T23:47:29+00:00 UTC)
 
-470 models polled, 1422 inference endpoints:
-up 1019, degraded 39, down 17, idle 347.
+470 models polled, 1423 inference endpoints:
+up 1005, degraded 39, down 9, idle 370.
 
-Currently down (17):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 56% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 30% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `pearl-research/fp8` | Pearl Research | 93% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 62% | 33% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 33% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 62% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `tencent/hy4-flash` | `deepinfra/fp4` | DeepInfra | 62% | 0% |
-| `thinkingmachines/inkling-2-small` | `primeintellect/fast` | PrimeIntellect | 0% | n/a |
-| plus 2 more | | | | |
+| `tencent/hy4-flash` | `deepinfra/fp4` | DeepInfra | 17% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 86% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

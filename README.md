@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T14:33:04+00:00 UTC)
+## Current status (2026-11-24T14:46:44+00:00 UTC)
 
 473 models polled, 1430 inference endpoints:
-up 984, degraded 72, down 24, idle 350.
+up 999, degraded 63, down 23, idle 345.
 
-Currently down (24):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | n/a | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 50% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 100% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 10% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 80% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 27% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 76% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 47% | 0% |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4/priority` | DeepInfra | 73% | 100% |
 | `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 4% | 0% |
-| plus 9 more | | | | |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 12% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T21:48:03+00:00 UTC)
+## Current status (2026-11-24T22:01:10+00:00 UTC)
 
-469 models polled, 1419 inference endpoints:
-up 992, degraded 46, down 24, idle 357.
+469 models polled, 1420 inference endpoints:
+up 1010, degraded 37, down 17, idle 356.
 
-Currently down (24):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 30% | 0% |
-| `elorian/glimpse` | `together` | Together | 40% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 33% | 100% |
+| `elorian/glimpse` | `together` | Together | 0% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 64% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 33% | 100% |
-| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 53% | 100% |
-| `openai/gpt-4.1` | `azure` | Azure | 68% | 100% |
-| `openai/gpt-5-mini` | `azure` | Azure | 68% | 100% |
-| `openai/gpt-5.2` | `azure` | Azure | n/a | n/a |
-| `openai/gpt-5.4-nano` | `azure` | Azure | 50% | n/a |
-| `openai/gpt-5.5` | `azure` | Azure | 71% | 100% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 72% | 100% |
-| `openai/gpt-6-luna` | `azure` | Azure | 71% | 100% |
-| plus 9 more | | | | |
+| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 39% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 27% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 61% | n/a |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 67% | n/a |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
+| `thinkingmachines/inkling-2-small` | `primeintellect/fast` | PrimeIntellect | n/a | n/a |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 100% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

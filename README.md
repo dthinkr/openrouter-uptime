@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T10:18:12+00:00 UTC)
+## Current status (2026-11-24T10:31:01+00:00 UTC)
 
 473 models polled, 1431 inference endpoints:
-up 1011, degraded 57, down 25, idle 338.
+up 1001, degraded 55, down 24, idle 351.
 
-Currently down (25):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 58% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 83% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 35% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 14% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 41% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `fireworks/us` | Fireworks | 18% | 100% |
-| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 37% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
-| plus 10 more | | | | |
+| `mistralai/mistral-small-3.2-24b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 82% | 100% |
+| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 50% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `fireworks/us` | Fireworks | 14% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 41% | 20% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

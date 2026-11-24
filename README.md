@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T22:45:45+00:00 UTC)
+## Current status (2026-11-24T23:02:27+00:00 UTC)
 
-470 models polled, 1421 inference endpoints:
-up 988, degraded 38, down 18, idle 377.
+470 models polled, 1422 inference endpoints:
+up 1008, degraded 40, down 16, idle 358.
 
-Currently down (18):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 92% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `pearl-research/fp8` | Pearl Research | 80% | 60% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 13% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `pearl-research/fp8` | Pearl Research | 73% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 72% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 65% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 43% | 40% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.5-27b` | `deepinfra/fp8` | DeepInfra | 50% | 67% |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 20% | n/a |
-| `thinkingmachines/inkling-2-mini` | `primeintellect/fast` | PrimeIntellect | 74% | 33% |
-| plus 3 more | | | | |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.5-27b` | `deepinfra/fp8` | DeepInfra | 33% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `thinkingmachines/inkling-2-mini` | `primeintellect/fast` | PrimeIntellect | 50% | n/a |
+| `thinkingmachines/inkling-2-small` | `primeintellect/fast` | PrimeIntellect | 0% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

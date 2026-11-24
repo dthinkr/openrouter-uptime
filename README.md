@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T01:17:56+00:00 UTC)
+## Current status (2026-11-24T01:33:26+00:00 UTC)
 
 476 models polled, 1443 inference endpoints:
-up 989, degraded 42, down 20, idle 392.
+up 995, degraded 44, down 17, idle 387.
 
-Currently down (20):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 30% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 14% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 80% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 89% | 80% |
-| `moonshotai/kimi-k3.1-pro` | `io-net/fp4` | Io Net | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 80% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 80% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 82% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `morph/fp8` | Morph | 76% | 100% |
+| `moonshotai/kimi-k3.1-pro` | `io-net/fp4` | Io Net | 0% | 0% |
 | `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 17% | n/a |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| plus 5 more | | | | |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

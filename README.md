@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T13:33:07+00:00 UTC)
+## Current status (2026-11-24T13:47:11+00:00 UTC)
 
 473 models polled, 1429 inference endpoints:
-up 998, degraded 58, down 22, idle 351.
+up 996, degraded 57, down 20, idle 356.
 
-Currently down (22):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 33% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 40% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 54% | 100% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 20% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | 50% |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 36% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 40% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 8% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 27% | 100% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 14% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 14% | 0% |
-| plus 7 more | | | | |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 7% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 17% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 10% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 4% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

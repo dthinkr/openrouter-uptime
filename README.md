@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T01:46:41+00:00 UTC)
+## Current status (2026-11-24T02:00:35+00:00 UTC)
 
-476 models polled, 1443 inference endpoints:
-up 991, degraded 42, down 18, idle 392.
+476 models polled, 1445 inference endpoints:
+up 982, degraded 43, down 17, idle 403.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-sonnet-5` | `azure/global` | Azure | 0% | 0% |
+| `anthropic/claude-sonnet-5` | `azure/global` | Azure | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 69% | n/a |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 61% | 67% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 21% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 80% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 86% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 7% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 71% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `morph/fp8` | Morph | 79% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `moonshotai/kimi-k3.1-pro` | `io-net/fp4` | Io Net | 0% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

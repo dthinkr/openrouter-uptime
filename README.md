@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T21:01:12+00:00 UTC)
+## Current status (2026-11-24T21:16:21+00:00 UTC)
 
 469 models polled, 1419 inference endpoints:
-up 972, degraded 41, down 38, idle 368.
+up 963, degraded 45, down 26, idle 385.
 
-Currently down (38):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 86% | 100% |
-| `elorian/glimpse` | `together` | Together | 69% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 81% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 64% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 41% | n/a |
-| `openai/gpt-4.1` | `azure` | Azure | 0% | n/a |
 | `openai/gpt-4.1-mini` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-4.1-nano` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-4o` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-4o-mini` | `azure` | Azure | 0% | n/a |
-| plus 23 more | | | | |
+| `openai/gpt-4.1-nano` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-4o-mini` | `azure` | Azure | 33% | 100% |
+| `openai/gpt-5-mini` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-5-nano` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-5.6-sol` | `azure` | Azure | n/a | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

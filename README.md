@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T00:46:27+00:00 UTC)
+## Current status (2026-11-25T01:01:53+00:00 UTC)
 
-472 models polled, 1424 inference endpoints:
-up 990, degraded 30, down 23, idle 381.
+472 models polled, 1425 inference endpoints:
+up 985, degraded 40, down 26, idle 374.
 
-Currently down (23):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 23% | 60% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-ember` | `meta` | Meta | 30% | 100% |
+| `meta/muse-ember` | `meta` | Meta | 77% | 100% |
 | `meta/muse-spark-1.1` | `meta` | Meta | 0% | n/a |
-| `meta/muse-spark-1.2` | `meta` | Meta | 25% | 100% |
-| `meta/muse-spark-1.2-contributor` | `meta` | Meta | 30% | 100% |
-| `meta/muse-spark-1.3` | `meta` | Meta | 30% | 100% |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 30% | 100% |
-| `meta/muse-wonder` | `meta` | Meta | 0% | n/a |
-| plus 8 more | | | | |
+| `meta/muse-spark-1.2` | `meta` | Meta | 75% | 100% |
+| `meta/muse-spark-1.2-contributor` | `meta` | Meta | 77% | 100% |
+| `meta/muse-spark-1.3` | `meta` | Meta | 73% | 100% |
+| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 77% | 100% |
+| `meta/muse-wonder` | `meta` | Meta | 36% | 100% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 47% | 100% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

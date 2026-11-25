@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T16:48:04+00:00 UTC)
+## Current status (2026-11-25T17:01:12+00:00 UTC)
 
 472 models polled, 1429 inference endpoints:
-up 1014, degraded 55, down 14, idle 346.
+up 1034, degraded 53, down 13, idle 329.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 93% | 100% |
-| `deepseek/deepseek-v3.2` | `featherless/fp8` | Featherless | 59% | 100% |
 | `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 50% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 33% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 44% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 25% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 60% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 55% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 56% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 20% | 40% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `qwen/qwen3-14b` | `deepinfra/fp8/flex` | DeepInfra | 45% | n/a |
-| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 65% | 100% |
+| `qwen/qwen3-14b` | `deepinfra/fp8/flex` | DeepInfra | 20% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

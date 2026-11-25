@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T13:46:47+00:00 UTC)
+## Current status (2026-11-25T14:01:01+00:00 UTC)
 
 472 models polled, 1426 inference endpoints:
-up 1023, degraded 42, down 16, idle 345.
+up 1013, degraded 44, down 13, idle 356.
 
-Currently down (16):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 100% |
-| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 50% | 60% |
+| `deepseek/deepseek-v3.2` | `featherless/fp8` | Featherless | 37% | 60% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 80% | 67% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 41% | 0% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 37% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | 0% |
-| `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 42% | 100% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 4% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 67% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | 50% |
+| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 8% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 20% |
+| `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 33% | n/a |
+| `meta/muse-spark-1.3` | `meta` | Meta | 60% | 20% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 15% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
-| `qwen/qwen3.6-35b-a3b` | `venice/fp8` | Venice | 73% | 100% |
-| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

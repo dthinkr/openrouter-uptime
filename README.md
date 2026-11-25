@@ -85,26 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T21:32:51+00:00 UTC)
+## Current status (2026-11-25T21:46:33+00:00 UTC)
 
 474 models polled, 1430 inference endpoints:
-up 1031, degraded 26, down 11, idle 362.
+up 1027, degraded 30, down 11, idle 362.
 
 Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 62% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 31% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 22% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 100% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 78% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 13% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 43% | 20% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 54% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 43% | 40% |
-| `z-ai/glm-5.3-flash` | `darkbloom/fp4` | Darkbloom | 33% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

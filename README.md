@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T22:46:07+00:00 UTC)
+## Current status (2026-11-25T23:01:12+00:00 UTC)
 
-474 models polled, 1431 inference endpoints:
-up 985, degraded 60, down 15, idle 371.
+474 models polled, 1430 inference endpoints:
+up 1012, degraded 44, down 15, idle 359.
 
 Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 6% | 100% |
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 57% | 100% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 83% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `chutes/fp8` | Chutes | 33% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 83% | n/a |
-| `openai/gpt-oss-120b` | `primeintellect/fp4` | PrimeIntellect | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 11% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 57% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 23% | 20% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 7% | 0% |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 40% | 40% |
-| `z-ai/glm-5.3` | `sail-research/us` | Sail Research | 36% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 3% | 0% |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 40% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,24 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T19:02:17+00:00 UTC)
+## Current status (2026-11-25T19:16:37+00:00 UTC)
 
 470 models polled, 1425 inference endpoints:
-up 1023, degraded 35, down 9, idle 358.
+up 1006, degraded 46, down 12, idle 361.
 
-Currently down (9):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 50% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 44% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 55% | 60% |
 | `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 24% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 8% | 0% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 79% | 0% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 83% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

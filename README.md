@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T19:32:21+00:00 UTC)
+## Current status (2026-11-25T19:45:43+00:00 UTC)
 
 470 models polled, 1425 inference endpoints:
-up 1010, degraded 40, down 18, idle 357.
+up 1017, degraded 40, down 12, idle 356.
 
-Currently down (18):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 80% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 50% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | n/a | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 58% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 48% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 33% | 20% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 64% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 37% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 24% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `liquid/lfm-3-1.7b` | `liquid` | Liquid | 80% | 20% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 30% | 20% |
+| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 4% | 50% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 64% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 54% | 100% |
-| plus 3 more | | | | |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 9% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

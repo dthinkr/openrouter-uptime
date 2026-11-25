@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T01:01:53+00:00 UTC)
+## Current status (2026-11-25T01:17:16+00:00 UTC)
 
 472 models polled, 1425 inference endpoints:
-up 985, degraded 40, down 26, idle 374.
+up 998, degraded 56, down 20, idle 351.
 
-Currently down (26):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 100% |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-ember` | `meta` | Meta | 77% | 100% |
-| `meta/muse-spark-1.1` | `meta` | Meta | 0% | n/a |
-| `meta/muse-spark-1.2` | `meta` | Meta | 75% | 100% |
-| `meta/muse-spark-1.2-contributor` | `meta` | Meta | 77% | 100% |
-| `meta/muse-spark-1.3` | `meta` | Meta | 73% | 100% |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 77% | 100% |
-| `meta/muse-wonder` | `meta` | Meta | 36% | 100% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 47% | 100% |
-| plus 11 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 7% | 40% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 50% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 50% | 20% |
+| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
+| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 50% | 80% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 100% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

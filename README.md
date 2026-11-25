@@ -85,28 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T14:01:01+00:00 UTC)
+## Current status (2026-11-25T14:16:50+00:00 UTC)
 
-472 models polled, 1426 inference endpoints:
-up 1013, degraded 44, down 13, idle 356.
+472 models polled, 1427 inference endpoints:
+up 1012, degraded 54, down 14, idle 347.
 
-Currently down (13):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `featherless/fp8` | Featherless | 37% | 60% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 80% | 67% |
+| `deepseek/deepseek-v3.2` | `featherless/fp8` | Featherless | 37% | 40% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 81% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 67% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | 50% |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 8% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 20% |
-| `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 33% | n/a |
-| `meta/muse-spark-1.3` | `meta` | Meta | 60% | 20% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 15% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | n/a | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 56% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 50% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 23% | 0% |
+| `meta/muse-spark-1.3` | `meta` | Meta | 67% | 100% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 21% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 89% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

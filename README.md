@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T05:16:23+00:00 UTC)
+## Current status (2026-11-25T05:32:45+00:00 UTC)
 
 472 models polled, 1432 inference endpoints:
-up 956, degraded 83, down 22, idle 371.
+up 950, degraded 78, down 42, idle 362.
 
-Currently down (22):
+Currently down (42):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 20% | 0% |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 58% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 42% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 73% | 20% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `deepinfra/fp8` | DeepInfra | 40% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 6% | 20% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-20b` | `akashml/fp4` | AkashML | 75% | 20% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 87% | 20% |
-| plus 7 more | | | | |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `ambient/fp4` | Ambient | 30% | 40% |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 57% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 64% | 100% |
+| plus 27 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T12:17:22+00:00 UTC)
+## Current status (2026-11-25T12:30:46+00:00 UTC)
 
 472 models polled, 1427 inference endpoints:
-up 1016, degraded 48, down 17, idle 346.
+up 1018, degraded 48, down 14, idle 347.
 
-Currently down (17):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 87% | 20% |
-| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 47% | 40% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 83% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 40% | 100% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 38% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 60% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 33% | 40% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 18% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 41% | 50% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 23% | 40% |
 | `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 0% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 31% | 0% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 31% | 60% |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
-| plus 2 more | | | | |
+| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 90% | 100% |
+| `z-ai/glm-5` | `amazon-bedrock` | Amazon Bedrock | 62% | 80% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

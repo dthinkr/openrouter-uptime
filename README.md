@@ -85,24 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T23:47:29+00:00 UTC)
+## Current status (2026-11-25T00:02:38+00:00 UTC)
 
 470 models polled, 1423 inference endpoints:
-up 1005, degraded 39, down 9, idle 370.
+up 985, degraded 49, down 11, idle 378.
 
-Currently down (9):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 33% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 62% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 30% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 100% |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 50% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 50% |
+| `openai/gpt-oss-120b` | `primeintellect/fp4` | PrimeIntellect | 0% | 0% |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `tencent/hy4-flash` | `deepinfra/fp4` | DeepInfra | 17% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
-| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 86% | 100% |
+| `tencent/hy4-flash` | `deepinfra/fp4` | DeepInfra | 22% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 64% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

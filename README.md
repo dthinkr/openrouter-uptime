@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T22:18:22+00:00 UTC)
+## Current status (2026-11-25T22:31:40+00:00 UTC)
 
 474 models polled, 1431 inference endpoints:
-up 999, degraded 42, down 13, idle 377.
+up 986, degraded 59, down 18, idle 368.
 
-Currently down (13):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 15% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 38% | 0% |
+| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 77% | 40% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 10% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 46% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 50% | 67% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 43% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
 | `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 37% | 0% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 47% | 100% |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 23% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 23% | 80% |
 | `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 7% | 0% |
-| `z-ai/glm-5.2` | `novita/fp8` | Novita | 33% | 50% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

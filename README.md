@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T20:17:07+00:00 UTC)
+## Current status (2026-11-25T20:30:54+00:00 UTC)
 
 470 models polled, 1426 inference endpoints:
-up 1015, degraded 49, down 17, idle 345.
+up 1030, degraded 47, down 15, idle 334.
 
-Currently down (17):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 22% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 25% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 17% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 10% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 88% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `liquid/lfm-3-1.7b` | `liquid` | Liquid | 20% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 29% | 100% |
-| `openai/gpt-4.1` | `azure` | Azure | 77% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 86% | 50% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 75% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 100% |
+| `liquid/lfm-3-1.7b` | `liquid` | Liquid | 54% | 100% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| plus 2 more | | | | |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 25% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

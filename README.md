@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T17:01:12+00:00 UTC)
+## Current status (2026-11-25T17:15:34+00:00 UTC)
 
-472 models polled, 1429 inference endpoints:
-up 1034, degraded 53, down 13, idle 329.
+469 models polled, 1426 inference endpoints:
+up 1023, degraded 59, down 16, idle 328.
 
-Currently down (13):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 93% | 100% |
+| `deepseek/deepseek-v3.2` | `featherless/fp8` | Featherless | 35% | 100% |
 | `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 33% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 67% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 60% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 55% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 56% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 62% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 20% | 40% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 57% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 28% | 0% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `qwen/qwen3-14b` | `deepinfra/fp8/flex` | DeepInfra | 20% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 48% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 50% | 100% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -115,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-11 13:16** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
 - **2026-11-12 20:03** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:03** — provider `recraft` changed its privacy policy url.
 - **2026-11-13 09:02** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
@@ -127,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-23 20:31** — provider `relace` changed its privacy policy url.
 - **2026-11-23 20:31** — provider `relace` changed its status page.
 - **2026-11-24 16:18** — **3 models removed from the catalog in one poll**: `dots-studio/dots-3-note-preview:free`, `mistralai/mistral-medium-3`, `mistralai/mistral-medium-3.1`.
+- **2026-11-25 17:15** — **3 models removed from the catalog in one poll**: `unbiased/pareto-26.10`, `unbiased/pareto-26.10-preview`, `unbiased/pareto-26.9`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

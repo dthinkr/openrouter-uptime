@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T00:16:19+00:00 UTC)
+## Current status (2026-11-25T00:31:57+00:00 UTC)
 
-470 models polled, 1423 inference endpoints:
-up 990, degraded 48, down 20, idle 365.
+472 models polled, 1424 inference endpoints:
+up 1006, degraded 33, down 25, idle 360.
 
-Currently down (20):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | n/a |
-| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 50% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 44% | 100% |
+| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 43% | 100% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 86% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
-| `meta/muse-spark-1.2-contributor` | `meta` | Meta | 87% | 20% |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 87% | 20% |
-| `mistralai/mistral-nemo` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4/priority` | DeepInfra | 62% | 40% |
-| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 60% | 80% |
-| plus 5 more | | | | |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 79% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta/muse-ember` | `meta` | Meta | 40% | 0% |
+| `meta/muse-spark-1.1` | `meta` | Meta | 71% | n/a |
+| `meta/muse-spark-1.2` | `meta` | Meta | 40% | 0% |
+| `meta/muse-spark-1.2-contributor` | `meta` | Meta | 40% | 0% |
+| `meta/muse-spark-1.3` | `meta` | Meta | 43% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

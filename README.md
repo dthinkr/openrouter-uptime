@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T04:32:32+00:00 UTC)
+## Current status (2026-11-26T04:47:09+00:00 UTC)
 
 474 models polled, 1433 inference endpoints:
-up 989, degraded 45, down 15, idle 384.
+up 998, degraded 43, down 13, idle 379.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 46% | 40% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 7% | 20% |
-| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 8% | n/a |
-| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 86% | 100% |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 27% | 60% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 15% | 0% |
-| `z-ai/glm-5.2` | `novita/fp8` | Novita | 30% | 50% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 58% | 40% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 10% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 13% | 0% |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 20% | 0% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 12% | n/a |
+| `z-ai/glm-5.2` | `novita/fp8` | Novita | 36% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

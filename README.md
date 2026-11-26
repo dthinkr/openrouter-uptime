@@ -85,28 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T05:46:21+00:00 UTC)
+## Current status (2026-11-26T06:03:30+00:00 UTC)
 
 474 models polled, 1434 inference endpoints:
-up 1008, degraded 36, down 13, idle 377.
+up 1008, degraded 38, down 14, idle 374.
 
-Currently down (13):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 75% | 67% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 53% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 54% | n/a |
-| `google/gemma-4-26b-a4b-it` | `ambient/nvfp4` | Ambient | 97% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 61% | 50% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 60% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 29% | n/a |
-| `z-ai/glm-5.2` | `featherless` | Featherless | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 67% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 50% | 25% |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4/priority` | DeepInfra | 57% | 100% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 50% | 33% |
+| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 37% | 0% |
+| `qwen/qwen3.8-27b` | `tenstorrent/fast` | Tenstorrent | 73% | 25% |
+| `z-ai/glm-5.2` | `featherless` | Featherless | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

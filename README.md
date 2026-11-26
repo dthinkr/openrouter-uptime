@@ -85,27 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T07:00:43+00:00 UTC)
+## Current status (2026-11-26T07:16:11+00:00 UTC)
 
-474 models polled, 1433 inference endpoints:
-up 1023, degraded 43, down 12, idle 355.
+474 models polled, 1432 inference endpoints:
+up 1027, degraded 42, down 13, idle 350.
 
-Currently down (12):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 75% | 50% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 80% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `river` | River | 20% | 50% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 47% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `river` | River | 57% | 75% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 3% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 43% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | 40% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 40% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 10% | 60% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 43% | 40% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
+| `z-ai/glm-5.2` | `featherless` | Featherless | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

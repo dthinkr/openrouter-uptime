@@ -85,29 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T06:03:30+00:00 UTC)
+## Current status (2026-11-26T06:17:33+00:00 UTC)
 
-474 models polled, 1434 inference endpoints:
-up 1008, degraded 38, down 14, idle 374.
+474 models polled, 1433 inference endpoints:
+up 1015, degraded 40, down 15, idle 363.
 
-Currently down (14):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 75% | 67% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 50% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 67% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 50% | 25% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4/priority` | DeepInfra | 57% | 100% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 50% | 33% |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 37% | 0% |
-| `qwen/qwen3.8-27b` | `tenstorrent/fast` | Tenstorrent | 73% | 25% |
-| `z-ai/glm-5.2` | `featherless` | Featherless | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 78% | 60% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 75% | 75% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 27% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 52% | 60% |
+| `qwen/qwen3-30b-a3b` | `deepinfra/fp8/priority` | DeepInfra | 56% | 20% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 60% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 33% | 100% |
+| `qwen/qwen3.8-27b` | `tenstorrent/fast` | Tenstorrent | 64% | 40% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

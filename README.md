@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T13:00:39+00:00 UTC)
+## Current status (2026-11-26T13:18:22+00:00 UTC)
 
 474 models polled, 1434 inference endpoints:
-up 1011, degraded 46, down 17, idle 360.
+up 1025, degraded 44, down 14, idle 351.
 
-Currently down (17):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 67% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 75% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 40% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 41% | 0% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 7% | 20% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8` | DeepInfra | 70% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 50% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | 0% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 30% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 63% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 79% | 40% |
 | `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 37% | 100% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 25% | 100% |
-| plus 2 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `z-ai/glm-4.7` | `novita/fp8` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

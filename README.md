@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T05:30:46+00:00 UTC)
+## Current status (2026-11-26T05:46:21+00:00 UTC)
 
 474 models polled, 1434 inference endpoints:
-up 989, degraded 45, down 15, idle 385.
+up 1008, degraded 36, down 13, idle 377.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 74% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 53% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 52% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 62% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 54% | n/a |
+| `google/gemma-4-26b-a4b-it` | `ambient/nvfp4` | Ambient | 97% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 38% | 100% |
-| `radixark/daisyrose-27b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 21% | 75% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 45% | n/a |
-| `z-ai/glm-5.2` | `featherless` | Featherless | n/a | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 61% | 50% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 60% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 29% | n/a |
+| `z-ai/glm-5.2` | `featherless` | Featherless | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

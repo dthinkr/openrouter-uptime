@@ -85,29 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T18:46:55+00:00 UTC)
+## Current status (2026-11-26T19:02:39+00:00 UTC)
 
-477 models polled, 1427 inference endpoints:
-up 1018, degraded 39, down 14, idle 356.
+477 models polled, 1428 inference endpoints:
+up 1028, degraded 32, down 11, idle 357.
 
-Currently down (14):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 70% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 17% | 80% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 71% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 8% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 23% | 80% |
+| `google/gemma-3-27b-it` | `deepinfra/fp8/priority` | DeepInfra | 71% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 73% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 82% | 100% |
-| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 81% | 100% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

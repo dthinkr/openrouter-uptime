@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T18:32:54+00:00 UTC)
+## Current status (2026-11-26T18:46:55+00:00 UTC)
 
-477 models polled, 1428 inference endpoints:
-up 1006, degraded 44, down 16, idle 362.
+477 models polled, 1427 inference endpoints:
+up 1018, degraded 39, down 14, idle 356.
 
-Currently down (16):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 70% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 40% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 17% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 70% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 63% | 60% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 17% | 80% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 71% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 17% | 100% |
-| plus 1 more | | | | |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 0% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 82% | 100% |
+| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 81% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

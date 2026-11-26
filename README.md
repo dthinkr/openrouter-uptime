@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T05:17:49+00:00 UTC)
+## Current status (2026-11-26T05:30:46+00:00 UTC)
 
-474 models polled, 1433 inference endpoints:
-up 983, degraded 45, down 15, idle 390.
+474 models polled, 1434 inference endpoints:
+up 989, degraded 45, down 15, idle 385.
 
 Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 62% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 5% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 55% | 100% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 60% |
-| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 20% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 74% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 52% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 62% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 38% | 100% |
 | `radixark/daisyrose-27b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 13% | 20% |
-| `z-ai/glm-5.2` | `novita/fp8` | Novita | 35% | 100% |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 21% | 75% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 45% | n/a |
 | `z-ai/glm-5.2` | `featherless` | Featherless | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

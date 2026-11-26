@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T09:32:08+00:00 UTC)
+## Current status (2026-11-26T09:46:31+00:00 UTC)
 
 474 models polled, 1432 inference endpoints:
-up 1025, degraded 47, down 19, idle 341.
+up 1030, degraded 42, down 16, idle 344.
 
-Currently down (19):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 100% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 40% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 42% | n/a |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 73% | 100% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | n/a |
 | `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 52% | 60% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 30% | 100% |
-| `qwen/qwen3.8-27b` | `tenstorrent/fast` | Tenstorrent | 13% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 60% |
+| `qwen/qwen3.8-27b` | `tenstorrent/fast` | Tenstorrent | 0% | 0% |
 | `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 50% | n/a |
-| plus 4 more | | | | |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 100% | n/a |
+| `z-ai/glm-5.2` | `featherless` | Featherless | 0% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

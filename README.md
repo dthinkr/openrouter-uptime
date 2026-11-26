@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T03:45:34+00:00 UTC)
+## Current status (2026-11-26T04:02:28+00:00 UTC)
 
 474 models polled, 1433 inference endpoints:
-up 1029, degraded 29, down 13, idle 362.
+up 1008, degraded 34, down 13, idle 378.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 80% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 100% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 29% | 50% |
-| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 12% | 0% |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 63% | 20% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 27% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 100% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 36% | 33% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 23% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 3% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 13% | 0% |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 57% | 80% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 29% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

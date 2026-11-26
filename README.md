@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T05:01:54+00:00 UTC)
+## Current status (2026-11-26T05:17:49+00:00 UTC)
 
 474 models polled, 1433 inference endpoints:
-up 989, degraded 43, down 16, idle 385.
+up 983, degraded 45, down 15, idle 390.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 62% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 37% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 47% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 62% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 5% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 55% | 100% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 40% |
-| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 33% | 0% |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 13% | 0% |
-| plus 1 more | | | | |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 60% |
+| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 20% | 100% |
+| `radixark/daisyrose-27b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 13% | 20% |
+| `z-ai/glm-5.2` | `novita/fp8` | Novita | 35% | 100% |
+| `z-ai/glm-5.2` | `featherless` | Featherless | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

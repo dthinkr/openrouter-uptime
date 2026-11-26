@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T20:03:04+00:00 UTC)
+## Current status (2026-11-26T20:17:57+00:00 UTC)
 
 477 models polled, 1428 inference endpoints:
-up 1027, degraded 52, down 15, idle 334.
+up 1036, degraded 36, down 16, idle 340.
 
-Currently down (15):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
 | `deepseek/deepseek-v3.1-terminus` | `siliconflow/fp8` | SiliconFlow | 83% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 80% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 80% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 27% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 62% | n/a |
-| `openai/gpt-6.2-sol` | `azure` | Azure | 43% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 25% | 0% |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 60% | n/a |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 60% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 0% | n/a |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 57% | 80% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

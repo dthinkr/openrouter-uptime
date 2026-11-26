@@ -85,29 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T23:15:37+00:00 UTC)
+## Current status (2026-11-26T23:30:58+00:00 UTC)
 
-477 models polled, 1425 inference endpoints:
-up 995, degraded 24, down 14, idle 392.
+477 models polled, 1429 inference endpoints:
+up 1004, degraded 29, down 11, idle 385.
 
-Currently down (14):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 64% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 3% | 20% |
-| `openai/gpt-6.2-sol` | `azure` | Azure | 3% | 20% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 79% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | n/a |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 33% | 20% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

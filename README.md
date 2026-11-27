@@ -85,23 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T14:46:20+00:00 UTC)
+## Current status (2026-11-27T15:02:54+00:00 UTC)
 
-477 models polled, 1428 inference endpoints:
-up 1012, degraded 43, down 10, idle 363.
+477 models polled, 1429 inference endpoints:
+up 1010, degraded 39, down 14, idle 366.
 
-Currently down (10):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 17% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 77% | 40% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 52% | 33% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 0% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 83% | 25% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
 | `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
 

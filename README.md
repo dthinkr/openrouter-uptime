@@ -85,31 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T19:31:36+00:00 UTC)
+## Current status (2026-11-27T19:47:52+00:00 UTC)
 
 477 models polled, 1432 inference endpoints:
-up 1022, degraded 24, down 16, idle 370.
+up 1024, degraded 27, down 9, idle 372.
 
-Currently down (16):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 100% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 21% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 11% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 52% | 50% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 41% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 67% | 60% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 64% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 33% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `primeintellect/fp8` | PrimeIntellect | 43% | 50% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
-| `z-ai/glm-5.2` | `mistral/eu` | Mistral | 50% | n/a |
-| plus 1 more | | | | |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 4% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `primeintellect/fp8` | PrimeIntellect | 17% | n/a |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 13% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

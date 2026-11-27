@@ -85,27 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T03:33:11+00:00 UTC)
+## Current status (2026-11-27T03:47:08+00:00 UTC)
 
 477 models polled, 1431 inference endpoints:
-up 1013, degraded 30, down 13, idle 375.
+up 1023, degraded 24, down 12, idle 372.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 77% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 26% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 40% | n/a |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 73% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 25% | 67% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 70% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 36% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 23% | 0% |
-| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 57% | 20% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 34% | 20% |
+| `tencent/hy4-preview` | `deepinfra/fp4` | DeepInfra | 0% | n/a |
 | `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

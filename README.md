@@ -85,30 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T13:45:47+00:00 UTC)
+## Current status (2026-11-27T14:01:09+00:00 UTC)
 
 477 models polled, 1428 inference endpoints:
-up 1011, degraded 34, down 15, idle 368.
+up 1009, degraded 34, down 14, idle 371.
 
-Currently down (15):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 59% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 9% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 47% | 0% |
-| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 80% | 0% |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 97% | 100% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 33% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `featherless/fp8` | Featherless | 54% | n/a |
-| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 39% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 55% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 87% | 20% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 89% | 100% |
+| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `featherless/fp8` | Featherless | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

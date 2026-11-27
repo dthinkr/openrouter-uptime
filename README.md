@@ -85,18 +85,20 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T22:47:40+00:00 UTC)
+## Current status (2026-11-27T23:03:03+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 1007, degraded 27, down 3, idle 392.
+up 1007, degraded 24, down 5, idle 393.
 
-Currently down (3):
+Currently down (5):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
-| `openai/gpt-6.2-sol` | `azure` | Azure | 47% | 40% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 33% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 59% | 100% |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 43% | 80% |
+| `z-ai/glm-5.3` | `fireworks` | Fireworks | 80% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

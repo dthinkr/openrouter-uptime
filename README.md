@@ -85,20 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T23:03:03+00:00 UTC)
+## Current status (2026-11-27T23:17:53+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 1007, degraded 24, down 5, idle 393.
+up 1017, degraded 26, down 9, idle 377.
 
-Currently down (5):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 33% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 59% | 100% |
-| `openai/gpt-6.2-sol` | `azure` | Azure | 43% | 80% |
-| `z-ai/glm-5.3` | `fireworks` | Fireworks | 80% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 100% | 100% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 48% | 100% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 40% | 0% |
+| `undi95/remm-slerp-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 50% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `featherless/fp8` | Featherless | 0% | n/a |
+| `z-ai/glm-5.3` | `fireworks` | Fireworks | 80% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

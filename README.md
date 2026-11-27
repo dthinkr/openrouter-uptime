@@ -85,24 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T21:47:42+00:00 UTC)
+## Current status (2026-11-27T22:01:13+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 1014, degraded 25, down 9, idle 382.
+up 1011, degraded 32, down 7, idle 380.
 
-Currently down (9):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 37% | 100% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 67% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 20% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 64% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 33% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 25% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 100% | 100% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 25% | n/a |
+| `openai/gpt-oss-20b` | `deepinfra/bf16` | DeepInfra | 67% | 50% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 38% | 100% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 20% | 50% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

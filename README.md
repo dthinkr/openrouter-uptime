@@ -85,26 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T19:02:26+00:00 UTC)
+## Current status (2026-11-27T19:17:12+00:00 UTC)
 
 477 models polled, 1432 inference endpoints:
-up 1019, degraded 25, down 11, idle 377.
+up 1008, degraded 33, down 13, idle 378.
 
-Currently down (11):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 7% | 20% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 7% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 17% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 70% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 56% | 20% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 17% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 74% | n/a |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 33% | 0% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | n/a | n/a |
+| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
+| `z-ai/glm-5.2` | `mistral/eu` | Mistral | 33% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

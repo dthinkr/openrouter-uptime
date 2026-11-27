@@ -85,24 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T23:17:53+00:00 UTC)
+## Current status (2026-11-27T23:30:35+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 1017, degraded 26, down 9, idle 377.
+up 1000, degraded 36, down 7, idle 386.
 
-Currently down (9):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 35% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 100% | 100% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 48% | 100% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 40% | 0% |
-| `undi95/remm-slerp-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 50% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `featherless/fp8` | Featherless | 0% | n/a |
-| `z-ai/glm-5.3` | `fireworks` | Fireworks | 80% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 73% | 0% |
+| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 86% | 100% |
+| `undi95/remm-slerp-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | n/a | n/a |
+| `z-ai/glm-5.3` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

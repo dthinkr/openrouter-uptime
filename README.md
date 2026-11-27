@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T09:01:48+00:00 UTC)
+## Current status (2026-11-27T09:18:02+00:00 UTC)
 
 477 models polled, 1431 inference endpoints:
-up 1022, degraded 31, down 13, idle 365.
+up 1029, degraded 38, down 12, idle 352.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 71% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `chutes/fp8` | Chutes | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 83% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `minimax/minimax-m3.1-flash` | `together` | Together | 23% | 100% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 20% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 43% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 50% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `tencent/hy4-preview` | `deepinfra/fp4` | DeepInfra | n/a | n/a |
+| `qwen/qwen3.8-27b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `thinkingmachines/inkling` | `together` | Together | 20% | n/a |
+| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

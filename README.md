@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T15:18:17+00:00 UTC)
+## Current status (2026-11-27T15:31:34+00:00 UTC)
 
 477 models polled, 1429 inference endpoints:
-up 1026, degraded 39, down 17, idle 347.
+up 1021, degraded 36, down 14, idle 358.
 
-Currently down (17):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 50% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 28% | 75% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
-| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 55% | n/a |
-| `openai/gpt-6-astra` | `azure` | Azure | 27% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `openai/gpt-6-astra` | `azure` | Azure | 33% | 80% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 47% | 100% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 43% | 100% |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 58% | 0% |
-| plus 2 more | | | | |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 33% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 57% | 0% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

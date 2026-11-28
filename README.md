@@ -85,23 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T00:16:49+00:00 UTC)
+## Current status (2026-11-28T00:30:34+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 998, degraded 39, down 8, idle 385.
+up 997, degraded 40, down 10, idle 383.
 
-Currently down (8):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4/priority` | DeepInfra | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 56% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 50% | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
+| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 67% | n/a |
 | `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 33% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 50% | 50% |
-| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
-| `z-ai/glm-5.2` | `novita/fp8` | Novita | 62% | n/a |
+| `openai/gpt-oss-120b` | `primeintellect/fp4` | PrimeIntellect | 67% | 100% |
+| `z-ai/glm-5.2` | `novita/fp8` | Novita | 57% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,27 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T04:17:19+00:00 UTC)
+## Current status (2026-11-28T04:32:23+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 985, degraded 36, down 12, idle 398.
+up 962, degraded 42, down 14, idle 413.
 
-Currently down (12):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 63% | 50% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 79% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `openai/gpt-6.2-sol` | `azure` | Azure | 27% | 20% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 43% | 80% |
-| `thinkingmachines/inkling` | `together` | Together | 80% | 0% |
-| `thinkingmachines/inkling` | `together/us` | Together | 67% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `cohere/fp8` | Cohere | 73% | 60% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 53% | 40% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 22% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 63% | 100% |
+| `mistralai/ministral-14b-2512` | `mistral/eu` | Mistral | 54% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 43% | 100% |
+| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 0% | n/a |
+| `thinkingmachines/inkling` | `together` | Together | 25% | n/a |
+| `thinkingmachines/inkling` | `together/us` | Together | 25% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `cohere/fp8` | Cohere | 73% | 100% |
 | `xiaomi/mimo-v2.6-flash` | `featherless/fp8` | Featherless | 0% | n/a |
-| `z-ai/glm-4.7` | `novita/fp8` | Novita | 50% | 100% |
-| `z-ai/glm-5.3-flash` | `fireworks/flex` | Fireworks | 77% | 100% |
+| `z-ai/glm-5.3-flash` | `fireworks/flex` | Fireworks | 65% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

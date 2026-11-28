@@ -85,22 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T23:48:31+00:00 UTC)
+## Current status (2026-11-28T00:03:01+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 1003, degraded 31, down 7, idle 388.
+up 1005, degraded 31, down 7, idle 386.
 
 Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 78% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 57% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 57% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 40% | 100% |
-| `qwen/qwen3.6-27b` | `alibaba` | Alibaba | 0% | n/a |
-| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 79% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 33% | 33% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 40% | n/a |
+| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
+| `z-ai/glm-5.2` | `novita/fp8` | Novita | 90% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

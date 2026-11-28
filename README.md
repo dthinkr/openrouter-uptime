@@ -85,21 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T07:46:30+00:00 UTC)
+## Current status (2026-11-28T08:02:58+00:00 UTC)
 
-476 models polled, 1432 inference endpoints:
-up 1011, degraded 27, down 7, idle 387.
+475 models polled, 1426 inference endpoints:
+up 984, degraded 29, down 10, idle 403.
 
-Currently down (7):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 4% | 25% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 38% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | 100% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 4% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 79% | n/a |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 58% | n/a |
 | `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).

@@ -85,25 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T09:01:31+00:00 UTC)
+## Current status (2026-11-28T09:17:24+00:00 UTC)
 
 475 models polled, 1429 inference endpoints:
-up 994, degraded 30, down 10, idle 395.
+up 993, degraded 32, down 15, idle 389.
 
-Currently down (10):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 67% | 40% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 80% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 29% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | n/a |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 25% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 62% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 50% | n/a |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 43% | 75% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 17% | 0% |
+| `qwen/qwen3.8-27b` | `modelrun/fp4` | ModelRun | 72% | 0% |
+| `qwen/qwen3.8-27b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `relace/fp4` | Relace | 43% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

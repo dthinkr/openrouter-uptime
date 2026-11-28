@@ -85,22 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T00:03:01+00:00 UTC)
+## Current status (2026-11-28T00:16:49+00:00 UTC)
 
-476 models polled, 1429 inference endpoints:
-up 1005, degraded 31, down 7, idle 386.
+476 models polled, 1430 inference endpoints:
+up 998, degraded 39, down 8, idle 385.
 
-Currently down (7):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 33% | 33% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 40% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `deepinfra/fp4/priority` | DeepInfra | 0% | 0% |
+| `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 33% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 50% | 50% |
 | `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
-| `z-ai/glm-5.2` | `novita/fp8` | Novita | 90% | 0% |
+| `z-ai/glm-5.2` | `novita/fp8` | Novita | 62% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

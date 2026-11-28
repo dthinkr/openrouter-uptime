@@ -85,27 +85,21 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T01:47:20+00:00 UTC)
+## Current status (2026-11-28T02:01:08+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 999, degraded 29, down 12, idle 391.
+up 995, degraded 30, down 6, idle 400.
 
-Currently down (12):
+Currently down (6):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 25% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 27% | 25% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 74% | n/a |
-| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 40% | 100% |
-| `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 50% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 63% | 100% |
-| `z-ai/glm-5.3` | `makora/fp4` | Makora | 71% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 10% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 71% | 0% |
+| `openai/gpt-5.4` | `azure` | Azure | 50% | 0% |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 43% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

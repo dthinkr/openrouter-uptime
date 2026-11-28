@@ -85,21 +85,21 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T03:02:26+00:00 UTC)
+## Current status (2026-11-28T03:15:59+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 979, degraded 22, down 6, idle 424.
+up 993, degraded 34, down 6, idle 398.
 
 Currently down (6):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 48% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 77% | 40% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-3.1-8b-instruct` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
-| `stepfun/step-5-preview` | `featherless/fp8` | Featherless | 0% | n/a |
+| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | 0% |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 27% | 0% |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

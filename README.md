@@ -85,26 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T01:33:07+00:00 UTC)
+## Current status (2026-11-28T01:47:20+00:00 UTC)
 
-476 models polled, 1430 inference endpoints:
-up 999, degraded 39, down 11, idle 381.
+476 models polled, 1431 inference endpoints:
+up 999, degraded 29, down 12, idle 391.
 
-Currently down (11):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 25% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 25% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 27% | 25% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 47% | 100% |
-| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 40% | n/a |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 74% | n/a |
+| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 40% | 100% |
 | `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 63% | 40% |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 50% | 0% |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 63% | 100% |
+| `z-ai/glm-5.3` | `makora/fp4` | Makora | 71% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,23 +85,21 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T05:47:07+00:00 UTC)
+## Current status (2026-11-28T06:01:34+00:00 UTC)
 
-476 models polled, 1431 inference endpoints:
-up 1001, degraded 26, down 8, idle 396.
+476 models polled, 1432 inference endpoints:
+up 1007, degraded 24, down 6, idle 395.
 
-Currently down (8):
+Currently down (6):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
 | `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 47% | n/a |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
-| `z-ai/glm-5.3` | `novita/fp8` | Novita | 0% | 0% |
-| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 53% | 100% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
+| `z-ai/glm-5.3` | `novita/fp8` | Novita | 14% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

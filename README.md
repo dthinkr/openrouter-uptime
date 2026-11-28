@@ -85,23 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T12:01:28+00:00 UTC)
+## Current status (2026-11-28T12:17:24+00:00 UTC)
 
 476 models polled, 1432 inference endpoints:
-up 974, degraded 37, down 8, idle 413.
+up 985, degraded 32, down 10, idle 405.
 
-Currently down (8):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 23% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 73% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `primeintellect/fp8` | PrimeIntellect | 75% | n/a |
-| `qwen/qwen3.8-flash` | `featherless/fp8` | Featherless | 36% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 39% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 25% | 60% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 83% | 60% |
+| `qwen/qwen3.8-flash` | `featherless/fp8` | Featherless | 40% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

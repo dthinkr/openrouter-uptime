@@ -85,26 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T06:15:49+00:00 UTC)
+## Current status (2026-11-28T06:33:26+00:00 UTC)
 
 476 models polled, 1432 inference endpoints:
-up 1003, degraded 30, down 11, idle 388.
+up 985, degraded 37, down 14, idle 396.
 
-Currently down (11):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 53% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | n/a |
-| `qwen/qwen3-30b-a3b` | `deepinfra/fp8/priority` | DeepInfra | 60% | 20% |
+| `qwen/qwen3-30b-a3b` | `deepinfra/fp8/priority` | DeepInfra | 65% | 100% |
 | `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 20% | n/a |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.8-flash` | `featherless/fp8` | Featherless | 71% | 50% |
-| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 67% | 0% |
-| `z-ai/glm-5.3` | `novita/fp8` | Novita | 68% | 100% |
+| `qwen/qwen3.8-flash` | `featherless/fp8` | Featherless | 52% | 75% |
+| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 17% | n/a |
+| `z-ai/glm-5.3-flash` | `streamlake/fp8` | StreamLake | 73% | 100% |
+| `z-ai/glm-5.3-flash` | `cohere/nvfp4` | Cohere | 96% | 100% |
+| `z-ai/glm-5.3-flash` | `river` | River | 91% | n/a |
+| `z-ai/glm-5.3-flash` | `kt` | KT | 50% | n/a |
+| `z-ai/glm-5.3-flash` | `fireworks` | Fireworks | 90% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -85,29 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T06:33:26+00:00 UTC)
+## Current status (2026-11-28T06:48:30+00:00 UTC)
 
 476 models polled, 1432 inference endpoints:
-up 985, degraded 37, down 14, idle 396.
+up 1000, degraded 34, down 10, idle 388.
 
-Currently down (14):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 64% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 83% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 12% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | n/a |
-| `qwen/qwen3-30b-a3b` | `deepinfra/fp8/priority` | DeepInfra | 65% | 100% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 20% | n/a |
-| `qwen/qwen3.8-flash` | `featherless/fp8` | Featherless | 52% | 75% |
-| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 17% | n/a |
-| `z-ai/glm-5.3-flash` | `streamlake/fp8` | StreamLake | 73% | 100% |
-| `z-ai/glm-5.3-flash` | `cohere/nvfp4` | Cohere | 96% | 100% |
-| `z-ai/glm-5.3-flash` | `river` | River | 91% | n/a |
-| `z-ai/glm-5.3-flash` | `kt` | KT | 50% | n/a |
-| `z-ai/glm-5.3-flash` | `fireworks` | Fireworks | 90% | 100% |
+| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
+| `z-ai/glm-5.3-flash` | `kt` | KT | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

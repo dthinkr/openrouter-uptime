@@ -85,25 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T01:02:47+00:00 UTC)
+## Current status (2026-11-28T01:17:39+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 1010, degraded 25, down 10, idle 385.
+up 997, degraded 31, down 11, idle 391.
 
-Currently down (10):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 46% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 78% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 50% | 0% |
-| `qwen/qwen3.5-35b-a3b` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `ricursiveai/ripple-65b-preview` | `primeintellect/bf16` | PrimeIntellect | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 42% | 100% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 63% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 43% | 50% |
+| `qwen/qwen3.5-35b-a3b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `primeintellect/flex` | PrimeIntellect | 0% | n/a |
+| `ricursiveai/ripple-65b-preview` | `primeintellect/bf16` | PrimeIntellect | 0% | n/a |
+| `thedrummer/skyfall-36b-v2` | `parasail/fp8` | Parasail | 79% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 90% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

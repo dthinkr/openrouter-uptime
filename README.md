@@ -85,28 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T09:47:32+00:00 UTC)
+## Current status (2026-11-28T10:00:35+00:00 UTC)
 
-475 models polled, 1429 inference endpoints:
-up 997, degraded 29, down 13, idle 390.
+475 models polled, 1428 inference endpoints:
+up 999, degraded 33, down 15, idle 381.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 67% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 83% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 17% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
 | `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 33% | n/a |
-| `openai/gpt-6.2-sol` | `azure` | Azure | 40% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 27% | 40% |
 | `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | n/a |
-| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 37% | 100% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 70% | 0% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8/priority` | DeepInfra | 18% | 0% |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `qwen/qwen3.8-27b` | `modelrun/fp4` | ModelRun | 40% | 100% |
-| `qwen/qwen3.8-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.8-flash` | `featherless/fp8` | Featherless | 58% | 67% |
+| `undi95/remm-slerp-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

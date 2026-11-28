@@ -85,20 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T03:15:59+00:00 UTC)
+## Current status (2026-11-28T03:31:45+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 993, degraded 34, down 6, idle 398.
+up 988, degraded 34, down 9, idle 400.
 
-Currently down (6):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 77% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | 0% |
-| `openai/gpt-6.2-sol` | `azure` | Azure | 27% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 67% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 92% | 60% |
+| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 20% | 60% |
 | `qwen/qwen3.5-9b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
